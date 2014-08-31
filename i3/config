@@ -167,8 +167,8 @@ mode "resize" {
 
 bindsym Mod4+r mode "resize"
 # Assign Workspace variables
-set $WS1 1:	TERM
-set $WS2 2:	WEB
+set $WS1 1:	WEB
+set $WS2 2:	TERM
 set $WS3 3:	FILES 
 set $WS4 4:	MEDIA
 set $WS5 5:	MISC
@@ -204,7 +204,7 @@ bar {
         tray_output none
         position bottom
         status_command ~/.i3/i3-conky-initscript.sh
-        font xft:hermit Bold 10 
+        font xft:hermit Icons 13px Bold 10
 
 
    colors {
