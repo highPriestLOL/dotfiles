@@ -1,0 +1,320 @@
+2014-08-23 20:11:34	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 20:11:34	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 20:11:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 20:11:41		fifo: pipe closed
+2014-08-23 20:19:11	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 20:19:11	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 20:19:11	=!=	Warning: /home/dagnachew/.weechat/irc.conf, line 29: unknown option for section "look": item_channel_modes_hide_key = off
+2014-08-23 20:19:11		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 20:23:46		fifo: pipe closed
+2014-08-23 21:12:57	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:12:57	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:12:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:13:20		fifo: pipe closed
+2014-08-23 21:15:57	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:15:57	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:15:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:16:43		fifo: pipe closed
+2014-08-23 21:16:45	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:16:45	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:16:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:17:26		fifo: pipe closed
+2014-08-23 21:18:33	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:18:33	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:18:33		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:21:51		fifo: pipe closed
+2014-08-23 21:23:00	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:23:00	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:23:00		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:23:22		script: downloading list of scripts...
+2014-08-23 21:23:23		script: 280 scripts for WeeChat 1.0
+2014-08-23 21:23:23		script: script "iset" not found
+2014-08-23 21:24:17		fifo: pipe closed
+2014-08-23 21:27:47	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:27:47	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:27:47		script: 280 scripts for WeeChat 1.0
+2014-08-23 21:27:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:29:20		script: script "buffers" not found
+2014-08-23 21:29:47		perl: loading script "/home/dagnachew/.weechat/perl/buffers.pl"
+2014-08-23 21:29:47		perl: registered script "buffers", version 4.8 (Sidebar with list of buffers)
+2014-08-23 21:29:47		New key binding (context "mouse"): @bar(buffers):ctrl-wheeldown => hsignal:buffers_mouse
+2014-08-23 21:29:47		New key binding (context "mouse"): @bar(buffers):ctrl-wheelup => hsignal:buffers_mouse
+2014-08-23 21:29:54		script: script "buffers.pl" is already installed and up-to-date
+2014-08-23 21:30:19		Options saved to sec.conf
+2014-08-23 21:30:19		Options saved to weechat.conf
+2014-08-23 21:30:19		Options saved to plugins.conf
+2014-08-23 21:30:19		Options saved to relay.conf
+2014-08-23 21:30:19		Options saved to xfer.conf
+2014-08-23 21:30:19		Options saved to logger.conf
+2014-08-23 21:30:19		Options saved to irc.conf
+2014-08-23 21:30:19		Options saved to alias.conf
+2014-08-23 21:30:19		Options saved to trigger.conf
+2014-08-23 21:30:19		Options saved to script.conf
+2014-08-23 21:30:19		Options saved to exec.conf
+2014-08-23 21:30:19		Options saved to charset.conf
+2014-08-23 21:30:19		Options saved to aspell.conf
+2014-08-23 21:30:19		Options saved to buffers.conf
+2014-08-23 21:30:24		perl: scripts unloaded
+2014-08-23 21:30:24		fifo: pipe closed
+2014-08-23 21:30:29	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:30:29	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:30:30		perl scripts loaded: buffers
+2014-08-23 21:30:30		script: 280 scripts for WeeChat 1.0
+2014-08-23 21:30:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:32:38		perl: loading script "/home/dagnachew/.weechat/perl/highmon.pl"
+2014-08-23 21:32:38		perl: registered script "highmon", version 2.5 (Highlight Monitor)
+2014-08-23 21:32:38		This appears to be the first time highmon has been run. For help and common set up hints see /highmon help
+2014-08-23 21:34:27		Highmon Help
+2014-08-23 21:34:27		/highmon [help] | [monitor [channel [server]]] | [clean default|orphan|all] | clearbar
+2014-08-23 21:34:27		 Command wrapper for highmon commands
+2014-08-23 21:34:27		/highmon clean default|orphan|all will clean the config section of default 'on' entries, channels you are no longer joined, or both
+2014-08-23 21:34:27		/highmon clearbar will clear the contents of highmon's bar output
+2014-08-23 21:34:27		/highmon monitor [channel] [server] is used to toggle a highlight monitoring on and off, this can be used in the channel buffer for the channel you wish to toggle, or be given with arguments e.g. /highmon monitor #weechat freenode
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.alignment
+2014-08-23 21:34:27		 The config setting "alignment" can be changed to;
+2014-08-23 21:34:27		 "channel", "schannel", "nchannel", "channel,nick", "schannel,nick", "nchannel,nick"
+2014-08-23 21:34:27		 to change how the monitor appears
+2014-08-23 21:34:27		 The 'channel'  value will show: "#weechat"
+2014-08-23 21:34:27		 The 'schannel' value will show: "6"
+2014-08-23 21:34:27		 The 'nchannel' value will show: "6:#weechat"
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.short_names
+2014-08-23 21:34:27		 Setting this to 'on' will trim the network name from highmon, ala buffers.pl
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.merge_private
+2014-08-23 21:34:27		 Setting this to 'on' will merge private messages to highmon's display
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.color_buf
+2014-08-23 21:34:27		 This turns colored buffer names on or off, you can also set a single fixed color by using a weechat color name.
+2014-08-23 21:34:27		 This must be a valid color name, or weechat will likely do unexpected things :)
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.hotlist_show
+2014-08-23 21:34:27		Setting this to 'on' will let the highmon buffer appear in hotlists (status bar/buffer.pl)
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.away_only
+2014-08-23 21:34:27		Setting this to 'on' will only put messages in the highmon buffer when you set your status to away
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.logging
+2014-08-23 21:34:27		 Toggles logging status for highmon buffer (default: off)
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.output
+2014-08-23 21:34:27		 Changes where output method of highmon; takes either "bar" or "buffer" (default; buffer)
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.bar_lines
+2014-08-23 21:34:27		 Changes the amount of lines the output bar will hold.
+2014-08-23 21:34:27		 (Only appears once output has been set to bar, defaults to 10)
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.bar_scrolldown
+2014-08-23 21:34:27		 Toggles the bar scrolling at the bottom when new highlights are received
+2014-08-23 21:34:27		 (Only appears once output has been set to bar, defaults to off)
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.nick_prefix
+2014-08-23 21:34:27		/set plugins.var.perl.highmon.nick_suffix
+2014-08-23 21:34:27		 Sets the prefix and suffix chars in the highmon buffer
+2014-08-23 21:34:27		 (Defaults to <> if nothing set, and blank if there is)
+2014-08-23 21:34:27		servername.#channel
+2014-08-23 21:34:27		 servername is the internal name for the server (set when you use /server add)
+2014-08-23 21:34:27		 #channel is the channel name, (where # is whatever channel type that channel happens to be)
+2014-08-23 21:34:27		Optional, set up tweaks; Hide the status and input lines on highmon
+2014-08-23 21:34:27		/set weechat.bar.status.conditions "${window.buffer.full_name} != perl.highmon"
+2014-08-23 21:34:27		/set weechat.bar.input.conditions "${window.buffer.full_name} != perl.highmon"
+2014-08-23 21:35:52	=!=	Error: unknown command "/widow" (type /help for help)
+2014-08-23 21:36:00	=!=	Error with command "/window split 12" (help on command: /help window)
+2014-08-23 21:36:58	=!=	Error with command "/layout save" (help on command: /help layout)
+2014-08-23 21:37:28	=!=	Error with command "/layout save" (help on command: /help layout)
+2014-08-23 21:38:10		[core]  /layout  store [<name>] [buffers|windows]
+2014-08-23 21:38:10		                 apply [<name>] [buffers|windows]
+2014-08-23 21:38:10		                 leave
+2014-08-23 21:38:10		                 del [<name>] [buffers|windows]
+2014-08-23 21:38:10		                 rename <name> <new_name>
+2014-08-23 21:38:10		manage buffers/windows layouts
+2014-08-23 21:38:10		  store: store current buffers/windows in a layout
+2014-08-23 21:38:10		  apply: apply stored layout
+2014-08-23 21:38:10		  leave: leave current layout (does not update any layout)
+2014-08-23 21:38:10		    del: delete buffers and/or windows in a stored layout
+2014-08-23 21:38:10		         (if neither "buffers" nor "windows" is given after the name, the layout is deleted)
+2014-08-23 21:38:10		 rename: rename a layout
+2014-08-23 21:38:10		   name: name for stored layout (default is "default")
+2014-08-23 21:38:10		buffers: store/apply only buffers (order of buffers)
+2014-08-23 21:38:10		windows: store/apply only windows (buffer displayed by each window)
+2014-08-23 21:38:10		Without argument, this command displays stored layouts.
+2014-08-23 21:39:20	=!=	Error: unknown command "/weechat.look.save_layout_on_exit" (type /help for help)
+2014-08-23 21:40:02	=!=	Error with command "/layout save highlight" (help on command: /help layout)
+2014-08-23 21:40:10		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-23 21:40:10		perl: scripts unloaded
+2014-08-23 21:40:10		fifo: pipe closed
+2014-08-23 21:40:12	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:40:12	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:40:12		perl scripts loaded: buffers, highmon
+2014-08-23 21:40:12		script: 280 scripts for WeeChat 1.0
+2014-08-23 21:40:12		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:42:00		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-23 21:42:00		perl: scripts unloaded
+2014-08-23 21:42:00		fifo: pipe closed
+2014-08-23 21:43:29	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-08-23 21:43:29	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-08-23 21:43:29		New key binding (context "mouse"): @bar(buffers):ctrl-wheeldown => hsignal:buffers_mouse
+2014-08-23 21:43:29		New key binding (context "mouse"): @bar(buffers):ctrl-wheelup => hsignal:buffers_mouse
+2014-08-23 21:43:29		perl scripts loaded: buffers, highmon
+2014-08-23 21:43:29		script: 280 scripts for WeeChat 1.0
+2014-08-23 21:43:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2014-08-23 21:44:09		script: script "highmon.pl" is already installed and up-to-date
+2014-08-23 21:48:03	=!=	Error with command "/window split 12" (help on command: /help window)
+2014-08-23 21:48:48		[core]  /window  list
+2014-08-23 21:48:48		                 -1|+1|b#|up|down|left|right [-window <number>]
+2014-08-23 21:48:48		                 <number>
+2014-08-23 21:48:48		                 splith|splitv [-window <number>] [<pct>]
+2014-08-23 21:48:48		                 resize [-window <number>] [+/-]<pct>
+2014-08-23 21:48:48		                 balance
+2014-08-23 21:48:48		                 merge [-window <number>] [all]
+2014-08-23 21:48:48		                 page_up|page_down [-window <number>]
+2014-08-23 21:48:48		                 refresh
+2014-08-23 21:48:48		                 scroll [-window <number>] [+/-]<value>[s|m|h|d|M|y]
+2014-08-23 21:48:48		                 scroll_horiz [-window <number>] [+/-]<value>[%]
+2014-08-23 21:48:48		                 scroll_up|scroll_down|scroll_top|scroll_bottom|scroll_beyond_end|scroll_previous_highlight|scroll_next_highlight|scroll_unread [-window <number>]
+2014-08-23 21:48:48		                 swap [-window <number>] [up|down|left|right]
+2014-08-23 21:48:48		                 zoom[-window <number>]
+2014-08-23 21:48:48		                 bare [<delay>]
+2014-08-23 21:48:48		manage windows
+2014-08-23 21:48:48		         list: list opened windows (without argument, this list is displayed)
+2014-08-23 21:48:48		           -1: jump to previous window
+2014-08-23 21:48:48		           +1: jump to next window
+2014-08-23 21:48:48		           b#: jump to next window displaying buffer number #
+2014-08-23 21:48:48		           up: switch to window above current one
+2014-08-23 21:48:48		         down: switch to window below current one
+2014-08-23 21:48:48		         left: switch to window on the left
+2014-08-23 21:48:48		        right: switch to window on the right
+2014-08-23 21:48:48		       number: window number (see /window list)
+2014-08-23 21:48:48		       splith: split current window horizontally
+2014-08-23 21:48:48		       splitv: split current window vertically
+2014-08-23 21:48:48		       resize: resize window size, new size is <pct> percentage of parent window
+2014-08-23 21:48:48		      balance: balance the sizes of all windows
+2014-08-23 21:48:48		        merge: merge window with another (all = keep only one window)
+2014-08-23 21:48:48		      page_up: scroll one page up
+2014-08-23 21:48:48		    page_down: scroll one page down
+2014-08-23 21:48:48		      refresh: refresh screen
+2014-08-23 21:48:48		       scroll: scroll a number of lines (+/-N) or with time: s=seconds, m=minutes, h=hours, d=days, M=months, y=years
+2014-08-23 21:48:48		 scroll_horiz: scroll horizontally a number of columns (+/-N) or percentage of window size (this scrolling is possible only on buffers with free content)
+2014-08-23 21:48:48		    scroll_up: scroll a few lines up
+2014-08-23 21:48:48		  scroll_down: scroll a few lines down
+2014-08-23 21:48:48		   scroll_top: scroll to top of buffer
+2014-08-23 21:48:48		scroll_bottom: scroll to bottom of buffer
+2014-08-23 21:48:48		scroll_beyond_end: scroll beyond the end of buffer
+2014-08-23 21:48:48		scroll_previous_highlight: scroll to previous highlight
+2014-08-23 21:48:48		scroll_next_highlight: scroll to next highlight
+2014-08-23 21:48:48		scroll_unread: scroll to unread marker
+2014-08-23 21:48:48		         swap: swap buffers of two windows (with optional direction for target window)
+2014-08-23 21:48:48		         zoom: zoom on window
+2014-08-23 21:48:48		         bare: toggle bare display (with optional delay in seconds for automatic return to standard display mode)
+2014-08-23 21:48:48		For splith and splitv, pct is a percentage which represents size of new window, computed with current window as size reference. For example 25 means create a new window with size = current_size / 4
+2014-08-23 21:48:48		Examples:
+2014-08-23 21:48:48		  jump to window displaying buffer #1:
+2014-08-23 21:48:48		    /window b1
+2014-08-23 21:48:48		  scroll 2 lines up:
+2014-08-23 21:48:48		    /window scroll -2
+2014-08-23 21:48:48		  scroll 2 days up:
+2014-08-23 21:48:48		    /window scroll -2d
+2014-08-23 21:48:48		  scroll to beginning of current day:
+2014-08-23 21:48:48		    /window scroll -d
+2014-08-23 21:48:48		  zoom on window #2:
+2014-08-23 21:48:48		    /window zoom -window 2
+2014-08-23 21:48:48		  enable bare display for 2 seconds:
+2014-08-23 21:48:48		    /window bare 2
+2014-08-23 21:49:47	=!=	Error with command "/layout save" (help on command: /help layout)
+2014-08-23 21:49:59		[core]  /layout  store [<name>] [buffers|windows]
+2014-08-23 21:49:59		                 apply [<name>] [buffers|windows]
+2014-08-23 21:49:59		                 leave
+2014-08-23 21:49:59		                 del [<name>] [buffers|windows]
+2014-08-23 21:49:59		                 rename <name> <new_name>
+2014-08-23 21:49:59		manage buffers/windows layouts
+2014-08-23 21:49:59		  store: store current buffers/windows in a layout
+2014-08-23 21:49:59		  apply: apply stored layout
+2014-08-23 21:49:59		  leave: leave current layout (does not update any layout)
+2014-08-23 21:49:59		    del: delete buffers and/or windows in a stored layout
+2014-08-23 21:49:59		         (if neither "buffers" nor "windows" is given after the name, the layout is deleted)
+2014-08-23 21:49:59		 rename: rename a layout
+2014-08-23 21:49:59		   name: name for stored layout (default is "default")
+2014-08-23 21:49:59		buffers: store/apply only buffers (order of buffers)
+2014-08-23 21:49:59		windows: store/apply only windows (buffer displayed by each window)
+2014-08-23 21:49:59		Without argument, this command displays stored layouts.
+2014-08-23 21:54:34		Layout of buffers+windows stored in "default" (current layout: default)
+2014-08-23 21:54:48		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-23 21:54:48		perl: scripts unloaded
+2014-08-23 21:54:48		fifo: pipe closed
+2014-08-25 04:58:25		perl scripts loaded: buffers, highmon
+2014-08-25 04:58:25		script: downloading list of scripts...
+2014-08-25 04:58:26		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-25 04:58:26		script: 280 scripts for WeeChat 1.0
+2014-08-25 05:45:43		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-25 05:45:43		perl: scripts unloaded
+2014-08-25 05:45:43		fifo: pipe closed
+2014-08-25 05:45:47		perl scripts loaded: buffers, highmon
+2014-08-25 05:45:47		script: 280 scripts for WeeChat 1.0
+2014-08-25 05:45:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-25 05:57:49		Option changed: irc.server.freenode.autojoin = "#archlinux,##c,##c++,#haskell,#R,#postgresql,#vim,#git,#zsh"  (default: (undefined))
+2014-08-25 05:58:00		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-25 05:58:00		perl: scripts unloaded
+2014-08-25 05:58:00		fifo: pipe closed
+2014-08-25 05:58:02		perl scripts loaded: buffers, highmon
+2014-08-25 05:58:02		script: 280 scripts for WeeChat 1.0
+2014-08-25 05:58:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-25 06:02:25		Option changed: irc.server.freenode.autojoin = "#archlinux,#c,##c++,#haskell,#scala,#python,#R,#postgresql,#vim,#git"  (default: (undefined))
+2014-08-25 06:02:33		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-25 06:02:33		perl: scripts unloaded
+2014-08-25 06:02:33		fifo: pipe closed
+2014-08-25 06:02:34		perl scripts loaded: buffers, highmon
+2014-08-25 06:02:34		script: 280 scripts for WeeChat 1.0
+2014-08-25 06:02:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-25 06:07:56		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-25 06:07:56		perl: scripts unloaded
+2014-08-25 06:07:56		fifo: pipe closed
+2014-08-25 19:11:45		perl scripts loaded: buffers, highmon
+2014-08-25 19:11:45		script: 280 scripts for WeeChat 1.0
+2014-08-25 19:11:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-25 19:15:41		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-25 19:15:41		perl: scripts unloaded
+2014-08-25 19:15:41		fifo: pipe closed
+2014-08-25 19:15:43		perl scripts loaded: buffers, highmon
+2014-08-25 19:15:43		script: 280 scripts for WeeChat 1.0
+2014-08-25 19:15:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-25 20:26:27		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-25 20:26:27		perl: scripts unloaded
+2014-08-25 20:26:27		fifo: pipe closed
+2014-08-25 21:24:55		perl scripts loaded: buffers, highmon
+2014-08-25 21:24:55		script: 280 scripts for WeeChat 1.0
+2014-08-25 21:24:55		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-26 00:00:37		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-26 00:00:37		perl: scripts unloaded
+2014-08-26 00:00:37		fifo: pipe closed
+2014-08-26 17:42:42		perl scripts loaded: buffers, highmon
+2014-08-26 17:42:42		script: downloading list of scripts...
+2014-08-26 17:42:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-26 17:42:43		script: 280 scripts for WeeChat 1.0
+2014-08-26 18:14:20		fifo: removing old fifo pipe "/home/dagnachew/.weechat/weechat_fifo_706"
+2014-08-26 18:14:20		perl scripts loaded: buffers, highmon
+2014-08-26 18:14:20		script: 280 scripts for WeeChat 1.0
+2014-08-26 18:14:20		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-28 17:27:35		fifo: removing old fifo pipe "/home/dagnachew/.weechat/weechat_fifo_3797"
+2014-08-28 17:27:35		perl scripts loaded: buffers, highmon
+2014-08-28 17:27:35		script: downloading list of scripts...
+2014-08-28 17:27:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-28 17:27:36		script: 280 scripts for WeeChat 1.0
+2014-08-28 17:34:04		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-28 17:34:04		perl: scripts unloaded
+2014-08-28 17:34:04		fifo: pipe closed
+2014-08-28 17:34:06		perl scripts loaded: buffers, highmon
+2014-08-28 17:34:06		script: 280 scripts for WeeChat 1.0
+2014-08-28 17:34:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-28 17:43:37		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-28 17:43:37		perl: scripts unloaded
+2014-08-28 17:43:37		fifo: pipe closed
+2014-08-28 17:51:44		perl scripts loaded: buffers, highmon
+2014-08-28 17:51:44		script: 280 scripts for WeeChat 1.0
+2014-08-28 17:51:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-28 18:23:20		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-28 18:23:20		perl: scripts unloaded
+2014-08-28 18:23:20		fifo: pipe closed
+2014-08-28 23:49:04		perl scripts loaded: buffers, highmon
+2014-08-28 23:49:04		script: 280 scripts for WeeChat 1.0
+2014-08-28 23:49:04		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-29 00:10:15		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2014-08-29 00:10:15		perl: scripts unloaded
+2014-08-29 00:10:15		fifo: pipe closed
+2014-08-29 00:10:23		perl scripts loaded: buffers, highmon
+2014-08-29 00:10:23		script: 280 scripts for WeeChat 1.0
+2014-08-29 00:10:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-29 18:35:40		fifo: removing old fifo pipe "/home/dagnachew/.weechat/weechat_fifo_8769"
+2014-08-29 18:35:40		perl scripts loaded: buffers, highmon
+2014-08-29 18:35:40		script: downloading list of scripts...
+2014-08-29 18:35:40		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-29 18:35:41		script: 280 scripts for WeeChat 1.0

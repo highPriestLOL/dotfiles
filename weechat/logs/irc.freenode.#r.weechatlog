@@ -1,0 +1,311 @@
+2014-08-25 05:58:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-25 05:58:16	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-25 05:58:16	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:23
+2014-08-25 05:58:16	--	Channel #R: 145 nicks (0 ops, 0 voices, 145 normals)
+2014-08-25 05:58:17	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-25 05:58:22	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-25 06:01:17	◀▬▬	SJS (~stremler@kernel-panic/member/ThunderChicken) has quit (Ping timeout: 240 seconds)
+2014-08-25 06:01:25	◀▬▬	roadie (~user@CPE-123-211-12-203.lnse3.cha.bigpond.net.au) has quit (Quit: ERC Version 5.3 (IRC client for Emacs))
+2014-08-25 06:02:33	--	irc: disconnected from server
+2014-08-25 06:02:48	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-25 06:02:48	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-25 06:02:48	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:22
+2014-08-25 06:02:48	--	Channel #R: 143 nicks (0 ops, 0 voices, 143 normals)
+2014-08-25 06:02:56	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-25 06:02:57	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-25 06:03:12	◀▬▬	Polymor__ (~textual@67.8.161.3) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-25 06:03:46	▬▬▶	Polymorphism (~textual@67.8.161.3) has joined #R
+2014-08-25 06:07:56	--	irc: disconnected from server
+2014-08-25 19:12:01	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-25 19:12:01	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-25 19:12:01	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:16
+2014-08-25 19:12:01	--	Channel #R: 146 nicks (0 ops, 0 voices, 146 normals)
+2014-08-25 19:12:01	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-25 19:12:10	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-25 19:12:13	◀▬▬	dassouki (~ahmed@fctnnbsc30w-156034090042.dhcp-dynamic.FibreOp.nb.bellaliant.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:12:18	▬▬▶	epifanio (~chatzilla@74-94-155-26-NewEngland.hfc.comcastbusiness.net) has joined #R
+2014-08-25 19:13:04	▬▬▶	zzing (~zzing@198-91-210-150.cpe.distributel.net) has joined #R
+2014-08-25 19:15:42	--	irc: disconnected from server
+2014-08-25 19:16:00	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-25 19:16:00	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-25 19:16:00	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:23
+2014-08-25 19:16:00	--	Channel #R: 147 nicks (0 ops, 0 voices, 147 normals)
+2014-08-25 19:16:01	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-25 19:16:10	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-25 19:17:35	◀▬▬	zzing (~zzing@198-91-210-150.cpe.distributel.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:21:55	▬▬▶	exhacker (ad40762d@gateway/web/freenode/ip.173.64.118.45) has joined #R
+2014-08-25 19:22:11	▬▬▶	roadie (~user@CPE-123-211-12-203.lnse3.cha.bigpond.net.au) has joined #R
+2014-08-25 19:25:07	▬▬▶	devoldmx3 (~devoldmx@200.38.186.20) has joined #R
+2014-08-25 19:27:28	▬▬▶	RudolphStrange (~RudolphSt@cpe-74-73-243-79.nyc.res.rr.com) has joined #R
+2014-08-25 19:28:30	◀▬▬	devoldmx (~devoldmx@fixed-203-217-110.iusacell.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:28:38	◀▬▬	spvensko (~spvensko@unaffiliated/spvensko) has quit (Quit: spvensko)
+2014-08-25 19:30:33	◀▬▬	frankle (uid28567@gateway/web/irccloud.com/x-vdyecyaxdwgvsihm) has quit (Quit: Connection closed for inactivity)
+2014-08-25 19:35:29	▬▬▶	shirkey (~Thunderbi@119.18.157.98) has joined #R
+2014-08-25 19:35:29	◀▬▬	devoldmx3 (~devoldmx@200.38.186.20) has quit (Read error: Connection reset by peer)
+2014-08-25 19:36:25	▬▬▶	devoldmx3 (~devoldmx@200.38.186.20) has joined #R
+2014-08-25 19:37:34	▬▬▶	anth0ny_ (~anth0ny@unaffiliated/anth0ny) has joined #R
+2014-08-25 19:40:12	◀▬▬	devoldmx3 (~devoldmx@200.38.186.20) has quit (Read error: Connection reset by peer)
+2014-08-25 19:40:32	▬▬▶	devoldmx (~devoldmx@200.38.186.20) has joined #R
+2014-08-25 19:43:21	▬▬▶	bosie (~bosie@78-32-71-88.static.enta.net) has joined #R
+2014-08-25 19:43:21	◀▬▬	bosie (~bosie@78-32-71-88.static.enta.net) has quit (Changing host)
+2014-08-25 19:43:21	▬▬▶	bosie (~bosie@unaffiliated/bosie) has joined #R
+2014-08-25 19:43:40	▬▬▶	wildintellect (~wild_desk@50-1-19-61.dsl.dynamic.sonic.net) has joined #R
+2014-08-25 19:45:15	◀▬▬	devoldmx (~devoldmx@200.38.186.20) has quit (Read error: Connection reset by peer)
+2014-08-25 19:45:39	▬▬▶	devoldmx3 (~devoldmx@200.38.186.20) has joined #R
+2014-08-25 19:48:11	◀▬▬	bosie (~bosie@unaffiliated/bosie) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:50:27	◀▬▬	devoldmx3 (~devoldmx@200.38.186.20) has quit (Read error: Connection reset by peer)
+2014-08-25 19:51:13	▬▬▶	devoldmx3 (~devoldmx@200.38.186.20) has joined #R
+2014-08-25 19:52:11	▬▬▶	spvensko (~spvensko@unaffiliated/spvensko) has joined #R
+2014-08-25 20:00:09	▬▬▶	devoldmx (~devoldmx@fixed-203-217-214.iusacell.net) has joined #R
+2014-08-25 20:02:35	◀▬▬	devoldmx3 (~devoldmx@200.38.186.20) has quit (Ping timeout: 255 seconds)
+2014-08-25 20:03:48	▬▬▶	zzing (~zzing@198-91-210-150.cpe.distributel.net) has joined #R
+2014-08-25 20:03:51	▬▬▶	tubuliferous__ (~tubulifer@user-24-96-87-206.knology.net) has joined #R
+2014-08-25 20:04:21	◀▬▬	RudolphStrange (~RudolphSt@cpe-74-73-243-79.nyc.res.rr.com) has quit (Remote host closed the connection)
+2014-08-25 20:09:21	◀▬▬	adpirz_ (~adpirz@c-69-245-56-201.hsd1.tn.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 20:14:36	▬▬▶	adpirz_ (~adpirz@c-69-245-56-201.hsd1.tn.comcast.net) has joined #R
+2014-08-25 20:18:35	--	efm is now known as efm_
+2014-08-25 20:26:27	--	irc: disconnected from server
+2014-08-25 21:26:21	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-25 21:26:21	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-25 21:26:21	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:22
+2014-08-25 21:26:21	--	Channel #R: 149 nicks (0 ops, 0 voices, 149 normals)
+2014-08-25 21:26:22	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-25 21:26:32	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-25 21:29:53	--	efm_ is now known as efm
+2014-08-25 21:30:08	▬▬▶	Pyrogerg (~Gregory@75-173-66-157.albq.qwest.net) has joined #R
+2014-08-25 21:31:30	▬▬▶	bosie (~bosie@unaffiliated/bosie) has joined #R
+2014-08-25 21:34:04	◀▬▬	devoldmx (~devoldmx@fixed-203-217-214.iusacell.net) has quit (Ping timeout: 264 seconds)
+2014-08-25 21:37:01	◀▬▬	bosie (~bosie@unaffiliated/bosie) has quit (Ping timeout: 272 seconds)
+2014-08-25 21:40:56	◀▬▬	Pyrogerg (~Gregory@75-173-66-157.albq.qwest.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 21:41:18	◀▬▬	coolcusty (~coolcusty@unaffiliated/coolcusty) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:51:00	▬▬▶	coolcusty (~coolcusty@unaffiliated/coolcusty) has joined #R
+2014-08-25 21:54:34	◀▬▬	ssd7 (~ssd@host86-139-201-119.range86-139.btcentralplus.com) has quit (Ping timeout: 260 seconds)
+2014-08-25 22:00:18	◀▬▬	dewm (~dewm@c-76-98-17-243.hsd1.pa.comcast.net) has quit (Quit: dewm)
+2014-08-25 22:03:54	▬▬▶	Pyrogerg (~Gregory@75-173-66-157.albq.qwest.net) has joined #R
+2014-08-25 22:16:26	▬▬▶	RevBayes (~RevBayes@168.215.217.226) has joined #R
+2014-08-25 22:20:52	◀▬▬	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:22:19	◀▬▬	18VAAOTFJ (~anonymous@pool-108-48-16-227.washdc.fios.verizon.net) has quit (Quit: 18VAAOTFJ)
+2014-08-25 22:22:37	zzing	What is the best way to add a row to a data frame?
+2014-08-25 22:23:07	tdsmith	"don't"
+2014-08-25 22:24:25	zzing	so I should build up my lists, then  construct one?
+2014-08-25 22:24:34	tdsmith	and you should preallocate your lists, too
+2014-08-25 22:25:05	wildintellect	well that's not to say you can't add rows there is a simple way
+2014-08-25 22:25:25	zzing	I am in a position to know the maximum size of rows
+2014-08-25 22:25:37	zzing	Not necessarily what the actual count will be
+2014-08-25 22:25:46	wildintellect	sure then preallocation is likely a good plan
+2014-08-25 22:26:30	tdsmith	my_col = rep(NA, max_n) is a useful pattern
+2014-08-25 22:27:12	◀▬▬	spvensko (~spvensko@unaffiliated/spvensko) has quit (Quit: spvensko)
+2014-08-25 22:27:21	wildintellect	zzing, anyways the answer is rbind
+2014-08-25 22:27:39	wildintellect	if you have 2 data.frames of the exact same structure and want to make them into 1
+2014-08-25 22:28:42	zzing	tdsmith, that could work to my advantage I think with the way my structure is
+2014-08-25 22:28:51	zzing	wildintellect, I  will definitely keep that in mind
+2014-08-25 22:28:54	▬▬▶	phantomgordon (~anonymous@pool-108-48-16-227.washdc.fios.verizon.net) has joined #R
+2014-08-25 22:29:05	zzing	I am curious why this is a don't thing
+2014-08-25 22:29:59	wildintellect	performance
+2014-08-25 22:30:25	wildintellect	it's just best practices to avoid when reasonable
+2014-08-25 22:30:45	wildintellect	R's performance comes from preallocation of memory for lists/vectors of known sizes
+2014-08-25 22:31:10	wildintellect	at least thats what I get from reading about it
+2014-08-25 22:31:27	wildintellect	its also the same reason apply is better than loops
+2014-08-25 22:32:41	tdsmith	you have to reallocate everything every time you add a row so it becomes a o(n^2) operation
+2014-08-25 22:34:55	zzing	I like doubling the preallocation :-)
+2014-08-25 22:35:49	▬▬▶	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #R
+2014-08-25 22:42:51	◀▬▬	alvaro_o (~alvaro@187.210.148.27) has quit (Quit: Ex-Chat)
+2014-08-25 22:45:51	zzing	I have an if statement, if (cond1) return(NA) else if (cond2) return(NA) else return (i)  and I know that cond1 is true, but the debugger shows it is triggering return(i), is there any reason why this would happen?
+2014-08-25 22:47:15	zzing	(specific details: https://gist.github.com/iaefai/fc4ac7244cf6ff65f1a0   line 15 to 20   (note that this is from the coursera course, but the logic itself is done)
+2014-08-25 22:47:16	◀▬▬	feju (~feju@galton.wiwi.hu-berlin.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 22:48:12	◀▬▬	RevBayes (~RevBayes@168.215.217.226) has quit
+2014-08-25 22:49:55	▬▬▶	feju (~feju@galton.wiwi.hu-berlin.de) has joined #R
+2014-08-25 22:49:56	▬▬▶	spvensko (~spvensko@unaffiliated/spvensko) has joined #R
+2014-08-25 22:50:06	◀▬▬	spvensko (~spvensko@unaffiliated/spvensko) has quit (Client Quit)
+2014-08-25 22:55:55	◀▬▬	sleuth- (sleuth@gateway/shell/elitebnc/x-papoeunezxbhnpqe) has quit (Quit: pc)
+2014-08-25 22:59:11	▬▬▶	meinside (uid24933@gateway/web/irccloud.com/x-moorynjphvstzvfi) has joined #R
+2014-08-25 23:08:15	zzing	Updated, https://gist.github.com/iaefai/fc4ac7244cf6ff65f1a0  removed the returns. It seems to work now. Would love a critique of code.
+2014-08-25 23:13:17	▬▬▶	ssd7 (~ssd@host86-139-201-119.range86-139.btcentralplus.com) has joined #R
+2014-08-25 23:14:34	▬▬▶	sleuth- (sleuth@gateway/shell/elitebnc/x-prvjgbowyzhyieow) has joined #R
+2014-08-25 23:15:15	▬▬▶	root3d (~rooted@119.82.82.152) has joined #R
+2014-08-25 23:17:54	◀▬▬	ssd7 (~ssd@host86-139-201-119.range86-139.btcentralplus.com) has quit (Ping timeout: 246 seconds)
+2014-08-25 23:19:35	▬▬▶	bosie (~bosie@78-32-71-88.static.enta.net) has joined #R
+2014-08-25 23:19:35	◀▬▬	bosie (~bosie@78-32-71-88.static.enta.net) has quit (Changing host)
+2014-08-25 23:19:35	▬▬▶	bosie (~bosie@unaffiliated/bosie) has joined #R
+2014-08-25 23:22:22	◀▬▬	feju (~feju@galton.wiwi.hu-berlin.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:23:36	◀▬▬	Rudolf_ (~rodolfo@unaffiliated/rudolf) has quit (Quit: [IRSSI])
+2014-08-25 23:24:15	◀▬▬	bosie (~bosie@unaffiliated/bosie) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:24:50	▬▬▶	feju (~feju@galton.wiwi.hu-berlin.de) has joined #R
+2014-08-25 23:30:34	◀▬▬	sleuth- (sleuth@gateway/shell/elitebnc/x-prvjgbowyzhyieow) has quit (Quit: pc)
+2014-08-25 23:36:03	▬▬▶	JodavidFerreira (~AndChat25@177.180.246.105) has joined #R
+2014-08-25 23:36:34	▬▬▶	sleuth- (sleuth@gateway/shell/elitebnc/x-lmxghfxvthrqtffk) has joined #R
+2014-08-25 23:40:11	JodavidFerreira	Hi
+2014-08-25 23:41:17	◀▬▬	lamneth (~IceChat9@modemcable081.85-80-70.mc.videotron.ca) has quit (Ping timeout: 264 seconds)
+2014-08-25 23:45:58	◀▬▬	JodavidFerreira (~AndChat25@177.180.246.105) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:47:57	◀▬▬	feju (~feju@galton.wiwi.hu-berlin.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:50:17	◀▬▬	root3d (~rooted@119.82.82.152) has quit (Ping timeout: 264 seconds)
+2014-08-25 23:50:44	▬▬▶	feju (~feju@galton.wiwi.hu-berlin.de) has joined #R
+2014-08-25 23:52:16	◀▬▬	nil- (~nil@65.112.10.210) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:53:57	▬▬▶	root3d (~rooted@119.82.82.152) has joined #R
+2014-08-26 00:00:37	--	irc: disconnected from server
+2014-08-26 17:42:59	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-26 17:42:59	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-26 17:42:59	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:23
+2014-08-26 17:42:59	--	Channel #R: 157 nicks (0 ops, 0 voices, 157 normals)
+2014-08-26 17:43:00	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-26 17:43:08	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-26 17:44:53	▬▬▶	Rudolf (~rodolfo@unaffiliated/rudolf) has joined #R
+2014-08-26 17:45:26	◀▬▬	bosie (~bosie@unaffiliated/bosie) has quit (Ping timeout: 264 seconds)
+2014-08-26 17:46:05	▬▬▶	mdim (~user@line-marko.cs.utah.edu) has joined #R
+2014-08-26 17:46:44	▬▬▶	E524afk (~E524afk@111-106.105-92.cust.bluewin.ch) has joined #R
+2014-08-26 17:47:51	◀▬▬	E524afk (~E524afk@111-106.105-92.cust.bluewin.ch) has quit (Quit: leaving)
+2014-08-26 17:48:23	◀▬▬	cryptic0 (~cryptic0@ip094210.uvm.edu) has quit (Quit: Textual IRC Client: http://www.textualapp.com/)
+2014-08-26 17:51:35	▬▬▶	_Atom_ (~jawat@70.114.195.187) has joined #R
+2014-08-26 17:52:56	◀▬▬	FreezingAlt (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:53:06	◀▬▬	oriba (~oriba@e178004215.adsl.alicedsl.de) has quit (Quit: oriba)
+2014-08-26 17:53:50	◀▬▬	umgrosscol (~gcol@grosscol.umdl.umich.edu) has quit (Remote host closed the connection)
+2014-08-26 17:56:07	◀▬▬	designbybeck (~designbyb@x168y165.angelo.edu) has quit (Quit: Leaving)
+2014-08-26 17:59:14	▬▬▶	ghr (~ghr@90.215.161.145) has joined #R
+2014-08-26 18:00:25	◀▬▬	aburgess (~aburgess@host86-133-98-80.range86-133.btcentralplus.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:01:18	▬▬▶	aburgess (~aburgess@host86-133-98-80.range86-133.btcentralplus.com) has joined #R
+2014-08-26 18:02:56	◀▬▬	fro0g (~user@94-137-103-166.customers.ownit.se) has quit (Ping timeout: 250 seconds)
+2014-08-26 18:03:15	◀▬▬	ghr (~ghr@90.215.161.145) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:04:13	◀▬▬	PetrVod (~vodicka@155.52.208.86) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:04:38	▬▬▶	FreezingAlt (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #R
+2014-08-26 18:14:34	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-26 18:14:34	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-26 18:14:34	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:22
+2014-08-26 18:14:34	--	Channel #R: 153 nicks (0 ops, 0 voices, 153 normals)
+2014-08-26 18:14:34	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-26 18:14:43	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-26 18:15:53	▬▬▶	partycoder (~textual@unaffiliated/partycoder) has joined #R
+2014-08-26 18:18:15	◀▬▬	nil- (~nil@65.112.10.210) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:18:37	tubuliferous	Do you guys know the difference between read.table() and read.delim()? 
+2014-08-26 18:19:34	mrflick	just the default sep= paraeter
+2014-08-26 18:19:48	mrflick	table uses white space, delim uses tab
+2014-08-26 18:20:55	◀▬▬	fabian_ (fabian@srv.0x0b.de) has quit (Disconnected by services)
+2014-08-26 18:22:28	tubuliferous	got it
+2014-08-26 18:22:30	tubuliferous	thanks!
+2014-08-26 18:22:42	◀▬▬	Valdo (~supermac@services.le-valdo.org) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:48	◀▬▬	BiGBOi (~michael@174.143.128.166) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	myeagleflies (~myeaglefl@unaffiliated/myeagleflies) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:29	▬▬▶	myeaglef1ies (~myeaglefl@rev-3-79.ingenium.com.pl) has joined #R
+2014-08-26 18:23:42	◀▬▬	heapoverflow (~rclaude@ks22882.kimsufi.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	cjdavies (~cj@cjdavies.org) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:24:15	▬▬▶	BiGBOi_ (~michael@174.143.128.166) has joined #R
+2014-08-26 18:24:43	▬▬▶	Valdo (~supermac@services.le-valdo.org) has joined #R
+2014-08-26 18:25:23	▬▬▶	cjdavies (~cj@cjdavies.org) has joined #R
+2014-08-26 18:25:29	▬▬▶	heapoverflow (~rclaude@ks22882.kimsufi.com) has joined #R
+2014-08-26 18:25:47	--	cjdavies is now known as Guest87423
+2014-08-26 18:27:37	◀▬▬	mdim (~user@line-marko.cs.utah.edu) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:28:23	▬▬▶	blitz_ (~blitz@ec2-50-18-210-161.us-west-1.compute.amazonaws.com) has joined #R
+2014-08-26 18:31:03	▬▬▶	therealnanotube (~nanotube@unaffiliated/nanotube) has joined #R
+2014-08-26 18:32:09	▬▬▶	kd`_ (~kd@wdenet.com) has joined #R
+2014-08-26 18:33:06	▬▬▶	nicedice_ (~nicedice@unaffiliated/nicedice) has joined #R
+2014-08-26 18:33:52	▬▬▶	dawkirst_ (~dawkirst@105-237-143-160.access.mtnbusiness.co.za) has joined #R
+2014-08-26 18:34:12	▬▬▶	isomorph1smes (~ubuntu@ec2-54-243-213-161.compute-1.amazonaws.com) has joined #R
+2014-08-26 18:34:47	▬▬▶	Pickfair_ (~caesium@80-219-212-130.dclient.hispeed.ch) has joined #R
+2014-08-26 18:35:08	◀▬▬	dawkirst_ (~dawkirst@105-237-143-160.access.mtnbusiness.co.za) has quit (Remote host closed the connection)
+2014-08-26 18:36:08	▬▬▶	EluctariLLC_ (~EluctariL@ec2-54-193-166-177.us-west-1.compute.amazonaws.com) has joined #R
+2014-08-26 18:36:15	▬▬▶	Betelgeu1e (~betelgeus@petteriraty.eu) has joined #R
+2014-08-26 18:36:51	◀▬▬	nicedice (~nicedice@unaffiliated/nicedice) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:37:08	▬▬▶	aaaas (~aaas@ool-4a591c4f.dyn.optonline.net) has joined #R
+2014-08-26 18:37:21	▬▬▶	radamsa (henna@hilla.kapsi.fi) has joined #R
+2014-08-26 18:37:28	▬▬▶	dostoyev1ky (~sck@n096h062.rs.de.inter.net) has joined #R
+2014-08-26 18:37:45	▬▬▶	BiGBOi (~michael@174.143.128.166) has joined #R
+2014-08-26 18:37:48	◀▬▬	Glavata_ (debug@l0calhost.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	kilimanjaro_ (~kilimanja@185.21.216.157) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	bps (~bps@heghbat.us) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	radamsa_ (henna@hilla.kapsi.fi) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	kd` (~kd@wdenet.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	blitz (~blitz@trivialand/elite/blitz) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	isomorphismes (~ubuntu@ec2-54-243-213-161.compute-1.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Betelgeuse (~betelgeus@gentoo/developer/Betelgeuse) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	nanotube (~nanotube@unaffiliated/nanotube) has quit (*.net *.split)
+2014-08-26 18:37:50	▬▬▶	faheem___ (~faheem@bulldog.duhs.duke.edu) has joined #R
+2014-08-26 18:37:52	▬▬▶	rlomax_ (~craig@clomax.me.uk) has joined #R
+2014-08-26 18:38:19	▬▬▶	gyaresu_ (~gyaresu@unaffiliated/gyaresu) has joined #R
+2014-08-26 18:38:37	◀▬▬	aaas (~aaas@ool-4a591c4f.dyn.optonline.net) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:38:44	--	aaaas is now known as aaas
+2014-08-26 18:38:52	◀▬▬	Niebuhr (~p@141.99.60.148) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:40:13	▬▬▶	nicedice__ (~nicedice@unaffiliated/nicedice) has joined #R
+2014-08-26 18:40:40	◀▬▬	coolio123 (~Bill@c-76-31-221-215.hsd1.tx.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:41:04	▬▬▶	coolio123 (~Bill@c-76-31-221-215.hsd1.tx.comcast.net) has joined #R
+2014-08-26 18:41:35	▬▬▶	friedrich (friedrich@perplexa.be) has joined #R
+2014-08-26 18:42:11	◀▬▬	akkad (akkad@dns.mauthesis.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	dziga (sid11210@gateway/web/irccloud.com/x-tohgkghupbgyavdn) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	tdsmith (~tim@tds.xyz) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:14	▬▬▶	efm_` (~efm@vpn.tummy.com) has joined #R
+2014-08-28 17:27:51	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-28 17:27:51	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-28 17:27:51	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:23
+2014-08-28 17:27:51	--	Channel #R: 155 nicks (0 ops, 0 voices, 155 normals)
+2014-08-28 17:27:56	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-28 17:28:00	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-28 17:29:09	▬▬▶	PetrVod (~vodicka@155.52.208.86) has joined #R
+2014-08-28 17:32:25	◀▬▬	nil- (~nil@65.112.10.210) has quit (Quit: Lost terminal)
+2014-08-28 17:33:04	▬▬▶	nil- (~nil@65.112.10.210) has joined #R
+2014-08-28 17:33:06	▬▬▶	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #R
+2014-08-28 17:33:34	◀▬▬	brianpeck (~brianpeck@2610:130:101:200:8557:75e9:fd9b:cb26) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:34:04	--	irc: disconnected from server
+2014-08-28 17:34:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-28 17:34:19	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-28 17:34:19	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:23
+2014-08-28 17:34:19	--	Channel #R: 156 nicks (0 ops, 0 voices, 156 normals)
+2014-08-28 17:34:19	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-28 17:34:28	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-28 17:39:45	▬▬▶	RudolphStrange (~RudolphSt@70.42.157.27) has joined #R
+2014-08-28 17:39:49	▬▬▶	ghr (~ghr@2.218.156.108) has joined #R
+2014-08-28 17:43:22	▬▬▶	RudolphS_ (~RudolphSt@69.63.185.56) has joined #R
+2014-08-28 17:43:37	--	irc: disconnected from server
+2014-08-28 17:51:58	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-28 17:51:58	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-28 17:51:58	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:22
+2014-08-28 17:51:58	--	Channel #R: 156 nicks (0 ops, 0 voices, 156 normals)
+2014-08-28 17:51:58	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-28 17:52:08	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-28 17:52:19	◀▬▬	dassouki (~ahmed@fctnnbsc30w-156034090042.dhcp-dynamic.FibreOp.nb.bellaliant.net) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:55:08	▬▬▶	FasTTo (~FasTTo@bl17-69-11.dsl.telepac.pt) has joined #R
+2014-08-28 17:58:10	◀▬▬	zzing (~zzing@hpc.uwindsor.ca) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-28 17:58:36	◀▬▬	ferros (~frrs@89-76-97-49.dynamic.chello.pl) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:02:30	◀▬▬	caipora (~weechat@gateway/tor-sasl/caipora) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:09:06	pillows	quit
+2014-08-28 18:09:10	◀▬▬	pillows (~mokas@c-50-136-137-135.hsd1.ca.comcast.net) has quit (Quit: leaving)
+2014-08-28 18:12:17	◀▬▬	RudolphStrange (~RudolphSt@69.63.185.56) has quit (Ping timeout: 255 seconds)
+2014-08-28 18:13:04	▬▬▶	caipora (~weechat@gateway/tor-sasl/caipora) has joined #R
+2014-08-28 18:14:10	▬▬▶	spvensko (~spvensko@unaffiliated/spvensko) has joined #R
+2014-08-28 18:16:04	▬▬▶	RudolphStrange (~RudolphSt@69.63.185.56) has joined #R
+2014-08-28 18:22:21	◀▬▬	phantomgordon_ (~anonymous@pool-108-48-16-227.washdc.fios.verizon.net) has quit (Quit: phantomgordon_)
+2014-08-28 18:23:21	--	irc: disconnected from server
+2014-08-28 23:49:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-28 23:49:19	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-28 23:49:19	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:22
+2014-08-28 23:49:19	--	Channel #R: 144 nicks (0 ops, 0 voices, 144 normals)
+2014-08-28 23:49:19	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-28 23:49:28	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-28 23:50:06	▬▬▶	seonghak (~seonghak@183.98.30.10) has joined #R
+2014-08-28 23:51:26	▬▬▶	cgs_bob (~bob@c-98-208-9-190.hsd1.ca.comcast.net) has joined #R
+2014-08-28 23:55:55	◀▬▬	alvaro_o_ (~alvaro@187.210.148.27) has quit (Quit: Ex-Chat)
+2014-08-29 00:00:06	◀▬▬	PetrVod (~vodicka@c-50-187-43-164.hsd1.ma.comcast.net) has quit (Quit: Lost terminal)
+2014-08-29 00:00:21	◀▬▬	seonghak (~seonghak@183.98.30.10) has quit (Remote host closed the connection)
+2014-08-29 00:00:28	▬▬▶	PetrVod (~vodicka@c-50-187-43-164.hsd1.ma.comcast.net) has joined #R
+2014-08-29 00:02:35	◀▬▬	leptonix (~leptonix@ec2-79-125-24-107.eu-west-1.compute.amazonaws.com) has quit (Ping timeout: 240 seconds)
+2014-08-29 00:03:45	▬▬▶	leptonix (~leptonix@ec2-79-125-24-107.eu-west-1.compute.amazonaws.com) has joined #R
+2014-08-29 00:03:52	◀▬▬	shirkey (~Thunderbi@119.18.157.98) has quit (Quit: shirkey)
+2014-08-29 00:05:31	▬▬▶	shirkey (~Thunderbi@119.18.157.98) has joined #R
+2014-08-29 00:08:30	◀▬▬	caipora (~weechat@gateway/tor-sasl/caipora) has quit (Ping timeout: 264 seconds)
+2014-08-29 00:10:16	--	irc: disconnected from server
+2014-08-29 00:10:35	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-29 00:10:35	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-29 00:10:35	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:22
+2014-08-29 00:10:35	--	Channel #R: 143 nicks (0 ops, 0 voices, 143 normals)
+2014-08-29 00:10:35	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-29 00:10:44	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-29 18:36:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #R
+2014-08-29 18:36:16	--	Topic for #R is "Welcome the R Project for Statistical Computing. Be patient for answers. Don't paste to the channel, use http://scsys.co.uk:8002/ | Latest version at http://cran.r-project.org | Learning resources: http://adv-r.had.co.nz/Introduction.html & http://www.r-fiddle.org/ . Package ratings: http://crantastic.org/ & http://cran.r-project.org/web/views/"
+2014-08-29 18:36:16	--	Topic set by dondelelcaro (~don@hemlock.ucr.edu) on Sat, 16 Aug 2014 16:38:23
+2014-08-29 18:36:16	--	Channel #R: 138 nicks (0 ops, 0 voices, 138 normals)
+2014-08-29 18:36:16	--	PvNotice(ChanServ): Welcome to #R -- If you ask a question, please wait for an answer; don't /quit or /part -- Read /topic for more information
+2014-08-29 18:36:25	--	Channel created on Sun, 26 Nov 2006 01:42:59
+2014-08-29 18:40:50	▬▬▶	bosie (~bosie@78-32-71-88.static.enta.net) has joined #R
+2014-08-29 18:40:50	◀▬▬	bosie (~bosie@78-32-71-88.static.enta.net) has quit (Changing host)
+2014-08-29 18:40:50	▬▬▶	bosie (~bosie@unaffiliated/bosie) has joined #R
+2014-08-29 18:42:13	▬▬▶	PetrVod (~vodicka@c-50-187-43-164.hsd1.ma.comcast.net) has joined #R
+2014-08-29 18:43:44	◀▬▬	DrIDK (~quassel@brc29-3-88-189-64-212.fbx.proxad.net) has quit (Remote host closed the connection)
+2014-08-29 18:45:34	◀▬▬	bosie (~bosie@unaffiliated/bosie) has quit (Ping timeout: 244 seconds)
+2014-08-29 18:46:23	▬▬▶	B0r3dw15dom (B0r3dw15do@gateway/shell/panicbnc/x-zgzkgvrtkxeektdy) has joined #R

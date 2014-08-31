@@ -1,0 +1,720 @@
+2014-08-25 05:47:41	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #archlinux
+2014-08-25 05:47:41	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <☃ > Remember, Arch doesn’t like being neglected <❤ > Due to spam you must be identified with NickServ <+> New xorg-server means new problems for some; read the news. <http://goo.gl/XXLKxJ> <+> Feel free to join the Arch Linux devroom @Froscon"
+2014-08-25 05:47:41	--	Topic set by jelle (~jelle@archlinux/trusteduser/jelly1) on Fri, 22 Aug 2014 13:56:27
+2014-08-25 05:47:41	--	Channel #archlinux: 1209 nicks (0 ops, 0 voices, 1209 normals)
+2014-08-25 05:47:42	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2014-08-25 05:47:44	cache-return	Earnestea: The issue is that acpi_video0 has disappeared from /sys/class/backlight, and the intel_backlight stuff there has no function.  One of those kernel lines gets the folder back, but changing the values doesn't do anything.
+2014-08-25 05:47:46	dagnachew	hi all
+2014-08-25 05:47:49	gulzar	kelnoky: I have no idea.. about any tiling WM. so any recommendation?
+2014-08-25 05:47:53	gulzar	dagnachew: hi
+2014-08-25 05:47:55	dagnachew	q!
+2014-08-25 05:48:02	▬▬▶	iqualfragile (~iqualfrag@unaffiliated/iqualfragile) has joined #archlinux
+2014-08-25 05:48:15	kelnoky	well...I strongly suggest Xmonad :D but you said you don't like bsd license, so...
+2014-08-25 05:48:16	beest	i recommend that maybe you're a little too lazy to be an ideologue about software licenses
+2014-08-25 05:48:18	dagnachew	gulzar: how are you
+2014-08-25 05:48:54	gulzar	beest: The terms..of BSD are not open.. they are horrible(personaly, please no war)
+2014-08-25 05:49:15	gulzar	dagnachew: I am great. Hows you? which DE? User since?
+2014-08-25 05:49:23	kelnoky	gulzar: many people like herbstlufwm, subtle or spectrwm
+2014-08-25 05:49:33	kelnoky	xmonad and i3 are the most popular I think, but you wouldnt want those
+2014-08-25 05:49:35	--	j3madux is now known as jemadux
+2014-08-25 05:49:43	beest	gulzar: and that's your right, which also means the onus is upon you to find alternatives :)
+2014-08-25 05:49:44	dagnachew	gulzar: i3 since 3 years or more
+2014-08-25 05:49:46	gulzar	kelnoky: how about awesome?
+2014-08-25 05:49:51	kelnoky	or awesome, yeh
+2014-08-25 05:49:55	gulzar	dagnachew: Ooo nice
+2014-08-25 05:50:02	dagnachew	yep
+2014-08-25 05:50:02	Feikki	how about bspwm?
+2014-08-25 05:50:27	▬▬▶	grungier (~bismilah@li629-190.members.linode.com) has joined #archlinux
+2014-08-25 05:50:29	Feikki	/r/unixporn
+2014-08-25 05:50:30	kelnoky	right, bspwm also gets some love here and there
+2014-08-25 05:50:49	▬▬▶	C5OK5Y (~C5OK5Y@ip-78-45-15-91.net.upcbroadband.cz) has joined #archlinux
+2014-08-25 05:50:54	dagnachew	if i3 could get a better bar it will be awesome
+2014-08-25 05:51:02	beest	bspwm is bsd as well iirc
+2014-08-25 05:51:09	kelnoky	dagnachew: can't you just use dzen2?
+2014-08-25 05:51:26	gulzar	beest: awesomeis GPL, any other your recommendation?
+2014-08-25 05:51:33	dagnachew	kelnoky: I use to use conky but it has issue with json I think
+2014-08-25 05:51:51	▬▬▶	dbanck (uid19730@gateway/web/irccloud.com/x-jttkfgovtsjlwgip) has joined #archlinux
+2014-08-25 05:51:51	Feikki	why not bar?
+2014-08-25 05:51:56	Feikki	bar is the best bar imo
+2014-08-25 05:52:12	ruan	foo is best bar
+2014-08-25 05:52:18	▬▬▶	noaer (~xoaer@95.56.89.198) has joined #archlinux
+2014-08-25 05:52:25	◀▬▬	arojas (~antonio@85.136.152.17.dyn.user.ono.com) has quit (Remote host closed the connection)
+2014-08-25 05:52:29	▬▬▶	jottr (~jottr@unaffiliated/jottr) has joined #archlinux
+2014-08-25 05:52:32	Feikki	just open a terminal with height of 1
+2014-08-25 05:52:39	▬▬▶	stamina (~stamina@83.128.211.177) has joined #archlinux
+2014-08-25 05:52:43	Feikki	no need for fancy bars
+2014-08-25 05:52:52	noaer	Hello my friends, why can't I connect to any channel using weechat?
+2014-08-25 05:52:57	Feikki	!yt viisi laukausta
+2014-08-25 05:52:58	phrik	Feikki: Stam1na - Viisi laukausta päähän - YouTube: <http://www.youtube.com/watch?v=CRh-Q0vq3nU>
+2014-08-25 05:53:03	▬▬▶	krz (~foo@unaffiliated/krz) has joined #archlinux
+2014-08-25 05:53:13	kelnoky	noaer: good question. what is your weechat server buffer output?
+2014-08-25 05:53:37	noaer	one second, let me check it
+2014-08-25 05:53:37	▬▬▶	arojas (~antonio@85.136.152.17.dyn.user.ono.com) has joined #archlinux
+2014-08-25 05:53:40	◀▬▬	Thermi (~Thermi@unaffiliated/thermi) has quit (Quit: Meet your opposition - Profane and disciplined - Take back your pride - With a pounding hammer)
+2014-08-25 05:53:47	◀▬▬	sledgehammer (~sledgeham@unaffiliated/sledgehammer) has quit (Remote host closed the connection)
+2014-08-25 05:54:01	krz	in vim, it cant seem to display this unicode character. as seen in screenshot: http://imagebin.ca/v/1Y1wJrjKeAwb
+2014-08-25 05:54:02	phrik	Title: Imagebin - Somewhere to Store Random Things (at imagebin.ca)
+2014-08-25 05:54:07	krz	what do i need to install?
+2014-08-25 05:54:34	▬▬▶	Shinryuu (~Shinryuu@85-76-78-254-nat.elisa-mobile.fi) has joined #archlinux
+2014-08-25 05:54:37	noaer	kelnoky, should I run '/server' in weechat?
+2014-08-25 05:54:45	▬▬▶	sledgehammer (~sledgeham@unaffiliated/sledgehammer) has joined #archlinux
+2014-08-25 05:54:53	noaer	kelnoky, if yes then 'All servers: freenode'
+2014-08-25 05:55:03	kelnoky	noaer: is this your first time trying weechat?
+2014-08-25 05:55:21	Soul_Est	cache-return: use acpi_osi=Linux
+2014-08-25 05:55:31	◀▬▬	Nahra (~user@unaffiliated/nahra) has quit (Remote host closed the connection)
+2014-08-25 05:55:35	Feikki	krz: what is that character?
+2014-08-25 05:55:41	--	zz_Determined_P is now known as Determined_P
+2014-08-25 05:55:42	Trieste	Hi! Some time ago, probably during an update, my font rendering broke and now some select fonts are rendered "jagged" - any idea what could this be caused by? https://imgur.com/GLAYUxT.png http://imgur.com/lAsSpPj.png
+2014-08-25 05:55:44	Feikki	does your font have that character?
+2014-08-25 05:55:56	Feikki	can your terminal display it?
+2014-08-25 05:55:58	noaer	kelnoky, nope, I used it for 5 moths. I just configured plugins and typing /msg nickserv identify
+2014-08-25 05:56:04	noaer	kelnoky, that's all my experience
+2014-08-25 05:56:11	--	briemens is now known as zz_briemens
+2014-08-25 05:56:26	cache-return	It sounds like the problem, but that line suggested doesn't change behavior.  Soul_Est see ^^. It has no effect.
+2014-08-25 05:56:32	kelnoky	noaer: and now you are connected to freenode but can't join any channels?
+2014-08-25 05:56:32	noaer	kelnoky, it worked good last time I used it
+2014-08-25 05:56:53	kelnoky	go to the core/server buffer and press ctrl+x until it shows freenode as its server
+2014-08-25 05:56:57	Soul_Est	cache-return: also what model is your thinkpad. you never said what it was. i have a x200s and it works there.
+2014-08-25 05:56:57	kelnoky	then you should be able to /join
+2014-08-25 05:57:10	▬▬▶	Nahra (~user@unaffiliated/nahra) has joined #archlinux
+2014-08-25 05:57:15	cache-return	Soul_Est: thinkpad yoga
+2014-08-25 05:57:17	Namarrgon	Trieste: do you have any of the xorg-fonts installed?
+2014-08-25 05:57:29	◀▬▬	sou_ (~oy@124.133.43.132) has quit (Remote host closed the connection)
+2014-08-25 05:57:35	cache-return	zyx has suggested that this may be related https://lkml.org/lkml/2014/7/14/329
+2014-08-25 05:57:36	▬▬▶	luuuciano (~luuuciano@unaffiliated/luuuciano) has joined #archlinux
+2014-08-25 05:57:38	phrik	Title: LKML: Hans de Goede: Re: [BISECTED 3.16-rc REGREGRESSION] backlight control stopped working (at lkml.org)
+2014-08-25 05:58:01	--	irc: disconnected from server
+2014-08-25 19:16:30	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #archlinux
+2014-08-25 19:16:30	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <☃ > Remember, Arch doesn’t like being neglected <❤ > Due to spam you must be identified with NickServ <+> New xorg-server means new problems for some; read the news. <http://goo.gl/XXLKxJ> <+> Feel free to join the Arch Linux devroom @Froscon"
+2014-08-25 19:16:30	--	Topic set by jelle (~jelle@archlinux/trusteduser/jelly1) on Fri, 22 Aug 2014 13:56:27
+2014-08-25 19:16:31	--	Channel #archlinux: 1181 nicks (0 ops, 0 voices, 1181 normals)
+2014-08-25 19:16:31	--	Notice(weber.freenode.net): [freenode-info] if you're at a conference and other people are having trouble connecting, please mention it to staff: http://freenode.net/faq.shtml#gettinghelp
+2014-08-25 19:16:32	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2014-08-25 19:16:37	dagnachew	hi all
+2014-08-25 19:16:53	uberushaximus	because you can only do one thing at a time out of the box, unless you specify ports by hand
+2014-08-25 19:17:02	switchy	ahh
+2014-08-25 19:17:05	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-gwcscsnmldknletv) has joined #archlinux
+2014-08-25 19:17:10	▬▬▶	Internet13 (~chatzilla@cpc15-croy20-2-0-cust382.croy.cable.virginm.net) has joined #archlinux
+2014-08-25 19:17:17	◀▬▬	falcon` (Falcon@hell.kolosowscy.pl) has quit (Quit: I'll be back!)
+2014-08-25 19:17:22	dagnachew	we can't automaticaly join #archlinux ? we need to identify ?
+2014-08-25 19:17:33	▬▬▶	V^V (~kushrkstr@187.245.247.213) has joined #archlinux
+2014-08-25 19:17:41	◀▬▬	Rehnquist (~reni@79.119.59.121) has quit (Remote host closed the connection)
+2014-08-25 19:17:50	◀▬▬	jottr (~jottr@unaffiliated/jottr) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:17:57	◀▬▬	amunak (amunak@owner.amunak.net) has quit (Remote host closed the connection)
+2014-08-25 19:18:31	◀▬▬	kelnoky (~shao@95.91.227.83) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:18:34	Alcoholicleaf	hey, I just installed kdebase on my old desktop and i was wondering if someone knows what i can do about the crappy tooltip animation (while hovering from one icon to another in the settings menu) My desktop has an intel video card in it (3rd generation i believe) and i'm not sure about opengl / opengl support for my card
+2014-08-25 19:18:47	V^V	any idea how to completely disable akonadi from starting when I boot KDE?
+2014-08-25 19:18:50	Glitches	dagnachew: You can configure your client to identify before attempting to join channels
+2014-08-25 19:19:10	Earnestly	dagnachew: SASL
+2014-08-25 19:19:13	V^V	I have kalarm off, no kdepim app on start and the clock doesn't show events
+2014-08-25 19:19:19	wlhlm	dagnachew: You can use SASL.
+2014-08-25 19:19:44	▬▬▶	dude051 (~dude051@cpe-66-69-62-115.satx.res.rr.com) has joined #archlinux
+2014-08-25 19:19:48	wlhlm	dagnachew: https://freenode.net/sasl/
+2014-08-25 19:19:49	phrik	Title: Connecting with SASL (at freenode.net)
+2014-08-25 19:20:07	▬▬▶	bones (~yasha@unaffiliated/yasha) has joined #archlinux
+2014-08-25 19:20:08	break19	V^V: rename the executable, link /bin/true in its place. 
+2014-08-25 19:20:15	◀▬▬	r3load (~rld@ptr-91-87-15-156.dyn.mobistar.be) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:20:57	◀▬▬	mueslo (~mueslo@p54B434E4.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-08-25 19:21:05	V^V	break19: well, yes, that's a hack thanks... I'd like something a little more orthodox ;)
+2014-08-25 19:21:17	▬▬▶	rmilan (rmilan@star.crys.hu) has joined #archlinux
+2014-08-25 19:21:23	break19	Whatever works :) 
+2014-08-25 19:21:44	holomorph	Earnestly: seems to work http://sprunge.us/HfdN
+2014-08-25 19:21:45	phrik	Title: \n' "${0##*/}" } pdf_version() { # use `file' to check that $1 is a pdf and has a version we care about local mime='application/pdf$' local ver='version (1\.[4-7])$' if [[ ! "$(file --mime-type "$1")" =~ $mime ]]; then printf >&2 "%s is not a pdf\n" "$1" return 1 fi if [[ "$(file "$1")" =~ $ver ]]; then printf '%s' "${BASH_REMATCH[1]}" fi } run_ghostscript() { local pdf="$1" local version="$2" local title="$3" local gs_flags=( -dBATCH -dNOPAUS
+2014-08-25 19:21:49	holomorph	uh
+2014-08-25 19:21:49	◀▬▬	teraflops (~teraflop@77.225.225.204) has quit (Quit: WeeChat 1.0)
+2014-08-25 19:21:51	Earnestly	loltitle
+2014-08-25 19:21:59	holomorph	thanks sprunge…
+2014-08-25 19:22:09	Earnestly	Is that sprunge though?
+2014-08-25 19:22:11	◀▬▬	zanny (~zanny@64.9.41.243) has quit (Quit: Konversation terminated!)
+2014-08-25 19:22:29	--	briemens is now known as zz_briemens
+2014-08-25 19:22:30	holomorph	http://ix.io/e1X
+2014-08-25 19:22:31	phrik	Title: \n' "${0##*/}" } pdf_version() { # use `file' to check that $1 is a pdf and has a version we care about local mime='application/pdf$' local ver='version (1\.[4-7])$' if [[ ! "$(file --mime-type "$1")" =~ $mime ]]; then printf >&2 "%s is not a pdf\n" "$1" return 1 fi if [[ "$(file "$1")" =~ $ver ]]; then printf '%s' "${BASH_REMATCH[1]}" fi } run_ghostscript() { local pdf="$1" local version="$2" local title="$3" local gs_flags=( -dBATCH -dNOPAUS
+2014-08-25 19:22:35	holomorph	lol
+2014-08-25 19:22:35	Earnestly	That's supy
+2014-08-25 19:22:48	Earnestly	!ignore http://ix.io/e1X
+2014-08-25 19:22:50	wlhlm	You never know when supy prints a title…
+2014-08-25 19:22:53	◀▬▬	eZ_ImFoReaL (~tyler@CPEac220b331378-CMbcc8100066bc.cpe.net.cable.rogers.com) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:22:54	Earnestly	There's a solution
+2014-08-25 19:23:06	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-gwcscsnmldknletv) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:23:58	Earnestly	holomorph: How do you extract the title later?
+2014-08-25 19:24:01	◀▬▬	krosos (~glitzerpr@unaffiliated/krosos) has quit (Ping timeout: 272 seconds)
+2014-08-25 19:24:09	▬▬▶	krosos (~glitzerpr@unaffiliated/krosos) has joined #archlinux
+2014-08-25 19:24:30	holomorph	Earnestly: good question… imagemagick? :P
+2014-08-25 19:24:37	◀▬▬	lindenk (~lindenk@c-75-68-57-105.hsd1.nh.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 19:24:51	Jupelius	What's the !ignore for?
+2014-08-25 19:25:05	holomorph	Jupelius: so phrik doesn't print a url title
+2014-08-25 19:25:13	◀▬▬	sudokode (~ponies@unaffiliated/sudokode) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:25:43	▬▬▶	trickyhero (~starz@c-98-224-240-254.hsd1.mi.comcast.net) has joined #archlinux
+2014-08-25 19:25:46	◀▬▬	cotko (~ahmed@89.142.55.89) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:26:05	Earnestly	holomorph: Does it actually store the title in plain text at the top?
+2014-08-25 19:26:14	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:26:21	holomorph	Earnestly: no, but it stores it in plaintext… somewhere
+2014-08-25 19:26:23	--	oso96_2000 is now known as oso|away
+2014-08-25 19:26:39	◀▬▬	dunkel2 (~dunkel2@189.158.46.44) has quit (Quit: dunkel2)
+2014-08-25 19:26:40	◀▬▬	notobvious (~notobviou@85.106.116.25) has quit (Quit: notobvious)
+2014-08-25 19:26:48	Earnestly	holomorph: It varies for different pdfs :<
+2014-08-25 19:26:56	holomorph	and i don't know what makes THAT /Title special, because there can be other /Title fields
+2014-08-25 19:26:57	Earnestly	holomorph: Do a diff on a small pdf
+2014-08-25 19:27:04	holomorph	or there can be no titles at all :D
+2014-08-25 19:27:05	▬▬▶	eZ_ImFoReaL (~tyler@CPEac220b331378-CMbcc8100066bc.cpe.net.cable.rogers.com) has joined #archlinux
+2014-08-25 19:27:15	▬▬▶	lindenk (~lindenk@c-75-68-57-105.hsd1.nh.comcast.net) has joined #archlinux
+2014-08-25 19:27:16	Earnestly	Yeah, this is why I gave up
+2014-08-25 19:27:25	▬▬▶	liudas (~liudas@unaffiliated/liudas) has joined #archlinux
+2014-08-25 19:27:29	◀▬▬	duczen (~duczen@unaffiliated/duczen) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:27:37	◀▬▬	Jazzdude (6dc03c5d@gateway/web/freenode/ip.109.192.60.93) has quit (Ping timeout: 246 seconds)
+2014-08-25 19:27:50	Earnestly	But if gs can insert them in a somehow known place or something consistent, it can beused
+2014-08-25 19:28:14	◀▬▬	dude051 (~dude051@cpe-66-69-62-115.satx.res.rr.com) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 19:28:30	◀▬▬	BossKonaSegwaY (~Michael@72.49.136.197) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:28:41	◀▬▬	kotto (~kotto@200-96-142-58.cbace700.dsl.brasiltelecom.net.br) has quit (Quit: WeeChat 1.0-rc2)
+2014-08-25 19:28:55	▬▬▶	crs (~crs@107-197-156-53.lightspeed.rlghnc.sbcglobal.net) has joined #archlinux
+2014-08-25 19:28:57	trickyhero	how do I know which one of my device interfaces is ethernet?
+2014-08-25 19:29:31	▬▬▶	cmiles74 (~miles@24-179-125-156.dhcp.oxfr.ma.charter.com) has joined #archlinux
+2014-08-25 19:29:36	holomorph	Earnestly: ghostscript is probably consistent, i think the problem is that every other pdf you get from wherever is written by who-knows-what… and yeah… the diff is not helpful :D the pdf is totally different now
+2014-08-25 19:29:45	Earnestly	trickyhero: It's prefixed with 'en'
+2014-08-25 19:29:57	trickyhero	that helps a lot!! thx
+2014-08-25 19:29:57	Earnestly	trickyhero: For 'e'ther'n'et like the old unix used to do
+2014-08-25 19:29:59	holomorph	maybe if i write it with gs once without changing the title, then write again…
+2014-08-25 19:30:21	▬▬▶	ZaphodBeeblebr0x (uid41269@gateway/web/irccloud.com/x-vpnleicamillnpyf) has joined #archlinux
+2014-08-25 19:30:28	◀▬▬	lvkm (~lvkm@gateway/tor-sasl/lvkm) has quit (Quit: WeeChat 1.1-dev)
+2014-08-25 19:30:36	Earnestly	holomorph: 'strings foo_pdf | grep ..'?
+2014-08-25 19:30:44	wlhlm	trickyhero: also 'eth'. You probably can check it with `ethtool`
+2014-08-25 19:30:46	▬▬▶	lvkm (~lvkm@gateway/tor-sasl/lvkm) has joined #archlinux
+2014-08-25 19:31:28	▬▬▶	havssjal1 (~absynthe_@unaffiliated/absynthe-faery/x-6447756) has joined #archlinux
+2014-08-25 19:31:37	◀▬▬	DonOregano (~lars@c-4826e055.025-486-7570702.cust.bredbandsbolaget.se) has quit (Ping timeout: 272 seconds)
+2014-08-25 19:32:13	◀▬▬	Primordus (~Primordus@d54C00A20.access.telenet.be) has quit (Quit: WeeChat 1.0)
+2014-08-25 19:32:35	▬▬▶	falcon` (Falcon@hell.kolosowscy.pl) has joined #archlinux
+2014-08-25 19:32:45	--	forks_ is now known as forks
+2014-08-25 19:33:34	◀▬▬	mlq (~mlq@unaffiliated/mlq) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:33:34	holomorph	Earnestly: ok… it changes one /Title field
+2014-08-25 19:34:14	▬▬▶	fstd_ (~fstd@unaffiliated/fisted) has joined #archlinux
+2014-08-25 19:34:18	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Read error: Connection reset by peer)
+2014-08-25 19:34:21	◀▬▬	tanath (~tanath@gateway/tor-sasl/tanath) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:34:27	◀▬▬	aborazmeh (~aborazmeh@unaffiliated/aborazmeh) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:34:30	holomorph	and then there's some xml in here now >.>
+2014-08-25 19:34:38	--	fstd_ is now known as fstd
+2014-08-25 19:34:51	▬▬▶	caveat- (hoax@2a01:4f8:191:9111:30::10) has joined #archlinux
+2014-08-25 19:34:55	▬▬▶	zanny (~zanny@64.9.41.243) has joined #archlinux
+2014-08-25 19:35:07	◀▬▬	lvkm (~lvkm@gateway/tor-sasl/lvkm) has quit (Client Quit)
+2014-08-25 19:35:19	▬▬▶	lvkm (~lvkm@gateway/tor-sasl/lvkm) has joined #archlinux
+2014-08-25 19:35:22	wlhlm	PDF is pretty crazy.
+2014-08-25 19:35:37	Earnestly	PDF is a "container" format, it can contain basically anything
+2014-08-25 19:35:38	◀▬▬	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has quit (Quit: Leaving)
+2014-08-25 19:35:39	holomorph	oh nvm
+2014-08-25 19:35:40	Earnestly	These days
+2014-08-25 19:35:41	holomorph	!ignore http://sprunge.us/BgbF?diff Earnestly 
+2014-08-25 19:35:52	▬▬▶	BossKonaSegwaY (~Michael@72.49.136.197) has joined #archlinux
+2014-08-25 19:35:52	▬▬▶	tanath (~tanath@gateway/tor-sasl/tanath) has joined #archlinux
+2014-08-25 19:35:59	▬▬▶	ratcheer (~ratcheer@unaffiliated/ratcheer) has joined #archlinux
+2014-08-25 19:36:08	▬▬▶	mlq (~mlq@unaffiliated/mlq) has joined #archlinux
+2014-08-25 19:36:35	Earnestly	holomorph: so s : /Title ?(\(.*\))>>endobj : \1 :
+2014-08-25 19:37:11	◀▬▬	wlhlm (~helm@ws.port0.org) has quit (Read error: Connection reset by peer)
+2014-08-25 19:37:15	holomorph	maybe
+2014-08-25 19:37:57	◀▬▬	Balzy (~Balzy@host3-164-dynamic.15-87-r.retail.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2014-08-25 19:38:23	▬▬▶	sudokode (~ponies@unaffiliated/sudokode) has joined #archlinux
+2014-08-25 19:38:36	◀▬▬	erkin (~PinkiePie@unaffiliated/erkin) has quit (Quit: Ouch! Got SIGABRT, dying...)
+2014-08-25 19:39:43	switchy	hand PDF manipulation is brave ;)
+2014-08-25 19:40:41	◀▬▬	nautic2 (~nautic@host31-50-163-149.range31-50.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2014-08-25 19:41:11	holomorph	i managed to remove watermarks from a pdf that way… that was satisfying
+2014-08-25 19:42:01	 *	sudokode drools
+2014-08-25 19:42:03	switchy	heh, yeah. it's an interesting format when you get your head around how it works
+2014-08-25 19:42:05	Earnestly	holomorph: sed -n 's/\/Title(\(.*\))>>endobj/\1/p' :P
+2014-08-25 19:42:06	sudokode	this router is pretty sweet
+2014-08-25 19:42:30	Earnestly	holomorph: Does gs have an option to remove watermarks or how did you do that?
+2014-08-25 19:42:59	▬▬▶	aborazmeh (~aborazmeh@unaffiliated/aborazmeh) has joined #archlinux
+2014-08-25 19:43:01	◀▬▬	Jesin-phone (~Jesin@Dyn141060.cc.lehigh.edu) has quit (Quit: Bye)
+2014-08-25 19:43:02	◀▬▬	poljar (~poljar@89-172-0-226.adsl.net.t-com.hr) has quit (Quit: WeeChat 0.4.3)
+2014-08-25 19:43:16	holomorph	Earnestly: it was a hyperlink on every page of a pdf (lots of places do this and it's annoying D:<)
+2014-08-25 19:43:24	switchy	Earnestly, I remember decompressing streams and taking out the command to draw the watermarks once
+2014-08-25 19:43:26	Earnestly	How did you remove it?
+2014-08-25 19:43:39	◀▬▬	ariscop (~Phase4@ppp118-209-29-48.lns20.mel4.internode.on.net) has quit (Ping timeout: 252 seconds)
+2014-08-25 19:43:59	holomorph	Earnestly: looked for the offending text, defined an editor macro to delete the obj/endobj or stream/endstream surrounding it, then ran the pdf through ghostscript to fix errors (because arbitrarily deleting things introduces errors)
+2014-08-25 19:44:06	Earnestly	Ah
+2014-08-25 19:44:12	--	tyil is now known as tyil|afk
+2014-08-25 19:44:15	◀▬▬	earsplit (~sunn@72-48-99-113.dyn.grandenetworks.net) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:44:21	Earnestly	That is handy, good
+2014-08-25 19:44:29	Earnestly	gs can fix things up nicely
+2014-08-25 19:44:37	holomorph	well, i guess they were technically warnings, but yeah. i was glad it worked
+2014-08-25 19:44:46	switchy	I guess gs is just fixing up the xref table for that?
+2014-08-25 19:44:52	holomorph	yes i believe so
+2014-08-25 19:44:59	Jupelius	What's Ghostscript?
+2014-08-25 19:45:06	holomorph	!w ghostscript
+2014-08-25 19:45:08	phrik	holomorph: Ghostscript - Wikipedia, the free encyclopedia: <http://en.wikipedia.org/wiki/Ghostscript>
+2014-08-25 19:45:12	--	tyil|afk is now known as tyil
+2014-08-25 19:45:21	▬▬▶	DonOregano (~lars@c-4826e055.025-486-7570702.cust.bredbandsbolaget.se) has joined #archlinux
+2014-08-25 19:45:40	holomorph	"a thing that does stuff to PDFs"  :P
+2014-08-25 19:46:06	▬▬▶	tommy__ (~tommy@dhcp-089-098-085-057.chello.nl) has joined #archlinux
+2014-08-25 19:46:15	▬▬▶	rekahsoft (~rekahsoft@135-23-121-235.cpe.pppoe.ca) has joined #archlinux
+2014-08-25 19:46:16	◀▬▬	lindenk (~lindenk@c-75-68-57-105.hsd1.nh.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 19:46:18	halosghost	yes
+2014-08-25 19:47:16	▬▬▶	lindenk (~lindenk@c-75-68-57-105.hsd1.nh.comcast.net) has joined #archlinux
+2014-08-25 19:47:18	◀▬▬	Benzi-Junior (~smuxi@31-209-159-13.dsl.dynamic.simnet.is) has quit (Remote host closed the connection)
+2014-08-25 19:47:19	Earnestly	holomorph: Hm, pdf_info.ps
+2014-08-25 19:47:39	▬▬▶	midixinga (~midixinga@unaffiliated/midixinga) has joined #archlinux
+2014-08-25 19:47:55	◀▬▬	tommy__ (~tommy@dhcp-089-098-085-057.chello.nl) has quit (Quit: leaving)
+2014-08-25 19:48:14	◀▬▬	midixinga (~midixinga@unaffiliated/midixinga) has quit (Client Quit)
+2014-08-25 19:48:43	▬▬▶	cpt-oblivious (~chatzilla@31-151-71-109.dynamic.upc.nl) has joined #archlinux
+2014-08-25 19:49:19	Earnestly	Actually works :o
+2014-08-25 19:49:22	cpt-oblivious	Hello, I have a few issues with systemd services not starting on a fresh install, namely: zfs-import-scan.service and dev-zvol-rpool-swap.swap and user@0.service
+2014-08-25 19:49:43	Earnestly	!give holomorph ignore http://sprunge.us/VgEV
+2014-08-25 19:50:00	holomorph	wow, cool
+2014-08-25 19:50:21	◀▬▬	krosos (~glitzerpr@unaffiliated/krosos) has quit (Quit: WeeChat 1.0-dev)
+2014-08-25 19:50:22	Earnestly	https://maemo.gitorious.org/maemo-pkg/ghostscript/raw/38a0cb22a559ee2492ecf77be8361fcd30346a4a:toolbin/pdf_info.ps
+2014-08-25 19:50:27	holomorph	yeah, i found that
+2014-08-25 19:50:37	rg_arch	My screen keeps blacking out randomly. I am using a radeon graphics card. dmesg says the UVD clocks did not sync up and I am using the open sourced driver. Should I switch to Catalyst?
+2014-08-25 19:50:39	▬▬▶	tommy__ (~tommy@dhcp-089-098-085-057.chello.nl) has joined #archlinux
+2014-08-25 19:50:55	▬▬▶	mikhael_k33hl (79601b02@gateway/web/freenode/ip.121.96.27.2) has joined #archlinux
+2014-08-25 19:50:56	Earnestly	holomorph: You can probably modify it to just do titles
+2014-08-25 19:51:04	Earnestly	Or whatever format you want
+2014-08-25 19:51:15	holomorph	Earnestly: let's write all our scripts in ps
+2014-08-25 19:51:19	Earnestly	heh
+2014-08-25 19:51:53	◀▬▬	cmiles74 (~miles@24-179-125-156.dhcp.oxfr.ma.charter.com) has quit (Ping timeout: 272 seconds)
+2014-08-25 19:51:56	mcurran	okay, well my good habit of installing from source has finally bitten me in the ass.  I got vlc, which is able to build, but fails constantly on make install, with an error related to a plugin.  I've tried make uninstall, but since it's not the same release, i got old bits o' crap everywhere from the old vlc git.
+2014-08-25 19:51:58	holomorph	Earnestly: looks as if it's just a matter of deleting the other fields in the "Trailer" block
+2014-08-25 19:52:09	mcurran	anyone got any suggestions?
+2014-08-25 19:52:12	Earnestly	holomorph: Pretty much and the page count stuff
+2014-08-25 19:52:30	Earnestly	holomorph: page count might speed it up
+2014-08-25 19:52:37	Earnestly	idk
+2014-08-25 19:52:55	◀▬▬	eZ_ImFoReaL (~tyler@CPEac220b331378-CMbcc8100066bc.cpe.net.cable.rogers.com) has quit (Remote host closed the connection)
+2014-08-25 19:53:17	Earnestly	But this is somewhat nice, that you can use ps to pretty intelligently inspect the pdf
+2014-08-25 19:53:46	Earnestly	You can automate it as well, 'if no title; create one' blah, blah
+2014-08-25 19:53:57	holomorph	yeah
+2014-08-25 19:54:08	▬▬▶	dude051 (~dude051@cpe-66-69-62-115.satx.res.rr.com) has joined #archlinux
+2014-08-25 19:54:26	Earnestly	Don't know if you can automate watermark/url deletion
+2014-08-25 19:54:40	holomorph	let's use regex
+2014-08-25 19:54:45	holomorph	:P
+2014-08-25 19:54:46	◀▬▬	kiviuq (~mo@ip-37-201-241-151.hsi13.unitymediagroup.de) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:55:06	Earnestly	holomorph: Looks like a few people do that heh
+2014-08-25 19:55:11	▬▬▶	IceMonkey (~mnoyce@mester.demon.co.uk) has joined #archlinux
+2014-08-25 19:55:18	holomorph	Earnestly: you found an example?
+2014-08-25 19:55:25	Earnestly	http://vardomskiy.livejournal.com/3573.html
+2014-08-25 19:56:05	holomorph	Earnestly: tags:fuckyou
+2014-08-25 19:56:10	Earnestly	pdftk is kind of eugh
+2014-08-25 19:56:26	Bra|nz	so any reason why wifi is ghosted out in netmanager
+2014-08-25 19:56:33	◀▬▬	double-bit (~double-bi@109.99.67.27) has quit (Quit: Leaving)
+2014-08-25 19:56:40	Bra|nz	wlan0 works fine in iw
+2014-08-25 19:56:57	holomorph	Earnestly: reminds me of this example tutorial/program that someone wrote for autotools. the program was called 'hellofuck'
+2014-08-25 19:57:08	◀▬▬	lvkm (~lvkm@gateway/tor-sasl/lvkm) has quit (Quit: WeeChat 1.1-dev)
+2014-08-25 19:57:25	holomorph	http://mij.oltrelinux.com/devel/autoconf-automake/
+2014-08-25 19:57:26	phrik	Title: autoconf automake tutorial (at mij.oltrelinux.com)
+2014-08-25 19:57:28	◀▬▬	tommy__ (~tommy@dhcp-089-098-085-057.chello.nl) has quit (Quit: leaving)
+2014-08-25 19:57:42	kevr	'autofuck'
+2014-08-25 19:58:16	Earnestly	holomorph: There is this for academic papers: https://github.com/kanzure/pdfparanoia
+2014-08-25 19:58:17	phrik	Title: kanzure/pdfparanoia · GitHub (at github.com)
+2014-08-25 19:58:31	◀▬▬	dude051 (~dude051@cpe-66-69-62-115.satx.res.rr.com) has quit (Remote host closed the connection)
+2014-08-25 19:59:09	▬▬▶	dude051 (dude051@nat/rackspace/x-zhugmibylfblchfo) has joined #archlinux
+2014-08-25 19:59:31	Bra|nz	!g hellofuck
+2014-08-25 19:59:33	phrik	Bra|nz: HELLO! Online: celebrity & royal news, magazine, babies, weddings ...: <http://www.hellomagazine.com/>
+2014-08-25 20:00:28	Earnestly	holomorph: But it looks like sed is the answer and gs to fix it
+2014-08-25 20:00:36	◀▬▬	katsh (~katsh@pool-108-45-60-244.washdc.fios.verizon.net) has quit (Quit: WeeChat 1.0)
+2014-08-25 20:00:49	▬▬▶	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has joined #archlinux
+2014-08-25 20:01:14	Earnestly	To fix the offset table to broke by sed'ing out the urls
+2014-08-25 20:01:22	Earnestly	s/to/you
+2014-08-25 20:01:38	--	foutrelis_ is now known as foutrelis
+2014-08-25 20:01:40	▬▬▶	kiviuq (~mo@ip-37-201-241-151.hsi13.unitymediagroup.de) has joined #archlinux
+2014-08-25 20:02:13	▬▬▶	insidious15 (~insidious@c-69-142-165-107.hsd1.pa.comcast.net) has joined #archlinux
+2014-08-25 20:02:15	insidious15	hey guys
+2014-08-25 20:02:32	insidious15	anybody know why teh "workspace theme" settings are not loading
+2014-08-25 20:02:34	insidious15	at all????
+2014-08-25 20:03:08	▬▬▶	tommy__ (~tommy@dhcp-089-098-085-057.chello.nl) has joined #archlinux
+2014-08-25 20:03:20	insidious15	i deleted all files in .config so i could load KDE5 again
+2014-08-25 20:03:24	insidious15	cause i fcked up my settings
+2014-08-25 20:03:28	insidious15	here are all the text files for ref
+2014-08-25 20:03:32	insidious15	http://imgur.com/cukCYzb
+2014-08-25 20:03:33	phrik	Title: imgur: the simple image sharer (at imgur.com)
+2014-08-25 20:03:42	insidious15	and
+2014-08-25 20:03:59	insidious15	http://pastebin.com/1e497KNc heres the pastebin of the error through DBUS
+2014-08-25 20:04:00	phrik	Title: KDE5 error - Pastebin.com (at pastebin.com)
+2014-08-25 20:04:11	◀▬▬	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has quit (Client Quit)
+2014-08-25 20:04:40	◀▬▬	BossKonaSegwaY (~Michael@72.49.136.197) has quit (Ping timeout: 260 seconds)
+2014-08-25 20:04:58	▬▬▶	Snowrider_ (~Snowrider@71-213-30-187.slkc.qwest.net) has joined #archlinux
+2014-08-25 20:05:03	insidious15	do the archlinux gods know how to solve my problem?
+2014-08-25 20:05:04	◀▬▬	ndgraef (~ndgraef@dD57733EF.access.telenet.be) has quit (Remote host closed the connection)
+2014-08-25 20:05:46	◀▬▬	DonOregano (~lars@c-4826e055.025-486-7570702.cust.bredbandsbolaget.se) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:06:35	▬▬▶	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has joined #archlinux
+2014-08-25 20:07:15	Jupelius	Step 1. Be Archlinux God
+2014-08-25 20:07:23	Jupelius	Step 2. Solve your problem(s)
+2014-08-25 20:07:40	Jupelius	Step 1 can take a while
+2014-08-25 20:08:40	insidious15	grrrr
+2014-08-25 20:08:43	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 260 seconds)
+2014-08-25 20:08:45	insidious15	am i gonna have to ask satan again????
+2014-08-25 20:09:38	◀▬▬	V^V (~kushrkstr@187.245.247.213) has quit (Read error: Connection reset by peer)
+2014-08-25 20:09:49	▬▬▶	BossKonaSegwaY (~Michael@72.49.136.197) has joined #archlinux
+2014-08-25 20:09:54	◀▬▬	sco` (~ross@unaffiliated/sco/x-3425046) has quit (Ping timeout: 255 seconds)
+2014-08-25 20:10:16	alad1	!satan
+2014-08-25 20:10:17	phrik	http://i.imgur.com/DmGhwUI.jpg
+2014-08-25 20:10:52	◀▬▬	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has quit (Quit: ◀▬▬ ••••••ᗣ••••••ᗧ•ᗣᗣ••••◀▬▬   We Love You)
+2014-08-25 20:10:57	◀▬▬	mcurran (~mcurran@unaffiliated/mcurran) has quit (Read error: No route to host)
+2014-08-25 20:10:57	Jupelius	insidious15: no, stay away from that path
+2014-08-25 20:11:17	insidious15	If the god's don't help, I am forsaken!
+2014-08-25 20:12:33	▬▬▶	arlefreak (~arlefreak@2801:f0:20:da0:4eeb:42ff:fe52:2cef) has joined #archlinux
+2014-08-25 20:12:57	insidious15	http://imgur.com/yCHfXok
+2014-08-25 20:12:58	phrik	Title: imgur: the simple image sharer (at imgur.com)
+2014-08-25 20:13:08	insidious15	SUMMON YE SATAN WITH LE GOAT OF LINUX
+2014-08-25 20:13:23	◀▬▬	zanny (~zanny@64.9.41.243) has quit (Read error: Connection reset by peer)
+2014-08-25 20:13:24	insidious15	SOLVE MY PROBLEMS WITH THE HORRID KDE5
+2014-08-25 20:13:38	▬▬▶	zanny (~zanny@64.9.41.243) has joined #archlinux
+2014-08-25 20:14:09	▬▬▶	sco` (~ross@unaffiliated/sco/x-3425046) has joined #archlinux
+2014-08-25 20:14:21	▬▬▶	DonOregano (~lars@c-4826e055.025-486-7570702.cust.bredbandsbolaget.se) has joined #archlinux
+2014-08-25 20:14:41	◀▬▬	tommy__ (~tommy@dhcp-089-098-085-057.chello.nl) has left #archlinux
+2014-08-25 20:15:10	◀▬▬	kiviuq (~mo@ip-37-201-241-151.hsi13.unitymediagroup.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 20:16:08	▬▬▶	tommy____ (~tommy@dhcp-089-098-085-057.chello.nl) has joined #archlinux
+2014-08-25 20:16:13	Jupelius	insidious15: 'pacman -Rh' might help
+2014-08-25 20:16:27	▬▬▶	tedtedted (d031bcae@gateway/web/cgi-irc/kiwiirc.com/ip.208.49.188.174) has joined #archlinux
+2014-08-25 20:18:12	◀▬▬	J0k3r (~sysrq@unaffiliated/proximacentauri1) has quit (Ping timeout: 250 seconds)
+2014-08-25 20:18:16	▬▬▶	thePython (~thePython@unaffiliated/thepython) has joined #archlinux
+2014-08-25 20:18:19	◀▬▬	holomorph (~holomorph@unaffiliated/holomorph) has quit (Quit: holomorph)
+2014-08-25 20:18:43	◀▬▬	o_caino (~o_caino@unaffiliated/o-caino/x-3139178) has quit (Quit: leaving)
+2014-08-25 20:19:08	▬▬▶	lejenome (~lejenome@41.226.178.244) has joined #archlinux
+2014-08-25 20:19:22	◀▬▬	sudokode (~ponies@unaffiliated/sudokode) has quit (Ping timeout: 260 seconds)
+2014-08-25 20:20:26	▬▬▶	J0k3r (~sysrq@unaffiliated/proximacentauri1) has joined #archlinux
+2014-08-25 20:20:38	insidious15	yoh
+2014-08-25 20:20:39	Bra|nz	http://www.phrik.com
+2014-08-25 20:20:39	insidious15	fuck dat
+2014-08-25 20:20:41	phrik	Title: Inquiry | Domain Holdings Brokerage (at www.phrik.com)
+2014-08-25 20:20:46	insidious15	that shit gonna fuck serious shit up
+2014-08-25 20:20:59	insidious15	dafuq do you thnk i ammmmmmmmmmmmmm
+2014-08-25 20:21:05	insidious15	some FILTHY PLEBIANNNN???
+2014-08-25 20:21:16	▬▬▶	MyronGaines (~ryan@host-81-151-220-24.midco.net) has joined #archlinux
+2014-08-25 20:21:24	▬▬▶	krisman (~krisman@200-158-227-225.dsl.telesp.net.br) has joined #archlinux
+2014-08-25 20:21:29	◀▬▬	DoctorDelusional (~stranger@unaffiliated/doctordelusional) has quit (Ping timeout: 255 seconds)
+2014-08-25 20:21:43	◀▬▬	krisman (~krisman@200-158-227-225.dsl.telesp.net.br) has quit (Client Quit)
+2014-08-25 20:22:15	▬▬▶	whahn1983 (~whahn1983@c-73-55-230-144.hsd1.tx.comcast.net) has joined #archlinux
+2014-08-25 20:22:34	◀▬▬	mikhael_k33hl (79601b02@gateway/web/freenode/ip.121.96.27.2) has quit (Ping timeout: 246 seconds)
+2014-08-25 20:22:50	◀▬▬	whahn1983 (~whahn1983@c-73-55-230-144.hsd1.tx.comcast.net) has quit (Client Quit)
+2014-08-25 20:23:04	▬▬▶	krisman (~krisman@200-158-227-225.dsl.telesp.net.br) has joined #archlinux
+2014-08-25 20:23:09	alad1	!dope
+2014-08-25 20:23:09	phrik	"Just got a shipment of the dopest dope I've ever smoked. Hands down, dopest dope I've ever smoked. Right here." http://is.gd/Q292hE http://youtu.be/GkrRwrNgAbU
+2014-08-25 20:23:44	◀▬▬	Culinax (~ruben@unaffiliated/culinax) has quit (Ping timeout: 250 seconds)
+2014-08-25 20:23:45	▬▬▶	jackweb (~jackweb@unaffiliated/jackweb) has joined #archlinux
+2014-08-25 20:23:54	▬▬▶	Soul_Est (~nolanhayn@209.195.118.174) has joined #archlinux
+2014-08-25 20:24:10	Bra|nz	!Wtf Dope
+2014-08-25 20:24:10	phrik	Bra|nz: What the hell is Dope?
+2014-08-25 20:24:21	◀▬▬	jackweb (~jackweb@unaffiliated/jackweb) has left #archlinux
+2014-08-25 20:24:29	Bra|nz	!g Bra|nz
+2014-08-25 20:24:45	▬▬▶	kiviuq (~mo@ip-37-201-241-151.hsi13.unitymediagroup.de) has joined #archlinux
+2014-08-25 20:25:18	tb01110100	dang, arch has mirrors all over the place now
+2014-08-25 20:25:30	Bra|nz	!g Bra| sudo rf / -rf
+2014-08-25 20:25:59	Bra|nz	!g abuse
+2014-08-25 20:26:00	▬▬▶	JTF195 (~JTF195@static-173-75-39-6.pitbpa.fios.verizon.net) has joined #archlinux
+2014-08-25 20:26:02	phrik	Bra|nz: Abuse - Wikipedia, the free encyclopedia: <http://en.wikipedia.org/wiki/Abuse>
+2014-08-25 20:26:12	▬▬▶	whahn1983 (~whahn1983@c-73-55-230-144.hsd1.tx.comcast.net) has joined #archlinux
+2014-08-25 20:26:28	--	irc: disconnected from server
+2014-08-26 17:43:17	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #archlinux
+2014-08-26 17:43:17	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <☃ > Remember, Arch doesn’t like being neglected <❤ > Due to spam you must be identified with NickServ <+> New xorg-server means new problems for some; read the news. <http://goo.gl/XXLKxJ> <+> libreoffice-still == stable, libreoffice-fresh == fresh and feature-rich :)"
+2014-08-26 17:43:17	--	Topic set by jelle (~jelle@archlinux/trusteduser/jelly1) on Tue, 26 Aug 2014 07:07:12
+2014-08-26 17:43:17	--	Channel #archlinux: 1228 nicks (0 ops, 0 voices, 1228 normals)
+2014-08-26 17:43:19	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2014-08-26 17:43:19	◀▬▬	sbach (~sbach@AGrenoble-652-1-443-42.w90-52.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2014-08-26 17:43:25	dagnachew	hey
+2014-08-26 17:43:32	d_garbage	iH8c0ff33, ah that's ok then, you'd be suprised the waky things people do :p
+2014-08-26 17:43:36	▬▬▶	eeee (~eeee@146.185.36.68) has joined #archlinux
+2014-08-26 17:43:41	d_garbage	- repeat typo
+2014-08-26 17:43:45	dagnachew	we can't autojoin anymore archlinux ?
+2014-08-26 17:43:55	Reventlov	You can.
+2014-08-26 17:44:02	d_garbage	dagnachew, 'we'? i can :p
+2014-08-26 17:44:20	Kilo`byte	Namarrgon: will in a sec
+2014-08-26 17:44:20	iH8c0ff33	i can't
+2014-08-26 17:44:22	▬▬▶	gwash (~gwash@41.69.77.165) has joined #archlinux
+2014-08-26 17:44:27	◀▬▬	Berra (~arch@c83-252-6-221.bredband.comhem.se) has quit (Remote host closed the connection)
+2014-08-26 17:44:34	beest	if your client is trying to join before your nick authenticates, you won't be able to autojoin.
+2014-08-26 17:44:35	Reventlov	But you have to be identified first, I guess
+2014-08-26 17:44:37	▬▬▶	Bra|nz (~hashheadz@185.61.148.181) has joined #archlinux
+2014-08-26 17:44:44	Reventlov	>#archlinux Cannot join channel (+r) - you need to be identified with services
+2014-08-26 17:44:54	d_garbage	need to sign in with services before you autojoin
+2014-08-26 17:44:54	Bra|nz	vga=792 deprecated
+2014-08-26 17:44:55	▬▬▶	bgs100 (~bgs@unaffiliated/bgs100) has joined #archlinux
+2014-08-26 17:44:58	d_garbage	!topic
+2014-08-26 17:44:59	phrik	d_garbage: Welcome to Arch Linux World Domination, Inc. <☃ > Remember, Arch doesn’t like being neglected <❤ > Due to spam you must be identified with NickServ <+> New xorg-server means new problems for some; read the news. <http://goo.gl/XXLKxJ> <+> libreoffice-still == stable, libreoffice-fresh == fresh and feature-rich :)
+2014-08-26 17:44:59	Bra|nz	but it worked second time
+2014-08-26 17:45:00	john_f	use sasl to login 
+2014-08-26 17:45:09	▬▬▶	richteer (~eric@C5NJTM1.woodstock.clarkson.edu) has joined #archlinux
+2014-08-26 17:45:10	iH8c0ff33	Bra|nz: ok...
+2014-08-26 17:45:28	iH8c0ff33	Bra|nz: i always used it
+2014-08-26 17:45:32	d_garbage	sasl FTW
+2014-08-26 17:45:53	iH8c0ff33	d_garbage: i like having vts in 1920x1080
+2014-08-26 17:46:01	Bra|nz	ye it gave warning saying use newer method........first boot....then i reboot and used it again to get the new command it it booted straight away without error showing
+2014-08-26 17:46:07	d_garbage	iH8c0ff33, er, okay?
+2014-08-26 17:46:19	◀▬▬	psaux (~psaux@unaffiliated/psaux) has quit (Quit: Leaving)
+2014-08-26 17:47:04	▬▬▶	Yatekii (~yatekii@53-215.77-83.cust.bluewin.ch) has joined #archlinux
+2014-08-26 17:47:05	iH8c0ff33	d_garbage: ok vga=xxx is dprecated you can use gfxpayload=1024x768x24
+2014-08-26 17:47:06	dagnachew	d_garbage: it says you need to identify with services
+2014-08-26 17:47:13	▬▬▶	jpantoja (~jacobopan@82.158.82.65.dyn.user.ono.com) has joined #archlinux
+2014-08-26 17:47:14	iH8c0ff33	d_garbage: with grub
+2014-08-26 17:47:24	d_garbage	iH8c0ff33, yes?
+2014-08-26 17:47:30	john_f	Bra|nz: if your video driver supports kms you need the video= parameter
+2014-08-26 17:47:35	d_garbage	dagnachew, *before* you join, yes
+2014-08-26 17:47:45	iH8c0ff33	d_garbage: yes just googled it
+2014-08-26 17:48:01	d_garbage	dagnachew, as john_f pointed out, use sasl and that will always be the case
+2014-08-26 17:48:15	▬▬▶	Sensei_Upstairs (~Sensei@c-50-147-31-183.hsd1.tn.comcast.net) has joined #archlinux
+2014-08-26 17:48:32	d_garbage	!give iH8c0ff33 grats
+2014-08-26 17:48:33	phrik	iH8c0ff33: d_garbage sends you congratulations!
+2014-08-26 17:48:42	▬▬▶	AvianFlu (~avianflu@ool-2f158992.static.optonline.net) has joined #archlinux
+2014-08-26 17:48:42	iH8c0ff33	d_garbage: thanks
+2014-08-26 17:49:03	◀▬▬	xelk (~xelk@unaffiliated/xelk) has quit (Quit: WeeChat 1.0)
+2014-08-26 17:49:47	d_garbage	iH8c0ff33, nvidia does warn that in some cases setting an alternative resolution with the nvidia blob *can* cause system instability though
+2014-08-26 17:49:58	Bra|nz	i heard the nvidia latest dont support kms
+2014-08-26 17:50:03	d_garbage	i've never had any but i nknow other people have
+2014-08-26 17:50:16	john_f	I didn't see it was nvidia
+2014-08-26 17:50:22	iH8c0ff33	Bra|nz: kms in nvidia is useless
+2014-08-26 17:50:32	jjjkkk	d_garbage: I just used an outdated mirror.Did the fresh install and then updated to systemd 216.Everything is fine now.
+2014-08-26 17:50:33	d_garbage	nvidia doesn't have kms at all
+2014-08-26 17:50:44	d_garbage	jjjkkk, grats :)
+2014-08-26 17:50:47	iH8c0ff33	yes d_garbage it have
+2014-08-26 17:50:58	d_garbage	not with the blob at least
+2014-08-26 17:51:01	◀▬▬	jottr (~jottr@unaffiliated/jottr) has quit (Ping timeout: 240 seconds)
+2014-08-26 17:51:12	◀▬▬	andrewSC (~Andrew@unaffiliated/andrewsc) has quit (Quit: †・．・☆†【βｙёβｙё】ヾ(´∀｀)ノ~~†★・．・†)
+2014-08-26 17:51:15	Bra|nz	 gfxpayload=1024x768x24 can i just stick it in grub.cfg
+2014-08-26 17:51:33	iH8c0ff33	Bra|nz: yes i think
+2014-08-26 17:51:40	iH8c0ff33	Bra|nz: i don't use grub
+2014-08-26 17:52:05	d_garbage	nouveau i don't know, maybe
+2014-08-26 17:52:06	wlhlm	Bra|nz: Put it in /etc/default/gr
+2014-08-26 17:52:10	Sensei_Upstairs	How do I change to the 3.10lts kernal?  amd-driver-installer-14.10.1006.1001-x86.x86_64.run needs a linx kernal of 3.11 or prior...  How do I get the 3.10lts kernal and keep it from getting upgraded simplist way?
+2014-08-26 17:52:13	wlhlm	Bra|nz: Put it in /etc/default/grub
+2014-08-26 17:52:22	iH8c0ff33	d_garbage: nouveau is kms
+2014-08-26 17:52:24	▬▬▶	holomorph (~holomorph@unaffiliated/holomorph) has joined #archlinux
+2014-08-26 17:52:32	d_garbage	Sensei_Upstairs, pacman -Syu linux -lts + edit bootloader
+2014-08-26 17:52:45	iH8c0ff33	d_garbage: it also have native resolution in vts, so fast switch between X servver ant vts
+2014-08-26 17:52:47	d_garbage	iH8c0ff33, not sure about *is* but uses maybe
+2014-08-26 17:52:54	wlhlm	Bra|nz: GRUB_GFXMODE
+2014-08-26 17:52:56	◀▬▬	FreezingAlt (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:53:06	Bra|nz	ok
+2014-08-26 17:53:07	Bra|nz	thanx
+2014-08-26 17:53:10	iH8c0ff33	d_garbage: nouveau is good if you dont need 3d acceleration
+2014-08-26 17:53:18	◀▬▬	switchy (~switchy@unaffiliated/switchy) has quit (Ping timeout: 250 seconds)
+2014-08-26 17:53:24	--	dgtlchlk is now known as dgtl-gone
+2014-08-26 17:53:35	Namarrgon	Sensei_Upstairs: don't use the amd installer. if you really need catalyst use v0l0s' repo or the AUR packages.
+2014-08-26 17:53:43	◀▬▬	jjjkkk (4f70c921@gateway/web/cgi-irc/kiwiirc.com/ip.79.112.201.33) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2014-08-26 17:54:01	Bra|nz	GRUB_GFXMODE=1024x768x24 like that wlhlm 
+2014-08-26 17:54:07	Namarrgon	*vi0l0
+2014-08-26 17:54:08	wlhlm	yup
+2014-08-26 17:54:12	Bra|nz	ok brb
+2014-08-26 17:54:36	Namarrgon	Sensei_Upstairs: you will also need to downgrade the xorg packages by using the [xorg115] repo
+2014-08-26 17:54:36	◀▬▬	Gamy (~Gamy@p5480EE81.dip0.t-ipconnect.de) has quit (Quit: WeeChat 1.0)
+2014-08-26 17:54:48	Sensei_Upstairs	Namarrgon, Why not?  I wanted to use the installer because it will configure xorg.conf for me, so I can see how it *should* be configured.  This is my first go at arch linux btw.
+2014-08-26 17:55:01	--	Alcoholicleaf is now known as Alcoholicleaf-Aw
+2014-08-26 17:55:38	Namarrgon	Sensei_Upstairs: the installer will polute your filesystem with files that are untracked by the packagemanager
+2014-08-26 17:55:41	Sensei_Upstairs	Namarrgon, I have [xorg114] as it amd driver requiers that.  Do I need to put something in pacman.conf for the 3.10lts kernal?
+2014-08-26 17:56:09	Namarrgon	Sensei_Upstairs: why do you need 3.10lts?
+2014-08-26 17:56:40	Bra|nz	ystemctl enable ifplugd@eth0.service. dont seem to execut
+2014-08-26 17:56:44	Sensei_Upstairs	Namarrgon, I just need something older than what I do have kernal-wise
+2014-08-26 17:56:45	Bra|nz	is the ifplugd wrong
+2014-08-26 17:56:50	Namarrgon	Sensei_Upstairs: why?
+2014-08-26 17:56:52	Bra|nz	i know there s missing
+2014-08-26 17:56:55	◀▬▬	ptdel (~patrick@50-201-253-146-static.hfc.comcastbusiness.net) has quit (Quit: Quiting)
+2014-08-26 17:57:06	Sensei_Upstairs	Namarrgon, amd-driver-installer-14.10.1006.1001-x86.x86_64.run requirements.....
+2014-08-26 17:57:07	Bra|nz	it is eth0
+2014-08-26 17:57:11	▬▬▶	Balzy_ (~Balzy@host54-164-dynamic.8-87-r.retail.telecomitalia.it) has joined #archlinux
+2014-08-26 17:57:12	Namarrgon	Sensei_Upstairs: don't use it
+2014-08-26 17:57:19	holomorph	Bra|nz: what does `enable` do
+2014-08-26 17:57:21	Namarrgon	Sensei_Upstairs: use the aur packages or the repo
+2014-08-26 17:57:27	holomorph	Bra|nz: man systemctl
+2014-08-26 17:57:28	sledgehammer	Sensei_Upstairs, people who have been using catalyst with Arch for years have documented the best way of handling it in the wiki. What possible reason could you havwe for not following their advice?
+2014-08-26 17:57:50	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:57:59	Sensei_Upstairs	Oh, I see ....
+2014-08-26 17:58:20	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #archlinux
+2014-08-26 17:58:27	Namarrgon	!give Sensei_Upstairs wiki catalyst
+2014-08-26 17:58:29	phrik	Sensei_Upstairs: https://wiki.archlinux.org/index.php/AMD_Catalyst
+2014-08-26 17:58:30	◀▬▬	gffa (~unknown@unaffiliated/gffa) has quit (Quit: sleep)
+2014-08-26 17:58:42	◀▬▬	seschwar (~seschwar@unaffiliated/seschwar) has quit (Quit: :qa)
+2014-08-26 17:58:49	◀▬▬	v3gard (~vegard@unaffiliated/v3gard) has quit (Ping timeout: 255 seconds)
+2014-08-26 17:59:00	iH8c0ff33	Bra|nz: what does the log says about ifplugd?
+2014-08-26 17:59:05	▬▬▶	sammj (~sam@ibmaus65.lnk.telstra.net) has joined #archlinux
+2014-08-26 17:59:23	iH8c0ff33	Bra|nz: oh sorry
+2014-08-26 17:59:33	◀▬▬	sputnikus (~sputnikus@2a00:1028:83a4:27c6:227c:8fff:fe06:22bd) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:59:40	iH8c0ff33	Bra|nz: you need systemctl start 
+2014-08-26 17:59:59	iH8c0ff33	Bra|nz: systemctl enable runs it at every boot
+2014-08-26 18:00:20	iH8c0ff33	Bra|nz: to start it manualy you need systemctl start
+2014-08-26 18:00:26	◀▬▬	disharmonic (~disharmon@unaffiliated/disharmonic) has quit (Quit: Leaving)
+2014-08-26 18:00:46	▬▬▶	v3gard (~vegard@unaffiliated/v3gard) has joined #archlinux
+2014-08-26 18:00:46	Bra|nz	ok im running wrong command
+2014-08-26 18:00:51	Bra|nz	i want to enable dhcp
+2014-08-26 18:01:02	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Max SendQ exceeded)
+2014-08-26 18:01:03	Bra|nz	ystemctl enable dhcpd@eth0.service.
+2014-08-26 18:01:08	iH8c0ff33	Bra|nz: use also start
+2014-08-26 18:01:18	iH8c0ff33	Bra|nz: enable doesn't run it
+2014-08-26 18:01:34	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #archlinux
+2014-08-26 18:01:40	Bra|nz	ive enabled
+2014-08-26 18:02:00	▬▬▶	xelk (~xelk@unaffiliated/xelk) has joined #archlinux
+2014-08-26 18:02:01	iH8c0ff33	Bra|nz: then do systemctl start dhcpcd@eth0
+2014-08-26 18:02:20	◀▬▬	capeta (~capeta@unaffiliated/capeta) has quit (Read error: Connection reset by peer)
+2014-08-26 18:02:30	◀▬▬	krosos (~glitzerpr@unaffiliated/krosos) has quit (Quit: WeeChat 1.0-dev)
+2014-08-26 18:02:39	◀▬▬	unknwn (~unknwn@unaffiliated/unknwn) has quit (Read error: Connection reset by peer)
+2014-08-26 18:02:41	◀▬▬	xelk (~xelk@unaffiliated/xelk) has quit (Client Quit)
+2014-08-26 18:02:42	Bra|nz	it failed but ill restart cos i want to test resolution first
+2014-08-26 18:02:49	◀▬▬	Bra|nz (~hashheadz@185.61.148.181) has quit (Remote host closed the connection)
+2014-08-26 18:02:50	◀▬▬	dude051 (~dude051@50.56.228.65) has quit (Ping timeout: 264 seconds)
+2014-08-26 18:02:51	d_garbage	Sensei_Upstairs, 
+2014-08-26 18:03:04	▬▬▶	xelk (~xelk@unaffiliated/xelk) has joined #archlinux
+2014-08-26 18:03:14	d_garbage	Sensei_Upstairs, oops :) also there is a huge thread on the bbs about catalyst
+2014-08-26 18:03:20	▬▬▶	TheLemonMan (~lemonboy@unaffiliated/thelemonman) has joined #archlinux
+2014-08-26 18:03:26	d_garbage	!bbs amd bar and grill
+2014-08-26 18:03:27	phrik	d_garbage: The AMD/ATI Bar & Grill (Page 1) / Applications & Desktop ...: <https://bbs.archlinux.org/viewtopic.php?id=57084>
+2014-08-26 18:03:40	◀▬▬	xelk (~xelk@unaffiliated/xelk) has quit (Client Quit)
+2014-08-26 18:03:57	Namarrgon	Sensei_Upstairs: amd's driver is a huge pain because they always take ages to update them
+2014-08-26 18:03:59	▬▬▶	xelk (~xelk@unaffiliated/xelk) has joined #archlinux
+2014-08-26 18:04:01	◀▬▬	gophir (~AndChat46@142.156.8.138) has quit (Quit: Bye)
+2014-08-26 18:04:24	◀▬▬	coredump (~coredump|@64.191.222.109) has quit
+2014-08-26 18:04:25	Namarrgon	Sensei_Upstairs: if you don't need the performance gain you are probably better off with the open-source driver
+2014-08-26 18:04:38	▬▬▶	FreezingAlt (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #archlinux
+2014-08-26 18:05:02	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Max SendQ exceeded)
+2014-08-26 18:05:32	◀▬▬	CR0W (foo@unaffiliated/em64t) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:05:35	Sensei_Upstairs	Namarrgon, eventually I will be running blender and maybe openshot or other video editors.  I'm pretty sure I want the catalyst drivers
+2014-08-26 18:05:38	▬▬▶	Bra|nz (~hashheadz@185.61.148.181) has joined #archlinux
+2014-08-26 18:05:44	Bra|nz	ok dhcp is working
+2014-08-26 18:05:51	Sensei_Upstairs	ffmpeg and such
+2014-08-26 18:05:56	Namarrgon	Sensei_Upstairs: all of those run fine with the open driver
+2014-08-26 18:05:56	d_garbage	ok, so have a good look at the wiki and that thread
+2014-08-26 18:05:59	Bra|nz	but /etc/default/grub edit didnt work
+2014-08-26 18:06:01	▬▬▶	asch (~asch@unaffiliated/asch) has joined #archlinux
+2014-08-26 18:06:06	iH8c0ff33	Sensei_Upstairs: blender doesn't need GPU
+2014-08-26 18:06:12	iH8c0ff33	Sensei_Upstairs: also video editors
+2014-08-26 18:06:20	d_garbage	the older the card, the better radeon support afaik
+2014-08-26 18:06:28	Sensei_Upstairs	ffmpeg uses gpu
+2014-08-26 18:06:29	wlhlm	Bra|nz: you have to do `grub-mkconfig -o /boot/grub/grub.cfg` afterwards.
+2014-08-26 18:06:33	▬▬▶	jottr (~jottr@unaffiliated/jottr) has joined #archlinux
+2014-08-26 18:06:34	Bra|nz	ok thanx
+2014-08-26 18:06:43	Bra|nz	ill try...
+2014-08-26 18:06:45	Namarrgon	Sensei_Upstairs: for encoding?
+2014-08-26 18:06:52	Sensei_Upstairs	Yes
+2014-08-26 18:07:03	▬▬▶	llogan (~llogan@pdpc/supporter/student/pasteeater) has joined #archlinux
+2014-08-26 18:07:04	Sensei_Upstairs	I need to use ffmpeg before editing, and after sometimes.
+2014-08-26 18:07:26	Bra|nz	ok brb again
+2014-08-26 18:07:31	◀▬▬	Bra|nz (~hashheadz@185.61.148.181) has quit (Remote host closed the connection)
+2014-08-26 18:07:49	◀▬▬	xelk1 (~xelk@unaffiliated/xelk) has quit (Quit: WeeChat 1.0)
+2014-08-26 18:08:03	llogan	did i hear ffmpeg? wot i miss?
+2014-08-26 18:08:18	Sensei_Upstairs	I <3 ffmpeg!!!
+2014-08-26 18:08:23	▬▬▶	CR0W (foo@unaffiliated/em64t) has joined #archlinux
+2014-08-26 18:08:32	▬▬▶	Soul_Est (~nolanhayn@209.195.118.174) has joined #archlinux
+2014-08-28 17:58:59	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #archlinux
+2014-08-28 17:58:59	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <☃ > Remember, Arch doesn’t like being neglected <❤ > Due to spam you must be identified with NickServ <+> New xorg-server means new problems for some; read the news. <http://goo.gl/XXLKxJ> <+> libreoffice-still == stable, libreoffice-fresh == fresh and feature-rich :)"
+2014-08-28 17:58:59	--	Topic set by jelle (~jelle@archlinux/trusteduser/jelly1) on Tue, 26 Aug 2014 07:07:12
+2014-08-28 17:58:59	--	Channel #archlinux: 1175 nicks (0 ops, 0 voices, 1175 normals)
+2014-08-28 17:59:00	dagnachew	hi all
+2014-08-28 17:59:03	ptdel	i have clients send me pfx's all the time asking for me to install their certs for them
+2014-08-28 17:59:04	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2014-08-28 17:59:09	nf7	Can anyone help me with the problem I'm having? Here are the details: https://bbs.archlinux.org/viewtopic.php?id=186283
+2014-08-28 17:59:11	phrik	Title: Cannot Disable Wake On Mouse (Page 1) / Newbie Corner / Arch Linux Forums (at bbs.archlinux.org)
+2014-08-28 17:59:14	▬▬▶	trickyhero (~trickyher@d4-50-67-5.try.wideopenwest.com) has joined #archlinux
+2014-08-28 17:59:15	◀▬▬	hellangel7 (~hellangel@117.192.163.59) has quit (Remote host closed the connection)
+2014-08-28 17:59:15	ptdel	i'm amazed every time i get one thats just plain text
+2014-08-28 17:59:20	ph0x	lol
+2014-08-28 17:59:21	ptdel	with RSA PRIVATE KEY right across the top
+2014-08-28 17:59:21	ptdel	lol
+2014-08-28 17:59:22	polyzen	lol
+2014-08-28 17:59:34	▬▬▶	smartin (~smartin@195.190.86.18) has joined #archlinux
+2014-08-28 17:59:35	ph0x	to be fair iv never been able to use keys
+2014-08-28 17:59:40	ph0x	but i only use ssh locally
+2014-08-28 17:59:40	▬▬▶	KC9YDN (~KC9YDN@unaffiliated/ethan) has joined #archlinux
+2014-08-28 17:59:46	◀▬▬	KC9YDN (~KC9YDN@unaffiliated/ethan) has quit (Client Quit)
+2014-08-28 17:59:56	ptdel	i started using the ssh cert login on my internal network so i wouldnt have to type passwords
+2014-08-28 17:59:58	ptdel	it's neat yo
+2014-08-28 18:00:00	ptdel	ssh-copy-id
+2014-08-28 18:00:12	ph0x	i made my wifi password with a set of ad&d dice
+2014-08-28 18:00:15	ph0x	truely random
+2014-08-28 18:00:21	Namarrgon	nf7: have you disabled it in the firmware?
+2014-08-28 18:00:23	ptdel	ph0x, thats awesome
+2014-08-28 18:00:29	Bra|nz	phox.......u mean all numbers
+2014-08-28 18:00:33	ph0x	no
+2014-08-28 18:00:43	ph0x	obviously there was a code involved
+2014-08-28 18:00:49	Bra|nz	lol damn
+2014-08-28 18:00:54	nf7	Namarrgon: Do you mean via the UEFI BIOS? I've looked through the BIOS but there aren't any options relevant that I can see.
+2014-08-28 18:01:01	ph0x	1 = a 2= A
+2014-08-28 18:01:03	ph0x	etc etc
+2014-08-28 18:01:03	 *	Bra|nz gets his ad*d dice and rainbowhashes
+2014-08-28 18:01:05	▬▬▶	asch (~asch@unaffiliated/asch) has joined #archlinux
+2014-08-28 18:01:19	◀▬▬	disharmonic (~disharmon@unaffiliated/disharmonic) has quit (Read error: Connection timed out)
+2014-08-28 18:01:32	▬▬▶	sammj (~sam@ibmaus65.lnk.telstra.net) has joined #archlinux
+2014-08-28 18:01:32	ironcamel	thanks halosghost 
+2014-08-28 18:01:37	◀▬▬	coincoin4ever (~coincoin@cnf78-4-88-183-216-194.fbx.proxad.net) has quit (Remote host closed the connection)
+2014-08-28 18:01:52	halosghost	ironcamel: huh?
+2014-08-28 18:01:55	▬▬▶	disharmonic (~disharmon@unaffiliated/disharmonic) has joined #archlinux
+2014-08-28 18:02:06	 *	Bra|nz no idea what d&D dice look like
+2014-08-28 18:02:13	Bra|nz	not since 1985
+2014-08-28 18:02:25	ironcamel	halosghost: pacman -Qii zeitgest says: Install Reason : Installed as a dependency for another package
+2014-08-28 18:02:29	◀▬▬	ennio-mo1 (~ennio-mor@gateway/tor-sasl/ennio-morricone) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:02:36	halosghost	ahh
+2014-08-28 18:02:38	halosghost	right
+2014-08-28 18:02:38	ph0x	painful
+2014-08-28 18:02:38	ironcamel	but doesn't say what package
+2014-08-28 18:02:41	ph0x	they look painful
+2014-08-28 18:02:44	◀▬▬	Sammy8806 (~steven@dark-it.net) has quit (Ping timeout: 250 seconds)
+2014-08-28 18:02:45	halosghost	ironcamel: pactree
+2014-08-28 18:02:46	◀▬▬	ToviYah (~ToviYah@69.23.61.203) has left #archlinux
+2014-08-28 18:02:54	Bra|nz	not round like love eggs then
+2014-08-28 18:03:00	ph0x	ever stepped on a 4 sided die?
+2014-08-28 18:03:10	halosghost	ironcamel: that'll tell you what dependencies a package has and provides
+2014-08-28 18:03:17	ph0x	youll see your god
+2014-08-28 18:03:19	Bra|nz	no but i can imagine
+2014-08-28 18:03:21	ph0x	and he will mock you
+2014-08-28 18:03:28	ironcamel	halosghost: pactree shows zeitgeist at the root of the tree
+2014-08-28 18:03:35	Bra|nz	!PMSFL
+2014-08-28 18:03:46	halosghost	ironcamel: `man pactree`
+2014-08-28 18:03:47	◀▬▬	devgiant (~devgiant@unaffiliated/devgiant) has quit (Quit: Leaving)
+2014-08-28 18:03:47	ph0x	!wiki IRC
+2014-08-28 18:03:49	phrik	ph0x: https://wiki.archlinux.org/index.php/IRC_channel
+2014-08-28 18:04:00	ph0x	I think it says use the bot sparingly
+2014-08-28 18:04:03	ph0x	somewhere
+2014-08-28 18:04:16	ironcamel	there is a --reverse ...
+2014-08-28 18:04:16	keenerd	ph0x: Aw, you are so cute.
+2014-08-28 18:04:16	◀▬▬	piefge (~none@p4FE3B0EB.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-08-28 18:04:23	Bra|nz	why does it use resources 
+2014-08-28 18:04:25	halosghost	!give ironcamel tias
+2014-08-28 18:04:26	phrik	ironcamel: Try It And See™
+2014-08-28 18:04:32	halosghost	keenerd: isn't it?
+2014-08-28 18:04:37	▬▬▶	supulton (~supulton@adsl-71-146-129-201.dsl.pltn13.sbcglobal.net) has joined #archlinux
+2014-08-28 18:04:39	halosghost	s/it/ey/
+2014-08-28 18:04:39	ironcamel	yeah, it shows the reverse deps
+2014-08-28 18:04:54	halosghost	ironcamel: :D
+2014-08-28 18:06:04	▬▬▶	mar77i (~mar77i@178-82-137-130.dynamic.hispeed.ch) has joined #archlinux
+2014-08-28 18:07:05	◀▬▬	fatalhalt (~kyle@c-71-239-211-161.hsd1.il.comcast.net) has quit (Ping timeout: 240 seconds)
+2014-08-28 18:07:42	◀▬▬	elgatov (~elgato@225.Red-81-37-248.dynamicIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2014-08-28 18:08:37	◀▬▬	ichigo-roku (~ichigo-ro@64.120.47.209) has quit (Quit: Quitte)
+2014-08-28 18:08:41	◀▬▬	erkin (~PinkiePie@unaffiliated/erkin) has quit (Ping timeout: 255 seconds)
+2014-08-28 18:08:52	▬▬▶	Mayoi (~PinkiePie@unaffiliated/erkin) has joined #archlinux
+2014-08-28 18:09:05	▬▬▶	truefacts (~j@h96-61-77-22.wltonh.dsl.dynamic.tds.net) has joined #archlinux
+2014-08-28 18:09:28	ph0x	I wonder how much electricity it would save if everyone in the world stopped using gratuitous graphics on webpages and such
+2014-08-28 18:10:50	◀▬▬	mentalis (~mentalis@91.177.163.204) has quit (Disconnected by services)
+2014-08-28 18:10:56	◀▬▬	kyfho (~g@cpe-142-129-50-121.socal.res.rr.com) has quit (Remote host closed the connection)
+2014-08-28 18:11:05	▬▬▶	s3phir0th115 (~s3phir0th@c-71-62-245-28.hsd1.va.comcast.net) has joined #archlinux
+2014-08-28 18:11:47	--	Mayoi is now known as erkin
+2014-08-28 18:12:09	▬▬▶	Alittlemurkling (~zap@c-71-56-116-73.hsd1.ga.comcast.net) has joined #archlinux
+2014-08-28 18:12:29	▬▬▶	Sammy8806 (~steven@dark-it.net) has joined #archlinux
+2014-08-28 18:12:44	▬▬▶	mentalis (~mentalis@102.224-240-81.adsl-dyn.isp.belgacom.be) has joined #archlinux
+2014-08-28 18:12:53	numeral	what's the bash equivalent of zprezto?
+2014-08-28 18:13:05	▬▬▶	ennio-mo1 (~ennio-mor@gateway/tor-sasl/ennio-morricone) has joined #archlinux
+2014-08-28 18:13:16	◀▬▬	rts64_ (~rts@59.84.18.95.dynamic.jazztel.es) has quit (Quit: Lost terminal)
+2014-08-28 18:13:45	◀▬▬	ph0x (~ph0x@unaffiliated/ph0x) has quit (Quit: Leaving.)
+2014-08-28 18:14:14	▬▬▶	Ph0x (~Thunderbi@unaffiliated/ph0x) has joined #archlinux
+2014-08-28 18:14:15	◀▬▬	EntropyArchive (~Thunderbi@198.86.76.186) has quit (Quit: EntropyArchive)
+2014-08-28 18:15:08	◀▬▬	Ph0x (~Thunderbi@unaffiliated/ph0x) has quit (Client Quit)
+2014-08-28 18:15:30	◀▬▬	Jazzdude (6dc03c5d@gateway/web/freenode/ip.109.192.60.93) has quit (Ping timeout: 246 seconds)
+2014-08-28 18:16:53	◀▬▬	rennod (~henny@2a02:908:fa12:3080:4448:87de:4a74:5705) has quit (Ping timeout: 240 seconds)
+2014-08-28 18:17:25	▬▬▶	Ph0x (~Thunderbi@unaffiliated/ph0x) has joined #archlinux
+2014-08-28 18:17:41	▬▬▶	novemberist (~user@p5DC67F74.dip0.t-ipconnect.de) has joined #archlinux
+2014-08-28 18:17:54	◀▬▬	xificurC (~xificurC@chello085216176057.chello.sk) has quit (Ping timeout: 260 seconds)
+2014-08-28 18:18:36	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #archlinux
+2014-08-28 18:18:41	◀▬▬	ennio-mo1 (~ennio-mor@gateway/tor-sasl/ennio-morricone) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:18:59	◀▬▬	Sammy8806 (~steven@dark-it.net) has quit (Ping timeout: 246 seconds)
+2014-08-28 18:19:11	◀▬▬	lnxslck (~lnxslck@av2-84-90-25-147.netvisao.pt) has quit (Remote host closed the connection)
+2014-08-28 18:19:34	--	Determined_P is now known as zz_Determined_P
+2014-08-28 18:19:34	novemberist	wow, updating texlive is frying my old laptop right now
+2014-08-28 18:20:22	▬▬▶	Demios (~no@ool-43540e29.dyn.optonline.net) has joined #archlinux
+2014-08-28 18:20:23	▬▬▶	loungin (~loungin@c-50-134-136-16.hsd1.co.comcast.net) has joined #archlinux
+2014-08-28 18:21:05	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Max SendQ exceeded)
+2014-08-28 18:21:18	◀▬▬	driti (~driti@wsip-68-15-57-158.ri.ri.cox.net) has quit (Quit: pz.)
+2014-08-28 18:21:36	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #archlinux
+2014-08-28 18:21:47	Alittlemurkling	Hello Arch. I finally switched back to slim, now that it works with systemd. However, I'm having an issue where slim discards the X session when I switch to a tty. Xorg.0.log reports: 'systemd-logind: failed to get session: PID 6769 does not belong to any known session', but I think that may have to do with the new rootless behavior of the xorg-server. Any thoughts?
+2014-08-28 18:22:00	▬▬▶	Morley (~quassel@146.185.134.36) has joined #archlinux
+2014-08-28 18:22:09	Alittlemurkling	Oh, and slim.log doesn't contain anything abnormal.
+2014-08-28 18:22:12	Namarrgon	slim was fixed?
+2014-08-28 18:22:22	Alittlemurkling	Sort of.
+2014-08-28 18:22:44	Alittlemurkling	It will log you in at lease.
+2014-08-28 18:22:49	Namarrgon	then it is still broken
+2014-08-28 18:22:52	alad	display managers are not compatible to rootless X
+2014-08-28 18:22:56	alad	use xinit or run X as root
+2014-08-28 18:22:57	◀▬▬	thiagoc (~thiagoc@unaffiliated/thiagoc) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:23:01	◀▬▬	glyf (~glyf@host-92-4-12-114.as43234.net) has quit (Remote host closed the connection)
+2014-08-28 18:23:01	Namarrgon	no
+2014-08-28 18:23:06	Namarrgon	bad alad, bad!
+2014-08-28 18:23:11	Morley	Anyone else been having issues VLC crashing on wmv files due to ffmpeg? Had it downgraded to 1:2.2.4-3 for about 2 months and it's still not fixed.
+2014-08-28 18:23:21	--	irc: disconnected from server

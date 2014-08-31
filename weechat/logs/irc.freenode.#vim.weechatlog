@@ -1,0 +1,1427 @@
+2014-08-23 20:19:27	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 20:19:27	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 20:19:27	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 20:19:27	--	Channel #vim: 1003 nicks (0 ops, 0 voices, 1003 normals)
+2014-08-23 20:19:28	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 20:19:28	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 20:19:28	--	URL for #vim: http://vi-improved.org
+2014-08-23 20:20:00	◀▬▬	coldswitch (~anonymous@c-76-103-9-153.hsd1.ca.comcast.net) has quit (Quit: coldswitch)
+2014-08-23 20:21:56	◀▬▬	nobitanobi (~nobitanob@2602:306:cefb:7070:43d:92b1:8383:332b) has quit (Remote host closed the connection)
+2014-08-23 20:23:46	--	irc: disconnected from server
+2014-08-23 21:13:10	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:13:10	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:13:10	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:13:10	--	Channel #vim: 992 nicks (0 ops, 0 voices, 992 normals)
+2014-08-23 21:13:11	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:13:11	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:13:11	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:13:21	--	irc: disconnected from server
+2014-08-23 21:16:13	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:16:13	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:16:13	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:16:13	--	Channel #vim: 991 nicks (0 ops, 0 voices, 991 normals)
+2014-08-23 21:16:13	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:16:13	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:16:13	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:16:18	▬▬▶	nectarys (~nectarys@41.228.205.185) has joined #vim
+2014-08-23 21:16:43	--	irc: disconnected from server
+2014-08-23 21:16:57	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:16:57	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:16:57	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:16:58	--	Channel #vim: 993 nicks (0 ops, 0 voices, 993 normals)
+2014-08-23 21:16:58	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:16:58	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:16:58	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:17:26	--	irc: disconnected from server
+2014-08-23 21:18:46	-->	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:18:46	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:18:46	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:18:46	--	Channel #vim: 988 nicks (0 ops, 0 voices, 988 normals)
+2014-08-23 21:18:47	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:18:47	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:18:47	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:19:05	<--	NCS_One (~NCS_One@st-217-129-77-117.netvisao.pt) has quit (Quit: leaving)
+2014-08-23 21:19:11	-->	nectarys (~nectarys@41.228.205.185) has joined #vim
+2014-08-23 21:21:28	<--	evangeline__ (~evangelin@93-103-107-74.dynamic.t-2.net) has quit (Ping timeout: 250 seconds)
+2014-08-23 21:21:38	<--	itissid (~Adium@c-76-116-110-167.hsd1.nj.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-23 21:21:50	-->	itissid (~Adium@c-76-116-110-167.hsd1.nj.comcast.net) has joined #vim
+2014-08-23 21:21:51	--	irc: disconnected from server
+2014-08-23 21:23:15	-->	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:23:15	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:23:15	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:23:15	--	Channel #vim: 988 nicks (0 ops, 0 voices, 988 normals)
+2014-08-23 21:23:16	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:23:16	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:23:16	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:23:46	-->	thomasxie (~thomasxie@61.171.73.244) has joined #vim
+2014-08-23 21:24:17	--	irc: disconnected from server
+2014-08-23 21:28:00	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:28:00	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:28:00	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:28:01	--	Channel #vim: 988 nicks (0 ops, 0 voices, 988 normals)
+2014-08-23 21:28:01	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:28:01	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:28:01	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:29:12	▬▬▶	devster (~devin@72-0-153-206.tvc-ip.com) has joined #vim
+2014-08-23 21:29:39	▬▬▶	BigBlue (~seriousgu@xdsl-92-252-20-1.dip.osnanet.de) has joined #vim
+2014-08-23 21:29:49	▬▬▶	shinnya (~shinnya@236.86.100.220.dy.bbexcite.jp) has joined #vim
+2014-08-23 21:30:22	▬▬▶	habibilus (~habibilus@2001:4830:116e:1:c846:b77b:9531:2613) has joined #vim
+2014-08-23 21:30:24	--	irc: disconnected from server
+2014-08-23 21:30:45	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:30:45	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:30:45	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:30:45	--	Channel #vim: 991 nicks (0 ops, 0 voices, 991 normals)
+2014-08-23 21:30:45	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:30:45	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:30:45	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:31:15	▬▬▶	Z-95 (~Z-95@24-241-243-74.dhcp.sffl.va.charter.com) has joined #vim
+2014-08-23 21:32:21	tylerkern	Anyone here use airline?
+2014-08-23 21:32:51	tylerkern	I’m can’t seem to get a theme working with it
+2014-08-23 21:33:13	devster	not yet, but I am eager to try also
+2014-08-23 21:33:19	◀▬▬	Big-Blue (~seriousgu@unaffiliated/big-blue) has quit (Ping timeout: 240 seconds)
+2014-08-23 21:33:38	sbrg	I do
+2014-08-23 21:33:45	sbrg	though I have little experience with themes iirc
+2014-08-23 21:34:34	tylerkern	It seems to have a solarized theme included, so I thought that g:airline_theme=‘solarized’ would work
+2014-08-23 21:35:49	▬▬▶	bluedreams (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has joined #vim
+2014-08-23 21:36:03	◀▬▬	nobitanobi (~nobitanob@108.239.183.7) has quit (Remote host closed the connection)
+2014-08-23 21:36:16	sbrg	tylerkern: it seems to suggest that according to :h airline
+2014-08-23 21:36:20	sbrg	it loads based on colorscheme
+2014-08-23 21:36:37	sbrg	so following that logic it makes sense you can load another colorscheme to theme it
+2014-08-23 21:36:41	◀▬▬	dorei (~n_i_l@ppp005054189246.access.hol.gr) has quit
+2014-08-23 21:37:27	▬▬▶	nobitano_ (~nobitanob@2602:306:cefb:7070:d843:967f:4fac:a49a) has joined #vim
+2014-08-23 21:37:37	tylerkern	Hm. I have solarized as my vim theme, but without the line it doesn’t seem to work either.
+2014-08-23 21:38:18	◀▬▬	ncd|leeN (~leeN@e180186211.adsl.alicedsl.de) has quit (Ping timeout: 264 seconds)
+2014-08-23 21:38:23	◀▬▬	hpt (~hpt@119.80.156.22) has quit (Ping timeout: 246 seconds)
+2014-08-23 21:38:41	tylerkern	Oh wait. It just started working, kind of.
+2014-08-23 21:40:00	◀▬▬	bluedreams (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has quit (Ping timeout: 240 seconds)
+2014-08-23 21:40:10	--	irc: disconnected from server
+2014-08-23 21:40:26	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:40:26	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:40:26	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:40:26	--	Channel #vim: 989 nicks (0 ops, 0 voices, 989 normals)
+2014-08-23 21:40:27	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:40:27	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:40:27	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:41:12	▬▬▶	ampzamp (~ampzamp@cpe-104-33-124-175.socal.res.rr.com) has joined #vim
+2014-08-23 21:41:20	◀▬▬	jagob (~jacob@87-56-233-24-dynamic.dk.customer.tdc.net) has quit (Remote host closed the connection)
+2014-08-23 21:42:01	--	irc: disconnected from server
+2014-08-23 21:43:45	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-23 21:43:45	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-23 21:43:45	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-23 21:43:45	--	Channel #vim: 986 nicks (0 ops, 0 voices, 986 normals)
+2014-08-23 21:43:46	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-23 21:43:46	--	URL for #vim: http://vi-improved.org
+2014-08-23 21:43:46	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-23 21:43:59	▬▬▶	drgoebbels (~drgoebbel@ip70-189-120-114.ok.ok.cox.net) has joined #vim
+2014-08-23 21:45:17	▬▬▶	littledu1 (~littledud@c-69-181-209-212.hsd1.ca.comcast.net) has joined #vim
+2014-08-23 21:45:56	◀▬▬	m3nTe (~root@unaffiliated/m3nte) has quit (Ping timeout: 260 seconds)
+2014-08-23 21:46:45	◀▬▬	Methodical (~Methodica@173-29-238-64.client.mchsi.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-23 21:47:16	◀▬▬	littledu1 (~littledud@c-69-181-209-212.hsd1.ca.comcast.net) has left #vim
+2014-08-23 21:47:59	◀▬▬	nobitano_ (~nobitanob@2602:306:cefb:7070:d843:967f:4fac:a49a) has quit (Remote host closed the connection)
+2014-08-23 21:48:26	◀▬▬	drgoebbels (~drgoebbel@ip70-189-120-114.ok.ok.cox.net) has quit (Ping timeout: 250 seconds)
+2014-08-23 21:48:49	◀▬▬	izabera (~kvirc@unaffiliated/izabera) has quit (Quit: Goodbye.)
+2014-08-23 21:50:03	◀▬▬	JeanCarloMachado (~JeanCarlo@201-89-157-162.cslce700.dsl.brasiltelecom.net.br) has quit (Remote host closed the connection)
+2014-08-23 21:50:58	◀▬▬	emanresu404 (~emanresu4@185.12.45.147) has quit (Quit: Leaving)
+2014-08-23 21:51:47	▬▬▶	daa1494 (~david@201.141.71.81) has joined #vim
+2014-08-23 21:52:51	◀▬▬	osk_ (~osk@pc-6-75-215-201.cm.vtr.net) has quit (Read error: Connection reset by peer)
+2014-08-23 21:54:48	--	irc: disconnected from server
+2014-08-25 04:58:41	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-25 04:58:41	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-25 04:58:41	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-25 04:58:41	--	Channel #vim: 1016 nicks (0 ops, 0 voices, 1016 normals)
+2014-08-25 04:58:41	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-25 04:58:41	--	URL for #vim: http://vi-improved.org
+2014-08-25 04:58:41	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-25 04:58:46	◀▬▬	zinco (~zinco@37.250.57.107.bredband.tre.se) has quit (Ping timeout: 240 seconds)
+2014-08-25 05:00:04	▬▬▶	duck_cpd (~duck_cpd@207-181-233-30.c3-0.mct-ubr1.chi-mct.il.cable.rcn.com) has joined #vim
+2014-08-25 05:00:05	◀▬▬	mikeric (~mikeric@S010618593348903f.vc.shawcable.net) has quit
+2014-08-25 05:00:06	◀▬▬	nnyk_ (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:02:01	◀▬▬	duck_cpd (~duck_cpd@207-181-233-30.c3-0.mct-ubr1.chi-mct.il.cable.rcn.com) has quit (Remote host closed the connection)
+2014-08-25 05:02:57	◀▬▬	goweol (~Thunderbi@115.95.5.219) has quit (Quit: goweol)
+2014-08-25 05:04:42	▬▬▶	zinco (~zinco@37.250.57.107.bredband.tre.se) has joined #vim
+2014-08-25 05:05:12	▬▬▶	[Togusa] (~HisaoNaka@unaffiliated/contrapunctus) has joined #vim
+2014-08-25 05:06:22	▬▬▶	Raging_Hog (~heikki@huolintatalo.fraktio.fi) has joined #vim
+2014-08-25 05:07:19	◀▬▬	thomasxie (~thomasxie@116.227.108.60) has quit (Remote host closed the connection)
+2014-08-25 05:07:36	▬▬▶	dni (~dni@80.122.33.90) has joined #vim
+2014-08-25 05:08:06	▬▬▶	w41 (~w41@unaffiliated/w41) has joined #vim
+2014-08-25 05:08:09	slack1256	What other modal editors exist? vim seem to have the whole cake.
+2014-08-25 05:08:29	romainl	all the other vi-clones
+2014-08-25 05:08:51	slack1256	The only other one I know that tried to do something different was aka kakoune
+2014-08-25 05:09:00	▬▬▶	thomasxie (~thomasxie@116.227.108.60) has joined #vim
+2014-08-25 05:09:01	◀▬▬	[Batou] (~HisaoNaka@unaffiliated/contrapunctus) has quit (Ping timeout: 272 seconds)
+2014-08-25 05:09:27	◀▬▬	duncannz (~duncannz@121-72-72-167.dsl.telstraclear.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:09:50	slack1256	jvi, ex-vi, busybox's vi all present the same user-interface. The internals are different but not the presentation.
+2014-08-25 05:09:51	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 240 seconds)
+2014-08-25 05:09:58	romainl	while not modal, dex i an interesting project
+2014-08-25 05:10:12	slack1256	Oh, that's one I didn't know
+2014-08-25 05:10:26	▬▬▶	jbhesel__ (~jbhesel@p5B08DEF4.dip0.t-ipconnect.de) has joined #vim
+2014-08-25 05:10:30	▬▬▶	W0rmDr1nk (~wormdrink@unaffiliated/wormdrink) has joined #vim
+2014-08-25 05:11:12	dagnachew	hi all
+2014-08-25 05:11:33	dagnachew	I have ymcd server shutdown every time I try to save a file
+2014-08-25 05:11:40	slack1256	kak is like vim in visual mode and all the commands take the object/movement before them. What is good about dex?
+2014-08-25 05:11:48	flughafen	question, i was able to open a tar.bz2 in vim , and edit a file, but the problem is, when I saved it, i eneded up with just a .tar and not a tar.bz2?  can I force it to save to a bz2?
+2014-08-25 05:11:59	romainl	and there's textadept in the "non-modal but still interesting" category
+2014-08-25 05:12:28	◀▬▬	Mayzie (~Mayazcher@unaffiliated/mayazcherquoi) has quit (Ping timeout: 264 seconds)
+2014-08-25 05:12:29	romainl	dagnachew: use YCM's issue tracker
+2014-08-25 05:12:43	▬▬▶	thiagotnunes (~thiagotnu@145.253.129.220) has joined #vim
+2014-08-25 05:12:50	◀▬▬	kwd_ (~kwd@port-87-193-216-50.static.qsc.de) has quit (Read error: Connection reset by peer)
+2014-08-25 05:12:58	romainl	slack1256: it's command mechanism
+2014-08-25 05:13:18	romainl	slack1256: didn't try it in the last 6 months though
+2014-08-25 05:13:41	▬▬▶	caveat- (hoax@2a01:4f8:191:9111:30::10) has joined #vim
+2014-08-25 05:14:44	▬▬▶	Mayzie (~Mayazcher@unaffiliated/mayazcherquoi) has joined #vim
+2014-08-25 05:15:56	dagnachew	how I disable yellow dots ? 
+2014-08-25 05:16:00	--	[Togusa] is now known as HisaoNakai
+2014-08-25 05:16:14	romainl	yellow dots?
+2014-08-25 05:16:46	dagnachew	romainl: space highlighted
+2014-08-25 05:16:52	osse	:set nolist
+2014-08-25 05:17:15	osse	or change 'listchars'
+2014-08-25 05:17:37	▬▬▶	derk0pf (~derk0pf@p5DDC21D0.dip0.t-ipconnect.de) has joined #vim
+2014-08-25 05:17:57	◀▬▬	derk0pf (~derk0pf@p5DDC21D0.dip0.t-ipconnect.de) has quit (Client Quit)
+2014-08-25 05:18:05	dagnachew	osse I have >> and . highlighted 
+2014-08-25 05:18:21	▬▬▶	derk0pf (~derk0pf@p5DDC21D0.dip0.t-ipconnect.de) has joined #vim
+2014-08-25 05:18:38	◀▬▬	maroloccio (~marolocci@21.Red-83-53-185.dynamicIP.rima-tde.net) has quit (Quit: WeeChat 0.4.3)
+2014-08-25 05:18:48	◀▬▬	ggVGc (~brzzm@unaffiliated/walt) has quit (Ping timeout: 255 seconds)
+2014-08-25 05:19:21	◀▬▬	ferreum (~ferreus@p57A7FD5B.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2014-08-25 05:19:30	osse	so it is not space highlighted ?
+2014-08-25 05:19:32	▬▬▶	flipp (~flipp@unaffiliated/flipp) has joined #vim
+2014-08-25 05:19:33	osse	highlighting
+2014-08-25 05:19:38	▬▬▶	ferreum (~ferreus@p57A7FD5B.dip0.t-ipconnect.de) has joined #vim
+2014-08-25 05:19:41	◀▬▬	zinco (~zinco@37.250.57.107.bredband.tre.se) has quit (Remote host closed the connection)
+2014-08-25 05:19:59	▬▬▶	kopparam (~kopparam@14.140.219.22) has joined #vim
+2014-08-25 05:20:17	▬▬▶	zinco (~zinco@37.250.57.107.bredband.tre.se) has joined #vim
+2014-08-25 05:20:24	◀▬▬	zinco (~zinco@37.250.57.107.bredband.tre.se) has quit (Remote host closed the connection)
+2014-08-25 05:20:40	▬▬▶	zinco (~zinco@37.250.57.107.bredband.tre.se) has joined #vim
+2014-08-25 05:21:09	▬▬▶	prbc (~prbc@177.183.196.73) has joined #vim
+2014-08-25 05:21:37	dagnachew	osse: http://postimg.org/image/soais4pb3/
+2014-08-25 05:21:59	osse	:set nolist
+2014-08-25 05:22:30	romainl	the problem is so easy to describe
+2014-08-25 05:23:15	▬▬▶	ggVGc (~brzzm@unaffiliated/walt) has joined #vim
+2014-08-25 05:23:31	romainl	I don't see a single yellow dot here
+2014-08-25 05:23:36	▬▬▶	nexysno (~nexysno@mau78-1-88-184-111-173.fbx.proxad.net) has joined #vim
+2014-08-25 05:24:11	romainl	and… dagnachew: you enabled that so you certainly know how to disable it
+2014-08-25 05:25:12	▬▬▶	nnyk_ (~nnyk@unaffiliated/nnyk) has joined #vim
+2014-08-25 05:25:30	◀▬▬	prbc (~prbc@177.183.196.73) has quit (Ping timeout: 246 seconds)
+2014-08-25 05:25:43	◀▬▬	honyuc (~honyu@n218250048135.netvigator.com) has quit (Quit: Leaving)
+2014-08-25 05:26:17	▬▬▶	NCS_One (~NCS_One@a81-84-205-92.cpe.netcabo.pt) has joined #vim
+2014-08-25 05:26:43	▬▬▶	blackmesa (~blackmesa@aftr-37-201-227-225.unity-media.net) has joined #vim
+2014-08-25 05:27:57	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 240 seconds)
+2014-08-25 05:27:58	◀▬▬	h0lyalg0_ (~textual@bba425542.alshamil.net.ae) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 05:31:07	◀▬▬	bluedreams (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has quit (Remote host closed the connection)
+2014-08-25 05:31:21	◀▬▬	Ravana (~Ravana@unaffiliated/ravana) has quit (Quit: WeeChat 1.0)
+2014-08-25 05:32:45	▬▬▶	caveat- (hoax@2a01:4f8:191:9111:30::10) has joined #vim
+2014-08-25 05:32:47	▬▬▶	enen (~enen@2.221.152.241) has joined #vim
+2014-08-25 05:33:15	◀▬▬	knightshade (~knightsha@p548CEBFE.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:33:24	◀▬▬	morenoh151 (~morenoh14@173-228-123-196.dsl.dynamic.sonic.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:33:47	▬▬▶	freestyl3r (~free@ppp046176022072.access.hol.gr) has joined #vim
+2014-08-25 05:33:57	▬▬▶	h0lyalg0_ (~textual@bba425542.alshamil.net.ae) has joined #vim
+2014-08-25 05:34:45	◀▬▬	HisaoNakai (~HisaoNaka@unaffiliated/contrapunctus) has quit (Quit: HisaoNakai)
+2014-08-25 05:35:30	◀▬▬	ogny (~orkun@unaffiliated/ogny) has quit (Ping timeout: 250 seconds)
+2014-08-25 05:35:56	▬▬▶	Ravana (~Ravana@unaffiliated/ravana) has joined #vim
+2014-08-25 05:37:54	◀▬▬	subhojit777 (~subhojit7@122.163.22.245) has quit (Quit: See ya)
+2014-08-25 05:38:00	◀▬▬	slack1256 (~slack@190-21-36-81.baf.movistar.cl) has quit (Quit: Konversation terminated!)
+2014-08-25 05:38:33	◀▬▬	dni (~dni@80.122.33.90) has quit (Remote host closed the connection)
+2014-08-25 05:38:55	▬▬▶	gcha (~gcha@did75-16-88-162-137-54.fbx.proxad.net) has joined #vim
+2014-08-25 05:41:14	◀▬▬	zinco (~zinco@37.250.57.107.bredband.tre.se) has quit (Remote host closed the connection)
+2014-08-25 05:41:49	▬▬▶	kopparam_ (~kopparam@182.74.238.30) has joined #vim
+2014-08-25 05:42:04	▬▬▶	Kulrak (kulrak@122-149-211-149.static.dsl.dodo.com.au) has joined #vim
+2014-08-25 05:42:04	◀▬▬	Kulrak (kulrak@122-149-211-149.static.dsl.dodo.com.au) has quit (Changing host)
+2014-08-25 05:42:04	▬▬▶	Kulrak (kulrak@tlug/member/kulrak) has joined #vim
+2014-08-25 05:42:38	◀▬▬	hkon_ (~hkon_@213.167.121.42.static.lyse.net) has quit (Remote host closed the connection)
+2014-08-25 05:43:01	▬▬▶	kunev (~kunev@93.152.167.79) has joined #vim
+2014-08-25 05:44:09	dagnachew	osse thanks :)
+2014-08-25 05:44:15	dagnachew	osse thanks :)
+2014-08-25 05:44:16	◀▬▬	kopparam (~kopparam@14.140.219.22) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:44:17	▬▬▶	koppara__ (~kopparam@14.140.219.22) has joined #vim
+2014-08-25 05:45:28	◀▬▬	kyb3r_ (~kyb3r_@121-99-24-108.bng1.nct.orcon.net.nz) has quit (Read error: Connection reset by peer)
+2014-08-25 05:45:43	--	irc: disconnected from server
+2014-08-25 05:46:03	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-25 05:46:03	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-25 05:46:03	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-25 05:46:03	--	Channel #vim: 1018 nicks (0 ops, 0 voices, 1018 normals)
+2014-08-25 05:46:03	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-25 05:46:03	--	URL for #vim: http://vi-improved.org
+2014-08-25 05:46:03	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-25 05:47:01	▬▬▶	jophish_ (~jophish@97-113-7-126.tukw.qwest.net) has joined #vim
+2014-08-25 05:47:09	◀▬▬	kopparam_ (~kopparam@182.74.238.30) has quit (Ping timeout: 255 seconds)
+2014-08-25 05:47:39	◀▬▬	nnyk_ (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 272 seconds)
+2014-08-25 05:48:15	◀▬▬	telex (~telex@94.247.40.156) has quit (Remote host closed the connection)
+2014-08-25 05:48:32	▬▬▶	nnyk_ (~nnyk@unaffiliated/nnyk) has joined #vim
+2014-08-25 05:48:52	▬▬▶	hanlof (~hanlof\@94.234.170.69) has joined #vim
+2014-08-25 05:48:56	◀▬▬	koppara__ (~kopparam@14.140.219.22) has quit (Ping timeout: 250 seconds)
+2014-08-25 05:49:35	--	j3madux is now known as jemadux
+2014-08-25 05:50:34	▬▬▶	telex (~telex@freeshell.de) has joined #vim
+2014-08-25 05:50:38	▬▬▶	hkon_ (~hkon_@213.167.121.42.static.lyse.net) has joined #vim
+2014-08-25 05:51:44	▬▬▶	yarker (~bismilah@li629-190.members.linode.com) has joined #vim
+2014-08-25 05:52:39	◀▬▬	nnyk_ (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 240 seconds)
+2014-08-25 05:52:41	▬▬▶	stamina (~stamina@83.128.211.177) has joined #vim
+2014-08-25 05:52:50	▬▬▶	jottr (~jottr@unaffiliated/jottr) has joined #vim
+2014-08-25 05:53:03	▬▬▶	krz (~foo@unaffiliated/krz) has joined #vim
+2014-08-25 05:55:31	◀▬▬	Nahra (~user@unaffiliated/nahra) has quit (Remote host closed the connection)
+2014-08-25 05:56:29	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-25 05:56:39	◀▬▬	Bouncer00 (~Bouncer00@37.209.129.24) has quit (Ping timeout: 240 seconds)
+2014-08-25 05:56:50	▬▬▶	Puppet (~Puppet@c-67-167-230-240.hsd1.il.comcast.net) has joined #vim
+2014-08-25 05:57:07	▬▬▶	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-25 05:57:37	◀▬▬	ggVGc (~brzzm@unaffiliated/walt) has quit (Read error: Connection reset by peer)
+2014-08-25 05:57:37	▬▬▶	Nahra (~user@unaffiliated/nahra) has joined #vim
+2014-08-25 05:58:00	--	irc: disconnected from server
+2014-08-25 05:58:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-25 05:58:16	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-25 05:58:16	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-25 05:58:16	--	Channel #vim: 1021 nicks (0 ops, 0 voices, 1021 normals)
+2014-08-25 05:58:17	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-25 05:58:17	--	URL for #vim: http://vi-improved.org
+2014-08-25 05:58:26	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-25 06:00:10	◀▬▬	rfreeman_w (~rfreeman@gateway/tor-sasl/rfreemanw) has quit (Ping timeout: 264 seconds)
+2014-08-25 06:02:25	◀▬▬	leodemon (~leodemon@117.136.20.150) has quit (Quit: Leaving)
+2014-08-25 06:02:33	--	irc: disconnected from server
+2014-08-25 06:02:48	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-25 06:02:48	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-25 06:02:48	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-25 06:02:48	--	Channel #vim: 1020 nicks (0 ops, 0 voices, 1020 normals)
+2014-08-25 06:02:56	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-25 06:02:56	--	URL for #vim: http://vi-improved.org
+2014-08-25 06:03:01	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-25 06:03:17	◀▬▬	stamina (~stamina@83.128.211.177) has quit (Ping timeout: 260 seconds)
+2014-08-25 06:04:04	▬▬▶	Bouncer00 (~Bouncer00@78.30.105.208) has joined #vim
+2014-08-25 06:05:06	▬▬▶	joshnz (~joshnz@121-99-245-224.bng1.nct.orcon.net.nz) has joined #vim
+2014-08-25 06:05:06	◀▬▬	Puppet (~Puppet@c-67-167-230-240.hsd1.il.comcast.net) has left #vim
+2014-08-25 06:07:10	◀▬▬	duck_cpd (~duck_cpd@207-181-233-30.c3-0.mct-ubr1.chi-mct.il.cable.rcn.com) has quit (Ping timeout: 240 seconds)
+2014-08-25 06:07:56	--	irc: disconnected from server
+2014-08-25 19:12:01	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-25 19:12:01	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-25 19:12:01	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:33
+2014-08-25 19:12:01	--	Channel #vim: 1018 nicks (0 ops, 0 voices, 1018 normals)
+2014-08-25 19:12:01	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-25 19:12:01	--	URL for #vim: http://vi-improved.org
+2014-08-25 19:12:14	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-25 19:12:32	▬▬▶	diegoviola (~diego@unaffiliated/diegoviola) has joined #vim
+2014-08-25 19:12:40	osse	in visual mode all you use the motions for are defining the region you select. deleting, or any other operation, is sort of seperate from that. whatever operation you choose affects the whole region.
+2014-08-25 19:12:53	osse	so vbd will work, and vwd will delete the first letter of the next word
+2014-08-25 19:13:39	▬▬▶	yowzamonk (~rajeevalm@ool-6bbc1081.dyn.optonline.net) has joined #vim
+2014-08-25 19:13:39	◀▬▬	telex (~telex@freeshell.de) has quit (Read error: Connection reset by peer)
+2014-08-25 19:13:56	guest3456_	right ok
+2014-08-25 19:14:32	▬▬▶	telex (~telex@freeshell.de) has joined #vim
+2014-08-25 19:14:45	guest3456_	alxgnon,  what keyboard is that
+2014-08-25 19:15:05	◀▬▬	itissid (~Adium@172.56.19.252) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:15:12	◀▬▬	tailgate (~ahalbert@156.40.121.1) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:15:21	◀▬▬	gzl_ (~gzl@104.131.237.161) has left #vim
+2014-08-25 19:15:35	▬▬▶	gzl (~gzl@unaffiliated/gzl) has joined #vim
+2014-08-25 19:15:42	--	irc: disconnected from server
+2014-08-25 19:16:01	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-25 19:16:01	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-25 19:16:01	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-25 19:16:01	--	Channel #vim: 1018 nicks (0 ops, 0 voices, 1018 normals)
+2014-08-25 19:16:01	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-25 19:16:01	--	URL for #vim: http://vi-improved.org
+2014-08-25 19:16:12	osse	for the record:  :help inclusive
+2014-08-25 19:16:14	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-25 19:17:12	▬▬▶	Internet13 (~chatzilla@cpc15-croy20-2-0-cust382.croy.cable.virginm.net) has joined #vim
+2014-08-25 19:17:50	◀▬▬	yowzamonk (~rajeevalm@ool-6bbc1081.dyn.optonline.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:17:50	◀▬▬	jottr (~jottr@unaffiliated/jottr) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:20:22	◀▬▬	genome (~gboggs@cinci.whapps.com) has left #vim
+2014-08-25 19:21:16	◀▬▬	kriskropd (~kris@unaffiliated/kriskropd) has quit (Quit: leaving)
+2014-08-25 19:21:25	◀▬▬	typedlambda (~typedlamb@ip4d16dc44.dynamic.kabel-deutschland.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:23:04	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:23:55	▬▬▶	typedlambda (~typedlamb@ip4d16dc44.dynamic.kabel-deutschland.de) has joined #vim
+2014-08-25 19:25:14	◀▬▬	cy (~cy@unaffiliated/cy) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:25:50	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #vim
+2014-08-25 19:26:09	◀▬▬	nobitanobi (~nobitanob@63.249.68.10) has quit
+2014-08-25 19:26:14	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:26:23	--	oso96_2000 is now known as oso|away
+2014-08-25 19:26:30	▬▬▶	cy (~cy@unaffiliated/cy) has joined #vim
+2014-08-25 19:27:08	▬▬▶	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has joined #vim
+2014-08-25 19:27:13	alxgnon	guest3456_: WASD V2 87 key
+2014-08-25 19:29:00	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:29:27	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #vim
+2014-08-25 19:30:33	◀▬▬	frankle (uid28567@gateway/web/irccloud.com/x-vdyecyaxdwgvsihm) has quit (Quit: Connection closed for inactivity)
+2014-08-25 19:31:32	◀▬▬	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:32:43	◀▬▬	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-25 19:32:45	▬▬▶	Sporf (~Sporf@cpe-72-231-20-33.nyc.res.rr.com) has joined #vim
+2014-08-25 19:33:02	◀▬▬	tyler569 (~tyler569@peregrine.vms.pw) has left #vim
+2014-08-25 19:33:34	◀▬▬	kopfkind_ (~axel.knau@unaffiliated/kopfkind) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:33:34	◀▬▬	mlq (~mlq@unaffiliated/mlq) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:33:51	◀▬▬	crater2150 (~crater215@fasel.nerd2nerd.org) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:33:55	▬▬▶	kopfkind (~axel.knau@unaffiliated/kopfkind) has joined #vim
+2014-08-25 19:33:59	◀▬▬	shahri (~shahri@unaffiliated/shahri) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:34:14	▬▬▶	fstd_ (~fstd@unaffiliated/fisted) has joined #vim
+2014-08-25 19:34:18	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Read error: Connection reset by peer)
+2014-08-25 19:34:21	◀▬▬	tanath (~tanath@gateway/tor-sasl/tanath) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:34:27	◀▬▬	aborazmeh (~aborazmeh@unaffiliated/aborazmeh) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:34:38	--	fstd_ is now known as fstd
+2014-08-25 19:34:52	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:34:59	▬▬▶	caveat- (hoax@2a01:4f8:191:9111:30::10) has joined #vim
+2014-08-25 19:35:19	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #vim
+2014-08-25 19:35:38	◀▬▬	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has quit (Quit: Leaving)
+2014-08-25 19:35:50	▬▬▶	tanath (~tanath@gateway/tor-sasl/tanath) has joined #vim
+2014-08-25 19:35:53	◀▬▬	icebourg (~icebourg@c-75-70-18-13.hsd1.co.comcast.net) has quit
+2014-08-25 19:36:14	▬▬▶	mlq (~mlq@unaffiliated/mlq) has joined #vim
+2014-08-25 19:36:27	▬▬▶	crater2150 (~crater215@fasel.nerd2nerd.org) has joined #vim
+2014-08-25 19:36:34	▬▬▶	shahri (~shahri@unaffiliated/shahri) has joined #vim
+2014-08-25 19:36:59	◀▬▬	rtrdwnr (~rtrdwnr@denny.brackholed.my.prackets.net) has quit (Quit: .)
+2014-08-25 19:38:15	◀▬▬	hallamigo_ (~hallamigo@206.71.71.63) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:38:16	--	timnovinger is now known as zz_tnovinger
+2014-08-25 19:38:17	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:38:27	▬▬▶	duck_cpd (~duck_cpd@207-181-233-30.c3-0.mct-ubr1.chi-mct.il.cable.rcn.com) has joined #vim
+2014-08-25 19:38:48	◀▬▬	duck_cpd (~duck_cpd@207-181-233-30.c3-0.mct-ubr1.chi-mct.il.cable.rcn.com) has quit (Remote host closed the connection)
+2014-08-25 19:38:54	▬▬▶	duck_cpd (~duck_cpd@207-181-233-30.c3-0.mct-ubr1.chi-mct.il.cable.rcn.com) has joined #vim
+2014-08-25 19:38:56	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #vim
+2014-08-25 19:39:13	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Remote host closed the connection)
+2014-08-25 19:40:11	◀▬▬	blivande (~Chw@189.193.69.170) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:41:26	◀▬▬	tirengarfio (~tirengarf@142.Red-81-37-188.dynamicIP.rima-tde.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:42:13	◀▬▬	tingol (~tingol@178-222-78-88.dynamic.isp.telekom.rs) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:42:46	--	zz_tnovinger is now known as timnovinger
+2014-08-25 19:42:59	▬▬▶	aborazmeh (~aborazmeh@unaffiliated/aborazmeh) has joined #vim
+2014-08-25 19:43:01	◀▬▬	Jesin-phone (~Jesin@Dyn141060.cc.lehigh.edu) has quit (Quit: Bye)
+2014-08-25 19:43:19	▬▬▶	scottj (~scott@206.212.250.58) has joined #vim
+2014-08-25 19:44:08	◀▬▬	m3nTe_ (~root@90.194.54.146) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:44:38	▬▬▶	blivande (~Chw@189.193.69.170) has joined #vim
+2014-08-25 19:45:42	◀▬▬	travisjeffery (~travisjef@li130-64.members.linode.com) has quit (Remote host closed the connection)
+2014-08-25 19:45:44	▬▬▶	tirengarfio (~tirengarf@89.Red-83-55-84.dynamicIP.rima-tde.net) has joined #vim
+2014-08-25 19:46:09	▬▬▶	travisjeffery (~travisjef@li130-64.members.linode.com) has joined #vim
+2014-08-25 19:46:49	▬▬▶	jwpierce3 (~jwpierce3@172.56.34.14) has joined #vim
+2014-08-25 19:48:12	◀▬▬	aiguu_ (~aiguu@50-0-196-130.dedicated.static.sonic.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:48:55	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-25 19:50:06	◀▬▬	mcantor (~mcantor@199.87.83.154) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:50:59	◀▬▬	travisjeffery (~travisjef@li130-64.members.linode.com) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:51:22	▬▬▶	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has joined #vim
+2014-08-25 19:52:09	▬▬▶	goweol (~Thunderbi@115.95.5.219) has joined #vim
+2014-08-25 19:52:14	◀▬▬	Sixmsj (~Sixmsj@c-50-131-110-35.hsd1.ca.comcast.net) has quit (Quit: Sixmsj)
+2014-08-25 19:52:16	▬▬▶	nedbat (~nedbat@python/psf/nedbat) has joined #vim
+2014-08-25 19:53:25	▬▬▶	Zifre (~Zifre@unaffiliated/zifre) has joined #vim
+2014-08-25 19:56:24	◀▬▬	pgdouyon (~pgdouyon@c-76-118-176-110.hsd1.ma.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:58:39	▬▬▶	rtrdwnr (~rtrdwnr@denny.brackholed.my.prackets.net) has joined #vim
+2014-08-25 19:59:56	◀▬▬	koi (~koi@127.177-66-87.adsl-dyn.isp.belgacom.be) has quit (Quit: I quit)
+2014-08-25 19:59:57	◀▬▬	pf_moore (uid27586@gateway/web/irccloud.com/x-tsqlbkdyyxevszxk) has quit (Quit: Connection closed for inactivity)
+2014-08-25 20:00:34	▬▬▶	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has joined #vim
+2014-08-25 20:00:49	▬▬▶	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has joined #vim
+2014-08-25 20:01:19	▬▬▶	iamjarvo (~textual@c-76-99-235-12.hsd1.nj.comcast.net) has joined #vim
+2014-08-25 20:01:21	◀▬▬	blivande (~Chw@189.193.69.170) has quit (Ping timeout: 245 seconds)
+2014-08-25 20:03:12	◀▬▬	writtenoff (~writtenof@of1.psych.ubc.ca) has quit (Quit: leaving)
+2014-08-25 20:03:17	◀▬▬	FernandoBasso (~Fernando@187-4-29-102.cslce700.dsl.brasiltelecom.net.br) has quit (Quit: leaving)
+2014-08-25 20:03:30	▬▬▶	saml_ (~saml@pool-71-190-8-37.nycmny.east.verizon.net) has joined #vim
+2014-08-25 20:04:11	◀▬▬	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has quit (Client Quit)
+2014-08-25 20:04:41	◀▬▬	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has quit (Ping timeout: 245 seconds)
+2014-08-25 20:06:35	▬▬▶	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has joined #vim
+2014-08-25 20:07:09	◀▬▬	prbc (~prbc@177.183.196.73) has quit (Remote host closed the connection)
+2014-08-25 20:07:49	▬▬▶	prbc (~prbc@177.183.196.73) has joined #vim
+2014-08-25 20:08:05	◀▬▬	fatih (~Fatih`@78.186.36.182) has quit
+2014-08-25 20:08:43	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 260 seconds)
+2014-08-25 20:09:23	◀▬▬	mikeric (~mikeric@S010618593348903f.vc.shawcable.net) has quit
+2014-08-25 20:09:33	▬▬▶	mndlbrt (~EB@loginb.uib.no) has joined #vim
+2014-08-25 20:09:57	◀▬▬	q9 (~guido@dslb-092-072-149-209.092.072.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:11:03	▬▬▶	keko (~keko@123-243-54-249.tpgi.com.au) has joined #vim
+2014-08-25 20:12:16	◀▬▬	prbc (~prbc@177.183.196.73) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:13:20	◀▬▬	somian (~quassel@unaffiliated/somian) has quit (Ping timeout: 250 seconds)
+2014-08-25 20:13:29	▬▬▶	tailgate (~ahalbert@c-69-140-67-114.hsd1.va.comcast.net) has joined #vim
+2014-08-25 20:14:25	◀▬▬	sbogg (~anonymous@c-50-186-4-10.hsd1.or.comcast.net) has quit (Quit: sbogg)
+2014-08-25 20:14:32	◀▬▬	emg (~emg@74.217.148.5) has quit (Quit: emg)
+2014-08-25 20:14:52	◀▬▬	khonkhortisan (~Khonkhort@2601:8:8600:97f:4a5b:39ff:fe94:be23) has quit (Remote host closed the connection)
+2014-08-25 20:15:19	▬▬▶	khonkhortisan (~Khonkhort@2601:8:8600:97f:4a5b:39ff:fe94:be23) has joined #vim
+2014-08-25 20:15:31	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-25 20:18:29	◀▬▬	skered (~dereks@unaffiliated/skered) has quit (Ping timeout: 272 seconds)
+2014-08-25 20:18:46	◀▬▬	moritzschaefer (~moritz@stgt-5f70180e.pool.mediaWays.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:19:04	▬▬▶	mike_af_ (~mike_af@c-66-41-226-143.hsd1.mn.comcast.net) has joined #vim
+2014-08-25 20:19:30	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #vim
+2014-08-25 20:19:48	▬▬▶	nectarys_ (~nectarys@41.228.206.35) has joined #vim
+2014-08-25 20:19:49	◀▬▬	nectarys_ (~nectarys@41.228.206.35) has quit (Client Quit)
+2014-08-25 20:22:44	◀▬▬	cpage (~cpage@adsl-75-18-184-43.dsl.pltn13.sbcglobal.net) has quit (Quit: cpage)
+2014-08-25 20:22:45	◀▬▬	digitalsatori (~Thunderbi@116.234.181.110) has quit (Read error: No route to host)
+2014-08-25 20:23:03	▬▬▶	digitalsatori1 (~Thunderbi@116.234.181.110) has joined #vim
+2014-08-25 20:23:50	◀▬▬	digitalsatori1 (~Thunderbi@116.234.181.110) has quit (Remote host closed the connection)
+2014-08-25 20:23:59	▬▬▶	digitalsatori (~Thunderbi@116.234.181.110) has joined #vim
+2014-08-25 20:24:02	▬▬▶	thrasymachus (~mpurcell@97-90-104-195.static.mdfd.or.charter.com) has joined #vim
+2014-08-25 20:24:42	▬▬▶	scriptThis (~scriptThi@174-16-219-179.hlrn.qwest.net) has joined #vim
+2014-08-25 20:26:28	--	irc: disconnected from server
+2014-08-25 21:26:22	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-25 21:26:22	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-25 21:26:22	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-25 21:26:22	--	Channel #vim: 995 nicks (0 ops, 0 voices, 995 normals)
+2014-08-25 21:26:22	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-25 21:26:22	--	URL for #vim: http://vi-improved.org
+2014-08-25 21:26:23	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-25 21:26:35	▬▬▶	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-25 21:26:36	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-25 21:26:56	▬▬▶	oncenull (~pose@186.137.226.215) has joined #vim
+2014-08-25 21:27:14	▬▬▶	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has joined #vim
+2014-08-25 21:28:24	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Client Quit)
+2014-08-25 21:29:45	▬▬▶	TommyC (~TommyC@unaffiliated/sepulchralbloom) has joined #vim
+2014-08-25 21:29:53	◀▬▬	nalik89 (~nalik@179-125-140-7.desktop.com.br) has quit (Quit: Leaving)
+2014-08-25 21:30:58	▬▬▶	bb010g (uid21050@gateway/web/irccloud.com/x-wvpdfylpvppafflb) has joined #vim
+2014-08-25 21:31:32	▬▬▶	fstd_ (~fstd@unaffiliated/fisted) has joined #vim
+2014-08-25 21:31:46	▬▬▶	aborazmeh (~aborazmeh@unaffiliated/aborazmeh) has joined #vim
+2014-08-25 21:33:05	▬▬▶	caveat- (hoax@2a01:4f8:191:9111:30::10) has joined #vim
+2014-08-25 21:33:19	▬▬▶	jcarloz (~jcarloz@115.187.240.134) has joined #vim
+2014-08-25 21:33:24	◀▬▬	jcarloz (~jcarloz@115.187.240.134) has quit (Max SendQ exceeded)
+2014-08-25 21:34:13	▬▬▶	nobitanobi (~nobitanob@2602:306:cefb:7070:306b:2e21:7483:850d) has joined #vim
+2014-08-25 21:34:19	▬▬▶	jcarloz (~jcarloz@115.187.240.134) has joined #vim
+2014-08-25 21:34:25	◀▬▬	jcarloz (~jcarloz@115.187.240.134) has quit (Max SendQ exceeded)
+2014-08-25 21:34:26	◀▬▬	JosephFerano (~josephfer@216.3.159.67) has quit (Quit: JosephFerano)
+2014-08-25 21:34:55	▬▬▶	JosephFerano (~josephfer@12.167.51.34) has joined #vim
+2014-08-25 21:34:59	▬▬▶	travisjeffery (~travisjef@CPE602ad086c6c9-CM602ad086c6c6.cpe.net.cable.rogers.com) has joined #vim
+2014-08-25 21:35:01	◀▬▬	JosephFerano (~josephfer@12.167.51.34) has quit (Client Quit)
+2014-08-25 21:35:14	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:35:15	--	fstd_ is now known as fstd
+2014-08-25 21:35:53	▬▬▶	jcarloz (~jcarloz@115.187.240.134) has joined #vim
+2014-08-25 21:35:59	◀▬▬	jcarloz (~jcarloz@115.187.240.134) has quit (Max SendQ exceeded)
+2014-08-25 21:37:03	◀▬▬	marchelzo_ (~marchelzo@HLFXNS016CW-142134092133.dhcp-dynamic.FibreOp.ns.bellaliant.net) has quit (Read error: Connection reset by peer)
+2014-08-25 21:37:04	▬▬▶	Mayzie (~Mayazcher@unaffiliated/mayazcherquoi) has joined #vim
+2014-08-25 21:37:40	▬▬▶	linuxguy101 (~ssvlack@unaffiliated/linuxguy101) has joined #vim
+2014-08-25 21:37:47	◀▬▬	aborazmeh (~aborazmeh@unaffiliated/aborazmeh) has quit (Ping timeout: 240 seconds)
+2014-08-25 21:38:14	▬▬▶	tokik (~tokik@122x212x176x138.ap122.ftth.ucom.ne.jp) has joined #vim
+2014-08-25 21:38:31	▬▬▶	Hoyt (~c0debreak@103.25.202.183) has joined #vim
+2014-08-25 21:40:05	▬▬▶	xerox357 (~textual@ool-182ca97c.dyn.optonline.net) has joined #vim
+2014-08-25 21:40:08	tailgate	So I was curious: when did all the syntax to vundle change?
+2014-08-25 21:40:10	▬▬▶	BlackIkeEagle (~BlackIkeE@archlinux/trusteduser/blackikeeagle) has joined #vim
+2014-08-25 21:40:11	◀▬▬	netcarver (~netcarver@87.114.240.6) has quit (Ping timeout: 245 seconds)
+2014-08-25 21:40:15	▬▬▶	k_sze[work] (~kvirc@unaffiliated/kira) has joined #vim
+2014-08-25 21:40:36	▬▬▶	master_of_master (~master_of@p4FD7B59E.dip0.t-ipconnect.de) has joined #vim
+2014-08-25 21:41:33	--	zz_tnovinger is now known as timnovinger_zz
+2014-08-25 21:42:15	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 240 seconds)
+2014-08-25 21:43:00	◀▬▬	tinklebear (~tinklebea@cpe-066-057-253-171.nc.res.rr.com) has quit (Quit: Nettalk6 - www.ntalk.de)
+2014-08-25 21:44:00	◀▬▬	Zed`_ (~Zed@sh.savantnet.com) has quit (Quit: Drama always seems worse than it is..)
+2014-08-25 21:44:00	◀▬▬	master_o1_master (~master_of@p4FD7B433.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:44:06	duggiefresh	@tailgate: Sometime in march. https://github.com/gmarik/Vundle.vim/commit/0521de95eac09298c4e71b3662839612280c1ae9
+2014-08-25 21:44:10	▬▬▶	Zed` (~Zed@sh.savantnet.com) has joined #vim
+2014-08-25 21:44:25	◀▬▬	shiin (~shiin@funtoo/core/shiin) has quit (Ping timeout: 255 seconds)
+2014-08-25 21:45:37	tailgate	huh. Guess. I'm late to the party.
+2014-08-25 21:45:57	▬▬▶	fengling (~fengling@101.36.77.45) has joined #vim
+2014-08-25 21:46:45	▬▬▶	steamboat (~sehrlich@c-76-17-123-250.hsd1.ga.comcast.net) has joined #vim
+2014-08-25 21:46:55	▬▬▶	appel__ (~abbel@g229068119.adsl.alicedsl.de) has joined #vim
+2014-08-25 21:47:37	▬▬▶	caveat- (hoax@2a01:4f8:191:9111:30::10) has joined #vim
+2014-08-25 21:48:02	▬▬▶	ramble (~ramble@58.246.72.123) has joined #vim
+2014-08-25 21:48:22	Snacksicles	You may have been late to the party, but you were still the life of it.
+2014-08-25 21:48:25	◀▬▬	thevince (~vinny@c-73-161-25-190.hsd1.mi.comcast.net) has quit (Quit: Leaving)
+2014-08-25 21:48:51	▬▬▶	diniwed (~gavron@ool-457f51c5.dyn.optonline.net) has joined #vim
+2014-08-25 21:49:05	Snacksicles	Vim would have crumbled and died a month ago, if it weren't for you, tailgate!
+2014-08-25 21:49:35	scp1	I tailgate your mercedes benz, we'll see how your mercedes bends
+2014-08-25 21:49:47	▬▬▶	Trivium (~Trivium@99-91-160-81.lightspeed.rcsntx.sbcglobal.net) has joined #vim
+2014-08-25 21:50:10	◀▬▬	abbel_ (~abbel@f055173200.adsl.alicedsl.de) has quit (Ping timeout: 252 seconds)
+2014-08-25 21:50:34	tailgate	I've been editing on vim 7.1 for a while, so no new plugins to play with =/
+2014-08-25 21:50:53	▬▬▶	Zx3 (zx3@shell.bshellz.net) has joined #vim
+2014-08-25 21:52:49	▬▬▶	oscarvarto (~oscarvart@187.193.19.229) has joined #vim
+2014-08-25 21:52:58	◀▬▬	dni (~dni@80.122.33.90) has quit (Remote host closed the connection)
+2014-08-25 21:53:12	◀▬▬	Hoyt (~c0debreak@103.25.202.183) has quit (Quit: WeeChat 1.0)
+2014-08-25 21:53:33	◀▬▬	a_le (~a_le@nat/cisco/x-yakrqpixzthuspcu) has quit (Remote host closed the connection)
+2014-08-25 21:54:01	◀▬▬	usermane (7c95b0a2@gateway/web/freenode/ip.124.149.176.162) has quit (Quit: Page closed)
+2014-08-25 21:55:03	◀▬▬	jonmorehouse (~jonmoreho@208.184.108.68) has quit (Ping timeout: 240 seconds)
+2014-08-25 21:55:28	▬▬▶	das_beard (~das_beard@cpe-184-58-210-5.wi.res.rr.com) has joined #vim
+2014-08-25 21:55:44	◀▬▬	Spades_ (~ryan@192-0-214-87.cpe.teksavvy.com) has quit (Ping timeout: 260 seconds)
+2014-08-25 21:57:06	▬▬▶	Spades_ (~ryan@162.219.178.194) has joined #vim
+2014-08-25 21:58:41	▬▬▶	jophish_ (~jophish@97-113-7-126.tukw.qwest.net) has joined #vim
+2014-08-25 22:00:22	◀▬▬	hpt (~hpt@202.108.130.138) has quit (Ping timeout: 250 seconds)
+2014-08-25 22:01:12	◀▬▬	n-st_ (~n-st@p57AEA18B.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-08-25 22:01:54	rtrdwnr	Is there any rhyme or reason to Vundle's 'Plugin' vs. 'Bundle', etc?
+2014-08-25 22:01:58	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Read error: Connection reset by peer)
+2014-08-25 22:02:01	▬▬▶	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has joined #vim
+2014-08-25 22:02:06	rtrdwnr	I just toss whatever works in there if one or the other fails
+2014-08-25 22:02:17	◀▬▬	Freeo_ (~quassel@5.146.158.126) has quit (Read error: Connection reset by peer)
+2014-08-25 22:02:32	rtrdwnr	use of <Plug> maybe?
+2014-08-25 22:02:41	◀▬▬	qstrahl` (~qstrahl@69-196-143-112.dsl.teksavvy.com) has quit (Remote host closed the connection)
+2014-08-25 22:02:58	◀▬▬	tsenko (amaravella@gateway/shell/blinkenshell.org/x-owhjssrjwrbhukvo) has left #vim
+2014-08-25 22:03:21	▬▬▶	patricknegri (~patrickne@186.203.214.6) has joined #vim
+2014-08-25 22:03:46	▬▬▶	qstrahl (~qstrahl@69-196-143-112.dsl.teksavvy.com) has joined #vim
+2014-08-25 22:03:46	◀▬▬	patricknegri (~patrickne@186.203.214.6) has quit (Read error: Connection reset by peer)
+2014-08-25 22:04:07	dhruvasagar	rtrdwnr: Plugin is a recent change, I am guessing Bundle is deprecated and soon might be removed
+2014-08-25 22:04:16	◀▬▬	AlexRussia (~alx@unaffiliated/alexrussia) has quit (Ping timeout: 272 seconds)
+2014-08-25 22:04:22	dhruvasagar	rtrdwnr: he chose Plugin over Bundle because it's more appropriate
+2014-08-25 22:04:26	rtrdwnr	aye, just read that in :h Vundle
+2014-08-25 22:04:30	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #vim
+2014-08-25 22:04:33	rtrdwnr	out of curiosity
+2014-08-25 22:04:41	◀▬▬	stiffi (~stiffi@p57B8D4BF.dip0.t-ipconnect.de) has left #vim
+2014-08-25 22:04:54	◀▬▬	smlb (~Smlb@unaffiliated/smlb) has quit (Ping timeout: 272 seconds)
+2014-08-25 22:05:14	rtrdwnr	more specifically: "Note: The Bundle commands will be deprecated. You may continue using them, but they may not get all future updates."
+2014-08-25 22:05:53	▬▬▶	cemerick (~cemerick@c-24-34-140-98.hsd1.ma.comcast.net) has joined #vim
+2014-08-25 22:05:53	▬▬▶	aretecode (~aretecode@S01061859339e5f51.cc.shawcable.net) has joined #vim
+2014-08-25 22:05:57	◀▬▬	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:06:15	◀▬▬	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:07:30	▬▬▶	digitalsatori (~Thunderbi@114.94.157.80) has joined #vim
+2014-08-25 22:07:43	◀▬▬	Spades_ (~ryan@162.219.178.194) has quit (Ping timeout: 260 seconds)
+2014-08-25 22:07:45	◀▬▬	martinklepsch (~kmartiin@f055235024.adsl.alicedsl.de) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-25 22:08:53	▬▬▶	hahuang65 (~hahuang65@2601:9:7e00:b97:c029:5c9:62ad:f01a) has joined #vim
+2014-08-25 22:09:10	▬▬▶	sinkensabe (~sinkensab@h241n6-lk-d1.ias.bredband.telia.com) has joined #vim
+2014-08-25 22:09:23	◀▬▬	oscarvarto (~oscarvart@187.193.19.229) has left #vim
+2014-08-25 22:09:23	▬▬▶	hpt (~hpt@202.108.130.138) has joined #vim
+2014-08-25 22:11:08	◀▬▬	drgoebbels (~drgoebbel@ip70-189-120-114.ok.ok.cox.net) has quit (Remote host closed the connection)
+2014-08-25 22:11:43	◀▬▬	ramble (~ramble@58.246.72.123) has quit (Quit: Leaving.)
+2014-08-25 22:13:50	◀▬▬	endiruna1 (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-25 22:13:57	◀▬▬	sinkensabe (~sinkensab@h241n6-lk-d1.ias.bredband.telia.com) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:14:47	◀▬▬	jrhe_ (uid20618@gateway/web/irccloud.com/x-gscxabbbsckjxbvn) has quit (Quit: Connection closed for inactivity)
+2014-08-25 22:15:31	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #vim
+2014-08-25 22:15:47	▬▬▶	kdlv (~aa47f8@h187n14-far-a13.ias.bredband.telia.com) has joined #vim
+2014-08-25 22:16:08	▬▬▶	smlb (~Smlb@unaffiliated/smlb) has joined #vim
+2014-08-25 22:16:09	▬▬▶	Kulrak (kulrak@122-149-211-149.static.dsl.dodo.com.au) has joined #vim
+2014-08-25 22:16:09	◀▬▬	Kulrak (kulrak@122-149-211-149.static.dsl.dodo.com.au) has quit (Changing host)
+2014-08-25 22:16:09	▬▬▶	Kulrak (kulrak@tlug/member/kulrak) has joined #vim
+2014-08-25 22:16:10	▬▬▶	t0ha (~t0ha@77.236.65.146) has joined #vim
+2014-08-25 22:16:26	▬▬▶	RevBayes (~RevBayes@168.215.217.226) has joined #vim
+2014-08-25 22:17:51	▬▬▶	AlexRussia (~alx@unaffiliated/alexrussia) has joined #vim
+2014-08-25 22:18:39	▬▬▶	yowzamonk (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has joined #vim
+2014-08-25 22:18:40	◀▬▬	xerox357 (~textual@ool-182ca97c.dyn.optonline.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 22:19:23	▬▬▶	etpuis (~FleaFlick@216-211-80-217.dynamic.tbaytel.net) has joined #vim
+2014-08-25 22:20:41	▬▬▶	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has joined #vim
+2014-08-25 22:20:52	◀▬▬	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:21:28	◀▬▬	hagabaka (~hagabaka@unaffiliated/hagabaka) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:22:40	◀▬▬	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 22:23:05	▬▬▶	hagabaka (~hagabaka@unaffiliated/hagabaka) has joined #vim
+2014-08-25 22:23:11	◀▬▬	nobitanobi (~nobitanob@2602:306:cefb:7070:306b:2e21:7483:850d) has quit (Remote host closed the connection)
+2014-08-25 22:23:41	▬▬▶	trout-senpai (~G@2602:304:ccd3:1200:219a:ee5f:8712:ae7e) has joined #vim
+2014-08-25 22:24:05	◀▬▬	endiruna1 (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-25 22:24:16	▬▬▶	deens (~deens@c-73-170-6-32.hsd1.ca.comcast.net) has joined #vim
+2014-08-25 22:24:26	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #vim
+2014-08-25 22:25:24	▬▬▶	Zemeio (~Zemeio@189.0.87.70) has joined #vim
+2014-08-25 22:25:31	◀▬▬	ncd|leeN (~leeN@e180186211.adsl.alicedsl.de) has quit (Read error: Connection reset by peer)
+2014-08-25 22:25:56	◀▬▬	Kryptron (~Kryptron@unaffiliated/kryptron) has quit (Ping timeout: 250 seconds)
+2014-08-25 22:26:47	◀▬▬	diniwed (~gavron@ool-457f51c5.dyn.optonline.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:27:28	◀▬▬	MrSavage (MrSavage@68.171.69.137) has quit (Remote host closed the connection)
+2014-08-25 22:28:43	▬▬▶	jtuz (~jtuz@187-166-114-116.static.axtel.net) has joined #vim
+2014-08-25 22:28:56	▬▬▶	patric100e99 (~patrick@208.84.225.10) has joined #vim
+2014-08-25 22:29:09	▬▬▶	revHoltz (~stephenho@c-50-177-132-5.hsd1.ma.comcast.net) has joined #vim
+2014-08-25 22:30:16	▬▬▶	xerox357 (~textual@ool-182ca97c.dyn.optonline.net) has joined #vim
+2014-08-25 22:30:17	◀▬▬	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has quit (Quit: WeeChat 1.0)
+2014-08-25 22:30:26	◀▬▬	qstrahl (~qstrahl@69-196-143-112.dsl.teksavvy.com) has quit (Quit: Quit)
+2014-08-25 22:30:37	▬▬▶	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has joined #vim
+2014-08-25 22:31:09	▬▬▶	Spades_ (~ryan@184.75.221.3) has joined #vim
+2014-08-25 22:31:27	◀▬▬	mike_af_ (~mike_af@c-66-41-226-143.hsd1.mn.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 22:31:44	◀▬▬	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has quit (Client Quit)
+2014-08-25 22:32:04	▬▬▶	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has joined #vim
+2014-08-25 22:32:08	▬▬▶	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-25 22:32:15	▬▬▶	qstrahl (~qstrahl@69-196-143-112.dsl.teksavvy.com) has joined #vim
+2014-08-25 22:32:47	◀▬▬	deens (~deens@c-73-170-6-32.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 22:33:47	◀▬▬	patric100e99 (~patrick@208.84.225.10) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:35:06	◀▬▬	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has quit (Client Quit)
+2014-08-25 22:35:11	▬▬▶	Hoyt (~c0debreak@103.25.202.183) has joined #vim
+2014-08-25 22:35:24	▬▬▶	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has joined #vim
+2014-08-25 22:35:49	▬▬▶	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #vim
+2014-08-25 22:36:13	▬▬▶	StevePerk (~steve@75-94-224-240.gar.clearwire-wmx.net) has joined #vim
+2014-08-25 22:36:24	◀▬▬	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has quit (Client Quit)
+2014-08-25 22:37:09	◀▬▬	Trivium (~Trivium@99-91-160-81.lightspeed.rcsntx.sbcglobal.net) has quit (Remote host closed the connection)
+2014-08-25 22:37:22	▬▬▶	Trivium (~Trivium@99-91-160-81.lightspeed.rcsntx.sbcglobal.net) has joined #vim
+2014-08-25 22:38:21	▬▬▶	Methodical (~Methodica@173-29-238-64.client.mchsi.com) has joined #vim
+2014-08-25 22:40:15	◀▬▬	KLVTZ_ (~j.page@4.30.56.71) has left #vim
+2014-08-25 22:41:10	StevePerk	When I try to use 256-color schemes in a remote SSH session (the remote Ubuntu server is terminal-only and has no desktop GUI), I get a slew of errors about operations not supported.  Do I really have to install "vim-gui-common", even though that seems to install 160MB worth of Gnome along with it?
+2014-08-25 22:42:55	◀▬▬	Hoyt (~c0debreak@103.25.202.183) has quit (Quit: WeeChat 1.0)
+2014-08-25 22:46:22	▬▬▶	Jesin-phone (~Jesin@Dyn141060.cc.lehigh.edu) has joined #vim
+2014-08-25 22:46:55	◀▬▬	EntropyArchive (~Thunderbi@198.86.76.191) has quit (Quit: EntropyArchive)
+2014-08-25 22:47:16	◀▬▬	feju (~feju@galton.wiwi.hu-berlin.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 22:47:25	▬▬▶	GriffinHeart (~griffinhe@pb6abe9d7.tokyff01.ap.so-net.ne.jp) has joined #vim
+2014-08-25 22:47:40	◀▬▬	duck_cpd (~duck_cpd@207-181-233-30.c3-0.mct-ubr1.chi-mct.il.cable.rcn.com) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:48:12	◀▬▬	RevBayes (~RevBayes@168.215.217.226) has quit
+2014-08-25 22:49:13	◀▬▬	morenoh151 (~morenoh14@c-73-162-218-149.hsd1.ca.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 22:49:57	▬▬▶	feju (~feju@galton.wiwi.hu-berlin.de) has joined #vim
+2014-08-25 22:50:14	◀▬▬	Mayzie (~Mayazcher@unaffiliated/mayazcherquoi) has quit (Quit: Leaving)
+2014-08-25 22:50:25	◀▬▬	kenneth (~kenneth@173.247.206.210) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 22:50:32	Raimondi	StevePerk: what are the errors?
+2014-08-25 22:50:46	Raimondi	vimgor: vim-tiny
+2014-08-25 22:50:46	vimgor	vim-tiny is the default Vim package for Debian/Ubuntu. It is built with a small feature set, no help, and is not intended to be used full-time. You most likely want to install a more capable package of the Vim editor. If you want gvim install the vim-gtk package, otherwise install the vim-nox package.
+2014-08-25 22:50:51	Raimondi	StevePerk: ^
+2014-08-25 22:51:17	StevePerk	E319: Sorry, the command is not available in this version: let g:colors_name="zenburn"
+2014-08-25 22:51:21	◀▬▬	iamjarvo (~textual@c-76-99-235-12.hsd1.nj.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-25 22:51:26	▬▬▶	a_le (~a_le@172.56.38.70) has joined #vim
+2014-08-25 22:51:36	▬▬▶	hkon_ (~hkon_@213.167.121.42.static.lyse.net) has joined #vim
+2014-08-25 22:51:50	Raimondi	StevePerk: check if you have vim-tiny as vimgor's reply indicates
+2014-08-25 22:52:10	StevePerk	Exactly, vimgor... when I run :version I see that I'm running the "small version".  But obviously I don't need gvim, because this is a non-graphical server that I only access via SSH.  So "nox" is the package in between the two extremes?
+2014-08-25 22:52:12	▬▬▶	kriskropd (~kris@unaffiliated/kriskropd) has joined #vim
+2014-08-25 22:52:16	▬▬▶	JosephFerano (~josephfer@204.93.49.10) has joined #vim
+2014-08-25 22:52:34	Raimondi	vimgor is a bot, but the answer is yes
+2014-08-25 22:52:34	vimgor	10-4!
+2014-08-25 22:52:39	Raimondi	install vim-nox
+2014-08-25 22:52:47	Raimondi	crap!
+2014-08-25 22:52:55	StevePerk	That's a clever bot
+2014-08-25 22:52:59	Raimondi	vimgor forget is a bot, but the answer
+2014-08-25 22:53:00	vimgor	Gotcha!
+2014-08-25 22:54:31	▬▬▶	skered (~dereks@unaffiliated/skered) has joined #vim
+2014-08-25 22:55:27	▬▬▶	pgdouyon (~pgdouyon@c-76-118-176-110.hsd1.ma.comcast.net) has joined #vim
+2014-08-25 22:55:51	◀▬▬	hkon_ (~hkon_@213.167.121.42.static.lyse.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:56:59	◀▬▬	a_le (~a_le@172.56.38.70) has quit (Remote host closed the connection)
+2014-08-25 22:59:16	▬▬▶	yowzamon_ (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has joined #vim
+2014-08-25 22:59:34	◀▬▬	Trivium (~Trivium@99-91-160-81.lightspeed.rcsntx.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2014-08-25 23:00:05	▬▬▶	a_le (~a_le@172.56.38.70) has joined #vim
+2014-08-25 23:01:27	◀▬▬	yowzamonk (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 23:01:46	◀▬▬	nedbat (~nedbat@python/psf/nedbat) has quit
+2014-08-25 23:03:04	▬▬▶	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has joined #vim
+2014-08-25 23:04:29	▬▬▶	yowzamonk (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has joined #vim
+2014-08-25 23:05:59	▬▬▶	hallamigo (~hallamigo@63.230.24.165) has joined #vim
+2014-08-25 23:06:19	▬▬▶	GinoMan (~Gino@pool-72-94-39-83.phlapa.fios.verizon.net) has joined #vim
+2014-08-25 23:06:39	◀▬▬	hpt (~hpt@202.108.130.138) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:07:12	◀▬▬	yowzamon_ (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:07:37	◀▬▬	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:08:20	◀▬▬	hallamigo (~hallamigo@63.230.24.165) has quit (Client Quit)
+2014-08-25 23:09:48	◀▬▬	a_le (~a_le@172.56.38.70) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:10:09	▬▬▶	hpt (~hpt@202.108.130.138) has joined #vim
+2014-08-25 23:10:09	◀▬▬	TommyC (~TommyC@unaffiliated/sepulchralbloom) has quit (Quit: TTFN, Ta Ta For Now!)
+2014-08-25 23:13:12	◀▬▬	gfixler (~gfixler@bur-inet-pa-4.disney.com) has quit (Quit: leaving)
+2014-08-25 23:13:57	◀▬▬	prbc (~prbc@177.183.196.73) has quit (Remote host closed the connection)
+2014-08-25 23:14:34	▬▬▶	prbc (~prbc@177.183.196.73) has joined #vim
+2014-08-25 23:15:50	◀▬▬	netwoodle (~noodle@73.35.143.99) has quit (Excess Flood)
+2014-08-25 23:16:03	▬▬▶	netwoodle (~noodle@73.35.143.99) has joined #vim
+2014-08-25 23:16:39	▬▬▶	Guest73805 (~michael@184.88.250.134) has joined #vim
+2014-08-25 23:17:28	◀▬▬	StevePerk (~steve@75-94-224-240.gar.clearwire-wmx.net) has quit (Quit: Leaving)
+2014-08-25 23:18:16	◀▬▬	yowzamonk (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has quit
+2014-08-25 23:18:51	d10n-work	I want to do something like map $(tput kcuu1) <Up>, what's a good way to do that?
+2014-08-25 23:18:54	◀▬▬	prbc (~prbc@177.183.196.73) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:19:36	▬▬▶	EntropyArchive (~Thunderbi@108-61-55-69ch.openskytelcom.net) has joined #vim
+2014-08-25 23:19:41	◀▬▬	EntropyArchive (~Thunderbi@108-61-55-69ch.openskytelcom.net) has quit (Client Quit)
+2014-08-25 23:20:35	◀▬▬	Guest73805 (~michael@184.88.250.134) has quit (Client Quit)
+2014-08-25 23:21:00	strull	d10n-work: most likely :set nocp does already what you want
+2014-08-25 23:22:22	◀▬▬	feju (~feju@galton.wiwi.hu-berlin.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:22:47	◀▬▬	stackofcats (~stackofca@unaffiliated/stackofcats) has quit (Ping timeout: 244 seconds)
+2014-08-25 23:23:01	d10n-work	unfortunately arrow keys don't work on mac, and map ^[OA <Up> fixes it, but ^[OA is really tput kcuu1
+2014-08-25 23:23:31	◀▬▬	oncenull (~pose@186.137.226.215) has quit (Remote host closed the connection)
+2014-08-25 23:23:40	▬▬▶	stackofcats (~stackofca@unaffiliated/stackofcats) has joined #vim
+2014-08-25 23:23:41	▬▬▶	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has joined #vim
+2014-08-25 23:23:42	◀▬▬	pgdouyon (~pgdouyon@c-76-118-176-110.hsd1.ma.comcast.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:24:53	▬▬▶	feju (~feju@galton.wiwi.hu-berlin.de) has joined #vim
+2014-08-25 23:25:36	▬▬▶	sea-gull (sea-gull@2a01:7e00:e001:2500::b00b) has joined #vim
+2014-08-25 23:29:02	◀▬▬	duggiefresh (~duggiefre@c-24-60-1-249.hsd1.ma.comcast.net) has quit
+2014-08-25 23:29:03	▬▬▶	kenneth (~kenneth@c-50-174-142-119.hsd1.ca.comcast.net) has joined #vim
+2014-08-25 23:29:56	▬▬▶	davedev2_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-25 23:30:17	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:31:41	◀▬▬	jalalsfs (~jalal@unaffiliated/jalalsfs) has quit (Ping timeout: 264 seconds)
+2014-08-25 23:32:42	◀▬▬	k_sze[work] (~kvirc@unaffiliated/kira) has quit (Ping timeout: 245 seconds)
+2014-08-25 23:34:00	◀▬▬	kaldrenon (uid27899@gateway/web/irccloud.com/x-ycbykkxfpcstgucs) has quit (Quit: Connection closed for inactivity)
+2014-08-25 23:34:27	▬▬▶	aiguu_ (~aiguu@c-24-23-192-35.hsd1.ca.comcast.net) has joined #vim
+2014-08-25 23:34:42	◀▬▬	Xiti` (~Xiti-@unaffiliated/xiti) has quit (Quit: Leaving)
+2014-08-25 23:36:11	d10n-work	settled with   execute system('echo map $(tput kcuu1) \<Up\>')
+2014-08-25 23:36:35	◀▬▬	fengling (~fengling@101.36.77.45) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:36:59	jamessan	d10n-work: what does ":set esckeys? cp?" show?
+2014-08-25 23:37:53	◀▬▬	fasheng (~fasheng@59.173.241.82) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:38:18	◀▬▬	jwpierce3 (~jwpierce3@172.56.34.18) has quit (Remote host closed the connection)
+2014-08-25 23:38:24	d10n-work	jamessan: esckeys nocompatible
+2014-08-25 23:38:39	▬▬▶	Xiti (~Xiti-@unaffiliated/xiti) has joined #vim
+2014-08-25 23:39:02	▬▬▶	bukutu (~ruut@pppoe.202.208.netband.caribe.net) has joined #vim
+2014-08-25 23:39:57	◀▬▬	itissid (~Adium@c-76-116-110-167.hsd1.nj.comcast.net) has quit (Quit: Leaving.)
+2014-08-25 23:40:12	◀▬▬	EdwardIII (~EdwardIII@unaffiliated/edward123) has quit (Ping timeout: 245 seconds)
+2014-08-25 23:40:58	◀▬▬	davedev2_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:41:26	jamessan	hmm, what I'd expect it to be
+2014-08-25 23:41:34	▬▬▶	dni (~dni@80.122.33.90) has joined #vim
+2014-08-25 23:41:58	▬▬▶	krz (~foo@unaffiliated/krz) has joined #vim
+2014-08-25 23:42:00	▬▬▶	oscarvarto (~oscarvart@187.193.19.229) has joined #vim
+2014-08-25 23:42:19	▬▬▶	arup_r (~arup_r@122.167.88.96) has joined #vim
+2014-08-25 23:42:58	◀▬▬	knownasilya (uid22190@gateway/web/irccloud.com/x-zsvqeycnydcmyuiy) has quit (Quit: Connection closed for inactivity)
+2014-08-25 23:43:08	◀▬▬	viszu (~viszu@89-70-53-243.dynamic.chello.pl) has quit (Read error: Connection reset by peer)
+2014-08-25 23:43:24	▬▬▶	sqlnoob (~techgaun@110.34.23.72) has joined #vim
+2014-08-25 23:43:57	◀▬▬	constant (root@freebsd/developer/variable) has quit (Max SendQ exceeded)
+2014-08-25 23:43:58	◀▬▬	arup_r (~arup_r@122.167.88.96) has quit (Remote host closed the connection)
+2014-08-25 23:45:11	▬▬▶	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-25 23:47:02	◀▬▬	dni (~dni@80.122.33.90) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:47:25	▬▬▶	EdwardIII (~EdwardIII@unaffiliated/edward123) has joined #vim
+2014-08-25 23:47:40	oscarvarto	Hi! I have very little vim experience. I have installed haskell-vim-now and now I am trying to install additional stuff following the instructions here: https://github.com/begriffs/haskell-vim-now#customizing  However, if I try to :set runtimepath=/Users/oscarvarto/.vim.local,$VIMRUNTIME the haskell stuff stops working. How can I install additional stuff with a custom pathogen location (e.g. ~/.vim.local/bundle?)
+2014-08-25 23:47:57	◀▬▬	feju (~feju@galton.wiwi.hu-berlin.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:48:15	▬▬▶	variable (root@freebsd/developer/variable) has joined #vim
+2014-08-25 23:48:18	◀▬▬	krz (~foo@unaffiliated/krz) has quit (Quit: WeeChat 1.0)
+2014-08-25 23:48:21	phy1729	oscarvarto: I know this sounds weird, but use vanilla vim for a while
+2014-08-25 23:48:29	◀▬▬	Jesin (~Jesin@Dyn158050.cc.lehigh.edu) has quit (Quit: Leaving)
+2014-08-25 23:48:37	◀▬▬	stackofcats (~stackofca@unaffiliated/stackofcats) has quit (Ping timeout: 244 seconds)
+2014-08-25 23:48:55	◀▬▬	saml_ (~saml@pool-71-190-8-37.nycmny.east.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:48:55	▬▬▶	stackofcats (~stackofca@unaffiliated/stackofcats) has joined #vim
+2014-08-25 23:49:17	▬▬▶	krz (~foo@unaffiliated/krz) has joined #vim
+2014-08-25 23:49:50	◀▬▬	krz (~foo@unaffiliated/krz) has quit (Client Quit)
+2014-08-25 23:50:46	▬▬▶	feju (~feju@galton.wiwi.hu-berlin.de) has joined #vim
+2014-08-25 23:51:13	▬▬▶	krz (~foo@unaffiliated/krz) has joined #vim
+2014-08-25 23:51:28	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:51:58	◀▬▬	dialeth (~dialeth@ip68-104-82-120.lv.lv.cox.net) has quit (Quit: dialeth)
+2014-08-25 23:52:16	◀▬▬	nil- (~nil@65.112.10.210) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:52:36	▬▬▶	deens (~deens@c-73-170-6-32.hsd1.ca.comcast.net) has joined #vim
+2014-08-25 23:52:41	◀▬▬	sqlnoob (~techgaun@110.34.23.72) has quit (Ping timeout: 264 seconds)
+2014-08-25 23:52:42	▬▬▶	TommyC (~TommyC@unaffiliated/sepulchralbloom) has joined #vim
+2014-08-25 23:52:59	▬▬▶	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-25 23:54:31	◀▬▬	mnick (~mnick@c-76-24-252-9.hsd1.vt.comcast.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:55:06	▬▬▶	sqlnoob (~techgaun@110.34.23.72) has joined #vim
+2014-08-25 23:55:20	◀▬▬	Methodical (~Methodica@173-29-238-64.client.mchsi.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 23:55:44	◀▬▬	BlackIkeEagle (~BlackIkeE@archlinux/trusteduser/blackikeeagle) has quit (Ping timeout: 272 seconds)
+2014-08-25 23:56:13	▬▬▶	BlackIkeEagle (~BlackIkeE@archlinux/trusteduser/blackikeeagle) has joined #vim
+2014-08-25 23:56:24	▬▬▶	koderok (~koderok@14.141.153.182) has joined #vim
+2014-08-25 23:56:42	◀▬▬	bukutu (~ruut@pppoe.202.208.netband.caribe.net) has quit (Quit: WeeChat 1.0)
+2014-08-25 23:56:59	◀▬▬	Jesin-phone (~Jesin@Dyn141060.cc.lehigh.edu) has quit (Quit: Bye)
+2014-08-25 23:57:45	▬▬▶	thomasxie (~thomasxie@116.227.104.40) has joined #vim
+2014-08-25 23:58:16	▬▬▶	fasheng (~fasheng@59.173.241.82) has joined #vim
+2014-08-25 23:58:24	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:58:41	▬▬▶	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-25 23:59:34	▬▬▶	k_sze[work] (~kvirc@unaffiliated/kira) has joined #vim
+2014-08-26 00:00:14	▬▬▶	drgoebbels (~drgoebbel@ip70-189-120-114.ok.ok.cox.net) has joined #vim
+2014-08-26 00:00:37	--	irc: disconnected from server
+2014-08-26 17:42:59	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-26 17:42:59	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-26 17:42:59	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-26 17:42:59	--	Channel #vim: 1066 nicks (0 ops, 0 voices, 1066 normals)
+2014-08-26 17:43:00	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-26 17:43:00	--	URL for #vim: http://vi-improved.org
+2014-08-26 17:43:12	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-26 17:43:38	◀▬▬	Firefly67 (~Firefly67@unaffiliated/firefly67) has quit (Ping timeout: 255 seconds)
+2014-08-26 17:45:04	◀▬▬	hebz0rl (~hebz0rl@dslb-084-060-160-029.084.060.pools.vodafone-ip.de) has quit (Quit: Leaving)
+2014-08-26 17:45:38	▬▬▶	favetelinguis (~favetelin@78-72-42-22-no186.tbcn.telia.com) has joined #vim
+2014-08-26 17:45:59	◀▬▬	JagaJaga (~JagaJaga@109.205.252.162) has quit (Ping timeout: 245 seconds)
+2014-08-26 17:46:19	◀▬▬	aconbere (~aconbere@75-172-18-179.tukw.qwest.net) has quit
+2014-08-26 17:46:22	◀▬▬	buck11 (~Adium@72-18-233-188.static-ip.telepacific.net) has quit (Quit: Leaving.)
+2014-08-26 17:47:01	▬▬▶	deens (~deens@c-73-170-6-32.hsd1.ca.comcast.net) has joined #vim
+2014-08-26 17:48:12	▬▬▶	oncenull (~pose@186.137.226.215) has joined #vim
+2014-08-26 17:48:23	◀▬▬	cryptic0 (~cryptic0@ip094210.uvm.edu) has quit (Quit: Textual IRC Client: http://www.textualapp.com/)
+2014-08-26 17:48:31	◀▬▬	endiruna1 (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-26 17:48:53	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #vim
+2014-08-26 17:50:09	▬▬▶	momomomomo_ (~momomomom@38.126.164.90) has joined #vim
+2014-08-26 17:50:13	◀▬▬	favetelinguis (~favetelin@78-72-42-22-no186.tbcn.telia.com) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:50:49	◀▬▬	kermit (unknown@pdpc/supporter/bronze/kermit) has quit (Quit: Leaving.)
+2014-08-26 17:50:58	--	cy is now known as nope_nope_nope
+2014-08-26 17:51:01	◀▬▬	jottr (~jottr@unaffiliated/jottr) has quit (Ping timeout: 240 seconds)
+2014-08-26 17:51:37	◀▬▬	deens (~deens@c-73-170-6-32.hsd1.ca.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 17:52:17	▬▬▶	kermit (unknown@pdpc/supporter/bronze/kermit) has joined #vim
+2014-08-26 17:52:37	◀▬▬	momomomomo (~momomomom@38.126.164.90) has quit (Ping timeout: 240 seconds)
+2014-08-26 17:52:37	--	momomomomo_ is now known as momomomomo
+2014-08-26 17:52:56	◀▬▬	FreezingAlt (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:53:03	◀▬▬	w41 (~w41@unaffiliated/w41) has quit (Quit: Lost terminal)
+2014-08-26 17:53:06	◀▬▬	oriba (~oriba@e178004215.adsl.alicedsl.de) has quit (Quit: oriba)
+2014-08-26 17:53:21	--	nope_nope_nope is now known as cy
+2014-08-26 17:54:33	▬▬▶	onc3null (~pose@186.129.140.26) has joined #vim
+2014-08-26 17:54:39	◀▬▬	oncenull (~pose@186.137.226.215) has quit (Ping timeout: 245 seconds)
+2014-08-26 17:54:43	◀▬▬	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-08-26 17:55:10	▬▬▶	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has joined #vim
+2014-08-26 17:55:53	▬▬▶	dsdeiz (~dsdeiz@112.207.217.120) has joined #vim
+2014-08-26 17:56:46	◀▬▬	tedwing (~tw@c-50-176-82-165.hsd1.ma.comcast.net) has quit (Quit: leaving)
+2014-08-26 17:57:33	▬▬▶	patricknegri (~patrickne@177.148.183.153) has joined #vim
+2014-08-26 17:58:30	◀▬▬	gffa (~unknown@unaffiliated/gffa) has quit (Quit: sleep)
+2014-08-26 17:58:44	◀▬▬	TheMadGuy (~weechat@p5B35B5A7.dip0.t-ipconnect.de) has quit (Quit: WeeChat 0.4.3)
+2014-08-26 17:58:46	◀▬▬	endiruna1 (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-26 17:59:07	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #vim
+2014-08-26 17:59:22	◀▬▬	nedbat (~nedbat@python/psf/nedbat) has quit
+2014-08-26 17:59:49	◀▬▬	nutron (~nutron@unaffiliated/nutron) has quit (Remote host closed the connection)
+2014-08-26 18:01:19	◀▬▬	Bouncer0 (~Bouncer00@93.154.231.168) has quit (Ping timeout: 245 seconds)
+2014-08-26 18:02:53	▬▬▶	travisje_ (~travisjef@li235-193.members.linode.com) has joined #vim
+2014-08-26 18:03:01	◀▬▬	tuwx (~tuwx@unaffiliated/tuwx) has quit (Quit: Leaving...)
+2014-08-26 18:03:03	▬▬▶	buck1 (~Adium@72-18-233-188.static-ip.telepacific.net) has joined #vim
+2014-08-26 18:04:38	▬▬▶	FreezingAlt (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #vim
+2014-08-26 18:04:42	◀▬▬	webmaven_ (~webmaven@159.140.254.98) has quit (Remote host closed the connection)
+2014-08-26 18:05:38	◀▬▬	Big-Blue (~seriousgu@unaffiliated/big-blue) has quit (Quit: Big-Blue)
+2014-08-26 18:06:04	▬▬▶	Akagi201 (~akagi201@223.93.179.240) has joined #vim
+2014-08-26 18:06:08	◀▬▬	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:06:25	◀▬▬	travisjeffery (~travisjef@CPE602ad086c6c9-CM602ad086c6c6.cpe.net.cable.rogers.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:06:26	◀▬▬	noxd (~noxd@213-65-240-183-no99.tbcn.telia.com) has quit (Ping timeout: 264 seconds)
+2014-08-26 18:06:55	▬▬▶	jottr (~jottr@unaffiliated/jottr) has joined #vim
+2014-08-26 18:07:19	▬▬▶	etpuis (~FleaFlick@216-211-80-217.dynamic.tbaytel.net) has joined #vim
+2014-08-26 18:07:42	◀▬▬	solars (~solars@089144239078.atnat0048.highway.bob.at) has quit (Ping timeout: 250 seconds)
+2014-08-26 18:14:34	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-26 18:14:34	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-26 18:14:34	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-26 18:14:34	--	Channel #vim: 1045 nicks (0 ops, 0 voices, 1045 normals)
+2014-08-26 18:14:34	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-26 18:14:34	--	URL for #vim: http://vi-improved.org
+2014-08-26 18:14:45	▬▬▶	buck1 (~Adium@72-18-233-188.static-ip.telepacific.net) has joined #vim
+2014-08-26 18:14:47	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-26 18:14:51	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-26 18:15:47	▬▬▶	dissonant (~dissonant@c-98-254-83-148.hsd1.fl.comcast.net) has joined #vim
+2014-08-26 18:16:31	◀▬▬	derk0pf (~derk0pf@p5DDC25ED.dip0.t-ipconnect.de) has quit (Quit: ZzzZZzZZZ.)
+2014-08-26 18:16:49	◀▬▬	imLinder (~imlinder@c83-255-102-195.bredband.comhem.se) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:17:03	▬▬▶	das_beard (~das_beard@cpe-65-28-189-174.wi.res.rr.com) has joined #vim
+2014-08-26 18:17:07	◀▬▬	vidalstat (~jarenado@162.212.107.254) has quit (Quit: WeeChat 0.4.2)
+2014-08-26 18:18:15	◀▬▬	nil- (~nil@65.112.10.210) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:18:24	◀▬▬	steamboat (~sehrlich@c-76-17-123-250.hsd1.ga.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-08-26 18:18:26	◀▬▬	athaeryn (~athaeryn@216.84.160.194) has quit (Remote host closed the connection)
+2014-08-26 18:18:45	▬▬▶	tingol (~tingol@178-222-55-186.dynamic.isp.telekom.rs) has joined #vim
+2014-08-26 18:18:45	◀▬▬	n-st (~n-st@p57AE9EB8.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-08-26 18:19:39	gfixler	romainl: what was I supposed to check if Vim gets slow after awhile?
+2014-08-26 18:19:44	◀▬▬	sh1shm1sh (~sh1shm1sh@unaffiliated/sh1shm1sh) has quit (Quit: must... not... sleep.... oh, dammit.)
+2014-08-26 18:20:08	◀▬▬	anglisc (~aethelber@90.194.11.53) has quit (Quit: I quit :))
+2014-08-26 18:20:23	◀▬▬	etpuis (~FleaFlick@216-211-80-217.dynamic.tbaytel.net) has quit (Quit: Burp!)
+2014-08-26 18:20:54	▬▬▶	JSharpe__ (~JSharpe@2.223.210.18) has joined #vim
+2014-08-26 18:20:58	gfixler	or anyone, but I think romainl is the one who told me what to check
+2014-08-26 18:21:08	gfixler	something about syntax
+2014-08-26 18:21:08	▬▬▶	sh1shm1sh (~sh1shm1sh@unaffiliated/sh1shm1sh) has joined #vim
+2014-08-26 18:21:10	▬▬▶	akim (~akim@nat/cisco/x-nlxdvcdjseqgekly) has joined #vim
+2014-08-26 18:21:10	▬▬▶	Sasazuka_ (~Sasazuka@64.201.252.132) has joined #vim
+2014-08-26 18:21:11	▬▬▶	IIT_ (~IIT@unaffiliated/xtriz) has joined #vim
+2014-08-26 18:22:04	◀▬▬	starkhalo (~weechat@187.240.189.127) has quit (Read error: Connection reset by peer)
+2014-08-26 18:22:32	▬▬▶	starkhalo (~weechat@187.240.189.127) has joined #vim
+2014-08-26 18:22:42	◀▬▬	bronsen (housetier@pdpc/supporter/professional/housetier) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:47	◀▬▬	mikeric (~mikeric@96.53.33.22) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:48	◀▬▬	gf3 (~gf3@aether.gf3.ca) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:48	◀▬▬	wchun (~wchun@81-233-226-189-no38.tbcn.telia.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:48	◀▬▬	Smark (~Smark@spectralcoding.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:50	▬▬▶	[Arfreve1] (~Arfrever@minotaur.apache.org) has joined #vim
+2014-08-26 18:23:08	▬▬▶	bronsen (housetier@pdpc/supporter/professional/housetier) has joined #vim
+2014-08-26 18:23:25	◀▬▬	Zx3 (zx3@shell.bshellz.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	Boobuigi (~weechat@softbank221030214150.bbtec.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	uelo (~uelo@x1-6-c0-3f-0e-f8-3a-85.cpe.webspeed.dk) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	icedp (~mlatu@unaffiliated/icedp) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	thkoehler (~picard@almeja.franken.de) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	henroc (~henroc@henroc.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	pdtpatr1ck (~ubuntu@ec2-54-211-230-219.compute-1.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:27	▬▬▶	Zx3_ (zx3@shell.bshellz.net) has joined #vim
+2014-08-26 18:23:27	▬▬▶	Smark (~Smark@spectralcoding.com) has joined #vim
+2014-08-26 18:23:37	--	Zx3_ is now known as Zx3
+2014-08-26 18:23:38	◀▬▬	patricknegri (~patrickne@177.148.183.153) has quit (Remote host closed the connection)
+2014-08-26 18:23:41	◀▬▬	Sasazuka (~Sasazuka@64.201.252.132) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:41	◀▬▬	NCS_One (~NCS_One@dsl-88-66.bl26.telepac.pt) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:41	▬▬▶	rbento (~rbento@187.2.54.130) has joined #vim
+2014-08-26 18:23:42	◀▬▬	Zathrus (~tom@unaffiliated/zathrus) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	Araxia (~seth_pers@unworkable-box.nb.kolo.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	cyt93cs (~cyt93cs@linux.cs.ccu.edu.tw) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	przemoc (~przemoc@unaffiliated/przemoc) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	OliverUv (~leibniz@h-62-13.a163.priv.bahnhof.se) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	Pikel (~toor@unaffiliated/pikel) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	Tritlo (~tritlo@85-220-118-1.dsl.dynamic.simnet.is) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	MachinShin (~MachinShi@68.168.103.45) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	moldy (~asdf@unaffiliated/moldy) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	▬▬▶	Boobuigi (~weechat@softbank221030214150.bbtec.net) has joined #vim
+2014-08-26 18:23:45	◀▬▬	maluco (~thiago@dev-2.aware.com.br) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	mva (mva@gentoo/contributor/mva) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	emid (~emid@107.170.54.127) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	talmuth (talmuth@cl4p-tp.it) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	Kartagis (~iegg@drupal.org/user/742906/view) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:48	▬▬▶	maluco_ (~thiago@dev-2.aware.com.br) has joined #vim
+2014-08-26 18:23:58	▬▬▶	Zathrus (~tom@unaffiliated/zathrus) has joined #vim
+2014-08-26 18:24:04	▬▬▶	Araxia (~seth_pers@unworkable-box.nb.kolo.net) has joined #vim
+2014-08-26 18:24:38	▬▬▶	patricknegri (~patrickne@177.148.183.153) has joined #vim
+2014-08-26 18:24:42	▬▬▶	henroc (~henroc@henroc.net) has joined #vim
+2014-08-26 18:24:47	▬▬▶	emid (~emid@107.170.54.127) has joined #vim
+2014-08-26 18:24:59	▬▬▶	kfunk_ (~krf@kde/kfunk) has joined #vim
+2014-08-26 18:25:10	▬▬▶	tureba_ (~tureba@tureba.mooo.com) has joined #vim
+2014-08-26 18:25:11	▬▬▶	gf3 (~gf3@aether.gf3.ca) has joined #vim
+2014-08-26 18:25:13	▬▬▶	pdtpatr1ck (~ubuntu@ec2-54-211-230-219.compute-1.amazonaws.com) has joined #vim
+2014-08-26 18:25:18	▬▬▶	moldy (~asdf@unaffiliated/moldy) has joined #vim
+2014-08-26 18:25:22	▬▬▶	doshitan (~doshitan@ip174-70-182-100.ks.ks.cox.net) has joined #vim
+2014-08-26 18:25:25	▬▬▶	z_ (~z@67.221.133.170) has joined #vim
+2014-08-26 18:25:27	▬▬▶	mva (mva@gentoo/contributor/mva) has joined #vim
+2014-08-26 18:25:38	▬▬▶	mrshoe_ (~mrshoe@mail.davidshoemaker.me) has joined #vim
+2014-08-26 18:25:43	▬▬▶	zmo_ (~guyzmo@vilya.m0g.net) has joined #vim
+2014-08-26 18:25:47	▬▬▶	OliverUv (~leibniz@h-62-13.a163.priv.bahnhof.se) has joined #vim
+2014-08-26 18:25:49	--	z_ is now known as Guest88333
+2014-08-26 18:25:49	▬▬▶	cewood (~cewood@202.10.91.226) has joined #vim
+2014-08-26 18:25:59	▬▬▶	Anarch_ (~olaf@73.53.61.168) has joined #vim
+2014-08-26 18:26:19	◀▬▬	MrL0ngbowman (~Jose@c-69-243-157-76.hsd1.il.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-08-26 18:26:52	▬▬▶	icedp (~mlatu@unaffiliated/icedp) has joined #vim
+2014-08-26 18:27:04	▬▬▶	napalmbrain_ (~napalmbra@162.243.218.11) has joined #vim
+2014-08-26 18:27:05	▬▬▶	NuckingFuts (~Nuck@oftn/member/Nuck) has joined #vim
+2014-08-26 18:27:16	▬▬▶	JonasF_ (~j@jfgr.de) has joined #vim
+2014-08-26 18:27:24	◀▬▬	webmaven_ (~webmaven@159.140.254.98) has quit (Remote host closed the connection)
+2014-08-26 18:27:26	▬▬▶	yokel_ (~yokel@198.98.53.118) has joined #vim
+2014-08-26 18:28:19	▬▬▶	seth87_ (~snaptron@exchange.snaptron.com) has joined #vim
+2014-08-26 18:28:29	▬▬▶	vereteran (~naquad@naquad.me) has joined #vim
+2014-08-26 18:28:30	▬▬▶	shad0VV_ (~shad0VV@178.128.144.237.dsl.dyn.forthnet.gr) has joined #vim
+2014-08-26 18:28:40	▬▬▶	rheddry (~levi@hakr.io) has joined #vim
+2014-08-26 18:28:57	▬▬▶	kopparam (~kopparam@14.140.219.22) has joined #vim
+2014-08-26 18:29:07	◀▬▬	patricknegri (~patrickne@177.148.183.153) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:29:10	▬▬▶	gzl_ (~gzl@104.131.237.161) has joined #vim
+2014-08-26 18:29:36	◀▬▬	duck_cpd (~duck_cpd@208.185.170.2) has quit (Remote host closed the connection)
+2014-08-26 18:29:44	▬▬▶	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has joined #vim
+2014-08-26 18:29:48	◀▬▬	average (~stefan@unaffiliated/average) has quit (Ping timeout: 250 seconds)
+2014-08-26 18:30:02	▬▬▶	duck_cpd (~duck_cpd@208.185.170.2) has joined #vim
+2014-08-26 18:30:07	▬▬▶	neurodam1ge (~neuro@199.30.90.48) has joined #vim
+2014-08-26 18:30:41	▬▬▶	MachinShin (~MachinShi@68.168.103.45) has joined #vim
+2014-08-26 18:30:45	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Write error: Broken pipe)
+2014-08-26 18:31:05	▬▬▶	przemoc (~przemoc@unaffiliated/przemoc) has joined #vim
+2014-08-26 18:31:19	▬▬▶	patricknegri (~patrickne@177.148.183.153) has joined #vim
+2014-08-26 18:31:26	▬▬▶	Kartagis (~iegg@drupal.org/user/742906/view) has joined #vim
+2014-08-26 18:31:26	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined #vim
+2014-08-26 18:31:36	▬▬▶	triss (~tris@cpc3-swin14-2-0-cust177.3-1.cable.virginm.net) has joined #vim
+2014-08-26 18:31:37	▬▬▶	blivande (~Chw@189.193.69.170) has joined #vim
+2014-08-26 18:32:07	blueyed	tab-completion on the cmdline does not appear to work for autoload functions, e.g. ':call neobundle#ge<tab>' completes as for "ge<tab>". It works with e.g. ':tj'. Can you confirm this?
+2014-08-26 18:32:13	◀▬▬	RobertMeta_ (~RobertMet@LINK-LOCALE.edge1.Washington1.Level3.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:32:20	▬▬▶	v{}id (~david@2a02:810d:a80:9fc:12c3:7bff:fe94:e4a1) has joined #vim
+2014-08-26 18:32:25	▬▬▶	cyt93cs (~cyt93cs@linux.cs.ccu.edu.tw) has joined #vim
+2014-08-26 18:32:28	◀▬▬	v{}id (~david@2a02:810d:a80:9fc:12c3:7bff:fe94:e4a1) has quit (Client Quit)
+2014-08-26 18:32:31	▬▬▶	jophish_ (~jophish@131.107.159.210) has joined #vim
+2014-08-26 18:32:32	▬▬▶	MetaCosm_ (~RobertMet@ip98-169-246-144.dc.dc.cox.net) has joined #vim
+2014-08-26 18:32:32	◀▬▬	MetaCosm_ (~RobertMet@ip98-169-246-144.dc.dc.cox.net) has quit (Changing host)
+2014-08-26 18:32:32	▬▬▶	MetaCosm_ (~RobertMet@unaffiliated/metacosm) has joined #vim
+2014-08-26 18:32:34	▬▬▶	soppman (~soppm4n@c-d53be655.015-26-76737411.cust.bredbandsbolaget.se) has joined #vim
+2014-08-26 18:32:46	▬▬▶	RobertMeta_ (~RobertMet@LINK-LOCALE.edge1.Washington1.Level3.net) has joined #vim
+2014-08-26 18:32:48	▬▬▶	Kick_ (karsten@nat/redhat/session) has joined #vim
+2014-08-26 18:32:49	▬▬▶	thatdude44 (~dag@173.13.92.62.static.cust.telenor.com) has joined #vim
+2014-08-26 18:33:07	▬▬▶	xtriz__ (~IIT@unaffiliated/xtriz) has joined #vim
+2014-08-26 18:33:12	▬▬▶	rivarun_ (~rivarun@snf-254183.vm.okeanos.grnet.gr) has joined #vim
+2014-08-26 18:33:22	▬▬▶	khonkhortisan (~Khonkhort@2601:8:8600:97f:4a5b:39ff:fe94:be23) has joined #vim
+2014-08-26 18:33:25	blueyed	gfixler: see ':h syntime', when it's about syntax/redrawing.
+2014-08-26 18:33:34	◀▬▬	kopparam (~kopparam@14.140.219.22) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:33:42	▬▬▶	webmaven_ (~webmaven@159.140.254.98) has joined #vim
+2014-08-26 18:33:48	▬▬▶	M-ou-se_ (~m-ou.se@m-ou.se) has joined #vim
+2014-08-26 18:33:59	▬▬▶	sdx23 (~sdx23@unaffiliated/sdx23) has joined #vim
+2014-08-26 18:34:05	◀▬▬	EntropyArchive (~Thunderbi@198.86.76.199) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:34:08	◀▬▬	duck_cpd (~duck_cpd@208.185.170.2) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:34:10	▬▬▶	c_14_ (~c_14@unaffiliated/c-14/x-8913907) has joined #vim
+2014-08-26 18:34:12	▬▬▶	crackas (~crackas@pool-96-236-201-213.pitbpa.fios.verizon.net) has joined #vim
+2014-08-26 18:34:28	▬▬▶	armin_ (~armin@neon.darkbyte.org) has joined #vim
+2014-08-26 18:34:38	gfixler	blueyed: will do, thanks
+2014-08-26 18:34:39	blueyed	gfixler: otherwise you can also use profiling. See https://github.com/blueyed/dotfiles/blob/master/vimrc#L3-L13 for an example.
+2014-08-26 18:34:43	▬▬▶	hagebake (~hagabaka@unaffiliated/hagabaka) has joined #vim
+2014-08-26 18:34:44	▬▬▶	bluedrea_ (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has joined #vim
+2014-08-26 18:34:45	gfixler	ok
+2014-08-26 18:34:52	◀▬▬	skizzhg (~skizzhg@unaffiliated/skizzhg) has quit (Disconnected by services)
+2014-08-26 18:34:56	▬▬▶	silver_saucepan_ (~quassel@cpc15-duns7-2-0-cust191.9-3.cable.virginm.net) has joined #vim
+2014-08-26 18:35:02	▬▬▶	skizzhg (~skizzhg@unaffiliated/skizzhg) has joined #vim
+2014-08-26 18:35:02	▬▬▶	owain_ (~owain@62.49.137.149) has joined #vim
+2014-08-26 18:35:20	▬▬▶	isak_ (~isak@81-232-10-178-no169.tbcn.telia.com) has joined #vim
+2014-08-26 18:35:28	▬▬▶	gdott9_ (~gdott9@digi00356.digicube.fr) has joined #vim
+2014-08-26 18:35:57	◀▬▬	sopparus (~soppm4n@c-d53be655.015-26-76737411.cust.bredbandsbolaget.se) has quit (Ping timeout: 250 seconds)
+2014-08-26 18:36:05	▬▬▶	[Arfreve2] (~Arfrever@minotaur.apache.org) has joined #vim
+2014-08-26 18:36:11	◀▬▬	todd_dsm (~todd_dsm@66.43.220.149) has quit (Read error: Connection reset by peer)
+2014-08-26 18:36:13	◀▬▬	teeteewhy (~teeteewhy@2001:41d0:8:67d2::3363) has quit (Max SendQ exceeded)
+2014-08-26 18:36:18	◀▬▬	jophish (~jophish@131.107.192.210) has quit (Ping timeout: 253 seconds)
+2014-08-26 18:36:22	◀▬▬	leeN (~leeN@e180127187.adsl.alicedsl.de) has quit (Read error: Connection reset by peer)
+2014-08-26 18:36:23	▬▬▶	hallamigo__ (~hallamigo@206.71.71.63) has joined #vim
+2014-08-26 18:36:24	◀▬▬	patricknegri (~patrickne@177.148.183.153) has quit (Remote host closed the connection)
+2014-08-26 18:36:24	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Read error: Connection reset by peer)
+2014-08-26 18:36:25	▬▬▶	Negor (~Bravo13@109.122.62.126) has joined #vim
+2014-08-26 18:36:26	◀▬▬	Bravo13 (~Bravo13@109.122.62.126) has quit (Write error: Connection reset by peer)
+2014-08-26 18:36:37	◀▬▬	hagebake (~hagabaka@unaffiliated/hagabaka) has quit (Excess Flood)
+2014-08-26 18:36:46	▬▬▶	fuleo (~saiful@www.saifuleo.com) has joined #vim
+2014-08-26 18:36:50	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined #vim
+2014-08-26 18:36:51	◀▬▬	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:36:51	◀▬▬	IIT_ (~IIT@unaffiliated/xtriz) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:36:51	◀▬▬	MetaCosm (~RobertMet@unaffiliated/metacosm) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:36:51	◀▬▬	g0ram_ (~crackas@pool-96-236-201-213.pitbpa.fios.verizon.net) has quit (Ping timeout: 311 seconds)
+2014-08-26 18:36:54	▬▬▶	jason3 (~jason@162.243.138.59) has joined #vim
+2014-08-26 18:36:57	▬▬▶	adnap_ (~adnap@cpe-24-28-68-235.austin.res.rr.com) has joined #vim
+2014-08-26 18:37:01	▬▬▶	mocker` (~mocker@static-199-193-246-25.a.awsrdns.net) has joined #vim
+2014-08-26 18:37:01	▬▬▶	webmaven__ (~webmaven@159.140.254.98) has joined #vim
+2014-08-26 18:37:05	▬▬▶	tomoc_ (~tomoc@ubermoc.noc.sonic.net) has joined #vim
+2014-08-26 18:37:13	▬▬▶	MetaCosm__ (~RobertMet@ip98-169-246-144.dc.dc.cox.net) has joined #vim
+2014-08-26 18:37:14	▬▬▶	suy_ (~quassel@roger.badopi.com) has joined #vim
+2014-08-26 18:37:14	◀▬▬	humpf (~humpf@ip1f132ce2.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 1.0)
+2014-08-26 18:37:16	◀▬▬	RobertMeta_ (~RobertMet@LINK-LOCALE.edge1.Washington1.Level3.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:37:21	▬▬▶	simoncoo1 (~simoncook@78.129.222.153) has joined #vim
+2014-08-26 18:37:21	▬▬▶	Abuh (~admin@5ED54BDE.cm-7-6b.dynamic.ziggo.nl) has joined #vim
+2014-08-26 18:37:21	▬▬▶	tubaman_ (~tubaman@72.183.107.223) has joined #vim
+2014-08-26 18:37:22	▬▬▶	atehwa_ (atehwa@aulis.sange.fi) has joined #vim
+2014-08-26 18:37:22	▬▬▶	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has joined #vim
+2014-08-26 18:37:23	▬▬▶	d4ryus_ (~d4ryus@p5498AE96.dip0.t-ipconnect.de) has joined #vim
+2014-08-26 18:37:23	▬▬▶	__dutc__ (~dutc@really.dontusethiscode.com) has joined #vim
+2014-08-26 18:37:23	▬▬▶	uelo (~uelo@unaffiliated/uelo) has joined #vim
+2014-08-26 18:37:27	▬▬▶	zacts_ (~zacts@c-174-50-75-226.hsd1.nm.comcast.net) has joined #vim
+2014-08-26 18:37:28	▬▬▶	dostoyev1ky (~sck@n096h062.rs.de.inter.net) has joined #vim
+2014-08-26 18:37:28	gfixler	blueyed: I'm not sure if it'll be syntax, as things start snappy, but slow down as I use Vim for awhile
+2014-08-26 18:37:34	▬▬▶	Tritlo (~Tritlo@85-220-118-1.dsl.dynamic.simnet.is) has joined #vim
+2014-08-26 18:37:38	▬▬▶	untaken_ (~untaken@92.60.112.7) has joined #vim
+2014-08-26 18:37:38	▬▬▶	wting_ (~wting@162.243.221.221) has joined #vim
+2014-08-26 18:37:39	▬▬▶	tbo_ (~tbo@unaffiliated/tbo) has joined #vim
+2014-08-26 18:37:40	▬▬▶	frak_ (~fk@sake.asanebo.net) has joined #vim
+2014-08-26 18:37:43	gfixler	I usually restart Vim, which only takes a second or two
+2014-08-26 18:37:44	▬▬▶	teeteewhy (~teeteewhy@2001:41d0:8:67d2::3363) has joined #vim
+2014-08-26 18:37:45	▬▬▶	przemoc86 (~przemoc@89-74-38-183.dynamic.chello.pl) has joined #vim
+2014-08-26 18:37:46	▬▬▶	dgfitch_ (~dan@mindfill.com) has joined #vim
+2014-08-26 18:37:48	▬▬▶	diniwed (~gavron@ool-457f51c5.dyn.optonline.net) has joined #vim
+2014-08-26 18:37:48	▬▬▶	cmbrnt_ (~tnrbmc@srv1.tkcads.com) has joined #vim
+2014-08-26 18:37:48	▬▬▶	patricknegri (~patrickne@177.148.183.153) has joined #vim
+2014-08-26 18:37:48	◀▬▬	dsdeiz (~dsdeiz@112.207.217.120) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	bluedreams (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	zeitue (~z@67.221.133.170) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	IIT (~IIT@unaffiliated/xtriz) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	akim_ (~akim@unaffiliated/akim) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	naquad (~naquad@naquad.me) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	viking (~viking@pdpc/supporter/21for7/viking) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Kryptron (~Kryptron@unaffiliated/kryptron) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	nuck (~Nuck@oftn/member/Nuck) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	hagabaka (~hagabaka@unaffiliated/hagabaka) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	JSharpe_ (~JSharpe@2.223.210.18) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	bakhtiya (~me@office.addictivemobility.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	karsten_ (karsten@nat/redhat/x-nrceggzuvbbhfkhu) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	armin (~armin@unaffiliated/armin) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	gzl (~gzl@unaffiliated/gzl) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	shad0VV (~shad0VV@178.128.144.237.dsl.dyn.forthnet.gr) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	udioica (~udioica@c-67-182-237-54.hsd1.ut.comcast.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	owain (~owain@62.49.137.149) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	seth87 (~snaptron@exchange.snaptron.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	yokel (~yokel@unaffiliated/contempt) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Anarch (~olaf@73.53.61.168) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	silver_saucepan (~quassel@cpc15-duns7-2-0-cust191.9-3.cable.virginm.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	tureba (~tureba@162.248.164.180) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	JonasF (~j@jfgr.de) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	zmo (~guyzmo@leloop/guyzmo) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	[Arfrever] (~Arfrever@apache/committer/Arfrever) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	simoncook (~simoncook@78.129.222.153) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Carno (~carno@unaffiliated/carnophage) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	neurodamage (~neuro@199.30.90.48) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	mocker`` (~mocker@static-199-193-246-25.a.awsrdns.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	kfunk (~krf@kde/kfunk) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	mrshoe (~mrshoe@mail.davidshoemaker.me) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	cyanode (~cyanode@melt.io) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	levifig (~levi@hakr.io) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	Meckafet1 (~meckafett@h214n17-hdn-a12.ias.bredband.telia.com) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	napalmbrain (~napalmbra@162.243.218.11) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	Armen138 (~Armen138@i.am.armen138.com) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	dutc (~dutc@really.dontusethiscode.com) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	drdanick (drdanick@118-92-30-234.dsl.dyn.ihug.co.nz) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	thatdude34 (~dag@173.13.92.62.static.cust.telenor.com) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	heyj (~heyj@S010600907f9949b9.cg.shawcable.net) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	WillMoogle (~WillMoogl@78.129.167.193) has quit (*.net *.split)
+2014-08-26 18:37:50	▬▬▶	scp1 (~scp1@s83-177-28-44.cust.tele2.se) has joined #vim
+2014-08-26 18:37:52	▬▬▶	JSharpe (~JSharpe@2.223.210.18) has joined #vim
+2014-08-26 18:37:52	▬▬▶	g0ram_ (~crackas@pool-96-236-201-213.pitbpa.fios.verizon.net) has joined #vim
+2014-08-26 18:37:59	◀▬▬	przemoc86 (~przemoc@89-74-38-183.dynamic.chello.pl) has quit (Changing host)
+2014-08-26 18:37:59	▬▬▶	przemoc86 (~przemoc@unaffiliated/przemoc) has joined #vim
+2014-08-26 18:38:07	▬▬▶	hagebake (~hagabaka@unaffiliated/hagabaka) has joined #vim
+2014-08-26 18:38:08	▬▬▶	Zeedox__ (~quassel@c213-89-230-223.bredband.comhem.se) has joined #vim
+2014-08-26 18:38:19	▬▬▶	gyaresu_ (~gyaresu@unaffiliated/gyaresu) has joined #vim
+2014-08-26 18:38:19	gfixler	the syntime=on report thing shows 0.012899 for a redraw, which is fine
+2014-08-26 18:38:29	--	scp1 is now known as Guest62445
+2014-08-26 18:38:33	◀▬▬	cebor (cebor@unaffiliated/cebor) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:34	◀▬▬	ggherdov (sid11402@gateway/web/irccloud.com/x-zeadfhvhwvzcpqpa) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:34	◀▬▬	Derander (~Derander@andrew.xen.prgmr.com) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:43	▬▬▶	yorick_ (~yorick@oftn/member/yorick) has joined #vim
+2014-08-26 18:38:46	▬▬▶	Meckafett (~meckafett@h214n17-hdn-a12.ias.bredband.telia.com) has joined #vim
+2014-08-26 18:38:46	◀▬▬	Meckafett (~meckafett@h214n17-hdn-a12.ias.bredband.telia.com) has quit (Changing host)
+2014-08-26 18:38:46	▬▬▶	Meckafett (~meckafett@unaffiliated/meckafett) has joined #vim
+2014-08-26 18:38:52	◀▬▬	webmaven_ (~webmaven@159.140.254.98) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:38:56	◀▬▬	dantleec1 (~dantleech@91-115-250-250.adsl.highway.telekom.at) has quit (Ping timeout: 270 seconds)
+2014-08-26 18:39:07	▬▬▶	cebor (cebor@unaffiliated/cebor) has joined #vim
+2014-08-26 18:39:16	◀▬▬	momomomomo (~momomomom@38.126.164.90) has quit (Quit: momomomomo)
+2014-08-26 18:39:17	▬▬▶	bakhtiya (~me@office.addictivemobility.com) has joined #vim
+2014-08-26 18:39:22	▬▬▶	viking (~viking@129.59.115.14) has joined #vim
+2014-08-26 18:39:22	◀▬▬	viking (~viking@129.59.115.14) has quit (Changing host)
+2014-08-26 18:39:22	▬▬▶	viking (~viking@pdpc/supporter/21for7/viking) has joined #vim
+2014-08-26 18:39:32	◀▬▬	Zeedox_ (~quassel@c213-89-230-223.bredband.comhem.se) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:39:46	◀▬▬	JSharpe__ (~JSharpe@2.223.210.18) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:39:46	◀▬▬	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:39:53	◀▬▬	hallamigo_ (~hallamigo@206.71.71.63) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:40:02	▬▬▶	weltzooo3 (~weltzooo@162.243.110.169) has joined #vim
+2014-08-26 18:40:26	◀▬▬	MetaCosm_ (~RobertMet@unaffiliated/metacosm) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:40:32	tharkun	i have a colon separated value file. I need to get rid of the first two columns. How can I do it using vim and : as a separator? is Vim the tool for the job?
+2014-08-26 18:40:33	▬▬▶	falafel_ (~smuxi@pool-71-182-177-158.pitbpa.east.verizon.net) has joined #vim
+2014-08-26 18:40:37	thumbs	tharkun: it's fine.
+2014-08-26 18:40:41	▬▬▶	RobertMeta (~RobertMet@LINK-LOCALE.edge1.Washington1.Level3.net) has joined #vim
+2014-08-26 18:40:41	◀▬▬	RobertMeta (~RobertMet@LINK-LOCALE.edge1.Washington1.Level3.net) has quit (Changing host)
+2014-08-26 18:40:41	▬▬▶	RobertMeta (~RobertMet@unaffiliated/metacosm) has joined #vim
+2014-08-26 18:40:45	◀▬▬	d10n-work (uid37161@gateway/web/irccloud.com/x-sdgcrujregjylvza) has quit (Quit: Connection closed for inactivity)
+2014-08-26 18:40:45	▬▬▶	rjc_ (~rjc@unaffiliated/rjc) has joined #vim
+2014-08-26 18:40:48	◀▬▬	yokel_ (~yokel@198.98.53.118) has quit (Changing host)
+2014-08-26 18:40:48	▬▬▶	yokel_ (~yokel@unaffiliated/contempt) has joined #vim
+2014-08-26 18:40:51	▬▬▶	udioica (~udioica@c-67-182-237-54.hsd1.ut.comcast.net) has joined #vim
+2014-08-26 18:40:54	▬▬▶	Zifre_ (~Zifre@unaffiliated/zifre) has joined #vim
+2014-08-26 18:40:55	◀▬▬	romainl (~Adium@mol92-h02-176-189-161-205.dsl.sta.abo.bbox.fr) has quit (Quit: Leaving.)
+2014-08-26 18:40:55	marchelzo_	thumbs: sounds like it could be done with sed but vim can do it
+2014-08-26 18:40:55	▬▬▶	Derander (~Derander@andrew.xen.prgmr.com) has joined #vim
+2014-08-26 18:41:00	--	yokel_ is now known as yokel
+2014-08-26 18:41:04	thumbs	sure, I'd probably use sed
+2014-08-26 18:41:06	▬▬▶	drdanick (drdanick@118-92-30-234.dsl.dyn.ihug.co.nz) has joined #vim
+2014-08-26 18:41:06	▬▬▶	leeN (~leeN@e180127187.adsl.alicedsl.de) has joined #vim
+2014-08-26 18:41:07	▬▬▶	Sgeo (~quassel@ool-44c2aebc.dyn.optonline.net) has joined #vim
+2014-08-26 18:41:18	▬▬▶	ggherdov (sid11402@unaffiliated/ggherdov) has joined #vim
+2014-08-26 18:41:29	◀▬▬	shiin (~shiin@funtoo/core/shiin) has quit (Ping timeout: 266 seconds)
+2014-08-26 18:41:34	marchelzo_	i meant to direct that at tharkun, sorry
+2014-08-26 18:41:40	◀▬▬	teeteewhy (~teeteewhy@2001:41d0:8:67d2::3363) has quit (Excess Flood)
+2014-08-26 18:41:43	▬▬▶	Alenah- (~kp@53.74.211.130.bc.googleusercontent.com) has joined #vim
+2014-08-26 18:41:45	▬▬▶	Zeeh (~Zeeh@cable-192.222.169.239.electronicbox.net) has joined #vim
+2014-08-26 18:42:11	▬▬▶	WillMoogle (~WillMoogl@78.129.167.193) has joined #vim
+2014-08-26 18:42:11	◀▬▬	GarethAdams (~gareth@pdpc/supporter/active/GarethAdams) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	Ulver (~someIdent@69.30.253.222) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	cebor (cebor@unaffiliated/cebor) has quit (Excess Flood)
+2014-08-26 18:42:11	▬▬▶	Ulver (~someIdent@69.30.253.222) has joined #vim
+2014-08-26 18:42:11	◀▬▬	fredsir (uid41541@gateway/web/irccloud.com/x-svxchpkelykaptwc) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	tylerkern (uid41191@gateway/web/irccloud.com/x-wdhmobssexlexlgi) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	Mehdi (sid15567@gateway/web/irccloud.com/x-wjaqxkncppdgijye) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	lebster (sid17131@gateway/web/irccloud.com/x-eqhscchqtesxzhha) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	heavystorm (~heavystor@ec2-50-17-252-102.compute-1.amazonaws.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	crane (~crane@srv1.he.craneworks.de) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	▬▬▶	teeteewhy_ (~teeteewhy@2001:41d0:8:67d2::3363) has joined #vim
+2014-08-26 18:42:13	▬▬▶	qzzx_ (~qzzx@ip68-5-90-252.oc.oc.cox.net) has joined #vim
+2014-08-26 18:42:17	▬▬▶	chris|| (~Chris@unaffiliated/chris/x-9333407) has joined #vim
+2014-08-26 18:42:21	▬▬▶	davedev2_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-26 18:42:26	◀▬▬	jinie (~jinie@2a00:f10:103:201:ba27:ebff:fe3b:4af) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:26	◀▬▬	sqwishy (~weechat@S0106002401df0767.va.shawcable.net) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:29	◀▬▬	przemoc (~przemoc@unaffiliated/przemoc) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	cewood (~cewood@202.10.91.226) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	rbento (~rbento@187.2.54.130) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	[Arfreve1] (~Arfrever@minotaur.apache.org) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	hanlof (~hanlof\@94.234.170.83) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Zifre (~Zifre@unaffiliated/zifre) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	cy (~cy@unaffiliated/cy) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	d4ryus (~d4ryus@p5498AE96.dip0.t-ipconnect.de) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Guest26120 (~scp1@s83-177-28-44.cust.tele2.se) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	introom (~introom@unaffiliated/introom) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	yorick (~yorick@oftn/member/yorick) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	zacts (~zacts@freebsd/geek/zacts) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Alenah (~kp@53.74.211.130.bc.googleusercontent.com) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	jwest (~jwest@ec2-23-21-178-188.compute-1.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	falafel (~smuxi@pool-71-182-177-158.pitbpa.east.verizon.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	rjc (~rjc@unaffiliated/rjc) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Brando753 (~Brando753@unaffiliated/brando753) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	bolt (~r00t@unaffiliated/bolt) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	baumy (~baumy@unaffiliated/jbaumy93) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	atehwa (atehwa@aulis.sange.fi) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	qzzx (~qzzx@ip68-5-90-252.oc.oc.cox.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	rivarun (~rivarun@snf-254183.vm.okeanos.grnet.gr) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	blenny (~blenny@66.172.33.194) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	tubaman (~tubaman@72.183.107.223) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Defaultti (defaultti@lakka.kapsi.fi) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	cespare (~cespare@c-76-102-3-34.hsd1.ca.comcast.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	v0n (~vivien@195.154.92.73) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	adnap (~adnap@cpe-24-28-68-235.austin.res.rr.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	gyaresu (~gyaresu@unaffiliated/gyaresu) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	rafi (~cyx@unaffiliated/rafi/x-9332275) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Scall (~chat@unaffiliated/scall) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	sdx32 (~sdx23@unaffiliated/sdx23) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	c_14 (~c_14@unaffiliated/c-14/x-8913907) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	dostoyevsky (~sck@n096h062.rs.de.inter.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	isak__ (~isak@81-232-10-178-no169.tbcn.telia.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	vlad003 (~vlad003@107.170.227.230) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	lewellyn (lewellyn@greenviolet/lewellyn) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	asuka (~uwe@puppis.uberspace.de) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	untaken (~untaken@92.60.112.7) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	alxgnon (~alxgnon@unaffiliated/alxgnon) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	MindfulMonk (~MindfulMo@unaffiliated/mindfulmonk) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	fionnan (fionnan@cube.netsoc.tcd.ie) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	M-ou-se (~m-ou.se@m-ou.se) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	weltzooo (~weltzooo@162.243.110.169) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	frak (~fk@195.154.81.60) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	decent (~decent@213-67-227-15-no157.tbcn.telia.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	gdott9 (~gdott9@digi00356.digicube.fr) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	mr_daemon (~supernaut@valkyrie.underwares.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Abuh_ (~admin@5ED54BDE.cm-7-6b.dynamic.ziggo.nl) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	hplar (~ralph@unable-to-package.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	dgfitch (~dan@mindfill.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	ussid18 (~ross@128.199.231.83) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	fuleo_ (~saiful@www.saifuleo.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	osse (~osse@unaffiliated/osse) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Johnny- (~null@unaffiliated/johnny-) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	suy (~quassel@roger.badopi.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	tbo (~tbo@unaffiliated/tbo) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	tomoc (~tomoc@ubermoc.noc.sonic.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	wting (~wting@162.243.221.221) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	jason2 (~jason@162.243.138.59) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	chris| (~Chris@unaffiliated/chris/x-9333407) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	cmbrnt (~tnrbmc@srv1.tkcads.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	jemadux (~jemadux@gateway/tor-sasl/jemadux) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	_Cody (~x@gateway/tor-sasl/commandercody/x-44464735) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	tanath (~tanath@gateway/tor-sasl/tanath) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	fow (~fow@gateway/tor-sasl/fow) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	sashah (~sashah@gateway/tor-sasl/sashah) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	rfreeman_w (~rfreeman@gateway/tor-sasl/rfreemanw) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	danguita (~danguita@gateway/tor-sasl/danguita) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	VonKranke (~SYS64802@gateway/tor-sasl/vonkranke) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	guse (~guse@gateway/tor-sasl/guse) has quit (*.net *.split)
+2014-08-26 18:42:32	--	chris|| is now known as chris|
+2014-08-26 18:42:33	--	c_14_ is now known as c_14
+2014-08-26 18:42:34	▬▬▶	heyj (~heyj@d75-159-54-59.abhsia.telus.net) has joined #vim
+2014-08-26 18:42:37	--	tbo_ is now known as tbo
+2014-08-26 18:42:43	▬▬▶	Zifre (~Zifre@unaffiliated/zifre) has joined #vim
+2014-08-26 18:42:44	▬▬▶	sqwishy (~weechat@S0106002401df0767.va.shawcable.net) has joined #vim
+2014-08-26 18:42:47	▬▬▶	GarethAdams (~gareth@2a02:1348:14c:479:1d5c:3fec:3448:bbe) has joined #vim
+2014-08-26 18:42:52	▬▬▶	fstd_ (~fstd@xdsl-81-173-190-76.netcologne.de) has joined #vim
+2014-08-26 18:42:52	◀▬▬	webmaven__ (~webmaven@159.140.254.98) has quit (Remote host closed the connection)
+2014-08-26 18:42:56	◀▬▬	FabTG_ (~ftg@142.ip-37-59-108.eu) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:56	◀▬▬	cdk (~cdk@24-52-240-158.cable.teksavvy.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:57	◀▬▬	chavezgu (~chavezgu@as64-233.tontut.fi) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:52014-08-28 17:27:51	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-28 17:27:51	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-28 17:27:51	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-28 17:27:51	--	Channel #vim: 1049 nicks (0 ops, 0 voices, 1049 normals)
+2014-08-28 17:27:56	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-28 17:27:56	--	URL for #vim: http://vi-improved.org
+2014-08-28 17:28:02	▬▬▶	ghostjangles (~ghostjang@71.47.5.4) has joined #vim
+2014-08-28 17:28:04	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-28 17:28:40	◀▬▬	flebel (~me@unaffiliated/flebel) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:28:41	◀▬▬	iamjarvo (~textual@pool-98-115-181-52.phlapa.fios.verizon.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-28 17:29:23	▬▬▶	cemerick (~cemerick@c-24-34-140-98.hsd1.ma.comcast.net) has joined #vim
+2014-08-28 17:29:53	◀▬▬	ollehar (~Thunderbi@g230208090.adsl.alicedsl.de) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:30:10	◀▬▬	ghostjangles (~ghostjang@71.47.5.4) has quit (Client Quit)
+2014-08-28 17:31:08	◀▬▬	it0a (~it0a@rrcs-24-56-88-130.ma.biz.rr.com) has quit (Quit: Lost terminal)
+2014-08-28 17:31:13	◀▬▬	matleh_ (~matleh@95.91.90.183) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:31:24	▬▬▶	flebel (~me@unaffiliated/flebel) has joined #vim
+2014-08-28 17:31:49	▬▬▶	GinoMan (~Gino@198.22.122.158) has joined #vim
+2014-08-28 17:31:51	▬▬▶	dni (~dni@80.122.33.90) has joined #vim
+2014-08-28 17:32:04	◀▬▬	qstrahl (~qstrahl@138.34.24.161) has quit (Ping timeout: 250 seconds)
+2014-08-28 17:32:25	◀▬▬	nil- (~nil@65.112.10.210) has quit (Quit: Lost terminal)
+2014-08-28 17:32:32	◀▬▬	diegoviola (~diego@unaffiliated/diegoviola) has quit (Ping timeout: 245 seconds)
+2014-08-28 17:33:04	▬▬▶	nil- (~nil@65.112.10.210) has joined #vim
+2014-08-28 17:33:07	▬▬▶	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #vim
+2014-08-28 17:33:48	◀▬▬	serge_sans_paill (~serge@2a01:e34:ee9e:89b0:6267:20ff:fe65:c474) has quit (Quit: tchô)
+2014-08-28 17:33:49	▬▬▶	diegoviola (~diego@unaffiliated/diegoviola) has joined #vim
+2014-08-28 17:34:05	--	irc: disconnected from server
+2014-08-28 17:34:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-28 17:34:19	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-28 17:34:19	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-28 17:34:19	--	Channel #vim: 1046 nicks (0 ops, 0 voices, 1046 normals)
+2014-08-28 17:34:19	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-28 17:34:19	--	URL for #vim: http://vi-improved.org
+2014-08-28 17:34:32	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-28 17:34:55	▬▬▶	ringarin (~ringarose@cable-78.29.241.186.coditel.net) has joined #vim
+2014-08-28 17:35:43	◀▬▬	CptChaos (~CptChaos@p4FF3FEDB.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:36:17	◀▬▬	dni (~dni@80.122.33.90) has quit (Ping timeout: 246 seconds)
+2014-08-28 17:36:27	◀▬▬	GinoMan (~Gino@198.22.122.158) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:36:43	◀▬▬	ncthom91 (~ncthom91@199.201.64.130) has quit (Ping timeout: 255 seconds)
+2014-08-28 17:37:12	◀▬▬	ringaroses2 (~ringarose@cable-78.29.241.186.coditel.net) has quit (Ping timeout: 245 seconds)
+2014-08-28 17:40:03	▬▬▶	vidalstat (~jarenado@162.212.107.254) has joined #vim
+2014-08-28 17:40:07	◀▬▬	sinkensabe (~sinkensab@h241n6-lk-d1.ias.bredband.telia.com) has quit (Remote host closed the connection)
+2014-08-28 17:40:19	◀▬▬	fayek (~fayek@foresight/developer/fayek) has quit (Quit: So long and thanks for all the fish)
+2014-08-28 17:40:31	◀▬▬	vidalstat (~jarenado@162.212.107.254) has quit (Client Quit)
+2014-08-28 17:40:46	▬▬▶	vidalstat (~jarenado@162.212.107.254) has joined #vim
+2014-08-28 17:41:03	▬▬▶	n-st (~n-st@p57AE9D2A.dip0.t-ipconnect.de) has joined #vim
+2014-08-28 17:41:10	▬▬▶	slack1256 (~slack@181-161-64-190.baf.movistar.cl) has joined #vim
+2014-08-28 17:42:00	◀▬▬	deant765 (~dthom@rrcs-67-78-96-85.sw.biz.rr.com) has quit (Read error: Connection reset by peer)
+2014-08-28 17:42:01	▬▬▶	GinoMan (~Gino@198.22.122.159) has joined #vim
+2014-08-28 17:42:02	▬▬▶	dni (~dni@80.122.33.90) has joined #vim
+2014-08-28 17:42:16	▬▬▶	ringaring (~ringarose@cable-78.29.241.186.coditel.net) has joined #vim
+2014-08-28 17:42:53	◀▬▬	Bouncer00 (~Bouncer00@37.209.156.124) has quit (Remote host closed the connection)
+2014-08-28 17:43:01	◀▬▬	dantleec1 (~dantleech@host141-123-static.254-95-b.business.telecomitalia.it) has quit (Ping timeout: 255 seconds)
+2014-08-28 17:43:23	◀▬▬	nemesit|znc (~nemesit|z@84.200.7.95) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:43:36	▬▬▶	deant765 (~dthom@rrcs-67-78-96-85.sw.biz.rr.com) has joined #vim
+2014-08-28 17:43:38	--	irc: disconnected from server
+2014-08-28 17:51:58	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-28 17:51:58	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-28 17:51:58	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-28 17:51:58	--	Channel #vim: 1047 nicks (0 ops, 0 voices, 1047 normals)
+2014-08-28 17:51:58	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-28 17:51:58	--	URL for #vim: http://vi-improved.org
+2014-08-28 17:52:08	▬▬▶	FernandoBasso (~Fernando@189-10-132-174.cslce700.dsl.brasiltelecom.net.br) has joined #vim
+2014-08-28 17:52:12	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-28 17:52:26	◀▬▬	joshnz (~joshnz@121-99-245-224.bng1.nct.orcon.net.nz) has quit (Ping timeout: 250 seconds)
+2014-08-28 17:52:37	◀▬▬	GinoMan (~Gino@198.22.122.159) has quit (Ping timeout: 245 seconds)
+2014-08-28 17:52:40	▬▬▶	LesZedCB (~chrisblat@107.181.18.138) has joined #vim
+2014-08-28 17:52:49	LesZedCB	Hi
+2014-08-28 17:53:14	▬▬▶	bbloom (~bbloom@cpe-68-173-7-82.nyc.res.rr.com) has joined #vim
+2014-08-28 17:53:18	average	LesZedCB: Hi !!!
+2014-08-28 17:53:35	LesZedCB	Anybody here particularly familiar with DBExt?
+2014-08-28 17:53:43	average	LesZedCB: ME !
+2014-08-28 17:53:47	◀▬▬	fnordperfect (~fab@95.90.117.1) has quit (Ping timeout: 246 seconds)
+2014-08-28 17:54:15	average	LesZedCB: so what do you want to know ?
+2014-08-28 17:54:34	 *	average has only used DBExt with SQLite
+2014-08-28 17:54:38	▬▬▶	Zesty (~Zesty@173.9.163.139) has joined #vim
+2014-08-28 17:54:39	▬▬▶	muteki (~muteki@unaffiliated/muteki) has joined #vim
+2014-08-28 17:55:04	▬▬▶	zinco (~zinco@c80-216-230-59.bredband.comhem.se) has joined #vim
+2014-08-28 17:55:26	LesZedCB	Well, I'm on a Mac, but trying to connect to MSSQL. FreeTDS is giving me some pretty crazy times though
+2014-08-28 17:55:43	LesZedCB	I really want it to work though.
+2014-08-28 17:55:46	LesZedCB	So many features
+2014-08-28 17:55:58	◀▬▬	vidalstat (~jarenado@162.212.107.254) has quit (Quit: WeeChat 0.4.3)
+2014-08-28 17:56:05	◀▬▬	alkino (~alkino@195.190.86.18) has quit (Ping timeout: 255 seconds)
+2014-08-28 17:56:47	◀▬▬	marceloamorim (~marcelo@189-90-192-72.isimples.com.br) has left #vim
+2014-08-28 17:56:58	◀▬▬	MuffinMan` (~muffin@dh207-47-102.xnet.hr) has quit (Remote host closed the connection)
+2014-08-28 17:57:11	◀▬▬	Kismet010 (uid19508@gateway/web/irccloud.com/x-pkooocygicnilwvl) has quit (Quit: Connection closed for inactivity)
+2014-08-28 17:57:18	average	LesZedCB: do you have tsql working ?
+2014-08-28 17:57:30	LesZedCB	yeah
+2014-08-28 17:58:05	average	LesZedCB: search in this page for dbext http://garage-coding.com/sandbox/vim-setup/README.html
+2014-08-28 17:58:13	average	LesZedCB: those are my notes on using it with sqlite
+2014-08-28 17:58:32	average	LesZedCB: if I'm not mistaken, all you have to do, is change the path of SQLITE_bin to tsql
+2014-08-28 17:58:39	◀▬▬	Big-Blue (~seriousgu@unaffiliated/big-blue) has quit (Quit: Big-Blue)
+2014-08-28 17:58:42	average	LesZedCB: and also.. you'd have to tell it the right connection string
+2014-08-28 17:58:50	average	LesZedCB: how does your connection string look like ?
+2014-08-28 17:59:05	LesZedCB	sweet that looks promising
+2014-08-28 17:59:25	LesZedCB	no string yet, I'm manually setting it
+2014-08-28 17:59:42	◀▬▬	dsdeiz (~dsdeiz@112.207.217.120) has quit (Ping timeout: 245 seconds)
+2014-08-28 17:59:47	◀▬▬	zinco (~zinco@c80-216-230-59.bredband.comhem.se) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:59:51	▬▬▶	ringaroses2 (~ringarose@cable-78.29.241.186.coditel.net) has joined #vim
+2014-08-28 17:59:52	average	LesZedCB: http://stackoverflow.com/a/5860631/827519
+2014-08-28 18:00:46	LesZedCB	yeah i've been looking at that. I'm trying to not use ODBC since I can get in with tsql no problem.
+2014-08-28 18:01:02	LesZedCB	but I don't really understand the layers much
+2014-08-28 18:01:22	◀▬▬	ferreum (~ferreus@port-27141.pppoe.wtnet.de) has quit (Quit: WeeChat 1.0-dev)
+2014-08-28 18:01:31	▬▬▶	ferreum158 (~ferreus@port-27141.pppoe.wtnet.de) has joined #vim
+2014-08-28 18:01:32	LesZedCB	My understanding is unixODBC and iODBC run on top of FreeTDS
+2014-08-28 18:03:02	◀▬▬	ringaring (~ringarose@cable-78.29.241.186.coditel.net) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:03:06	◀▬▬	rfreeman_w (~rfreeman@gateway/tor-sasl/rfreemanw) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:03:21	average	LesZedCB: try replacing SQLITE_bin with SQLSRV_bin in my notes
+2014-08-28 18:03:36	average	LesZedCB: and indicate the path to tsql in SQLSRV_bin
+2014-08-28 18:03:42	average	LesZedCB: the full path to tsql that is
+2014-08-28 18:03:42	◀▬▬	cemerick (~cemerick@c-24-34-140-98.hsd1.ma.comcast.net) has quit (Ping timeout: 250 seconds)
+2014-08-28 18:03:45	▬▬▶	pierre1_ (~pierre1@179.218.155.20) has joined #vim
+2014-08-28 18:03:47	◀▬▬	wamaral (~wamaral@unaffiliated/macguyver) has quit (Quit: WeeChat 1.1-dev)
+2014-08-28 18:03:49	▬▬▶	ncthom91 (~ncthom91@199.201.64.130) has joined #vim
+2014-08-28 18:03:56	LesZedCB	yeah that sounds like a good idea
+2014-08-28 18:03:59	◀▬▬	jinie (~jinie@2a00:f10:103:201:ba27:ebff:fe3b:4af) has quit (Ping timeout: 260 seconds)
+2014-08-28 18:04:01	LesZedCB	i'll give that a try
+2014-08-28 18:04:23	▬▬▶	martinklepsch (~kmartiin@dslb-088-074-094-139.088.074.pools.vodafone-ip.de) has joined #vim
+2014-08-28 18:04:31	◀▬▬	bluesm (uid13438@gateway/web/irccloud.com/x-ivwwcgdirevalici) has quit (Quit: Connection closed for inactivity)
+2014-08-28 18:04:31	LesZedCB	gotta go home now. Decided to hop on irc in the last 10 minutes at work
+2014-08-28 18:04:32	▬▬▶	marioricalde (~mariorica@189.202.26.180.cable.dyn.cableonline.com.mx) has joined #vim
+2014-08-28 18:04:37	▬▬▶	supulton (~supulton@adsl-71-146-129-201.dsl.pltn13.sbcglobal.net) has joined #vim
+2014-08-28 18:04:43	LesZedCB	@average thanks for the help!
+2014-08-28 18:04:46	average	np
+2014-08-28 18:05:21	◀▬▬	LesZedCB (~chrisblat@107.181.18.138) has quit (Quit: leaving)
+2014-08-28 18:05:30	◀▬▬	xerox357 (~textual@64.124.192.210) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-28 18:06:58	▬▬▶	xerox357 (~textual@64.124.192.210) has joined #vim
+2014-08-28 18:07:29	▬▬▶	jinie (~jinie@2a00:f10:103:201:ba27:ebff:fe3b:4af) has joined #vim
+2014-08-28 18:08:02	◀▬▬	thevishy (~thevishy@122.172.180.232) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:08:21	◀▬▬	darnell (~textual@rwc-vpn.coraid.com) has quit (Quit: Computer has gone to sleep.)
+2014-08-28 18:08:26	◀▬▬	ncthom91 (~ncthom91@199.201.64.130) has quit (Ping timeout: 244 seconds)
+2014-08-28 18:09:16	◀▬▬	nnyk (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 260 seconds)
+2014-08-28 18:09:26	▬▬▶	sp206 (~sp206@c.24.143.69.226.static.broadstripe.net) has joined #vim
+2014-08-28 18:09:46	◀▬▬	marioricalde (~mariorica@189.202.26.180.cable.dyn.cableonline.com.mx) has quit (Quit: Goodbye.)
+2014-08-28 18:09:50	▬▬▶	alkino (~alkino@195.190.86.18) has joined #vim
+2014-08-28 18:10:35	◀▬▬	nedbat (~nedbat@python/psf/nedbat) has quit
+2014-08-28 18:11:49	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-28 18:12:04	▬▬▶	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has joined #vim
+2014-08-28 18:12:05	◀▬▬	tingol (~tingol@178-222-16-189.dynamic.isp.telekom.rs) has quit (Ping timeout: 240 seconds)
+2014-08-28 18:12:07	◀▬▬	drgoebbels (~drgoebbel@205.157.160.10) has quit (Remote host closed the connection)
+2014-08-28 18:13:22	◀▬▬	danemacmillan (~danemacmi@modemcable206.143-37-24.static.videotron.ca) has quit (Quit: WeeChat 1.0)
+2014-08-28 18:13:28	▬▬▶	rfreeman_w (~rfreeman@gateway/tor-sasl/rfreemanw) has joined #vim
+2014-08-28 18:14:15	◀▬▬	EntropyArchive (~Thunderbi@198.86.76.186) has quit (Quit: EntropyArchive)
+2014-08-28 18:15:44	◀▬▬	webmaven_ (~webmaven@159.140.254.104) has quit (Read error: Connection reset by peer)
+2014-08-28 18:16:03	▬▬▶	webmaven_ (~webmaven@159.140.254.104) has joined #vim
+2014-08-28 18:16:37	◀▬▬	davedev24_ (~davedev24@c-67-162-168-11.hsd1.fl.comcast.net) has quit (Client Quit)
+2014-08-28 18:16:46	◀▬▬	webmaven_ (~webmaven@159.140.254.104) has quit (Remote host closed the connection)
+2014-08-28 18:17:21	atmosx	now I have a statuline but no colors although they are explicitly referenced in the rc file.. blah
+2014-08-28 18:18:00	◀▬▬	Zesty (~Zesty@173.9.163.139) has quit (Quit: Leaving...)
+2014-08-28 18:18:34	◀▬▬	abbel (~abbel@f055073044.adsl.alicedsl.de) has quit (Quit: Verlassend)
+2014-08-28 18:18:35	◀▬▬	Zeedox_ (~quassel@c213-89-230-223.bredband.comhem.se) has quit (Ping timeout: 255 seconds)
+2014-08-28 18:19:17	◀▬▬	martinklepsch (~kmartiin@dslb-088-074-094-139.088.074.pools.vodafone-ip.de) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-28 18:19:43	▬▬▶	aasirc (~textual@151.64.87.148) has joined #vim
+2014-08-28 18:20:06	◀▬▬	paradigm (~paradigm@osuosc/paradigm) has quit (Quit: leaving)
+2014-08-28 18:21:28	▬▬▶	paradigm (~paradigm@osuosc/paradigm) has joined #vim
+2014-08-28 18:21:33	◀▬▬	paradigm (~paradigm@osuosc/paradigm) has left #vim
+2014-08-28 18:21:38	▬▬▶	paradigm (~paradigm@osuosc/paradigm) has joined #vim
+2014-08-28 18:21:46	▬▬▶	Zesty (~Zesty@173-9-163-139-miami.txt.hfc.comcastbusiness.net) has joined #vim
+2014-08-28 18:23:21	--	irc: disconnected from server
+2014-08-28 23:49:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-28 23:49:19	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-28 23:49:19	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-28 23:49:19	--	Channel #vim: 996 nicks (0 ops, 0 voices, 996 normals)
+2014-08-28 23:49:19	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-28 23:49:19	--	URL for #vim: http://vi-improved.org
+2014-08-28 23:49:32	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-28 23:50:14	◀▬▬	deens (~deens@c-73-170-6-32.hsd1.ca.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-08-28 23:50:21	▬▬▶	joshnz (~joshnz@121-99-245-224.bng1.nct.orcon.net.nz) has joined #vim
+2014-08-28 23:51:06	▬▬▶	Fandekasp (~Fandekasp@p14021-ipngn100302kobeminato.hyogo.ocn.ne.jp) has joined #vim
+2014-08-28 23:51:06	◀▬▬	Fandekasp (~Fandekasp@p14021-ipngn100302kobeminato.hyogo.ocn.ne.jp) has quit (Client Quit)
+2014-08-28 23:51:14	▬▬▶	Fandekasp (~Fandekasp@p14021-ipngn100302kobeminato.hyogo.ocn.ne.jp) has joined #vim
+2014-08-28 23:54:43	◀▬▬	joshnz (~joshnz@121-99-245-224.bng1.nct.orcon.net.nz) has quit (Ping timeout: 240 seconds)
+2014-08-28 23:55:43	▬▬▶	deens (~deens@c-73-170-6-32.hsd1.ca.comcast.net) has joined #vim
+2014-08-28 23:55:51	◀▬▬	GriffinHeart (~griffinhe@pb6abe9d7.tokyff01.ap.so-net.ne.jp) has quit (Remote host closed the connection)
+2014-08-28 23:58:18	▬▬▶	GriffinHeart (~griffinhe@pb6abe9d7.tokyff01.ap.so-net.ne.jp) has joined #vim
+2014-08-28 23:59:51	▬▬▶	Ravana (~Ravana@unaffiliated/ravana) has joined #vim
+2014-08-28 23:59:52	▬▬▶	mr-foobar (~mucker@49.206.19.125) has joined #vim
+2014-08-29 00:00:32	◀▬▬	rindolf (~Shlomi@bzq-79-176-108-142.red.bezeqint.net) has quit (Read error: Connection reset by peer)
+2014-08-29 00:00:56	▬▬▶	rindolf (~Shlomi@bzq-79-176-108-142.red.bezeqint.net) has joined #vim
+2014-08-29 00:01:24	◀▬▬	bluedreams (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has quit (Remote host closed the connection)
+2014-08-29 00:02:04	▬▬▶	krz (~foo@unaffiliated/krz) has joined #vim
+2014-08-29 00:05:40	◀▬▬	idoru (idoru@freenode/utility-bot/ex-server/idoru) has quit (Remote host closed the connection)
+2014-08-29 00:06:06	◀▬▬	GriffinHeart (~griffinhe@pb6abe9d7.tokyff01.ap.so-net.ne.jp) has quit (Remote host closed the connection)
+2014-08-29 00:06:35	▬▬▶	GriffinHeart (~griffinhe@pb6abe9d7.tokyff01.ap.so-net.ne.jp) has joined #vim
+2014-08-29 00:07:42	◀▬▬	supulton (~supulton@adsl-71-146-132-228.dsl.pltn13.sbcglobal.net) has quit (Ping timeout: 250 seconds)
+2014-08-29 00:08:50	◀▬▬	spal (~susam@pdpc/supporter/active/spal) has quit (Ping timeout: 260 seconds)
+2014-08-29 00:09:41	◀▬▬	trout-senpai (~trout-sen@2602:304:ccd3:1200:f57d:29d5:743f:2e31) has quit (Remote host closed the connection)
+2014-08-29 00:10:16	--	irc: disconnected from server
+2014-08-29 00:10:35	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-29 00:10:35	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-29 00:10:35	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-29 00:10:35	--	Channel #vim: 995 nicks (0 ops, 0 voices, 995 normals)
+2014-08-29 00:10:35	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-29 00:10:35	--	URL for #vim: http://vi-improved.org
+2014-08-29 00:10:37	◀▬▬	GriffinHeart (~griffinhe@pb6abe9d7.tokyff01.ap.so-net.ne.jp) has quit (Remote host closed the connection)
+2014-08-29 00:10:48	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-29 00:10:58	◀▬▬	rotbeard (~redbeard@2a02:908:df10:d300:76f0:6dff:fe3b:994d) has quit (Quit: Verlassend)
+2014-08-29 00:10:59	▬▬▶	GriffinHeart (~griffinhe@pb6abe9d7.tokyff01.ap.so-net.ne.jp) has joined #vim
+2014-08-29 00:11:10	▬▬▶	Cer3bus (~Cer3bus@pool-71-191-190-176.washdc.fios.verizon.net) has joined #vim
+2014-08-29 00:11:16	◀▬▬	Tatsh (~quassel@24.130.80.123) has quit (Remote host closed the connection)
+2014-08-29 00:11:18	▬▬▶	trout-senpai (~trout-sen@2602:304:ccd3:1200:fdef:4e7a:a34f:a90) has joined #vim
+2014-08-29 00:11:20	▬▬▶	duncannz (~duncannz@121-72-72-167.dsl.telstraclear.net) has joined #vim
+2014-08-29 00:13:17	▬▬▶	Tatsh (~quassel@24.130.80.123) has joined #vim
+2014-08-29 00:13:47	◀▬▬	morenoh151 (~morenoh14@173-228-123-196.dsl.dynamic.sonic.net) has quit (Ping timeout: 245 seconds)
+2014-08-29 00:14:51	▬▬▶	smita (~smita@ip-37-221-248-243.cust.tlapnet.cz) has joined #vim
+2014-08-29 00:15:25	▬▬▶	hdon (~donny@nv-71-49-135-190.dhcp.embarqhsd.net) has joined #vim
+2014-08-29 00:16:05	hdon	hi all :) i'm viewing some automatically generated files in vim, and it's very nice that vim asks me if i want to load a new version of the file when it detects that it has changed. is there a way to have it automatically load a given file when it changes?
+2014-08-29 18:36:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #vim
+2014-08-29 18:36:16	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.4.410 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2014-08-29 18:36:16	--	Topic set by mhi^ (~mhi@unaffiliated/mhi/x-9993184) on Mon, 18 Aug 2014 06:01:41
+2014-08-29 18:36:16	--	Channel #vim: 1025 nicks (0 ops, 0 voices, 1025 normals)
+2014-08-29 18:36:16	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2014-08-29 18:36:16	--	URL for #vim: http://vi-improved.org
+2014-08-29 18:36:29	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-08-29 18:37:33	▬▬▶	shiin (~shiin@funtoo/core/shiin) has joined #vim
+2014-08-29 18:38:22	◀▬▬	robmorrissey (~robmorris@cpc26-brig15-2-0-cust123.3-3.cable.virginm.net) has quit (Quit: Computer has gone to sleep.)
+2014-08-29 18:38:47	--	marcc_2 is now known as marcc
+2014-08-29 18:39:39	▬▬▶	HokieGeek (~andres@pool-71-191-91-168.washdc.fios.verizon.net) has joined #vim
+2014-08-29 18:40:56	◀▬▬	viking (~viking@pdpc/supporter/21for7/viking) has quit (Remote host closed the connection)
+2014-08-29 18:41:42	◀▬▬	LnL (~LnL7@d54C4D87C.access.telenet.be) has quit (Ping timeout: 245 seconds)
+2014-08-29 18:42:10	▬▬▶	danemacmillan (~danemacmi@unaffiliated/danemacmillan) has joined #vim
+2014-08-29 18:43:31	◀▬▬	KLVTZ_ (~j.page@4.30.56.71) has quit (Quit: leaving)
+2014-08-29 18:44:12	▬▬▶	shinnya (~shinnya@134.144.197.113.dy.bbexcite.jp) has joined #vim
+2014-08-29 18:44:15	◀▬▬	WaReZ (~warez@78.208.125.180) has quit (Ping timeout: 260 seconds)
+2014-08-29 18:44:31	◀▬▬	bluesm (uid13438@gateway/web/irccloud.com/x-mcfvqsfwwkmverct) has quit (Quit: Connection closed for inactivity)
+2014-08-29 18:45:31	◀▬▬	jophish (~jophish@c-24-22-143-176.hsd1.wa.comcast.net) has quit (Remote host closed the connection)

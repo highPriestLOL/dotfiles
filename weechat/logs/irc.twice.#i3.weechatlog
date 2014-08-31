@@ -1,0 +1,245 @@
+2014-08-23 20:19:13	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 20:19:13	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 20:19:13	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 20:19:13	--	Channel #i3: 133 nicks (4 ops, 0 halfops, 0 voices, 129 normals)
+2014-08-23 20:19:15	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 20:20:21	dagnachew	hi 
+2014-08-23 20:20:43	dagnachew	error could not parse json unallowed token 
+2014-08-23 20:23:46	--	irc: disconnected from server
+2014-08-23 21:12:58	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:12:58	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:12:58	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:12:58	--	Channel #i3: 131 nicks (4 ops, 0 halfops, 0 voices, 127 normals)
+2014-08-23 21:13:00	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:13:21	--	irc: disconnected from server
+2014-08-23 21:16:08	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:16:08	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:16:08	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:16:08	--	Channel #i3: 131 nicks (4 ops, 0 halfops, 0 voices, 127 normals)
+2014-08-23 21:16:10	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:16:23	baumy	dagnachew: context?
+2014-08-23 21:16:44	--	irc: disconnected from server
+2014-08-23 21:16:56	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:16:56	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:16:56	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:16:56	--	Channel #i3: 131 nicks (4 ops, 0 halfops, 0 voices, 127 normals)
+2014-08-23 21:16:58	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:17:26	--	irc: disconnected from server
+2014-08-23 21:18:34	-->	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:18:34	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:18:34	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:18:34	--	Channel #i3: 131 nicks (4 ops, 0 halfops, 0 voices, 127 normals)
+2014-08-23 21:18:35	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:21:51	--	irc: disconnected from server
+2014-08-23 21:23:11	-->	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:23:11	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:23:11	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:23:11	--	Channel #i3: 132 nicks (4 ops, 0 halfops, 0 voices, 128 normals)
+2014-08-23 21:23:13	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:24:17	--	irc: disconnected from server
+2014-08-23 21:27:58	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:27:58	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:27:58	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:27:58	--	Channel #i3: 132 nicks (4 ops, 0 halfops, 0 voices, 128 normals)
+2014-08-23 21:28:00	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:30:14	◀▬▬	geier_ (~geier@twice-38E52E8C.dip0.t-ipconnect.de) has quit (Ping timeout: 526 seconds)
+2014-08-23 21:30:24	--	irc: disconnected from server
+2014-08-23 21:30:41	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:30:41	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:30:41	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:30:41	--	Channel #i3: 131 nicks (4 ops, 0 halfops, 0 voices, 127 normals)
+2014-08-23 21:30:43	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:40:11	--	irc: disconnected from server
+2014-08-23 21:40:24	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:40:24	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:40:24	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:40:24	--	Channel #i3: 131 nicks (4 ops, 0 halfops, 0 voices, 127 normals)
+2014-08-23 21:40:26	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:42:01	--	irc: disconnected from server
+2014-08-23 21:43:31	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-23 21:43:31	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-23 21:43:31	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-23 21:43:31	--	Channel #i3: 131 nicks (4 ops, 0 halfops, 0 voices, 127 normals)
+2014-08-23 21:43:32	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-23 21:54:49	--	irc: disconnected from server
+2014-08-25 04:58:36	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-25 04:58:36	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-25 04:58:36	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-25 04:58:36	--	Channel #i3: 137 nicks (4 ops, 0 halfops, 0 voices, 133 normals)
+2014-08-25 04:58:38	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-25 04:58:58	dagnachew	hi all
+2014-08-25 05:01:28	dagnachew	I have an issue with conky it says Error Could not parse JSON parse error unallowed token at this point in JSON text my conkyrc http://pastie.org/private/kwleozuaggezugwzr602hg my config http://pastie.org/private/51ktvxmrsfibr3issaajtg
+2014-08-25 05:20:18	◀▬▬	TonyC (~Thunderbi@twice-C4246EA1.dhcp.stbr.ga.charter.com) has quit (Ping timeout: 523 seconds)
+2014-08-25 05:40:18	◀▬▬	orkun (~orkun@7323EA2C.5250F946.10C47E36.IP) has quit (Ping timeout: 524 seconds)
+2014-08-25 05:40:34	▬▬▶	spion_ (~spion@C09C6208.3E67E21D.4CCE06E9.IP) has joined #i3
+2014-08-25 05:45:43	--	irc: disconnected from server
+2014-08-25 05:45:48	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-25 05:45:48	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-25 05:45:48	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-25 05:45:48	--	Channel #i3: 136 nicks (4 ops, 0 halfops, 0 voices, 132 normals)
+2014-08-25 05:45:50	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-25 05:58:01	--	irc: disconnected from server
+2014-08-25 05:58:13	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-25 05:58:13	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-25 05:58:13	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-25 05:58:13	--	Channel #i3: 136 nicks (4 ops, 0 halfops, 0 voices, 132 normals)
+2014-08-25 05:58:15	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-25 06:02:33	--	irc: disconnected from server
+2014-08-25 06:02:36	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-25 06:02:36	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-25 06:02:36	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-25 06:02:36	--	Channel #i3: 136 nicks (4 ops, 0 halfops, 0 voices, 132 normals)
+2014-08-25 06:02:37	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-25 06:07:57	--	irc: disconnected from server
+2014-08-25 19:11:57	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-25 19:11:57	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-25 19:11:57	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-25 19:11:57	--	Channel #i3: 142 nicks (4 ops, 0 halfops, 0 voices, 138 normals)
+2014-08-25 19:11:59	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-25 19:12:31	dagnachew	hi all
+2014-08-25 19:12:44	dagnachew	is there a fix for conky and json ?
+2014-08-25 19:14:04	◀▬▬	magnetophon (~bart@twice-11BA5C4A.adsl.xs4all.nl) has quit (Client exited)
+2014-08-25 19:15:42	--	irc: disconnected from server
+2014-08-25 19:15:44	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-25 19:15:44	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-25 19:15:44	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-25 19:15:44	--	Channel #i3: 141 nicks (4 ops, 0 halfops, 0 voices, 137 normals)
+2014-08-25 19:15:45	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-25 19:21:38	TonyC	dagnachew: run it through a json syntax checker
+2014-08-25 19:22:51	▬▬▶	cmiles74 (~miles@twice-59B935DE.dhcp.oxfr.ma.charter.com) has joined #i3
+2014-08-25 19:32:43	◀▬▬	endiruna (~endiendir@twice-D5C2CB9A.phc.unipi.it) has quit (Client exited)
+2014-08-25 19:33:22	dagnachew	TonyC: thanks I will make the changes to the file
+2014-08-25 19:34:01	▬▬▶	ideasman42 (~cambo@twice-129B1F77.dyn.iinet.net.au) has joined #i3
+2014-08-25 19:34:01	◀▬▬	schischi (~schischi@19AE4420:44E54CC9:F51F75D:IP) has quit (Connection reset by peer)
+2014-08-25 19:34:01	▬▬▶	schischi (~schischi@19AE4420:44E54CC9:F51F75D:IP) has joined #i3
+2014-08-25 19:34:01	◀▬▬	sLite_ (~quassel@twice-3E882A64.slite.org) has quit (HELP! i see everything TWiCE /  No Ping reply in 180 seconds.)
+2014-08-25 19:34:01	◀▬▬	V0id (~V0id@twice-47A9087F.fbx.proxad.net) has quit (HELP! i see everything TWiCE /  No Ping reply in 180 seconds.)
+2014-08-25 19:34:15	▬▬▶	V0id (~V0id@twice-47A9087F.fbx.proxad.net) has joined #i3
+2014-08-25 19:34:45	▬▬▶	sLite (~quassel@twice-3E882A64.slite.org) has joined #i3
+2014-08-25 19:34:46	◀▬▬	siyb (~siyb@E9527098.1290B2D.62B3220E.IP) has quit (Client exited)
+2014-08-25 19:34:47	▬▬▶	siyb (~siyb@E9527098.1290B2D.62B3220E.IP) has joined #i3
+2014-08-25 19:56:15	◀▬▬	cmiles74 (~miles@twice-59B935DE.dhcp.oxfr.ma.charter.com) has quit (Ping timeout: 522 seconds)
+2014-08-25 20:00:37	◀▬▬	katsh (~katsh@twice-E264E8A8.washdc.fios.verizon.net) has quit (HELP! i see everything TWiCE /  WeeChat 1.0)
+2014-08-25 20:04:44	◀▬▬	pllz (~null@twice-80CDD023.retail.telecomitalia.it) has quit (HELP! i see everything TWiCE /  leaving)
+2014-08-25 20:05:22	◀▬▬	ParadoxG (~lgunsch@DDF29C76.695F5D76.4CFCC466.IP) has quit (HELP! i see everything TWiCE /  Leaving.)
+2014-08-25 20:26:28	--	irc: disconnected from server
+2014-08-25 21:24:55	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-25 21:24:55	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-25 21:24:55	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-25 21:24:55	--	Channel #i3: 139 nicks (4 ops, 0 halfops, 0 voices, 135 normals)
+2014-08-25 21:24:58	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-25 21:28:26	◀▬▬	geier_ (~geier@twice-F9574F1F.dip0.t-ipconnect.de) has quit (Ping timeout: 524 seconds)
+2014-08-25 21:31:41	dagnachew	 hi all I run my conkyrc on a json checker and cant see what's wrong here is my conkyrc http://pastebin.com/b5Kv6A6C please help it used to work know I get could not parse json
+2014-08-25 22:04:17	▬▬▶	endiruna1 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has joined #i3
+2014-08-25 22:09:02	◀▬▬	smlb (~simone@E101C120.329D073.759F402A.IP) has quit (Ping timeout: 526 seconds)
+2014-08-25 22:09:53	◀▬▬	endiruna (~endiendir@twice-D5C2CB9A.phc.unipi.it) has quit (Ping timeout: 528 seconds)
+2014-08-25 22:13:49	◀▬▬	endiruna1 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has quit (Client exited)
+2014-08-25 22:14:00	▬▬▶	endiruna1 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has joined #i3
+2014-08-25 22:15:47	▬▬▶	smlb (~simone@E101C120.329D073.759F402A.IP) has joined #i3
+2014-08-25 22:24:05	◀▬▬	endiruna1 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has quit (Client exited)
+2014-08-25 22:24:15	▬▬▶	endiruna1 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has joined #i3
+2014-08-25 22:25:12	◀▬▬	FreezingCold (~FreezingC@twice-1A1744E3.cpe.net.cable.rogers.com) has quit (Ping timeout: 528 seconds)
+2014-08-25 22:36:23	◀▬▬	michaelrose (~mike@twice-E7A1AAAB.wavecable.com) has quit (Client exited)
+2014-08-25 22:36:27	▬▬▶	FreezingCold (~FreezingC@twice-1A1744E3.cpe.net.cable.rogers.com) has joined #i3
+2014-08-25 22:36:42	▬▬▶	michaelrose (~mike@twice-E7A1AAAB.wavecable.com) has joined #i3
+2014-08-25 22:48:36	◀▬▬	mhcerri (~Marcelo_C@BBC45A78.22EF2407.2C695272.IP) has quit (Ping timeout: 524 seconds)
+2014-08-25 22:49:17	▬▬▶	mrbanie3 (~mrbanie@twice-BCD856D2.pools.vodafone-ip.de) has joined #i3
+2014-08-25 22:51:02	◀▬▬	mrbanie2 (~mrbanie@twice-4A653DD5.pools.vodafone-ip.de) has quit (Ping timeout: 527 seconds)
+2014-08-25 22:54:09	▬▬▶	nslqqq (~nsl@twice-E9825798.net) has joined #i3
+2014-08-25 23:11:32	◀▬▬	Juje007 (~juje007@53B98964.48F96360.8C184F24.IP) has quit (Client exited)
+2014-08-25 23:45:51	causasui	what would be the bind to map mod+esc?
+2014-08-25 23:51:29	TonyC	causasui: use the command line tool `xev` to figure it out
+2014-08-26 00:00:37	--	irc: disconnected from server
+2014-08-26 17:42:53	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-26 17:42:53	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-26 17:42:53	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-26 17:42:53	--	Channel #i3: 139 nicks (4 ops, 0 halfops, 0 voices, 135 normals)
+2014-08-26 17:42:55	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-26 17:44:01	◀▬▬	endiruna1 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has quit (Ping timeout: 527 seconds)
+2014-08-26 17:44:34	dagnachew	hi all
+2014-08-26 17:44:45	dagnachew	my conky is weel configured know
+2014-08-26 17:45:25	dagnachew	I was off for the past month I was connecting from usb key until I bought a new hardrive
+2014-08-26 17:47:50	◀▬▬	prime (~Thunderbi@twice-9EF9754.hsi6.kabel-badenwuerttemberg.de) has quit (Ping timeout: 526 seconds)
+2014-08-26 17:48:32	◀▬▬	endiruna2 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has quit (Client exited)
+2014-08-26 17:48:41	▬▬▶	endiruna2 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has joined #i3
+2014-08-26 17:54:18	◀▬▬	_Ultrabug (~Ultrabug@E3E3468C.6E394538.F95A07A6.IP) has quit (Client exited)
+2014-08-26 17:55:43	◀▬▬	xetver (~quassel@twice-C28B92AB.yourvserver.net) has quit (Ping timeout: 528 seconds)
+2014-08-26 17:56:52	◀▬▬	alexpbrown (~alex.brow@35769EA7.537B6FBC.9051C884.IP) has quit (HELP! i see everything TWiCE /  Leaving.)
+2014-08-26 17:57:33	◀▬▬	FreezingCold (~FreezingC@twice-1A1744E3.cpe.net.cable.rogers.com) has quit (Ping timeout: 525 seconds)
+2014-08-26 17:58:26	▬▬▶	xetver (~quassel@twice-C28B92AB.yourvserver.net) has joined #i3
+2014-08-26 17:58:47	◀▬▬	endiruna2 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has quit (Client exited)
+2014-08-26 17:58:56	▬▬▶	endiruna2 (~endiendir@twice-D5C2CB9A.phc.unipi.it) has joined #i3
+2014-08-26 18:06:04	◀▬▬	gishuel (~gishuel@twice-50990919.volia.net) has quit (Client exited)
+2014-08-26 18:08:32	◀▬▬	meaneye (~meaneye@B1BAB55B.8B08BB9A.6FABD2FC.IP) has quit (Ping timeout: 524 seconds)
+2014-08-26 18:14:31	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-26 18:14:31	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-26 18:14:31	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-26 18:14:31	--	Channel #i3: 133 nicks (4 ops, 0 halfops, 0 voices, 129 normals)
+2014-08-26 18:14:34	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-26 18:25:55	▬▬▶	cewood (~cewood@973D90E5.5376BF90.A4B5D816.IP) has joined #i3
+2014-08-26 18:34:08	dagnachew	hi all
+2014-08-26 18:34:28	dagnachew	anyone want to see my screenshot ?
+2014-08-26 18:36:26	dagnachew	here it is https://imageshack.com/i/iqyATTDUp
+2014-08-26 18:40:00	◀▬▬	rockfruit (~campbell@twice-97087ECD.access.mtnbusiness.co.za) has quit (Ping timeout: 527 seconds)
+2014-08-26 18:40:53	◀▬▬	fgallina (~user@twice-ED47F5CD.fibertel.com.ar) has quit (Input/output error)
+2014-08-28 17:27:36	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-28 17:27:36	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-28 17:27:36	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-28 17:27:36	--	Channel #i3: 138 nicks (4 ops, 0 halfops, 0 voices, 134 normals)
+2014-08-28 17:27:38	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-28 17:28:37	sergiodj	I'm not sure what's the official name of this feature, but yeah, apparently it doesn't have it (by reading the docs)
+2014-08-28 17:30:07	◀▬▬	fgallina (~user@twice-C404D9A2.telecom.net.ar) has quit (Ping timeout: 525 seconds)
+2014-08-28 17:33:25	▬▬▶	FreezingCold (~FreezingC@twice-1A1744E3.cpe.net.cable.rogers.com) has joined #i3
+2014-08-28 17:34:05	--	irc: disconnected from server
+2014-08-28 17:34:16	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-28 17:34:16	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-28 17:34:16	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-28 17:34:16	--	Channel #i3: 138 nicks (4 ops, 0 halfops, 0 voices, 134 normals)
+2014-08-28 17:34:18	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-28 17:35:44	baumy	ive never had that problem, i see how it could be useful though
+2014-08-28 17:35:52	baumy	people who use i3 are probably more likely to be people who use keyboard driven applications
+2014-08-28 17:37:51	sergiodj	I use keyboard a lot
+2014-08-28 17:38:02	sergiodj	but that doesn't mean I never use my mouse :)
+2014-08-28 17:38:14	sergiodj	(unfortunately, of course!)
+2014-08-28 17:38:48	baumy	the only thing i could imagine clicking on at the edge of the screen is a scrollbar
+2014-08-28 17:38:58	baumy	in which case, if im holding the mouse, i also have a scrollwheel
+2014-08-28 17:40:52	sergiodj	I almost don't use the scrollbar.  my problem is with the left edge.  sometimes I'm selecting text which is in the extreme left, in a browser
+2014-08-28 17:41:11	sergiodj	and my mouse goes to the left monitor
+2014-08-28 17:41:45	sergiodj	anyway, this is not a life-or-death thing, because I do that rarely.  however, I just experienced one of those annoying moments now, so I thought I'd ask here
+2014-08-28 17:43:38	--	irc: disconnected from server
+2014-08-28 17:51:45	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-28 17:51:45	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-28 17:51:45	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-28 17:51:45	--	Channel #i3: 138 nicks (4 ops, 0 halfops, 0 voices, 134 normals)
+2014-08-28 17:51:47	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-28 17:52:02	◀▬▬	gishuel (~gishuel@twice-50990919.volia.net) has quit (Connection reset by peer)
+2014-08-28 17:52:14	▬▬▶	gishuel (~gishuel@twice-50990919.volia.net) has joined #i3
+2014-08-28 17:59:17	◀▬▬	mfulz (~mfulz@43755B55.D6CC5B6D.E9BC3D29.IP) has quit (HELP! i see everything TWiCE /  Konversation terminated!)
+2014-08-28 18:00:21	◀▬▬	BloodyFire (~deamon@twice-F19D5869.hsi8.kabel-badenwuerttemberg.de) has quit (HELP! i see everything TWiCE /  BloodyFire)
+2014-08-28 18:05:13	◀▬▬	mseed (~mseed@3B77313B.345FC955.FA18CADE.IP) has quit (HELP! i see everything TWiCE /  Leaving)
+2014-08-28 18:14:43	◀▬▬	gishuel (~gishuel@twice-50990919.volia.net) has quit (Client exited)
+2014-08-28 18:20:50	◀▬▬	_Ultrabug (~Ultrabug@E3E3468C.6E394538.F95A07A6.IP) has quit (Client exited)
+2014-08-28 18:23:21	--	irc: disconnected from server
+2014-08-28 23:49:05	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-28 23:49:05	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-28 23:49:05	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-28 23:49:05	--	Channel #i3: 125 nicks (4 ops, 0 halfops, 0 voices, 121 normals)
+2014-08-28 23:49:06	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-28 23:50:00	◀▬▬	nslqqq (~nsl@twice-E9825798.net) has quit (Ping timeout: 527 seconds)
+2014-08-28 23:51:05	▬▬▶	Fandekasp (~Fandekasp@twice-6CE9EA71.hyogo.ocn.ne.jp) has joined #i3
+2014-08-28 23:51:06	◀▬▬	Fandekasp (~Fandekasp@twice-6CE9EA71.hyogo.ocn.ne.jp) has quit (HELP! i see everything TWiCE /  Fandekasp)
+2014-08-28 23:51:13	▬▬▶	Fandekasp (~Fandekasp@twice-6CE9EA71.hyogo.ocn.ne.jp) has joined #i3
+2014-08-29 00:10:16	--	irc: disconnected from server
+2014-08-29 00:10:23	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-29 00:10:23	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-29 00:10:23	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-29 00:10:23	--	Channel #i3: 125 nicks (4 ops, 0 halfops, 0 voices, 121 normals)
+2014-08-29 00:10:25	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-29 18:35:51	▬▬▶	dagnachew (~dagnachew@twice-6F802E3B.dsl.bell.ca) has joined #i3
+2014-08-29 18:35:51	--	Topic for #i3 is "i3 v4.8 released | i3status 2.8 released | i3lock 2.6 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | http://build.i3wm.org/download-count.txt | paste at http://p.nnev.de/ | file upload at http://bayfiles.com/ "
+2014-08-29 18:35:51	--	Topic set by sECuRE on Fri, 18 Jul 2014 14:42:28
+2014-08-29 18:35:51	--	Channel #i3: 130 nicks (4 ops, 0 halfops, 0 voices, 126 normals)
+2014-08-29 18:35:53	--	Channel created on Wed, 11 Feb 2009 10:33:40
+2014-08-29 18:40:13	◀▬▬	frakturf1 (~frakturfr@twice-6386E986.dip0.t-ipconnect.de) has quit (Ping timeout: 523 seconds)
+2014-08-29 18:43:01	◀▬▬	frakturfreak (~frakturfr@2E1581AB:2904F441:48D0ACE0:IP) has quit (Input/output error)
+2014-08-29 18:45:10	▬▬▶	frakturfreak (~frakturfr@34FA012B:CEF0B35B:48D0ACE0:IP) has joined #i3

@@ -1,0 +1,1098 @@
+2014-08-23 20:19:11	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 20:19:11	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-23 20:19:11	--	*** Looking up your hostname
+2014-08-23 20:19:11	--	*** Checking Ident
+2014-08-23 20:19:11	--	*** Found your hostname
+2014-08-23 20:19:20	--	*** No ident response
+2014-08-23 20:19:20	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 20:19:20	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 20:19:20	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-23 20:19:20	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 20:19:20	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 20:19:20	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 20:19:20	--	There are 1174 users and 25176 invisible on 37 servers
+2014-08-23 20:19:20	--	20 :operator(s) online
+2014-08-23 20:19:20	--	10 :unknown connection(s)
+2014-08-23 20:19:20	--	9489 :channels formed
+2014-08-23 20:19:20	--	I have 1461 clients and 1 servers
+2014-08-23 20:19:20	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-23 20:19:20	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-23 20:19:20	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-23 20:19:20	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-23 20:19:20	--	End of /MOTD command.
+2014-08-23 20:19:20	--	elysium.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-23 20:23:46	--	irc: disconnected from server
+2014-08-23 21:12:58	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:12:58	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-23 21:12:58	--	*** Looking up your hostname
+2014-08-23 21:12:58	--	*** Checking Ident
+2014-08-23 21:12:58	--	*** Found your hostname
+2014-08-23 21:13:07	--	*** No ident response
+2014-08-23 21:13:07	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:13:07	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:13:07	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-23 21:13:07	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:13:07	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:13:07	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:13:07	--	There are 1164 users and 25077 invisible on 37 servers
+2014-08-23 21:13:07	--	20 :operator(s) online
+2014-08-23 21:13:07	--	10 :unknown connection(s)
+2014-08-23 21:13:07	--	9489 :channels formed
+2014-08-23 21:13:07	--	I have 1443 clients and 1 servers
+2014-08-23 21:13:07	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-23 21:13:07	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-23 21:13:07	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-23 21:13:07	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-23 21:13:07	--	End of /MOTD command.
+2014-08-23 21:13:07	--	elysium.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-23 21:13:21	--	irc: disconnected from server
+2014-08-23 21:15:57	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:15:57	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-23 21:15:57	--	*** Looking up your hostname
+2014-08-23 21:15:57	--	*** Checking Ident
+2014-08-23 21:15:57	--	*** Found your hostname
+2014-08-23 21:16:06	--	*** No ident response
+2014-08-23 21:16:06	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:16:06	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:16:06	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-23 21:16:06	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:16:06	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:16:06	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:16:06	--	There are 1233 users and 25073 invisible on 37 servers
+2014-08-23 21:16:06	--	20 :operator(s) online
+2014-08-23 21:16:06	--	77 :unknown connection(s)
+2014-08-23 21:16:06	--	9493 :channels formed
+2014-08-23 21:16:06	--	I have 5877 clients and 1 servers
+2014-08-23 21:16:06	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-23 21:16:06	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-23 21:16:06	--	- 2014-2-8 5:32
+2014-08-23 21:16:06	--	-  Welcome to Undernet!
+2014-08-23 21:16:06	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-23 21:16:06	--	-
+2014-08-23 21:16:06	--	-  This server is sponsored by Black Lotus Communications
+2014-08-23 21:16:06	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-23 21:16:06	--	-
+2014-08-23 21:16:06	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:16:06	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:16:06	--	-
+2014-08-23 21:16:06	--	-  We have a few rules on this server, we encourage you to
+2014-08-23 21:16:06	--	-  follow them!
+2014-08-23 21:16:06	--	-
+2014-08-23 21:16:06	--	-   * NO ABUSE
+2014-08-23 21:16:06	--	-   * NO CLONES
+2014-08-23 21:16:06	--	-   * NO SPAMMING
+2014-08-23 21:16:06	--	-   * NO IMPERSONATING
+2014-08-23 21:16:06	--	-
+2014-08-23 21:16:06	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-23 21:16:06	--	-  to keep it that way. If any of these rules are violated
+2014-08-23 21:16:06	--	-  we reserve the right to remove you or even ban you from
+2014-08-23 21:16:06	--	-  using this server.
+2014-08-23 21:16:06	--	-
+2014-08-23 21:16:06	--	-  Remember that IRC is a service - not a right.
+2014-08-23 21:16:06	--	-
+2014-08-23 21:16:06	--	-  We reserve the right to deny access to this server without
+2014-08-23 21:16:06	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-23 21:16:06	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-23 21:16:06	--	-
+2014-08-23 21:16:06	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:16:06	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:16:06	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-23 21:16:06	--	-  Visit our website: http://www.blacklotus.net
+2014-08-23 21:16:06	--	End of /MOTD command.
+2014-08-23 21:16:06	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-23 21:16:06	--	User mode [+iw] by dagnachew
+2014-08-23 21:16:44	--	irc: disconnected from server
+2014-08-23 21:16:45	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:16:45	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-23 21:16:45	--	*** Looking up your hostname
+2014-08-23 21:16:45	--	*** Checking Ident
+2014-08-23 21:16:45	--	*** Found your hostname
+2014-08-23 21:16:54	--	*** No ident response
+2014-08-23 21:16:54	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:16:54	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:16:54	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-23 21:16:54	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:16:54	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:16:54	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:16:54	--	There are 1161 users and 25079 invisible on 37 servers
+2014-08-23 21:16:54	--	20 :operator(s) online
+2014-08-23 21:16:54	--	8 :unknown connection(s)
+2014-08-23 21:16:54	--	9498 :channels formed
+2014-08-23 21:16:54	--	I have 1444 clients and 1 servers
+2014-08-23 21:16:54	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-23 21:16:54	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-23 21:16:54	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-23 21:16:54	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-23 21:16:54	--	End of /MOTD command.
+2014-08-23 21:16:54	--	elysium.us.ix.undernet.org: on 1 ca 2(4) ft 9(10) tr
+2014-08-23 21:17:26	--	irc: disconnected from server
+2014-08-23 21:18:33	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:18:33	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-23 21:18:33	--	*** Looking up your hostname
+2014-08-23 21:18:33	--	*** Checking Ident
+2014-08-23 21:18:33	--	*** Found your hostname
+2014-08-23 21:18:41	--	*** No ident response
+2014-08-23 21:18:41	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:18:41	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:18:41	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-23 21:18:41	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:18:41	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:18:41	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:18:41	--	There are 1215 users and 25074 invisible on 37 servers
+2014-08-23 21:18:41	--	20 :operator(s) online
+2014-08-23 21:18:41	--	59 :unknown connection(s)
+2014-08-23 21:18:41	--	9497 :channels formed
+2014-08-23 21:18:41	--	I have 5872 clients and 1 servers
+2014-08-23 21:18:41	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-23 21:18:41	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-23 21:18:41	--	- 2014-2-8 5:32
+2014-08-23 21:18:41	--	-  Welcome to Undernet!
+2014-08-23 21:18:41	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-23 21:18:41	--	-
+2014-08-23 21:18:41	--	-  This server is sponsored by Black Lotus Communications
+2014-08-23 21:18:41	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-23 21:18:41	--	-
+2014-08-23 21:18:41	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:18:41	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:18:41	--	-
+2014-08-23 21:18:41	--	-  We have a few rules on this server, we encourage you to
+2014-08-23 21:18:41	--	-  follow them!
+2014-08-23 21:18:41	--	-
+2014-08-23 21:18:41	--	-   * NO ABUSE
+2014-08-23 21:18:41	--	-   * NO CLONES
+2014-08-23 21:18:41	--	-   * NO SPAMMING
+2014-08-23 21:18:41	--	-   * NO IMPERSONATING
+2014-08-23 21:18:41	--	-
+2014-08-23 21:18:41	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-23 21:18:41	--	-  to keep it that way. If any of these rules are violated
+2014-08-23 21:18:41	--	-  we reserve the right to remove you or even ban you from
+2014-08-23 21:18:41	--	-  using this server.
+2014-08-23 21:18:41	--	-
+2014-08-23 21:18:41	--	-  Remember that IRC is a service - not a right.
+2014-08-23 21:18:41	--	-
+2014-08-23 21:18:41	--	-  We reserve the right to deny access to this server without
+2014-08-23 21:18:41	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-23 21:18:41	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-23 21:18:41	--	-
+2014-08-23 21:18:41	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:18:41	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:18:41	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-23 21:18:41	--	-  Visit our website: http://www.blacklotus.net
+2014-08-23 21:18:41	--	End of /MOTD command.
+2014-08-23 21:18:41	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10) tr
+2014-08-23 21:18:41	--	User mode [+iw] by dagnachew
+2014-08-23 21:21:51	--	irc: disconnected from server
+2014-08-23 21:23:00	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:23:00	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-23 21:23:00	--	*** Looking up your hostname
+2014-08-23 21:23:00	--	*** Checking Ident
+2014-08-23 21:23:00	--	*** Found your hostname
+2014-08-23 21:23:09	--	*** No ident response
+2014-08-23 21:23:09	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:23:09	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:23:09	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-23 21:23:09	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:23:09	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:23:09	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:23:09	--	There are 1216 users and 25083 invisible on 37 servers
+2014-08-23 21:23:09	--	20 :operator(s) online
+2014-08-23 21:23:09	--	55 :unknown connection(s)
+2014-08-23 21:23:09	--	9504 :channels formed
+2014-08-23 21:23:09	--	I have 5871 clients and 1 servers
+2014-08-23 21:23:09	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-23 21:23:09	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-23 21:23:09	--	- 2014-2-8 5:32
+2014-08-23 21:23:09	--	-  Welcome to Undernet!
+2014-08-23 21:23:09	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-23 21:23:09	--	-
+2014-08-23 21:23:09	--	-  This server is sponsored by Black Lotus Communications
+2014-08-23 21:23:09	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-23 21:23:09	--	-
+2014-08-23 21:23:09	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:23:09	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:23:09	--	-
+2014-08-23 21:23:09	--	-  We have a few rules on this server, we encourage you to
+2014-08-23 21:23:09	--	-  follow them!
+2014-08-23 21:23:09	--	-
+2014-08-23 21:23:09	--	-   * NO ABUSE
+2014-08-23 21:23:09	--	-   * NO CLONES
+2014-08-23 21:23:09	--	-   * NO SPAMMING
+2014-08-23 21:23:09	--	-   * NO IMPERSONATING
+2014-08-23 21:23:09	--	-
+2014-08-23 21:23:09	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-23 21:23:09	--	-  to keep it that way. If any of these rules are violated
+2014-08-23 21:23:09	--	-  we reserve the right to remove you or even ban you from
+2014-08-23 21:23:09	--	-  using this server.
+2014-08-23 21:23:09	--	-
+2014-08-23 21:23:09	--	-  Remember that IRC is a service - not a right.
+2014-08-23 21:23:09	--	-
+2014-08-23 21:23:09	--	-  We reserve the right to deny access to this server without
+2014-08-23 21:23:09	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-23 21:23:09	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-23 21:23:09	--	-
+2014-08-23 21:23:09	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:23:09	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:23:09	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-23 21:23:09	--	-  Visit our website: http://www.blacklotus.net
+2014-08-23 21:23:09	--	End of /MOTD command.
+2014-08-23 21:23:09	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10) tr
+2014-08-23 21:23:09	--	User mode [+iw] by dagnachew
+2014-08-23 21:24:17	--	irc: disconnected from server
+2014-08-23 21:27:47	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:27:48	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-23 21:27:48	--	*** Looking up your hostname
+2014-08-23 21:27:48	--	*** Checking Ident
+2014-08-23 21:27:48	--	*** Found your hostname
+2014-08-23 21:27:56	--	*** No ident response
+2014-08-23 21:27:56	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:27:56	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:27:56	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-23 21:27:56	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:27:56	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:27:56	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:27:56	--	There are 1176 users and 25067 invisible on 37 servers
+2014-08-23 21:27:56	--	20 :operator(s) online
+2014-08-23 21:27:56	--	14 :unknown connection(s)
+2014-08-23 21:27:56	--	9505 :channels formed
+2014-08-23 21:27:56	--	I have 1446 clients and 1 servers
+2014-08-23 21:27:56	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-23 21:27:56	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-23 21:27:56	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-23 21:27:56	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-23 21:27:56	--	End of /MOTD command.
+2014-08-23 21:27:56	--	elysium.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-23 21:30:24	--	irc: disconnected from server
+2014-08-23 21:30:29	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:30:30	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-23 21:30:30	--	*** Looking up your hostname
+2014-08-23 21:30:30	--	*** Checking Ident
+2014-08-23 21:30:30	--	*** Found your hostname
+2014-08-23 21:30:38	--	*** No ident response
+2014-08-23 21:30:38	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:30:38	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:30:38	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-23 21:30:38	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:30:38	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:30:38	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:30:38	--	There are 1242 users and 25059 invisible on 37 servers
+2014-08-23 21:30:38	--	20 :operator(s) online
+2014-08-23 21:30:38	--	76 :unknown connection(s)
+2014-08-23 21:30:38	--	9508 :channels formed
+2014-08-23 21:30:38	--	I have 5862 clients and 1 servers
+2014-08-23 21:30:38	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-23 21:30:38	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-23 21:30:38	--	- 2014-2-8 5:32
+2014-08-23 21:30:38	--	-  Welcome to Undernet!
+2014-08-23 21:30:38	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-23 21:30:38	--	-
+2014-08-23 21:30:38	--	-  This server is sponsored by Black Lotus Communications
+2014-08-23 21:30:38	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-23 21:30:38	--	-
+2014-08-23 21:30:38	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:30:38	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:30:38	--	-
+2014-08-23 21:30:38	--	-  We have a few rules on this server, we encourage you to
+2014-08-23 21:30:38	--	-  follow them!
+2014-08-23 21:30:38	--	-
+2014-08-23 21:30:38	--	-   * NO ABUSE
+2014-08-23 21:30:38	--	-   * NO CLONES
+2014-08-23 21:30:38	--	-   * NO SPAMMING
+2014-08-23 21:30:38	--	-   * NO IMPERSONATING
+2014-08-23 21:30:38	--	-
+2014-08-23 21:30:38	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-23 21:30:38	--	-  to keep it that way. If any of these rules are violated
+2014-08-23 21:30:38	--	-  we reserve the right to remove you or even ban you from
+2014-08-23 21:30:38	--	-  using this server.
+2014-08-23 21:30:38	--	-
+2014-08-23 21:30:38	--	-  Remember that IRC is a service - not a right.
+2014-08-23 21:30:38	--	-
+2014-08-23 21:30:38	--	-  We reserve the right to deny access to this server without
+2014-08-23 21:30:38	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-23 21:30:38	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-23 21:30:38	--	-
+2014-08-23 21:30:38	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:30:38	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-23 21:30:38	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-23 21:30:38	--	-  Visit our website: http://www.blacklotus.net
+2014-08-23 21:30:38	--	End of /MOTD command.
+2014-08-23 21:30:38	--	Forseti.us.ix.undernet.org: on 1 ca 2(4) ft 10(10)
+2014-08-23 21:30:38	--	User mode [+iw] by dagnachew
+2014-08-23 21:34:04	=!=	irc: this buffer is not a channel!
+2014-08-23 21:34:19	=!=	irc: this buffer is not a channel!
+2014-08-23 21:40:11	--	irc: disconnected from server
+2014-08-23 21:40:12	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:40:12	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-23 21:40:12	--	*** Looking up your hostname
+2014-08-23 21:40:12	--	*** Checking Ident
+2014-08-23 21:40:12	--	*** Found your hostname
+2014-08-23 21:40:21	--	*** No ident response
+2014-08-23 21:40:21	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:40:21	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:40:21	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-23 21:40:21	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:40:21	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:40:21	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:40:21	--	There are 1165 users and 25079 invisible on 37 servers
+2014-08-23 21:40:21	--	20 :operator(s) online
+2014-08-23 21:40:21	--	6 :unknown connection(s)
+2014-08-23 21:40:21	--	9503 :channels formed
+2014-08-23 21:40:21	--	I have 1449 clients and 1 servers
+2014-08-23 21:40:21	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-23 21:40:21	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-23 21:40:21	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-23 21:40:21	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-23 21:40:21	--	End of /MOTD command.
+2014-08-23 21:40:21	--	elysium.us.ix.undernet.org: on 1 ca 1(4) ft 10(10) tr
+2014-08-23 21:42:01	--	irc: disconnected from server
+2014-08-23 21:43:29	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-23 21:43:29	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-23 21:43:29	--	*** Looking up your hostname
+2014-08-23 21:43:29	--	*** Checking Ident
+2014-08-23 21:43:29	--	*** Found your hostname
+2014-08-23 21:43:38	--	*** No ident response
+2014-08-23 21:43:38	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-23 21:43:38	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-23 21:43:38	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-23 21:43:38	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-23 21:43:38	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-23 21:43:38	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-23 21:43:38	--	There are 1174 users and 25085 invisible on 37 servers
+2014-08-23 21:43:38	--	20 :operator(s) online
+2014-08-23 21:43:38	--	12 :unknown connection(s)
+2014-08-23 21:43:38	--	9502 :channels formed
+2014-08-23 21:43:38	--	I have 1451 clients and 1 servers
+2014-08-23 21:43:38	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-23 21:43:38	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-23 21:43:38	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-23 21:43:38	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-23 21:43:38	--	End of /MOTD command.
+2014-08-23 21:43:38	--	elysium.us.ix.undernet.org: on 1 ca 1(4) ft 10(10) tr
+2014-08-23 21:54:49	--	irc: disconnected from server
+2014-08-25 04:58:25	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-25 04:58:26	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-25 04:58:26	--	*** Looking up your hostname
+2014-08-25 04:58:26	--	*** Checking Ident
+2014-08-25 04:58:26	--	*** Found your hostname
+2014-08-25 04:58:34	--	*** No ident response
+2014-08-25 04:58:34	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-25 04:58:34	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-25 04:58:34	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-25 04:58:34	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-25 04:58:34	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-25 04:58:34	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-25 04:58:34	--	There are 1266 users and 25032 invisible on 37 servers
+2014-08-25 04:58:34	--	20 :operator(s) online
+2014-08-25 04:58:34	--	60 :unknown connection(s)
+2014-08-25 04:58:34	--	9518 :channels formed
+2014-08-25 04:58:34	--	I have 5983 clients and 1 servers
+2014-08-25 04:58:34	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-25 04:58:34	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-25 04:58:34	--	- 2014-2-8 5:32
+2014-08-25 04:58:34	--	-  Welcome to Undernet!
+2014-08-25 04:58:34	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-25 04:58:34	--	-
+2014-08-25 04:58:34	--	-  This server is sponsored by Black Lotus Communications
+2014-08-25 04:58:34	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-25 04:58:34	--	-
+2014-08-25 04:58:34	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 04:58:34	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 04:58:34	--	-
+2014-08-25 04:58:34	--	-  We have a few rules on this server, we encourage you to
+2014-08-25 04:58:34	--	-  follow them!
+2014-08-25 04:58:34	--	-
+2014-08-25 04:58:34	--	-   * NO ABUSE
+2014-08-25 04:58:34	--	-   * NO CLONES
+2014-08-25 04:58:34	--	-   * NO SPAMMING
+2014-08-25 04:58:34	--	-   * NO IMPERSONATING
+2014-08-25 04:58:34	--	-
+2014-08-25 04:58:34	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-25 04:58:34	--	-  to keep it that way. If any of these rules are violated
+2014-08-25 04:58:34	--	-  we reserve the right to remove you or even ban you from
+2014-08-25 04:58:34	--	-  using this server.
+2014-08-25 04:58:34	--	-
+2014-08-25 04:58:34	--	-  Remember that IRC is a service - not a right.
+2014-08-25 04:58:34	--	-
+2014-08-25 04:58:34	--	-  We reserve the right to deny access to this server without
+2014-08-25 04:58:34	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-25 04:58:34	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-25 04:58:34	--	-
+2014-08-25 04:58:34	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 04:58:34	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 04:58:34	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-25 04:58:34	--	-  Visit our website: http://www.blacklotus.net
+2014-08-25 04:58:34	--	End of /MOTD command.
+2014-08-25 04:58:34	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-25 04:58:34	--	User mode [+iw] by dagnachew
+2014-08-25 05:45:08	--	MSG(nickserv): identify *************
+2014-08-25 05:45:08	--	nickserv: No such nick
+2014-08-25 05:45:43	--	irc: disconnected from server
+2014-08-25 05:45:47	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-25 05:45:47	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-25 05:45:47	--	*** Looking up your hostname
+2014-08-25 05:45:47	--	*** Checking Ident
+2014-08-25 05:45:47	--	*** Found your hostname
+2014-08-25 05:45:56	--	*** No ident response
+2014-08-25 05:45:56	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-25 05:45:56	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-25 05:45:56	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-25 05:45:56	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-25 05:45:56	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-25 05:45:56	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-25 05:45:56	--	There are 1262 users and 25135 invisible on 37 servers
+2014-08-25 05:45:56	--	20 :operator(s) online
+2014-08-25 05:45:56	--	64 :unknown connection(s)
+2014-08-25 05:45:56	--	9498 :channels formed
+2014-08-25 05:45:56	--	I have 5986 clients and 1 servers
+2014-08-25 05:45:56	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-25 05:45:56	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-25 05:45:56	--	- 2014-2-8 5:32
+2014-08-25 05:45:56	--	-  Welcome to Undernet!
+2014-08-25 05:45:56	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-25 05:45:56	--	-
+2014-08-25 05:45:56	--	-  This server is sponsored by Black Lotus Communications
+2014-08-25 05:45:56	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-25 05:45:56	--	-
+2014-08-25 05:45:56	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 05:45:56	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 05:45:56	--	-
+2014-08-25 05:45:56	--	-  We have a few rules on this server, we encourage you to
+2014-08-25 05:45:56	--	-  follow them!
+2014-08-25 05:45:56	--	-
+2014-08-25 05:45:56	--	-   * NO ABUSE
+2014-08-25 05:45:56	--	-   * NO CLONES
+2014-08-25 05:45:56	--	-   * NO SPAMMING
+2014-08-25 05:45:56	--	-   * NO IMPERSONATING
+2014-08-25 05:45:56	--	-
+2014-08-25 05:45:56	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-25 05:45:56	--	-  to keep it that way. If any of these rules are violated
+2014-08-25 05:45:56	--	-  we reserve the right to remove you or even ban you from
+2014-08-25 05:45:56	--	-  using this server.
+2014-08-25 05:45:56	--	-
+2014-08-25 05:45:56	--	-  Remember that IRC is a service - not a right.
+2014-08-25 05:45:56	--	-
+2014-08-25 05:45:56	--	-  We reserve the right to deny access to this server without
+2014-08-25 05:45:56	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-25 05:45:56	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-25 05:45:56	--	-
+2014-08-25 05:45:56	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 05:45:56	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 05:45:56	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-25 05:45:56	--	-  Visit our website: http://www.blacklotus.net
+2014-08-25 05:45:56	--	End of /MOTD command.
+2014-08-25 05:45:56	--	Forseti.us.ix.undernet.org: on 1 ca 2(4) ft 10(10) tr
+2014-08-25 05:45:56	--	User mode [+iw] by dagnachew
+2014-08-25 05:58:01	--	irc: disconnected from server
+2014-08-25 05:58:02	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-25 05:58:02	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-25 05:58:02	--	*** Looking up your hostname
+2014-08-25 05:58:02	--	*** Checking Ident
+2014-08-25 05:58:02	--	*** Found your hostname
+2014-08-25 05:58:10	--	*** No ident response
+2014-08-25 05:58:10	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-25 05:58:10	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-25 05:58:10	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-25 05:58:10	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-25 05:58:10	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-25 05:58:10	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-25 05:58:10	--	There are 1247 users and 25171 invisible on 37 servers
+2014-08-25 05:58:10	--	20 :operator(s) online
+2014-08-25 05:58:10	--	59 :unknown connection(s)
+2014-08-25 05:58:10	--	9500 :channels formed
+2014-08-25 05:58:10	--	I have 5976 clients and 1 servers
+2014-08-25 05:58:10	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-25 05:58:10	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-25 05:58:10	--	- 2014-2-8 5:32
+2014-08-25 05:58:10	--	-  Welcome to Undernet!
+2014-08-25 05:58:10	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-25 05:58:10	--	-
+2014-08-25 05:58:10	--	-  This server is sponsored by Black Lotus Communications
+2014-08-25 05:58:10	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-25 05:58:10	--	-
+2014-08-25 05:58:10	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 05:58:10	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 05:58:10	--	-
+2014-08-25 05:58:10	--	-  We have a few rules on this server, we encourage you to
+2014-08-25 05:58:10	--	-  follow them!
+2014-08-25 05:58:10	--	-
+2014-08-25 05:58:10	--	-   * NO ABUSE
+2014-08-25 05:58:10	--	-   * NO CLONES
+2014-08-25 05:58:10	--	-   * NO SPAMMING
+2014-08-25 05:58:10	--	-   * NO IMPERSONATING
+2014-08-25 05:58:10	--	-
+2014-08-25 05:58:10	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-25 05:58:10	--	-  to keep it that way. If any of these rules are violated
+2014-08-25 05:58:10	--	-  we reserve the right to remove you or even ban you from
+2014-08-25 05:58:10	--	-  using this server.
+2014-08-25 05:58:10	--	-
+2014-08-25 05:58:10	--	-  Remember that IRC is a service - not a right.
+2014-08-25 05:58:10	--	-
+2014-08-25 05:58:10	--	-  We reserve the right to deny access to this server without
+2014-08-25 05:58:10	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-25 05:58:10	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-25 05:58:10	--	-
+2014-08-25 05:58:10	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 05:58:10	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 05:58:10	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-25 05:58:10	--	-  Visit our website: http://www.blacklotus.net
+2014-08-25 05:58:10	--	End of /MOTD command.
+2014-08-25 05:58:10	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10) tr
+2014-08-25 05:58:10	--	User mode [+iw] by dagnachew
+2014-08-25 06:02:33	--	irc: disconnected from server
+2014-08-25 06:02:34	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-25 06:02:34	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-25 06:02:34	--	*** Looking up your hostname
+2014-08-25 06:02:34	--	*** Checking Ident
+2014-08-25 06:02:34	--	*** Found your hostname
+2014-08-25 06:02:43	--	*** No ident response
+2014-08-25 06:02:43	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-25 06:02:43	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-25 06:02:43	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-25 06:02:43	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-25 06:02:43	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-25 06:02:43	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-25 06:02:43	--	There are 1243 users and 25163 invisible on 37 servers
+2014-08-25 06:02:43	--	20 :operator(s) online
+2014-08-25 06:02:43	--	59 :unknown connection(s)
+2014-08-25 06:02:43	--	9493 :channels formed
+2014-08-25 06:02:43	--	I have 5969 clients and 1 servers
+2014-08-25 06:02:43	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-25 06:02:43	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-25 06:02:43	--	- 2014-2-8 5:32
+2014-08-25 06:02:43	--	-  Welcome to Undernet!
+2014-08-25 06:02:43	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-25 06:02:43	--	-
+2014-08-25 06:02:43	--	-  This server is sponsored by Black Lotus Communications
+2014-08-25 06:02:43	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-25 06:02:43	--	-
+2014-08-25 06:02:43	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 06:02:43	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 06:02:43	--	-
+2014-08-25 06:02:43	--	-  We have a few rules on this server, we encourage you to
+2014-08-25 06:02:43	--	-  follow them!
+2014-08-25 06:02:43	--	-
+2014-08-25 06:02:43	--	-   * NO ABUSE
+2014-08-25 06:02:43	--	-   * NO CLONES
+2014-08-25 06:02:43	--	-   * NO SPAMMING
+2014-08-25 06:02:43	--	-   * NO IMPERSONATING
+2014-08-25 06:02:43	--	-
+2014-08-25 06:02:43	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-25 06:02:43	--	-  to keep it that way. If any of these rules are violated
+2014-08-25 06:02:43	--	-  we reserve the right to remove you or even ban you from
+2014-08-25 06:02:43	--	-  using this server.
+2014-08-25 06:02:43	--	-
+2014-08-25 06:02:43	--	-  Remember that IRC is a service - not a right.
+2014-08-25 06:02:43	--	-
+2014-08-25 06:02:43	--	-  We reserve the right to deny access to this server without
+2014-08-25 06:02:43	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-25 06:02:43	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-25 06:02:43	--	-
+2014-08-25 06:02:43	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 06:02:43	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 06:02:43	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-25 06:02:43	--	-  Visit our website: http://www.blacklotus.net
+2014-08-25 06:02:43	--	End of /MOTD command.
+2014-08-25 06:02:43	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10) tr
+2014-08-25 06:02:43	--	User mode [+iw] by dagnachew
+2014-08-25 06:07:57	--	irc: disconnected from server
+2014-08-25 19:11:45	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-25 19:11:45	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-25 19:11:45	--	*** Looking up your hostname
+2014-08-25 19:11:45	--	*** Checking Ident
+2014-08-25 19:11:45	--	*** Found your hostname
+2014-08-25 19:11:53	--	*** No ident response
+2014-08-25 19:11:53	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-25 19:11:53	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-25 19:11:53	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-25 19:11:53	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-25 19:11:53	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-25 19:11:53	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-25 19:11:53	--	There are 1269 users and 25163 invisible on 37 servers
+2014-08-25 19:11:53	--	20 :operator(s) online
+2014-08-25 19:11:53	--	57 :unknown connection(s)
+2014-08-25 19:11:53	--	9500 :channels formed
+2014-08-25 19:11:53	--	I have 6082 clients and 1 servers
+2014-08-25 19:11:53	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-25 19:11:53	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-25 19:11:53	--	- 2014-2-8 5:32
+2014-08-25 19:11:53	--	-  Welcome to Undernet!
+2014-08-25 19:11:53	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-25 19:11:53	--	-
+2014-08-25 19:11:53	--	-  This server is sponsored by Black Lotus Communications
+2014-08-25 19:11:53	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-25 19:11:53	--	-
+2014-08-25 19:11:53	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 19:11:53	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 19:11:53	--	-
+2014-08-25 19:11:53	--	-  We have a few rules on this server, we encourage you to
+2014-08-25 19:11:53	--	-  follow them!
+2014-08-25 19:11:53	--	-
+2014-08-25 19:11:53	--	-   * NO ABUSE
+2014-08-25 19:11:53	--	-   * NO CLONES
+2014-08-25 19:11:53	--	-   * NO SPAMMING
+2014-08-25 19:11:53	--	-   * NO IMPERSONATING
+2014-08-25 19:11:53	--	-
+2014-08-25 19:11:53	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-25 19:11:53	--	-  to keep it that way. If any of these rules are violated
+2014-08-25 19:11:53	--	-  we reserve the right to remove you or even ban you from
+2014-08-25 19:11:53	--	-  using this server.
+2014-08-25 19:11:53	--	-
+2014-08-25 19:11:53	--	-  Remember that IRC is a service - not a right.
+2014-08-25 19:11:53	--	-
+2014-08-25 19:11:53	--	-  We reserve the right to deny access to this server without
+2014-08-25 19:11:53	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-25 19:11:53	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-25 19:11:53	--	-
+2014-08-25 19:11:53	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 19:11:53	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 19:11:53	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-25 19:11:53	--	-  Visit our website: http://www.blacklotus.net
+2014-08-25 19:11:53	--	End of /MOTD command.
+2014-08-25 19:11:53	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-25 19:11:53	--	User mode [+iw] by dagnachew
+2014-08-25 19:14:59	--	MSG(nickserv): identify *************
+2014-08-25 19:14:59	--	nickserv: No such nick
+2014-08-25 19:15:11	--	MSG(nickserv): identify *************
+2014-08-25 19:15:11	--	nickserv: No such nick
+2014-08-25 19:15:21	--	MSG(nickserv): identify **********
+2014-08-25 19:15:21	--	nickserv: No such nick
+2014-08-25 19:15:36	--	MSG(nickserv): identify *************
+2014-08-25 19:15:36	--	nickserv: No such nick
+2014-08-25 19:15:42	--	irc: disconnected from server
+2014-08-25 19:15:43	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-25 19:15:43	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-25 19:15:43	--	*** Looking up your hostname
+2014-08-25 19:15:43	--	*** Checking Ident
+2014-08-25 19:15:43	--	*** Found your hostname
+2014-08-25 19:15:52	--	*** No ident response
+2014-08-25 19:15:52	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-25 19:15:52	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-25 19:15:52	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-25 19:15:52	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-25 19:15:52	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-25 19:15:52	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-25 19:15:52	--	There are 1227 users and 25171 invisible on 37 servers
+2014-08-25 19:15:52	--	20 :operator(s) online
+2014-08-25 19:15:52	--	15 :unknown connection(s)
+2014-08-25 19:15:52	--	9501 :channels formed
+2014-08-25 19:15:52	--	I have 1784 clients and 1 servers
+2014-08-25 19:15:52	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-25 19:15:52	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-25 19:15:52	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-25 19:15:52	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-25 19:15:52	--	End of /MOTD command.
+2014-08-25 19:15:52	--	elysium.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-25 20:26:28	--	irc: disconnected from server
+2014-08-25 21:24:54	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-25 21:24:55	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-25 21:24:55	--	*** Looking up your hostname
+2014-08-25 21:24:55	--	*** Checking Ident
+2014-08-25 21:24:55	--	*** Found your hostname
+2014-08-25 21:25:03	--	*** No ident response
+2014-08-25 21:25:03	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-25 21:25:03	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-25 21:25:03	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-25 21:25:03	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-25 21:25:03	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-25 21:25:03	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-25 21:25:03	--	There are 1241 users and 24747 invisible on 37 servers
+2014-08-25 21:25:03	--	20 :operator(s) online
+2014-08-25 21:25:03	--	64 :unknown connection(s)
+2014-08-25 21:25:03	--	9464 :channels formed
+2014-08-25 21:25:03	--	I have 5993 clients and 1 servers
+2014-08-25 21:25:03	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-25 21:25:03	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-25 21:25:03	--	- 2014-2-8 5:32
+2014-08-25 21:25:03	--	-  Welcome to Undernet!
+2014-08-25 21:25:03	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-25 21:25:03	--	-
+2014-08-25 21:25:03	--	-  This server is sponsored by Black Lotus Communications
+2014-08-25 21:25:03	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-25 21:25:03	--	-
+2014-08-25 21:25:03	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 21:25:03	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 21:25:03	--	-
+2014-08-25 21:25:03	--	-  We have a few rules on this server, we encourage you to
+2014-08-25 21:25:03	--	-  follow them!
+2014-08-25 21:25:03	--	-
+2014-08-25 21:25:03	--	-   * NO ABUSE
+2014-08-25 21:25:03	--	-   * NO CLONES
+2014-08-25 21:25:03	--	-   * NO SPAMMING
+2014-08-25 21:25:03	--	-   * NO IMPERSONATING
+2014-08-25 21:25:03	--	-
+2014-08-25 21:25:03	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-25 21:25:03	--	-  to keep it that way. If any of these rules are violated
+2014-08-25 21:25:03	--	-  we reserve the right to remove you or even ban you from
+2014-08-25 21:25:03	--	-  using this server.
+2014-08-25 21:25:03	--	-
+2014-08-25 21:25:03	--	-  Remember that IRC is a service - not a right.
+2014-08-25 21:25:03	--	-
+2014-08-25 21:25:03	--	-  We reserve the right to deny access to this server without
+2014-08-25 21:25:03	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-25 21:25:03	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-25 21:25:03	--	-
+2014-08-25 21:25:03	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 21:25:03	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-25 21:25:03	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-25 21:25:03	--	-  Visit our website: http://www.blacklotus.net
+2014-08-25 21:25:03	--	End of /MOTD command.
+2014-08-25 21:25:03	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-25 21:25:03	--	User mode [+iw] by dagnachew
+2014-08-26 00:00:37	--	irc: disconnected from server
+2014-08-26 17:42:42	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-26 17:42:42	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-26 17:42:42	--	*** Looking up your hostname
+2014-08-26 17:42:42	--	*** Checking Ident
+2014-08-26 17:42:42	--	*** Found your hostname
+2014-08-26 17:42:51	--	*** No ident response
+2014-08-26 17:42:51	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-26 17:42:51	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-26 17:42:51	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-26 17:42:51	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-26 17:42:51	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-26 17:42:51	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-26 17:42:51	--	There are 1300 users and 25256 invisible on 37 servers
+2014-08-26 17:42:51	--	20 :operator(s) online
+2014-08-26 17:42:51	--	17 :unknown connection(s)
+2014-08-26 17:42:51	--	9492 :channels formed
+2014-08-26 17:42:51	--	I have 1879 clients and 1 servers
+2014-08-26 17:42:51	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-26 17:42:51	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-26 17:42:51	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-26 17:42:51	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-26 17:42:51	--	End of /MOTD command.
+2014-08-26 17:42:51	--	elysium.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-26 18:14:20	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-26 18:14:20	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-26 18:14:20	--	*** Looking up your hostname
+2014-08-26 18:14:20	--	*** Checking Ident
+2014-08-26 18:14:20	--	*** Found your hostname
+2014-08-26 18:14:29	--	*** No ident response
+2014-08-26 18:14:29	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-26 18:14:29	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-26 18:14:29	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-26 18:14:29	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-26 18:14:29	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-26 18:14:29	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-26 18:14:29	--	There are 1357 users and 25133 invisible on 37 servers
+2014-08-26 18:14:29	--	20 :operator(s) online
+2014-08-26 18:14:29	--	14 :unknown connection(s)
+2014-08-26 18:14:29	--	9481 :channels formed
+2014-08-26 18:14:29	--	I have 1869 clients and 1 servers
+2014-08-26 18:14:29	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-26 18:14:29	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-26 18:14:29	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-26 18:14:29	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-26 18:14:29	--	End of /MOTD command.
+2014-08-26 18:14:29	--	elysium.us.ix.undernet.org: on 1 ca 2(4) ft 10(10) tr
+2014-08-28 17:27:35	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-28 17:27:36	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-28 17:27:36	--	*** Looking up your hostname
+2014-08-28 17:27:36	--	*** Checking Ident
+2014-08-28 17:27:36	--	*** Found your hostname
+2014-08-28 17:27:44	--	*** No ident response
+2014-08-28 17:27:44	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-28 17:27:44	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-28 17:27:44	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-28 17:27:44	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-28 17:27:44	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-28 17:27:44	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-28 17:27:44	--	There are 1379 users and 24485 invisible on 37 servers
+2014-08-28 17:27:44	--	21 :operator(s) online
+2014-08-28 17:27:44	--	77 :unknown connection(s)
+2014-08-28 17:27:44	--	9398 :channels formed
+2014-08-28 17:27:44	--	I have 6554 clients and 1 servers
+2014-08-28 17:27:44	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-28 17:27:44	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-28 17:27:44	--	- 2014-2-8 5:32
+2014-08-28 17:27:44	--	-  Welcome to Undernet!
+2014-08-28 17:27:44	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-28 17:27:44	--	-
+2014-08-28 17:27:44	--	-  This server is sponsored by Black Lotus Communications
+2014-08-28 17:27:44	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-28 17:27:44	--	-
+2014-08-28 17:27:44	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:27:44	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:27:44	--	-
+2014-08-28 17:27:44	--	-  We have a few rules on this server, we encourage you to
+2014-08-28 17:27:44	--	-  follow them!
+2014-08-28 17:27:44	--	-
+2014-08-28 17:27:44	--	-   * NO ABUSE
+2014-08-28 17:27:44	--	-   * NO CLONES
+2014-08-28 17:27:44	--	-   * NO SPAMMING
+2014-08-28 17:27:44	--	-   * NO IMPERSONATING
+2014-08-28 17:27:44	--	-
+2014-08-28 17:27:44	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-28 17:27:44	--	-  to keep it that way. If any of these rules are violated
+2014-08-28 17:27:44	--	-  we reserve the right to remove you or even ban you from
+2014-08-28 17:27:44	--	-  using this server.
+2014-08-28 17:27:44	--	-
+2014-08-28 17:27:44	--	-  Remember that IRC is a service - not a right.
+2014-08-28 17:27:44	--	-
+2014-08-28 17:27:44	--	-  We reserve the right to deny access to this server without
+2014-08-28 17:27:44	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-28 17:27:44	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-28 17:27:44	--	-
+2014-08-28 17:27:44	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:27:44	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:27:44	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-28 17:27:44	--	-  Visit our website: http://www.blacklotus.net
+2014-08-28 17:27:44	--	End of /MOTD command.
+2014-08-28 17:27:44	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-28 17:27:44	--	User mode [+iw] by dagnachew
+2014-08-28 17:33:47	--	MSG(nickserv): set password 100*100=10mille
+2014-08-28 17:33:47	--	nickserv: No such nick
+2014-08-28 17:34:01	--	MSG(nickserv): set password 100*100=10mille/quit
+2014-08-28 17:34:01	--	nickserv: No such nick
+2014-08-28 17:34:05	--	irc: disconnected from server
+2014-08-28 17:34:06	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-28 17:34:06	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-28 17:34:06	--	*** Looking up your hostname
+2014-08-28 17:34:06	--	*** Checking Ident
+2014-08-28 17:34:06	--	*** Found your hostname
+2014-08-28 17:34:14	--	*** No ident response
+2014-08-28 17:34:14	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-28 17:34:14	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-28 17:34:14	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-28 17:34:14	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-28 17:34:14	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-28 17:34:14	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-28 17:34:14	--	There are 1392 users and 24449 invisible on 37 servers
+2014-08-28 17:34:14	--	21 :operator(s) online
+2014-08-28 17:34:14	--	76 :unknown connection(s)
+2014-08-28 17:34:14	--	9391 :channels formed
+2014-08-28 17:34:14	--	I have 6554 clients and 1 servers
+2014-08-28 17:34:14	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-28 17:34:14	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-28 17:34:14	--	- 2014-2-8 5:32
+2014-08-28 17:34:14	--	-  Welcome to Undernet!
+2014-08-28 17:34:14	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-28 17:34:14	--	-
+2014-08-28 17:34:14	--	-  This server is sponsored by Black Lotus Communications
+2014-08-28 17:34:14	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-28 17:34:14	--	-
+2014-08-28 17:34:14	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:34:14	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:34:14	--	-
+2014-08-28 17:34:14	--	-  We have a few rules on this server, we encourage you to
+2014-08-28 17:34:14	--	-  follow them!
+2014-08-28 17:34:14	--	-
+2014-08-28 17:34:14	--	-   * NO ABUSE
+2014-08-28 17:34:14	--	-   * NO CLONES
+2014-08-28 17:34:14	--	-   * NO SPAMMING
+2014-08-28 17:34:14	--	-   * NO IMPERSONATING
+2014-08-28 17:34:14	--	-
+2014-08-28 17:34:14	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-28 17:34:14	--	-  to keep it that way. If any of these rules are violated
+2014-08-28 17:34:14	--	-  we reserve the right to remove you or even ban you from
+2014-08-28 17:34:14	--	-  using this server.
+2014-08-28 17:34:14	--	-
+2014-08-28 17:34:14	--	-  Remember that IRC is a service - not a right.
+2014-08-28 17:34:14	--	-
+2014-08-28 17:34:14	--	-  We reserve the right to deny access to this server without
+2014-08-28 17:34:14	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-28 17:34:14	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-28 17:34:14	--	-
+2014-08-28 17:34:14	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:34:14	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:34:14	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-28 17:34:14	--	-  Visit our website: http://www.blacklotus.net
+2014-08-28 17:34:14	--	End of /MOTD command.
+2014-08-28 17:34:14	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10) tr
+2014-08-28 17:34:14	--	User mode [+iw] by dagnachew
+2014-08-28 17:43:38	--	irc: disconnected from server
+2014-08-28 17:51:44	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-28 17:51:45	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-28 17:51:45	--	*** Looking up your hostname
+2014-08-28 17:51:45	--	*** Checking Ident
+2014-08-28 17:51:45	--	*** Found your hostname
+2014-08-28 17:51:53	--	*** No ident response
+2014-08-28 17:51:53	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-28 17:51:53	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-28 17:51:53	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-28 17:51:53	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-28 17:51:53	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-28 17:51:53	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-28 17:51:53	--	There are 1377 users and 24443 invisible on 37 servers
+2014-08-28 17:51:53	--	21 :operator(s) online
+2014-08-28 17:51:53	--	71 :unknown connection(s)
+2014-08-28 17:51:53	--	9399 :channels formed
+2014-08-28 17:51:53	--	I have 6566 clients and 1 servers
+2014-08-28 17:51:53	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-28 17:51:53	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-28 17:51:53	--	- 2014-2-8 5:32
+2014-08-28 17:51:53	--	-  Welcome to Undernet!
+2014-08-28 17:51:53	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-28 17:51:53	--	-
+2014-08-28 17:51:53	--	-  This server is sponsored by Black Lotus Communications
+2014-08-28 17:51:53	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-28 17:51:53	--	-
+2014-08-28 17:51:53	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:51:53	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:51:54	--	-
+2014-08-28 17:51:54	--	-  We have a few rules on this server, we encourage you to
+2014-08-28 17:51:54	--	-  follow them!
+2014-08-28 17:51:54	--	-
+2014-08-28 17:51:54	--	-   * NO ABUSE
+2014-08-28 17:51:54	--	-   * NO CLONES
+2014-08-28 17:51:54	--	-   * NO SPAMMING
+2014-08-28 17:51:54	--	-   * NO IMPERSONATING
+2014-08-28 17:51:54	--	-
+2014-08-28 17:51:54	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-28 17:51:54	--	-  to keep it that way. If any of these rules are violated
+2014-08-28 17:51:54	--	-  we reserve the right to remove you or even ban you from
+2014-08-28 17:51:54	--	-  using this server.
+2014-08-28 17:51:54	--	-
+2014-08-28 17:51:54	--	-  Remember that IRC is a service - not a right.
+2014-08-28 17:51:54	--	-
+2014-08-28 17:51:54	--	-  We reserve the right to deny access to this server without
+2014-08-28 17:51:54	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-28 17:51:54	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-28 17:51:54	--	-
+2014-08-28 17:51:54	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:51:54	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 17:51:54	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-28 17:51:54	--	-  Visit our website: http://www.blacklotus.net
+2014-08-28 17:51:54	--	End of /MOTD command.
+2014-08-28 17:51:54	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-28 17:51:54	--	User mode [+iw] by dagnachew
+2014-08-28 17:57:45	--	MSG(nickserv): identify **********
+2014-08-28 17:57:45	--	nickserv: No such nick
+2014-08-28 17:57:56	--	MSG(nickserv): identify ***********
+2014-08-28 17:57:57	--	nickserv: No such nick
+2014-08-28 17:58:09	--	MSG(nickserv): identify *************
+2014-08-28 17:58:09	--	nickserv: No such nick
+2014-08-28 18:23:21	--	irc: disconnected from server
+2014-08-28 23:49:04	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-28 23:49:04	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-28 23:49:04	--	*** Looking up your hostname
+2014-08-28 23:49:04	--	*** Checking Ident
+2014-08-28 23:49:04	--	*** Found your hostname
+2014-08-28 23:49:13	--	*** No ident response
+2014-08-28 23:49:13	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-28 23:49:13	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-28 23:49:13	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-28 23:49:13	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-28 23:49:13	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-28 23:49:13	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-28 23:49:13	--	There are 1126 users and 25505 invisible on 37 servers
+2014-08-28 23:49:13	--	21 :operator(s) online
+2014-08-28 23:49:13	--	51 :unknown connection(s)
+2014-08-28 23:49:13	--	9430 :channels formed
+2014-08-28 23:49:13	--	I have 6834 clients and 1 servers
+2014-08-28 23:49:13	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-28 23:49:13	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-28 23:49:13	--	- 2014-2-8 5:32
+2014-08-28 23:49:13	--	-  Welcome to Undernet!
+2014-08-28 23:49:13	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-28 23:49:13	--	-
+2014-08-28 23:49:13	--	-  This server is sponsored by Black Lotus Communications
+2014-08-28 23:49:13	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-28 23:49:13	--	-
+2014-08-28 23:49:13	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 23:49:13	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 23:49:13	--	-
+2014-08-28 23:49:13	--	-  We have a few rules on this server, we encourage you to
+2014-08-28 23:49:13	--	-  follow them!
+2014-08-28 23:49:13	--	-
+2014-08-28 23:49:13	--	-   * NO ABUSE
+2014-08-28 23:49:13	--	-   * NO CLONES
+2014-08-28 23:49:13	--	-   * NO SPAMMING
+2014-08-28 23:49:13	--	-   * NO IMPERSONATING
+2014-08-28 23:49:13	--	-
+2014-08-28 23:49:13	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-28 23:49:13	--	-  to keep it that way. If any of these rules are violated
+2014-08-28 23:49:13	--	-  we reserve the right to remove you or even ban you from
+2014-08-28 23:49:13	--	-  using this server.
+2014-08-28 23:49:13	--	-
+2014-08-28 23:49:13	--	-  Remember that IRC is a service - not a right.
+2014-08-28 23:49:13	--	-
+2014-08-28 23:49:13	--	-  We reserve the right to deny access to this server without
+2014-08-28 23:49:13	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-28 23:49:13	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-28 23:49:13	--	-
+2014-08-28 23:49:13	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 23:49:13	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-28 23:49:13	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-28 23:49:13	--	-  Visit our website: http://www.blacklotus.net
+2014-08-28 23:49:13	--	End of /MOTD command.
+2014-08-28 23:49:13	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-28 23:49:13	--	User mode [+iw] by dagnachew
+2014-08-29 00:10:16	--	irc: disconnected from server
+2014-08-29 00:10:23	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-29 00:10:23	--	irc: connected to ix.undernet.org/6667 (170.178.191.18)
+2014-08-29 00:10:23	--	*** Looking up your hostname
+2014-08-29 00:10:23	--	*** Checking Ident
+2014-08-29 00:10:23	--	*** Found your hostname
+2014-08-29 00:10:32	--	*** No ident response
+2014-08-29 00:10:32	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-29 00:10:32	--	Your host is elysium.us.ix.undernet.org, running version u2.10.12.14
+2014-08-29 00:10:32	--	This server was created Tue Dec 10 2013 at 11:07:41 UTC
+2014-08-29 00:10:32	--	elysium.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-29 00:10:32	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=30 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-29 00:10:32	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-29 00:10:32	--	There are 1111 users and 25387 invisible on 37 servers
+2014-08-29 00:10:32	--	21 :operator(s) online
+2014-08-29 00:10:32	--	10 :unknown connection(s)
+2014-08-29 00:10:32	--	9451 :channels formed
+2014-08-29 00:10:32	--	I have 421 clients and 1 servers
+2014-08-29 00:10:32	--	elysium.us.ix.undernet.org: Highest connection count: 2222 (2221 clients)
+2014-08-29 00:10:32	--	- elysium.us.ix.undernet.org Message of the Day -
+2014-08-29 00:10:32	--	Type /MOTD to read the AUP before continuing using this service.
+2014-08-29 00:10:32	--	The message of the day was last changed: 2014-8-1 7:29
+2014-08-29 00:10:32	--	End of /MOTD command.
+2014-08-29 00:10:32	--	elysium.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-29 18:35:40	--	irc: connecting to server ix.undernet.org/6667...
+2014-08-29 18:35:40	--	irc: connected to ix.undernet.org/6667 (91.236.182.1)
+2014-08-29 18:35:40	--	*** Looking up your hostname
+2014-08-29 18:35:40	--	*** Checking Ident
+2014-08-29 18:35:40	--	*** Found your hostname
+2014-08-29 18:35:49	--	*** No ident response
+2014-08-29 18:35:49	--	Welcome to the UnderNet IRC Network, dagnachew
+2014-08-29 18:35:49	--	Your host is Forseti.us.ix.undernet.org, running version u2.10.12.14
+2014-08-29 18:35:49	--	This server was created Sat Apr 6 2013 at 11:15:09 PDT
+2014-08-29 18:35:49	--	Forseti.us.ix.undernet.org u2.10.12.14 dioswkgx biklmnopstvrDR bklov
+2014-08-29 18:35:49	--	WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=50 NICKLEN=12 :are supported by this server
+2014-08-29 18:35:49	--	MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdR CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+2014-08-29 18:35:49	--	There are 1299 users and 27021 invisible on 37 servers
+2014-08-29 18:35:49	--	22 :operator(s) online
+2014-08-29 18:35:49	--	46 :unknown connection(s)
+2014-08-29 18:35:49	--	9499 :channels formed
+2014-08-29 18:35:49	--	I have 7100 clients and 1 servers
+2014-08-29 18:35:49	--	Forseti.us.ix.undernet.org: Highest connection count: 13667 (13666 clients)
+2014-08-29 18:35:49	--	- Forseti.us.ix.undernet.org Message of the Day -
+2014-08-29 18:35:49	--	- 2014-2-8 5:32
+2014-08-29 18:35:49	--	-  Welcome to Undernet!
+2014-08-29 18:35:49	--	-  Your connected server is: Forseti.US.IX.Undernet.Org
+2014-08-29 18:35:49	--	-
+2014-08-29 18:35:49	--	-  This server is sponsored by Black Lotus Communications
+2014-08-29 18:35:49	--	-  Please visit our website: http://www.blacklotus.net
+2014-08-29 18:35:49	--	-
+2014-08-29 18:35:49	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-29 18:35:49	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-29 18:35:49	--	-
+2014-08-29 18:35:49	--	-  We have a few rules on this server, we encourage you to
+2014-08-29 18:35:49	--	-  follow them!
+2014-08-29 18:35:49	--	-
+2014-08-29 18:35:49	--	-   * NO ABUSE
+2014-08-29 18:35:49	--	-   * NO CLONES
+2014-08-29 18:35:49	--	-   * NO SPAMMING
+2014-08-29 18:35:49	--	-   * NO IMPERSONATING
+2014-08-29 18:35:49	--	-
+2014-08-29 18:35:49	--	-  And NO general bad behaviour, IRC is for fun, please try
+2014-08-29 18:35:49	--	-  to keep it that way. If any of these rules are violated
+2014-08-29 18:35:49	--	-  we reserve the right to remove you or even ban you from
+2014-08-29 18:35:49	--	-  using this server.
+2014-08-29 18:35:49	--	-
+2014-08-29 18:35:49	--	-  Remember that IRC is a service - not a right.
+2014-08-29 18:35:49	--	-
+2014-08-29 18:35:49	--	-  We reserve the right to deny access to this server without
+2014-08-29 18:35:49	--	-  warning or explanation.  Usage is governed by the Undernet
+2014-08-29 18:35:49	--	-  AUP at http://www.undernet.org/aup.php
+2014-08-29 18:35:49	--	-
+2014-08-29 18:35:49	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-29 18:35:49	--	-  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+2014-08-29 18:35:49	--	-  Black Lotus Communications - DDoS Mitigation Company
+2014-08-29 18:35:49	--	-  Visit our website: http://www.blacklotus.net
+2014-08-29 18:35:49	--	End of /MOTD command.
+2014-08-29 18:35:49	--	Forseti.us.ix.undernet.org: on 1 ca 1(4) ft 10(10)
+2014-08-29 18:35:49	--	User mode [+iw] by dagnachew

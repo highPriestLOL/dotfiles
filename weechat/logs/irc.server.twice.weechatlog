@@ -1,0 +1,1074 @@
+2014-08-23 20:19:11	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 20:19:11	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-23 20:19:12	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-23 20:19:12	--	libri.twice-irc.de: *** Checking ident...
+2014-08-23 20:19:12	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 20:19:12	--	libri.twice-irc.de: *** Found your hostname
+2014-08-23 20:19:13	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 20:19:13	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 20:19:13	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-23 20:19:13	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 20:19:13	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 20:19:13	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 20:19:13	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 20:19:13	--	There are 45 users and 265 invisible on 3 servers
+2014-08-23 20:19:13	--	8 :operator(s) online
+2014-08-23 20:19:13	--	50 :channels formed
+2014-08-23 20:19:13	--	I have 104 clients and 1 servers
+2014-08-23 20:19:13	--	104 113 :Current local users 104, max 113
+2014-08-23 20:19:13	--	310 1063 :Current global users 310, max 1063
+2014-08-23 20:19:13	--	- libri.twice-irc.de Message of the Day -
+2014-08-23 20:19:13	--	- 17/4/2014 11:20
+2014-08-23 20:19:13	--	- --------------------------------------------------
+2014-08-23 20:19:13	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 20:19:13	--	- --------------------------------------------------
+2014-08-23 20:19:13	--	-
+2014-08-23 20:19:13	--	- IRC Ports:                6661-6669
+2014-08-23 20:19:13	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 20:19:13	--	-
+2014-08-23 20:19:13	--	- connect to:               irc.twice-irc.de
+2014-08-23 20:19:13	--	-
+2014-08-23 20:19:13	--	- Unsere Regeln:            /rules
+2014-08-23 20:19:13	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 20:19:13	--	-
+2014-08-23 20:19:13	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 20:19:13	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 20:19:13	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 20:19:13	--	-
+2014-08-23 20:19:13	--	- --------------------------------------------------
+2014-08-23 20:19:13	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 20:19:13	--	- --------------------------------------------------
+2014-08-23 20:19:13	--	End of /MOTD command.
+2014-08-23 20:19:13	--	User mode [+iwx] by dagnachew
+2014-08-23 20:23:46	--	irc: disconnected from server
+2014-08-23 21:12:58	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:12:58	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-23 21:12:58	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:12:58	--	libri.twice-irc.de: *** Checking ident...
+2014-08-23 21:12:58	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:12:58	--	libri.twice-irc.de: *** Found your hostname
+2014-08-23 21:12:58	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:12:58	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:12:58	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-23 21:12:58	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:12:58	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:12:58	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:12:58	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:12:58	--	There are 45 users and 261 invisible on 3 servers
+2014-08-23 21:12:58	--	8 :operator(s) online
+2014-08-23 21:12:58	--	50 :channels formed
+2014-08-23 21:12:58	--	I have 101 clients and 1 servers
+2014-08-23 21:12:58	--	101 113 :Current local users 101, max 113
+2014-08-23 21:12:58	--	306 1063 :Current global users 306, max 1063
+2014-08-23 21:12:58	--	- libri.twice-irc.de Message of the Day -
+2014-08-23 21:12:58	--	- 17/4/2014 11:20
+2014-08-23 21:12:58	--	- --------------------------------------------------
+2014-08-23 21:12:58	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:12:58	--	- --------------------------------------------------
+2014-08-23 21:12:58	--	-
+2014-08-23 21:12:58	--	- IRC Ports:                6661-6669
+2014-08-23 21:12:58	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:12:58	--	-
+2014-08-23 21:12:58	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:12:58	--	-
+2014-08-23 21:12:58	--	- Unsere Regeln:            /rules
+2014-08-23 21:12:58	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:12:58	--	-
+2014-08-23 21:12:58	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:12:58	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:12:58	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:12:58	--	-
+2014-08-23 21:12:58	--	- --------------------------------------------------
+2014-08-23 21:12:58	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:12:58	--	- --------------------------------------------------
+2014-08-23 21:12:58	--	End of /MOTD command.
+2014-08-23 21:12:58	--	User mode [+iwx] by dagnachew
+2014-08-23 21:13:21	--	irc: disconnected from server
+2014-08-23 21:15:57	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:15:57	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-23 21:15:57	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:15:57	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-23 21:15:58	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-23 21:16:08	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:16:08	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:16:08	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:16:08	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-23 21:16:08	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:16:08	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:16:08	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:16:08	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:16:08	--	There are 45 users and 261 invisible on 3 servers
+2014-08-23 21:16:08	--	8 :operator(s) online
+2014-08-23 21:16:08	--	50 :channels formed
+2014-08-23 21:16:08	--	I have 160 clients and 2 servers
+2014-08-23 21:16:08	--	160 200 :Current local users 160, max 200
+2014-08-23 21:16:08	--	306 1063 :Current global users 306, max 1063
+2014-08-23 21:16:08	--	- ircd.twice-irc.de Message of the Day -
+2014-08-23 21:16:08	--	- 17/4/2014 11:07
+2014-08-23 21:16:08	--	- --------------------------------------------------
+2014-08-23 21:16:08	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:16:08	--	- --------------------------------------------------
+2014-08-23 21:16:08	--	-
+2014-08-23 21:16:08	--	- IRC Ports:                6661-6669
+2014-08-23 21:16:08	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:16:08	--	-
+2014-08-23 21:16:08	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:16:08	--	-
+2014-08-23 21:16:08	--	- Unsere Regeln:            /rules
+2014-08-23 21:16:08	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:16:08	--	-
+2014-08-23 21:16:08	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:16:08	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:16:08	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:16:08	--	-
+2014-08-23 21:16:08	--	- --------------------------------------------------
+2014-08-23 21:16:08	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:16:08	--	- --------------------------------------------------
+2014-08-23 21:16:08	--	End of /MOTD command.
+2014-08-23 21:16:08	--	User mode [+iwx] by dagnachew
+2014-08-23 21:16:44	--	irc: disconnected from server
+2014-08-23 21:16:45	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:16:45	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-23 21:16:45	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:16:45	--	ircd.twice-irc.de: *** Found your hostname (cached)
+2014-08-23 21:16:45	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-23 21:16:56	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:16:56	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:16:56	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:16:56	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-23 21:16:56	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:16:56	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:16:56	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:16:56	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:16:56	--	There are 45 users and 261 invisible on 3 servers
+2014-08-23 21:16:56	--	8 :operator(s) online
+2014-08-23 21:16:56	--	50 :channels formed
+2014-08-23 21:16:56	--	I have 160 clients and 2 servers
+2014-08-23 21:16:56	--	160 200 :Current local users 160, max 200
+2014-08-23 21:16:56	--	306 1063 :Current global users 306, max 1063
+2014-08-23 21:16:56	--	- ircd.twice-irc.de Message of the Day -
+2014-08-23 21:16:56	--	- 17/4/2014 11:07
+2014-08-23 21:16:56	--	- --------------------------------------------------
+2014-08-23 21:16:56	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:16:56	--	- --------------------------------------------------
+2014-08-23 21:16:56	--	-
+2014-08-23 21:16:56	--	- IRC Ports:                6661-6669
+2014-08-23 21:16:56	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:16:56	--	-
+2014-08-23 21:16:56	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:16:56	--	-
+2014-08-23 21:16:56	--	- Unsere Regeln:            /rules
+2014-08-23 21:16:56	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:16:56	--	-
+2014-08-23 21:16:56	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:16:56	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:16:56	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:16:56	--	-
+2014-08-23 21:16:56	--	- --------------------------------------------------
+2014-08-23 21:16:56	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:16:56	--	- --------------------------------------------------
+2014-08-23 21:16:56	--	End of /MOTD command.
+2014-08-23 21:16:56	--	User mode [+iwx] by dagnachew
+2014-08-23 21:17:26	--	irc: disconnected from server
+2014-08-23 21:18:33	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:18:33	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-23 21:18:33	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:18:33	--	libri.twice-irc.de: *** Found your hostname (cached)
+2014-08-23 21:18:33	--	libri.twice-irc.de: *** Checking ident...
+2014-08-23 21:18:33	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:18:33	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:18:33	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:18:33	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-23 21:18:33	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:18:33	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:18:33	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:18:33	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:18:33	--	There are 45 users and 261 invisible on 3 servers
+2014-08-23 21:18:33	--	8 :operator(s) online
+2014-08-23 21:18:33	--	50 :channels formed
+2014-08-23 21:18:33	--	I have 101 clients and 1 servers
+2014-08-23 21:18:33	--	101 113 :Current local users 101, max 113
+2014-08-23 21:18:33	--	306 1063 :Current global users 306, max 1063
+2014-08-23 21:18:33	--	- libri.twice-irc.de Message of the Day -
+2014-08-23 21:18:33	--	- 17/4/2014 11:20
+2014-08-23 21:18:33	--	- --------------------------------------------------
+2014-08-23 21:18:33	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:18:33	--	- --------------------------------------------------
+2014-08-23 21:18:33	--	-
+2014-08-23 21:18:33	--	- IRC Ports:                6661-6669
+2014-08-23 21:18:33	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:18:33	--	-
+2014-08-23 21:18:33	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:18:33	--	-
+2014-08-23 21:18:33	--	- Unsere Regeln:            /rules
+2014-08-23 21:18:33	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:18:33	--	-
+2014-08-23 21:18:34	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:18:34	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:18:34	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:18:34	--	-
+2014-08-23 21:18:34	--	- --------------------------------------------------
+2014-08-23 21:18:34	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:18:34	--	- --------------------------------------------------
+2014-08-23 21:18:34	--	End of /MOTD command.
+2014-08-23 21:18:34	--	User mode [+iwx] by dagnachew
+2014-08-23 21:21:51	--	irc: disconnected from server
+2014-08-23 21:23:00	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:23:00	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-23 21:23:01	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:23:01	--	ircd.twice-irc.de: *** Found your hostname (cached)
+2014-08-23 21:23:01	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-23 21:23:11	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:23:11	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:23:11	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:23:11	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-23 21:23:11	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:23:11	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:23:11	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:23:11	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:23:11	--	There are 45 users and 263 invisible on 3 servers
+2014-08-23 21:23:11	--	8 :operator(s) online
+2014-08-23 21:23:11	--	50 :channels formed
+2014-08-23 21:23:11	--	I have 162 clients and 2 servers
+2014-08-23 21:23:11	--	162 200 :Current local users 162, max 200
+2014-08-23 21:23:11	--	308 1063 :Current global users 308, max 1063
+2014-08-23 21:23:11	--	- ircd.twice-irc.de Message of the Day -
+2014-08-23 21:23:11	--	- 17/4/2014 11:07
+2014-08-23 21:23:11	--	- --------------------------------------------------
+2014-08-23 21:23:11	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:23:11	--	- --------------------------------------------------
+2014-08-23 21:23:11	--	-
+2014-08-23 21:23:11	--	- IRC Ports:                6661-6669
+2014-08-23 21:23:11	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:23:11	--	-
+2014-08-23 21:23:11	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:23:11	--	-
+2014-08-23 21:23:11	--	- Unsere Regeln:            /rules
+2014-08-23 21:23:11	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:23:11	--	-
+2014-08-23 21:23:11	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:23:11	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:23:11	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:23:11	--	-
+2014-08-23 21:23:11	--	- --------------------------------------------------
+2014-08-23 21:23:11	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:23:11	--	- --------------------------------------------------
+2014-08-23 21:23:11	--	End of /MOTD command.
+2014-08-23 21:23:11	--	User mode [+iwx] by dagnachew
+2014-08-23 21:24:17	--	irc: disconnected from server
+2014-08-23 21:27:47	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:27:47	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-23 21:27:48	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:27:48	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-23 21:27:48	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-23 21:27:57	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:27:58	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:27:58	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:27:58	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-23 21:27:58	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:27:58	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:27:58	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:27:58	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:27:58	--	There are 45 users and 262 invisible on 3 servers
+2014-08-23 21:27:58	--	8 :operator(s) online
+2014-08-23 21:27:58	--	50 :channels formed
+2014-08-23 21:27:58	--	I have 162 clients and 2 servers
+2014-08-23 21:27:58	--	162 200 :Current local users 162, max 200
+2014-08-23 21:27:58	--	307 1063 :Current global users 307, max 1063
+2014-08-23 21:27:58	--	- ircd.twice-irc.de Message of the Day -
+2014-08-23 21:27:58	--	- 17/4/2014 11:07
+2014-08-23 21:27:58	--	- --------------------------------------------------
+2014-08-23 21:27:58	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:27:58	--	- --------------------------------------------------
+2014-08-23 21:27:58	--	-
+2014-08-23 21:27:58	--	- IRC Ports:                6661-6669
+2014-08-23 21:27:58	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:27:58	--	-
+2014-08-23 21:27:58	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:27:58	--	-
+2014-08-23 21:27:58	--	- Unsere Regeln:            /rules
+2014-08-23 21:27:58	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:27:58	--	-
+2014-08-23 21:27:58	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:27:58	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:27:58	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:27:58	--	-
+2014-08-23 21:27:58	--	- --------------------------------------------------
+2014-08-23 21:27:58	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:27:58	--	- --------------------------------------------------
+2014-08-23 21:27:58	--	End of /MOTD command.
+2014-08-23 21:27:58	--	User mode [+iwx] by dagnachew
+2014-08-23 21:30:24	--	irc: disconnected from server
+2014-08-23 21:30:29	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:30:30	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-23 21:30:30	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:30:30	--	ircd.twice-irc.de: *** Found your hostname (cached)
+2014-08-23 21:30:30	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-23 21:30:40	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:30:41	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:30:41	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:30:41	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-23 21:30:41	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:30:41	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:30:41	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:30:41	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:30:41	--	There are 45 users and 261 invisible on 3 servers
+2014-08-23 21:30:41	--	8 :operator(s) online
+2014-08-23 21:30:41	--	50 :channels formed
+2014-08-23 21:30:41	--	I have 162 clients and 2 servers
+2014-08-23 21:30:41	--	162 200 :Current local users 162, max 200
+2014-08-23 21:30:41	--	306 1063 :Current global users 306, max 1063
+2014-08-23 21:30:41	--	- ircd.twice-irc.de Message of the Day -
+2014-08-23 21:30:41	--	- 17/4/2014 11:07
+2014-08-23 21:30:41	--	- --------------------------------------------------
+2014-08-23 21:30:41	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:30:41	--	- --------------------------------------------------
+2014-08-23 21:30:41	--	-
+2014-08-23 21:30:41	--	- IRC Ports:                6661-6669
+2014-08-23 21:30:41	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:30:41	--	-
+2014-08-23 21:30:41	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:30:41	--	-
+2014-08-23 21:30:41	--	- Unsere Regeln:            /rules
+2014-08-23 21:30:41	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:30:41	--	-
+2014-08-23 21:30:41	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:30:41	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:30:41	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:30:41	--	-
+2014-08-23 21:30:41	--	- --------------------------------------------------
+2014-08-23 21:30:41	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:30:41	--	- --------------------------------------------------
+2014-08-23 21:30:41	--	End of /MOTD command.
+2014-08-23 21:30:41	--	User mode [+iwx] by dagnachew
+2014-08-23 21:40:11	--	irc: disconnected from server
+2014-08-23 21:40:12	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:40:12	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-23 21:40:12	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:40:12	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-23 21:40:12	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-23 21:40:24	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:40:24	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:40:24	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:40:24	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-23 21:40:24	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:40:24	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:40:24	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:40:24	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:40:24	--	There are 45 users and 260 invisible on 3 servers
+2014-08-23 21:40:24	--	8 :operator(s) online
+2014-08-23 21:40:24	--	50 :channels formed
+2014-08-23 21:40:24	--	I have 161 clients and 2 servers
+2014-08-23 21:40:24	--	161 200 :Current local users 161, max 200
+2014-08-23 21:40:24	--	305 1063 :Current global users 305, max 1063
+2014-08-23 21:40:24	--	- ircd.twice-irc.de Message of the Day -
+2014-08-23 21:40:24	--	- 17/4/2014 11:07
+2014-08-23 21:40:24	--	- --------------------------------------------------
+2014-08-23 21:40:24	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:40:24	--	- --------------------------------------------------
+2014-08-23 21:40:24	--	-
+2014-08-23 21:40:24	--	- IRC Ports:                6661-6669
+2014-08-23 21:40:24	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:40:24	--	-
+2014-08-23 21:40:24	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:40:24	--	-
+2014-08-23 21:40:24	--	- Unsere Regeln:            /rules
+2014-08-23 21:40:24	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:40:24	--	-
+2014-08-23 21:40:24	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:40:24	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:40:24	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:40:24	--	-
+2014-08-23 21:40:24	--	- --------------------------------------------------
+2014-08-23 21:40:24	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:40:24	--	- --------------------------------------------------
+2014-08-23 21:40:24	--	End of /MOTD command.
+2014-08-23 21:40:24	--	User mode [+iwx] by dagnachew
+2014-08-23 21:42:01	--	irc: disconnected from server
+2014-08-23 21:43:29	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-23 21:43:29	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-23 21:43:29	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-23 21:43:29	--	libri.twice-irc.de: *** Checking ident...
+2014-08-23 21:43:29	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-23 21:43:29	--	libri.twice-irc.de: *** Found your hostname
+2014-08-23 21:43:30	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-23 21:43:30	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-23 21:43:30	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-23 21:43:30	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-23 21:43:30	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-23 21:43:30	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-23 21:43:30	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-23 21:43:30	--	There are 45 users and 260 invisible on 3 servers
+2014-08-23 21:43:30	--	8 :operator(s) online
+2014-08-23 21:43:30	--	50 :channels formed
+2014-08-23 21:43:30	--	I have 99 clients and 1 servers
+2014-08-23 21:43:30	--	99 113 :Current local users 99, max 113
+2014-08-23 21:43:30	--	305 1063 :Current global users 305, max 1063
+2014-08-23 21:43:30	--	- libri.twice-irc.de Message of the Day -
+2014-08-23 21:43:30	--	- 17/4/2014 11:20
+2014-08-23 21:43:30	--	- --------------------------------------------------
+2014-08-23 21:43:30	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-23 21:43:30	--	- --------------------------------------------------
+2014-08-23 21:43:30	--	-
+2014-08-23 21:43:30	--	- IRC Ports:                6661-6669
+2014-08-23 21:43:30	--	- IRC SSL Ports:            6601 und 6697
+2014-08-23 21:43:30	--	-
+2014-08-23 21:43:30	--	- connect to:               irc.twice-irc.de
+2014-08-23 21:43:30	--	-
+2014-08-23 21:43:30	--	- Unsere Regeln:            /rules
+2014-08-23 21:43:30	--	- Du brauchst Hilfe?        #twice-help
+2014-08-23 21:43:30	--	-
+2014-08-23 21:43:31	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-23 21:43:31	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-23 21:43:31	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-23 21:43:31	--	-
+2014-08-23 21:43:31	--	- --------------------------------------------------
+2014-08-23 21:43:31	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-23 21:43:31	--	- --------------------------------------------------
+2014-08-23 21:43:31	--	End of /MOTD command.
+2014-08-23 21:43:31	--	User mode [+iwx] by dagnachew
+2014-08-23 21:54:49	--	irc: disconnected from server
+2014-08-25 04:58:25	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-25 04:58:26	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-25 04:58:26	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-25 04:58:26	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-25 04:58:26	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-25 04:58:36	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-25 04:58:36	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-25 04:58:36	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-25 04:58:36	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-25 04:58:36	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-25 04:58:36	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-25 04:58:36	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-25 04:58:36	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-25 04:58:36	--	There are 45 users and 265 invisible on 3 servers
+2014-08-25 04:58:36	--	8 :operator(s) online
+2014-08-25 04:58:36	--	52 :channels formed
+2014-08-25 04:58:36	--	I have 161 clients and 2 servers
+2014-08-25 04:58:36	--	161 200 :Current local users 161, max 200
+2014-08-25 04:58:36	--	310 1063 :Current global users 310, max 1063
+2014-08-25 04:58:36	--	- ircd.twice-irc.de Message of the Day -
+2014-08-25 04:58:36	--	- 17/4/2014 11:07
+2014-08-25 04:58:36	--	- --------------------------------------------------
+2014-08-25 04:58:36	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-25 04:58:36	--	- --------------------------------------------------
+2014-08-25 04:58:36	--	-
+2014-08-25 04:58:36	--	- IRC Ports:                6661-6669
+2014-08-25 04:58:36	--	- IRC SSL Ports:            6601 und 6697
+2014-08-25 04:58:36	--	-
+2014-08-25 04:58:36	--	- connect to:               irc.twice-irc.de
+2014-08-25 04:58:36	--	-
+2014-08-25 04:58:36	--	- Unsere Regeln:            /rules
+2014-08-25 04:58:36	--	- Du brauchst Hilfe?        #twice-help
+2014-08-25 04:58:36	--	-
+2014-08-25 04:58:36	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-25 04:58:36	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-25 04:58:36	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-25 04:58:36	--	-
+2014-08-25 04:58:36	--	- --------------------------------------------------
+2014-08-25 04:58:36	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-25 04:58:36	--	- --------------------------------------------------
+2014-08-25 04:58:36	--	End of /MOTD command.
+2014-08-25 04:58:36	--	User mode [+iwx] by dagnachew
+2014-08-25 05:45:43	--	irc: disconnected from server
+2014-08-25 05:45:47	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-25 05:45:47	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-25 05:45:48	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-25 05:45:48	--	libri.twice-irc.de: *** Checking ident...
+2014-08-25 05:45:48	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-25 05:45:48	--	libri.twice-irc.de: *** Found your hostname
+2014-08-25 05:45:48	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-25 05:45:48	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-25 05:45:48	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-25 05:45:48	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-25 05:45:48	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-25 05:45:48	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-25 05:45:48	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-25 05:45:48	--	There are 45 users and 265 invisible on 3 servers
+2014-08-25 05:45:48	--	8 :operator(s) online
+2014-08-25 05:45:48	--	52 :channels formed
+2014-08-25 05:45:48	--	I have 105 clients and 1 servers
+2014-08-25 05:45:48	--	105 116 :Current local users 105, max 116
+2014-08-25 05:45:48	--	310 1063 :Current global users 310, max 1063
+2014-08-25 05:45:48	--	- libri.twice-irc.de Message of the Day -
+2014-08-25 05:45:48	--	- 17/4/2014 11:20
+2014-08-25 05:45:48	--	- --------------------------------------------------
+2014-08-25 05:45:48	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-25 05:45:48	--	- --------------------------------------------------
+2014-08-25 05:45:48	--	-
+2014-08-25 05:45:48	--	- IRC Ports:                6661-6669
+2014-08-25 05:45:48	--	- IRC SSL Ports:            6601 und 6697
+2014-08-25 05:45:48	--	-
+2014-08-25 05:45:48	--	- connect to:               irc.twice-irc.de
+2014-08-25 05:45:48	--	-
+2014-08-25 05:45:48	--	- Unsere Regeln:            /rules
+2014-08-25 05:45:48	--	- Du brauchst Hilfe?        #twice-help
+2014-08-25 05:45:48	--	-
+2014-08-25 05:45:48	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-25 05:45:48	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-25 05:45:48	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-25 05:45:48	--	-
+2014-08-25 05:45:48	--	- --------------------------------------------------
+2014-08-25 05:45:48	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-25 05:45:48	--	- --------------------------------------------------
+2014-08-25 05:45:48	--	End of /MOTD command.
+2014-08-25 05:45:48	--	User mode [+iwx] by dagnachew
+2014-08-25 05:46:31	--	MSG(nickserv): identify *************
+2014-08-25 05:46:31	--	NickServ (services@twice-irc.de): Dein Nickname ist nicht registriert.
+2014-08-25 05:58:01	--	irc: disconnected from server
+2014-08-25 05:58:02	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-25 05:58:02	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-25 05:58:02	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-25 05:58:02	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-25 05:58:02	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-25 05:58:12	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-25 05:58:13	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-25 05:58:13	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-25 05:58:13	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-25 05:58:13	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-25 05:58:13	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-25 05:58:13	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-25 05:58:13	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-25 05:58:13	--	There are 45 users and 265 invisible on 3 servers
+2014-08-25 05:58:13	--	8 :operator(s) online
+2014-08-25 05:58:13	--	52 :channels formed
+2014-08-25 05:58:13	--	I have 160 clients and 2 servers
+2014-08-25 05:58:13	--	160 200 :Current local users 160, max 200
+2014-08-25 05:58:13	--	310 1063 :Current global users 310, max 1063
+2014-08-25 05:58:13	--	- ircd.twice-irc.de Message of the Day -
+2014-08-25 05:58:13	--	- 17/4/2014 11:07
+2014-08-25 05:58:13	--	- --------------------------------------------------
+2014-08-25 05:58:13	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-25 05:58:13	--	- --------------------------------------------------
+2014-08-25 05:58:13	--	-
+2014-08-25 05:58:13	--	- IRC Ports:                6661-6669
+2014-08-25 05:58:13	--	- IRC SSL Ports:            6601 und 6697
+2014-08-25 05:58:13	--	-
+2014-08-25 05:58:13	--	- connect to:               irc.twice-irc.de
+2014-08-25 05:58:13	--	-
+2014-08-25 05:58:13	--	- Unsere Regeln:            /rules
+2014-08-25 05:58:13	--	- Du brauchst Hilfe?        #twice-help
+2014-08-25 05:58:13	--	-
+2014-08-25 05:58:13	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-25 05:58:13	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-25 05:58:13	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-25 05:58:13	--	-
+2014-08-25 05:58:13	--	- --------------------------------------------------
+2014-08-25 05:58:13	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-25 05:58:13	--	- --------------------------------------------------
+2014-08-25 05:58:13	--	End of /MOTD command.
+2014-08-25 05:58:13	--	User mode [+iwx] by dagnachew
+2014-08-25 06:02:33	--	irc: disconnected from server
+2014-08-25 06:02:34	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-25 06:02:34	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-25 06:02:34	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-25 06:02:34	--	libri.twice-irc.de: *** Checking ident...
+2014-08-25 06:02:34	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-25 06:02:35	--	libri.twice-irc.de: *** Found your hostname
+2014-08-25 06:02:35	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-25 06:02:35	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-25 06:02:35	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-25 06:02:35	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-25 06:02:35	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-25 06:02:35	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-25 06:02:35	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-25 06:02:35	--	There are 45 users and 265 invisible on 3 servers
+2014-08-25 06:02:35	--	8 :operator(s) online
+2014-08-25 06:02:35	--	52 :channels formed
+2014-08-25 06:02:35	--	I have 105 clients and 1 servers
+2014-08-25 06:02:35	--	105 116 :Current local users 105, max 116
+2014-08-25 06:02:35	--	310 1063 :Current global users 310, max 1063
+2014-08-25 06:02:35	--	- libri.twice-irc.de Message of the Day -
+2014-08-25 06:02:35	--	- 17/4/2014 11:20
+2014-08-25 06:02:35	--	- --------------------------------------------------
+2014-08-25 06:02:35	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-25 06:02:35	--	- --------------------------------------------------
+2014-08-25 06:02:35	--	-
+2014-08-25 06:02:35	--	- IRC Ports:                6661-6669
+2014-08-25 06:02:35	--	- IRC SSL Ports:            6601 und 6697
+2014-08-25 06:02:35	--	-
+2014-08-25 06:02:35	--	- connect to:               irc.twice-irc.de
+2014-08-25 06:02:35	--	-
+2014-08-25 06:02:35	--	- Unsere Regeln:            /rules
+2014-08-25 06:02:35	--	- Du brauchst Hilfe?        #twice-help
+2014-08-25 06:02:35	--	-
+2014-08-25 06:02:36	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-25 06:02:36	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-25 06:02:36	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-25 06:02:36	--	-
+2014-08-25 06:02:36	--	- --------------------------------------------------
+2014-08-25 06:02:36	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-25 06:02:36	--	- --------------------------------------------------
+2014-08-25 06:02:36	--	End of /MOTD command.
+2014-08-25 06:02:36	--	User mode [+iwx] by dagnachew
+2014-08-25 06:07:57	--	irc: disconnected from server
+2014-08-25 19:11:45	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-25 19:11:45	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-25 19:11:45	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-25 19:11:45	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-25 19:11:46	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-25 19:11:57	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-25 19:11:57	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-25 19:11:57	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-25 19:11:57	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-25 19:11:57	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-25 19:11:57	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-25 19:11:57	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-25 19:11:57	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-25 19:11:57	--	There are 45 users and 269 invisible on 3 servers
+2014-08-25 19:11:57	--	8 :operator(s) online
+2014-08-25 19:11:57	--	1 :unknown connection(s)
+2014-08-25 19:11:57	--	52 :channels formed
+2014-08-25 19:11:57	--	I have 165 clients and 2 servers
+2014-08-25 19:11:57	--	165 200 :Current local users 165, max 200
+2014-08-25 19:11:57	--	314 1063 :Current global users 314, max 1063
+2014-08-25 19:11:57	--	- ircd.twice-irc.de Message of the Day -
+2014-08-25 19:11:57	--	- 17/4/2014 11:07
+2014-08-25 19:11:57	--	- --------------------------------------------------
+2014-08-25 19:11:57	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-25 19:11:57	--	- --------------------------------------------------
+2014-08-25 19:11:57	--	-
+2014-08-25 19:11:57	--	- IRC Ports:                6661-6669
+2014-08-25 19:11:57	--	- IRC SSL Ports:            6601 und 6697
+2014-08-25 19:11:57	--	-
+2014-08-25 19:11:57	--	- connect to:               irc.twice-irc.de
+2014-08-25 19:11:57	--	-
+2014-08-25 19:11:57	--	- Unsere Regeln:            /rules
+2014-08-25 19:11:57	--	- Du brauchst Hilfe?        #twice-help
+2014-08-25 19:11:57	--	-
+2014-08-25 19:11:57	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-25 19:11:57	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-25 19:11:57	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-25 19:11:57	--	-
+2014-08-25 19:11:57	--	- --------------------------------------------------
+2014-08-25 19:11:57	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-25 19:11:57	--	- --------------------------------------------------
+2014-08-25 19:11:57	--	End of /MOTD command.
+2014-08-25 19:11:57	--	User mode [+iwx] by dagnachew
+2014-08-25 19:15:42	--	irc: disconnected from server
+2014-08-25 19:15:43	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-25 19:15:43	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-25 19:15:43	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-25 19:15:43	--	libri.twice-irc.de: *** Checking ident...
+2014-08-25 19:15:43	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-25 19:15:43	--	libri.twice-irc.de: *** Found your hostname
+2014-08-25 19:15:43	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-25 19:15:43	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-25 19:15:43	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-25 19:15:43	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-25 19:15:43	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-25 19:15:43	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-25 19:15:43	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-25 19:15:43	--	There are 45 users and 269 invisible on 3 servers
+2014-08-25 19:15:43	--	8 :operator(s) online
+2014-08-25 19:15:43	--	52 :channels formed
+2014-08-25 19:15:43	--	I have 104 clients and 1 servers
+2014-08-25 19:15:43	--	104 123 :Current local users 104, max 123
+2014-08-25 19:15:43	--	314 1063 :Current global users 314, max 1063
+2014-08-25 19:15:43	--	- libri.twice-irc.de Message of the Day -
+2014-08-25 19:15:43	--	- 17/4/2014 11:20
+2014-08-25 19:15:43	--	- --------------------------------------------------
+2014-08-25 19:15:43	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-25 19:15:43	--	- --------------------------------------------------
+2014-08-25 19:15:43	--	-
+2014-08-25 19:15:43	--	- IRC Ports:                6661-6669
+2014-08-25 19:15:43	--	- IRC SSL Ports:            6601 und 6697
+2014-08-25 19:15:43	--	-
+2014-08-25 19:15:43	--	- connect to:               irc.twice-irc.de
+2014-08-25 19:15:43	--	-
+2014-08-25 19:15:43	--	- Unsere Regeln:            /rules
+2014-08-25 19:15:43	--	- Du brauchst Hilfe?        #twice-help
+2014-08-25 19:15:43	--	-
+2014-08-25 19:15:44	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-25 19:15:44	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-25 19:15:44	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-25 19:15:44	--	-
+2014-08-25 19:15:44	--	- --------------------------------------------------
+2014-08-25 19:15:44	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-25 19:15:44	--	- --------------------------------------------------
+2014-08-25 19:15:44	--	End of /MOTD command.
+2014-08-25 19:15:44	--	User mode [+iwx] by dagnachew
+2014-08-25 20:26:28	--	irc: disconnected from server
+2014-08-25 21:24:54	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-25 21:24:55	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-25 21:24:55	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-25 21:24:55	--	libri.twice-irc.de: *** Checking ident...
+2014-08-25 21:24:55	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-25 21:24:55	--	libri.twice-irc.de: *** Found your hostname
+2014-08-25 21:24:55	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-25 21:24:55	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-25 21:24:55	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-25 21:24:55	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-25 21:24:55	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-25 21:24:55	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-25 21:24:55	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-25 21:24:55	--	There are 45 users and 267 invisible on 3 servers
+2014-08-25 21:24:55	--	8 :operator(s) online
+2014-08-25 21:24:55	--	52 :channels formed
+2014-08-25 21:24:55	--	I have 110 clients and 1 servers
+2014-08-25 21:24:55	--	110 123 :Current local users 110, max 123
+2014-08-25 21:24:55	--	312 1063 :Current global users 312, max 1063
+2014-08-25 21:24:55	--	- libri.twice-irc.de Message of the Day -
+2014-08-25 21:24:55	--	- 17/4/2014 11:20
+2014-08-25 21:24:55	--	- --------------------------------------------------
+2014-08-25 21:24:55	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-25 21:24:55	--	- --------------------------------------------------
+2014-08-25 21:24:55	--	-
+2014-08-25 21:24:55	--	- IRC Ports:                6661-6669
+2014-08-25 21:24:55	--	- IRC SSL Ports:            6601 und 6697
+2014-08-25 21:24:55	--	-
+2014-08-25 21:24:55	--	- connect to:               irc.twice-irc.de
+2014-08-25 21:24:55	--	-
+2014-08-25 21:24:55	--	- Unsere Regeln:            /rules
+2014-08-25 21:24:55	--	- Du brauchst Hilfe?        #twice-help
+2014-08-25 21:24:55	--	-
+2014-08-25 21:24:55	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-25 21:24:55	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-25 21:24:55	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-25 21:24:55	--	-
+2014-08-25 21:24:55	--	- --------------------------------------------------
+2014-08-25 21:24:55	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-25 21:24:55	--	- --------------------------------------------------
+2014-08-25 21:24:55	--	End of /MOTD command.
+2014-08-25 21:24:55	--	User mode [+iwx] by dagnachew
+2014-08-26 00:00:37	--	irc: disconnected from server
+2014-08-26 17:42:42	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-26 17:42:42	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-26 17:42:42	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-26 17:42:42	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-26 17:42:42	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-26 17:42:53	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-26 17:42:53	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-26 17:42:53	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-26 17:42:53	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-26 17:42:53	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-26 17:42:53	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-26 17:42:53	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-26 17:42:53	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-26 17:42:53	--	There are 45 users and 270 invisible on 3 servers
+2014-08-26 17:42:53	--	8 :operator(s) online
+2014-08-26 17:42:53	--	51 :channels formed
+2014-08-26 17:42:53	--	I have 157 clients and 2 servers
+2014-08-26 17:42:53	--	157 200 :Current local users 157, max 200
+2014-08-26 17:42:53	--	315 1063 :Current global users 315, max 1063
+2014-08-26 17:42:53	--	- ircd.twice-irc.de Message of the Day -
+2014-08-26 17:42:53	--	- 17/4/2014 11:07
+2014-08-26 17:42:53	--	- --------------------------------------------------
+2014-08-26 17:42:53	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-26 17:42:53	--	- --------------------------------------------------
+2014-08-26 17:42:53	--	-
+2014-08-26 17:42:53	--	- IRC Ports:                6661-6669
+2014-08-26 17:42:53	--	- IRC SSL Ports:            6601 und 6697
+2014-08-26 17:42:53	--	-
+2014-08-26 17:42:53	--	- connect to:               irc.twice-irc.de
+2014-08-26 17:42:53	--	-
+2014-08-26 17:42:53	--	- Unsere Regeln:            /rules
+2014-08-26 17:42:53	--	- Du brauchst Hilfe?        #twice-help
+2014-08-26 17:42:53	--	-
+2014-08-26 17:42:53	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-26 17:42:53	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-26 17:42:53	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-26 17:42:53	--	-
+2014-08-26 17:42:53	--	- --------------------------------------------------
+2014-08-26 17:42:53	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-26 17:42:53	--	- --------------------------------------------------
+2014-08-26 17:42:53	--	End of /MOTD command.
+2014-08-26 17:42:53	--	User mode [+iwx] by dagnachew
+2014-08-26 18:14:20	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-26 18:14:20	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-26 18:14:21	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-26 18:14:21	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-26 18:14:21	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-26 18:14:31	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-26 18:14:31	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-26 18:14:31	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-26 18:14:31	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-26 18:14:31	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-26 18:14:31	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-26 18:14:31	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-26 18:14:31	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-26 18:14:31	--	There are 45 users and 263 invisible on 3 servers
+2014-08-26 18:14:31	--	8 :operator(s) online
+2014-08-26 18:14:31	--	51 :channels formed
+2014-08-26 18:14:31	--	I have 153 clients and 2 servers
+2014-08-26 18:14:31	--	153 200 :Current local users 153, max 200
+2014-08-26 18:14:31	--	308 1063 :Current global users 308, max 1063
+2014-08-26 18:14:31	--	- ircd.twice-irc.de Message of the Day -
+2014-08-26 18:14:31	--	- 17/4/2014 11:07
+2014-08-26 18:14:31	--	- --------------------------------------------------
+2014-08-26 18:14:31	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-26 18:14:31	--	- --------------------------------------------------
+2014-08-26 18:14:31	--	-
+2014-08-26 18:14:31	--	- IRC Ports:                6661-6669
+2014-08-26 18:14:31	--	- IRC SSL Ports:            6601 und 6697
+2014-08-26 18:14:31	--	-
+2014-08-26 18:14:31	--	- connect to:               irc.twice-irc.de
+2014-08-26 18:14:31	--	-
+2014-08-26 18:14:31	--	- Unsere Regeln:            /rules
+2014-08-26 18:14:31	--	- Du brauchst Hilfe?        #twice-help
+2014-08-26 18:14:31	--	-
+2014-08-26 18:14:31	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-26 18:14:31	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-26 18:14:31	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-26 18:14:31	--	-
+2014-08-26 18:14:31	--	- --------------------------------------------------
+2014-08-26 18:14:31	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-26 18:14:31	--	- --------------------------------------------------
+2014-08-26 18:14:31	--	End of /MOTD command.
+2014-08-26 18:14:31	--	User mode [+iwx] by dagnachew
+2014-08-28 17:27:35	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-28 17:27:36	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-28 17:27:36	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-28 17:27:36	--	libri.twice-irc.de: *** Checking ident...
+2014-08-28 17:27:36	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-28 17:27:36	--	libri.twice-irc.de: *** Found your hostname
+2014-08-28 17:27:36	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-28 17:27:36	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-28 17:27:36	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-28 17:27:36	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-28 17:27:36	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-28 17:27:36	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-28 17:27:36	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-28 17:27:36	--	There are 45 users and 269 invisible on 3 servers
+2014-08-28 17:27:36	--	8 :operator(s) online
+2014-08-28 17:27:36	--	52 :channels formed
+2014-08-28 17:27:36	--	I have 110 clients and 1 servers
+2014-08-28 17:27:36	--	110 125 :Current local users 110, max 125
+2014-08-28 17:27:36	--	314 1063 :Current global users 314, max 1063
+2014-08-28 17:27:36	--	- libri.twice-irc.de Message of the Day -
+2014-08-28 17:27:36	--	- 17/4/2014 11:20
+2014-08-28 17:27:36	--	- --------------------------------------------------
+2014-08-28 17:27:36	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-28 17:27:36	--	- --------------------------------------------------
+2014-08-28 17:27:36	--	-
+2014-08-28 17:27:36	--	- IRC Ports:                6661-6669
+2014-08-28 17:27:36	--	- IRC SSL Ports:            6601 und 6697
+2014-08-28 17:27:36	--	-
+2014-08-28 17:27:36	--	- connect to:               irc.twice-irc.de
+2014-08-28 17:27:36	--	-
+2014-08-28 17:27:36	--	- Unsere Regeln:            /rules
+2014-08-28 17:27:36	--	- Du brauchst Hilfe?        #twice-help
+2014-08-28 17:27:36	--	-
+2014-08-28 17:27:36	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-28 17:27:36	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-28 17:27:36	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-28 17:27:36	--	-
+2014-08-28 17:27:36	--	- --------------------------------------------------
+2014-08-28 17:27:36	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-28 17:27:36	--	- --------------------------------------------------
+2014-08-28 17:27:36	--	End of /MOTD command.
+2014-08-28 17:27:36	--	User mode [+iwx] by dagnachew
+2014-08-28 17:34:05	--	irc: disconnected from server
+2014-08-28 17:34:06	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-28 17:34:06	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-28 17:34:06	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-28 17:34:06	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-28 17:34:06	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-28 17:34:16	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-28 17:34:16	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-28 17:34:16	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-28 17:34:16	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-28 17:34:16	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-28 17:34:16	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-28 17:34:16	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-28 17:34:16	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-28 17:34:16	--	There are 45 users and 270 invisible on 3 servers
+2014-08-28 17:34:16	--	8 :operator(s) online
+2014-08-28 17:34:16	--	52 :channels formed
+2014-08-28 17:34:16	--	I have 159 clients and 2 servers
+2014-08-28 17:34:16	--	159 200 :Current local users 159, max 200
+2014-08-28 17:34:16	--	315 1063 :Current global users 315, max 1063
+2014-08-28 17:34:16	--	- ircd.twice-irc.de Message of the Day -
+2014-08-28 17:34:16	--	- 17/4/2014 11:07
+2014-08-28 17:34:16	--	- --------------------------------------------------
+2014-08-28 17:34:16	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-28 17:34:16	--	- --------------------------------------------------
+2014-08-28 17:34:16	--	-
+2014-08-28 17:34:16	--	- IRC Ports:                6661-6669
+2014-08-28 17:34:16	--	- IRC SSL Ports:            6601 und 6697
+2014-08-28 17:34:16	--	-
+2014-08-28 17:34:16	--	- connect to:               irc.twice-irc.de
+2014-08-28 17:34:16	--	-
+2014-08-28 17:34:16	--	- Unsere Regeln:            /rules
+2014-08-28 17:34:16	--	- Du brauchst Hilfe?        #twice-help
+2014-08-28 17:34:16	--	-
+2014-08-28 17:34:16	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-28 17:34:16	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-28 17:34:16	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-28 17:34:16	--	-
+2014-08-28 17:34:16	--	- --------------------------------------------------
+2014-08-28 17:34:16	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-28 17:34:16	--	- --------------------------------------------------
+2014-08-28 17:34:16	--	End of /MOTD command.
+2014-08-28 17:34:16	--	User mode [+iwx] by dagnachew
+2014-08-28 17:43:38	--	irc: disconnected from server
+2014-08-28 17:51:44	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-28 17:51:45	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-28 17:51:45	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-28 17:51:45	--	libri.twice-irc.de: *** Checking ident...
+2014-08-28 17:51:45	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-28 17:51:45	--	libri.twice-irc.de: *** Found your hostname
+2014-08-28 17:51:45	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-28 17:51:45	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-28 17:51:45	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-28 17:51:45	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-28 17:51:45	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-28 17:51:45	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-28 17:51:45	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-28 17:51:45	--	There are 45 users and 270 invisible on 3 servers
+2014-08-28 17:51:45	--	8 :operator(s) online
+2014-08-28 17:51:45	--	52 :channels formed
+2014-08-28 17:51:45	--	I have 111 clients and 1 servers
+2014-08-28 17:51:45	--	111 125 :Current local users 111, max 125
+2014-08-28 17:51:45	--	315 1063 :Current global users 315, max 1063
+2014-08-28 17:51:45	--	- libri.twice-irc.de Message of the Day -
+2014-08-28 17:51:45	--	- 17/4/2014 11:20
+2014-08-28 17:51:45	--	- --------------------------------------------------
+2014-08-28 17:51:45	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-28 17:51:45	--	- --------------------------------------------------
+2014-08-28 17:51:45	--	-
+2014-08-28 17:51:45	--	- IRC Ports:                6661-6669
+2014-08-28 17:51:45	--	- IRC SSL Ports:            6601 und 6697
+2014-08-28 17:51:45	--	-
+2014-08-28 17:51:45	--	- connect to:               irc.twice-irc.de
+2014-08-28 17:51:45	--	-
+2014-08-28 17:51:45	--	- Unsere Regeln:            /rules
+2014-08-28 17:51:45	--	- Du brauchst Hilfe?        #twice-help
+2014-08-28 17:51:45	--	-
+2014-08-28 17:51:45	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-28 17:51:45	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-28 17:51:45	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-28 17:51:45	--	-
+2014-08-28 17:51:45	--	- --------------------------------------------------
+2014-08-28 17:51:45	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-28 17:51:45	--	- --------------------------------------------------
+2014-08-28 17:51:45	--	End of /MOTD command.
+2014-08-28 17:51:45	--	User mode [+iwx] by dagnachew
+2014-08-28 18:23:21	--	irc: disconnected from server
+2014-08-28 23:49:04	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-28 23:49:04	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-28 23:49:04	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-28 23:49:04	--	libri.twice-irc.de: *** Checking ident...
+2014-08-28 23:49:04	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-28 23:49:04	--	libri.twice-irc.de: *** Found your hostname
+2014-08-28 23:49:04	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-28 23:49:04	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-28 23:49:04	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-28 23:49:04	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-28 23:49:04	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-28 23:49:04	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-28 23:49:04	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-28 23:49:05	--	There are 45 users and 253 invisible on 3 servers
+2014-08-28 23:49:05	--	8 :operator(s) online
+2014-08-28 23:49:05	--	50 :channels formed
+2014-08-28 23:49:05	--	I have 12 clients and 1 servers
+2014-08-28 23:49:05	--	12 125 :Current local users 12, max 125
+2014-08-28 23:49:05	--	298 1063 :Current global users 298, max 1063
+2014-08-28 23:49:05	--	- libri.twice-irc.de Message of the Day -
+2014-08-28 23:49:05	--	- 17/4/2014 11:20
+2014-08-28 23:49:05	--	- --------------------------------------------------
+2014-08-28 23:49:05	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-28 23:49:05	--	- --------------------------------------------------
+2014-08-28 23:49:05	--	-
+2014-08-28 23:49:05	--	- IRC Ports:                6661-6669
+2014-08-28 23:49:05	--	- IRC SSL Ports:            6601 und 6697
+2014-08-28 23:49:05	--	-
+2014-08-28 23:49:05	--	- connect to:               irc.twice-irc.de
+2014-08-28 23:49:05	--	-
+2014-08-28 23:49:05	--	- Unsere Regeln:            /rules
+2014-08-28 23:49:05	--	- Du brauchst Hilfe?        #twice-help
+2014-08-28 23:49:05	--	-
+2014-08-28 23:49:05	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-28 23:49:05	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-28 23:49:05	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-28 23:49:05	--	-
+2014-08-28 23:49:05	--	- --------------------------------------------------
+2014-08-28 23:49:05	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-28 23:49:05	--	- --------------------------------------------------
+2014-08-28 23:49:05	--	End of /MOTD command.
+2014-08-28 23:49:05	--	User mode [+iwx] by dagnachew
+2014-08-29 00:10:16	--	irc: disconnected from server
+2014-08-29 00:10:23	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-29 00:10:23	--	irc: connected to irc.twice-irc.de/6667 (217.8.49.41)
+2014-08-29 00:10:23	--	libri.twice-irc.de: *** Looking up your hostname...
+2014-08-29 00:10:23	--	libri.twice-irc.de: *** Checking ident...
+2014-08-29 00:10:23	--	libri.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-29 00:10:23	--	libri.twice-irc.de: *** Found your hostname
+2014-08-29 00:10:23	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-29 00:10:23	--	Your host is libri.twice-irc.de, running version Unreal3.2.10.2
+2014-08-29 00:10:23	--	This server was created Do 17. Apr 2014 at 11:13:19 CEST
+2014-08-29 00:10:23	--	libri.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-29 00:10:23	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-29 00:10:23	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-29 00:10:23	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-29 00:10:23	--	There are 45 users and 255 invisible on 3 servers
+2014-08-29 00:10:23	--	8 :operator(s) online
+2014-08-29 00:10:23	--	50 :channels formed
+2014-08-29 00:10:23	--	I have 13 clients and 1 servers
+2014-08-29 00:10:23	--	13 125 :Current local users 13, max 125
+2014-08-29 00:10:23	--	300 1063 :Current global users 300, max 1063
+2014-08-29 00:10:23	--	- libri.twice-irc.de Message of the Day -
+2014-08-29 00:10:23	--	- 17/4/2014 11:20
+2014-08-29 00:10:23	--	- --------------------------------------------------
+2014-08-29 00:10:23	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-29 00:10:23	--	- --------------------------------------------------
+2014-08-29 00:10:23	--	-
+2014-08-29 00:10:23	--	- IRC Ports:                6661-6669
+2014-08-29 00:10:23	--	- IRC SSL Ports:            6601 und 6697
+2014-08-29 00:10:23	--	-
+2014-08-29 00:10:23	--	- connect to:               irc.twice-irc.de
+2014-08-29 00:10:23	--	-
+2014-08-29 00:10:23	--	- Unsere Regeln:            /rules
+2014-08-29 00:10:23	--	- Du brauchst Hilfe?        #twice-help
+2014-08-29 00:10:23	--	-
+2014-08-29 00:10:23	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-29 00:10:23	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-29 00:10:23	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-29 00:10:23	--	-
+2014-08-29 00:10:23	--	- --------------------------------------------------
+2014-08-29 00:10:23	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-29 00:10:23	--	- --------------------------------------------------
+2014-08-29 00:10:23	--	End of /MOTD command.
+2014-08-29 00:10:23	--	User mode [+iwx] by dagnachew
+2014-08-29 18:35:40	--	irc: connecting to server irc.twice-irc.de/6667...
+2014-08-29 18:35:40	--	irc: connected to irc.twice-irc.de/6667 (79.140.39.205)
+2014-08-29 18:35:40	--	ircd.twice-irc.de: *** Looking up your hostname...
+2014-08-29 18:35:40	--	ircd.twice-irc.de: *** Checking ident...
+2014-08-29 18:35:41	--	ircd.twice-irc.de: *** Found your hostname
+2014-08-29 18:35:51	--	ircd.twice-irc.de: *** No ident response; username prefixed with ~
+2014-08-29 18:35:51	--	Welcome to the TWiCEiRC IRC Network dagnachew!~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca
+2014-08-29 18:35:51	--	Your host is ircd.twice-irc.de, running version Unreal3.2.10.2
+2014-08-29 18:35:51	--	This server was created Thu Apr 17 2014 at 11:05:25 CEST
+2014-08-29 18:35:51	--	ircd.twice-irc.de Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2014-08-29 18:35:51	--	UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+2014-08-29 18:35:51	--	WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=TWiCEiRC CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+2014-08-29 18:35:51	--	EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+2014-08-29 18:35:51	--	There are 45 users and 256 invisible on 3 servers
+2014-08-29 18:35:51	--	8 :operator(s) online
+2014-08-29 18:35:51	--	51 :channels formed
+2014-08-29 18:35:51	--	I have 224 clients and 2 servers
+2014-08-29 18:35:51	--	224 253 :Current local users 224, max 253
+2014-08-29 18:35:51	--	301 1063 :Current global users 301, max 1063
+2014-08-29 18:35:51	--	- ircd.twice-irc.de Message of the Day -
+2014-08-29 18:35:51	--	- 17/4/2014 11:07
+2014-08-29 18:35:51	--	- --------------------------------------------------
+2014-08-29 18:35:51	--	- - WILLKOMMEN IM TWICE-IRC! -----------------------
+2014-08-29 18:35:51	--	- --------------------------------------------------
+2014-08-29 18:35:51	--	-
+2014-08-29 18:35:51	--	- IRC Ports:                6661-6669
+2014-08-29 18:35:51	--	- IRC SSL Ports:            6601 und 6697
+2014-08-29 18:35:51	--	-
+2014-08-29 18:35:51	--	- connect to:               irc.twice-irc.de
+2014-08-29 18:35:51	--	-
+2014-08-29 18:35:51	--	- Unsere Regeln:            /rules
+2014-08-29 18:35:51	--	- Du brauchst Hilfe?        #twice-help
+2014-08-29 18:35:51	--	-
+2014-08-29 18:35:51	--	- In diesem IRC-Netz MUSS man sich an die Regeln
+2014-08-29 18:35:51	--	- halten (siehe /rules oder www.twice-irc.de). Wer
+2014-08-29 18:35:51	--	- dies nicht tut, wird via Ban ausgeschlossen.
+2014-08-29 18:35:51	--	-
+2014-08-29 18:35:51	--	- --------------------------------------------------
+2014-08-29 18:35:51	--	- - Letzte Aenderung: 2013-10-19 -------------------
+2014-08-29 18:35:51	--	- --------------------------------------------------
+2014-08-29 18:35:51	--	End of /MOTD command.
+2014-08-29 18:35:51	--	User mode [+iwx] by dagnachew

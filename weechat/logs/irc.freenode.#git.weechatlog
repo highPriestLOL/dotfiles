@@ -1,0 +1,1842 @@
+2014-08-23 20:19:27	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 20:19:27	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 20:19:27	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 20:19:27	--	Channel #git: 1036 nicks (1 op, 40 voices, 995 normals)
+2014-08-23 20:19:31	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 20:20:00	◀▬▬	coldswitch (~anonymous@c-76-103-9-153.hsd1.ca.comcast.net) has quit (Quit: coldswitch)
+2014-08-23 20:23:44	◀▬▬	thumpba (~thumpba@99-180-68-233.lightspeed.irvnca.sbcglobal.net) has quit (Remote host closed the connection)
+2014-08-23 20:23:46	--	irc: disconnected from server
+2014-08-23 21:13:11	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:13:11	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:13:11	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:13:11	--	Channel #git: 1037 nicks (1 op, 40 voices, 996 normals)
+2014-08-23 21:13:11	--	Notice(barjavel.freenode.net): [freenode-info] channel flooding and no channel staff around to help? Please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2014-08-23 21:13:14	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:13:14	▬▬▶	Akagi201 (~akagi201@223.93.179.240) has joined #git
+2014-08-23 21:13:21	--	irc: disconnected from server
+2014-08-23 21:16:13	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:16:13	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:16:13	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:16:13	--	Channel #git: 1037 nicks (1 op, 40 voices, 996 normals)
+2014-08-23 21:16:17	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:16:18	▬▬▶	nectarys (~nectarys@41.228.205.185) has joined #git
+2014-08-23 21:16:43	--	irc: disconnected from server
+2014-08-23 21:16:58	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:16:58	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:16:58	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:16:58	--	Channel #git: 1039 nicks (1 op, 40 voices, 998 normals)
+2014-08-23 21:17:02	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:17:26	--	irc: disconnected from server
+2014-08-23 21:18:46	-->	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:18:46	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:18:46	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:18:46	--	Channel #git: 1036 nicks (1 op, 40 voices, 995 normals)
+2014-08-23 21:18:50	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:20:07	-->	nectarys (~nectarys@41.228.205.185) has joined #git
+2014-08-23 21:20:22	<--	Noldorin (~noldorin@unaffiliated/noldorin) has quit (Quit: -)
+2014-08-23 21:21:00	-->	fold (~JimmyRcom@66-169-184-128.dhcp.ftwo.tx.charter.com) has joined #git
+2014-08-23 21:21:51	--	irc: disconnected from server
+2014-08-23 21:23:15	-->	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:23:15	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:23:15	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:23:15	--	Channel #git: 1037 nicks (1 op, 40 voices, 996 normals)
+2014-08-23 21:23:19	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:24:17	--	irc: disconnected from server
+2014-08-23 21:28:01	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:28:01	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:28:01	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:28:01	--	Channel #git: 1033 nicks (1 op, 40 voices, 992 normals)
+2014-08-23 21:28:06	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:28:27	▬▬▶	BSaboia (~Bruno@177.42.166.57) has joined #git
+2014-08-23 21:28:42	▬▬▶	sunfun (marco@unaffiliated/sunfun) has joined #git
+2014-08-23 21:28:47	▬▬▶	Fissure1 (~matt@cpe-76-95-228-182.socal.res.rr.com) has joined #git
+2014-08-23 21:29:49	▬▬▶	shinnya (~shinnya@236.86.100.220.dy.bbexcite.jp) has joined #git
+2014-08-23 21:29:53	▬▬▶	mtk (~mtk@ool-44c35983.dyn.optonline.net) has joined #git
+2014-08-23 21:30:14	▬▬▶	preaction_ (~doug@c-67-162-112-255.hsd1.il.comcast.net) has joined #git
+2014-08-23 21:30:21	◀▬▬	preaction (~doug@c-67-162-112-255.hsd1.il.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-23 21:30:21	--	preaction_ is now known as preaction
+2014-08-23 21:30:24	--	irc: disconnected from server
+2014-08-23 21:30:45	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:30:45	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:30:45	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:30:45	--	Channel #git: 1038 nicks (1 op, 40 voices, 997 normals)
+2014-08-23 21:30:49	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:30:49	◀▬▬	SonikBoom_ (~SonikBoom@unaffiliated/sonikboom) has quit (Quit: Leaving)
+2014-08-23 21:34:42	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-23 21:36:23	◀▬▬	irqq (~chatzilla@aele99.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 245 seconds)
+2014-08-23 21:36:35	▬▬▶	p4sh4 (~p4sh4@pcd647075.netvigator.com) has joined #git
+2014-08-23 21:36:49	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Remote host closed the connection)
+2014-08-23 21:36:50	▬▬▶	shercoder (~shercoder@c-67-169-237-111.hsd1.ca.comcast.net) has joined #git
+2014-08-23 21:37:06	◀▬▬	deanclkclk (~deanclkcl@190.213.44.33) has quit (Ping timeout: 264 seconds)
+2014-08-23 21:37:24	▬▬▶	Balliad (~textual@52D95C9B.cm-11-1b.dynamic.ziggo.nl) has joined #git
+2014-08-23 21:37:32	▬▬▶	sohail (~sohail@unaffiliated/sohail) has joined #git
+2014-08-23 21:37:45	▬▬▶	irqq (~chatzilla@aele99.neoplus.adsl.tpnet.pl) has joined #git
+2014-08-23 21:38:18	◀▬▬	ncd|leeN (~leeN@e180186211.adsl.alicedsl.de) has quit (Ping timeout: 264 seconds)
+2014-08-23 21:38:29	▬▬▶	Corey84 (~Corey84@wsip-98-191-213-226.dc.dc.cox.net) has joined #git
+2014-08-23 21:39:30	▬▬▶	CoreIT84 (~Corey84@wsip-98-191-213-226.dc.dc.cox.net) has joined #git
+2014-08-23 21:40:10	--	irc: disconnected from server
+2014-08-23 21:40:26	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:40:26	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:40:26	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:40:26	--	Channel #git: 1039 nicks (1 op, 40 voices, 998 normals)
+2014-08-23 21:40:30	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:40:52	◀▬▬	Corey84 (~Corey84@wsip-98-191-213-226.dc.dc.cox.net) has quit (Changing host)
+2014-08-23 21:40:53	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-23 21:40:54	▬▬▶	Textmode (~boneidle@adsl-1-au-2-174.ozonline.com.au) has joined #git
+2014-08-23 21:41:07	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Remote host closed the connection)
+2014-08-23 21:41:20	◀▬▬	jagob (~jacob@87-56-233-24-dynamic.dk.customer.tdc.net) has quit (Remote host closed the connection)
+2014-08-23 21:41:22	▬▬▶	Corey84 (~Corey84@wsip-98-191-213-226.dc.dc.cox.net) has joined #git
+2014-08-23 21:42:00	◀▬▬	Corey84 (~Corey84@wsip-98-191-213-226.dc.dc.cox.net) has quit (Changing host)
+2014-08-23 21:42:00	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-23 21:42:01	--	irc: disconnected from server
+2014-08-23 21:43:45	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-23 21:43:45	--	Topic for #git is "Welcome to #git, the place for git help and a killer soundtrack | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Wait for the git-beats --drop"
+2014-08-23 21:43:45	--	Topic set by Eugene (eugene@kashpureff.org) on Sat, 23 Aug 2014 12:21:12
+2014-08-23 21:43:45	--	Channel #git: 1038 nicks (1 op, 40 voices, 997 normals)
+2014-08-23 21:43:49	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-23 21:46:31	▬▬▶	mtk (~mtk@ool-44c35983.dyn.optonline.net) has joined #git
+2014-08-23 21:49:14	◀▬▬	tang^ (~krachynsk@S0106d850e6d976b8.cg.shawcable.net) has quit (Quit: Going to spend some time in the big blue room.)
+2014-08-23 21:49:33	▬▬▶	jftf (~jftf@38.140.21.74) has joined #git
+2014-08-23 21:49:42	◀▬▬	Sivil (~Sivil@158.36.13.183) has quit (Ping timeout: 264 seconds)
+2014-08-23 21:49:48	◀▬▬	darkbasic_ (~quassel@niko.linuxsystems.it) has quit (Remote host closed the connection)
+2014-08-23 21:50:03	◀▬▬	JeanCarloMachado (~JeanCarlo@201-89-157-162.cslce700.dsl.brasiltelecom.net.br) has quit (Remote host closed the connection)
+2014-08-23 21:50:26	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-23 21:50:27	▬▬▶	darkbasic (~quassel@niko.linuxsystems.it) has joined #git
+2014-08-23 21:51:43	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Remote host closed the connection)
+2014-08-23 21:51:59	◀▬▬	irqq (~chatzilla@aele99.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 255 seconds)
+2014-08-23 21:52:02	▬▬▶	Corey84 (~Corey84@wsip-98-191-213-226.dc.dc.cox.net) has joined #git
+2014-08-23 21:52:13	◀▬▬	davispuh (~quassel@212.93.100.73) has quit (Ping timeout: 245 seconds)
+2014-08-23 21:52:17	◀▬▬	Corey84 (~Corey84@wsip-98-191-213-226.dc.dc.cox.net) has quit (Changing host)
+2014-08-23 21:52:17	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-23 21:52:23	▬▬▶	Eins_ (~eins_@177.226.192.224) has joined #git
+2014-08-23 21:52:48	▬▬▶	irqq (~chatzilla@aele99.neoplus.adsl.tpnet.pl) has joined #git
+2014-08-23 21:52:51	◀▬▬	osk_ (~osk@pc-6-75-215-201.cm.vtr.net) has quit (Read error: Connection reset by peer)
+2014-08-23 21:53:25	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Remote host closed the connection)
+2014-08-23 21:53:46	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-23 21:54:08	▬▬▶	deanclkclk (~deanclkcl@190.213.44.33) has joined #git
+2014-08-23 21:54:49	--	irc: disconnected from server
+2014-08-25 04:58:41	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-25 04:58:41	--	Topic for #git is "Welcome to #git, the place for git help and rudely-phrased hieroglyphs | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | git is one byte short of a four-letter word"
+2014-08-25 04:58:41	--	Topic set by Eugene (eugene@kashpureff.org) on Sun, 24 Aug 2014 12:31:19
+2014-08-25 04:58:41	--	Channel #git: 1065 nicks (1 op, 41 voices, 1023 normals)
+2014-08-25 04:58:45	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-25 05:00:00	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:00:05	◀▬▬	mikeric (~mikeric@S010618593348903f.vc.shawcable.net) has quit
+2014-08-25 05:00:06	◀▬▬	nnyk_ (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:00:15	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:00:18	◀▬▬	Xethron (~Xethron@unaffiliated/xethron) has quit (Read error: Connection reset by peer)
+2014-08-25 05:00:44	◀▬▬	jftf (~jftf@38.140.21.74) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:01:06	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:01:16	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:01:18	▬▬▶	EminenceHC (~eminenceh@173-167-242-193-ip-static.hfc.comcastbusiness.net) has joined #git
+2014-08-25 05:03:21	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:03:31	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:04:47	◀▬▬	psoo (~psoo__@wan1.credativ.com) has quit (Quit: Come on, you knew that this would happen...)
+2014-08-25 05:04:51	◀▬▬	Sicp (~ongoing@unaffiliated/odaym) has quit (Ping timeout: 255 seconds)
+2014-08-25 05:05:26	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:05:36	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:05:41	▬▬▶	mechanicalduck_ (~mechanica@ip-109-45-0-139.web.vodafone.de) has joined #git
+2014-08-25 05:05:53	▬▬▶	mennea (~textual@bzq-79-182-164-40.red.bezeqint.net) has joined #git
+2014-08-25 05:06:13	▬▬▶	psoo (~psoo__@wan1.credativ.com) has joined #git
+2014-08-25 05:06:18	▬▬▶	jdmf (~jdmf@91.198.201.28) has joined #git
+2014-08-25 05:06:22	◀▬▬	xobb (~quassel@149.62.243.70) has quit (Read error: Connection reset by peer)
+2014-08-25 05:06:22	▬▬▶	Raging_Hog (~heikki@huolintatalo.fraktio.fi) has joined #git
+2014-08-25 05:06:33	▬▬▶	marek_varro (~Marek@96-32-51-151.dhcp.nwtn.ct.charter.com) has joined #git
+2014-08-25 05:06:38	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:06:48	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:07:15	▬▬▶	ambrosechua (~ambrosech@42.61.71.4) has joined #git
+2014-08-25 05:07:35	▬▬▶	Xethron (~Xethron@unaffiliated/xethron) has joined #git
+2014-08-25 05:07:55	▬▬▶	nour (~nour@ipbcc3be62.dynamic.kabel-deutschland.de) has joined #git
+2014-08-25 05:08:44	▬▬▶	Naeblis (~Naeblis@unaffiliated/naeblis) has joined #git
+2014-08-25 05:08:57	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:08:58	◀▬▬	mechanicalduck (~mechanica@37-1-162-187.ip.skylogicnet.com) has quit (Ping timeout: 250 seconds)
+2014-08-25 05:09:07	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:09:11	Naeblis	Hi. Is there any way I can get the number of lines added+removed for a given time period for an author in git ?
+2014-08-25 05:09:19	◀▬▬	tvw (~tv@e176007009.adsl.alicedsl.de) has quit
+2014-08-25 05:09:35	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:09:45	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:09:50	◀▬▬	EminenceHC (~eminenceh@173-167-242-193-ip-static.hfc.comcastbusiness.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:09:53	◀▬▬	Balliad (~textual@80.79.35.95) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-08-25 05:10:30	▬▬▶	W0rmDr1nk (~wormdrink@unaffiliated/wormdrink) has joined #git
+2014-08-25 05:10:35	◀▬▬	teran (~teran@broadband-109-173-61-206.nationalcablenetworks.ru) has quit (Remote host closed the connection)
+2014-08-25 05:11:08	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:11:18	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:12:06	▬▬▶	Balliad (~textual@80.79.35.95) has joined #git
+2014-08-25 05:12:28	▬▬▶	xobb (~quassel@77.76.177.24.unicsbg.net) has joined #git
+2014-08-25 05:12:45	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:12:53	▬▬▶	jokke (~jokke@v22014082325419850.yourvserver.net) has joined #git
+2014-08-25 05:12:54	jokke	hi
+2014-08-25 05:12:55	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:13:11	jokke	how can i squash commits in a repository without a remote?
+2014-08-25 05:13:48	jokke	never mind
+2014-08-25 05:13:51	jokke	got it
+2014-08-25 05:13:53	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:14:03	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:14:55	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:15:05	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:16:29	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:16:39	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:17:23	▬▬▶	v2zz (~chatzilla@91.201.224.27) has joined #git
+2014-08-25 05:18:09	▬▬▶	harish_ (~harish@175.156.214.16) has joined #git
+2014-08-25 05:18:18	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:18:28	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:18:38	◀▬▬	maroloccio (~marolocci@21.Red-83-53-185.dynamicIP.rima-tde.net) has quit (Quit: WeeChat 0.4.3)
+2014-08-25 05:18:43	◀▬▬	b100s (~b10s@185.19.20.100) has left #git ("Leaving")
+2014-08-25 05:19:19	◀▬▬	harish_ (~harish@175.156.214.16) has quit (Client Quit)
+2014-08-25 05:19:21	◀▬▬	ferreum (~ferreus@p57A7FD5B.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2014-08-25 05:19:38	▬▬▶	ferreum (~ferreus@p57A7FD5B.dip0.t-ipconnect.de) has joined #git
+2014-08-25 05:19:58	▬▬▶	kopparam (~kopparam@14.140.219.22) has joined #git
+2014-08-25 05:20:11	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:20:21	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:20:43	v2zz	hi! how do you commit empty folders?
+2014-08-25 05:20:46	v2zz	i want to be sure i have all folders commited. the only idea tha i have in mind is to create post-commit hook, traversing all project and creating files with .gitignore with (* but !.gitignore)
+2014-08-25 05:20:49	v2zz	are there any better solutions?
+2014-08-25 05:21:39	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:21:49	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:22:23	▬▬▶	gittish (~anonymous@host-80-252-171-62-cust.phoneranetworks.se) has joined #git
+2014-08-25 05:22:49	◀▬▬	cbr_ (~cbr@145.36.150.83.chzhher77.rootnet.ch) has quit (Quit: cbr_)
+2014-08-25 05:22:52	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:23:02	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:23:07	▬▬▶	kukks (~Guenter@samba/team/kukks) has joined #git
+2014-08-25 05:23:38	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:23:48	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:24:53	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:25:03	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:25:11	▬▬▶	nnyk_ (~nnyk@unaffiliated/nnyk) has joined #git
+2014-08-25 05:25:16	+tobiasvl	you can't commit empty folders, so that sounds like an okay solution to me.
+2014-08-25 05:25:21	▬▬▶	djc (~djc@gentoo/developer/djc) has joined #git
+2014-08-25 05:25:39	djc	I seem to have a file called ':wq' in a repo (sans quotes)
+2014-08-25 05:25:50	djc	any clues how I can get git log or git rm to work for it?
+2014-08-25 05:25:50	▬▬▶	cbr_ (~cbr@145.36.150.83.chzhher77.rootnet.ch) has joined #git
+2014-08-25 05:25:57	osse	git rm :wq
+2014-08-25 05:25:58	+tobiasvl	I'd guess \:wq
+2014-08-25 05:26:01	▬▬▶	jorisros (~jorisros@188.203.156.91) has joined #git
+2014-08-25 05:26:17	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:26:20	◀▬▬	D-Boy (~D-Boy@unaffiliated/cain) has quit (Excess Flood)
+2014-08-25 05:26:22	osse	: isn't special
+2014-08-25 05:26:27	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:26:29	djc	osse: that doesn't work, "Path 'wq' does not exist"
+2014-08-25 05:26:35	djc	so apparently it is special
+2014-08-25 05:26:41	▬▬▶	NCS_One (~NCS_One@a81-84-205-92.cpe.netcabo.pt) has joined #git
+2014-08-25 05:26:53	▬▬▶	blackmesa (~blackmesa@aftr-37-201-227-225.unity-media.net) has joined #git
+2014-08-25 05:27:03	djc	tobiasvl: neither "git log '\:wq'" nor "git log \:wq" do anything useful
+2014-08-25 05:27:12	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:27:17	djc	the first complains that '\' is an invalid object name
+2014-08-25 05:27:23	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:27:27	djc	the latter complains that "Path 'wq' doesn't exist"
+2014-08-25 05:27:57	◀▬▬	kerrick (~kerrick@50-196-159-42-static.hfc.comcastbusiness.net) has quit (Ping timeout: 246 seconds)
+2014-08-25 05:28:05	▬▬▶	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has joined #git
+2014-08-25 05:28:07	+tobiasvl	djc: don't use single quotes and backslashes together
+2014-08-25 05:28:13	+tobiasvl	escaping only works in double quotes
+2014-08-25 05:28:25	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:28:33	NCS_One	hi
+2014-08-25 05:28:35	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:28:45	◀▬▬	whyy (~whyy@122.167.88.96) has quit (Remote host closed the connection)
+2014-08-25 05:28:55	+tobiasvl	: isn't special in bash, like osse said, but git might be interpreting it specially
+2014-08-25 05:29:09	djc	it appears to be
+2014-08-25 05:29:12	▬▬▶	ockham1 (~Thunderbi@213-33-7-233.adsl.highway.telekom.at) has joined #git
+2014-08-25 05:29:15	▬▬▶	whyy (~whyy@122.167.88.96) has joined #git
+2014-08-25 05:29:17	▬▬▶	D-Boy (~D-Boy@unaffiliated/cain) has joined #git
+2014-08-25 05:29:26	NCS_One	if I have staged and unstaged changes on a folder if I delete that folder will I have any problems?
+2014-08-25 05:30:11	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:30:22	◀▬▬	ockham (~Thunderbi@178-190-251-178.adsl.highway.telekom.at) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:30:24	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:30:26	▬▬▶	teran (~teran@91.220.120.145) has joined #git
+2014-08-25 05:32:14	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:32:24	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:32:28	◀▬▬	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 05:33:28	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:33:37	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:33:47	▬▬▶	freestyl3r (~free@ppp046176022072.access.hol.gr) has joined #git
+2014-08-25 05:35:14	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:35:24	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:35:55	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:36:05	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:36:30	▬▬▶	con_ssc (~hinogi@facade/contributor/hinogi) has joined #git
+2014-08-25 05:36:36	◀▬▬	teran (~teran@91.220.120.145) has quit (Remote host closed the connection)
+2014-08-25 05:36:54	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:37:04	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:37:54	◀▬▬	subhojit777 (~subhojit7@122.163.22.245) has quit (Quit: See ya)
+2014-08-25 05:38:55	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:39:11	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:40:40	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:40:50	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:41:49	▬▬▶	kopparam_ (~kopparam@182.74.238.30) has joined #git
+2014-08-25 05:42:03	▬▬▶	Kulrak (kulrak@122-149-211-149.static.dsl.dodo.com.au) has joined #git
+2014-08-25 05:42:04	◀▬▬	Kulrak (kulrak@122-149-211-149.static.dsl.dodo.com.au) has quit (Changing host)
+2014-08-25 05:42:04	▬▬▶	Kulrak (kulrak@tlug/member/kulrak) has joined #git
+2014-08-25 05:42:15	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:42:27	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:42:34	▬▬▶	lindenle (~lindenle@host-184-167-5-45.jcs-wy.client.bresnan.net) has joined #git
+2014-08-25 05:42:38	◀▬▬	hkon_ (~hkon_@213.167.121.42.static.lyse.net) has quit (Remote host closed the connection)
+2014-08-25 05:42:45	◀▬▬	piccata (~irenacob@li629-190.members.linode.com) has quit (Remote host closed the connection)
+2014-08-25 05:42:57	▬▬▶	ocbtec (~Richard@g225176172.adsl.alicedsl.de) has joined #git
+2014-08-25 05:43:06	◀▬▬	ocbtec (~Richard@g225176172.adsl.alicedsl.de) has quit (Max SendQ exceeded)
+2014-08-25 05:44:02	▬▬▶	dangerousdave (~dangerous@78.156.71.46) has joined #git
+2014-08-25 05:44:16	◀▬▬	kopparam (~kopparam@14.140.219.22) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:44:17	▬▬▶	koppara__ (~kopparam@14.140.219.22) has joined #git
+2014-08-25 05:44:17	◀▬▬	lite_ (~lite@83.151.148.133) has quit (Remote host closed the connection)
+2014-08-25 05:44:24	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:44:34	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:45:06	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:45:08	▬▬▶	Sicp (~ongoing@93.126.203.38) has joined #git
+2014-08-25 05:45:09	◀▬▬	Sicp (~ongoing@93.126.203.38) has quit (Changing host)
+2014-08-25 05:45:09	▬▬▶	Sicp (~ongoing@unaffiliated/odaym) has joined #git
+2014-08-25 05:45:11	▬▬▶	ambrosec1ua (~ambrosech@nusnet-228-27.dynip.nus.edu.sg) has joined #git
+2014-08-25 05:45:17	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:45:28	◀▬▬	kyb3r_ (~kyb3r_@121-99-24-108.bng1.nct.orcon.net.nz) has quit (Read error: Connection reset by peer)
+2014-08-25 05:45:43	--	irc: disconnected from server
+2014-08-25 05:46:03	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-25 05:46:03	--	Topic for #git is "Welcome to #git, the place for git help and rudely-phrased hieroglyphs | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | git is one byte short of a four-letter word"
+2014-08-25 05:46:03	--	Topic set by Eugene (eugene@kashpureff.org) on Sun, 24 Aug 2014 12:31:19
+2014-08-25 05:46:03	--	Channel #git: 1078 nicks (1 op, 41 voices, 1036 normals)
+2014-08-25 05:46:07	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-25 05:46:46	◀▬▬	lindenle (~lindenle@host-184-167-5-45.jcs-wy.client.bresnan.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:47:09	◀▬▬	kopparam_ (~kopparam@182.74.238.30) has quit (Ping timeout: 255 seconds)
+2014-08-25 05:47:12	◀▬▬	ambrosechua (~ambrosech@42.61.71.4) has quit (Ping timeout: 250 seconds)
+2014-08-25 05:47:14	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:47:28	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:47:39	◀▬▬	nnyk_ (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 272 seconds)
+2014-08-25 05:48:05	▬▬▶	fr33domlover (~fr33domlo@fsf/member/fr33domlover) has joined #git
+2014-08-25 05:48:13	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:48:15	◀▬▬	dangerousdave (~dangerous@78.156.71.46) has quit (Client Quit)
+2014-08-25 05:48:23	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:48:32	▬▬▶	nnyk_ (~nnyk@unaffiliated/nnyk) has joined #git
+2014-08-25 05:48:56	◀▬▬	koppara__ (~kopparam@14.140.219.22) has quit (Ping timeout: 250 seconds)
+2014-08-25 05:48:59	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:49:01	▬▬▶	piccata (~irenacob@li629-190.members.linode.com) has joined #git
+2014-08-25 05:49:09	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:50:35	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:50:37	▬▬▶	hkon_ (~hkon_@213.167.121.42.static.lyse.net) has joined #git
+2014-08-25 05:50:47	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:51:21	▬▬▶	A044 (~A044@ns.iomc.ras.ru) has joined #git
+2014-08-25 05:52:25	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:52:32	▬▬▶	jottr (~jottr@unaffiliated/jottr) has joined #git
+2014-08-25 05:52:36	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:52:39	◀▬▬	nnyk_ (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 240 seconds)
+2014-08-25 05:52:47	▬▬▶	stamina (~stamina@83.128.211.177) has joined #git
+2014-08-25 05:53:00	◀▬▬	weiyang (~weiyang@220.248.0.154) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:54:32	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:54:42	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:55:24	▬▬▶	teran (~teran@91.218.144.129) has joined #git
+2014-08-25 05:55:33	▬▬▶	lite_ (~lite@83.151.148.133) has joined #git
+2014-08-25 05:56:04	▬▬▶	teran_ (~teran@91.218.144.129) has joined #git
+2014-08-25 05:56:37	▬▬▶	jftf (~jftf@38.140.21.74) has joined #git
+2014-08-25 05:56:38	▬▬▶	tvw (~tv@212.79.9.150) has joined #git
+2014-08-25 05:58:01	--	irc: disconnected from server
+2014-08-25 05:58:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-25 05:58:16	--	Topic for #git is "Welcome to #git, the place for git help and rudely-phrased hieroglyphs | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | git is one byte short of a four-letter word"
+2014-08-25 05:58:16	--	Topic set by Eugene (eugene@kashpureff.org) on Sun, 24 Aug 2014 12:31:19
+2014-08-25 05:58:17	--	Channel #git: 1082 nicks (1 op, 41 voices, 1040 normals)
+2014-08-25 05:58:23	moritz	you'll have staged and unstaged changes after the deletion too
+2014-08-25 05:58:28	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-25 05:58:33	moritz	dunno if that counts as "problems"
+2014-08-25 05:58:56	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:59:04	◀▬▬	kcj (~casey@unaffiliated/kcj) has quit (Remote host closed the connection)
+2014-08-25 05:59:12	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 05:59:24	◀▬▬	ambrosec1ua (~ambrosech@nusnet-228-27.dynip.nus.edu.sg) has quit (Quit: leaving)
+2014-08-25 05:59:36	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 05:59:46	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 06:00:02	▬▬▶	cvanball (~cvanball@a80-101-226-96.adsl.xs4all.nl) has joined #git
+2014-08-25 06:00:10	◀▬▬	avvs (~avvs@gateway/tor-sasl/avvs) has quit (Ping timeout: 264 seconds)
+2014-08-25 06:00:14	◀▬▬	teran (~teran@91.218.144.129) has quit (Ping timeout: 260 seconds)
+2014-08-25 06:00:20	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 06:00:29	◀▬▬	Naeblis (~Naeblis@unaffiliated/naeblis) has quit (Ping timeout: 260 seconds)
+2014-08-25 06:00:30	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 06:00:31	▬▬▶	Nae (~Naeblis@unaffiliated/naeblis) has joined #git
+2014-08-25 06:01:14	▬▬▶	eburcat (~eburcat@82.166.16.230) has joined #git
+2014-08-25 06:01:17	◀▬▬	SJS (~stremler@kernel-panic/member/ThunderChicken) has quit (Ping timeout: 240 seconds)
+2014-08-25 06:01:21	◀▬▬	jftf (~jftf@38.140.21.74) has quit (Ping timeout: 245 seconds)
+2014-08-25 06:02:22	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 06:02:32	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 06:02:33	--	irc: disconnected from server
+2014-08-25 06:02:48	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-25 06:02:48	--	Topic for #git is "Welcome to #git, the place for git help and rudely-phrased hieroglyphs | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | git is one byte short of a four-letter word"
+2014-08-25 06:02:48	--	Topic set by Eugene (eugene@kashpureff.org) on Sun, 24 Aug 2014 12:31:19
+2014-08-25 06:02:48	--	Channel #git: 1079 nicks (1 op, 41 voices, 1037 normals)
+2014-08-25 06:03:03	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-25 06:03:12	◀▬▬	SittingShiva (~textual@67.8.161.3) has quit (Quit: My iMac has gone to sleep. ZZZzzz…)
+2014-08-25 06:03:13	◀▬▬	mechanicalduck_ (~mechanica@ip-109-45-0-139.web.vodafone.de) has quit (Read error: Connection reset by peer)
+2014-08-25 06:03:17	◀▬▬	stamina (~stamina@83.128.211.177) has quit (Ping timeout: 260 seconds)
+2014-08-25 06:03:38	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 06:03:46	▬▬▶	SittingShiva (~textual@67.8.161.3) has joined #git
+2014-08-25 06:03:48	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 06:04:44	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 06:04:54	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 06:05:46	▬▬▶	quetzakubica (~redsky@94.42.194.58) has joined #git
+2014-08-25 06:05:56	◀▬▬	quetzakubica (~redsky@94.42.194.58) has quit (Max SendQ exceeded)
+2014-08-25 06:07:34	◀▬▬	Marcus (~Marcus@c114-112.oskarnet.se) has quit (Disconnected by services)
+2014-08-25 06:07:57	--	irc: disconnected from server
+2014-08-25 19:12:01	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-25 19:12:01	--	Topic for #git is "Welcome to #git, the place for git help and recursion | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Yo dawg we heard you like commits so we put some commits in your tree so you can add submodules while you commit"
+2014-08-25 19:12:01	--	Topic set by Eugene (eugene@kashpureff.org) on Mon, 25 Aug 2014 11:12:37
+2014-08-25 19:12:01	--	Channel #git: 1055 nicks (1 op, 35 voices, 1019 normals)
+2014-08-25 19:12:11	◀▬▬	mfmfmfmfmfmf (~mfmfmfmfm@cpc8-sgyl32-2-0-cust760.18-2.cable.virginm.net) has quit (Remote host closed the connection)
+2014-08-25 19:12:16	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-25 19:12:32	▬▬▶	diegoviola (~diego@unaffiliated/diegoviola) has joined #git
+2014-08-25 19:12:43	▬▬▶	mfmfmfmfmfmf (~mfmfmfmfm@cpc8-sgyl32-2-0-cust760.18-2.cable.virginm.net) has joined #git
+2014-08-25 19:13:25	▬▬▶	epifanio (~chatzilla@74-94-155-26-NewEngland.hfc.comcastbusiness.net) has joined #git
+2014-08-25 19:13:39	▬▬▶	yowzamonk (~rajeevalm@ool-6bbc1081.dyn.optonline.net) has joined #git
+2014-08-25 19:13:46	▬▬▶	akurilin (~alex@208.185.21.146) has joined #git
+2014-08-25 19:13:49	▬▬▶	LucasTT (~lucastt@201-79-168-158.user.veloxzone.com.br) has joined #git
+2014-08-25 19:14:10	akurilin	So I recently did a dist upgrade of my ubuntu 14.04 instance and all my git repos suddenly got corrupted
+2014-08-25 19:14:23	◀▬▬	hexagoxel (~hexagoxel@p20030058EF31AB003E970EFFFE922988.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:14:34	akurilin	re-fetching them from remote works, but I have a bajillion of them
+2014-08-25 19:14:35	◀▬▬	PrasangChhetri (~Prasang@159.140.254.98) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:15:20	◀▬▬	spareproject (~spareproj@0546d554.skybroadband.com) has quit (Remote host closed the connection)
+2014-08-25 19:15:25	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-cnacfoxznhtpjiqb) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:15:42	--	irc: disconnected from server
+2014-08-25 19:16:01	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-25 19:16:01	--	Topic for #git is "Welcome to #git, the place for git help and recursion | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Yo dawg we heard you like commits so we put some commits in your tree so you can add submodules while you commit"
+2014-08-25 19:16:01	--	Topic set by Eugene (eugene@kashpureff.org) on Mon, 25 Aug 2014 11:12:54
+2014-08-25 19:16:01	--	Channel #git: 1055 nicks (1 op, 35 voices, 1019 normals)
+2014-08-25 19:16:01	▬▬▶	PrasangChhetri (~Prasang@159.140.254.98) has joined #git
+2014-08-25 19:16:16	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-25 19:16:30	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-gwcscsnmldknletv) has joined #git
+2014-08-25 19:16:42	▬▬▶	rjhunter (~rhunter@ppp118-209-14-93.lns20.mel4.internode.on.net) has joined #git
+2014-08-25 19:16:49	osse	find . -name .git -execdir git fetch \;
+2014-08-25 19:16:51	osse	Yaaay
+2014-08-25 19:17:10	▬▬▶	Internet13 (~chatzilla@cpc15-croy20-2-0-cust382.croy.cable.virginm.net) has joined #git
+2014-08-25 19:17:11	◀▬▬	frankdogg (~frankdogg@r74-195-192-205.end1cmtc01.enidok.ok.dh.suddenlink.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:17:15	◀▬▬	mfmfmfmfmfmf (~mfmfmfmfm@cpc8-sgyl32-2-0-cust760.18-2.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:17:20	akurilin	Sorry I explained poorly: re-cloning from remote
+2014-08-25 19:17:50	◀▬▬	yowzamonk (~rajeevalm@ool-6bbc1081.dyn.optonline.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:17:50	◀▬▬	jottr (~jottr@unaffiliated/jottr) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:18:34	◀▬▬	acharlieh (~acharlieh@ip-64-134-127-4.public.wayport.net) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 19:18:54	▬▬▶	sdrfnord1 (~sdrfnord@213.153.84.215) has joined #git
+2014-08-25 19:20:19	◀▬▬	genome (~gboggs@cinci.whapps.com) has left #git
+2014-08-25 19:20:21	◀▬▬	kukks (~Guenter@samba/team/kukks) has quit (Quit: Going home ...)
+2014-08-25 19:20:38	◀▬▬	beneggett (~beneggett@207.109.159.194) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:20:57	◀▬▬	mueslo (~mueslo@p54B434E4.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-08-25 19:21:16	◀▬▬	kriskropd (~kris@unaffiliated/kriskropd) has quit (Quit: leaving)
+2014-08-25 19:21:19	◀▬▬	rjhunter (~rhunter@ppp118-209-14-93.lns20.mel4.internode.on.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:21:47	◀▬▬	smitzer (~weeik@m83-180-181-28.cust.tele2.se) has quit (Quit: Leaving)
+2014-08-25 19:23:04	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:23:06	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-gwcscsnmldknletv) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:23:18	akurilin	No idea what made all of those repos corrupt
+2014-08-25 19:25:07	▬▬▶	devoldmx3 (~devoldmx@200.38.186.20) has joined #git
+2014-08-25 19:25:29	◀▬▬	sdrfnord1 (~sdrfnord@213.153.84.215) has quit (Quit: Leaving.)
+2014-08-25 19:25:45	▬▬▶	frankdogg (~frankdogg@r74-195-192-205.end1cmtc01.enidok.ok.dh.suddenlink.net) has joined #git
+2014-08-25 19:26:54	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #git
+2014-08-25 19:27:59	▬▬▶	madewokherd (~urk@c-24-118-59-39.hsd1.mn.comcast.net) has joined #git
+2014-08-25 19:28:30	◀▬▬	devoldmx (~devoldmx@fixed-203-217-110.iusacell.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:29:00	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:30:27	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #git
+2014-08-25 19:31:00	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-pocwwgwkrjxeyvjx) has joined #git
+2014-08-25 19:31:35	▬▬▶	jftf (~jftf@38.140.21.74) has joined #git
+2014-08-25 19:32:05	◀▬▬	godgodgodgo_ (~quassel@cpc26-heme10-2-0-cust717.9-1.cable.virginm.net) has quit (Remote host closed the connection)
+2014-08-25 19:32:43	◀▬▬	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-25 19:33:27	◀▬▬	marscher (~marscher@xdsl-78-34-210-28.netcologne.de) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:33:34	◀▬▬	siprbaum (~siprbaum@m62s10.vlinux.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:33:34	◀▬▬	mlq (~mlq@unaffiliated/mlq) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:33:51	◀▬▬	crater2150 (~crater215@fasel.nerd2nerd.org) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:34:14	▬▬▶	fstd_ (~fstd@unaffiliated/fisted) has joined #git
+2014-08-25 19:34:18	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Read error: Connection reset by peer)
+2014-08-25 19:34:21	◀▬▬	tanath (~tanath@gateway/tor-sasl/tanath) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:34:25	▬▬▶	siprbaum (~siprbaum@m62s10.vlinux.de) has joined #git
+2014-08-25 19:34:38	--	fstd_ is now known as fstd
+2014-08-25 19:34:40	◀▬▬	ockham1 (~Thunderbi@213-33-7-233.adsl.highway.telekom.at) has quit (Remote host closed the connection)
+2014-08-25 19:34:52	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:35:29	◀▬▬	devoldmx3 (~devoldmx@200.38.186.20) has quit (Read error: Connection reset by peer)
+2014-08-25 19:35:33	▬▬▶	simesy (~simesy@pa49-182-142-252.pa.nsw.optusnet.com.au) has joined #git
+2014-08-25 19:35:52	▬▬▶	tanath (~tanath@gateway/tor-sasl/tanath) has joined #git
+2014-08-25 19:36:02	◀▬▬	jftf (~jftf@38.140.21.74) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:36:16	▬▬▶	mlq (~mlq@unaffiliated/mlq) has joined #git
+2014-08-25 19:36:17	▬▬▶	Willow (~Dillow@164.215.22.41) has joined #git
+2014-08-25 19:36:20	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #git
+2014-08-25 19:36:25	▬▬▶	devoldmx3 (~devoldmx@200.38.186.20) has joined #git
+2014-08-25 19:36:30	▬▬▶	crater2150 (~crater215@fasel.nerd2nerd.org) has joined #git
+2014-08-25 19:37:41	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-pocwwgwkrjxeyvjx) has quit (Read error: Connection reset by peer)
+2014-08-25 19:38:04	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-hkudyuydyzyoqxsx) has joined #git
+2014-08-25 19:38:17	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:39:30	◀▬▬	zumba_ad_ (~zumba_add@99-116-56-222.lightspeed.cicril.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2014-08-25 19:40:12	◀▬▬	devoldmx3 (~devoldmx@200.38.186.20) has quit (Read error: Connection reset by peer)
+2014-08-25 19:40:13	▬▬▶	zumba_addict (~zumba_add@99-116-56-222.lightspeed.cicril.sbcglobal.net) has joined #git
+2014-08-25 19:40:32	▬▬▶	devoldmx (~devoldmx@200.38.186.20) has joined #git
+2014-08-25 19:40:51	◀▬▬	robzilla (~robarelli@108.181.108.164) has quit
+2014-08-25 19:41:26	◀▬▬	tirengarfio (~tirengarf@142.Red-81-37-188.dynamicIP.rima-tde.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:41:48	◀▬▬	JanC (~janc@lugwv/member/JanC) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:42:16	◀▬▬	Robarelli (Robarelli@108.181.108.164) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:42:32	▬▬▶	rjhunter (~rhunter@ppp118-209-14-93.lns20.mel4.internode.on.net) has joined #git
+2014-08-25 19:42:51	◀▬▬	SimonNa (~simon@p5B0390AA.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2014-08-25 19:43:47	◀▬▬	St_Marx (~Saint_Mar@gateway/tor-sasl/stmarx/x-88752187) has quit (Quit: Ex-Chat)
+2014-08-25 19:44:51	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-hkudyuydyzyoqxsx) has quit (Read error: Connection reset by peer)
+2014-08-25 19:45:15	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-ufqjxobnbipndxcr) has joined #git
+2014-08-25 19:45:15	◀▬▬	devoldmx (~devoldmx@200.38.186.20) has quit (Read error: Connection reset by peer)
+2014-08-25 19:45:39	▬▬▶	devoldmx3 (~devoldmx@200.38.186.20) has joined #git
+2014-08-25 19:45:42	▬▬▶	tirengarfio (~tirengarf@89.Red-83-55-84.dynamicIP.rima-tde.net) has joined #git
+2014-08-25 19:46:27	▬▬▶	RDove (~RDove@unaffiliated/rdove) has joined #git
+2014-08-25 19:47:00	▬▬▶	snufft_ (31b81c9b@gateway/web/freenode/ip.49.184.28.155) has joined #git
+2014-08-25 19:47:24	snufft_	hi guys :)
+2014-08-25 19:47:47	Vampire0	Hi guy
+2014-08-25 19:48:24	▬▬▶	St_Marx (~Saint_Mar@gateway/tor-sasl/stmarx/x-88752187) has joined #git
+2014-08-25 19:48:38	snufft_	i've got a couple of files in my stash. a few of them that have the same extension (.css) can all be discarded. is there either a way that I can discard just those files from my stash, or exclude them when i'm doing a diff against the current working branch?
+2014-08-25 19:48:52	snufft_	Hi Vampire0 :D
+2014-08-25 19:48:53	Vampire0	akurilin, maybe re-clone one of those and compare to a corrupt one to see what the difference is
+2014-08-25 19:48:55	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-25 19:49:07	◀▬▬	PrasangChhetri (~Prasang@159.140.254.98) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:49:10	▬▬▶	p4sh4 (~p4sh4@n219077082074.netvigator.com) has joined #git
+2014-08-25 19:50:04	▬▬▶	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has joined #git
+2014-08-25 19:50:04	◀▬▬	p4sh4 (~p4sh4@n219077082074.netvigator.com) has quit (Read error: Connection reset by peer)
+2014-08-25 19:50:12	▬▬▶	p4sh4 (~p4sh4@n219077082074.netvigator.com) has joined #git
+2014-08-25 19:50:27	◀▬▬	devoldmx3 (~devoldmx@200.38.186.20) has quit (Read error: Connection reset by peer)
+2014-08-25 19:51:13	▬▬▶	devoldmx3 (~devoldmx@200.38.186.20) has joined #git
+2014-08-25 19:51:18	--	kpease__ is now known as kpease
+2014-08-25 19:51:19	▬▬▶	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has joined #git
+2014-08-25 19:52:16	▬▬▶	nedbat (~nedbat@python/psf/nedbat) has joined #git
+2014-08-25 19:52:44	◀▬▬	RDove (~RDove@unaffiliated/rdove) has quit
+2014-08-25 19:52:55	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-ufqjxobnbipndxcr) has quit (Read error: Connection reset by peer)
+2014-08-25 19:53:15	◀▬▬	Nicholas_Rishel (~quassel@72.12.220.133) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:53:18	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-plilvvepbrzxmhgr) has joined #git
+2014-08-25 19:53:25	▬▬▶	Zifre (~Zifre@unaffiliated/zifre) has joined #git
+2014-08-25 19:55:03	◀▬▬	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has quit (Ping timeout: 272 seconds)
+2014-08-25 19:56:22	▬▬▶	JanC (~janc@lugwv/member/JanC) has joined #git
+2014-08-25 19:56:39	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-plilvvepbrzxmhgr) has quit (Read error: Connection reset by peer)
+2014-08-25 19:57:12	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-kpcghfnmjklaqiam) has joined #git
+2014-08-25 19:57:26	◀▬▬	AlexZan (~Alex@d24-150-179-131.home.cgocable.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:57:26	◀▬▬	vmiklos (~vmiklos@catv-89-134-54-114.catv.broadband.hu) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:59:56	◀▬▬	koi (~koi@127.177-66-87.adsl-dyn.isp.belgacom.be) has quit (Quit: I quit)
+2014-08-25 20:00:09	▬▬▶	devoldmx (~devoldmx@fixed-203-217-214.iusacell.net) has joined #git
+2014-08-25 20:00:59	Vampire0	snufft_: git diff --name-only stash | grep -v '\.css$' | xargs git diff stash
+2014-08-25 20:02:35	◀▬▬	devoldmx3 (~devoldmx@200.38.186.20) has quit (Ping timeout: 255 seconds)
+2014-08-25 20:03:53	snufft_	Vampire0: holy crap! No wonder I couldn't figure it out :P
+2014-08-25 20:04:58	▬▬▶	flowerhack (~flowerhac@2601:6:7e80:241:2acf:daff:fee9:f51c) has joined #git
+2014-08-25 20:05:26	◀▬▬	hyperair (~hyperair@ubuntu/member/hyperair) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:05:45	▬▬▶	FunkyELF (~FunkyELF@99-36-189-64.lightspeed.chrlnc.sbcglobal.net) has joined #git
+2014-08-25 20:06:20	FunkyELF	I have a copy of a file from a Git repo... the master branch is different from it... how can I go back and see what version I have?
+2014-08-25 20:06:24	◀▬▬	devbug_ (~quassel@S0106b8c75dc6cdf5.vc.shawcable.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 20:06:32	FunkyELF	.... like the latest commit with that version or the earliest?
+2014-08-25 20:06:59	kadoban	FunkyELF: Maybe you can use git bisect and diff?
+2014-08-25 20:07:27	◀▬▬	rvsjoen (~rvsjoen@unaffiliated/rvsjoen) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:07:58	FunkyELF	kadoban: sounds like fun, I've never had to bisect before
+2014-08-25 20:08:55	kadoban	Yeah, it's really useful stuff. It's mostly used for finding what commit caused a bug, but a little lateral thinking should make it apply to your problem as well quite easily. Let me know if you run into trouble
+2014-08-25 20:09:10	▬▬▶	fold (~JimmyRcom@66-169-184-128.dhcp.ftwo.tx.charter.com) has joined #git
+2014-08-25 20:09:23	◀▬▬	mikeric (~mikeric@S010618593348903f.vc.shawcable.net) has quit
+2014-08-25 20:09:45	FunkyELF	kadoban: well... the current one is bad but it also wants to know a "good" one.  Should I just find the first commit with this file and say it was good?
+2014-08-25 20:10:09	▬▬▶	rvsjoen (~rvsjoen@38.79-160-94.customer.lyse.net) has joined #git
+2014-08-25 20:10:09	◀▬▬	rvsjoen (~rvsjoen@38.79-160-94.customer.lyse.net) has quit (Changing host)
+2014-08-25 20:10:09	▬▬▶	rvsjoen (~rvsjoen@unaffiliated/rvsjoen) has joined #git
+2014-08-25 20:10:26	kadoban	FunkyELF: If that's easy to do, yeah that'd work
+2014-08-25 20:10:28	▬▬▶	aspiers (~aspiers@2001:8b0:11a6:73d0:f2de:f1ff:fecb:6279) has joined #git
+2014-08-25 20:11:10	kadoban	Hmm, if that's not easy to do, then I may have given you bad advice, hehh.. :-/
+2014-08-25 20:13:16	pekster	bisect has corner-cases too, like when a secondary problem crops up making it impossible to isolate 1 issue without also de-tangling another. Obviously bugs should be more sportsmanly and helpfully come up one at a time
+2014-08-25 20:13:59	 *	pekster wants the git comand to do what was intended, not what was programmed!
+2014-08-25 20:14:29	▬▬▶	nb_bez__ (uid24701@gateway/web/irccloud.com/x-iigzlojovkewdtfq) has joined #git
+2014-08-25 20:15:31	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-25 20:15:38	▬▬▶	vmiklos (~vmiklos@catv-89-134-54-114.catv.broadband.hu) has joined #git
+2014-08-25 20:15:45	▬▬▶	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has joined #git
+2014-08-25 20:17:18	▬▬▶	adam1 (~adymitruk@S010600226b9201c8.vc.shawcable.net) has joined #git
+2014-08-25 20:17:45	◀▬▬	descala (~descala@220.146.15.37.dynamic.jazztel.es) has quit (Read error: Connection reset by peer)
+2014-08-25 20:18:13	Vampire0	snufft_, dunno whether there is an easier way, but I don't know one. Just made that up for you :-)
+2014-08-25 20:18:24	--	adam1 is now known as adymitruk
+2014-08-25 20:18:31	◀▬▬	Xethron (~Xethron@unaffiliated/xethron) has quit (Ping timeout: 245 seconds)
+2014-08-25 20:18:46	◀▬▬	moritzschaefer (~moritz@stgt-5f70180e.pool.mediaWays.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:18:55	◀▬▬	sjmikem (~mmigdol@ipsec.igware.com) has quit (Remote host closed the connection)
+2014-08-25 20:19:00	▬▬▶	mike_af_ (~mike_af@c-66-41-226-143.hsd1.mn.comcast.net) has joined #git
+2014-08-25 20:19:30	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #git
+2014-08-25 20:19:48	▬▬▶	nectarys_ (~nectarys@41.228.206.35) has joined #git
+2014-08-25 20:19:49	◀▬▬	nectarys_ (~nectarys@41.228.206.35) has quit (Client Quit)
+2014-08-25 20:20:12	▬▬▶	logix812 (~Adam@cpe-76-90-192-8.socal.res.rr.com) has joined #git
+2014-08-25 20:20:16	◀▬▬	rpg (~rpg@198-74-7-110.fttp.usinternet.com) has quit (Quit: rpg)
+2014-08-25 20:20:18	◀▬▬	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 20:20:54	◀▬▬	Emperor_Earth (~Emperor_E@cblmdm134-228-200-6.buckeyecom.net) has quit (Quit: Leaving)
+2014-08-25 20:21:27	◀▬▬	dreiss (~dreiss@2620:10d:c082:1003:c199:1aa0:bcc1:f273) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:21:52	◀▬▬	snufft_ (31b81c9b@gateway/web/freenode/ip.49.184.28.155) has quit (Ping timeout: 246 seconds)
+2014-08-25 20:22:58	--	Adam_ActiveState is now known as Adam_IRCCloud
+2014-08-25 20:23:11	--	adymitruk is now known as Adam_ActiveState
+2014-08-25 20:23:30	◀▬▬	rjhunter (~rhunter@ppp118-209-14-93.lns20.mel4.internode.on.net) has quit (Remote host closed the connection)
+2014-08-25 20:23:47	◀▬▬	p4sh4 (~p4sh4@n219077082074.netvigator.com) has quit
+2014-08-25 20:23:57	▬▬▶	p4sh4 (~p4sh4@n219077082074.netvigator.com) has joined #git
+2014-08-25 20:24:13	◀▬▬	p4sh4 (~p4sh4@n219077082074.netvigator.com) has quit (Remote host closed the connection)
+2014-08-25 20:25:54	Sasazuka	creating a feature branch (e.g. git cehckout -b feature/XXX) will not remove my local untracked changes will it?
+2014-08-25 20:26:01	▬▬▶	JTF195 (~JTF195@static-173-75-39-6.pitbpa.fios.verizon.net) has joined #git
+2014-08-25 20:26:17	Sasazuka	new files that I've added that is
+2014-08-25 20:26:28	--	irc: disconnected from server
+2014-08-25 21:26:22	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-25 21:26:22	--	Topic for #git is "Welcome to #git, the place for git help and recursion | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | Yo dawg we heard you like commits so we put some commits in your tree so you can add submodules while you commit"
+2014-08-25 21:26:22	--	Topic set by Eugene (eugene@kashpureff.org) on Mon, 25 Aug 2014 11:12:54
+2014-08-25 21:26:22	--	Channel #git: 1041 nicks (1 op, 35 voices, 1005 normals)
+2014-08-25 21:26:38	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-25 21:27:14	▬▬▶	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has joined #git
+2014-08-25 21:27:50	◀▬▬	DigitallyBorn (~rsmith@unaffiliated/digitallyborn) has quit (Quit: Leaving)
+2014-08-25 21:29:41	◀▬▬	logix812 (~Adam@cpe-76-90-192-8.socal.res.rr.com) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 21:30:08	▬▬▶	Pyrogerg (~Gregory@75-173-66-157.albq.qwest.net) has joined #git
+2014-08-25 21:30:28	◀▬▬	Wulf (~Wulf@unaffiliated/wulf) has quit (Ping timeout: 264 seconds)
+2014-08-25 21:31:32	▬▬▶	fstd_ (~fstd@unaffiliated/fisted) has joined #git
+2014-08-25 21:32:16	▬▬▶	robbyoconnor (~wakawaka@guifications/user/r0bby) has joined #git
+2014-08-25 21:32:38	▬▬▶	nfk (~nfk@unaffiliated/nfk) has joined #git
+2014-08-25 21:32:46	▬▬▶	jftf (~jftf@38.140.21.74) has joined #git
+2014-08-25 21:32:59	▬▬▶	daito (~daito@203.104.128.123) has joined #git
+2014-08-25 21:33:19	▬▬▶	jcarloz (~jcarloz@115.187.240.134) has joined #git
+2014-08-25 21:33:24	◀▬▬	jcarloz (~jcarloz@115.187.240.134) has quit (Max SendQ exceeded)
+2014-08-25 21:34:04	▬▬▶	Fauve (~Fauve@unaffiliated/fauve) has joined #git
+2014-08-25 21:34:04	◀▬▬	devoldmx (~devoldmx@fixed-203-217-214.iusacell.net) has quit (Ping timeout: 264 seconds)
+2014-08-25 21:34:07	Fauve	Hello people o/
+2014-08-25 21:34:08	@gitinfo	Fauve: hi! I'd like to automatically welcome you to #git, a place full of helpful gits. Got a question? Just ask it — chances are someone will answer fairly soon. The topic has links with more information about git and this channel. NB. it can't hurt to do a backup (type !backup for help) before trying things out, especially if they involve dangerous keywords such as --hard, clean, --force/-f, rm and so on.
+2014-08-25 21:34:19	▬▬▶	jcarloz (~jcarloz@115.187.240.134) has joined #git
+2014-08-25 21:34:25	◀▬▬	jcarloz (~jcarloz@115.187.240.134) has quit (Max SendQ exceeded)
+2014-08-25 21:34:26	◀▬▬	JosephFerano (~josephfer@216.3.159.67) has quit (Quit: JosephFerano)
+2014-08-25 21:34:55	▬▬▶	JosephFerano (~josephfer@12.167.51.34) has joined #git
+2014-08-25 21:35:01	◀▬▬	JosephFerano (~josephfer@12.167.51.34) has quit (Client Quit)
+2014-08-25 21:35:14	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:35:15	--	fstd_ is now known as fstd
+2014-08-25 21:35:38	◀▬▬	tmcmahon (~Thunderbi@d-230.lcom.net) has quit (Quit: tmcmahon)
+2014-08-25 21:35:53	▬▬▶	jcarloz (~jcarloz@115.187.240.134) has joined #git
+2014-08-25 21:35:59	◀▬▬	jcarloz (~jcarloz@115.187.240.134) has quit (Max SendQ exceeded)
+2014-08-25 21:36:19	▬▬▶	fairuz (~fairuz@unaffiliated/fairuz) has joined #git
+2014-08-25 21:36:24	▬▬▶	BiggFREE (~BiggFREE@modemcable168.154-22-96.mc.videotron.ca) has joined #git
+2014-08-25 21:37:39	◀▬▬	jftf (~jftf@38.140.21.74) has quit (Ping timeout: 272 seconds)
+2014-08-25 21:37:51	▬▬▶	c3p0_ (~chatzilla@180.166.157.114) has joined #git
+2014-08-25 21:38:14	▬▬▶	tokik (~tokik@122x212x176x138.ap122.ftth.ucom.ne.jp) has joined #git
+2014-08-25 21:38:19	◀▬▬	_thumpba (~thumpba@99-180-68-233.lightspeed.irvnca.sbcglobal.net) has quit (Remote host closed the connection)
+2014-08-25 21:38:52	◀▬▬	Polymorphism (~textual@198.144.157.182) has quit (Ping timeout: 264 seconds)
+2014-08-25 21:40:11	◀▬▬	netcarver (~netcarver@87.114.240.6) has quit (Ping timeout: 245 seconds)
+2014-08-25 21:40:15	▬▬▶	k_sze[work] (~kvirc@unaffiliated/kira) has joined #git
+2014-08-25 21:40:56	◀▬▬	Pyrogerg (~Gregory@75-173-66-157.albq.qwest.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 21:41:16	▬▬▶	sgambino (~sgambino@cpe-174-109-067-127.nc.res.rr.com) has joined #git
+2014-08-25 21:41:19	Fauve	Please, how can I remove the last commit on the branch master ?
+2014-08-25 21:44:08	--	Vampire0_ is now known as Vampire0
+2014-08-25 21:44:12	Vampire0	Fauve, !revert
+2014-08-25 21:44:12	@gitinfo	Fauve: That's a rather ambiguous question... options: a) make a commit that "undoes" the effects of an earlier commit [man git-revert]; b) discard uncommitted changes in the working tree [git reset --hard]; c) undo committing [git reset --soft HEAD^]; d) restore staged versions of files [git checkout -p]; e) move the current branch to a different point(possibly losing commits)[git reset --hard $COMMIT]?
+2014-08-25 21:45:04	◀▬▬	Noldorin (~noldorin@unaffiliated/noldorin) has quit (Quit: -)
+2014-08-25 21:45:30	◀▬▬	darkbasic (~quassel@niko.linuxsystems.it) has quit (Remote host closed the connection)
+2014-08-25 21:45:58	◀▬▬	Brycetron (trawn@138.229.158.34) has quit
+2014-08-25 21:46:07	▬▬▶	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has joined #git
+2014-08-25 21:46:11	▬▬▶	darkbasic (~quassel@niko.linuxsystems.it) has joined #git
+2014-08-25 21:46:55	Fauve	Vampire0: so, how can I know the ID of a comit to discard it?
+2014-08-25 21:47:04	▬▬▶	case39 (case39@shell.bshellz.net) has joined #git
+2014-08-25 21:47:04	▬▬▶	Kwpolska (kwpolska@unaffiliated/kwpolska) has joined #git
+2014-08-25 21:47:30	▬▬▶	sleepee (~sleepee@173.215.186.158) has joined #git
+2014-08-25 21:48:58	◀▬▬	Willow (~Dillow@164.215.22.41) has quit (Quit: Lingo - http://www.lingoirc.com)
+2014-08-25 21:49:57	◀▬▬	BiggFREE (~BiggFREE@modemcable168.154-22-96.mc.videotron.ca) has quit (Remote host closed the connection)
+2014-08-25 21:51:33	▬▬▶	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has joined #git
+2014-08-25 21:52:08	▬▬▶	blahdodo (~blahdodo@69.172.154.103) has joined #git
+2014-08-25 21:52:24	▬▬▶	Polymorphism (~textual@198.144.157.182) has joined #git
+2014-08-25 21:53:23	▬▬▶	sohail (~user@unaffiliated/sohail) has joined #git
+2014-08-25 21:53:32	Vampire0	Fauve, man git log
+2014-08-25 21:53:32	@gitinfo	Fauve: the git-log manpage is available at http://jk.gs/git-log.html
+2014-08-25 21:53:33	◀▬▬	a_le (~a_le@nat/cisco/x-yakrqpixzthuspcu) has quit (Remote host closed the connection)
+2014-08-25 21:53:38	Vampire0	Fauve, but you don't need the id
+2014-08-25 21:53:55	Vampire0	if it is the commit you have checked out, you can say HEAD
+2014-08-25 21:54:10	Vampire0	if it is not the commit you have checked out, but the tip of a branch it is the branchs name
+2014-08-25 21:54:18	Fauve	Vampire0: it isn’t the last one in all branch.
+2014-08-25 21:54:32	Vampire0	Fauve, you can also look at man git revisions for other ways to specify commits
+2014-08-25 21:54:32	@gitinfo	Fauve: the git manpage is available at http://jk.gs/git.html
+2014-08-25 21:54:40	Vampire0	Fauve, you can also look at man gitrevisions for other ways to specify commits
+2014-08-25 21:54:40	@gitinfo	Fauve: the gitrevisions manpage is available at http://jk.gs/gitrevisions.html
+2014-08-25 21:54:51	kaendfinger	git notes are interesting. We use them a lot at my company. But is there a way to clone a repository with the fetch = refs/notes/{refname} already in there?
+2014-08-25 21:54:51	Vampire0	Fauve, what isn't the last one?
+2014-08-25 21:55:03	◀▬▬	jonmorehouse (~jonmoreho@208.184.108.68) has quit (Ping timeout: 240 seconds)
+2014-08-25 21:55:05	Vampire0	Fauve, what exactly do you want to achieve?
+2014-08-25 21:55:31	Fauve	Vampire0: I whant to delet the last commit on master, but this commit it is not the last on on all branches, you see?
+2014-08-25 21:55:40	Fauve	I did a comits after but not in master.
+2014-08-25 21:55:44	kaendfinger	or even if there isn't a way to do it on clone
+2014-08-25 21:56:00	kaendfinger	is there a way to add it to the .git/config without editing it on your own?
+2014-08-25 21:56:20	Fauve	kaendfinger: simply, how can I get a lit of commits ?
+2014-08-25 21:56:26	◀▬▬	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 21:56:32	Fauve	git-commit-tree is a bullshit.
+2014-08-25 21:56:38	kaendfinger	O.O
+2014-08-25 21:56:39	kaendfinger	git log
+2014-08-25 21:56:45	Fauve	when I do git commit-tree master, it take a lot of time.
+2014-08-25 21:56:53	Fauve	Oh yes :)
+2014-08-25 21:57:10	◀▬▬	skorgon (~skorgon@gateway/tor-sasl/skorgon) has quit (Ping timeout: 264 seconds)
+2014-08-25 21:57:19	 *	kaendfinger suggests that users should actually LEARN stuff before attempting to use it
+2014-08-25 21:57:30	kaendfinger	Also, check out my epic gitconfig https://gist.github.com/kaendfinger/a8acd03ec442e40176d6
+2014-08-25 21:57:35	▬▬▶	skorgon (~skorgon@gateway/tor-sasl/skorgon) has joined #git
+2014-08-25 21:57:39	kaendfinger		fetch-pulls = fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
+2014-08-25 21:57:46	Fauve	kaendfinger: the problem is git log didn’t show the branch wher a comit was done.
+2014-08-25 21:58:35	kaendfinger	Anyone else wanna explain why that is
+2014-08-25 21:58:48	kaendfinger	I don't feel like explaining how commits are really on a branch
+2014-08-25 21:59:01	kaendfinger	a/are/aren't
+2014-08-25 21:59:10	◀▬▬	m0ltar (~moltar@96.127.238.41) has quit (Quit: peace.)
+2014-08-25 21:59:10	kaendfinger	git log --pretty='format:%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+2014-08-25 21:59:34	◀▬▬	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 22:00:02	Fauve	All this is weird :/
+2014-08-25 22:00:13	kaendfinger	No It's not
+2014-08-25 22:00:14	kaendfinger	lol
+2014-08-25 22:00:30	◀▬▬	Ksg89 (~quassel@2a02:2658:1011:1::2:2252) has quit (Quit: No Ping reply in 180 seconds.)
+2014-08-25 22:00:35	kaendfinger	Git is the best thing that ever happened to Revision Control
+2014-08-25 22:00:37	▬▬▶	dreiss (~dreiss@23-24-202-9-static.hfc.comcastbusiness.net) has joined #git
+2014-08-25 22:00:37	kaendfinger	lol
+2014-08-25 22:00:42	◀▬▬	kpreid (~kpreid@50.250.223.109) has quit (Quit: Quitting)
+2014-08-25 22:00:43	Fauve	I feel a litle bit disappointed by git :/
+2014-08-25 22:00:48	▬▬▶	Ksg89 (~quassel@2a02:2658:1011:1::2:2252) has joined #git
+2014-08-25 22:00:49	◀▬▬	Terminus- (~null@unaffiliated/terminus) has quit (Quit: leaving)
+2014-08-25 22:00:54	▬▬▶	kpreid (~kpreid@50.250.223.109) has joined #git
+2014-08-25 22:00:55	kaendfinger	Fauve, It's different
+2014-08-25 22:00:59	Fauve	Probably I didn’t understand it anough.
+2014-08-25 22:01:03	kaendfinger	Yes
+2014-08-25 22:01:05	kaendfinger	exactly
+2014-08-25 22:01:08	Fauve	kaendfinger: it is the first versionning system I use.
+2014-08-25 22:01:12	◀▬▬	n-st_ (~n-st@p57AEA18B.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-08-25 22:01:15	kaendfinger	oh, I see
+2014-08-25 22:01:16	Fauve	But it cause me a lot of bullshit.
+2014-08-25 22:01:18	▬▬▶	jftf (~jftf@38.140.21.74) has joined #git
+2014-08-25 22:01:22	kaendfinger	I'll explain
+2014-08-25 22:01:31	Fauve	I hear you.
+2014-08-25 22:01:44	kaendfinger	history lesson time
+2014-08-25 22:01:57	Fauve	Oh, no, I can’t :D
+2014-08-25 22:01:58	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Read error: Connection reset by peer)
+2014-08-25 22:02:04	Fauve	I have to do a commit, and sleep.
+2014-08-25 22:02:12	Fauve	Sorry, probably tomorrow :)
+2014-08-25 22:02:12	▬▬▶	blakbunnie27 (Elite9929@gateway/shell/elitebnc/x-jmpopgfugbpduubz) has joined #git
+2014-08-25 22:02:17	kaendfinger	Git was originally designed to be a base to build other revision control software on
+2014-08-25 22:02:22	kaendfinger	it became popular
+2014-08-25 22:02:31	Fauve	I read all this.
+2014-08-25 22:02:33	kaendfinger	and essentially porcilain
+2014-08-25 22:02:36	kaendfinger	Fauve, ahh
+2014-08-25 22:02:39	Fauve	But, this isn’t matter kaendfinger
+2014-08-25 22:02:43	▬▬▶	eburcat (~eburcat@109-186-13-28.bb.netvision.net.il) has joined #git
+2014-08-25 22:02:48	kaendfinger	so you see where there are oddities right?
+2014-08-25 22:03:00	+Eugene	!beer
+2014-08-25 22:03:00	@gitinfo	Beer! It's what's for dinner!
+2014-08-25 22:03:00	Fauve	I do a comit, it work, I create a new branch, it work to.
+2014-08-25 22:03:03	kaendfinger	xD
+2014-08-25 22:03:04	+Eugene	There, git problems solved.
+2014-08-25 22:03:07	Fauve	I push the commit, it work.
+2014-08-25 22:03:19	jrnieder	kaendfinger: for a programmatic way of editing .git/config, see man git-config
+2014-08-25 22:03:19	@gitinfo	kaendfinger: the git-config manpage is available at http://jk.gs/git-config.html
+2014-08-25 22:03:22	kaendfinger	also, the fact that commits aren't tied to branches is good
+2014-08-25 22:03:22	Fauve	But when I whant to push the commit on the new branch… then, it failed.
+2014-08-25 22:03:45	kaendfinger	jrnieder, yes, yes, problem is, I'm appending 2 fetch properties
+2014-08-25 22:03:46	Fauve	So, The commit witch was in the new branch whent to master.
+2014-08-25 22:03:54	▬▬▶	Pyrogerg (~Gregory@75-173-66-157.albq.qwest.net) has joined #git
+2014-08-25 22:04:00	Fauve	And now, I search a way to del this comit on master.
+2014-08-25 22:04:01	jrnieder	kaendfinger: git config --add?
+2014-08-25 22:04:21	kaendfinger	jrnieder, oh that exists? I have read all the config options before, how did I miss that flag xD
+2014-08-25 22:04:26	Fauve	Butt tomorow, I will enjoy you full explanation kaendfinger :)
+2014-08-25 22:04:26	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #git
+2014-08-25 22:04:29	kaendfinger	Ok :p
+2014-08-25 22:04:37	jrnieder	kaendfinger: heh
+2014-08-25 22:05:00	Fauve	But now kaendfinger to remove the last comit on the branch master, I didn’t find a simple way
+2014-08-25 22:05:12	kaendfinger	adding a property to [remote "origin"] would be remote.origin.fetch right?
+2014-08-25 22:05:24	jrnieder	kaendfinger: yep
+2014-08-25 22:05:32	kaendfinger	Fauve, git checkout master ; git revert; git checkout -
+2014-08-25 22:05:39	Fauve	“Whent the, type this, go back, returne, go to the top […]” so, I didn’t remove this comit yet :/
+2014-08-25 22:05:47	jrnieder	Fauve: my suggestion is to go through one of the tutorials
+2014-08-25 22:05:52	jrnieder	Fauve: e.g. man gittutorial
+2014-08-25 22:05:52	@gitinfo	Fauve: the gittutorial manpage is available at http://jk.gs/gittutorial.html
+2014-08-25 22:05:53	▬▬▶	aretecode (~aretecode@S01061859339e5f51.cc.shawcable.net) has joined #git
+2014-08-25 22:05:57	◀▬▬	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:06:00	◀▬▬	Tuna-Fish (~quassel@tuna.kortex.jyu.fi) has quit (Read error: Connection reset by peer)
+2014-08-25 22:06:02	jrnieder	Fauve: or chapter 2 of the 'pro git' book
+2014-08-25 22:06:05	Fauve	like vimtutor?
+2014-08-25 22:06:14	Fauve	O’Reilly?
+2014-08-25 22:06:18	jrnieder	Fauve: kind of like vimtutor, except as a separate document
+2014-08-25 22:06:19	◀▬▬	jftf (~jftf@38.140.21.74) has quit (Ping timeout: 260 seconds)
+2014-08-25 22:06:33	jrnieder	Fauve: I don't know who publishes 'pro git'. It's online at git-scm.com/book for free
+2014-08-25 22:07:07	jrnieder	apparently apress
+2014-08-25 22:07:14	kaendfinger	if (git.doesNotExist) { assert(kaendfinger.isDead == true); }
+2014-08-25 22:07:26	◀▬▬	eburcat (~eburcat@109-186-13-28.bb.netvision.net.il) has quit (Ping timeout: 272 seconds)
+2014-08-25 22:07:26	Fauve	jrnieder: git revert : usage : git revert [options] <commit ou apparenté>...
+2014-08-25 22:07:35	jrnieder	Fauve: I'll repeat my advice ;-)
+2014-08-25 22:07:45	◀▬▬	martinklepsch (~kmartiin@f055235024.adsl.alicedsl.de) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-25 22:07:58	jrnieder	Fauve: it might seem tedious, but I think it's the easiest way to get going
+2014-08-25 22:08:13	jrnieder	Fauve: then you know what to expect when running a given command, know how to try things out, know where to looking things up
+2014-08-25 22:08:27	kaendfinger	jrnieder, you seem, awesome. Any suggestions for my .gitconfig? https://gist.github.com/kaendfinger/a8acd03ec442e40176d6
+2014-08-25 22:08:43	▬▬▶	Guest19397 (~logan@I.got.g-lined.cu.cc) has joined #git
+2014-08-25 22:08:56	◀▬▬	Guest19397 (~logan@I.got.g-lined.cu.cc) has left #git
+2014-08-25 22:08:57	▬▬▶	hahuang65 (~hahuang65@2601:9:7e00:b97:c029:5c9:62ad:f01a) has joined #git
+2014-08-25 22:09:08	▬▬▶	LoganG (~logan@I.got.g-lined.cu.cc) has joined #git
+2014-08-25 22:09:11	▬▬▶	sinkensabe (~sinkensab@h241n6-lk-d1.ias.bredband.telia.com) has joined #git
+2014-08-25 22:09:14	▬▬▶	luc_ (~luc@124.205.66.195) has joined #git
+2014-08-25 22:09:22	◀▬▬	pr0ton_ (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has quit (Quit: pr0ton_)
+2014-08-25 22:09:24	LoganG	kaendfinger: yo
+2014-08-25 22:09:26	kaendfinger	yo
+2014-08-25 22:09:27	▬▬▶	jrahmy (~jrahmy@cpe-24-94-26-137.san.res.rr.com) has joined #git
+2014-08-25 22:09:39	LoganG	woohoo, git 2.1
+2014-08-25 22:09:42	kaendfinger	we should stay up late this weekend and study the git code to find easter eggs
+2014-08-25 22:09:45	jrnieder	Fauve: this <commit ou apparenté> business is needlessly obscure
+2014-08-25 22:10:00	Fauve	jrnieder: local is set on french.
+2014-08-25 22:10:00	kaendfinger	Linus gotta be like yep Eggs all the places
+2014-08-25 22:10:06	LoganG	kaendfinger: we could write a implementation of git in dart
+2014-08-25 22:10:08	LoganG	for fun
+2014-08-25 22:10:10	kaendfinger	Done
+2014-08-25 22:10:11	jrnieder	Fauve: it's needlessly obscure in English, too :)
+2014-08-25 22:10:14	kaendfinger	Already
+2014-08-25 22:10:16	kaendfinger	By
+2014-08-25 22:10:17	LoganG	kaendfinger: "for fun"
+2014-08-25 22:10:17	jrnieder	Fauve: it should just say <commit>
+2014-08-25 22:10:21	kaendfinger	true
+2014-08-25 22:10:27	LoganG	plus, not here this weekend
+2014-08-25 22:10:27	kaendfinger	Happy Birthday Linux btw
+2014-08-25 22:10:30	LoganG	^
+2014-08-25 22:10:43	jrnieder	Fauve: maybe I'll find time to fix that this weekend, if no one else gets to it first
+2014-08-25 22:10:55	kaendfinger	Anyone here know if I can get gitinfo to join another channel
+2014-08-25 22:11:08	LoganG	probably not
+2014-08-25 22:11:09	◀▬▬	synchron- (synchronou@gateway/shell/elitebnc/x-txgpaorggsbxhrau) has quit (Remote host closed the connection)
+2014-08-25 22:11:17	LoganG	since it's only in one chan
+2014-08-25 22:11:18	 *	kaendfinger will contact the owner
+2014-08-25 22:11:19	jrnieder	you can /msg it and get private answers
+2014-08-25 22:11:49	jrnieder	source code is at http://jk.gs/git/bot/ so you can probably run it
+2014-08-25 22:12:00	kaendfinger	Works for me :P
+2014-08-25 22:12:15	▬▬▶	pr0ton (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has joined #git
+2014-08-25 22:12:50	kaendfinger	.version
+2014-08-25 22:12:50	@gitinfo	kaendfinger: .version: still at 2.1.0, not updating topic.
+2014-08-25 22:12:55	kaendfinger	Coolio
+2014-08-25 22:13:03	kaendfinger	.random
+2014-08-25 22:13:03	@gitinfo	Git manpages (and commands) yet to be written: http://git-man-page-generator.lokaltog.net/ [28]
+2014-08-25 22:13:08	kaendfinger	.random
+2014-08-25 22:13:08	@gitinfo	<+artagnon> Analytical neuroscience tastes good. [12]
+2014-08-25 22:13:22	▬▬▶	gargola (~quassel@187-176-21-7.dynamic.axtel.net) has joined #git
+2014-08-25 22:13:33	kaendfinger	THIS IS EPIC LoganG http://git-man-page-generator.lokaltog.net/
+2014-08-25 22:13:49	LoganG	kaendfinger: going driving, be back later if you're here :S
+2014-08-25 22:13:50	◀▬▬	endiruna1 (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-25 22:13:57	◀▬▬	sinkensabe (~sinkensab@h241n6-lk-d1.ias.bredband.telia.com) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:13:59	kaendfinger	Ok :p
+2014-08-25 22:14:36	kaendfinger	[kaendfinger@ArchKen ~/Work/DGLux5]$ git u sum
+2014-08-25 22:14:36	kaendfinger	WARNING: You called a Git command named 'u', which does not exist.
+2014-08-25 22:14:36	kaendfinger	Continuing under the assumption that you meant 'up'
+2014-08-25 22:14:37	kaendfinger	LOL
+2014-08-25 22:15:00	▬▬▶	Literphor (~AJRelic@209.237.92.139) has joined #git
+2014-08-25 22:15:16	kaendfinger	I'll be back
+2014-08-25 22:15:17	◀▬▬	kaendfinger (~kaendfing@97-89-142-11.dhcp.gnvl.sc.charter.com) has quit (Quit: Leaving)
+2014-08-25 22:15:19	▬▬▶	cbreak (~cbreak@77-58-71-175.dclient.hispeed.ch) has joined #git
+2014-08-25 22:15:27	▬▬▶	gv (~gv@unaffiliated/gv) has joined #git
+2014-08-25 22:15:27	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #git
+2014-08-25 22:15:30	▬▬▶	jab416171 (~jab416171@c-67-177-14-152.hsd1.ut.comcast.net) has joined #git
+2014-08-25 22:15:47	▬▬▶	kdlv (~aa47f8@h187n14-far-a13.ias.bredband.telia.com) has joined #git
+2014-08-25 22:16:09	▬▬▶	Kulrak (kulrak@122-149-211-149.static.dsl.dodo.com.au) has joined #git
+2014-08-25 22:16:09	◀▬▬	Kulrak (kulrak@122-149-211-149.static.dsl.dodo.com.au) has quit (Changing host)
+2014-08-25 22:16:09	▬▬▶	Kulrak (kulrak@tlug/member/kulrak) has joined #git
+2014-08-25 22:17:04	▬▬▶	Tuna-Fish (~quassel@tuna.kortex.jyu.fi) has joined #git
+2014-08-25 22:17:35	--	BombStrike is now known as bomb
+2014-08-25 22:18:39	▬▬▶	yowzamonk (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has joined #git
+2014-08-25 22:18:39	▬▬▶	kaendfinger (~kaendfing@97-89-142-11.dhcp.gnvl.sc.charter.com) has joined #git
+2014-08-25 22:18:44	kaendfinger	So
+2014-08-25 22:18:47	◀▬▬	deric_skibotn (~chatzilla@remote.activestate.com) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:18:50	kaendfinger	My favorite git tip
+2014-08-25 22:18:51	◀▬▬	ChristianDC (~Christian@75-149-21-147-Pennsylvania.hfc.comcastbusiness.net) has quit (Quit: .)
+2014-08-25 22:18:56	kaendfinger	git checkout -
+2014-08-25 22:19:03	kaendfinger	Check check's out the most recently checked out branch
+2014-08-25 22:19:23	▬▬▶	etpuis (~FleaFlick@216-211-80-217.dynamic.tbaytel.net) has joined #git
+2014-08-25 22:19:56	Fauve	okay, I find it.
+2014-08-25 22:20:03	Fauve	git chekout master
+2014-08-25 22:20:09	--	bomb is now known as BombStrike
+2014-08-25 22:20:21	Fauve	git reset --hard HEAD^
+2014-08-25 22:20:32	Fauve	But, why didn’t you tell me this simple way? O.ô
+2014-08-25 22:20:41	▬▬▶	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has joined #git
+2014-08-25 22:20:52	◀▬▬	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:21:03	preaction	Fauve: did you already push out that change? because now you have to rewrite history
+2014-08-25 22:21:28	◀▬▬	hagabaka (~hagabaka@unaffiliated/hagabaka) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:21:29	preaction	oh, i see there's a whole conversation. and i think the bot mentioned that option
+2014-08-25 22:22:24	kaendfinger	http://git-scm.com/docs/user-manual
+2014-08-25 22:22:29	kaendfinger	Is this working for anyone?
+2014-08-25 22:22:40	◀▬▬	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 22:22:54	Fauve	But… this is a shit :O
+2014-08-25 22:23:05	▬▬▶	hagabaka (~hagabaka@unaffiliated/hagabaka) has joined #git
+2014-08-25 22:23:41	preaction	kaendfinger: it's not working for me, but the server appears to be up
+2014-08-25 22:23:46	Fauve	When I try to push my changes, including the removing, it doesn’t allow me O.ô
+2014-08-25 22:23:54	kaendfinger	preaction, I'll contact GitHub
+2014-08-25 22:24:05	◀▬▬	endiruna1 (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-25 22:24:10	preaction	Fauve: yes. because you rewrote history. you can only do a force push now
+2014-08-25 22:24:22	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #git
+2014-08-25 22:24:27	preaction	but force pushing is very bad if anyone else has pulled
+2014-08-25 22:24:34	Fauve	preaction: I whant to do it!
+2014-08-25 22:24:41	Fauve	Now, it’s the only solution.
+2014-08-25 22:24:49	▬▬▶	bamboo (~bamboo@218.76.139.106) has joined #git
+2014-08-25 22:24:53	Fauve	It doesn’t mater, if it work, all right.
+2014-08-25 22:24:55	◀▬▬	c3p0_ (~chatzilla@180.166.157.114) has quit (Quit: ChatZilla 0.9.90.1 [SeaMonkey 2.26.1/20140612174402])
+2014-08-25 22:25:16	Fauve	preaction │ but force pushing is very bad if anyone else has pulled ← My situation now, is very bad too.
+2014-08-25 22:25:31	◀▬▬	ncd|leeN (~leeN@e180186211.adsl.alicedsl.de) has quit (Read error: Connection reset by peer)
+2014-08-25 22:25:31	◀▬▬	daedeloth (~daedeloth@ip-83-134-175-122.dsl.scarlet.be) has quit (Remote host closed the connection)
+2014-08-25 22:25:39	▬▬▶	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has joined #git
+2014-08-25 22:25:43	Fauve	So anyway preaction have you another solution witch is *work*?
+2014-08-25 22:25:46	▬▬▶	DeathIncarnate (~DeathInca@65-130-248-53.slkc.qwest.net) has joined #git
+2014-08-25 22:25:54	preaction	no, right now, you've only changed your own repository. you could do a "git pull" and get back that commit you deleted
+2014-08-25 22:26:04	Fauve	I did it.
+2014-08-25 22:26:04	preaction	Fauve: why do you want the commit deleted entirely?
+2014-08-25 22:26:13	Fauve	Anyway, what do you propose?
+2014-08-25 22:26:23	preaction	i propose answering the questions people have been asking
+2014-08-25 22:26:26	Fauve	preaction: because my comit was an accident.
+2014-08-25 22:26:43	preaction	do you want the stuff inside to exist some time in the future?
+2014-08-25 22:26:44	Fauve	I thank I was commiting on a branch "coresp" but I was comiting on master.
+2014-08-25 22:26:54	Fauve	I wasn’t whant to touch master.
+2014-08-25 22:26:56	◀▬▬	Blaguvest (~blaguvest@unaffiliated/blaguvest) has quit (Read error: Connection reset by peer)
+2014-08-25 22:27:09	▬▬▶	_0xff (~ff_@87.19.82.102) has joined #git
+2014-08-25 22:27:13	preaction	okay, so your best bet there would be to just revert. it adds a new commit that undoes some other commit
+2014-08-25 22:27:23	▬▬▶	therealGent (~theRealGe@unaffiliated/therealgent) has joined #git
+2014-08-25 22:27:31	preaction	then push out that new revert commit, and you're back to where you were
+2014-08-25 22:27:43	Fauve	preaction: what is the commant to do this commit witch is revoke other commits?
+2014-08-25 22:27:48	▬▬▶	synchronous (synchronou@gateway/shell/elitebnc/x-vwwvxhaduawmbide) has joined #git
+2014-08-25 22:28:03	preaction	revert, not revoke. "git revert <commitid>"
+2014-08-25 22:28:35	◀▬▬	pbrobst (~burost@38.126.119.213) has quit (Quit: pbrobst)
+2014-08-25 22:28:58	◀▬▬	dreiss (~dreiss@23-24-202-9-static.hfc.comcastbusiness.net) has quit (Ping timeout: 272 seconds)
+2014-08-25 22:29:02	Fauve	preaction: all right, that what I was searching :D
+2014-08-25 22:29:05	Fauve	Exactly this.
+2014-08-25 22:29:16	◀▬▬	therealGent (~theRealGe@unaffiliated/therealgent) has quit (Read error: Connection reset by peer)
+2014-08-25 22:29:32	Fauve	Haaaleluiaa.
+2014-08-25 22:29:33	▬▬▶	hyperair (hyperair@ubuntu/member/hyperair) has joined #git
+2014-08-25 22:29:36	preaction	if you hadn't pushed yet, reset would have been the correct option
+2014-08-25 22:29:47	◀▬▬	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:29:49	◀▬▬	AKK9__ (~AKK9@cpc27-nfds13-2-0-cust499.8-2.cable.virginm.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 22:30:17	◀▬▬	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has quit (Quit: WeeChat 1.0)
+2014-08-25 22:30:26	◀▬▬	blakbunnie27 (Elite9929@gateway/shell/elitebnc/x-jmpopgfugbpduubz) has quit (Quit: EliteBNC free bnc service - http://elitebnc.org - be a part of the Elite!)
+2014-08-25 22:30:27	preaction	remember you don't have to push if you don't want to. i keep my stuff local usually until i'm done with a day's work, just in case an hour later something comes up and it turns out i wasn't supposed to do whatever it is i did. then nobody gots to know i screwed up
+2014-08-25 22:30:37	▬▬▶	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has joined #git
+2014-08-25 22:30:39	◀▬▬	jab416171 (~jab416171@c-67-177-14-152.hsd1.ut.comcast.net) has quit (Ping timeout: 246 seconds)
+2014-08-25 22:30:58	Fauve	preaction: ok, I didn’t forget.
+2014-08-25 22:31:27	◀▬▬	mike_af_ (~mike_af@c-66-41-226-143.hsd1.mn.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 22:31:33	preaction	eh, i still do, all the time ;) sometimes i sneak a force push in just because :p
+2014-08-25 22:31:43	▬▬▶	CKyle (~CKyle@cpe-098-026-047-223.nc.res.rr.com) has joined #git
+2014-08-25 22:31:44	◀▬▬	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has quit (Client Quit)
+2014-08-25 22:31:46	Fauve	Greaaath.
+2014-08-25 22:31:56	Fauve	Thank you a lot preaction and kaendfinger
+2014-08-25 22:31:58	◀▬▬	eliasr (uid27497@gateway/web/irccloud.com/x-ahdlksxlhmjdohfw) has quit (Quit: Connection closed for inactivity)
+2014-08-25 22:32:01	▬▬▶	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has joined #git
+2014-08-25 22:32:03	kaendfinger	no problem
+2014-08-25 22:32:04	▬▬▶	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has joined #git
+2014-08-25 22:32:17	kaendfinger	    enable-fetch-notes = "config --add remote.origin.fetch '+refs/notes/*:refs/notes/*'"
+2014-08-25 22:32:21	kaendfinger	Long commands, but meh
+2014-08-25 22:32:42	▬▬▶	dreiss (~dreiss@23-24-202-9-static.hfc.comcastbusiness.net) has joined #git
+2014-08-25 22:33:04	▬▬▶	Quevin (~Quevin@iMac-128218201164.ucsf.edu) has joined #git
+2014-08-25 22:33:09	kaendfinger	https://github.com/kaendfinger/dotfiles/blob/master/gitconfig
+2014-08-25 22:33:27	◀▬▬	luto (~luto@unaffiliated/luto) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:33:32	◀▬▬	Literphor (~AJRelic@209.237.92.139) has quit (Quit: Literphor)
+2014-08-25 22:34:04	kaendfinger	This is the best resource ever btw https://github.com/tiimgreen/github-cheat-sheet
+2014-08-25 22:34:29	▬▬▶	smw (~smw@unaffiliated/smw) has joined #git
+2014-08-25 22:34:40	▬▬▶	therealGent (~theRealGe@c-98-222-208-53.hsd1.il.comcast.net) has joined #git
+2014-08-25 22:34:40	◀▬▬	therealGent (~theRealGe@c-98-222-208-53.hsd1.il.comcast.net) has quit (Changing host)
+2014-08-25 22:34:40	▬▬▶	therealGent (~theRealGe@unaffiliated/therealgent) has joined #git
+2014-08-25 22:35:06	◀▬▬	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has quit (Client Quit)
+2014-08-25 22:35:24	▬▬▶	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has joined #git
+2014-08-25 22:35:49	▬▬▶	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #git
+2014-08-25 22:36:24	◀▬▬	danemacmillan (~danemacmi@69-196-155-219.dsl.teksavvy.com) has quit (Client Quit)
+2014-08-25 22:36:28	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:37:04	▬▬▶	jab416171 (~jab416171@c-24-2-67-176.hsd1.ut.comcast.net) has joined #git
+2014-08-25 22:37:24	◀▬▬	Quevin (~Quevin@iMac-128218201164.ucsf.edu) has quit (Ping timeout: 255 seconds)
+2014-08-25 22:37:37	◀▬▬	LucasTT (~lucastt@201-79-168-158.user.veloxzone.com.br) has quit (Remote host closed the connection)
+2014-08-25 22:38:30	◀▬▬	therealGent (~theRealGe@unaffiliated/therealgent) has quit (Client Quit)
+2014-08-25 22:39:50	▬▬▶	hj2014 (~hj@99-101-18-70.lightspeed.cicril.sbcglobal.net) has joined #git
+2014-08-25 22:41:26	◀▬▬	nb_bez__ (uid24701@gateway/web/irccloud.com/x-iigzlojovkewdtfq) has quit (Quit: Connection closed for inactivity)
+2014-08-25 22:42:51	◀▬▬	alvaro_o (~alvaro@187.210.148.27) has quit (Quit: Ex-Chat)
+2014-08-25 22:43:22	◀▬▬	bitkiller (~bitkiller@191.179.228.191) has quit (Ping timeout: 255 seconds)
+2014-08-25 22:44:41	◀▬▬	Tuna-Fish (~quassel@tuna.kortex.jyu.fi) has quit (Ping timeout: 245 seconds)
+2014-08-25 22:45:42	◀▬▬	jab416171 (~jab416171@c-24-2-67-176.hsd1.ut.comcast.net) has quit (Ping timeout: 246 seconds)
+2014-08-25 22:47:25	◀▬▬	schlumpi (~schlumpi@fob.spline.inf.fu-berlin.de) has quit (Ping timeout: 255 seconds)
+2014-08-25 22:48:10	◀▬▬	skorgon (~skorgon@gateway/tor-sasl/skorgon) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:49:35	▬▬▶	schlumpi (~schlumpi@fob.spline.inf.fu-berlin.de) has joined #git
+2014-08-25 22:49:41	◀▬▬	davispuh (~quassel@212.93.100.73) has quit (Ping timeout: 245 seconds)
+2014-08-25 22:49:49	▬▬▶	skorgon (~skorgon@gateway/tor-sasl/skorgon) has joined #git
+2014-08-25 22:50:25	◀▬▬	kenneth (~kenneth@173.247.206.210) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 22:51:04	▬▬▶	jab416171 (~jab416171@c-24-2-67-176.hsd1.ut.comcast.net) has joined #git
+2014-08-25 22:51:26	▬▬▶	a_le (~a_le@172.56.38.70) has joined #git
+2014-08-25 22:51:28	▬▬▶	Tuna-Fish (~quassel@tuna.kortex.jyu.fi) has joined #git
+2014-08-25 22:51:35	▬▬▶	hkon_ (~hkon_@213.167.121.42.static.lyse.net) has joined #git
+2014-08-25 22:52:10	▬▬▶	johnstein (~johnstein@192.73.239.18) has joined #git
+2014-08-25 22:52:14	▬▬▶	kriskropd (~kris@unaffiliated/kriskropd) has joined #git
+2014-08-25 22:52:15	▬▬▶	JosephFerano (~josephfer@204.93.49.10) has joined #git
+2014-08-25 22:52:18	▬▬▶	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has joined #git
+2014-08-25 22:53:29	▬▬▶	EminenceHC (~eminenceh@173-167-242-193-ip-static.hfc.comcastbusiness.net) has joined #git
+2014-08-25 22:53:54	▬▬▶	Willow (~Dillow@164.215.22.41) has joined #git
+2014-08-25 22:54:26	▬▬▶	eletuchy_ (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has joined #git
+2014-08-25 22:54:27	◀▬▬	eletuchy_ (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 22:54:35	▬▬▶	eletuchy_ (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has joined #git
+2014-08-25 22:54:49	◀▬▬	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-25 22:55:14	◀▬▬	AlexZan (~Alex@d24-150-179-131.home.cgocable.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 22:55:51	◀▬▬	hkon_ (~hkon_@213.167.121.42.static.lyse.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:56:59	◀▬▬	a_le (~a_le@172.56.38.70) has quit (Remote host closed the connection)
+2014-08-25 22:58:06	◀▬▬	EminenceHC (~eminenceh@173-167-242-193-ip-static.hfc.comcastbusiness.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 22:58:46	▬▬▶	Nicholas_Rishel (~quassel@c-98-223-108-247.hsd1.in.comcast.net) has joined #git
+2014-08-25 22:59:16	▬▬▶	yowzamon_ (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has joined #git
+2014-08-25 23:00:05	▬▬▶	a_le (~a_le@172.56.38.70) has joined #git
+2014-08-25 23:00:28	▬▬▶	_thumpba (~thumpba@99-180-68-233.lightspeed.irvnca.sbcglobal.net) has joined #git
+2014-08-25 23:00:29	▬▬▶	Jameser (~user@218.69.12.194) has joined #git
+2014-08-25 23:00:39	◀▬▬	_0xff (~ff_@87.19.82.102) has quit (Quit: _0xff)
+2014-08-25 23:01:27	◀▬▬	yowzamonk (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 23:01:46	◀▬▬	nedbat (~nedbat@python/psf/nedbat) has quit
+2014-08-25 23:02:05	▬▬▶	jftf (~jftf@38.140.21.74) has joined #git
+2014-08-25 23:04:02	◀▬▬	sleepee (~sleepee@173.215.186.158) has quit (Quit: Leaving)
+2014-08-25 23:04:29	▬▬▶	yowzamonk (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has joined #git
+2014-08-25 23:05:17	◀▬▬	Malsasa (~Malsasa@114.79.63.217) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:06:21	◀▬▬	jab416171 (~jab416171@c-24-2-67-176.hsd1.ut.comcast.net) has quit (Ping timeout: 246 seconds)
+2014-08-25 23:06:24	◀▬▬	Ksg89 (~quassel@2a02:2658:1011:1::2:2252) has quit (Quit: No Ping reply in 180 seconds.)
+2014-08-25 23:06:46	◀▬▬	jftf (~jftf@38.140.21.74) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:07:12	◀▬▬	yowzamon_ (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:07:42	◀▬▬	Nicholas_Rishel (~quassel@c-98-223-108-247.hsd1.in.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-25 23:08:51	◀▬▬	Mez (~mez@ubuntu/member/mez) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:08:52	◀▬▬	Polymorphism (~textual@198.144.157.182) has quit (Ping timeout: 272 seconds)
+2014-08-25 23:09:29	▬▬▶	Ksg89 (~quassel@109.200.20.252) has joined #git
+2014-08-25 23:09:48	◀▬▬	a_le (~a_le@172.56.38.70) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:10:20	◀▬▬	pr0ton (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has quit (Quit: pr0ton)
+2014-08-25 23:11:16	▬▬▶	bezet (~the_bz@unaffiliated/the-bz/x-5935285) has joined #git
+2014-08-25 23:12:02	▬▬▶	geomyidae_ (uid214@gateway/web/irccloud.com/x-zzckfwvefunuadgm) has joined #git
+2014-08-25 23:12:24	◀▬▬	sgambino (~sgambino@cpe-174-109-067-127.nc.res.rr.com) has quit (Quit: sgambino)
+2014-08-25 23:12:45	◀▬▬	JanC (~janc@lugwv/member/JanC) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:13:00	▬▬▶	ojacobson (~owen@108.161.121.170) has joined #git
+2014-08-25 23:13:12	◀▬▬	gfixler (~gfixler@bur-inet-pa-4.disney.com) has quit (Quit: leaving)
+2014-08-25 23:14:38	▬▬▶	JanC (~janc@lugwv/member/JanC) has joined #git
+2014-08-25 23:15:51	◀▬▬	bezet (~the_bz@unaffiliated/the-bz/x-5935285) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:16:36	◀▬▬	CKyle (~CKyle@cpe-098-026-047-223.nc.res.rr.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-25 23:17:54	◀▬▬	gargola (~quassel@187-176-21-7.dynamic.axtel.net) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:18:16	◀▬▬	yowzamonk (~rajeevalm@ool-6bbc1209.dyn.optonline.net) has quit
+2014-08-25 23:18:32	▬▬▶	Polymorphism (~textual@198.144.157.182) has joined #git
+2014-08-25 23:20:20	▬▬▶	Gamecubic__ (~cubic@modemcable093.216-200-24.mc.videotron.ca) has joined #git
+2014-08-25 23:22:49	▬▬▶	damccull (~damccull@162.222.3.180) has joined #git
+2014-08-25 23:22:58	◀▬▬	skorgon (~skorgon@gateway/tor-sasl/skorgon) has quit (Ping timeout: 264 seconds)
+2014-08-25 23:23:45	◀▬▬	Gamecubic_ (~cubic@modemcable093.216-200-24.mc.videotron.ca) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:24:13	▬▬▶	skorgon (~skorgon@gateway/tor-sasl/skorgon) has joined #git
+2014-08-25 23:24:21	▬▬▶	Eins_ (~eins_@187.205.51.132) has joined #git
+2014-08-25 23:25:20	◀▬▬	flugo (~flugo@103.225.100.51) has quit (Ping timeout: 272 seconds)
+2014-08-25 23:25:35	▬▬▶	sea-gull (sea-gull@2a01:7e00:e001:2500::b00b) has joined #git
+2014-08-25 23:25:46	◀▬▬	punchagan (~punchagan@74.212.183.186) has quit (Quit: Leaving.)
+2014-08-25 23:26:18	▬▬▶	pheaver (~pweaver@c-98-246-240-144.hsd1.or.comcast.net) has joined #git
+2014-08-25 23:27:27	◀▬▬	kristofers (~kristofer@89-160-178-85.du.xdsl.is) has quit
+2014-08-25 23:27:51	◀▬▬	nfk (~nfk@unaffiliated/nfk) has quit (Quit: yawn)
+2014-08-25 23:28:01	▬▬▶	GT4066 (~Miranda@187.59.123.34) has joined #git
+2014-08-25 23:29:03	▬▬▶	kenneth (~kenneth@c-50-174-142-119.hsd1.ca.comcast.net) has joined #git
+2014-08-25 23:31:11	▬▬▶	pr0ton (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has joined #git
+2014-08-25 23:32:40	◀▬▬	tac (~tac-tics@2601:d:2380:10a0:8120:32c7:5988:df39) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:32:42	◀▬▬	k_sze[work] (~kvirc@unaffiliated/kira) has quit (Ping timeout: 245 seconds)
+2014-08-25 23:33:08	◀▬▬	bdavenport (~davenport@aeolus.mindlesstux.com) has quit (Quit: ZNC - http://znc.in)
+2014-08-25 23:34:00	▬▬▶	DolphinDream (~DolphinDr@pool-74-111-175-18.pitbpa.fios.verizon.net) has joined #git
+2014-08-25 23:34:42	◀▬▬	Xiti` (~Xiti-@unaffiliated/xiti) has quit (Quit: Leaving)
+2014-08-25 23:36:46	▬▬▶	gargola (~quassel@187-176-21-7.dynamic.axtel.net) has joined #git
+2014-08-25 23:37:19	◀▬▬	kaendfinger (~kaendfing@97-89-142-11.dhcp.gnvl.sc.charter.com) has quit (Quit: Leaving)
+2014-08-25 23:37:35	▬▬▶	jab416171 (~jab416171@c-24-2-67-176.hsd1.ut.comcast.net) has joined #git
+2014-08-25 23:37:38	◀▬▬	_thumpba (~thumpba@99-180-68-233.lightspeed.irvnca.sbcglobal.net) has quit (Remote host closed the connection)
+2014-08-25 23:38:39	▬▬▶	kerrick (~kerrick@50-196-159-42-static.hfc.comcastbusiness.net) has joined #git
+2014-08-25 23:38:39	▬▬▶	Xiti (~Xiti-@unaffiliated/xiti) has joined #git
+2014-08-25 23:40:35	◀▬▬	Ksg89 (~quassel@109.200.20.252) has quit (Quit: No Ping reply in 180 seconds.)
+2014-08-25 23:41:52	◀▬▬	lyang0 (~lyang001@1.202.252.122) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:42:19	▬▬▶	arup_r (~arup_r@122.167.88.96) has joined #git
+2014-08-25 23:42:58	◀▬▬	knownasilya (uid22190@gateway/web/irccloud.com/x-zsvqeycnydcmyuiy) has quit (Quit: Connection closed for inactivity)
+2014-08-25 23:43:57	◀▬▬	constant (root@freebsd/developer/variable) has quit (Max SendQ exceeded)
+2014-08-25 23:43:58	◀▬▬	arup_r (~arup_r@122.167.88.96) has quit (Remote host closed the connection)
+2014-08-25 23:44:24	▬▬▶	_thumpba (~thumpba@99-180-68-233.lightspeed.irvnca.sbcglobal.net) has joined #git
+2014-08-25 23:44:59	▬▬▶	echo-area (~user@182.92.253.23) has joined #git
+2014-08-25 23:47:26	▬▬▶	tac (~tac-tics@99-126-152-116.lightspeed.cicril.sbcglobal.net) has joined #git
+2014-08-25 23:47:45	◀▬▬	simesy (~simesy@pa49-182-142-252.pa.nsw.optusnet.com.au) has quit (Remote host closed the connection)
+2014-08-25 23:47:57	▬▬▶	Ksg89 (~quassel@2a02:2658:1011:1::2:2252) has joined #git
+2014-08-25 23:48:15	▬▬▶	variable (root@freebsd/developer/variable) has joined #git
+2014-08-25 23:52:16	◀▬▬	nil- (~nil@65.112.10.210) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:52:38	◀▬▬	GT4066 (~Miranda@187.59.123.34) has quit (Read error: Connection reset by peer)
+2014-08-25 23:53:42	▬▬▶	AnujSharma (~anuj@202.3.77.231) has joined #git
+2014-08-25 23:55:52	◀▬▬	AnujSharma (~anuj@202.3.77.231) has left #git
+2014-08-25 23:56:24	▬▬▶	koderok (~koderok@14.141.153.182) has joined #git
+2014-08-25 23:57:37	▬▬▶	punchagan (~punchagan@pool-108-41-34-253.nycmny.fios.verizon.net) has joined #git
+2014-08-25 23:58:04	▬▬▶	jtri (~jtritz@108-254-162-211.lightspeed.livnmi.sbcglobal.net) has joined #git
+2014-08-25 23:58:05	▬▬▶	simesy (~simesy@pa49-181-150-148.pa.nsw.optusnet.com.au) has joined #git
+2014-08-25 23:58:20	◀▬▬	Polymorphism (~textual@198.144.157.182) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:59:08	jtri	hello, i'm working in a branch X, which came from branch Y, and branch Y is now forwarded so I see origin/Y after pulling, I believe it's a fast forward and would like to merge origin/Y int my local branch X
+2014-08-25 23:59:34	▬▬▶	k_sze[work] (~kvirc@unaffiliated/kira) has joined #git
+2014-08-25 23:59:35	jtri	would I use : git merge origin/Y ?
+2014-08-25 23:59:55	jtri	while i have X checked out that is...
+2014-08-26 00:00:37	--	irc: disconnected from server
+2014-08-26 17:42:59	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-26 17:42:59	--	Topic for #git is "Welcome to #git, the place for git help and subtle Enya muzak | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | What we push in life echoes in eternity"
+2014-08-26 17:42:59	--	Topic set by Eugene (eugene@kashpureff.org) on Tue, 26 Aug 2014 11:36:52
+2014-08-26 17:43:00	--	Channel #git: 1107 nicks (1 op, 35 voices, 1071 normals)
+2014-08-26 17:43:07	▬▬▶	treehug88 (~treehug88@static-96-239-100-47.nycmny.fios.verizon.net) has joined #git
+2014-08-26 17:43:14	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-26 17:43:23	▬▬▶	montchr (~montchr@pool-108-16-8-250.phlapa.fios.verizon.net) has joined #git
+2014-08-26 17:44:04	◀▬▬	knalf (~alfred@8.7.202.84.customer.cdi.no) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:45:04	◀▬▬	hebz0rl (~hebz0rl@dslb-084-060-160-029.084.060.pools.vodafone-ip.de) has quit (Quit: Leaving)
+2014-08-26 17:45:15	◀▬▬	AlexZan (~Alex@d24-150-179-131.home.cgocable.net) has quit (Ping timeout: 240 seconds)
+2014-08-26 17:46:20	◀▬▬	nil- (~nil@65.112.10.210) has left #git
+2014-08-26 17:47:12	▬▬▶	buffal0 (~buffal0@109.201.154.239) has joined #git
+2014-08-26 17:47:42	◀▬▬	amikiri (~amikiri@unaffiliated/amikiri) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-26 17:48:08	◀▬▬	montchr (~montchr@pool-108-16-8-250.phlapa.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 17:48:31	◀▬▬	endiruna1 (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-26 17:48:49	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #git
+2014-08-26 17:49:03	◀▬▬	dougsland (~dougsland@tchelinux/moderator/dougsland) has quit (Read error: Connection reset by peer)
+2014-08-26 17:49:55	◀▬▬	gluten_hell (~gluten_he@p3EE2F8A0.dip0.t-ipconnect.de) has quit (Quit: Computer has gone to sleep.)
+2014-08-26 17:50:47	▬▬▶	veebers (~quassel@ip-118-90-96-114.xdsl.xnet.co.nz) has joined #git
+2014-08-26 17:50:48	◀▬▬	simesy (~simesy@pa49-181-12-242.pa.nsw.optusnet.com.au) has quit (Read error: Connection reset by peer)
+2014-08-26 17:50:49	◀▬▬	kermit (unknown@pdpc/supporter/bronze/kermit) has quit (Quit: Leaving.)
+2014-08-26 17:50:52	▬▬▶	dougsland (~dougsland@tchelinux/moderator/dougsland) has joined #git
+2014-08-26 17:51:01	◀▬▬	jottr (~jottr@unaffiliated/jottr) has quit (Ping timeout: 240 seconds)
+2014-08-26 17:52:00	◀▬▬	buffal0 (~buffal0@109.201.154.239) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:52:04	◀▬▬	Neozonz (~arajakul@unaffiliated/neozonz) has quit (Ping timeout: 255 seconds)
+2014-08-26 17:52:17	▬▬▶	kermit (unknown@pdpc/supporter/bronze/kermit) has joined #git
+2014-08-26 17:52:56	◀▬▬	FreezingAlt (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:52:59	◀▬▬	Tashi (~Tashi@p548B7270.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-08-26 17:53:06	◀▬▬	oriba (~oriba@e178004215.adsl.alicedsl.de) has quit (Quit: oriba)
+2014-08-26 17:53:11	▬▬▶	Tashi (~Tashi@p548B7270.dip0.t-ipconnect.de) has joined #git
+2014-08-26 17:53:14	◀▬▬	Tashi (~Tashi@p548B7270.dip0.t-ipconnect.de) has quit (Excess Flood)
+2014-08-26 17:53:27	▬▬▶	Tashi (~Tashi@p548B7270.dip0.t-ipconnect.de) has joined #git
+2014-08-26 17:53:30	◀▬▬	Tashi (~Tashi@p548B7270.dip0.t-ipconnect.de) has quit (Excess Flood)
+2014-08-26 17:54:02	▬▬▶	CoreIT84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-26 17:54:07	▬▬▶	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has joined #git
+2014-08-26 17:54:43	◀▬▬	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-08-26 17:55:10	▬▬▶	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has joined #git
+2014-08-26 17:55:46	◀▬▬	B1x1t0 (~B1x1t0@101.Red-81-38-145.dynamicIP.rima-tde.net) has quit (Quit: Leaving)
+2014-08-26 17:55:53	▬▬▶	dsdeiz (~dsdeiz@112.207.217.120) has joined #git
+2014-08-26 17:55:57	▬▬▶	srcerer (~chatzilla@dns2.klsairexpress.com) has joined #git
+2014-08-26 17:57:02	◀▬▬	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has quit (Read error: Connection reset by peer)
+2014-08-26 17:57:06	▬▬▶	zumba_ad_ (~zumba_add@mobile-166-147-101-146.mycingular.net) has joined #git
+2014-08-26 17:57:22	◀▬▬	macabre (~ibtjw@unaffiliated/macabre) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2014-08-26 17:57:50	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:58:20	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-26 17:58:32	◀▬▬	CoreIT84 (~Corey84@unaffiliated/corey84) has quit (Ping timeout: 260 seconds)
+2014-08-26 17:58:40	◀▬▬	pizzaprty (~pizzaprty@108.201.185.215) has quit (Remote host closed the connection)
+2014-08-26 17:58:46	◀▬▬	endiruna1 (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2014-08-26 17:59:03	▬▬▶	endiruna1 (~endiendir@poisson.phc.unipi.it) has joined #git
+2014-08-26 17:59:19	◀▬▬	lsiv568 (~lsiv568@pool-96-237-171-78.bstnma.fios.verizon.net) has quit (Ping timeout: 245 seconds)
+2014-08-26 17:59:22	◀▬▬	nedbat (~nedbat@python/psf/nedbat) has quit
+2014-08-26 17:59:49	◀▬▬	nutron (~nutron@unaffiliated/nutron) has quit (Remote host closed the connection)
+2014-08-26 18:01:02	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Max SendQ exceeded)
+2014-08-26 18:01:10	▬▬▶	DeathIncarnate (~DeathInca@69.27.21.152) has joined #git
+2014-08-26 18:01:31	◀▬▬	zumba_ad_ (~zumba_add@mobile-166-147-101-146.mycingular.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:01:34	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-26 18:02:06	▬▬▶	Roots47 (~Roots47@c-24-91-135-155.hsd1.ct.comcast.net) has joined #git
+2014-08-26 18:03:06	▬▬▶	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has joined #git
+2014-08-26 18:03:22	◀▬▬	FortySix2 (~FortySix2@h204-246-2-62.mdsnwi.tisp.static.tds.net) has quit (Remote host closed the connection)
+2014-08-26 18:03:58	▬▬▶	pizzaprty (~pizzaprty@108.201.185.215) has joined #git
+2014-08-26 18:04:21	--	Mode #git [+v superspring] by gitinfo
+2014-08-26 18:04:22	◀▬▬	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:04:24	+superspring	hey all, is there a way in git to start a commit message with a '#', eg i want to say '#ticketnumber - message' for my commit message
+2014-08-26 18:04:30	▬▬▶	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has joined #git
+2014-08-26 18:04:35	▬▬▶	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has joined #git
+2014-08-26 18:04:38	▬▬▶	FreezingAlt (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #git
+2014-08-26 18:04:46	▬▬▶	toothrot (~mux@unaffiliated/toothrot) has joined #git
+2014-08-26 18:04:57	▬▬▶	amikiri (~amikiri@unaffiliated/amikiri) has joined #git
+2014-08-26 18:05:02	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Max SendQ exceeded)
+2014-08-26 18:05:11	milki	superspring: nope
+2014-08-26 18:05:36	kadoban	superspring: What happens if you specify it on the command line with -m ? Does that work?
+2014-08-26 18:05:39	▬▬▶	brownbathrobe (~brownbath@S01068843e1ac2008.gv.shawcable.net) has joined #git
+2014-08-26 18:05:51	▬▬▶	kyledr (4b490437@gateway/web/cgi-irc/kiwiirc.com/ip.75.73.4.55) has joined #git
+2014-08-26 18:05:51	milki	o, hmm
+2014-08-26 18:06:21	+superspring	kadoban: ah yes, that works nicely, thanks
+2014-08-26 18:06:26	kadoban	Yay
+2014-08-26 18:06:32	◀▬▬	kyledr (4b490437@gateway/web/cgi-irc/kiwiirc.com/ip.75.73.4.55) has left #git
+2014-08-26 18:06:37	▬▬▶	jottr (~jottr@unaffiliated/jottr) has joined #git
+2014-08-26 18:06:52	▬▬▶	mribeirodantas (~mrd@fedora/mribeirodantas) has joined #git
+2014-08-26 18:06:53	◀▬▬	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:06:58	◀▬▬	LBV_User (~leonardo@177.2.128.75) has quit (Quit: Bye all :))
+2014-08-26 18:07:05	▬▬▶	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has joined #git
+2014-08-26 18:07:19	▬▬▶	etpuis (~FleaFlick@216-211-80-217.dynamic.tbaytel.net) has joined #git
+2014-08-26 18:07:19	brucelee	how do i just remove a branch
+2014-08-26 18:07:23	brucelee	and start a new branch using the same name
+2014-08-26 18:07:30	▬▬▶	Gizburdt (~gizburdt@D9791B3C.cm-3-2a.dynamic.ziggo.nl) has joined #git
+2014-08-26 18:07:32	brucelee	can i just say git branch brucelee from master
+2014-08-26 18:07:35	+superspring	brucelee: git branch -d [branch name]
+2014-08-26 18:08:03	◀▬▬	lsyoyom (~chatzilla@pool-71-187-35-148.nwrknj.fios.verizon.net) has quit (Remote host closed the connection)
+2014-08-26 18:08:18	◀▬▬	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:08:29	+superspring	brucelee: checkout to another branch/commit first, delete the old one, then recreate it from the current one...
+2014-08-26 18:08:30	▬▬▶	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has joined #git
+2014-08-26 18:14:34	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-26 18:14:34	--	Topic for #git is "Welcome to #git, the place for git help and subtle Enya muzak | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | What we push in life echoes in eternity"
+2014-08-26 18:14:34	--	Topic set by Eugene (eugene@kashpureff.org) on Tue, 26 Aug 2014 11:36:52
+2014-08-26 18:14:34	--	Channel #git: 1094 nicks (1 op, 36 voices, 1057 normals)
+2014-08-26 18:14:49	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-26 18:14:51	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-26 18:14:55	▬▬▶	Sicp (~ongoing@212.36.210.41) has joined #git
+2014-08-26 18:14:55	◀▬▬	Sicp (~ongoing@212.36.210.41) has quit (Changing host)
+2014-08-26 18:14:55	▬▬▶	Sicp (~ongoing@unaffiliated/odaym) has joined #git
+2014-08-26 18:14:58	osse	MestreLion: or straight up merge it, but with --no-commit, and tune the merge result to your liking. however, that will make it hard to merge the rest
+2014-08-26 18:15:20	▬▬▶	lsyoyom (~chatzilla@pool-71-187-35-148.nwrknj.fios.verizon.net) has joined #git
+2014-08-26 18:15:38	▬▬▶	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has joined #git
+2014-08-26 18:15:56	◀▬▬	treehug88 (~treehug88@static-96-239-100-47.nycmny.fios.verizon.net) has quit
+2014-08-26 18:16:17	MestreLion	kadoban: that's what I want to do... to split the huge commit in that branch into several commits in my master branch
+2014-08-26 18:16:23	◀▬▬	PsionTheory (~quassel@cpe-174-109-012-061.nc.res.rr.com) has quit (Read error: Connection reset by peer)
+2014-08-26 18:16:51	kadoban	MestreLion: Ah, and you're trying to find out how to do that?
+2014-08-26 18:16:55	MestreLion	osse: but that would change the working tree all at once, correct?
+2014-08-26 18:17:37	▬▬▶	ropav (~ropav@173.247.204.122) has joined #git
+2014-08-26 18:17:41	osse	MestreLion: yes, but you can use git checkout --theirs/ours afterwards to manipulate files
+2014-08-26 18:17:48	osse	I'd go the cherry-pick route
+2014-08-26 18:18:02	osse	but that takes whole commits at a time
+2014-08-26 18:18:04	MestreLion	I could cherry pick with --no-commit, and then slice the changes using `add -p`... but since all the changes would be in my working tree already, it would be hard to tell if the bits I'm adding form a working commit or not
+2014-08-26 18:18:40	osse	another approach:  just merge the damn thing. if the resulting code works ok, then all is well
+2014-08-26 18:18:45	kadoban	MestreLion: You can checkout specific files from the commit at a time, and go from there, does that help?
+2014-08-26 18:18:45	◀▬▬	n-st (~n-st@p57AE9EB8.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-08-26 18:19:08	▬▬▶	Nem0 (~nem0@unaffiliated/nem0) has joined #git
+2014-08-26 18:19:22	MestreLion	Basically, I would like to *gradually* incorporate a commit into my working tree, so I can be sure the whatever I commit to master keeps the game in a working state
+2014-08-26 18:20:23	◀▬▬	etpuis (~FleaFlick@216-211-80-217.dynamic.tbaytel.net) has quit (Quit: Burp!)
+2014-08-26 18:20:27	◀▬▬	Nem0 (~nem0@unaffiliated/nem0) has left #git ("[...]")
+2014-08-26 18:20:28	MestreLion	kadoban: a bit, but not much... the huge commit is quite pervasive. actually, most of the bits I want to commit will affect multiple files, but I want to split into logical feaatures per commit
+2014-08-26 18:20:33	◀▬▬	lsyoyom (~chatzilla@pool-71-187-35-148.nwrknj.fios.verizon.net) has quit (Remote host closed the connection)
+2014-08-26 18:20:40	▬▬▶	fission6_ (~fission6@38.125.163.25) has joined #git
+2014-08-26 18:20:54	▬▬▶	JSharpe__ (~JSharpe@2.223.210.18) has joined #git
+2014-08-26 18:20:59	▬▬▶	[1]techy121592 (~techy1215@50-198-119-189-static.hfc.comcastbusiness.net) has joined #git
+2014-08-26 18:21:10	▬▬▶	akim (~akim@nat/cisco/x-nlxdvcdjseqgekly) has joined #git
+2014-08-26 18:21:10	▬▬▶	Sasazuka_ (~Sasazuka@64.201.252.132) has joined #git
+2014-08-26 18:21:11	▬▬▶	Eins__ (~eins_@187.205.51.132) has joined #git
+2014-08-26 18:21:12	▬▬▶	eletuchy (~eletuchy@2620:10d:c082:100c:7ec3:a1ff:fe88:9a3d) has joined #git
+2014-08-26 18:21:12	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-26 18:21:33	kadoban	MestreLion: I think you have a lot of manual work to do then, unfortunately. I mean you could do something like, bring it all in, add -i, then discard the stuff you didn't add and do a commit. then repeat
+2014-08-26 18:21:39	▬▬▶	EdGrubemran (~EdGruberm@184.171.171.26) has joined #git
+2014-08-26 18:21:49	▬▬▶	jmpp (~j@opendarwin/developer/jmpp) has joined #git
+2014-08-26 18:21:53	MestreLion	osse: a merge would work ok, I've tested it already. That would be the end result... but it incorporates way too many features in a single commit, I would like to split that into logical features
+2014-08-26 18:21:54	arand__	MestreLion: Just stash and pop repeatedly after cherry-pinching?
+2014-08-26 18:22:04	◀▬▬	techy121592 (~techy1215@50-198-119-189-static.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:22:04	◀▬▬	starkhalo (~weechat@187.240.189.127) has quit (Read error: Connection reset by peer)
+2014-08-26 18:22:34	▬▬▶	lsiv568 (~lsiv568@pool-96-237-171-78.bstnma.fios.verizon.net) has joined #git
+2014-08-26 18:22:35	kadoban	I have a hook which is set up to test only based on what's about to be commited, which would help me I guess, but setting that up just for your problem is probably not necessary.
+2014-08-26 18:22:40	▬▬▶	starkhalo (~weechat@187.240.189.127) has joined #git
+2014-08-26 18:22:42	◀▬▬	fission6 (~fission6@38.125.163.25) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:42	◀▬▬	edude03 (~edude03@192.241.254.85) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:42	◀▬▬	miceiken (~miceiken@clusterbrain.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:42	◀▬▬	Okaria (~Okaria@162.243.66.245) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:42	--	fission6_ is now known as fission6
+2014-08-26 18:22:46	▬▬▶	miceiken_ (~miceiken@clusterbrain.net) has joined #git
+2014-08-26 18:22:47	◀▬▬	mikeric (~mikeric@96.53.33.22) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:48	◀▬▬	Brizz (Brizz@tattoine.getsetliving.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:48	◀▬▬	hvoigt (~hvoigt@t2784.greatnet.de) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:52	▬▬▶	brownbat_ (~brownbath@S01068843e1ac2008.gv.shawcable.net) has joined #git
+2014-08-26 18:22:53	◀▬▬	tranzfuse (~tranzfuse@2600:c0e:3002:120:50ab:ea55:d5d6:c21) has quit (Remote host closed the connection)
+2014-08-26 18:22:54	▬▬▶	hvoigt_ (~hvoigt@t2784.greatnet.de) has joined #git
+2014-08-26 18:23:16	◀▬▬	kevin-brown (~kbrown@unaffiliated/kevin-brown) has quit (Disconnected by services)
+2014-08-26 18:23:22	▬▬▶	kevin-brown (~kbrown@unaffiliated/kevin-brown) has joined #git
+2014-08-26 18:23:23	▬▬▶	davis_ (davis@pilot.trilug.org) has joined #git
+2014-08-26 18:23:25	◀▬▬	Eins_ (~eins_@187.205.51.132) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	EdGruberman (~EdGruberm@unaffiliated/edgruberman) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	ThomasKaufmann (ThomasKauf@gateway/shell/catrobat/x-uyyjdnzkyeznokgb) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	pdtpatr1ck (~ubuntu@ec2-54-211-230-219.compute-1.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	davis (davis@pilot.trilug.org) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	bevilaqua (~bevilaqua@107.170.17.52) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	Console (~Console@unaffiliated/console) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:29	▬▬▶	tranzfuse (~tranzfuse@74.201.131.165) has joined #git
+2014-08-26 18:23:29	imachuchu	MestreLion: look at git fs, you can just access the work tree for the commit and diff it against your current code
+2014-08-26 18:23:41	▬▬▶	Brizz (Brizz@tattoine.getsetliving.com) has joined #git
+2014-08-26 18:23:41	◀▬▬	Sasazuka (~Sasazuka@64.201.252.132) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:41	◀▬▬	joki (~joki@p54860913.dip0.t-ipconnect.de) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	przemoc (~przemoc@unaffiliated/przemoc) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	terribeplan_ (~terriblep@ec2-50-112-56-197.us-west-2.compute.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	Pezmc (~Pez@pezcuckow.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	bede (~bd@mail.bc-bd.org) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	wolog (~wolog@wolog.info) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	marvinpinto (~marvinpin@unaffiliated/marvinpinto) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	talmuth (talmuth@cl4p-tp.it) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	Kartagis (~iegg@drupal.org/user/742906/view) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:24:02	MestreLion	arand__: stash and pop deals with working tree, correct? can I do a stash -p ? seems to be what  I want
+2014-08-26 18:24:07	▬▬▶	bevilaqua (~bevilaqua@107.170.17.52) has joined #git
+2014-08-26 18:24:24	▬▬▶	marvinpinto (~marvinpin@unaffiliated/marvinpinto) has joined #git
+2014-08-26 18:24:25	▬▬▶	rezrov (~rez@192.241.176.172) has joined #git
+2014-08-26 18:24:47	osse	MestreLion: not to piss on your parade or anything but: let's say you're able to merge/cherry-pick/whatever individual features from this branches: after you've grabbed one feature, what do you do next? grab the next feature? if that's the case then I wouldn't bother.
+2014-08-26 18:24:49	kadoban	MestreLion: You might be looknig for 'git stash --keep-index'
+2014-08-26 18:24:49	◀▬▬	crose (~crose@pool-71-169-161-8.burl.east.myfairpoint.net) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:25:01	▬▬▶	joki (~joki@p54860913.dip0.t-ipconnect.de) has joined #git
+2014-08-26 18:25:02	osse	if however it's for some release-like purpose then I get it
+2014-08-26 18:25:02	▬▬▶	Console (~Console@69.162.67.250) has joined #git
+2014-08-26 18:25:10	▬▬▶	tureba_ (~tureba@tureba.mooo.com) has joined #git
+2014-08-26 18:25:13	▬▬▶	pdtpatr1ck (~ubuntu@ec2-54-211-230-219.compute-1.amazonaws.com) has joined #git
+2014-08-26 18:25:16	▬▬▶	bede (~bd@mail.bc-bd.org) has joined #git
+2014-08-26 18:25:25	▬▬▶	Pezmc (~Pez@pezcuckow.com) has joined #git
+2014-08-26 18:25:27	▬▬▶	shreknet (quasselcor@217.115.148.80) has joined #git
+2014-08-26 18:25:40	▬▬▶	wolog (~wolog@wolog.info) has joined #git
+2014-08-26 18:25:44	MestreLion	osse: yes, that's the idea :) sure, I could simply merge all at once, but... later would be a nightmare to restructure
+2014-08-26 18:26:07	◀▬▬	ropav (~ropav@173.247.204.122) has quit (Remote host closed the connection)
+2014-08-26 18:26:15	kadoban	It seems like a reasonable enough thing to do really. Better is avoiding the problem originally, but better late than never.
+2014-08-26 18:26:16	▬▬▶	ToothlessGear_ (~Toothless@v22013021537510585.yourvserver.net) has joined #git
+2014-08-26 18:26:31	▬▬▶	edude03 (~edude03@192.241.254.85) has joined #git
+2014-08-26 18:26:38	osse	MestreLion: "restructure" ?
+2014-08-26 18:26:46	▬▬▶	squentin_ (~freenode_@unaffiliated/squentin) has joined #git
+2014-08-26 18:26:48	▬▬▶	lvh_ (~lvh@python/psf/lvh) has joined #git
+2014-08-26 18:26:57	▬▬▶	NuckingFuts (~Nuck@oftn/member/Nuck) has joined #git
+2014-08-26 18:27:03	▬▬▶	_dancat_ (~dan@198.199.94.106) has joined #git
+2014-08-26 18:27:16	▬▬▶	JonasF_ (~j@jfgr.de) has joined #git
+2014-08-26 18:27:24	▬▬▶	ropav (~ropav@173.247.204.122) has joined #git
+2014-08-26 18:27:30	kadoban	osse: rebase, revert, bisect, etc. are all going to be hell with a giant do-all commit, no?
+2014-08-26 18:27:30	▬▬▶	Davey_ (~Davey@orchestra/staff/Davey) has joined #git
+2014-08-26 18:27:40	◀▬▬	tranzfuse (~tranzfuse@74.201.131.165) has quit (Ping timeout: 245 seconds)
+2014-08-26 18:27:42	◀▬▬	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has quit (Remote host closed the connection)
+2014-08-26 18:27:44	◀▬▬	tab1293 (~tab1293@216.112.253.9) has quit (Quit: tab1293)
+2014-08-26 18:28:06	▬▬▶	zumba_addict (~zumba_add@mobile-166-147-101-146.mycingular.net) has joined #git
+2014-08-26 18:28:06	▬▬▶	Punna (~Pwnna@eggplant.thekks.net) has joined #git
+2014-08-26 18:28:08	▬▬▶	AndreSomers (~quassel@quassel.woboq.de) has joined #git
+2014-08-26 18:28:10	▬▬▶	wavis_ (uid26483@gateway/web/irccloud.com/x-nmczmnyezvokuqow) has joined #git
+2014-08-26 18:28:29	▬▬▶	vereteran (~naquad@naquad.me) has joined #git
+2014-08-26 18:28:30	arand__	MestreLion: What I meant was ~ "git cherry-pick --no-commit feature-foo && git reset" and then loop ~ "git add -p && git stash && make test && git commit && git stash pop"
+2014-08-26 18:28:43	▬▬▶	philp_ (~quassel@162.243.72.197) has joined #git
+2014-08-26 18:28:55	▬▬▶	terribleplan (~terriblep@ec2-50-112-56-197.us-west-2.compute.amazonaws.com) has joined #git
+2014-08-26 18:28:57	▬▬▶	kopparam (~kopparam@14.140.219.22) has joined #git
+2014-08-26 18:28:59	▬▬▶	Munter_ (~Munter@unirevy.dk) has joined #git
+2014-08-26 18:29:10	▬▬▶	rheddry (~levi@hakr.io) has joined #git
+2014-08-26 18:29:10	▬▬▶	nafg_ (~quassel@pool-72-76-197-87.nwrknj.fios.verizon.net) has joined #git
+2014-08-26 18:29:22	▬▬▶	frsk_ (~frsk@zip.xxd.no) has joined #git
+2014-08-26 18:29:24	▬▬▶	Okaria (~Okaria@162.243.66.245) has joined #git
+2014-08-26 18:29:32	osse	kadoban: rebases: yes, but is that something he'd do? revert: you can revert a merge commit like any other, plus you can revert individual commits on the "merged in" branch. bisect: the bisection algorithm picks and chooses commits from all paths downward in history, so that's not a problem either... unless of course the "merged in" branch doesn't really work/compile/etc.
+2014-08-26 18:29:43	◀▬▬	m8 (~m@unaffiliated/m8) has quit (Quit: Sto andando via)
+2014-08-26 18:29:47	▬▬▶	jwr___ (~quassel@205.196.167.54) has joined #git
+2014-08-26 18:29:53	▬▬▶	brainproxy_ (~brainprox@pdpc/supporter/gold/brainproxy) has joined #git
+2014-08-26 18:30:04	◀▬▬	amikiri (~amikiri@unaffiliated/amikiri) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-26 18:30:07	▬▬▶	neurodam1ge (~neuro@199.30.90.48) has joined #git
+2014-08-26 18:30:11	◀▬▬	fission6 (~fission6@38.125.163.25) has quit (Quit: fission6)
+2014-08-26 18:30:41	▬▬▶	ThomasKaufmann (ThomasKauf@gateway/shell/catrobat/x-rkfjghokakdrnazz) has joined #git
+2014-08-26 18:30:43	kadoban	osse: I think one of us misread his problem. It seems like he has one giant commit with a bunch of changes in it (someone ignored the standard advice to commit early/often), and he wants to split it into logical commits.
+2014-08-26 18:30:45	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Write error: Broken pipe)
+2014-08-26 18:30:53	kadoban	That's my understanding anyway.
+2014-08-26 18:30:55	osse	Ooooooooooooooooooh
+2014-08-26 18:30:58	▬▬▶	AlecTaylor (~Alec@101.187.85.31) has joined #git
+2014-08-26 18:30:58	◀▬▬	AlecTaylor (~Alec@101.187.85.31) has quit (Changing host)
+2014-08-26 18:30:58	▬▬▶	AlecTaylor (~Alec@unaffiliated/alectaylor) has joined #git
+2014-08-26 18:30:59	◀▬▬	ropav (~ropav@173.247.204.122) has quit (Remote host closed the connection)
+2014-08-26 18:31:05	▬▬▶	przemoc (~przemoc@unaffiliated/przemoc) has joined #git
+2014-08-26 18:31:13	▬▬▶	felixjet__ (~felixjet@113.Red-83-40-96.dynamicIP.rima-tde.net) has joined #git
+2014-08-26 18:31:20	▬▬▶	thierryp (~thierry@2a01:e35:2e2b:e2c0:2145:6e90:94f4:9df) has joined #git
+2014-08-26 18:31:26	▬▬▶	Kartagis (~iegg@drupal.org/user/742906/view) has joined #git
+2014-08-26 18:31:26	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined #git
+2014-08-26 18:31:37	▬▬▶	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has joined #git
+2014-08-26 18:32:10	◀▬▬	anli (~Anders@h28n6-gl-a-d4.ias.bredband.telia.com) has quit (Read error: Connection reset by peer)
+2014-08-26 18:32:12	◀▬▬	JakeSays (~quassel@chat.thatswhatjakesaid.com) has quit (Read error: Connection reset by peer)
+2014-08-26 18:32:27	▬▬▶	anli (~Anders@h28n6-gl-a-d4.ias.bredband.telia.com) has joined #git
+2014-08-26 18:32:28	▬▬▶	JakeSays (~quassel@chat.thatswhatjakesaid.com) has joined #git
+2014-08-26 18:32:30	▬▬▶	shizzle (~seanmerro@ip70-160-211-108.hr.hr.cox.net) has joined #git
+2014-08-26 18:32:35	▬▬▶	King_Hual` (~Hual@94.26.28.68) has joined #git
+2014-08-26 18:32:35	MestreLion	My idea of workflow is: 1) get a chunk of that commit to my working tree (a chunk that I feel encapsulates a single feature). B) do adjustments to code so game is working with that new feature, and bringing nothing else. C) commit D) rebase the huge commit onto master so my incorporation would subtract from the huge commit, rinse and repeat
+2014-08-26 18:32:38	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Write error: Connection reset by peer)
+2014-08-26 18:32:48	◀▬▬	ecky--ptang-zoob (~ecky--pta@2a02:1810:3c09:6500:402c:c3d2:261:b94f) has quit (Read error: Connection reset by peer)
+2014-08-26 18:32:48	▬▬▶	ecky--ptang-zoob (~ecky--pta@2a02:1810:3c09:6500:402c:c3d2:261:b94f) has joined #git
+2014-08-26 18:32:52	◀▬▬	lsiv568 (~lsiv568@pool-96-237-171-78.bstnma.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:32:54	▬▬▶	Bruno__ (~Bruno@186.213.0.128) has joined #git
+2014-08-26 18:33:01	▬▬▶	decentrality (~digitalex@wsip-70-167-11-74.sd.sd.cox.net) has joined #git
+2014-08-26 18:33:05	▬▬▶	Chipdancer_ (~chip@prince-george.dreamhost.com) has joined #git
+2014-08-26 18:33:06	▬▬▶	brucelee_ (~bjpenn@c-98-207-99-84.hsd1.ca.comcast.net) has joined #git
+2014-08-26 18:33:07	◀▬▬	Doyle_ (~quassel@75.98.196.98) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:33:12	▬▬▶	rivarun_ (~rivarun@snf-254183.vm.okeanos.grnet.gr) has joined #git
+2014-08-26 18:33:32	◀▬▬	Quevin (~Quevin@iMac-128218201164.ucsf.edu) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:33:34	◀▬▬	kopparam (~kopparam@14.140.219.22) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:33:47	kadoban	That sounds sane to me. I'm not sure how pleasant those rebases will be, if they suck a lot you can maybe skip them and bring in the changes in another way.
+2014-08-26 18:33:48	▬▬▶	M-ou-se_ (~m-ou.se@m-ou.se) has joined #git
+2014-08-26 18:33:49	▬▬▶	_Parnic (user@distribution.xbins.org) has joined #git
+2014-08-26 18:34:01	▬▬▶	jargan (jast@zoidberg.org) has joined #git
+2014-08-26 18:34:06	kadoban	(I don't really know how smart git is in that case...I guess they might not actually be that bad)
+2014-08-26 18:34:10	◀▬▬	deric_skibotn (~chatzilla@remote.activestate.com) has quit (Ping timeout: 272 seconds)
+2014-08-26 18:34:15	◀▬▬	felixjet_ (~felixjet@113.Red-83-40-96.dynamicIP.rima-tde.net) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:34:18	▬▬▶	lamont` (~lamont@ubuntu/member/lamont) has joined #git
+2014-08-26 18:34:24	◀▬▬	punchagan (~punchagan@74.212.183.186) has quit (Quit: Leaving.)
+2014-08-26 18:34:25	▬▬▶	listochk_ (~listochki@blabbering-thinner.volia.net) has joined #git
+2014-08-26 18:34:25	▬▬▶	dcpc0071 (~CHALO@185.8.252.36) has joined #git
+2014-08-26 18:34:26	arand__	MestreLion: I would go with cherry-pick, add -p, then checkout to remove the non-added stuff, and then commit and rebase.
+2014-08-26 18:34:41	▬▬▶	hagebake (~hagabaka@unaffiliated/hagabaka) has joined #git
+2014-08-26 18:34:53	MestreLion	rebases will only conflict around my adjustments, that's fine, I can manualy handle it
+2014-08-26 18:34:55	▬▬▶	jerius_ (~jerius@adsl-108-68-143-157.dsl.lgtpmi.sbcglobal.net) has joined #git
+2014-08-26 18:35:10	▬▬▶	Tashi_u (~Tashi@p548B7270.dip0.t-ipconnect.de) has joined #git
+2014-08-26 18:35:35	▬▬▶	bhldev_ (~briandev@24-212-129-219.cable.teksavvy.com) has joined #git
+2014-08-26 18:35:47	arand__	I'd suspect that those rebases will end up conflicting to a painful degree, but that all depends on how well stuff can be isolated...
+2014-08-26 18:35:48	▬▬▶	teran (~teran@109.195.20.73) has joined #git
+2014-08-26 18:35:57	◀▬▬	thierryp (~thierry@2a01:e35:2e2b:e2c0:2145:6e90:94f4:9df) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:36:11	◀▬▬	todd_dsm (~todd_dsm@66.43.220.149) has quit (Read error: Connection reset by peer)
+2014-08-26 18:36:16	▬▬▶	JasonStorer__ (~Plenoge@67.17.193.162) has joined #git
+2014-08-26 18:36:20	▬▬▶	Lunatrius` (~Lunatrius@77.38.103.182) has joined #git
+2014-08-26 18:36:22	◀▬▬	leeN (~leeN@e180127187.adsl.alicedsl.de) has quit (Read error: Connection reset by peer)
+2014-08-26 18:36:24	◀▬▬	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:36:24	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Read error: Connection reset by peer)
+2014-08-26 18:36:25	▬▬▶	jeffhung_ (~jeffhung@60-250-103-120.HINET-IP.hinet.net) has joined #git
+2014-08-26 18:36:37	◀▬▬	hagebake (~hagabaka@unaffiliated/hagabaka) has quit (Excess Flood)
+2014-08-26 18:36:39	MestreLion	arand__: care to elabore on your approach? seems nice
+2014-08-26 18:36:42	◀▬▬	Destos (~Destos@216.16.138.218) has quit (Ping timeout: 272 seconds)
+2014-08-26 18:36:46	▬▬▶	tac-tics (~tac-tics@99-126-152-116.lightspeed.cicril.sbcglobal.net) has joined #git
+2014-08-26 18:36:46	▬▬▶	veebers_ (~quassel@ip-118-90-96-114.xdsl.xnet.co.nz) has joined #git
+2014-08-26 18:36:47	▬▬▶	nikow_ (nikow@i.am-a.cat) has joined #git
+2014-08-26 18:36:49	▬▬▶	mtj_ (~mtj_@gw1.kohaaloha.com) has joined #git
+2014-08-26 18:36:50	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined #git
+2014-08-26 18:36:51	◀▬▬	ELFrederich (~ELFrederi@12.54.94.28) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:36:51	◀▬▬	seanmerron (~seanmerro@ip70-160-211-108.hr.hr.cox.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:36:51	◀▬▬	BSaboia (~Bruno@186.213.0.128) has quit (Ping timeout: 275 seconds)
+2014-08-26 18:36:51	▬▬▶	AKK9_ (~AKK9@cpc27-nfds13-2-0-cust499.8-2.cable.virginm.net) has joined #git
+2014-08-26 18:36:53	▬▬▶	Tailor (~Alec@unaffiliated/alectaylor) has joined #git
+2014-08-26 18:36:57	◀▬▬	dougsland (~dougsland@tchelinux/moderator/dougsland) has quit (Read error: Connection reset by peer)
+2014-08-26 18:37:06	▬▬▶	smerron (~seanmerro@ip70-160-211-108.hr.hr.cox.net) has joined #git
+2014-08-26 18:37:09	◀▬▬	Brizz (Brizz@tattoine.getsetliving.com) has quit (Write error: Connection reset by peer)
+2014-08-26 18:37:16	◀▬▬	AKK9 (~AKK9@cpc27-nfds13-2-0-cust499.8-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:37:16	◀▬▬	jargan (jast@zoidberg.org) has quit (Write error: Connection reset by peer)
+2014-08-26 18:37:21	▬▬▶	tubaman_ (~tubaman@72.183.107.223) has joined #git
+2014-08-26 18:37:22	▬▬▶	twem2_ (~tristan@skeeter-mxisp.openmarket.com) has joined #git
+2014-08-26 18:37:23	▬▬▶	qknight (~joachim@static.188.100.47.78.clients.your-server.de) has joined #git
+2014-08-26 18:37:27	▬▬▶	esc_ (esc@gentoo/contributor/esc) has joined #git
+2014-08-26 18:37:29	▬▬▶	vadmeste_ (~vadmeste@188.226.195.184) has joined #git
+2014-08-26 18:37:31	▬▬▶	rj11_ (~rj11@212.37.105.174) has joined #git
+2014-08-26 18:37:37	▬▬▶	superspring_ (~quassel@ec2-54-88-223-144.compute-1.amazonaws.com) has joined #git
+2014-08-26 18:37:37	▬▬▶	here_ (~here@wherebox.org) has joined #git
+2014-08-26 18:37:42	▬▬▶	genehack_ (~genehack@65.49.60.231) has joined #git
+2014-08-26 18:37:45	▬▬▶	przemoc86 (~przemoc@89-74-38-183.dynamic.chello.pl) has joined #git
+2014-08-26 18:37:46	▬▬▶	pasky (~pasky@nikam.ms.mff.cuni.cz) has joined #git
+2014-08-26 18:37:46	▬▬▶	Brizz (Brizz@tattoine.getsetliving.com) has joined #git
+2014-08-26 18:37:46	▬▬▶	xxtjaxx_ (~xxtjaxx@waltroute.ff02.net) has joined #git
+2014-08-26 18:37:48	◀▬▬	brownbathrobe (~brownbath@S01068843e1ac2008.gv.shawcable.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	dsdeiz (~dsdeiz@112.207.217.120) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	veebers (~quassel@ip-118-90-96-114.xdsl.xnet.co.nz) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	reim (~riQui@77-173-103-149.ip.telfort.nl) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	MarcGuay (~MarcGuay@192.154.145.167) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	akim_ (~akim@unaffiliated/akim) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	naquad (~naquad@naquad.me) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	nuck (~Nuck@oftn/member/Nuck) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	hagabaka (~hagabaka@unaffiliated/hagabaka) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Adam_ActiveState (~adymitruk@S010600226b9201c8.vc.shawcable.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	JSharpe_ (~JSharpe@2.223.210.18) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	bakhtiya (~me@office.addictivemobility.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	jmpp_ (~j@opendarwin/developer/jmpp) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	dmilith_ (~dmilith@verknowsys.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	digitalextremist (~digitalex@wsip-70-167-11-74.sd.sd.cox.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	jwr__ (~quassel@205.196.167.54) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	guzzlefry (~guzzlefry@unaffiliated/guzzlefry) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	superspring (~quassel@ec2-54-88-223-144.compute-1.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	dancat (~dan@198.199.94.106) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Chipdancer (~chip@prince-george.dreamhost.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	squentin (~freenode_@unaffiliated/squentin) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Munter (~Munter@unirevy.dk) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	avalarion (quasselcor@217.115.148.80) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	wavis (sid26483@gateway/web/irccloud.com/x-spizqpnpzyabtskn) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	lvh (~lvh@python/psf/lvh) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	tureba (~tureba@162.248.164.180) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	nafg (~quassel@pool-72-76-197-87.nwrknj.fios.verizon.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Pwnna (~Pwnna@eggplant.thekks.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	lamont (~lamont@ubuntu/member/lamont) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	JonasF (~j@jfgr.de) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	frsk (~frsk@zip.xxd.no) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	s_e_ (~sam@webbotron.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	neurodamage (~neuro@199.30.90.48) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	qsuscs (~qsuscs@212-129-7-139.rev.poneytelecom.eu) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	ToothlessGear (~Toothless@unaffiliated/toothlessgear) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Guest12748 (~rez@192.241.176.172) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Parnic (user@distribution.xbins.org) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	levifig (~levi@hakr.io) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	ilogger2 (~ilogger2@46.38.245.227) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	jeffhung (~jeffhung@60-250-103-120.HINET-IP.hinet.net) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	brainproxy (~brainprox@pdpc/supporter/gold/brainproxy) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	Davey (~Davey@orchestra/staff/Davey) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	philp (~quassel@162.243.72.197) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	nikow (nikow@i.am-a.cat) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	trung (~trung@ec2-23-23-179-94.compute-1.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	Andre_work (~quassel@quassel.woboq.com) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	jorj (~jorj@162.220.240.216) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	WillMoogle (~WillMoogl@78.129.167.193) has quit (*.net *.split)
+2014-08-26 18:37:50	--	squentin_ is now known as squentin
+2014-08-26 18:37:51	◀▬▬	Plenoge_ (~Plenoge@67.17.193.162) has quit (Read error: Connection reset by peer)
+2014-08-26 18:37:51	--	Punna is now known as Pwnna
+2014-08-26 18:37:52	▬▬▶	JSharpe (~JSharpe@2.223.210.18) has joined #git
+2014-08-26 18:37:57	▬▬▶	ilogger2_ (~ilogger2@46.38.245.227) has joined #git
+2014-08-26 18:37:58	▬▬▶	MarcGuay (~MarcGuay@192.154.145.167) has joined #git
+2014-08-26 18:37:59	◀▬▬	przemoc86 (~przemoc@89-74-38-183.dynamic.chello.pl) has quit (Changing host)
+2014-08-26 18:37:59	▬▬▶	przemoc86 (~przemoc@unaffiliated/przemoc) has joined #git
+2014-08-26 18:38:07	▬▬▶	hagebake (~hagabaka@unaffiliated/hagabaka) has joined #git
+2014-08-26 18:38:12	▬▬▶	adam2 (~adymitruk@S010600226b9201c8.vc.shawcable.net) has joined #git
+2014-08-26 18:38:17	▬▬▶	netameta_ (~quassel@71-9-218-189.dhcp.kgpt.tn.charter.com) has joined #git
+2014-08-26 18:38:33	◀▬▬	SupaHam (~SupaHam@2a03:b0c0:1:d0::55:f001) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:33	◀▬▬	cebor (cebor@unaffiliated/cebor) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:34	◀▬▬	ggherdov (sid11402@gateway/web/irccloud.com/x-zeadfhvhwvzcpqpa) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:34	◀▬▬	Derander (~Derander@andrew.xen.prgmr.com) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:49	◀▬▬	binaryhat (~binaryhat@pool-100-37-192-166.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2014-08-26 18:38:52	▬▬▶	sLite_ (~quassel@mail.slite.org) has joined #git
+2014-08-26 18:38:56	◀▬▬	Walex2 (~Walex@5ec07bc4.skybroadband.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:38:57	▬▬▶	davispuhh (~quassel@212.93.100.73) has joined #git
+2014-08-26 18:39:04	arand__	MestreLion: Well, like you suggested, but use "git checkout ." after you've git add -p:ed the relevant bits to clear out the leftover changes, then test and adjust, commit. Then rebase the big commit on top, hopefully reducin it without it conflicting too badly
+2014-08-26 18:39:07	▬▬▶	cebor (cebor@unaffiliated/cebor) has joined #git
+2014-08-26 18:39:07	▬▬▶	xrogaan (~xrogaan@kossuth.xrogaan.be) has joined #git
+2014-08-26 18:39:07	◀▬▬	xrogaan (~xrogaan@kossuth.xrogaan.be) has quit (Changing host)
+2014-08-26 18:39:07	▬▬▶	xrogaan (~xrogaan@unaffiliated/xrogaan) has joined #git
+2014-08-26 18:39:10	▬▬▶	jamieshepherd_ (jamiesheph@gateway/shell/bnc4free/session) has joined #git
+2014-08-26 18:39:12	◀▬▬	bambams_ (43e2809d@gateway/web/freenode/ip.67.226.128.157) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:39:14	▬▬▶	SupaHam (~SupaHam@2a03:b0c0:1:d0::55:f001) has joined #git
+2014-08-26 18:39:17	▬▬▶	bakhtiya (~me@office.addictivemobility.com) has joined #git
+2014-08-26 18:39:25	◀▬▬	AlecTaylor (~Alec@unaffiliated/alectaylor) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:39:25	▬▬▶	Derander (~Derander@andrew.xen.prgmr.com) has joined #git
+2014-08-26 18:39:34	▬▬▶	binaryhat (~binaryhat@pool-100-37-192-166.nycmny.fios.verizon.net) has joined #git
+2014-08-26 18:39:46	◀▬▬	shizzle (~seanmerro@ip70-160-211-108.hr.hr.cox.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:39:46	◀▬▬	JSharpe__ (~JSharpe@2.223.210.18) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:39:46	◀▬▬	_lexjm (~textual@pool-108-9-131-117.tampfl.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:39:46	◀▬▬	armyriad (~armyriad@pool-108-38-230-48.lsanca.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:39:46	◀▬▬	lidaaa (~lid@CPEbcc81015a5e8-CMbcc81015a5e5.cpe.net.cable.rogers.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:39:50	◀▬▬	netameta (~quassel@71-9-218-189.dhcp.kgpt.tn.charter.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:40:32	▬▬▶	jargan (jast@zoidberg.org) has joined #git
+2014-08-26 18:40:32	◀▬▬	_Parnic (user@distribution.xbins.org) has quit (Client Quit)
+2014-08-26 18:40:32	▬▬▶	qsuscs (~qsuscs@212-129-7-139.rev.poneytelecom.eu) has joined #git
+2014-08-26 18:40:32	◀▬▬	Trae32566[W] (~trae32566@unaffiliated/trae32566-smsng) has quit (Excess Flood)
+2014-08-26 18:40:32	◀▬▬	Gizburdt (~gizburdt@D9791B3C.cm-3-2a.dynamic.ziggo.nl) has quit (Write error: Broken pipe)
+2014-08-26 18:40:33	--	Davey_ is now known as Davey
+2014-08-26 18:40:33	▬▬▶	Parnic (user@distribution.xbins.org) has joined #git
+2014-08-26 18:40:33	◀▬▬	tac (~tac-tics@99-126-152-116.lightspeed.cicril.sbcglobal.net) has quit (Ping timeout: 251 seconds)
+2014-08-26 18:40:33	◀▬▬	Lunatrius (~Lunatrius@77.38.103.182) has quit (Ping timeout: 251 seconds)
+2014-08-26 18:40:33	--	Lunatrius` is now known as Lunatrius
+2014-08-26 18:40:33	--	Chipdancer_ is now known as Chipdancer
+2014-08-26 18:40:37	▬▬▶	P4_Denis (~p4denis@212.69.38.51) has joined #git
+2014-08-26 18:40:40	◀▬▬	numdig (~numdig@qrm29-1-82-245-203-8.fbx.proxad.net) has quit (Ping timeout: 329 seconds)
+2014-08-26 18:40:40	▬▬▶	s_e (~sam@webbotron.net) has joined #git
+2014-08-26 18:40:42	▬▬▶	lidaaa (~lid@99.235.88.197) has joined #git
+2014-08-26 18:40:45	◀▬▬	d10n-work (uid37161@gateway/web/irccloud.com/x-sdgcrujregjylvza) has quit (Quit: Connection closed for inactivity)
+2014-08-26 18:40:45	▬▬▶	rjc_ (~rjc@unaffiliated/rjc) has joined #git
+2014-08-26 18:40:45	◀▬▬	Soliton (~Soliton@wesnoth/developer/soliton) has quit (Disconnected by services)
+2014-08-26 18:40:52	▬▬▶	Soliton_ (~Soliton@wesnoth/developer/soliton) has joined #git
+2014-08-26 18:40:54	▬▬▶	trae32566[W] (~trae32566@unaffiliated/trae32566-smsng) has joined #git
+2014-08-26 18:40:54	▬▬▶	Zifre_ (~Zifre@unaffiliated/zifre) has joined #git
+2014-08-26 18:40:58	▬▬▶	armyriad (~armyriad@pool-108-38-230-48.lsanca.fios.verizon.net) has joined #git
+2014-08-26 18:41:03	▬▬▶	dmilith (~dmilith@verknowsys.com) has joined #git
+2014-08-26 18:41:05	▬▬▶	Gizburdt (~gizburdt@D9791B3C.cm-3-2a.dynamic.ziggo.nl) has joined #git
+2014-08-26 18:41:06	▬▬▶	reim (~riQui@77-173-103-149.ip.telfort.nl) has joined #git
+2014-08-26 18:41:06	▬▬▶	leeN (~leeN@e180127187.adsl.alicedsl.de) has joined #git
+2014-08-26 18:41:07	▬▬▶	CraigyDavi` (~CraigyDav@unaffiliated/craigydavi) has joined #git
+2014-08-26 18:41:09	--	Soliton_ is now known as Soliton
+2014-08-26 18:41:09	arand__	MestreLion: using the stash as I noted before pretty much amounts to the same thing as rebasing, I guess.
+2014-08-26 18:41:12	▬▬▶	whaley_ (~whaley@107.170.132.186) has joined #git
+2014-08-26 18:41:13	MestreLion	kadoban: yes, you read the problem right. I want to split a commit for sanity's sake. But I can't blame the guy, afterall those changes *works*
+2014-08-26 18:41:27	▬▬▶	Greener_ (~g@192.241.235.96) has joined #git
+2014-08-26 18:41:28	▬▬▶	mattcen_ (~mattcen@c110-22-201-130.sunsh4.vic.optusnet.com.au) has joined #git
+2014-08-26 18:41:29	◀▬▬	ecky--ptang-zoob (~ecky--pta@2a02:1810:3c09:6500:402c:c3d2:261:b94f) has quit (Ping timeout: 266 seconds)
+2014-08-26 18:41:33	▬▬▶	rblackwe_ (~rblackwe@li178-5.members.linode.com) has joined #git
+2014-08-26 18:41:38	◀▬▬	Gizburdt (~gizburdt@D9791B3C.cm-3-2a.dynamic.ziggo.nl) has quit (Remote host closed the connection)
+2014-08-26 18:41:38	▬▬▶	legumbre_ (~user@ec2-23-22-67-172.compute-1.amazonaws.com) has joined #git
+2014-08-26 18:41:43	▬▬▶	Alenah- (~kp@53.74.211.130.bc.googleusercontent.com) has joined #git
+2014-08-26 18:41:48	MestreLion	arand__: but how can I "git add -p" from a commit to my working tree?
+2014-08-26 18:41:52	▬▬▶	kaendfinger (~kaendfing@97-89-142-11.dhcp.gnvl.sc.charter.com) has joined #git
+2014-08-26 18:41:53	▬▬▶	brainproxy (~brainprox@pdpc/supporter/gold/brainproxy) has joined #git
+2014-08-26 18:41:55	▬▬▶	Friss_ (~Friss@thefriss.info) has joined #git
+2014-08-26 18:42:01	▬▬▶	eXeC65 (~eXeC64@exec64.co.uk) has joined #git
+2014-08-26 18:42:11	▬▬▶	WillMoogle (~WillMoogl@78.129.167.193) has joined #git
+2014-08-26 18:42:11	◀▬▬	GarethAdams (~gareth@pdpc/supporter/active/GarethAdams) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	eXeC64 (~eXeC64@exec64.co.uk) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	rblackwe (~rblackwe@li178-5.members.linode.com) has quit (Read error: Connection reset by peer)
+2014-08-26 18:42:11	◀▬▬	cebor (cebor@unaffiliated/cebor) has quit (Excess Flood)
+2014-08-26 18:42:11	◀▬▬	davispuhh (~quassel@212.93.100.73) has quit (Excess Flood)
+2014-08-26 18:42:11	◀▬▬	Brizz (Brizz@tattoine.getsetliving.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	Imdsm (sid15970@gateway/web/irccloud.com/x-sgwgkfryxlioydpm) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	rypeck (uid23987@gateway/web/irccloud.com/x-hqdnfxveuzbajjvo) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	ws2k3 (freenodeyc@2001:41d0:8:5b85::1337) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	Mehdi (sid15567@gateway/web/irccloud.com/x-wjaqxkncppdgijye) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	shennyg_ (sid4021@gateway/web/irccloud.com/x-xdcbwwczupoyrcpl) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	teslan_ (uid13540@gateway/web/irccloud.com/x-nuocwjenisujogpx) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	mattl (sid14229@gnu/mattl) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	natim (sid27891@gateway/web/irccloud.com/x-lzimfmepldmkulnc) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	heavystorm (~heavystor@ec2-50-17-252-102.compute-1.amazonaws.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	dijit (~dijit@cthulhu.drk.sc) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	crane (~crane@srv1.he.craneworks.de) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	▬▬▶	raven-au_ (~raven-au@124-148-213-25.dyn.iinet.net.au) has joined #git
+2014-08-26 18:42:12	▬▬▶	fl0w_ (~fl0w@martin.iwanowski.se) has joined #git
+2014-08-26 18:42:25	▬▬▶	ecky--ptang-zoob (~ecky--pta@2a02:1810:3c09:6500:402c:c3d2:261:b94f) has joined #git
+2014-08-26 18:42:25	▬▬▶	Brizz (Brizz@tattoine.getsetliving.com) has joined #git
+2014-08-26 18:42:29	◀▬▬	przemoc (~przemoc@unaffiliated/przemoc) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	brainproxy_ (~brainprox@pdpc/supporter/gold/brainproxy) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Tashi (~Tashi@p548B7270.dip0.t-ipconnect.de) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	listochkin (~listochki@blabbering-thinner.volia.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	pheaver (~pweaver@67.139.70.154) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	brucelee (~bjpenn@c-98-207-99-84.hsd1.ca.comcast.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Zifre (~Zifre@unaffiliated/zifre) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	davispuh (~quassel@212.93.100.73) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	ifdm_ (~ifdm@unaffiliated/ifdm/x-0713806) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	cxz (~cxz@unaffiliated/cxz) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	schlumpi (~schlumpi@fob.spline.inf.fu-berlin.de) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	raven-au (~raven-au@124-148-213-25.dyn.iinet.net.au) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	mattcen (~mattcen@c110-22-201-130.sunsh4.vic.optusnet.com.au) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	NightMonkey (~NightMonk@pdpc/supporter/professional/nightmonkey) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	jnewt (~jnewt@99-127-232-165.lightspeed.mssnks.sbcglobal.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Alenah (~kp@53.74.211.130.bc.googleusercontent.com) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	jwest (~jwest@ec2-23-21-178-188.compute-1.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	rjc (~rjc@unaffiliated/rjc) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Brando753 (~Brando753@unaffiliated/brando753) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	brutal_lobster (~brutal_lo@cn.intertax.ru) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	bhldev (~briandev@24-212-129-219.cable.teksavvy.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	rivarun (~rivarun@snf-254183.vm.okeanos.grnet.gr) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	jerius (~jerius@adsl-108-68-143-157.dsl.lgtpmi.sbcglobal.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	tubaman (~tubaman@72.183.107.223) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	eintw1ck (~eintw1ck@unaffiliated/eintw1ck) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	CosmicLogick (~CosmicLog@196.28.18.111) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	jast (jast@zoidberg.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	v0n (~vivien@195.154.92.73) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	genehack (~genehack@65.49.60.231) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	fl0w (~fl0w@martin.iwanowski.se) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	saidelike (~saidelike@ram94-7-82-232-191-125.fbx.proxad.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	dcpc007 (~CHALO@185.8.252.36) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	zenpac (~zenpac3@66.55.33.66) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	qknight_ (~joachim@static.188.100.47.78.clients.your-server.de) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Neptu_ (~Neptu@spa66.core-developers.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Friss (~Friss@thefriss.info) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	vlad003 (~vlad003@107.170.227.230) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	vadmeste (~vadmeste@188.226.195.184) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	alxgnon (~alxgnon@unaffiliated/alxgnon) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	CareBear\ (peter@stuge.se) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Greener (~g@unaffiliated/greener) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	MindfulMonk (~MindfulMo@unaffiliated/mindfulmonk) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	sLite (~quassel@mail.slite.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	M-ou-se (~m-ou.se@m-ou.se) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	mwoodson (mwoodson@nat/redhat/x-benisazzepwtnpxx) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	twem2 (~tristan@skeeter-mxisp.openmarket.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	jamieshepherd (jamiesheph@gateway/shell/bnc4free/x-iphuludnsbpybvzb) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	xender (~xender@bohdan.wu-be.de) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	mtj_- (~mtj_@gw1.kohaaloha.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	hplar (~ralph@unable-to-package.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	rj11 (~rj11@212.37.105.174) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	osse (~osse@unaffiliated/osse) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	here (~here@wherebox.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	warthog9 (~warthog9@149.20.54.19) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	esc (esc@gentoo/contributor/esc) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	pasky_ (~pasky@nikam.ms.mff.cuni.cz) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	xrogaan_ (~xrogaan@unaffiliated/xrogaan) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	whaley (~whaley@107.170.132.186) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	xxtjaxx (~xxtjaxx@kde/developer/marschke) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	skorgon (~skorgon@gateway/tor-sasl/skorgon) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	ntio (~ntio@gateway/tor-sasl/ntio) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	ninsei_s (~ninsei@gateway/tor-sasl/ninsei) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	tanath (~tanath@gateway/tor-sasl/tanath) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	xSmurf (~MrSmurf@gateway/tor-sasl/mrsmurf) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	asakura (~asakura@gateway/tor-sasl/asakura) has quit (*.net *.split)
+2014-08-26 18:42:30	--	whaley_ is now known as whaley
+2014-08-26 18:42:33	--	raven-au_ is now known as raven-au
+2014-08-26 18:42:34	▬▬▶	Gizburdt_ (~gizburdt@D9791B3C.cm-3-2a.dynamic.ziggo.nl) has joined #git
+2014-08-26 18:42:34	--	mattcen_ is now known as mattcen
+2014-08-26 18:42:37	▬▬▶	eintw1ck_ (~eintw1ck@unaffiliated/eintw1ck) has joined #git
+2014-08-26 18:42:40	▬▬▶	EdGruberman (~EdGruberm@unaffiliated/edgruberman) has joined #git
+2014-08-26 18:42:43	▬▬▶	Zifre (~Zifre@unaffiliated/zifre) has joined #git
+2014-08-26 18:42:47	◀▬▬	trae32566[W] (~trae32566@unaffiliated/trae32566-smsng) has quit (Max SendQ exceeded)
+2014-08-26 18:42:47	▬▬▶	GarethAdams (~gareth@2a02:1348:14c:479:1d5c:3fec:3448:bbe) has joined #git
+2014-08-26 18:42:49	▬▬▶	Neptu (~Neptu@spa66.core-developers.com) has joined #git
+2014-08-26 18:42:52	◀▬▬	pr0ton (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has quit (Quit: pr0ton)
+2014-08-26 18:42:52	▬▬▶	fstd_ (~fstd@xdsl-81-173-190-76.netcologne.de) has joined #git
+2014-08-26 18:42:53	▬▬▶	NightMonkey_ (~NightMonk@pdpc/supporter/professional/nightmonkey) has joined #git
+2014-08-26 18:42:53	▬▬▶	jnewt (~jnewt@99-127-232-165.lightspeed.mssnks.sbcglobal.net) has joined #git
+2014-08-26 18:42:55	▬▬▶	Walex (~Walex@5ec07bc4.skybroadband.com) has joined #git
+2014-08-26 18:42:56	◀▬▬	wolog (~wolog@wolog.info) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:56	◀▬▬	FabTG_ (~ftg@142.ip-37-59-108.eu) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:56	◀▬▬	Guest23528 (~adam@atlanta.reconapp.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:57	◀▬▬	chris2 (~chris@vuxu.org) has quit (Ping 2014-08-28 17:27:51	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-28 17:27:51	--	Topic for #git is "Welcome to #git, the place for git help and nihilistic tendencies | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | All those commits will be lost in time... Like tears in rain... Time to gc"
+2014-08-28 17:27:51	--	Topic set by Eugene (eugene@kashpureff.org) on Thu, 28 Aug 2014 00:47:50
+2014-08-28 17:27:51	--	Channel #git: 1092 nicks (1 op, 35 voices, 1056 normals)
+2014-08-28 17:28:00	◀▬▬	teran (~teran@87.229.214.198) has quit (Remote host closed the connection)
+2014-08-28 17:28:02	▬▬▶	FortySix2 (~FortySix2@h204-246-2-62.mdsnwi.tisp.static.tds.net) has joined #git
+2014-08-28 17:28:06	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-28 17:28:12	◀▬▬	AlexDenisov (~AlexDenis@aflutter-signaler.volia.net) has quit (Quit: Computer has gone to sleep.)
+2014-08-28 17:28:24	▬▬▶	moviuro (~moviuro@ginfo.ext.ec-m.fr) has joined #git
+2014-08-28 17:28:26	◀▬▬	lowkeyli_ (~lowkeylie@173-164-200-74-SFBA.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2014-08-28 17:28:41	▬▬▶	lowkeyli_ (~lowkeylie@173-164-200-74-SFBA.hfc.comcastbusiness.net) has joined #git
+2014-08-28 17:28:41	◀▬▬	iamjarvo (~textual@pool-98-115-181-52.phlapa.fios.verizon.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-28 17:28:54	◀▬▬	sin3t (~sin3t@94.231.188.10) has quit (Read error: Connection reset by peer)
+2014-08-28 17:29:31	▬▬▶	sin3t (~sin3t@94.231.188.10) has joined #git
+2014-08-28 17:29:59	◀▬▬	lowkeyliesmyth (~lowkeylie@173-164-200-74-SFBA.hfc.comcastbusiness.net) has quit (Ping timeout: 255 seconds)
+2014-08-28 17:30:00	moviuro	Hi all! When git bisect-ing and reaching a final "skip", I get this: ix.io/e4n (project systemd @ freenode) but the commits' list is in a complete random order. Why that? Why not from top to bottom: most recent to oldest?
+2014-08-28 17:31:08	◀▬▬	it0a (~it0a@rrcs-24-56-88-130.ma.biz.rr.com) has quit (Quit: Lost terminal)
+2014-08-28 17:32:15	▬▬▶	robzilla (~robarelli@108.181.108.164) has joined #git
+2014-08-28 17:32:21	▬▬▶	toedwy (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has joined #git
+2014-08-28 17:32:32	◀▬▬	diegoviola (~diego@unaffiliated/diegoviola) has quit (Ping timeout: 245 seconds)
+2014-08-28 17:32:37	▬▬▶	StarManta2 (~leftchann@8.25.65.220) has joined #git
+2014-08-28 17:33:06	▬▬▶	FreezingCold (~FreezingC@CPE602ad06bea2a-CM602ad06bea27.cpe.net.cable.rogers.com) has joined #git
+2014-08-28 17:33:49	▬▬▶	diegoviola (~diego@unaffiliated/diegoviola) has joined #git
+2014-08-28 17:34:05	--	irc: disconnected from server
+2014-08-28 17:34:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-28 17:34:19	--	Topic for #git is "Welcome to #git, the place for git help and nihilistic tendencies | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | All those commits will be lost in time... Like tears in rain... Time to gc"
+2014-08-28 17:34:19	--	Topic set by Eugene (eugene@kashpureff.org) on Thu, 28 Aug 2014 00:47:50
+2014-08-28 17:34:19	--	Channel #git: 1093 nicks (1 op, 35 voices, 1057 normals)
+2014-08-28 17:34:32	◀▬▬	mennea (~textual@37.46.38.195) has quit (Read error: Connection reset by peer)
+2014-08-28 17:34:34	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-28 17:34:42	◀▬▬	toedwy_ (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:35:34	▬▬▶	m0viefreak (~asdf@unaffiliated/m0viefreak) has joined #git
+2014-08-28 17:35:41	◀▬▬	sr____ (uid5548@gateway/web/irccloud.com/x-egkvfxwmponmrwvw) has quit (Quit: Connection closed for inactivity)
+2014-08-28 17:36:38	◀▬▬	robzilla (~robarelli@108.181.108.164) has quit (Ping timeout: 246 seconds)
+2014-08-28 17:36:57	▬▬▶	toedwy_ (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has joined #git
+2014-08-28 17:37:07	▬▬▶	nerdfiles (~nerdfiles@107-211-136-240.lightspeed.hstntx.sbcglobal.net) has joined #git
+2014-08-28 17:37:24	◀▬▬	sin3t (~sin3t@94.231.188.10) has quit (Read error: Connection reset by peer)
+2014-08-28 17:37:42	◀▬▬	deric_skibotn (~chatzilla@remote.activestate.com) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:38:01	▬▬▶	sin3t (~sin3t@94.231.188.10) has joined #git
+2014-08-28 17:39:04	◀▬▬	basiclaser (Elite7488@gateway/shell/elitebnc/x-ingyvcgdyyeewdrh) has quit (Excess Flood)
+2014-08-28 17:39:53	◀▬▬	toedwy (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:40:07	◀▬▬	sinkensabe (~sinkensab@h241n6-lk-d1.ias.bredband.telia.com) has quit (Remote host closed the connection)
+2014-08-28 17:40:18	◀▬▬	irqq (~chatzilla@abdd66.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 250 seconds)
+2014-08-28 17:40:33	◀▬▬	Skapadapaduu (~hobla@dsl-hkibrasgw4-50dc48-91.dhcp.inet.fi) has quit
+2014-08-28 17:41:03	▬▬▶	n-st (~n-st@p57AE9D2A.dip0.t-ipconnect.de) has joined #git
+2014-08-28 17:41:15	▬▬▶	buffal0 (~buffal0@109.201.154.217) has joined #git
+2014-08-28 17:41:31	◀▬▬	Eins_ (~eins_@187.205.51.132) has quit (Remote host closed the connection)
+2014-08-28 17:41:38	▬▬▶	irqq (~chatzilla@afip233.neoplus.adsl.tpnet.pl) has joined #git
+2014-08-28 17:42:00	◀▬▬	deant765 (~dthom@rrcs-67-78-96-85.sw.biz.rr.com) has quit (Read error: Connection reset by peer)
+2014-08-28 17:42:54	◀▬▬	pantsman- (~pantsman@cpc12-haye16-2-0-cust45.haye.cable.virginm.net) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:43:08	◀▬▬	sdrfnord1 (~sdrfnord@213.153.84.215) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:43:21	▬▬▶	ehmatthes (~ehmatthes@96-232-237-24.gci.net) has joined #git
+2014-08-28 17:43:23	◀▬▬	nemesit|znc (~nemesit|z@84.200.7.95) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:43:36	▬▬▶	deant765 (~dthom@rrcs-67-78-96-85.sw.biz.rr.com) has joined #git
+2014-08-28 17:43:38	--	irc: disconnected from server
+2014-08-28 17:51:58	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-28 17:51:58	--	Topic for #git is "Welcome to #git, the place for git help and nihilistic tendencies | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | All those commits will be lost in time... Like tears in rain... Time to gc"
+2014-08-28 17:51:58	--	Topic set by Eugene (eugene@kashpureff.org) on Thu, 28 Aug 2014 00:47:50
+2014-08-28 17:51:58	--	Channel #git: 1090 nicks (1 op, 35 voices, 1054 normals)
+2014-08-28 17:52:14	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-28 17:53:07	◀▬▬	sgen_ (~sgen@TNHLON4048W-LP140-02-3096475489.dsl.bell.ca) has quit (Quit: Leaving)
+2014-08-28 17:53:14	▬▬▶	bbloom (~bbloom@cpe-68-173-7-82.nyc.res.rr.com) has joined #git
+2014-08-28 17:54:11	◀▬▬	wrouesnel (~wrouesnel@14-200-69-67.static.tpgi.com.au) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:54:12	▬▬▶	deric_skibotn (~chatzilla@remote.activestate.com) has joined #git
+2014-08-28 17:54:18	◀▬▬	aidalgol (~user@pdpc/supporter/student/aidalgol) has quit (Remote host closed the connection)
+2014-08-28 17:55:00	◀▬▬	toedwy_ (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has quit (Ping timeout: 264 seconds)
+2014-08-28 17:55:27	▬▬▶	aidalgol (~user@pdpc/supporter/student/aidalgol) has joined #git
+2014-08-28 17:55:41	+Eugene	!empty
+2014-08-28 17:55:41	@gitinfo	[!orphan_null] To create an orphan branch with the null/empty commit, use: `git checkout -b orphan $(echo "empty" | git commit-tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904)`
+2014-08-28 17:55:46	+Eugene	Ugh, no.
+2014-08-28 17:55:52	◀▬▬	DeathIncarnate (~DeathInca@69.27.21.152) has quit (Ping timeout: 245 seconds)
+2014-08-28 17:56:01	◀▬▬	bitkiller (~bitkiller@191.179.228.191) has quit (Remote host closed the connection)
+2014-08-28 17:56:12	+Eugene	!dirs
+2014-08-28 17:56:12	@gitinfo	[!directory] Git does not track directories, only files in directories.  Create a nonce file as a placeholder (eg .gitignore) to create the directory or create the directory as part of a post-checkout hook
+2014-08-28 17:56:18	▬▬▶	bitkiller (~bitkiller@191.179.228.191) has joined #git
+2014-08-28 17:57:11	◀▬▬	lowkeyli_ (~lowkeylie@173-164-200-74-SFBA.hfc.comcastbusiness.net) has quit (Remote host closed the connection)
+2014-08-28 17:57:38	◀▬▬	livingstn (~livingstn@ql1fwhide.rockfin.com) has quit
+2014-08-28 17:57:45	▬▬▶	sdrfnord1 (~sdrfnord@213.153.84.215) has joined #git
+2014-08-28 17:58:28	▬▬▶	DeathIncarnate (~DeathInca@69.27.21.152) has joined #git
+2014-08-28 17:58:58	◀▬▬	LBV_User (~leonardo@177.2.128.75) has quit (Quit: Bye all :))
+2014-08-28 17:59:08	◀▬▬	knalf (~alfred@8.7.202.84.customer.cdi.no) has quit (Ping timeout: 244 seconds)
+2014-08-28 17:59:42	◀▬▬	dsdeiz (~dsdeiz@112.207.217.120) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:00:19	▬▬▶	gluten_hell_ (~gluten_he@p20030045484C9790A572C0F6C02C8D28.dip0.t-ipconnect.de) has joined #git
+2014-08-28 18:01:05	◀▬▬	hashar (~sempitern@mediawiki/hashar) has quit
+2014-08-28 18:01:08	◀▬▬	flugo (~flugo@103.225.100.51) has quit (Ping timeout: 246 seconds)
+2014-08-28 18:01:21	◀▬▬	Gizburdt (~gizburdt@D9791B3C.cm-3-2a.dynamic.ziggo.nl) has quit (Remote host closed the connection)
+2014-08-28 18:01:22	◀▬▬	ferreum (~ferreus@port-27141.pppoe.wtnet.de) has quit (Quit: WeeChat 1.0-dev)
+2014-08-28 18:01:31	▬▬▶	ferreum158 (~ferreus@port-27141.pppoe.wtnet.de) has joined #git
+2014-08-28 18:02:05	◀▬▬	trang (~Nguyen_Da@38.122.21.243) has quit (Quit: trang)
+2014-08-28 18:02:12	zophy	Eugene, wow, thank you for the tip
+2014-08-28 18:02:26	◀▬▬	acharlieh (~acharlieh@159.140.254.102) has quit (Quit: Computer has gone to sleep.)
+2014-08-28 18:02:44	◀▬▬	Sammy8806 (~steven@dark-it.net) has quit (Ping timeout: 250 seconds)
+2014-08-28 18:02:56	▬▬▶	flugo (~flugo@103.225.100.51) has joined #git
+2014-08-28 18:03:02	▬▬▶	lowkeyliesmyth (~lowkeylie@173-164-200-74-SFBA.hfc.comcastbusiness.net) has joined #git
+2014-08-28 18:03:05	◀▬▬	xSmurf (~MrSmurf@gateway/tor-sasl/mrsmurf) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:03:06	◀▬▬	rfreeman_w (~rfreeman@gateway/tor-sasl/rfreemanw) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:03:19	▬▬▶	knalf (~alfred@8.7.202.84.customer.cdi.no) has joined #git
+2014-08-28 18:04:13	▬▬▶	thiago (~thiago@kde/thiago) has joined #git
+2014-08-28 18:04:23	▬▬▶	martinklepsch (~kmartiin@dslb-088-074-094-139.088.074.pools.vodafone-ip.de) has joined #git
+2014-08-28 18:04:33	▬▬▶	pierre1_ (~pierre1@179.218.155.20) has joined #git
+2014-08-28 18:05:34	▬▬▶	jko_ (~jko@pool-100-33-246-121.nycmny.fios.verizon.net) has joined #git
+2014-08-28 18:05:46	▬▬▶	kadoban (~kadoban@ip68-104-204-58.ph.ph.cox.net) has joined #git
+2014-08-28 18:07:23	▬▬▶	toedwy_ (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has joined #git
+2014-08-28 18:08:02	◀▬▬	thevishy (~thevishy@122.172.180.232) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:09:16	◀▬▬	nnyk (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 260 seconds)
+2014-08-28 18:10:03	◀▬▬	toedwy (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has quit (Ping timeout: 260 seconds)
+2014-08-28 18:10:35	◀▬▬	nedbat (~nedbat@python/psf/nedbat) has quit
+2014-08-28 18:11:13	▬▬▶	Sammy8806 (~steven@dark-it.net) has joined #git
+2014-08-28 18:11:49	▬▬▶	xSmurf (~MrSmurf@gateway/tor-sasl/mrsmurf) has joined #git
+2014-08-28 18:11:58	◀▬▬	noituloveand (~noitulove@pool-108-4-57-87.rcmdva.fios.verizon.net) has quit (Remote host closed the connection)
+2014-08-28 18:12:19	◀▬▬	StarManta (~StarManta@8.25.65.220) has quit (Quit: StarManta)
+2014-08-28 18:13:14	▬▬▶	rfreeman_w (~rfreeman@gateway/tor-sasl/rfreemanw) has joined #git
+2014-08-28 18:13:15	◀▬▬	ropav (~ropav@173.247.204.122) has quit (Remote host closed the connection)
+2014-08-28 18:13:22	◀▬▬	danemacmillan (~danemacmi@modemcable206.143-37-24.static.videotron.ca) has quit (Quit: WeeChat 1.0)
+2014-08-28 18:14:20	◀▬▬	LeMike (~Thunderbi@ipservice-092-209-144-063.092.209.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2014-08-28 18:14:55	▬▬▶	ropav (~ropav@173.247.204.122) has joined #git
+2014-08-28 18:16:27	◀▬▬	ropav (~ropav@173.247.204.122) has quit (Remote host closed the connection)
+2014-08-28 18:17:00	▬▬▶	toedwy (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has joined #git
+2014-08-28 18:17:15	▬▬▶	trang (~Nguyen_Da@38.122.21.243) has joined #git
+2014-08-28 18:17:29	◀▬▬	Ankhers (~user@gateway/tor-sasl/ankhers) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:18:36	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-28 18:18:49	◀▬▬	listochkin (~listochki@blabbering-thinner.volia.net) has quit (Read error: Connection reset by peer)
+2014-08-28 18:18:50	◀▬▬	knalf (~alfred@8.7.202.84.customer.cdi.no) has quit (Ping timeout: 260 seconds)
+2014-08-28 18:18:59	◀▬▬	Sammy8806 (~steven@dark-it.net) has quit (Ping timeout: 246 seconds)
+2014-08-28 18:19:17	◀▬▬	martinklepsch (~kmartiin@dslb-088-074-094-139.088.074.pools.vodafone-ip.de) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-28 18:19:24	▬▬▶	listochkin (~listochki@blabbering-thinner.volia.net) has joined #git
+2014-08-28 18:19:27	▬▬▶	ropav (~ropav@173.247.204.122) has joined #git
+2014-08-28 18:19:43	◀▬▬	toedwy_ (~toedwy@wsip-184-185-173-7.ph.ph.cox.net) has quit (Ping timeout: 240 seconds)
+2014-08-28 18:19:50	◀▬▬	tranzfuse (~tranzfuse@2600:c0e:3002:120:f4b9:b5a0:c1b9:2bb1) has quit (Remote host closed the connection)
+2014-08-28 18:21:03	▬▬▶	knalf (~alfred@8.7.202.84.customer.cdi.no) has joined #git
+2014-08-28 18:21:05	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Max SendQ exceeded)
+2014-08-28 18:21:24	◀▬▬	trang (~Nguyen_Da@38.122.21.243) has quit (Client Quit)
+2014-08-28 18:21:36	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #git
+2014-08-28 18:22:04	◀▬▬	gluten_hell_ (~gluten_he@p20030045484C9790A572C0F6C02C8D28.dip0.t-ipconnect.de) has quit (Quit: Computer has gone to sleep.)
+2014-08-28 18:23:17	◀▬▬	ropav (~ropav@173.247.204.122) has quit (Remote host closed the connection)
+2014-08-28 18:23:21	--	irc: disconnected from server
+2014-08-28 23:49:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-28 23:49:19	--	Topic for #git is "Welcome to #git, the place for git help and nihilistic tendencies | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | All those commits will be lost in time... Like tears in rain... Time to gc"
+2014-08-28 23:49:19	--	Topic set by Eugene (eugene@kashpureff.org) on Thu, 28 Aug 2014 00:47:50
+2014-08-28 23:49:19	--	Channel #git: 1035 nicks (1 op, 34 voices, 1000 normals)
+2014-08-28 23:49:19	◀▬▬	EminenceHC (~eminenceh@173-167-242-193-ip-static.hfc.comcastbusiness.net) has quit (Ping timeout: 260 seconds)
+2014-08-28 23:49:30	diegoaguilar	but if I do changes to the testing branch (done a checkout testing)
+2014-08-28 23:49:34	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-28 23:49:41	◀▬▬	dreiss (~dreiss@23-24-202-9-static.hfc.comcastbusiness.net) has quit (Ping timeout: 264 seconds)
+2014-08-28 23:49:46	diegoaguilar	how can I commit and push such changes ONLY to the testing and not the master
+2014-08-28 23:50:02	+skorgon	commits go to the currently checked out branch only
+2014-08-28 23:50:12	+skorgon	or on no branch if none is checked out
+2014-08-28 23:50:27	▬▬▶	Marcus___ (~Marcus@81-225-10-209-no123.bredband.skanova.com) has joined #git
+2014-08-28 23:50:51	◀▬▬	beautifulmind (~Bhavin@117.207.0.241) has quit (Read error: Connection reset by peer)
+2014-08-28 23:51:00	+skorgon	you can visualize your branches with  !lol
+2014-08-28 23:51:00	@gitinfo	A nifty view of branches, tags, and other refs: git log --oneline --graph --decorate --all
+2014-08-28 23:51:05	▬▬▶	Fandekasp (~Fandekasp@p14021-ipngn100302kobeminato.hyogo.ocn.ne.jp) has joined #git
+2014-08-28 23:51:06	◀▬▬	Fandekasp (~Fandekasp@p14021-ipngn100302kobeminato.hyogo.ocn.ne.jp) has quit (Client Quit)
+2014-08-28 23:51:14	▬▬▶	Fandekasp (~Fandekasp@p14021-ipngn100302kobeminato.hyogo.ocn.ne.jp) has joined #git
+2014-08-28 23:51:22	◀▬▬	nb_bez__ (uid24701@gateway/web/irccloud.com/x-nwfxpyuqtudghygd) has quit (Quit: Connection closed for inactivity)
+2014-08-28 23:52:50	diegoaguilar	I use bitbucket
+2014-08-28 23:52:58	diegoaguilar	and I just did a git commit and git push
+2014-08-28 23:52:58	◀▬▬	Marcus_ (~Marcus@81-225-10-209-no123.bredband.skanova.com) has quit (Ping timeout: 260 seconds)
+2014-08-28 23:53:10	diegoaguilar	and the log said
+2014-08-28 23:53:18	diegoaguilar	To https://diegoaguilar@bitbucket.org/codecreatures/dexter.git  97dbccc..4c14efe  master -> master
+2014-08-28 23:54:23	diegoaguilar	 I expected to tell it was upon "testing"
+2014-08-28 23:54:34	diegoaguilar	as I had done a git checkout testing
+2014-08-28 23:55:09	+skorgon	first check how things look locally with !lol
+2014-08-28 23:55:09	@gitinfo	A nifty view of branches, tags, and other refs: git log --oneline --graph --decorate --all
+2014-08-28 23:55:39	+skorgon	git push can behave very differently depending on your settings and git version
+2014-08-28 23:55:55	◀▬▬	alvaro_o_ (~alvaro@187.210.148.27) has quit (Quit: Ex-Chat)
+2014-08-28 23:56:10	+skorgon	i would not use it without further arguments
+2014-08-28 23:56:26	▬▬▶	Embassy (~Embassy@8ta-151-110-128.telkomadsl.co.za) has joined #git
+2014-08-28 23:56:35	diegoaguilar	how can I get !lol
+2014-08-28 23:56:35	@gitinfo	A nifty view of branches, tags, and other refs: git log --oneline --graph --decorate --all
+2014-08-28 23:56:47	+skorgon	just execute git log --oneline --graph --decorate --all
+2014-08-28 23:57:17	◀▬▬	gittish (~anonymous@78-69-107-197-no52.tbcn.telia.com) has quit (Quit: gittish)
+2014-08-28 23:57:30	diegoaguilar	I did
+2014-08-28 23:57:31	diegoaguilar	* 3daea14 (HEAD, express4Test) express4
+2014-08-28 23:57:31	diegoaguilar	* 4c14efe (origin/master, origin/HEAD, master) Docs
+2014-08-28 23:57:31	diegoaguilar	* 97dbccc 0.0.0
+2014-08-28 23:57:31	diegoaguilar	* b10a235 Server js
+2014-08-28 23:57:31	diegoaguilar	* 567cb9f Server js
+2014-08-28 23:57:32	diegoaguilar	* 6c96f31 Comenzamos :)
+2014-08-28 23:58:15	+skorgon	okay, so master is at 4c14efe now and remotely it wasn't, push updated that which i guess is correct
+2014-08-28 23:58:41	◀▬▬	CKyle (~CKyle@c-174-63-134-173.hsd1.fl.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-28 23:58:52	+skorgon	additionaly you have one commit in your testing branch, which didn't get pushed (as i said there are some settings to set in the config)
+2014-08-28 23:59:23	+skorgon	to push that branch git push -u origin express4Test should do, I think
+2014-08-28 23:59:31	▬▬▶	mennea (~textual@31.210.186.70) has joined #git
+2014-08-28 23:59:58	diegoaguilar	thanks, so
+2014-08-29 00:00:11	diegoaguilar	what settings should I do?
+2014-08-29 00:00:14	diegoaguilar	:)
+2014-08-29 00:00:36	▬▬▶	curiousmansi__ (~chatzilla@106.51.243.44) has joined #git
+2014-08-29 00:00:43	◀▬▬	Embassy (~Embassy@8ta-151-110-128.telkomadsl.co.za) has quit (Ping timeout: 240 seconds)
+2014-08-29 00:00:52	+skorgon	depends on your workflow. i use 'current'
+2014-08-29 00:01:59	diegoaguilar	what does the -u argument mean in the push command
+2014-08-29 00:02:14	▬▬▶	dreiss (~dreiss@173.252.71.189) has joined #git
+2014-08-29 00:02:35	◀▬▬	leptonix (~leptonix@ec2-79-125-24-107.eu-west-1.compute.amazonaws.com) has quit (Ping timeout: 240 seconds)
+2014-08-29 00:02:48	◀▬▬	curiousmansi_ (~chatzilla@106.51.233.1) has quit (Ping timeout: 264 seconds)
+2014-08-29 00:03:03	◀▬▬	mmattice (mmattice@unaffiliated/mmattice) has quit (Quit: leaving)
+2014-08-29 00:03:11	diegoaguilar	what does the -u argument mean in the push command
+2014-08-29 00:03:11	+skorgon	it sets the upstream information for your branch and creates the branch on the remote side
+2014-08-29 00:03:32	diegoaguilar	hmm I got confused about it
+2014-08-29 00:03:45	▬▬▶	leptonix (~leptonix@ec2-79-125-24-107.eu-west-1.compute.amazonaws.com) has joined #git
+2014-08-29 00:03:51	+skorgon	you shouldn't need it for future pushes just for the first to create the branch remotely
+2014-08-29 00:03:59	▬▬▶	jftf (~jftf@38.140.21.74) has joined #git
+2014-08-29 00:05:40	◀▬▬	idoru (idoru@freenode/utility-bot/ex-server/idoru) has quit (Remote host closed the connection)
+2014-08-29 00:07:11	◀▬▬	kpreid (~kpreid@50.250.223.109) has quit (Quit: Quitting)
+2014-08-29 00:07:30	▬▬▶	kpreid (~kpreid@50.250.223.109) has joined #git
+2014-08-29 00:08:48	◀▬▬	jftf (~jftf@38.140.21.74) has quit (Ping timeout: 264 seconds)
+2014-08-29 00:09:01	▬▬▶	beautifulmind (~Bhavin@117.207.0.241) has joined #git
+2014-08-29 00:09:33	▬▬▶	Ornacia (drag@gateway/shell/elitebnc/x-yiyfffvlbsdrjeah) has joined #git
+2014-08-29 00:10:16	--	irc: disconnected from server
+2014-08-29 00:10:35	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-29 00:10:35	--	Topic for #git is "Welcome to #git, the place for git help and nihilistic tendencies | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | All those commits will be lost in time... Like tears in rain... Time to gc"
+2014-08-29 00:10:35	--	Topic set by Eugene (eugene@kashpureff.org) on Thu, 28 Aug 2014 00:47:50
+2014-08-29 00:10:35	--	Channel #git: 1031 nicks (1 op, 34 voices, 996 normals)
+2014-08-29 00:10:38	▬▬▶	blakbunnie27 (Elite9929@gateway/shell/elitebnc/x-huibhrcvqzojubal) has joined #git
+2014-08-29 00:10:50	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-29 00:11:06	▬▬▶	Cer3bus (~Cer3bus@pool-71-191-190-176.washdc.fios.verizon.net) has joined #git
+2014-08-29 00:11:16	▬▬▶	Anon126 (~anon126@cpe-76-175-24-31.socal.res.rr.com) has joined #git
+2014-08-29 00:11:32	▬▬▶	Faffyman (~Faffyman@mail.ardmore.co.uk) has joined #git
+2014-08-29 00:11:36	▬▬▶	AdrianGuenter_ (~AdrianGue@h69-131-28-5.stmyga.broadband.dynamic.tds.net) has joined #git
+2014-08-29 00:12:18	◀▬▬	St_Marx (~Saint_Mar@gateway/tor-sasl/stmarx/x-88752187) has quit (Remote host closed the connection)
+2014-08-29 00:12:24	▬▬▶	irqq (~chatzilla@afip233.neoplus.adsl.tpnet.pl) has joined #git
+2014-08-29 00:13:38	diegoaguilar	skorgon, one last question
+2014-08-29 00:14:00	diegoaguilar	locally, should I have two copies of the file corresponding to both branches?
+2014-08-29 00:15:02	diegoaguilar	they're actually text files after all ... how can I manage to edit a probably totally distinct file for different branches?
+2014-08-29 00:15:31	◀▬▬	Anon126 (~anon126@cpe-76-175-24-31.socal.res.rr.com) has left #git
+2014-08-29 00:15:40	◀▬▬	Ornacia (drag@gateway/shell/elitebnc/x-yiyfffvlbsdrjeah) has quit (Remote host closed the connection)
+2014-08-29 00:15:52	◀▬▬	daito (~daito@203.104.128.123) has quit (Remote host closed the connection)
+2014-08-29 00:15:53	◀▬▬	Faffyman (~Faffyman@mail.ardmore.co.uk) has quit (Ping timeout: 255 seconds)
+2014-08-29 00:15:58	◀▬▬	Mitchbones (~textual@159.118.29.20) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-29 00:16:11	◀▬▬	Baluse (~Baluse@athedsl-4509606.home.otenet.gr) has quit
+2014-08-29 18:36:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #git
+2014-08-29 18:36:16	--	Topic for #git is "Welcome to #git, the place for git help and inappropriate films | Current stable version: 2.1.0 | Start here: http://jk.gs/git | Getting "cannot send to channel"? /msg gitinfo .voice | git-bisect: The good, the bad and the... uhh... skip"
+2014-08-29 18:36:16	--	Topic set by Eugene (eugene@kashpureff.org) on Fri, 29 Aug 2014 12:50:46
+2014-08-29 18:36:16	--	Channel #git: 1044 nicks (1 op, 16 voices, 1027 normals)
+2014-08-29 18:36:16	◀▬▬	B1x1t0 (~B1x1t0@101.Red-81-38-145.dynamicIP.rima-tde.net) has quit (Quit: Leaving)
+2014-08-29 18:36:31	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2014-08-29 18:36:47	◀▬▬	sohail (~user@unaffiliated/sohail) has quit (Ping timeout: 244 seconds)
+2014-08-29 18:37:37	◀▬▬	nettoweb (~nettoweb@189.26.132.251.dynamic.adsl.gvt.net.br) has quit (Quit: nettoweb)
+2014-08-29 18:38:36	◀▬▬	moviuro (~moviuro@ginfo.ext.ec-m.fr) has left #git ("Bye!")
+2014-08-29 18:38:38	◀▬▬	_Vi (~vi@2001:470:7bd6:c000::2) has quit (Ping timeout: 260 seconds)
+2014-08-29 18:39:17	▬▬▶	nbrosnah_ (~nbrosnaha@c-107-3-143-61.hsd1.ca.comcast.net) has joined #git
+2014-08-29 18:39:22	◀▬▬	nbrosnah_ (~nbrosnaha@c-107-3-143-61.hsd1.ca.comcast.net) has quit (Max SendQ exceeded)
+2014-08-29 18:39:55	▬▬▶	nbrosnah_ (~nbrosnaha@c-107-3-143-61.hsd1.ca.comcast.net) has joined #git
+2014-08-29 18:40:07	◀▬▬	LucasKA (~LucasKA@pool-71-189-75-30.lsanca.fios.verizon.net) has quit (Ping timeout: 245 seconds)
+2014-08-29 18:40:09	◀▬▬	pr0ton_ (~pr0ton@8.25.197.26) has quit (Quit: pr0ton_)
+2014-08-29 18:40:32	▬▬▶	srcerer (~chatzilla@dns2.klsairexpress.com) has joined #git
+2014-08-29 18:40:51	▬▬▶	_Vi (~vi@2001:470:7bd6:c000::2) has joined #git
+2014-08-29 18:40:52	▬▬▶	pr0ton_ (~pr0ton@8.25.197.26) has joined #git
+2014-08-29 18:40:52	▬▬▶	dougsland (~dougsland@tchelinux/moderator/dougsland) has joined #git
+2014-08-29 18:41:13	◀▬▬	pr0ton_ (~pr0ton@8.25.197.26) has quit (Client Quit)
+2014-08-29 18:41:35	▬▬▶	mfmfmfmfmfmf (~mfmfmfmfm@host-2-97-60-147.as13285.net) has joined #git
+2014-08-29 18:42:10	▬▬▶	danemacmillan (~danemacmi@unaffiliated/danemacmillan) has joined #git
+2014-08-29 18:42:27	▬▬▶	cjwilburn (~cjwilburn@2601:b:b900:605:4438:5bea:6d67:ae1c) has joined #git
+2014-08-29 18:42:29	◀▬▬	acharlieh (~acharlieh@159.140.254.105) has quit (Quit: Computer has gone to sleep.)
+2014-08-29 18:42:58	▬▬▶	Eins_ (~eins_@187.205.51.132) has joined #git
+2014-08-29 18:43:49	▬▬▶	jorisros___ (~jorisros@sd4406e19.adsl.online.nl) has joined #git
+2014-08-29 18:44:00	◀▬▬	FunkyAss (~Funky@unaffiliated/funkyass) has quit (Quit: Make my Funk the P-Funk)
+2014-08-29 18:44:12	▬▬▶	shinnya (~shinnya@134.144.197.113.dy.bbexcite.jp) has joined #git
+2014-08-29 18:44:15	◀▬▬	WaReZ (~warez@78.208.125.180) has quit (Ping timeout: 260 seconds)
+2014-08-29 18:45:35	◀▬▬	zophy (~sy@host-98-218-220-24.midco.net) has quit (Ping timeout: 244 seconds)
+2014-08-29 18:46:48	◀▬▬	sgen (~sgen@CPEbcc810130284-CMbcc810130281.cpe.net.cable.rogers.com) has quit (Quit: Leaving)
+2014-08-29 18:47:03	◀▬▬	cjwilburn (~cjwilburn@2601:b:b900:605:4438:5bea:6d67:ae1c) has quit (Ping timeout: 260 seconds)
+2014-08-29 18:47:38	◀▬▬	Eins_ (~eins_@187.205.51.132) has quit (Ping timeout: 244 seconds)

@@ -1,0 +1,1108 @@
+2014-08-25 05:58:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-25 05:58:16	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-25 05:58:16	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-25 05:58:16	--	Channel #postgresql: 828 nicks (0 ops, 0 voices, 828 normals)
+2014-08-25 05:58:17	--	URL for #postgresql: http://www.postgresql.org
+2014-08-25 05:58:24	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-25 05:59:05	▬▬▶	chad___ (~chad@46.231.183.163) has joined #postgresql
+2014-08-25 05:59:23	◀▬▬	chad (~chad@46.231.183.163) has quit (Read error: Connection reset by peer)
+2014-08-25 05:59:28	◀▬▬	Eridan (~Kaeron@c2faf695.fsp.oleane.fr) has quit (Quit: Eridan)
+2014-08-25 06:00:17	▬▬▶	eps_dev (~valery.fa@85.113.220.4) has joined #postgresql
+2014-08-25 06:00:44	veet	Myon: I really need it :( We have some offices at different continents. What is the best practice?
+2014-08-25 06:01:17	Zr40	what do the offices do with each other's data?
+2014-08-25 06:01:25	◀▬▬	roadie (~user@CPE-123-211-12-203.lnse3.cha.bigpond.net.au) has quit (Quit: ERC Version 5.3 (IRC client for Emacs))
+2014-08-25 06:01:28	◀▬▬	lrea (~luca@fast100.tomato.it) has quit (Ping timeout: 240 seconds)
+2014-08-25 06:01:51	Zr40	nothing, read, or read and write?
+2014-08-25 06:01:54	Myon	you need to read some books, or hire a consultant
+2014-08-25 06:02:33	--	irc: disconnected from server
+2014-08-25 06:02:48	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-25 06:02:48	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-25 06:02:48	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-25 06:02:48	--	Channel #postgresql: 826 nicks (0 ops, 0 voices, 826 normals)
+2014-08-25 06:02:56	--	URL for #postgresql: http://www.postgresql.org
+2014-08-25 06:02:59	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-25 06:04:35	veet	Zr40: there are writing only authorisation logs, and a few linked tables and only read for other office data. write to his own data.
+2014-08-25 06:05:11	Zr40	and those logs need to be available in some central location?
+2014-08-25 06:05:21	◀▬▬	szymon (~szymon@staticline-31-182-71-61.toya.net.pl) has quit
+2014-08-25 06:05:23	Greener	Is anyone familiar with pg_ctl? It told me to apt-get install postgres-xc... which seems to have removed my db. I have backups, but what the hell?
+2014-08-25 06:05:34	Greener	:|
+2014-08-25 06:05:34	veet	Zr40: yes, all info must be on central location
+2014-08-25 06:05:48	▬▬▶	KermitTheFragger (~KermitThe@62-177-178-202.dsl.bbeyond.nl) has joined #postgresql
+2014-08-25 06:06:09	Zr40	well, I can't help you with the details but it sounds like it doesn't need multi-master at all.
+2014-08-25 06:06:09	Myon	Greener: postgres-xc is very different from postgresql
+2014-08-25 06:06:21	Greener	ah. lovely
+2014-08-25 06:06:24	Myon	Greener: are you expicitely on -xc?
+2014-08-25 06:06:33	Myon	if not, reinstall postgresql-whatever
+2014-08-25 06:07:23	crossmaster	Myon: got it ... seems I need the schema name prefixed to it
+2014-08-25 06:07:51	plushwork	Is there anywhere a list of the postgres forks? I never heard of xc before
+2014-08-25 06:07:56	--	irc: disconnected from server
+2014-08-25 19:12:01	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-25 19:12:01	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-25 19:12:01	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:04
+2014-08-25 19:12:01	--	Channel #postgresql: 803 nicks (0 ops, 0 voices, 803 normals)
+2014-08-25 19:12:01	--	URL for #postgresql: http://www.postgresql.org
+2014-08-25 19:12:12	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-25 19:14:00	◀▬▬	EyePulp_ (~eyepulp@c-50-158-56-97.hsd1.il.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 19:14:38	deafbybeheading	krasimir: does your query end at RETURNING? that's not valid sql. you need a select after the WITH clause
+2014-08-25 19:15:25	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-cnacfoxznhtpjiqb) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:15:25	deafbybeheading	or you can just drop the surrounding WITH, of course, depending on what you want to do
+2014-08-25 19:15:42	--	irc: disconnected from server
+2014-08-25 19:16:00	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-25 19:16:00	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-25 19:16:00	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-25 19:16:01	--	Channel #postgresql: 801 nicks (0 ops, 0 voices, 801 normals)
+2014-08-25 19:16:01	--	URL for #postgresql: http://www.postgresql.org
+2014-08-25 19:16:12	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-25 19:16:14	mike_f	It appears that way to me. WITH (query) SELECT * FROM profiles LIMIT 1;
+2014-08-25 19:16:30	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-gwcscsnmldknletv) has joined #postgresql
+2014-08-25 19:16:39	◀▬▬	Dewin|work (~Dewin@131.191.3.51) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:18:53	krasimir	this is the entyre query
+2014-08-25 19:18:54	krasimir	http://pastebin.com/xz972gfU
+2014-08-25 19:20:18	◀▬▬	whocares99 (a1455914@gateway/web/freenode/ip.161.69.89.20) has quit (Quit: Page closed)
+2014-08-25 19:20:21	krasimir	basically I need to insert and take the returning id which will be used to insert into another table
+2014-08-25 19:20:48	▬▬▶	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has joined #postgresql
+2014-08-25 19:21:16	deafbybeheading	krasimir: you want the insert to return the idProfile and that's it? then just drop the WITH
+2014-08-25 19:21:41	◀▬▬	bberry_ (~bberry@75-144-44-197-Atlanta.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2014-08-25 19:22:11	▬▬▶	roadie (~user@CPE-123-211-12-203.lnse3.cha.bigpond.net.au) has joined #postgresql
+2014-08-25 19:22:12	deafbybeheading	oh no, i see. you want that in one statement
+2014-08-25 19:22:25	▬▬▶	bberry_ (~bberry@75-144-44-197-Atlanta.hfc.comcastbusiness.net) has joined #postgresql
+2014-08-25 19:22:41	▬▬▶	bsdboy (~bsdboy@redhat/deesl) has joined #postgresql
+2014-08-25 19:22:53	krasimir	yes
+2014-08-25 19:23:04	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:23:06	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-gwcscsnmldknletv) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:23:07	krasimir	it is either success or fail for both
+2014-08-25 19:23:47	krasimir	I had it working 1 week ago , but fogot the correct query
+2014-08-25 19:23:49	▬▬▶	_Tenchi_ (~phil@24.145.2.241) has joined #postgresql
+2014-08-25 19:24:02	▬▬▶	lw (~lw@192-0-159-90.cpe.teksavvy.com) has joined #postgresql
+2014-08-25 19:24:38	◀▬▬	Deesl (~bsdboy@redhat/deesl) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:25:10	▬▬▶	lw_ (~lw@TOROON0949W-LP140-02-1242511165.dsl.bell.ca) has joined #postgresql
+2014-08-25 19:25:38	▬▬▶	doo (~doo@115.sub-70-211-72.myvzw.com) has joined #postgresql
+2014-08-25 19:25:55	deafbybeheading	krasimir: you want something like this: http://pastebin.com/USqkkvKS
+2014-08-25 19:26:18	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #postgresql
+2014-08-25 19:28:21	◀▬▬	lw (~lw@192-0-159-90.cpe.teksavvy.com) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:28:36	◀▬▬	serverhorror (~serverhor@chello062178112145.10.12.vie.surfer.at) has quit (Quit: serverhorror)
+2014-08-25 19:29:00	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:29:02	krasimir	deafbybeheading : thanks
+2014-08-25 19:29:14	krasimir	now trying to find out what was I doing wrong
+2014-08-25 19:29:47	krasimir	ah the ";"
+2014-08-25 19:29:55	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #postgresql
+2014-08-25 19:29:56	deafbybeheading	krasimir: basically, you had a semicolon after the WITH clause. your subsequent insert was also a little wonky, but i think that would have worked
+2014-08-25 19:30:12	krasimir	yes it does
+2014-08-25 19:30:21	◀▬▬	spade (~spade@cm-84.209.39.148.getinternet.no) has quit (Ping timeout: 272 seconds)
+2014-08-25 19:30:51	◀▬▬	tiwula (~lane@70.89.246.241-Busname-UT.hfc.comcastbusiness.net) has quit (Quit: Leaving)
+2014-08-25 19:31:01	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-pocwwgwkrjxeyvjx) has joined #postgresql
+2014-08-25 19:31:43	◀▬▬	jpa (~jpa@16.186.152.77.rev.sfr.net) has quit (Quit: Leaving.)
+2014-08-25 19:33:33	▬▬▶	qhartman (~qhartman@den.direwolfdigital.com) has joined #postgresql
+2014-08-25 19:33:46	◀▬▬	doo (~doo@115.sub-70-211-72.myvzw.com) has quit (Quit: Leaving)
+2014-08-25 19:34:00	◀▬▬	bw\ (~bw@wurstball.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:34:14	▬▬▶	fstd_ (~fstd@unaffiliated/fisted) has joined #postgresql
+2014-08-25 19:34:18	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Read error: Connection reset by peer)
+2014-08-25 19:34:27	▬▬▶	bw\ (~bw@wurstball.de) has joined #postgresql
+2014-08-25 19:34:38	--	fstd_ is now known as fstd
+2014-08-25 19:34:46	▬▬▶	bmcorser (uid18416@gateway/web/irccloud.com/x-crizwoytceatopze) has joined #postgresql
+2014-08-25 19:34:52	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:34:59	◀▬▬	lw_ (~lw@TOROON0949W-LP140-02-1242511165.dsl.bell.ca) has quit (Quit: s)
+2014-08-25 19:35:48	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #postgresql
+2014-08-25 19:35:53	◀▬▬	icebourg (~icebourg@c-75-70-18-13.hsd1.co.comcast.net) has quit
+2014-08-25 19:36:17	▬▬▶	Willow (~Dillow@164.215.22.41) has joined #postgresql
+2014-08-25 19:36:56	◀▬▬	mikehaas763 (~mikehaas7@pool-100-3-48-4.tampfl.fios.verizon.net) has quit (Remote host closed the connection)
+2014-08-25 19:37:41	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-pocwwgwkrjxeyvjx) has quit (Read error: Connection reset by peer)
+2014-08-25 19:37:45	◀▬▬	geoffb (~geoffb@ppp59-167-167-145.static.internode.on.net) has left #postgresql
+2014-08-25 19:38:04	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-hkudyuydyzyoqxsx) has joined #postgresql
+2014-08-25 19:38:17	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Max SendQ exceeded)
+2014-08-25 19:40:14	◀▬▬	krasimir (~krasimir@95.61.58.178) has quit (Ping timeout: 240 seconds)
+2014-08-25 19:40:40	◀▬▬	r_hector1 (~richard@203-97-170-14.cable.telstraclear.net) has quit (Quit: Leaving.)
+2014-08-25 19:41:48	◀▬▬	JanC (~janc@lugwv/member/JanC) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:43:02	▬▬▶	dcope (~dylan@63.118.185.98) has joined #postgresql
+2014-08-25 19:43:13	dcope	hey all, if i have streaming replication setup now how hard would it be to setup some sort of hourly backups?
+2014-08-25 19:43:59	◀▬▬	momomomomo (~momomomom@38.126.164.90) has quit (Quit: momomomomo)
+2014-08-25 19:44:51	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-hkudyuydyzyoqxsx) has quit (Read error: Connection reset by peer)
+2014-08-25 19:45:15	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-ufqjxobnbipndxcr) has joined #postgresql
+2014-08-25 19:45:31	agliodbs	that depends on how you want to do them
+2014-08-25 19:45:49	dcope	agliodbs: is wal-e the way to go?
+2014-08-25 19:45:56	dcope	i don't need anything super complex... i have a simple database that i just want to make sure i can restore in the event of failure
+2014-08-25 19:46:13	agliodbs	dcope: how big is your database?
+2014-08-25 19:46:32	dcope	~300 mb
+2014-08-25 19:46:35	dcope	relatively small
+2014-08-25 19:47:20	▬▬▶	donspaulding (~donspauld@98.215.46.106) has joined #postgresql
+2014-08-25 19:48:55	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-25 19:48:55	deafbybeheading	you could probably get away with cron-ing pg_dump at that point ;) but yeah, wal-e is a good, more robust option (disclaimer: i work with the author)
+2014-08-25 19:49:56	dcope	deafbybeheading: if i already having streaming replication setup, would integrating wal-e require a pg restart?
+2014-08-25 19:50:06	dcope	(im checking out some posts and the repo on it now)
+2014-08-25 19:50:13	▬▬▶	HarrisonF (~hfisk@199.201.64.134) has joined #postgresql
+2014-08-25 19:50:13	◀▬▬	HarrisonF (~hfisk@199.201.64.134) has quit (Changing host)
+2014-08-25 19:50:13	▬▬▶	HarrisonF (~hfisk@mysql/training/HarrisonF) has joined #postgresql
+2014-08-25 19:50:38	deafbybeheading	i believe so, yeah. you'd need to make it the archive_command
+2014-08-25 19:50:47	dcope	ah
+2014-08-25 19:51:04	dcope	in that event.... would it be safe to run wal-e from the standby?
+2014-08-25 19:51:14	dcope	that way i can restart the stand by and not have my clients go bezerk :P
+2014-08-25 19:51:19	▬▬▶	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has joined #postgresql
+2014-08-25 19:51:52	deafbybeheading	hmm, not sure if that's possible
+2014-08-25 19:51:59	dcope	oh
+2014-08-25 19:52:06	dcope	ok cool, thanks for the help. i will read some more about this
+2014-08-25 19:52:45	deafbybeheading	no problem. good luck. you may want to check its mailing list--i believe it's reasonably active.
+2014-08-25 19:52:55	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-ufqjxobnbipndxcr) has quit (Read error: Connection reset by peer)
+2014-08-25 19:53:18	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-plilvvepbrzxmhgr) has joined #postgresql
+2014-08-25 19:55:03	◀▬▬	xenoterracide (~xenoterra@user-0ccsp49.cable.mindspring.com) has quit (Ping timeout: 272 seconds)
+2014-08-25 19:56:02	▬▬▶	JanC (~janc@lugwv/member/JanC) has joined #postgresql
+2014-08-25 19:56:30	▬▬▶	lw (~lw@192-0-159-90.cpe.teksavvy.com) has joined #postgresql
+2014-08-25 19:56:39	◀▬▬	kirin` (telex@gateway/shell/anapnea.net/x-plilvvepbrzxmhgr) has quit (Read error: Connection reset by peer)
+2014-08-25 19:56:43	◀▬▬	lw (~lw@192-0-159-90.cpe.teksavvy.com) has quit (Max SendQ exceeded)
+2014-08-25 19:57:12	▬▬▶	kirin` (telex@gateway/shell/anapnea.net/x-kpcghfnmjklaqiam) has joined #postgresql
+2014-08-25 19:57:20	▬▬▶	lw (~lw@192-0-159-90.cpe.teksavvy.com) has joined #postgresql
+2014-08-25 19:57:32	▬▬▶	Teltaria1 (~Teltariat@pool-98-113-58-209.nycmny.fios.verizon.net) has joined #postgresql
+2014-08-25 19:58:06	▬▬▶	rubytor (~quassel@186.188.116.14) has joined #postgresql
+2014-08-25 19:58:23	▬▬▶	mikehaas763 (~mikehaas7@pool-100-3-48-4.tampfl.fios.verizon.net) has joined #postgresql
+2014-08-25 19:58:55	Teltaria1	hello all.  What's an easy way to take a string and convert it into a list of the chr() ints for each character it contains?
+2014-08-25 19:58:56	◀▬▬	donspaulding (~donspauld@98.215.46.106) has quit (Read error: No route to host)
+2014-08-25 20:02:14	Teltaria1	sorry, meant the ascii()
+2014-08-25 20:03:58	▬▬▶	joelteon (~joelteon@unaffiliated/otters) has joined #postgresql
+2014-08-25 20:04:48	▬▬▶	velocity64 (~velocity6@200-97-101-73.user.veloxzone.com.br) has joined #postgresql
+2014-08-25 20:05:36	◀▬▬	joelteon (~joelteon@unaffiliated/otters) has quit (Remote host closed the connection)
+2014-08-25 20:05:39	◀▬▬	velocity64 (~velocity6@200-97-101-73.user.veloxzone.com.br) has quit (Client Quit)
+2014-08-25 20:06:02	▬▬▶	joelteon (~joelteon@unaffiliated/otters) has joined #postgresql
+2014-08-25 20:06:31	▬▬▶	donspaulding (~donspauld@98.215.46.106) has joined #postgresql
+2014-08-25 20:06:43	◀▬▬	lw (~lw@192-0-159-90.cpe.teksavvy.com) has quit (Quit: s)
+2014-08-25 20:08:06	◀▬▬	bwreilly (~bwreilly@66.193.98.226) has quit (Ping timeout: 255 seconds)
+2014-08-25 20:09:10	▬▬▶	fold (~JimmyRcom@66-169-184-128.dhcp.ftwo.tx.charter.com) has joined #postgresql
+2014-08-25 20:12:19	▬▬▶	dcope_ (~dylan@63.118.185.98) has joined #postgresql
+2014-08-25 20:13:32	▬▬▶	lw (~lw@TOROON0949W-LP140-02-1242511165.dsl.bell.ca) has joined #postgresql
+2014-08-25 20:14:25	◀▬▬	sbogg (~anonymous@c-50-186-4-10.hsd1.or.comcast.net) has quit (Quit: sbogg)
+2014-08-25 20:14:27	◀▬▬	dcope (~dylan@63.118.185.98) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:15:17	▬▬▶	ndrei (~avo@83.142.149.227) has joined #postgresql
+2014-08-25 20:15:31	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-25 20:15:32	◀▬▬	ndrei (~avo@83.142.149.227) has quit (Remote host closed the connection)
+2014-08-25 20:15:40	▬▬▶	jahkobi (~jake@c-71-193-200-122.hsd1.or.comcast.net) has joined #postgresql
+2014-08-25 20:15:59	▬▬▶	EyePulp (~eyepulp@50-83-202-147.client.mchsi.com) has joined #postgresql
+2014-08-25 20:16:31	◀▬▬	justatheory (~justatheo@74.121.28.6) has quit (Quit: justatheory)
+2014-08-25 20:17:00	◀▬▬	dcope_ (~dylan@63.118.185.98) has quit (Client Quit)
+2014-08-25 20:18:07	◀▬▬	lw (~lw@TOROON0949W-LP140-02-1242511165.dsl.bell.ca) has quit (Client Quit)
+2014-08-25 20:18:11	◀▬▬	joelteon (~joelteon@unaffiliated/otters) has quit (Remote host closed the connection)
+2014-08-25 20:18:16	jahkobi	can I set a rational number in the postgresql conf for basic settings?
+2014-08-25 20:18:20	jahkobi	ie work_mem = 18.8625MB
+2014-08-25 20:18:37	▬▬▶	joelteon (~joelteon@unaffiliated/otters) has joined #postgresql
+2014-08-25 20:19:00	▬▬▶	mike_af_ (~mike_af@c-66-41-226-143.hsd1.mn.comcast.net) has joined #postgresql
+2014-08-25 20:19:30	▬▬▶	nectarys (~nectarys@41.228.206.35) has joined #postgresql
+2014-08-25 20:19:48	▬▬▶	nectarys_ (~nectarys@41.228.206.35) has joined #postgresql
+2014-08-25 20:19:49	◀▬▬	nectarys_ (~nectarys@41.228.206.35) has quit (Client Quit)
+2014-08-25 20:19:55	◀▬▬	``rawr_ (uid23285@gateway/web/irccloud.com/x-vbblhovwtsosuxec) has quit (Quit: Connection closed for inactivity)
+2014-08-25 20:20:28	jahkobi	hrm. tiz a nope
+2014-08-25 20:21:30	▬▬▶	lucian (~lucian@cpc15-bmly8-2-0-cust253.2-3.cable.virginm.net) has joined #postgresql
+2014-08-25 20:21:36	◀▬▬	croepha (~croepha@c-98-253-77-46.hsd1.in.comcast.net) has quit (Quit: croepha)
+2014-08-25 20:22:01	lluad	Teltaria1: Look at ascii() and substring().
+2014-08-25 20:22:45	◀▬▬	digitalsatori (~Thunderbi@116.234.181.110) has quit (Read error: No route to host)
+2014-08-25 20:23:03	▬▬▶	digitalsatori1 (~Thunderbi@116.234.181.110) has joined #postgresql
+2014-08-25 20:23:50	◀▬▬	digitalsatori1 (~Thunderbi@116.234.181.110) has quit (Remote host closed the connection)
+2014-08-25 20:23:59	▬▬▶	digitalsatori (~Thunderbi@116.234.181.110) has joined #postgresql
+2014-08-25 20:24:07	◀▬▬	ryanlecompte (~ryanlecom@c-67-180-23-154.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 20:24:08	lluad	Or select ascii(regexp_split_to_table('bananas', ''))
+2014-08-25 20:25:35	◀▬▬	lluad (~lluad@204.11.227.194.static.etheric.net) has quit (Quit: lluad)
+2014-08-25 20:26:16	◀▬▬	lucian (~lucian@cpc15-bmly8-2-0-cust253.2-3.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2014-08-25 20:26:28	--	irc: disconnected from server
+2014-08-25 21:26:21	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-25 21:26:21	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-25 21:26:21	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-25 21:26:22	--	Channel #postgresql: 791 nicks (0 ops, 0 voices, 791 normals)
+2014-08-25 21:26:22	--	URL for #postgresql: http://www.postgresql.org
+2014-08-25 21:26:26	◀▬▬	lucian (~lucian@cpc15-bmly8-2-0-cust253.2-3.cable.virginm.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 21:26:34	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-25 21:26:35	◀▬▬	code_zombie (~code_zomb@68-70-81-98.static.kc.surewest.net) has quit (Quit: Leaving)
+2014-08-25 21:26:52	tiglionabbit	how do I reference the current key and value in there?
+2014-08-25 21:27:06	◀▬▬	ancoron_ (~ancoron@p4FE4E6B2.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:27:16	RhodiumToad	in the (some expression) parts, "key" and "value"
+2014-08-25 21:28:30	tiglionabbit	where do you say what table it's from?
+2014-08-25 21:29:27	◀▬▬	drgonzo65 (~textual@173.252.71.189) has quit (Ping timeout: 240 seconds)
+2014-08-25 21:30:06	▬▬▶	QbY (~qby@50.248.227.150) has joined #postgresql
+2014-08-25 21:30:28	◀▬▬	joepie91__ (~sven@2001:980:a4ca:1:1a3d:a2ff:fe3d:4a0) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:30:45	RhodiumToad	if you want to update an hstore column in a table, you'd do:
+2014-08-25 21:31:17	RhodiumToad	update blah set foo = (select ... from each(foo)) s) where ...;
+2014-08-25 21:31:32	▬▬▶	fstd_ (~fstd@unaffiliated/fisted) has joined #postgresql
+2014-08-25 21:31:51	◀▬▬	jbrhbr (~Adium@76.21.119.188) has quit (Quit: Leaving.)
+2014-08-25 21:32:11	◀▬▬	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has quit (Ping timeout: 245 seconds)
+2014-08-25 21:32:29	tiglionabbit	extra parenthesis
+2014-08-25 21:33:03	▬▬▶	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has joined #postgresql
+2014-08-25 21:33:04	tiglionabbit	is it supposed to have two closing parens in a row there?
+2014-08-25 21:33:35	tiglionabbit	sorry this is too complicated for me.  I don't get it
+2014-08-25 21:34:59	RhodiumToad	suppose you want to change all hstore keys and values to upper case in table "blah" column "foo"
+2014-08-25 21:35:11	tiglionabbit	yeah
+2014-08-25 21:35:14	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:35:15	--	fstd_ is now known as fstd
+2014-08-25 21:35:24	▬▬▶	lw (~lw@bas15-toronto12-1168007316.dsl.bell.ca) has joined #postgresql
+2014-08-25 21:35:44	peerce	why are you even using hstore?  it has use cases, but many people seem to be putting things in hstore (or json) that would be better off in normal relational tables.
+2014-08-25 21:35:49	RhodiumToad	update blah set foo = (select hstore(array_agg(newkey),array_agg(newval)) from (select upper(key) as newkey, upper(value) as newval from each(blah.foo)) s);
+2014-08-25 21:35:53	◀▬▬	geggam (~geggam__@108-218-203-177.uvs.sntcca.sbcglobal.net) has quit (Remote host closed the connection)
+2014-08-25 21:36:25	tiglionabbit	peerce: boss wanted an arbitrary key/value store
+2014-08-25 21:36:28	◀▬▬	cmullican (~cmullican@vpn.solekai.com) has quit (Quit: Leaving.)
+2014-08-25 21:36:42	tiglionabbit	unfortunately now I've found he means completely arbitrary, as in supporting arbitrary binary values...
+2014-08-25 21:36:45	tiglionabbit	so I'm base64ing it :P
+2014-08-25 21:37:03	▬▬▶	Mayzie (~Mayazcher@unaffiliated/mayazcherquoi) has joined #postgresql
+2014-08-25 21:37:17	tiglionabbit	might be better to just make another table though, with actual bytea fields in it
+2014-08-25 21:37:56	RhodiumToad	so change the inner bit to  select key as newkey, encode(convert_to(value,'UTF8'),'base64') as newval ...
+2014-08-25 21:38:21	tiglionabbit	mhm
+2014-08-25 21:39:01	RhodiumToad	or  convert_to(value,'SQL_ASCII')  to keep your existing db encoding if it's not utf8
+2014-08-25 21:39:11	tiglionabbit	it is =]
+2014-08-25 21:40:40	◀▬▬	lchiessi (~Thunderbi@186.205.205.238) has quit (Quit: lchiessi)
+2014-08-25 21:41:21	peerce	arbitrary key-value stores are very poor performers.
+2014-08-25 21:41:55	tiglionabbit	it turns out to not be completely arbitrary, but the keys aren't known in advance, nor are the value types
+2014-08-25 21:41:57	▬▬▶	onelson (~owen@162.213.76.167) has joined #postgresql
+2014-08-25 21:42:11	peerce	then I'd say you have a severe data control problem
+2014-08-25 21:42:28	peerce	how can you do anything useful with unknown data ?
+2014-08-25 21:42:33	peerce	its GIGO
+2014-08-25 21:42:44	tiglionabbit	the client that stored it knows what it is, and that's all that matters :P
+2014-08-25 21:42:46	tiglionabbit	gigo?
+2014-08-25 21:42:55	peerce	garbage in, garbage out.
+2014-08-25 21:45:00	◀▬▬	deafbybeheading (~maciek@152.179.69.246) has quit (Ping timeout: 260 seconds)
+2014-08-25 21:45:05	◀▬▬	dinglebarry (~dinglebar@cpe-065-190-054-015.nc.res.rr.com) has quit (Remote host closed the connection)
+2014-08-25 21:45:39	▬▬▶	dinglebarry (~dinglebar@cpe-065-190-054-015.nc.res.rr.com) has joined #postgresql
+2014-08-25 21:46:02	▬▬▶	spade (~spade@185.3.135.122) has joined #postgresql
+2014-08-25 21:46:05	▬▬▶	bmac (~bmac@209-6-200-23.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) has joined #postgresql
+2014-08-25 21:47:48	◀▬▬	agliodbs (~smuxi@70-36-143-82.dsl.dynamic.sonic.net) has quit (Ping timeout: 260 seconds)
+2014-08-25 21:47:57	◀▬▬	Misu (~misu@ner95-3-78-192-196-78.fbxo.proxad.net) has quit (Read error: No route to host)
+2014-08-25 21:48:58	◀▬▬	Willow (~Dillow@164.215.22.41) has quit (Quit: Lingo - http://www.lingoirc.com)
+2014-08-25 21:50:00	◀▬▬	brockhaywood (~brockhayw@c-24-5-2-11.hsd1.ca.comcast.net) has quit (Quit: brockhaywood)
+2014-08-25 21:50:22	◀▬▬	dinglebarry (~dinglebar@cpe-065-190-054-015.nc.res.rr.com) has quit (Ping timeout: 260 seconds)
+2014-08-25 21:50:55	◀▬▬	malaphus_ (malaphus@carbon.collisionpoint.net) has quit (Read error: Connection reset by peer)
+2014-08-25 21:51:42	◀▬▬	chick_ (~chick@41.205.22.96) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:52:02	▬▬▶	malaphus_ (malaphus@carbon.collisionpoint.net) has joined #postgresql
+2014-08-25 21:52:41	▬▬▶	tyagi (~tyagi@61-195-147-241.cust.bit-drive.ne.jp) has joined #postgresql
+2014-08-25 21:53:08	▬▬▶	plushy (~plushy@Wikipedia/Plushy) has joined #postgresql
+2014-08-25 21:53:56	◀▬▬	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has quit (Ping timeout: 245 seconds)
+2014-08-25 21:54:00	◀▬▬	tyagi (~tyagi@61-195-147-241.cust.bit-drive.ne.jp) has quit (Client Quit)
+2014-08-25 21:54:11	▬▬▶	Wicth (~Witch@61-195-147-241.cust.bit-drive.ne.jp) has joined #postgresql
+2014-08-25 21:54:51	Teltaria1	lluad: thank you
+2014-08-25 21:55:03	◀▬▬	jonmorehouse (~jonmoreho@208.184.108.68) has quit (Ping timeout: 240 seconds)
+2014-08-25 21:55:23	▬▬▶	Su-Shee_ (~Susanne@p57BD7B79.dip0.t-ipconnect.de) has joined #postgresql
+2014-08-25 21:55:27	◀▬▬	plushy1 (~plushy@Wikipedia/Plushy) has quit (Ping timeout: 240 seconds)
+2014-08-25 21:57:25	▬▬▶	wolftune (~aaron@67-5-234-87.ptld.qwest.net) has joined #postgresql
+2014-08-25 21:57:44	◀▬▬	lw (~lw@bas15-toronto12-1168007316.dsl.bell.ca) has quit (Quit: s)
+2014-08-25 21:58:11	wolftune	anybody please help! All I'm trying to do is rename a column, but it has foreign key constraints and I can't figure out how to correctly also rename those (or drop and re-add new ones if that's the approach)
+2014-08-25 21:59:10	◀▬▬	m0ltar (~moltar@96.127.238.41) has quit (Quit: peace.)
+2014-08-25 21:59:12	◀▬▬	Su-Shee (~Susanne@p57BD770E.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2014-08-25 21:59:50	▬▬▶	BlackMage1011 (~Adium@ool-18b8d1e3.dyn.optonline.net) has joined #postgresql
+2014-08-25 22:00:05	RhodiumToad	you shouldn't need to touch the constraints
+2014-08-25 22:00:38	wolftune	RhodiumToad: well, it worked initially to rename…
+2014-08-25 22:00:50	◀▬▬	bmac (~bmac@209-6-200-23.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 22:00:52	wolftune	but then when I ran the app I got "SqlError {sqlState = "23503", sqlExecStatus = FatalError, sqlErrorMsg = "update or delete on table \"user\" violates foreign key constraint \"comment_moderated_user_fkey\" on table \"comment\"", sqlErrorDetail = "Key (id)=(1) is still referenced from table \"comment\".", sqlErrorHint = ""}"
+2014-08-25 22:01:27	RhodiumToad	yes, and?
+2014-08-25 22:01:40	wolftune	that error is the program not working
+2014-08-25 22:01:47	wolftune	so…
+2014-08-25 22:01:54	◀▬▬	justatheory (~justatheo@c-50-188-166-128.hsd1.or.comcast.net) has quit (Quit: justatheory)
+2014-08-25 22:01:55	wolftune	I am changing "moderated" to be "approved"
+2014-08-25 22:01:58	RhodiumToad	what queries did the program issue to cause that?
+2014-08-25 22:01:58	◀▬▬	nectarys (~nectarys@41.228.206.35) has quit (Read error: Connection reset by peer)
+2014-08-25 22:02:17	wolftune	there was a column called "moderated_by" and another called "moderated_ts"
+2014-08-25 22:02:27	wolftune	I'm changing them to "approved"
+2014-08-25 22:02:36	RhodiumToad	and moderated_by is an FK to "user" ?
+2014-08-25 22:02:50	wolftune	well, in \d on the table, here's what I see:
+2014-08-25 22:03:00	RhodiumToad	the error you showed is the expected error if you tried to delete user id 1 while some comment existed with a reference to it
+2014-08-25 22:03:04	wolftune	"comment_moderated_by_fkey" FOREIGN KEY (moderated_by) REFERENCES "user"(id)
+2014-08-25 22:03:13	◀▬▬	bmcorser (uid18416@gateway/web/irccloud.com/x-crizwoytceatopze) has quit (Quit: Connection closed for inactivity)
+2014-08-25 22:03:13	wolftune	"comment_moderated_user_fkey" FOREIGN KEY (moderated_by) REFERENCES "user"(id)
+2014-08-25 22:03:18	wolftune	those existed before
+2014-08-25 22:03:26	wolftune	I'm looking back at the old version of the DB
+2014-08-25 22:03:40	◀▬▬	_marc` (~marc@p4FF79CB6.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2014-08-25 22:03:50	wolftune	I didn't try to *delete* user id 1, I tried to update it
+2014-08-25 22:04:01	RhodiumToad	update it to have a different user id?
+2014-08-25 22:05:23	▬▬▶	Luke (~Luke@unaffiliated/luke) has joined #postgresql
+2014-08-25 22:06:02	wolftune	no
+2014-08-25 22:06:19	wolftune	update stuff in the user table
+2014-08-25 22:06:19	▬▬▶	_marc` (~marc@p5792DB25.dip0.t-ipconnect.de) has joined #postgresql
+2014-08-25 22:06:47	RhodiumToad	that error can't occur if the "id" column did not change
+2014-08-25 22:06:57	▬▬▶	jonrwads (~jonw@177.236.53.194) has joined #postgresql
+2014-08-25 22:07:13	RhodiumToad	check the update statement in the server logs
+2014-08-25 22:07:31	▬▬▶	digitalsatori (~Thunderbi@114.94.157.80) has joined #postgresql
+2014-08-25 22:07:32	wolftune	there's no way the id changed
+2014-08-25 22:07:39	▬▬▶	celer (~celer@pc1.rwj-unet.ocn.ne.jp) has joined #postgresql
+2014-08-25 22:08:05	RhodiumToad	bets?
+2014-08-25 22:08:20	▬▬▶	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has joined #postgresql
+2014-08-25 22:10:09	wolftune	the user id would not change here
+2014-08-25 22:10:24	wolftune	no function we call changes user id ever
+2014-08-25 22:10:50	RhodiumToad	the actual statement that caused the FK constraint failure will be in the server logs.
+2014-08-25 22:10:55	wolftune	I suspect the problem had to do with how I first tried to do the change
+2014-08-25 22:10:56	RhodiumToad	why not find it and take a look?
+2014-08-25 22:11:02	wolftune	I first migrated by doing "ALTER TABLE "comment" ADD CONSTRAINT "comment_approved_user_fkey" FOREIGN KEY("approved_by") REFERENCES "user"("id");"
+2014-08-25 22:11:10	wolftune	when I had problems
+2014-08-25 22:11:33	wolftune	like after I first renamed, that seemed to work, but then there were missing constraints so I added that
+2014-08-25 22:11:40	wolftune	and that's when I got the error later
+2014-08-25 22:12:02	wolftune	I think I'm just in over my head here.
+2014-08-25 22:12:11	wolftune	I thought the rename would be simple
+2014-08-25 22:12:12	RhodiumToad	read your logs
+2014-08-25 22:12:17	RhodiumToad	it IS simple
+2014-08-25 22:12:28	◀▬▬	Couto (~15minutes@pdpc/supporter/active/couto) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:12:38	wolftune	let's ignore whatever I did wrong before. What's the correct way to rename the two tables?
+2014-08-25 22:12:42	wolftune	er
+2014-08-25 22:12:45	wolftune	two COLUMNS
+2014-08-25 22:12:56	wolftune	I reverted back to the old state already
+2014-08-25 22:12:58	RhodiumToad	alter table foo rename oldcol to newcol;
+2014-08-25 22:13:20	wolftune	does it matter if there's quotes around the names?
+2014-08-25 22:13:25	◀▬▬	SomeKittens (uid27802@gateway/web/irccloud.com/x-hlmpvkffyqfppoov) has quit (Quit: Connection closed for inactivity)
+2014-08-25 22:13:37	RhodiumToad	if you need to quote the names then do so
+2014-08-25 22:13:55	wolftune	why would I need to?
+2014-08-25 22:13:58	RhodiumToad	comment and user are keywords
+2014-08-25 22:14:13	wolftune	I'm noticing that the quotes were used in past migrations in the same program…
+2014-08-25 22:14:16	RhodiumToad	though comment is not reserved
+2014-08-25 22:14:28	RhodiumToad	it's ok to use them if they're not needed
+2014-08-25 22:14:32	wolftune	ok
+2014-08-25 22:15:07	▬▬▶	crees (crees@freebsd/developer/crees) has joined #postgresql
+2014-08-25 22:15:22	▬▬▶	Rubin (~Rubin@192.198.81.196) has joined #postgresql
+2014-08-25 22:17:22	▬▬▶	brockhaywood (~brockhayw@244.sub-70-197-4.myvzw.com) has joined #postgresql
+2014-08-25 22:20:58	▬▬▶	bmac (~bmac@209-6-200-23.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) has joined #postgresql
+2014-08-25 22:21:58	▬▬▶	mk3548208 (~chatzilla@li401-39.members.linode.com) has joined #postgresql
+2014-08-25 22:22:40	◀▬▬	brockhaywood (~brockhayw@244.sub-70-197-4.myvzw.com) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:24:31	◀▬▬	mikehaas763 (~mikehaas7@pool-100-3-48-4.tampfl.fios.verizon.net) has quit
+2014-08-25 22:25:16	▬▬▶	brockhaywood (~brockhayw@c-76-126-200-174.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-25 22:26:56	◀▬▬	Blaguvest (~blaguvest@unaffiliated/blaguvest) has quit (Read error: Connection reset by peer)
+2014-08-25 22:27:01	◀▬▬	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has quit (Ping timeout: 260 seconds)
+2014-08-25 22:30:28	◀▬▬	wolftune (~aaron@67-5-234-87.ptld.qwest.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:31:09	▬▬▶	kaakku (~harisibra@115.115.192.98) has joined #postgresql
+2014-08-25 22:31:27	◀▬▬	mike_af_ (~mike_af@c-66-41-226-143.hsd1.mn.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 22:32:01	▬▬▶	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has joined #postgresql
+2014-08-25 22:32:02	◀▬▬	bmac (~bmac@209-6-200-23.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 22:33:25	◀▬▬	brockhaywood (~brockhayw@c-76-126-200-174.hsd1.ca.comcast.net) has quit (Quit: brockhaywood)
+2014-08-25 22:34:15	▬▬▶	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has joined #postgresql
+2014-08-25 22:36:28	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:46:22	▬▬▶	asteve (~textual@unaffiliated/kxsteve) has joined #postgresql
+2014-08-25 22:49:41	◀▬▬	davispuh (~quassel@212.93.100.73) has quit (Ping timeout: 245 seconds)
+2014-08-25 22:50:14	◀▬▬	Mayzie (~Mayazcher@unaffiliated/mayazcherquoi) has quit (Quit: Leaving)
+2014-08-25 22:50:25	◀▬▬	kenneth (~kenneth@173.247.206.210) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 22:53:29	▬▬▶	EminenceHC (~eminenceh@173-167-242-193-ip-static.hfc.comcastbusiness.net) has joined #postgresql
+2014-08-25 22:53:54	▬▬▶	Willow (~Dillow@164.215.22.41) has joined #postgresql
+2014-08-25 22:53:56	▬▬▶	jbrhbr (~Adium@173-228-17-227.dsl.static.sonic.net) has joined #postgresql
+2014-08-25 22:55:05	▬▬▶	Couto (~15minutes@pdpc/supporter/active/couto) has joined #postgresql
+2014-08-25 22:55:43	▬▬▶	ryanlecompte (~ryanlecom@2602:306:b8e2:51d0:9ad:1745:60b7:7a08) has joined #postgresql
+2014-08-25 22:58:06	◀▬▬	EminenceHC (~eminenceh@173-167-242-193-ip-static.hfc.comcastbusiness.net) has quit (Ping timeout: 250 seconds)
+2014-08-25 22:58:50	◀▬▬	QbY (~qby@50.248.227.150) has quit
+2014-08-25 23:00:35	▬▬▶	xzi11a (~robert@172.56.3.160) has joined #postgresql
+2014-08-25 23:06:12	▬▬▶	sandGorgon_ (~sandGorgo@122.176.161.58) has joined #postgresql
+2014-08-25 23:08:16	◀▬▬	xzi11a (~robert@172.56.3.160) has quit (Ping timeout: 264 seconds)
+2014-08-25 23:08:19	◀▬▬	arnihr_ (uid1395@gateway/web/irccloud.com/x-tdzlllhkujlpfawd) has quit (Quit: Connection closed for inactivity)
+2014-08-25 23:08:26	▬▬▶	lw (~lw@bas15-toronto12-1168007316.dsl.bell.ca) has joined #postgresql
+2014-08-25 23:12:45	◀▬▬	JanC (~janc@lugwv/member/JanC) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:13:07	◀▬▬	lw (~lw@bas15-toronto12-1168007316.dsl.bell.ca) has quit (Client Quit)
+2014-08-25 23:14:18	▬▬▶	JanC (~janc@lugwv/member/JanC) has joined #postgresql
+2014-08-25 23:19:06	▬▬▶	xzi11a (~robert@172.56.3.160) has joined #postgresql
+2014-08-25 23:19:22	◀▬▬	BlackMage1011 (~Adium@ool-18b8d1e3.dyn.optonline.net) has quit (Quit: Leaving.)
+2014-08-25 23:19:35	◀▬▬	ramfjord (~tramfjord@72.5.114.17) has quit (Ping timeout: 260 seconds)
+2014-08-25 23:23:10	▬▬▶	EyePulp (~eyepulp@50-83-202-147.client.mchsi.com) has joined #postgresql
+2014-08-25 23:26:22	◀▬▬	Peste_Bubonica (~Peste_Bub@177.138.225.39) has quit (Quit: Leaving)
+2014-08-25 23:26:25	◀▬▬	jonrwads (~jonw@177.236.53.194) has quit (Quit: Konversation terminated!)
+2014-08-25 23:27:05	▬▬▶	kaare_ (~kaare@62.61.159.141) has joined #postgresql
+2014-08-25 23:27:45	◀▬▬	no0p_ (~no0p@c-71-237-193-74.hsd1.or.comcast.net) has quit (Quit: Leaving)
+2014-08-25 23:28:16	▬▬▶	Skaag (~skaag@ip68-5-251-50.oc.oc.cox.net) has joined #postgresql
+2014-08-25 23:29:03	▬▬▶	kenneth (~kenneth@c-50-174-142-119.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-25 23:30:54	◀▬▬	Luke (~Luke@unaffiliated/luke) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-08-25 23:32:00	▬▬▶	coderman1 (63756a43@gateway/web/freenode/ip.99.117.106.67) has joined #postgresql
+2014-08-25 23:32:17	▬▬▶	lw (~lw@bas15-toronto12-1168007316.dsl.bell.ca) has joined #postgresql
+2014-08-25 23:33:08	◀▬▬	bdavenport (~davenport@aeolus.mindlesstux.com) has quit (Quit: ZNC - http://znc.in)
+2014-08-25 23:33:18	◀▬▬	tiglionabbit (~nickretal@23-126-178-3.lightspeed.sntcca.sbcglobal.net) has quit (Quit: tiglionabbit)
+2014-08-25 23:37:42	▬▬▶	justatheory (~justatheo@c-50-188-166-128.hsd1.or.comcast.net) has joined #postgresql
+2014-08-25 23:38:10	▬▬▶	tinster (~tinster@unaffiliated/tinster) has joined #postgresql
+2014-08-25 23:39:30	◀▬▬	xapiens_ (~xapiens@190.236.185.158) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:39:57	◀▬▬	emocakes__ (~emocakes@58-6-55-58.dyn.iinet.net.au) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:39:58	justatheory	How the hell do I set up a locale so that error messages are localized?
+2014-08-25 23:40:05	justatheory	I set lc_messages and it makes no difference.
+2014-08-25 23:40:37	▬▬▶	brockhaywood (~brockhayw@c-76-126-200-174.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-25 23:42:49	◀▬▬	donspaulding (~donspauld@98.215.46.106) has quit (Quit: donspaulding)
+2014-08-25 23:42:58	◀▬▬	knownasilya (uid22190@gateway/web/irccloud.com/x-zsvqeycnydcmyuiy) has quit (Quit: Connection closed for inactivity)
+2014-08-25 23:43:35	◀▬▬	zenogais (~zenogais@173.225.41.11) has quit
+2014-08-25 23:43:57	◀▬▬	constant (root@freebsd/developer/variable) has quit (Max SendQ exceeded)
+2014-08-25 23:44:02	▬▬▶	orinthe (~ekoniak@c-98-232-24-79.hsd1.wa.comcast.net) has joined #postgresql
+2014-08-25 23:44:51	◀▬▬	jbrhbr (~Adium@173-228-17-227.dsl.static.sonic.net) has quit (Quit: Leaving.)
+2014-08-25 23:45:03	▬▬▶	no0p_ (~no0p@c-71-237-193-74.hsd1.or.comcast.net) has joined #postgresql
+2014-08-25 23:45:10	▬▬▶	billxinli (~billli@198-84-201-45.cpe.teksavvy.com) has joined #postgresql
+2014-08-25 23:48:15	▬▬▶	variable (root@freebsd/developer/variable) has joined #postgresql
+2014-08-25 23:50:40	◀▬▬	joules (~lucifurba@pdpc/supporter/active/joulez) has quit (Ping timeout: 240 seconds)
+2014-08-25 23:54:21	◀▬▬	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has quit (Ping timeout: 250 seconds)
+2014-08-25 23:55:17	▬▬▶	tiglionabbit (~nickretal@c-67-188-179-140.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-25 23:55:32	◀▬▬	sandGorgon_ (~sandGorgo@122.176.161.58) has quit (Ping timeout: 245 seconds)
+2014-08-25 23:55:48	◀▬▬	justatheory (~justatheo@c-50-188-166-128.hsd1.or.comcast.net) has quit (Quit: justatheory)
+2014-08-25 23:56:24	▬▬▶	koderok (~koderok@14.141.153.182) has joined #postgresql
+2014-08-25 23:56:53	▬▬▶	mabus44 (~mabus44@cpe-24-93-21-199.rochester.res.rr.com) has joined #postgresql
+2014-08-25 23:58:57	▬▬▶	Vacuity_ (~Vacuity@88.130.193.115) has joined #postgresql
+2014-08-26 00:00:37	--	irc: disconnected from server
+2014-08-26 17:42:59	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-26 17:42:59	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-26 17:42:59	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-26 17:42:59	--	Channel #postgresql: 847 nicks (0 ops, 0 voices, 847 normals)
+2014-08-26 17:43:00	--	URL for #postgresql: http://www.postgresql.org
+2014-08-26 17:43:03	▬▬▶	Wharncliffe (~coffee@unaffiliated/ridout) has joined #postgresql
+2014-08-26 17:43:10	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-26 17:43:12	davidfetter_ebay	mage_, so problem solved?
+2014-08-26 17:43:54	--	bspkrs is now known as bspkrs|out
+2014-08-26 17:44:37	mage_	problem solved;
+2014-08-26 17:44:39	xapiens_	people working with 8.4 driver in 2014
+2014-08-26 17:44:42	mage_	I can goto $bed
+2014-08-26 17:45:06	mage_	xapiens_: I know.
+2014-08-26 17:45:40	mage_	it's a webapp developed by idiots, but I have to make it work on new $server
+2014-08-26 17:45:45	◀▬▬	Alleh (~textual@se2x.mullvad.net) has quit (Ping timeout: 240 seconds)
+2014-08-26 17:46:24	davidfetter_ebay	"ours is not to reason why..."
+2014-08-26 17:46:54	 *	mage_ &
+2014-08-26 17:47:02	mage_	.. and thanks for the help davidfetter_ebay
+2014-08-26 17:47:13	◀▬▬	rjuju (~rjuju@2a01:e34:ec0e:e930:95b9:13fc:2219:a4f6) has quit (Remote host closed the connection)
+2014-08-26 17:47:27	davidfetter_ebay	happy to help :)
+2014-08-26 17:47:39	◀▬▬	Wharncliffe (~coffee@unaffiliated/ridout) has quit (Ping timeout: 245 seconds)
+2014-08-26 17:47:58	◀▬▬	code_zombie (~code_zomb@68-70-81-98.static.kc.surewest.net) has quit (Quit: Leaving)
+2014-08-26 17:48:16	▬▬▶	Wharncliffe (~coffee@unaffiliated/ridout) has joined #postgresql
+2014-08-26 17:49:11	▬▬▶	carze (~carze@li63-138.members.linode.com) has joined #postgresql
+2014-08-26 17:49:34	◀▬▬	billli (~billli@toronto.twg.ca) has quit (Quit: billli)
+2014-08-26 17:50:02	xapiens_	davidfetter_ebay, in a far far far away galaxy
+2014-08-26 17:50:06	◀▬▬	verodeb (c9f93904@gateway/web/cgi-irc/kiwiirc.com/ip.201.249.57.4) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2014-08-26 17:50:10	▬▬▶	momomomomo_ (~momomomom@38.126.164.90) has joined #postgresql
+2014-08-26 17:50:26	xapiens_	:)
+2014-08-26 17:50:49	◀▬▬	kermit (unknown@pdpc/supporter/bronze/kermit) has quit (Quit: Leaving.)
+2014-08-26 17:51:18	davidfetter_ebay	xapiens_, sorry, missing some context there
+2014-08-26 17:51:24	▬▬▶	verodeb (c9f93904@gateway/web/cgi-irc/kiwiirc.com/ip.201.249.57.4) has joined #postgresql
+2014-08-26 17:51:53	xapiens_	i don't see you so long
+2014-08-26 17:51:56	xapiens_	for here
+2014-08-26 17:52:01	xapiens_	because i was off
+2014-08-26 17:52:17	▬▬▶	kermit (unknown@pdpc/supporter/bronze/kermit) has joined #postgresql
+2014-08-26 17:52:18	davidfetter_ebay	wb :)
+2014-08-26 17:52:37	◀▬▬	momomomomo (~momomomom@38.126.164.90) has quit (Ping timeout: 240 seconds)
+2014-08-26 17:52:37	--	momomomomo_ is now known as momomomomo
+2014-08-26 17:52:52	xapiens_	thanks
+2014-08-26 17:53:13	nemo	macdice and davidfetter_ebay, since you'd expressed a mild interest.  Since the existence of that trigger was always causing oracle to update the first clob in the update and the clob that was subject to the after insert/update trigger...
+2014-08-26 17:53:35	nemo	I just moved the clob that was subject to the trigger to separate update, and added a long comment
+2014-08-26 17:53:41	nemo	that fixes, and I still hate oracle
+2014-08-26 17:53:43	davidfetter_ebay	nemo, so not the jdbc thing?
+2014-08-26 17:53:58	nemo	davidfetter_ebay: well. wasn't the thing he linked to, since that one was only 4K+ clobs.
+2014-08-26 17:54:23	davidfetter_ebay	ah
+2014-08-26 17:54:26	nemo	this happens to varying forms of 1K or so strings, but entirely dependent on string contents, which is definitely WTF
+2014-08-26 17:54:59	nemo	that is, very short strings don't do it, some longer strings do, but fiddling with whitespace in them makes it stop happening, and has nothing to do with unicode which was one wild-ass theory as to what the magic in the strings was
+2014-08-26 17:55:07	nemo	I hex-dumped and the strings  were all 7bit ascii
+2014-08-26 17:55:18	◀▬▬	mikehaas763 (~mikehaas7@pool-100-3-48-4.tampfl.fios.verizon.net) has quit (Remote host closed the connection)
+2014-08-26 17:55:20	nemo	once a "bad" string was found it always happened though
+2014-08-26 17:55:52	davidfetter_ebay	that sounds like at least potentially a tool attackers could use
+2014-08-26 17:55:55	nemo	anyway oracle sucks etc etc and we'll just report it and test different combos of JDBC/db later. just had to get some fix in place
+2014-08-26 17:56:03	nemo	davidfetter_ebay: oh, probably ☹
+2014-08-26 17:56:12	nemo	dunno how far the oracle report will get tho
+2014-08-26 17:56:19	▬▬▶	yieldsfalsehood (~esadlon@pool-100-34-105-19.phlapa.fios.verizon.net) has joined #postgresql
+2014-08-26 17:56:31	davidfetter_ebay	they have things that cause 600 errors that may never get fixed :P
+2014-08-26 17:56:38	nemo	hehe
+2014-08-26 17:56:51	nemo	davidfetter_ebay: one lovely thing was, yeah, compiling the trigger briefly made the problem go away
+2014-08-26 17:57:02	nemo	so... WAG that maybe some cache is involved too
+2014-08-26 17:57:14	◀▬▬	weems|mac (~textual@unaffiliated/weems) has quit (Quit: bai)
+2014-08-26 17:57:37	nemo	could see if flushing the statement cache fixes. we've had pathological behaviour with that too
+2014-08-26 17:57:41	davidfetter_ebay	yeah, that sounds like part of an attack surface, although it's a surface you need a lot of privs to get to
+2014-08-26 17:58:21	nemo	that is, periodically we'll get query times ballon from like 50-100ms to like 10s on a query that seems on the surface fairly innocent
+2014-08-26 17:58:43	nemo	like, select * from table foo where stupid_ind = 'Y'  and stupid_ind is an indexed nullable column
+2014-08-26 17:58:51	nemo	or even select count(*)
+2014-08-26 17:59:10	nemo	I frankly am becoming more and more disenchanted w/ oracle the more I use it.  I used to think the db was the one thing they were good at
+2014-08-26 17:59:14	▬▬▶	ghr (~ghr@90.215.161.145) has joined #postgresql
+2014-08-26 17:59:28	nemo	obv my level of enchantment was never that high, but I had a certain respect at least
+2014-08-26 17:59:29	◀▬▬	Jayflux (~Jason@unaffiliated/jayflux) has quit (Quit: Leaving)
+2014-08-26 17:59:33	◀▬▬	sputnikus (~sputnikus@2a00:1028:83a4:27c6:227c:8fff:fe06:22bd) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:00:01	◀▬▬	HarrisonF (~hfisk@mysql/training/HarrisonF) has quit (Quit: This computer has gone to sleep)
+2014-08-26 18:00:11	◀▬▬	ltbarcly (~textual@195-67-34-164.customer.telia.com) has quit (Quit: Computer has gone to sleep.)
+2014-08-26 18:00:37	 *	davidfetter_ebay wonders whether nemo's other nick is outis http://en.wikipedia.org/wiki/Outis
+2014-08-26 18:01:47	▬▬▶	HarrisonF (~hfisk@199.201.64.134) has joined #postgresql
+2014-08-26 18:01:47	◀▬▬	HarrisonF (~hfisk@199.201.64.134) has quit (Changing host)
+2014-08-26 18:01:47	▬▬▶	HarrisonF (~hfisk@mysql/training/HarrisonF) has joined #postgresql
+2014-08-26 18:01:51	◀▬▬	denishpatel (~denish@static-108-48-124-82.washdc.fios.verizon.net) has quit (Quit: Leaving)
+2014-08-26 18:02:16	▬▬▶	toothrot (~mux@unaffiliated/toothrot) has joined #postgresql
+2014-08-26 18:02:46	◀▬▬	yieldsfalsehood (~esadlon@pool-100-34-105-19.phlapa.fios.verizon.net) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:02:56	◀▬▬	fro0g (~user@94-137-103-166.customers.ownit.se) has quit (Ping timeout: 250 seconds)
+2014-08-26 18:03:15	◀▬▬	ghr (~ghr@90.215.161.145) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:03:18	◀▬▬	jahkobi (~jake@c-71-193-200-122.hsd1.or.comcast.net) has quit (Quit: jahkobi)
+2014-08-26 18:03:22	◀▬▬	FortySix2 (~FortySix2@h204-246-2-62.mdsnwi.tisp.static.tds.net) has quit (Remote host closed the connection)
+2014-08-26 18:04:24	◀▬▬	fike (~fike@187.121.112.31) has quit (Quit: Leaving)
+2014-08-26 18:04:48	davidfetter_ebay	agliodbs, so re: cstore_fdw, it does work with pg's git master (with one small change to the Makefile)
+2014-08-26 18:05:18	▬▬▶	jahkobi (~jake@c-71-193-200-122.hsd1.or.comcast.net) has joined #postgresql
+2014-08-26 18:05:30	davidfetter_ebay	agliodbs, and i noticed the bug i filed and the one you filed were aspects of the same thing: using ORC files independently
+2014-08-26 18:05:36	◀▬▬	jahkobi (~jake@c-71-193-200-122.hsd1.or.comcast.net) has quit (Client Quit)
+2014-08-26 18:05:39	◀▬▬	postwait (~jesus@apache/committer/jesus) has quit (Quit: Computer has gone to sleep.)
+2014-08-26 18:06:23	davidfetter_ebay	well, in general using data files independently
+2014-08-26 18:06:28	◀▬▬	mdelnegro (~mdelnegro@205.233.0.253) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:06:34	davidfetter_ebay	ORC just happens to be what they write
+2014-08-26 18:06:51	▬▬▶	mribeirodantas (~mrd@fedora/mribeirodantas) has joined #postgresql
+2014-08-26 18:08:16	onr	is it conventional to store all statements in .sql files, when you develop a database driven web application?
+2014-08-26 18:14:34	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-26 18:14:34	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-26 18:14:34	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-26 18:14:34	--	Channel #postgresql: 833 nicks (0 ops, 0 voices, 833 normals)
+2014-08-26 18:14:34	--	URL for #postgresql: http://www.postgresql.org
+2014-08-26 18:14:37	davidfetter_ebay	especially if that includes DDL (table create, e.g.) statements
+2014-08-26 18:14:45	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-26 18:14:51	◀▬▬	mike_af (~mike_af@unaffiliated/mike-af/x-5454762) has quit (Remote host closed the connection)
+2014-08-26 18:15:57	◀▬▬	JesperE (~Adium@c-8478e555.03-20-73746f11.cust.bredbandsbolaget.se) has quit (Quit: Leaving.)
+2014-08-26 18:16:34	onr	davidfetter_ebay: hehe
+2014-08-26 18:17:06	 *	lluad has perl that generates c++ that generates sql and throws it at the database. Does that count?
+2014-08-26 18:17:17	▬▬▶	intellix (~intellix@c101-252.i07-26.onvol.net) has joined #postgresql
+2014-08-26 18:17:40	◀▬▬	tech2 (~tech2@176.250.210.204) has quit (Ping timeout: 250 seconds)
+2014-08-26 18:18:01	onr	no, unless it's a crazy one-liner perl :)
+2014-08-26 18:18:36	lluad	Keeping the SQL in your revision management, either directly or as some other format that's mechanically turned into the SQL for DDL is definitely a good idea.
+2014-08-26 18:19:08	davidfetter_ebay	lluad, it's OK if it's called rube_goldberg.pl
+2014-08-26 18:19:12	lluad	The "some other format" can be better, if it lets you do things like generate upgrade / downgrade scripts automagically.
+2014-08-26 18:19:49	davidfetter_ebay	automagic fails with "irreversible" (data-losing) steps
+2014-08-26 18:20:05	davidfetter_ebay	dropping a table without moving its data, e.g.
+2014-08-26 18:20:39	lluad	Yeah. A better format than SQL for maintaining the schema doesn't eliminate the need to not be stupid about it.
+2014-08-26 18:20:59	▬▬▶	BBYRD (~SineSwipe@cpe-74-133-142-219.swo.res.rr.com) has joined #postgresql
+2014-08-26 18:21:12	▬▬▶	alaska_ (~alaska@moist.vrt.sourcefire.com) has joined #postgresql
+2014-08-26 18:21:22	▬▬▶	ramfjord_ (~tramfjord@72.5.114.17) has joined #postgresql
+2014-08-26 18:21:57	▬▬▶	mgriffin_ (mike@fnord.prismnet.com) has joined #postgresql
+2014-08-26 18:22:05	▬▬▶	Zr40_ (~zr40@193.173.155.88) has joined #postgresql
+2014-08-26 18:22:38	◀▬▬	mgriffin (mike@unaffiliated/mgriffin) has quit (Read error: Connection reset by peer)
+2014-08-26 18:22:42	◀▬▬	Fogest (~Fogest@192.249.59.26) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:42	◀▬▬	Ouchy (~Ouchy@unaffiliated/ouchy) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:42	◀▬▬	seanhagen (~seanhagen@198.61.175.31) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:42	◀▬▬	wbx_ (~wbx@p22164-ipngn4601hodogaya.kanagawa.ocn.ne.jp) has quit (Read error: Connection reset by peer)
+2014-08-26 18:22:48	◀▬▬	sfiggins (~Urocyon@ec2-107-21-122-99.compute-1.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:48	◀▬▬	zrl (~zrl@23.253.124.128) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:59	davidfetter_ebay	my point was that some reasonable types of transformations simply can't be undone
+2014-08-26 18:23:05	▬▬▶	zrl (~zrl@23.253.124.128) has joined #postgresql
+2014-08-26 18:23:22	▬▬▶	Marqin_ (~marqin@106.ip-92-222-25.eu) has joined #postgresql
+2014-08-26 18:23:25	◀▬▬	asdf` (~asdf@198.211.125.226) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	joevandyk (~ubuntu@ec2-54-235-235-220.compute-1.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	fronk (~fronk@unaffiliated/fronk) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	Marqin (~marqin@unaffiliated/marqin) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	bevilaqua (~bevilaqua@107.170.17.52) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	Console (~Console@unaffiliated/console) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:28	▬▬▶	fronk_ (~fronk@ec2-174-129-2-203.compute-1.amazonaws.com) has joined #postgresql
+2014-08-26 18:23:30	▬▬▶	joevandy1 (~ubuntu@ec2-54-235-235-220.compute-1.amazonaws.com) has joined #postgresql
+2014-08-26 18:23:37	lluad	Yup.
+2014-08-26 18:23:41	◀▬▬	NCS_One (~NCS_One@dsl-88-66.bl26.telepac.pt) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:41	◀▬▬	alaska (~alaska@moist.vrt.sourcefire.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:41	◀▬▬	crashev (~crashev@droid.eu.org) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:41	◀▬▬	SpeeR (~SpeeR@207.183.232.234) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	YamakasY (~YamakasY@g9179.upc-g.chello.nl) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	aidan (~aidan@unaffiliated/aidan) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	emacsnw (~emacsnw@ec2-23-21-253-246.compute-1.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	vinnix (~vinnix@unaffiliated/vinnix) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	ewdafa (~moo@unaffiliated/ewdafa) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	ianl (ianl@teamuprising.org) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	jeff (~jeff@unaffiliated/jeff) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	mva (mva@gentoo/contributor/mva) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	neferty (~andor@maelstrom.neferty.me) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	emid (~emid@107.170.54.127) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:48	▬▬▶	aidan (~aidan@unaffiliated/aidan) has joined #postgresql
+2014-08-26 18:23:49	▬▬▶	jeff__ (~jeff@mist.forth.com) has joined #postgresql
+2014-08-26 18:24:07	▬▬▶	bevilaqua (~bevilaqua@107.170.17.52) has joined #postgresql
+2014-08-26 18:24:15	▬▬▶	emacsnw (~emacsnw@ec2-23-21-253-246.compute-1.amazonaws.com) has joined #postgresql
+2014-08-26 18:24:16	lluad	In over a decade, I've never actually used for a downgrade script.
+2014-08-26 18:24:25	▬▬▶	Ralfm_ (~rafaelma@bbking.uio.no) has joined #postgresql
+2014-08-26 18:24:36	▬▬▶	adelgado_ (~TomSawyer@ec2-54-218-65-78.us-west-2.compute.amazonaws.com) has joined #postgresql
+2014-08-26 18:24:47	▬▬▶	emid (~emid@107.170.54.127) has joined #postgresql
+2014-08-26 18:25:02	▬▬▶	Console (~Console@69.162.67.250) has joined #postgresql
+2014-08-26 18:25:07	▬▬▶	asdf` (~asdf@198.211.125.226) has joined #postgresql
+2014-08-26 18:25:10	▬▬▶	tureba_ (~tureba@tureba.mooo.com) has joined #postgresql
+2014-08-26 18:25:16	▬▬▶	ewdafa (~moo@unaffiliated/ewdafa) has joined #postgresql
+2014-08-26 18:25:18	▬▬▶	ianl (ianl@peewith.me) has joined #postgresql
+2014-08-26 18:25:19	▬▬▶	YamakasY (~YamakasY@g9179.upc-g.chello.nl) has joined #postgresql
+2014-08-26 18:25:29	▬▬▶	mattmcc_ (~mattmcc@184.106.133.247) has joined #postgresql
+2014-08-26 18:25:30	▬▬▶	mva (mva@gentoo/contributor/mva) has joined #postgresql
+2014-08-26 18:25:34	▬▬▶	miketheman_ (~mikethema@107.170.14.82) has joined #postgresql
+2014-08-26 18:25:40	◀▬▬	digicon (~digicon@host-134-4-2-96.midco.net) has quit (Quit: Leaving)
+2014-08-26 18:25:53	◀▬▬	mattmcc (~mattmcc@184.106.133.247) has quit (Disconnected by services)
+2014-08-26 18:25:56	--	mattmcc_ is now known as mattmcc
+2014-08-26 18:26:03	davidfetter_ebay	neither have i. i'm starting to think they're oversold
+2014-08-26 18:26:17	onr	what's a downgrade script?
+2014-08-26 18:26:19	▬▬▶	MmikeM (~mario@static.158.44.47.78.clients.your-server.de) has joined #postgresql
+2014-08-26 18:26:37	▬▬▶	hadees (~hadees@207.71.25.99) has joined #postgresql
+2014-08-26 18:26:47	▬▬▶	awpti_ (~awpti@dirtyheathen.org) has joined #postgresql
+2014-08-26 18:26:52	davidfetter_ebay	so an upgrade script takes a system from one state (say version 1.1.1) to the next (1.1.2, e.g.)
+2014-08-26 18:26:57	▬▬▶	Urocyon (~Urocyon@ec2-107-21-122-99.compute-1.amazonaws.com) has joined #postgresql
+2014-08-26 18:27:02	davidfetter_ebay	a downgrade script would move things backwards in time
+2014-08-26 18:27:07	▬▬▶	_dancat_ (~dan@198.199.94.106) has joined #postgresql
+2014-08-26 18:27:08	▬▬▶	neferty (~andor@maelstrom.neferty.me) has joined #postgresql
+2014-08-26 18:27:10	lluad	You keep a version number associated with your database schema. An upgrade script takes it from X to X+1, downgrade from X to X-1.
+2014-08-26 18:27:12	davidfetter_ebay	1.1.2 -> 1.1.1 for example
+2014-08-26 18:27:25	▬▬▶	nediam_ (nediam@staramilosna.info) has joined #postgresql
+2014-08-26 18:27:26	▬▬▶	mikehaas763 (~mikehaas7@pool-100-3-48-4.tampfl.fios.verizon.net) has joined #postgresql
+2014-08-26 18:27:31	▬▬▶	Davey_ (~Davey@orchestra/staff/Davey) has joined #postgresql
+2014-08-26 18:27:34	▬▬▶	fleetfox_ (redex@94.30.245.166) has joined #postgresql
+2014-08-26 18:27:39	hadees	So lets say I have an interval is there anyway to get rid of the days so I can do some logic just on the hours and mins?
+2014-08-26 18:27:49	▬▬▶	albertlast_ (~albertlas@0exclusive.de) has joined #postgresql
+2014-08-26 18:27:51	onr	ah, for migrations
+2014-08-26 18:27:53	▬▬▶	Signum_ (~quassel@zebra686.server4you.de) has joined #postgresql
+2014-08-26 18:27:56	davidfetter_ebay	onr, yep
+2014-08-26 18:27:59	◀▬▬	Almindor (~Almindor2@s75-158-93-35.ab.hsia.telus.net) has quit (Quit: This computer has gone to sleep)
+2014-08-26 18:28:01	peerce	hadees; module 1 day, or you want the days as hours?
+2014-08-26 18:28:02	▬▬▶	seanhagen (~seanhagen@2001:4801:7817:72:6ec9:5b0a:ff10:f292) has joined #postgresql
+2014-08-26 18:28:10	▬▬▶	wavis_ (uid26483@gateway/web/irccloud.com/x-nmczmnyezvokuqow) has joined #postgresql
+2014-08-26 18:28:19	▬▬▶	seth87_ (~snaptron@exchange.snaptron.com) has joined #postgresql
+2014-08-26 18:28:20	▬▬▶	skatteola2_ (david@sugi.qzx.se) has joined #postgresql
+2014-08-26 18:28:31	verodeb	anyone have used doctrine dbal?
+2014-08-26 18:28:31	hadees	peerce: no i just want the hours and mins, so for example 2 days 4 hours 3 mins, i just want 4 hours and 3 mins
+2014-08-26 18:28:46	▬▬▶	Shayanjm_ (~Shayanjm@67.222.130.131) has joined #postgresql
+2014-08-26 18:28:57	◀▬▬	undertakingyou (~undertaki@neutroninteractive-xmission.xmission.com) has quit (Remote host closed the connection)
+2014-08-26 18:29:19	peerce	hmm, sort of the opposite of date_trunc...
+2014-08-26 18:29:24	davidfetter_ebay	verodeb, no, but I've heard lots of stories about it that make me avoid it
+2014-08-26 18:29:27	▬▬▶	webster_ (~webster@128.199.204.72) has joined #postgresql
+2014-08-26 18:29:29	▬▬▶	Fogest (Fogest@2604:180::1458:e4e6) has joined #postgresql
+2014-08-26 18:29:31	▬▬▶	undertakingyou (~undertaki@neutroninteractive-xmission.xmission.com) has joined #postgresql
+2014-08-26 18:29:32	lluad	You can use date_trunc to get the days, then subtract that from what you started with.
+2014-08-26 18:29:43	hadees	peerce: basically I want to write a case statment like WHEN 2 <=  hours_and_mins AND 6 < hours_and_mins THEN 0.5
+2014-08-26 18:29:47	▬▬▶	jwr___ (~quassel@205.196.167.54) has joined #postgresql
+2014-08-26 18:30:32	davidfetter_ebay	WITH t(i) AS (VALUES('blarg'::interval) SELECT i-date_trunc('day', i) FROM t;
+2014-08-26 18:30:40	hadees	peerce: i’m trying to track vacation time and i already handle the full days but i have to have logic for parital days
+2014-08-26 18:30:41	lluad	Or extract epoch to get seconds and then use it modulo 86400.
+2014-08-26 18:30:41	peerce	yeah, what luda said.
+2014-08-26 18:30:41	◀▬▬	maliburobert (~netcodepo@c-98-248-215-72.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:30:41	◀▬▬	enquora (~davidr@S0106602ad083de8c.cg.shawcable.net) has quit (Quit: enquora)
+2014-08-26 18:30:41	▬▬▶	slyoldbear (~androirc@vau92-3-88-166-63-244.fbx.proxad.net) has joined #postgresql
+2014-08-26 18:30:45	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Write error: Broken pipe)
+2014-08-26 18:30:56	▬▬▶	crashev (~crashev@droid.eu.org) has joined #postgresql
+2014-08-26 18:31:21	▬▬▶	breinbaa1 (56995@xs8.xs4all.nl) has joined #postgresql
+2014-08-26 18:31:26	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined #postgresql
+2014-08-26 18:31:28	◀▬▬	Tm_T (tm_travolt@ubuntu/member/kde.developer.jkekkonen) has quit (Excess Flood)
+2014-08-26 18:31:32	lluad	... where extract(epoch from foo) between 2*3600 and 6*3600
+2014-08-26 18:31:46	▬▬▶	maliburobert (~netcodepo@c-98-248-215-72.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-26 18:31:51	davidfetter_ebay	is BETWEEN right-open?
+2014-08-26 18:31:55	lluad	(Paying attention to the end points)
+2014-08-26 18:31:59	davidfetter_ebay	i always have to look that up :P
+2014-08-26 18:32:04	davidfetter_ebay	??between
+2014-08-26 18:32:16	▬▬▶	vinnix (~vinnix@ec2-54-209-31-85.compute-1.amazonaws.com) has joined #postgresql
+2014-08-26 18:32:26	▬▬▶	hoodow_ (~hoodow@gentoo64.net) has joined #postgresql
+2014-08-26 18:32:26	◀▬▬	hoodow_ (~hoodow@gentoo64.net) has quit (Changing host)
+2014-08-26 18:32:26	▬▬▶	hoodow_ (~hoodow@pdpc/supporter/active/hoodow) has joined #postgresql
+2014-08-26 18:32:28	◀▬▬	MrNaz`` (~Proton@ppp118-209-40-129.lns20.mel4.internode.on.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:32:30	▬▬▶	Carloswaldo_ (Carloswald@186.66.192.224) has joined #postgresql
+2014-08-26 18:32:41	◀▬▬	slyoldbear (~androirc@vau92-3-88-166-63-244.fbx.proxad.net) has quit (Client Quit)
+2014-08-26 18:32:42	▬▬▶	MrNaz`` (~Proton@ppp118-209-40-129.lns20.mel4.internode.on.net) has joined #postgresql
+2014-08-26 18:33:05	davidfetter_ebay	hi MrNaz``
+2014-08-26 18:33:31	hadees	lluad don’t i have to remove the days from the epoch?
+2014-08-26 18:33:33	▬▬▶	DrLou_ (~DrLou@c-76-117-177-86.hsd1.nj.comcast.net) has joined #postgresql
+2014-08-26 18:33:44	lluad	Oh, yeah. Missed the modulo.
+2014-08-26 18:33:49	◀▬▬	undertakingyou (~undertaki@neutroninteractive-xmission.xmission.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:33:56	▬▬▶	TeamMat_ (~TeamMat@173.203.59.59) has joined #postgresql
+2014-08-26 18:34:08	davidfetter_ebay	not all days are 86400 seconds :P
+2014-08-26 18:34:08	lluad	... where extract(epoch from foo) % 86400 between 2*3600 and 6*3600
+2014-08-26 18:34:22	◀▬▬	Dewin|work (~Dewin@131.191.3.51) has quit (Disconnected by services)
+2014-08-26 18:34:24	lluad	If you care about that, you're not going to be using interval.
+2014-08-26 18:34:26	▬▬▶	ofqkifgvzjvalcjb (~Dewin@131.191.3.51) has joined #postgresql
+2014-08-26 18:34:26	▬▬▶	Gibheer_ (~gibheer@zero-knowledge.org) has joined #postgresql
+2014-08-26 18:34:28	--	ofqkifgvzjvalcjb is now known as jmjfxlrzcpyhntxs
+2014-08-26 18:34:29	davidfetter_ebay	date math is tough. let's go shopping!
+2014-08-26 18:34:31	--	jmjfxlrzcpyhntxs is now known as Dewin|work
+2014-08-26 18:34:42	▬▬▶	schimmi_ (~schimmi@limoia.com) has joined #postgresql
+2014-08-26 18:34:44	▬▬▶	bluedrea_ (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has joined #postgresql
+2014-08-26 18:34:45	▬▬▶	lchiessi1 (~Thunderbi@186.205.205.238) has joined #postgresql
+2014-08-26 18:34:45	lluad	Heck, if you care about accuracy better than an hour, you're not going to use interval.
+2014-08-26 18:34:45	▬▬▶	jlaffaye_ (~jlaffaye@vorash.jlaffaye.net) has joined #postgresql
+2014-08-26 18:34:48	▬▬▶	namidark_ (~namidark@192.34.61.38) has joined #postgresql
+2014-08-26 18:34:52	whartung	+1 davidfetter
+2014-08-26 18:34:56	hadees	thanks
+2014-08-26 18:35:05	▬▬▶	cz20xx_ (~cz20xx@ec2-54-85-86-66.compute-1.amazonaws.com) has joined #postgresql
+2014-08-26 18:35:12	▬▬▶	burns_ (~burns@nat-wh-hadi.rz.uni-karlsruhe.de) has joined #postgresql
+2014-08-26 18:35:24	▬▬▶	dbb_ (~chatzilla@c-50-148-163-67.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-26 18:35:34	davidfetter_ebay	tstzrange, perhaps
+2014-08-26 18:35:35	▬▬▶	bhldev_ (~briandev@24-212-129-219.cable.teksavvy.com) has joined #postgresql
+2014-08-26 18:35:44	▬▬▶	bwreilly_ (~bwreilly@66.193.98.226) has joined #postgresql
+2014-08-26 18:35:50	◀▬▬	Carloswaldo (Carloswald@186.66.192.224) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:35:59	▬▬▶	Tyklol (tykling@gibfest.dk) has joined #postgresql
+2014-08-26 18:36:02	lluad	Convert it all to epoch and let basic arithmetic sort it out.
+2014-08-26 18:36:19	◀▬▬	alanderos (~Alejandro@98.158.206.116) has quit (Read error: Connection reset by peer)
+2014-08-26 18:36:20	▬▬▶	dmxxx19 (~dmxxx@59.179-246-81.adsl-dyn.isp.belgacom.be) has joined #postgresql
+2014-08-26 18:36:20	◀▬▬	dmxxx19 (~dmxxx@59.179-246-81.adsl-dyn.isp.belgacom.be) has quit (Client Quit)
+2014-08-26 18:36:23	hadees	this is for vactation tracking so i’m actually rounding this to half days
+2014-08-26 18:36:24	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Read error: Connection reset by peer)
+2014-08-26 18:36:33	▬▬▶	jbrhbr1 (~Adium@76.21.119.188) has joined #postgresql
+2014-08-26 18:36:35	▬▬▶	Carloswaldo__ (Carloswald@186.66.192.224) has joined #postgresql
+2014-08-26 18:36:36	▬▬▶	MrNaz` (~Proton@ppp118-209-40-129.lns20.mel4.internode.on.net) has joined #postgresql
+2014-08-26 18:36:37	▬▬▶	timmu_ (~M@195.222.11.180) has joined #postgresql
+2014-08-26 18:36:37	▬▬▶	janos_ (~messy@static-71-176-211-4.rcmdva.fios.verizon.net) has joined #postgresql
+2014-08-26 18:36:45	▬▬▶	Altonymous_ (~Altonymou@cpe-174-097-201-244.nc.res.rr.com) has joined #postgresql
+2014-08-26 18:36:47	peerce	my workplace vacation acrual is in hours, not days.
+2014-08-26 18:36:48	hadees	i think epoch should be alirght, i’m already storing the dates as timestamps
+2014-08-26 18:36:50	peerce	8 hours in a day.
+2014-08-26 18:36:50	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined #postgresql
+2014-08-26 18:36:51	▬▬▶	EvanR_ (~evan@ip68-11-79-150.no.no.cox.net) has joined #postgresql
+2014-08-26 18:36:52	▬▬▶	hfisk__ (~hfisk@199.201.64.134) has joined #postgresql
+2014-08-26 18:36:58	peerce	40 in a week.
+2014-08-26 18:37:00	▬▬▶	sili (~tbasilio@50.57.140.67) has joined #postgresql
+2014-08-26 18:37:02	◀▬▬	HarrisonF (~hfisk@mysql/training/HarrisonF) has quit (Read error: Connection reset by peer)
+2014-08-26 18:37:06	▬▬▶	luminalf1ux (~ian@little-earthquakes.assv.net) has joined #postgresql
+2014-08-26 18:37:07	▬▬▶	White_Cat_ (EVA@wikimedia/ToAruShiroiNeko) has joined #postgresql
+2014-08-26 18:37:11	▬▬▶	pirx_ (~akol@h-2-241.a230.priv.bahnhof.se) has joined #postgresql
+2014-08-26 18:37:13	▬▬▶	dukedave_ (sid666@gateway/web/irccloud.com/session) has joined #postgresql
+2014-08-26 18:37:16	davidfetter_ebay	vacation accrual is frequently in hours. whatever it actually is in, you should track directly
+2014-08-26 18:37:16	◀▬▬	MrNaz`` (~Proton@ppp118-209-40-129.lns20.mel4.internode.on.net) has quit (Read error: Connection reset by peer)
+2014-08-26 18:37:16	▬▬▶	s (~notyou@195-154-109-181.rev.poneytelecom.eu) has joined #postgresql
+2014-08-26 18:37:18	▬▬▶	oliver___ (~oliver@194.160.28.150) has joined #postgresql
+2014-08-26 18:37:21	hadees	peerce: yeah we have logic for some of that but this if for places with ulimiated vacations
+2014-08-26 18:37:24	▬▬▶	madsj_ (~mje@inducks.org) has joined #postgresql
+2014-08-26 18:37:25	▬▬▶	__dutc__ (~dutc@really.dontusethiscode.com) has joined #postgresql
+2014-08-26 18:37:31	▬▬▶	wallacereis (~wallace@162.243.58.229) has joined #postgresql
+2014-08-26 18:37:31	▬▬▶	rj11_ (~rj11@212.37.105.174) has joined #postgresql
+2014-08-26 18:37:38	▬▬▶	wting_ (~wting@162.243.221.221) has joined #postgresql
+2014-08-26 18:37:39	--	s is now known as Guest96153
+2014-08-26 18:37:48	◀▬▬	dlau (~textual@c-71-202-20-77.hsd1.ca.comcast.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	bluedreams (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	ramfjord (~tramfjord@72.5.114.17) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	dbb (~chatzilla@c-50-148-163-67.hsd1.ca.comcast.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	White_Cat (EVA@wikimedia/ToAruShiroiNeko) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Adam_ActiveState (~adymitruk@S010600226b9201c8.vc.shawcable.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	SineSwiper_ (~SineSwipe@cpe-74-133-142-219.swo.res.rr.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	adelgado (~TomSawyer@ec2-54-218-65-78.us-west-2.compute.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	cjk101010 (~cjk101010@jugulator.defunced.de) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Signum (~quassel@debian/developer/pdpc.active.haas) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	bpayton (~brandonp@unaffiliated/brandonp) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	EvanR (~evan@unaffiliated/evanr) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	seth87 (~snaptron@exchange.snaptron.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	thereisnospoon (~textual@110-174-236-227.static.tpgi.com.au) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	hoodow (~hoodow@pdpc/supporter/active/hoodow) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Thav (~raul@167.142.207.196) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	jwr__ (~quassel@205.196.167.54) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	guzzlefry (~guzzlefry@unaffiliated/guzzlefry) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Zr40 (~zr40@193.173.155.88) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	dancat (~dan@198.199.94.106) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	chiffr (~cirderf@d31128.smhi.se) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	webster (~webster@128.199.204.72) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	L_star (~L_star@www5118ue.sakura.ne.jp) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	wavis (sid26483@gateway/web/irccloud.com/x-spizqpnpzyabtskn) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	fleetfox (redex@94.30.245.166) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	rafaelma (~rafaelma@bbking.uio.no) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	breinbaas (56995@xs8.xs4all.nl) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	tureba (~tureba@162.248.164.180) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	albertlast (~albertlas@0exclusive.de) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	dre^ (~andre@youbeill.in) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	TeamMat (~TeamMat@173.203.59.59) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	awpti (~awpti@dirtyheathen.org) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	dhedberg (david@sugi.qzx.se) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	timmu (~M@195.222.11.180) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	Mmike (~mario@unaffiliated/mmike) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	nediam (nediam@staramilosna.info) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	miketheman (~mikethema@107.170.14.82) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	wreis (~wallace@shadowcat/wreis) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	dutc (~dutc@really.dontusethiscode.com) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	Davey (~Davey@orchestra/staff/Davey) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	Shayanjm (~Shayanjm@67.222.130.131) has quit (*.net *.split)
+2014-08-26 18:37:50	--	miketheman_ is now known as miketheman
+2014-08-26 18:37:53	▬▬▶	joevandyk (~ubuntu@ec2-54-235-235-220.compute-1.amazonaws.com) has joined #postgresql
+2014-08-26 18:37:54	▬▬▶	keithf4_ (~kf@173.64.102.20) has joined #postgresql
+2014-08-26 18:37:54	hadees	so we aren’t tracking the days off you have but just counting the days you took off
+2014-08-26 18:37:55	davidfetter_ebay	"unlimited" actually means, "no *lower* limit" :P
+2014-08-26 18:37:58	◀▬▬	BEXICUSMAXIMUS (~bex@pool-72-74-48-58.bstnma.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:37:58	◀▬▬	Altonymous (~Altonymou@cpe-174-097-201-244.nc.res.rr.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:37:58	--	Altonymous_ is now known as Altonymous
+2014-08-26 18:37:58	--	dbb_ is now known as dbb
+2014-08-26 18:38:02	▬▬▶	bpayton (~brandonp@ip68-106-20-185.ph.ph.cox.net) has joined #postgresql
+2014-08-26 18:38:02	◀▬▬	bpayton (~brandonp@ip68-106-20-185.ph.ph.cox.net) has quit (Changing host)
+2014-08-26 18:38:02	▬▬▶	bpayton (~brandonp@unaffiliated/brandonp) has joined #postgresql
+2014-08-26 18:38:06	▬▬▶	_tremo (~tremo@wurzeldiener.jfreitag.de) has joined #postgresql
+2014-08-26 18:38:07	▬▬▶	kinlo_ (peter@unaffiliated/kinlo) has joined #postgresql
+2014-08-26 18:38:14	hadees	davidfetter_ebay: depends where you work :)
+2014-08-26 18:38:20	◀▬▬	arnihr_ (uid1395@gateway/web/irccloud.com/x-jrqjckaxbcqytbuq) has quit (Quit: Connection closed for inactivity)
+2014-08-26 18:38:29	◀▬▬	tremo (~tremo@wurzeldiener.jfreitag.de) has quit (Write error: Broken pipe)
+2014-08-26 18:38:32	hadees	but i know what you mean, lucky for me my current job it’s not like that
+2014-08-26 18:38:34	◀▬▬	ggherdov (sid11402@gateway/web/irccloud.com/x-zeadfhvhwvzcpqpa) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:34	◀▬▬	Derander (~Derander@andrew.xen.prgmr.com) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:37	lluad	I know some places where there's no upper limit, but there is a lower limit.
+2014-08-26 18:38:39	davidfetter_ebay	hadees, well, i work at a place with accruing vacation, one of many nice things about it
+2014-08-26 18:38:42	▬▬▶	adam2 (~adymitruk@S010600226b9201c8.vc.shawcable.net) has joined #postgresql
+2014-08-26 18:38:42	▬▬▶	Absolute0 (~ramin@ool-2f10f0db.dyn.optonline.net) has joined #postgresql
+2014-08-26 18:38:49	▬▬▶	thereisnospoon (~textual@110-174-236-227.static.tpgi.com.au) has joined #postgresql
+2014-08-26 18:38:52	▬▬▶	sLite_ (~quassel@mail.slite.org) has joined #postgresql
+2014-08-26 18:38:56	◀▬▬	Walex2 (~Walex@5ec07bc4.skybroadband.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:38:56	◀▬▬	kyrre (sid18663@gateway/web/irccloud.com/x-pkhtzqrdwtjpmnpf) has quit (Ping timeout: 270 seconds)
+2014-08-26 18:38:56	◀▬▬	happyface (sid12509@gateway/web/irccloud.com/x-skpajnfepwgchiqz) has quit (Ping timeout: 270 seconds)
+2014-08-26 18:38:57	▬▬▶	davispuhh (~quassel@212.93.100.73) has joined #postgresql
+2014-08-26 18:38:59	▬▬▶	Zelest_ (jesper@ifconfig.se) has joined #postgresql
+2014-08-26 18:38:59	▬▬▶	Zr40 (~zr40@193.173.155.88) has joined #postgresql
+2014-08-26 18:39:01	davidfetter_ebay	non-accruing vacation is a perverse incentive
+2014-08-26 18:39:15	◀▬▬	Zelest (jesper@ifconfig.se) has quit (Disconnected by services)
+2014-08-26 18:39:16	◀▬▬	momomomomo (~momomomom@38.126.164.90) has quit (Quit: momomomomo)
+2014-08-26 18:39:21	▬▬▶	ocharles_ (uid30093@gateway/web/irccloud.com/session) has joined #postgresql
+2014-08-26 18:39:32	◀▬▬	Spritz (~spritz@home.beccati.com) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:39:46	◀▬▬	Carloswaldo_ (Carloswald@186.66.192.224) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:39:48	▬▬▶	kyrre (sid18663@gateway/web/irccloud.com/session) has joined #postgresql
+2014-08-26 18:39:53	lluad	Having people actually take vacation reduces their insanity, gives them some perspective and (most importantly) proves they're not a bus risk.
+2014-08-26 18:40:33	--	Davey_ is now known as Davey
+2014-08-26 18:40:45	▬▬▶	cjk101010 (~cjk101010@jugulator.defunced.de) has joined #postgresql
+2014-08-26 18:40:45	▬▬▶	dre^ (~andre@youbeill.in) has joined #postgresql
+2014-08-26 18:40:48	▬▬▶	Robe_ (robe@amd.co.at) has joined #postgresql
+2014-08-26 18:40:49	▬▬▶	phiwo_ (~phiwo@static.49.20.251.148.clients.your-server.de) has joined #postgresql
+2014-08-26 18:40:59	▬▬▶	upb_ (~cmpxchg@88.80.13.24) has joined #postgresql
+2014-08-26 18:41:17	▬▬▶	AndroidLoverInSF (~AndroidLo@64.56.206.254) has joined #postgresql
+2014-08-26 18:41:26	▬▬▶	Derander (~Derander@andrew.xen.prgmr.com) has joined #postgresql
+2014-08-26 18:41:27	▬▬▶	Greener_ (~g@192.241.235.96) has joined #postgresql
+2014-08-26 18:41:29	▬▬▶	webster (~webster@128.199.204.72) has joined #postgresql
+2014-08-26 18:41:36	▬▬▶	rblackwe_ (~rblackwe@li178-5.members.linode.com) has joined #postgresql
+2014-08-26 18:41:55	davidfetter_ebay	you know that. i know that. sadly, there are people making vacation policy at large companies who act totally innocent of it
+2014-08-26 18:41:58	▬▬▶	orinsu (~ekoniak@D-128-208-228-244.dhcp4.washington.edu) has joined #postgresql
+2014-08-26 18:42:07	▬▬▶	BlackCobra1973 (~BlackCobr@79.132.250.13) has joined #postgresql
+2014-08-26 18:42:11	◀▬▬	BlackCobra (~BlackCobr@2a02:578:4402:77::777:27) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	orinthe (~ekoniak@D-128-208-228-244.dhcp4.washington.edu) has quit (Read error: Connection reset by peer)
+2014-08-26 18:42:11	◀▬▬	rblackwe (~rblackwe@li178-5.members.linode.com) has quit (Read error: Connection reset by peer)
+2014-08-26 18:42:11	◀▬▬	davispuhh (~quassel@212.93.100.73) has quit (Excess Flood)
+2014-08-26 18:42:11	◀▬▬	mulander (uid1766@gateway/web/irccloud.com/x-pxawgvtvkgtviqbz) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	bmcorser (uid18416@gateway/web/irccloud.com/x-hjosqwrzvhvshxrq) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	zerobravo___ (sid19828@gateway/web/irccloud.com/x-qbyjsvqurwhliuxp) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	TylerE (sid29653@gateway/web/irccloud.com/x-jrqapvjnldzsaffw) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	preyalone (sid21561@gateway/web/irccloud.com/x-tvwqlddvgwdajome) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	Guest85414______ (sid480@gateway/web/irccloud.com/x-lylwompqwszypqtt) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	Mehdi (sid15567@gateway/web/irccloud.com/x-wjaqxkncppdgijye) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	flamin_scotsman (znc@flaminscotsman.co.uk) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	SkramX (uid32410@gateway/web/irccloud.com/x-zccfynxrpewpuzqx) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	heavystorm (~heavystor@ec2-50-17-252-102.compute-1.amazonaws.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	◀▬▬	dijit (~dijit@cthulhu.drk.sc) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:12	--	orinsu is now known as orinthe
+2014-08-26 18:42:13	▬▬▶	flamin_s- (znc@flaminscotsman.co.uk) has joined #postgresql
+2014-08-26 18:42:27	◀▬▬	ephess (~fs@107.170.221.124) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:29	◀▬▬	webster_ (~webster@128.199.204.72) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	joevandy1 (~ubuntu@ec2-54-235-235-220.compute-1.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Zr40_ (~zr40@193.173.155.88) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	triplicate (~triplicat@206-169-175-130.static.twtelecom.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	bwreilly (~bwreilly@66.193.98.226) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	jbrhbr (~Adium@76.21.119.188) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	davispuh (~quassel@212.93.100.73) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	lchiessi (~Thunderbi@186.205.205.238) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	mage_ (~mage@ebola.bbpf.belspo.be) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	_marc` (~marc@p5792DB25.dip0.t-ipconnect.de) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	burns__ (~burns@nat-wh-hadi.rz.uni-karlsruhe.de) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	DrLou (~DrLou@c-76-117-177-86.hsd1.nj.comcast.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	bytbox (~s@pool-96-255-93-19.washdc.fios.verizon.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	brutal_lobster (~brutal_lo@cn.intertax.ru) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	bhldev (~briandev@24-212-129-219.cable.teksavvy.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	cornfeedhobo (~cornfeedh@unaffiliated/cornfeed) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Guest60343 (~notyou@195-154-109-181.rev.poneytelecom.eu) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	_AnK (~AnK@pool-173-61-128-24.cmdnnj.fios.verizon.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	threadwaste (~tony@66-232-106-164.static.hvvc.us) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	hbn (~yangyang@secure2.options-it.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	pirx (~akol@h-2-241.a230.priv.bahnhof.se) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	schimmi (~schimmi@limoia.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	phiwo (~phiwo@static.49.20.251.148.clients.your-server.de) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	toruvinn (~toruvinn@79.139.2.195) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	kinlo (peter@unaffiliated/kinlo) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	cz20xx (~cz20xx@ec2-54-85-86-66.compute-1.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	zenpac (~zenpac3@66.55.33.66) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Neptu_ (~Neptu@spa66.core-developers.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	stevednd (~steve@pool-71-123-225-100.dllstx.fios.verizon.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	tuxarn1 (tuxarn@vps.xaz.se) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	namidark (~namidark@192.34.61.38) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	upb (~cmpxchg@88.80.13.24) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Tykling (tykling@gibfest.dk) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	faheem_ (~faheem@81.4.122.126) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	Greener (~g@unaffiliated/greener) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	MindfulMonk (~MindfulMo@unaffiliated/mindfulmonk) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	sLite (~quassel@mail.slite.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	dukedave (sid666@gateway/web/irccloud.com/x-sujqvmpyfuayiuxh) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	ocharles (uid30093@gateway/web/irccloud.com/x-ukzkjninevmhoopj) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	madsj (~mje@inducks.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	oliver_ (~oliver@194.160.28.150) has quit (*.net *.split)
+2012014-08-28 17:27:51	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-28 17:27:51	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-28 17:27:51	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-28 17:27:51	--	Channel #postgresql: 860 nicks (0 ops, 0 voices, 860 normals)
+2014-08-28 17:27:55	StuckMojo	yeah once you turn on hot_standby_feedback you're in the clear
+2014-08-28 17:27:56	--	URL for #postgresql: http://www.postgresql.org
+2014-08-28 17:28:02	▬▬▶	FortySix2 (~FortySix2@h204-246-2-62.mdsnwi.tisp.static.tds.net) has joined #postgresql
+2014-08-28 17:28:02	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-28 17:28:10	StuckMojo	just note that your master will bloat as though all queries were running on it
+2014-08-28 17:28:19	StuckMojo	i.e. dead rows in use on the slaves can't be vacuumed
+2014-08-28 17:28:31	riya	oh good to know
+2014-08-28 17:28:37	riya	but eventually it should clean up, yes
+2014-08-28 17:28:40	◀▬▬	flebel (~me@unaffiliated/flebel) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:28:41	riya	?
+2014-08-28 17:28:42	StuckMojo	that probably wouldn't be an issue though
+2014-08-28 17:28:49	◀▬▬	janne__ (~IceChat77@cs181230184.pp.htv.fi) has quit (Quit: OUCH!!!)
+2014-08-28 17:28:51	StuckMojo	yes, as soon as they're not in use
+2014-08-28 17:28:54	◀▬▬	carabas (~carabas@195.50.31.203) has quit (Read error: Connection reset by peer)
+2014-08-28 17:28:58	riya	k, so that might be fine
+2014-08-28 17:29:14	StuckMojo	vacuum will behave as though all the queries on the master and slaves were running on the master
+2014-08-28 17:29:28	StuckMojo	at least with respect to what rows it can reap
+2014-08-28 17:29:37	riya	ok
+2014-08-28 17:29:55	◀▬▬	lw (~lw@69.158.97.82) has quit (Quit: s)
+2014-08-28 17:30:05	◀▬▬	rubytor (~quassel@186.188.116.14) has quit (Quit: No Ping reply in 180 seconds.)
+2014-08-28 17:30:30	▬▬▶	rubytor (~quassel@186.188.116.14) has joined #postgresql
+2014-08-28 17:31:19	▬▬▶	flebel (~me@unaffiliated/flebel) has joined #postgresql
+2014-08-28 17:31:24	▬▬▶	momomomomo (~momomomom@38.126.164.90) has joined #postgresql
+2014-08-28 17:31:43	◀▬▬	aliocha (~aliocha@174.2.26.109.rev.sfr.net) has quit (Quit: Quitte)
+2014-08-28 17:32:12	▬▬▶	RoomieGunns (~rlowe@ec2-184-72-89-32.compute-1.amazonaws.com) has joined #postgresql
+2014-08-28 17:34:02	◀▬▬	justatheory (~justatheo@74.121.28.6) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:34:04	--	irc: disconnected from server
+2014-08-28 17:34:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-28 17:34:19	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-28 17:34:19	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-28 17:34:19	--	Channel #postgresql: 858 nicks (0 ops, 0 voices, 858 normals)
+2014-08-28 17:34:19	--	URL for #postgresql: http://www.postgresql.org
+2014-08-28 17:34:30	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-28 17:35:02	▬▬▶	nerium (~linus@c83-248-201-191.bredband.comhem.se) has joined #postgresql
+2014-08-28 17:35:06	◀▬▬	toddf (~todd@2605:6400:20:8a57::) has quit (Quit: Lost terminal)
+2014-08-28 17:35:29	▬▬▶	dege (~dege@c-cf27e555.027-195-73746f10.cust.bredbandsbolaget.se) has joined #postgresql
+2014-08-28 17:36:13	▬▬▶	carabas (~carabas@195.50.31.203) has joined #postgresql
+2014-08-28 17:36:46	◀▬▬	carabas (~carabas@195.50.31.203) has quit (Read error: Connection reset by peer)
+2014-08-28 17:36:50	◀▬▬	mdelnegro (~mdelnegro@205.233.0.253) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:38:05	▬▬▶	yunong (~yunong@38.104.194.102) has joined #postgresql
+2014-08-28 17:39:49	▬▬▶	ghr (~ghr@2.218.156.108) has joined #postgresql
+2014-08-28 17:39:52	◀▬▬	yunong_ (~yunong@157.166.167.129) has quit (Ping timeout: 250 seconds)
+2014-08-28 17:40:18	◀▬▬	irqq (~chatzilla@abdd66.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 250 seconds)
+2014-08-28 17:41:35	▬▬▶	toddf (~todd@2605:6400:20:8a57::) has joined #postgresql
+2014-08-28 17:41:38	▬▬▶	irqq (~chatzilla@afip233.neoplus.adsl.tpnet.pl) has joined #postgresql
+2014-08-28 17:42:44	◀▬▬	cbbrowne1 (~cbbrowne@tor-gateway.afilias.info) has quit (Quit: Leaving.)
+2014-08-28 17:42:45	◀▬▬	cbbrowne (~cbbrowne@tor-gateway.afilias.info) has quit (Quit: Leaving.)
+2014-08-28 17:43:23	▬▬▶	cbbrowne (~cbbrowne@tor-gateway.afilias.info) has joined #postgresql
+2014-08-28 17:43:33	◀▬▬	andgra (~andgra@c-4f662169-74736162.cust.telenor.se) has quit (Remote host closed the connection)
+2014-08-28 17:43:37	--	irc: disconnected from server
+2014-08-28 17:51:58	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-28 17:51:58	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-28 17:51:58	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-28 17:51:58	--	Channel #postgresql: 855 nicks (0 ops, 0 voices, 855 normals)
+2014-08-28 17:51:58	--	URL for #postgresql: http://www.postgresql.org
+2014-08-28 17:52:09	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-28 17:53:07	◀▬▬	sgen_ (~sgen@TNHLON4048W-LP140-02-3096475489.dsl.bell.ca) has quit (Quit: Leaving)
+2014-08-28 17:53:27	◀▬▬	dagda1_ (~dagda1@94.0.166.238) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-28 17:53:39	▬▬▶	alaska (~alaska@moist.vrt.sourcefire.com) has joined #postgresql
+2014-08-28 17:54:16	◀▬▬	akronos (~Arun@ool-457b8108.dyn.optonline.net) has quit (Quit: Leaving.)
+2014-08-28 17:54:26	▬▬▶	andgra (~andgra@c-4f6687d8-74736162.cust.telenor.se) has joined #postgresql
+2014-08-28 17:56:01	◀▬▬	drgonzo65 (~textual@199.201.64.133) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-28 17:56:10	◀▬▬	fwiles (~frank@19.89.124.24.cm.sunflower.com) has quit (Quit: fwiles)
+2014-08-28 17:57:33	▬▬▶	jamesaxl (~jamesaxl@197.153.59.75) has joined #postgresql
+2014-08-28 17:57:38	◀▬▬	livingstn (~livingstn@ql1fwhide.rockfin.com) has quit
+2014-08-28 17:57:38	◀▬▬	Bryson (~Bryson@184.2.174.149) has quit (Read error: Connection reset by peer)
+2014-08-28 17:58:04	▬▬▶	Bryson (~Bryson@184.2.174.149) has joined #postgresql
+2014-08-28 17:58:06	▬▬▶	carabas (~carabas@80.240.135.110) has joined #postgresql
+2014-08-28 17:58:37	▬▬▶	gnari (~gnari@31-209-199-21.dsl.dynamic.simnet.is) has joined #postgresql
+2014-08-28 17:58:53	◀▬▬	weems|mac (~textual@unaffiliated/weems) has quit (Quit: My Mac Mini has gone to sleep. ZZZzzz…)
+2014-08-28 17:59:00	◀▬▬	carabas (~carabas@80.240.135.110) has quit (Client Quit)
+2014-08-28 17:59:25	▬▬▶	drgonzo65 (~textual@199.201.64.133) has joined #postgresql
+2014-08-28 18:00:13	◀▬▬	momomomomo (~momomomom@38.126.164.90) has quit (Quit: momomomomo)
+2014-08-28 18:00:52	▬▬▶	Spritz (~spritz@home.beccati.com) has joined #postgresql
+2014-08-28 18:01:54	◀▬▬	andgra (~andgra@c-4f6687d8-74736162.cust.telenor.se) has quit
+2014-08-28 18:02:05	▬▬▶	dinglebarry (~dinglebar@cpe-065-190-054-015.nc.res.rr.com) has joined #postgresql
+2014-08-28 18:04:34	◀▬▬	Shish (shish@marigold.shishnet.org) has quit (Ping timeout: 250 seconds)
+2014-08-28 18:04:58	◀▬▬	denishpatel (~denish@static-108-48-124-82.washdc.fios.verizon.net) has quit (Quit: Leaving)
+2014-08-28 18:05:18	◀▬▬	balacafalata (~brian@50-203-33-202-static.hfc.comcastbusiness.net) has quit (Quit: Leaving)
+2014-08-28 18:05:27	▬▬▶	balacafalata (~brian@50-203-33-202-static.hfc.comcastbusiness.net) has joined #postgresql
+2014-08-28 18:05:57	◀▬▬	justatheory (~justatheo@74.121.28.6) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:06:24	▬▬▶	Spritz_ (~matteo@spritz.beccati.com) has joined #postgresql
+2014-08-28 18:07:15	◀▬▬	brandoncordell (~brandonco@pool-108-33-6-54.tampfl.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-08-28 18:07:29	◀▬▬	Spritz_ (~matteo@spritz.beccati.com) has quit (Client Quit)
+2014-08-28 18:07:53	◀▬▬	Spritz (~spritz@home.beccati.com) has quit (Quit: Leaving)
+2014-08-28 18:09:15	▬▬▶	Spritz (~matteo@spritz.beccati.com) has joined #postgresql
+2014-08-28 18:10:12	▬▬▶	Spritz_ (~freenode@home.beccati.com) has joined #postgresql
+2014-08-28 18:10:55	lifeisgud	Hi, I have a function with 2 input and 2 output, but it also return an integer. I have CREATE function complicated (input1, input2, OUT output 1, OUT output2) AS $$. However, how will I specify the return integer.
+2014-08-28 18:11:10	▬▬▶	Shish (shish@marigold.shishnet.org) has joined #postgresql
+2014-08-28 18:11:40	◀▬▬	Spritz_ (~freenode@home.beccati.com) has quit (Client Quit)
+2014-08-28 18:12:21	▬▬▶	gm152 (~ridout@unaffiliated/ridout) has joined #postgresql
+2014-08-28 18:12:59	◀▬▬	lucian (~lucian@cpc15-bmly8-2-0-cust253.2-3.cable.virginm.net) has quit (Remote host closed the connection)
+2014-08-28 18:13:09	lifeisgud	everyone gone?
+2014-08-28 18:13:35	▬▬▶	lucian (~lucian@cpc15-bmly8-2-0-cust253.2-3.cable.virginm.net) has joined #postgresql
+2014-08-28 18:13:48	▬▬▶	feivel (~quassel@p4FE093EB.dip0.t-ipconnect.de) has joined #postgresql
+2014-08-28 18:14:43	◀▬▬	matkor (~matkor@aly62.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 260 seconds)
+2014-08-28 18:14:49	StuckMojo	OUT output3
+2014-08-28 18:15:00	StuckMojo	OUT vars *are* what it returns
+2014-08-28 18:15:02	lifeisgud	StuckMojo: can i do returns int
+2014-08-28 18:15:19	lifeisgud	2 out and returns int?
+2014-08-28 18:15:20	StuckMojo	i wouldn't suggest mixing the two
+2014-08-28 18:15:32	StuckMojo	better yet, let me ask you this: why would you want to do that?
+2014-08-28 18:15:40	◀▬▬	feivel_ (~quassel@p4FE08E5B.dip0.t-ipconnect.de) has quit (Ping timeout: 244 seconds)
+2014-08-28 18:15:44	lifeisgud	true
+2014-08-28 18:16:10	▬▬▶	lnostdal (~lnostdal@14-139-11.connect.netcom.no) has joined #postgresql
+2014-08-28 18:16:46	peerce	when you have more than one OUT, it returns an anonymous record of those OUTs
+2014-08-28 18:16:48	◀▬▬	dege (~dege@c-cf27e555.027-195-73746f10.cust.bredbandsbolaget.se) has quit (Quit: Computer has gone to sleep.)
+2014-08-28 18:17:06	◀▬▬	JoshGlzBrk (~textual@c-73-169-136-45.hsd1.wa.comcast.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-28 18:17:29	◀▬▬	Luke (~Luke@unaffiliated/luke) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-08-28 18:17:37	peerce	complicated (input1 integer, input2 integer, OUT output1 integer, OUT output2 integer)   implicitly returns a RECORD of (output1,output2)
+2014-08-28 18:17:57	◀▬▬	lucian (~lucian@cpc15-bmly8-2-0-cust253.2-3.cable.virginm.net) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:18:01	◀▬▬	riya (~riya@c-24-5-247-109.hsd1.ca.comcast.net) has left #postgresql ("Textual IRC Client: www.textualapp.com")
+2014-08-28 18:18:18	lifeisgud	so let's say I have function a(in1,in2,out o1, out o2, out o3). In function b, I attempt to call a, I would do: a(i1,i2,o1,o2,o3); if o3 = something...
+2014-08-28 18:18:40	StuckMojo	a(i1, i2, o1, o2, NULL)
+2014-08-28 18:18:45	peerce	no, you don't pass the output arguments.
+2014-08-28 18:18:51	StuckMojo	er...right
+2014-08-28 18:18:58	lifeisgud	variable?
+2014-08-28 18:19:00	peerce	it returns a SETOF those types.
+2014-08-28 18:19:13	lifeisgud	what if i have a variable that i want to assign the value of those outputs
+2014-08-28 18:19:16	StuckMojo	i forget, does pg have INOUTs?
+2014-08-28 18:19:22	peerce	read.  carefully.  http://www.postgresql.org/docs/current/static/plpgsql-declarations.html#PLPGSQL-DECLARATION-PARAMETERS
+2014-08-28 18:19:25	lifeisgud	i think that's the whole thing I tried to do output
+2014-08-28 18:19:29	lifeisgud	kk
+2014-08-28 18:19:31	StuckMojo	oh i get what you're saying
+2014-08-28 18:19:35	StuckMojo	that's easy
+2014-08-28 18:20:00	StuckMojo	select into a o1, b o2, c o3 from b(...)
+2014-08-28 18:20:16	▬▬▶	jkatz05 (~jkatz05@pool-173-56-223-90.nycmny.fios.verizon.net) has joined #postgresql
+2014-08-28 18:20:27	◀▬▬	enquora (~davidr@S0106602ad083de8c.cg.shawcable.net) has quit (Quit: enquora)
+2014-08-28 18:20:29	StuckMojo	something like that. i forget the exact syntax off the top of my head
+2014-08-28 18:20:33	leeeeeroy	I see examples of the archive_command using "cp", but is there a reason why I can't use "rsync" across the network?  I do it on my home machines, but what about for a production environment?
+2014-08-28 18:20:33	--	_druu is now known as _druu|off
+2014-08-28 18:20:55	StuckMojo	leeeeeroy: there's one very good reason not to
+2014-08-28 18:21:14	StuckMojo	if rsync hangs because of a netowrk issue, archive_command hangs, and wal piles up
+2014-08-28 18:21:21	lifeisgud	but then you can select into, the variable is valid only in that function, not when in another function and you need that value
+2014-08-28 18:21:42	StuckMojo	lifeisgud: you would do that in a()
+2014-08-28 18:21:53	leeeeeroy	hmm. ok.  good to realize.
+2014-08-28 18:22:01	StuckMojo	inside a, you select from b() like it's a table
+2014-08-28 18:22:16	lifeisgud	oh, i get what you said
+2014-08-28 18:22:22	StuckMojo	and use select INTO to set vars in a() to the returns from b()
+2014-08-28 18:22:37	StuckMojo	there's other ways too
+2014-08-28 18:22:55	StuckMojo	ilke you can delcare a record, set that, then to r.a, r.b, etc to access it's components
+2014-08-28 18:22:58	StuckMojo	i.e. columns
+2014-08-28 18:23:08	◀▬▬	OneAngryDBA (~textual@cpe-68-174-104-101.nyc.res.rr.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-28 18:23:21	--	irc: disconnected from server
+2014-08-28 23:49:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-28 23:49:19	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-28 23:49:19	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-28 23:49:19	--	Channel #postgresql: 796 nicks (0 ops, 0 voices, 796 normals)
+2014-08-28 23:49:19	--	URL for #postgresql: http://www.postgresql.org
+2014-08-28 23:49:19	◀▬▬	EminenceHC (~eminenceh@173-167-242-193-ip-static.hfc.comcastbusiness.net) has quit (Ping timeout: 260 seconds)
+2014-08-28 23:49:30	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-28 23:49:50	◀▬▬	xenoterracide (~xenoterra@user-0ccsp49.cable.mindspring.com) has quit (Ping timeout: 250 seconds)
+2014-08-28 23:49:53	▬▬▶	lucian (~lucian@cpc15-bmly8-2-0-cust253.2-3.cable.virginm.net) has joined #postgresql
+2014-08-28 23:50:44	▬▬▶	rhonabwy (~rhonabwy@95.157.58.47.dynamic.cablesurf.de) has joined #postgresql
+2014-08-28 23:51:26	▬▬▶	cgs_bob (~bob@c-98-208-9-190.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-28 23:53:56	◀▬▬	lucian (~lucian@cpc15-bmly8-2-0-cust253.2-3.cable.virginm.net) has quit (Ping timeout: 246 seconds)
+2014-08-28 23:54:45	▬▬▶	zxq9 (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has joined #postgresql
+2014-08-28 23:56:02	◀▬▬	zxq9 (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has quit (Client Quit)
+2014-08-28 23:56:07	◀▬▬	arescorpio (~arescorpi@37-58-245-190.fibertel.com.ar) has quit (Excess Flood)
+2014-08-28 23:56:23	▬▬▶	zxq9 (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has joined #postgresql
+2014-08-28 23:58:16	◀▬▬	donspaulding (~donspauld@98.215.46.106) has quit (Quit: donspaulding)
+2014-08-28 23:59:21	◀▬▬	clyons (~kvirc@host86-184-240-65.range86-184.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2014-08-28 23:59:49	▬▬▶	clyons (~kvirc@host86-184-240-65.range86-184.btcentralplus.com) has joined #postgresql
+2014-08-29 00:00:30	◀▬▬	zxq9 (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has quit (Client Quit)
+2014-08-29 00:00:44	▬▬▶	_zxq9_ (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has joined #postgresql
+2014-08-29 00:01:24	◀▬▬	bluedreams (~bluedream@66-215-92-80.dhcp.psdn.ca.charter.com) has quit (Remote host closed the connection)
+2014-08-29 00:01:59	▬▬▶	Gambit- (~Gambit-@unaffiliated/gambit-) has joined #postgresql
+2014-08-29 00:02:35	◀▬▬	leptonix (~leptonix@ec2-79-125-24-107.eu-west-1.compute.amazonaws.com) has quit (Ping timeout: 240 seconds)
+2014-08-29 00:03:03	◀▬▬	LoRez (lorez@freenode/staff/lorez) has quit (Quit: leaving)
+2014-08-29 00:03:45	▬▬▶	leptonix (~leptonix@ec2-79-125-24-107.eu-west-1.compute.amazonaws.com) has joined #postgresql
+2014-08-29 00:03:55	▬▬▶	kaare_ (~kaare@62.61.159.141) has joined #postgresql
+2014-08-29 00:04:34	◀▬▬	zenogais (~zenogais@173.225.41.11) has quit
+2014-08-29 00:04:50	▬▬▶	firebird1 (~firebird@117.192.166.89) has joined #postgresql
+2014-08-29 00:05:35	▬▬▶	LuxuryMode (~LuxuryMod@pool-71-183-97-22.nycmny.fios.verizon.net) has joined #postgresql
+2014-08-29 00:05:40	▬▬▶	zxq9 (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has joined #postgresql
+2014-08-29 00:05:40	◀▬▬	idoru (idoru@freenode/utility-bot/ex-server/idoru) has quit (Remote host closed the connection)
+2014-08-29 00:06:00	▬▬▶	skaag (~skaag@ip68-5-251-50.oc.oc.cox.net) has joined #postgresql
+2014-08-29 00:06:29	◀▬▬	kaakku (~harisibra@106.51.240.59) has quit (Ping timeout: 244 seconds)
+2014-08-29 00:07:44	◀▬▬	rubytor (~quassel@186.188.116.14) has quit (Quit: No Ping reply in 180 seconds.)
+2014-08-29 00:08:08	◀▬▬	zxq9 (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has quit (Quit: Konversation terminated!)
+2014-08-29 00:08:11	▬▬▶	rubytor (~quassel@186.188.116.14) has joined #postgresql
+2014-08-29 00:08:17	◀▬▬	_zxq9_ (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has quit (Quit: Konversation terminated!)
+2014-08-29 00:08:28	▬▬▶	_zxq9_ (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has joined #postgresql
+2014-08-29 00:08:28	--	_zxq9_ is now known as zxq9
+2014-08-29 00:08:37	◀▬▬	zxq9 (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has quit (Client Quit)
+2014-08-29 00:08:45	▬▬▶	zxq9 (~ceverett@FL9-125-199-207-150.okn.mesh.ad.jp) has joined #postgresql
+2014-08-29 00:08:52	◀▬▬	ramfjord (~tramfjord@72.5.114.17) has quit (Ping timeout: 245 seconds)
+2014-08-29 00:09:41	▬▬▶	xenoterracide (~xenoterra@user-0ccsp49.cable.mindspring.com) has joined #postgresql
+2014-08-29 00:10:16	--	irc: disconnected from server
+2014-08-29 00:10:35	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-29 00:10:35	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-29 00:10:35	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-29 00:10:35	--	Channel #postgresql: 795 nicks (0 ops, 0 voices, 795 normals)
+2014-08-29 00:10:35	--	Notice(rajaniemi.freenode.net): [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2014-08-29 00:10:35	--	URL for #postgresql: http://www.postgresql.org
+2014-08-29 00:10:46	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-29 00:11:16	◀▬▬	Tatsh (~quassel@24.130.80.123) has quit (Remote host closed the connection)
+2014-08-29 00:11:35	▬▬▶	Cer3bus (~Cer3bus@pool-71-191-190-176.washdc.fios.verizon.net) has joined #postgresql
+2014-08-29 00:12:24	▬▬▶	irqq (~chatzilla@afip233.neoplus.adsl.tpnet.pl) has joined #postgresql
+2014-08-29 00:13:17	▬▬▶	Tatsh (~quassel@24.130.80.123) has joined #postgresql
+2014-08-29 00:13:34	▬▬▶	yunong (~yunong@c-76-126-207-186.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-29 00:13:47	▬▬▶	dubrey (~dubrey@23.94.32.70) has joined #postgresql
+2014-08-29 00:14:23	◀▬▬	yunong (~yunong@c-76-126-207-186.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2014-08-29 00:14:58	▬▬▶	yunong (~yunong@c-76-126-207-186.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-29 00:16:11	◀▬▬	Baluse (~Baluse@athedsl-4509606.home.otenet.gr) has quit
+2014-08-29 18:36:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #postgresql
+2014-08-29 18:36:16	--	Topic for #postgresql is "9.4beta2 out. Test! || Bug fix releases 9.3.5, 9.2.9, 9.1.14, 9.0.18, and 8.4.22 out now; 8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2014-08-29 18:36:16	--	Topic set by RhodiumToad (~andrew@82-68-208-21.dsl.in-addr.zen.co.uk) on Thu, 24 Jul 2014 07:44:07
+2014-08-29 18:36:16	--	Channel #postgresql: 785 nicks (0 ops, 0 voices, 785 normals)
+2014-08-29 18:36:16	--	URL for #postgresql: http://www.postgresql.org
+2014-08-29 18:36:27	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-08-29 18:36:55	◀▬▬	ndrei (~avo@83.142.149.227) has quit (Read error: No route to host)
+2014-08-29 18:38:53	▬▬▶	ndrei (~avo@83.142.149.227) has joined #postgresql
+2014-08-29 18:40:24	◀▬▬	visualshock (~visualsho@host-37-191-204-89.lynet.no) has quit (Quit: Leaving)
+2014-08-29 18:40:57	◀▬▬	gleu (~guillaume@AMontsouris-652-1-220-179.w92-128.abo.wanadoo.fr) has left #postgresql
+2014-08-29 18:42:06	◀▬▬	Guest21595 (skarn@binary.firrre.com) has quit (Changing host)
+2014-08-29 18:42:06	▬▬▶	Guest21595 (skarn@unaffiliated/skarn) has joined #postgresql
+2014-08-29 18:42:30	--	Guest21595 is now known as skarn
+2014-08-29 18:43:42	◀▬▬	xzi11a (~robert@static-108-48-124-82.washdc.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2014-08-29 18:44:20	▬▬▶	tiglionabbit (~nickretal@c-67-188-179-140.hsd1.ca.comcast.net) has joined #postgresql
+2014-08-29 18:44:28	◀▬▬	tiglionabbit (~nickretal@c-67-188-179-140.hsd1.ca.comcast.net) has quit (Client Quit)
+2014-08-29 18:46:32	▬▬▶	chad (~chad@p5795453A.dip0.t-ipconnect.de) has joined #postgresql
+2014-08-29 18:46:48	◀▬▬	sgen (~sgen@CPEbcc810130284-CMbcc810130281.cpe.net.cable.rogers.com) has quit (Quit: Leaving)

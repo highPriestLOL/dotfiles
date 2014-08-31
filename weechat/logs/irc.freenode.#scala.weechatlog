@@ -1,0 +1,1037 @@
+2014-08-23 20:19:27	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 20:19:27	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 20:19:27	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 20:19:28	--	Channel #scala: 399 nicks (0 ops, 0 voices, 399 normals)
+2014-08-23 20:19:31	untseac	s/use/use case/
+2014-08-23 20:19:33	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 20:20:06	◀▬▬	nkhodyunya (~Adium@dnm.45.22.188.95.dsl.krasnet.ru) has quit (Quit: Leaving.)
+2014-08-23 20:21:25	pfn	self documenting code? 
+2014-08-23 20:21:33	pfn	good for implicits
+2014-08-23 20:21:51	pfn	good for generated code where you can protect against reserved words
+2014-08-23 20:23:46	--	irc: disconnected from server
+2014-08-23 21:13:11	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:13:11	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:13:11	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:13:11	--	Channel #scala: 393 nicks (0 ops, 0 voices, 393 normals)
+2014-08-23 21:13:16	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:13:21	--	irc: disconnected from server
+2014-08-23 21:16:13	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:16:13	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:16:13	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:16:13	--	Channel #scala: 393 nicks (0 ops, 0 voices, 393 normals)
+2014-08-23 21:16:19	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:16:38	◀▬▬	tanner (~tanner@unaffiliated/tanner) has quit
+2014-08-23 21:16:43	--	irc: disconnected from server
+2014-08-23 21:16:58	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:16:58	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:16:58	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:16:58	--	Channel #scala: 392 nicks (0 ops, 0 voices, 392 normals)
+2014-08-23 21:17:04	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:17:19	aarvar	http://stackoverflow.com/questions/16315071/scala-merging-multiple-iterators
+2014-08-23 21:17:26	--	irc: disconnected from server
+2014-08-23 21:18:46	-->	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:18:46	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:18:46	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:18:46	--	Channel #scala: 393 nicks (0 ops, 0 voices, 393 normals)
+2014-08-23 21:18:52	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:20:26	<--	nuttycom (~nuttycom@2601:1:8700:18a:94c2:361d:690:92ff) has quit (Quit: Leaving.)
+2014-08-23 21:21:51	--	irc: disconnected from server
+2014-08-23 21:23:15	-->	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:23:15	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:23:15	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:23:15	--	Channel #scala: 390 nicks (0 ops, 0 voices, 390 normals)
+2014-08-23 21:23:15	--	Notice(sinisalo.freenode.net): [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2014-08-23 21:23:16	darkfrog	40 lines of code
+2014-08-23 21:23:20	-->	jasticE (~Argus@host86-163-7-200.range86-163.btcentralplus.com) has joined #scala
+2014-08-23 21:23:21	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:23:24	aarvar	40??
+2014-08-23 21:23:43	-->	mordonez (~mordonez@190.102.132.14) has joined #scala
+2014-08-23 21:24:17	--	irc: disconnected from server
+2014-08-23 21:28:01	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:28:01	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:28:01	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:28:01	--	Channel #scala: 392 nicks (0 ops, 0 voices, 392 normals)
+2014-08-23 21:28:08	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:28:09	darkfrog	it breaks into a tuple2 with the head and tail
+2014-08-23 21:28:20	aarvar	it actually doesnt need to do that  even
+2014-08-23 21:29:39	▬▬▶	mtk (~mtk@ool-44c35983.dyn.optonline.net) has joined #scala
+2014-08-23 21:29:43	aarvar	could do iterators.filter(_.hasNext).minBy(_.head)(cmp).next() I think
+2014-08-23 21:29:49	▬▬▶	shinnya (~shinnya@236.86.100.220.dy.bbexcite.jp) has joined #scala
+2014-08-23 21:30:24	--	irc: disconnected from server
+2014-08-23 21:30:45	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:30:45	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:30:45	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:30:45	--	Channel #scala: 394 nicks (0 ops, 0 voices, 394 normals)
+2014-08-23 21:30:45	--	Notice(asimov.freenode.net): [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2014-08-23 21:30:51	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:32:33	◀▬▬	jasticE (~Argus@host86-163-7-200.range86-163.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2014-08-23 21:32:52	▬▬▶	jasticE (~Argus@host86-163-7-200.range86-163.btcentralplus.com) has joined #scala
+2014-08-23 21:36:06	aarvar	actually, does it need to call filter with every next...
+2014-08-23 21:36:48	▬▬▶	florida (~florida@S01067cbfb1eef887.vc.shawcable.net) has joined #scala
+2014-08-23 21:37:26	▬▬▶	jarod7736 (~jarod7736@108-215-2-143.lightspeed.austtx.sbcglobal.net) has joined #scala
+2014-08-23 21:38:29	xastey	umm need a good reference to read up on how implicits are resolved
+2014-08-23 21:40:10	--	irc: disconnected from server
+2014-08-23 21:40:26	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:40:26	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:40:26	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:40:26	--	Channel #scala: 395 nicks (0 ops, 0 voices, 395 normals)
+2014-08-23 21:40:32	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:40:54	▬▬▶	Textmode (~boneidle@adsl-1-au-2-174.ozonline.com.au) has joined #scala
+2014-08-23 21:41:50	◀▬▬	jarod7736 (~jarod7736@108-215-2-143.lightspeed.austtx.sbcglobal.net) has quit (Ping timeout: 250 seconds)
+2014-08-23 21:42:01	--	irc: disconnected from server
+2014-08-23 21:43:45	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-23 21:43:45	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-23 21:43:45	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-23 21:43:45	--	Channel #scala: 394 nicks (0 ops, 0 voices, 394 normals)
+2014-08-23 21:43:51	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-23 21:44:01	▬▬▶	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has joined #scala
+2014-08-23 21:46:31	▬▬▶	mtk (~mtk@ool-44c35983.dyn.optonline.net) has joined #scala
+2014-08-23 21:48:30	▬▬▶	KaneK (~Kane@cpe-172-250-146-23.socal.res.rr.com) has joined #scala
+2014-08-23 21:48:33	◀▬▬	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has quit (Ping timeout: 245 seconds)
+2014-08-23 21:50:23	◀▬▬	Guest11139 (~vying@c-71-202-122-156.hsd1.ca.comcast.net) has quit (Ping timeout: 260 seconds)
+2014-08-23 21:54:22	▬▬▶	timemage (~user@unaffiliated/timemage) has joined #scala
+2014-08-23 21:54:49	--	irc: disconnected from server
+2014-08-25 04:58:41	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-25 04:58:41	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-25 04:58:41	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-25 04:58:41	--	Channel #scala: 406 nicks (0 ops, 0 voices, 406 normals)
+2014-08-25 04:58:47	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-25 05:02:59	◀▬▬	galderz (~galder@redhat/jboss/galderz) has quit (Quit: Leaving)
+2014-08-25 05:05:52	◀▬▬	michaelneale (~textual@ppp121-44-219-28.lns20.syd7.internode.on.net) has quit
+2014-08-25 05:06:22	▬▬▶	Raging_Hog (~heikki@huolintatalo.fraktio.fi) has joined #scala
+2014-08-25 05:07:41	◀▬▬	jasticE (~Argus@host86-163-7-200.range86-163.btcentralplus.com) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:08:45	◀▬▬	jmvanel (~jmvanel@37.160.164.88) has quit (Quit: Quitte)
+2014-08-25 05:10:10	◀▬▬	Guest11206 (~florin@193.105.140.131) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 05:10:20	▬▬▶	hactor (~hactor@00252e194e04.softphone.blizoo.bg) has joined #scala
+2014-08-25 05:13:06	◀▬▬	uberwach (~uberwach@f052008218.adsl.alicedsl.de) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:14:11	▬▬▶	NightRa (uid40361@gateway/web/irccloud.com/x-dmzelpkbmgxdzgqy) has joined #scala
+2014-08-25 05:14:35	▬▬▶	jasticE (~Argus@host86-163-7-200.range86-163.btcentralplus.com) has joined #scala
+2014-08-25 05:14:39	▬▬▶	datura_ (~datura@unaffiliated/datura) has joined #scala
+2014-08-25 05:15:31	◀▬▬	yeitijem (~yeitijem@p50995cae.dip0.t-ipconnect.de) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:15:31	▬▬▶	jmvanel (~jmvanel@37.160.164.88) has joined #scala
+2014-08-25 05:15:34	▬▬▶	gli (gli@nat/redhat/x-woeyrgwniqmzimbg) has joined #scala
+2014-08-25 05:15:40	◀▬▬	sarir (~sari@p50995cae.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:16:31	▬▬▶	Florin_ (~florin@193.105.140.131) has joined #scala
+2014-08-25 05:17:48	▬▬▶	sarir (~sari@p50995cae.dip0.t-ipconnect.de) has joined #scala
+2014-08-25 05:18:04	◀▬▬	dzhulk (~Adium@46.231.209.78) has quit (Quit: Leaving.)
+2014-08-25 05:18:28	◀▬▬	datura (~datura@unaffiliated/datura) has quit (Ping timeout: 260 seconds)
+2014-08-25 05:19:19	▬▬▶	yeitijem (~yeitijem@p50995cae.dip0.t-ipconnect.de) has joined #scala
+2014-08-25 05:20:11	▬▬▶	ncls (~Thunderbi@darkstar.ipbs.fr) has joined #scala
+2014-08-25 05:27:05	▬▬▶	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has joined #scala
+2014-08-25 05:27:32	▬▬▶	michaelneale (~textual@ppp121-44-219-28.lns20.syd7.internode.on.net) has joined #scala
+2014-08-25 05:31:14	▬▬▶	tsandall (~tsandall@89.100.194.172) has joined #scala
+2014-08-25 05:31:26	◀▬▬	Sebastien-L (~sebastien@host.214.33.23.62.rev.coltfrance.com) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:31:46	◀▬▬	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:32:49	▬▬▶	tsandall_ (~tsandall@89.100.194.172) has joined #scala
+2014-08-25 05:33:02	◀▬▬	tsandall (~tsandall@89.100.194.172) has quit (Read error: Connection reset by peer)
+2014-08-25 05:33:28	◀▬▬	mcescher_ (~mcescher@91.67.125.243) has quit (Quit: WeeChat 1.0)
+2014-08-25 05:33:37	▬▬▶	mcescher (~mcescher@91.67.125.243) has joined #scala
+2014-08-25 05:34:54	▬▬▶	Squarism (~Squarism4@130.238.144.247) has joined #scala
+2014-08-25 05:35:36	◀▬▬	ambit (~chatzilla@c-24-130-42-14.hsd1.ca.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:39:20	◀▬▬	ncls (~Thunderbi@darkstar.ipbs.fr) has quit (Quit: ncls)
+2014-08-25 05:42:13	◀▬▬	swartulv (~lupogriso@li607-220.members.linode.com) has quit (Remote host closed the connection)
+2014-08-25 05:45:43	--	irc: disconnected from server
+2014-08-25 05:46:03	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-25 05:46:03	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-25 05:46:03	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-25 05:46:03	--	Channel #scala: 407 nicks (0 ops, 0 voices, 407 normals)
+2014-08-25 05:46:09	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-25 05:49:10	◀▬▬	trepidaciousMBR (~trepidaci@217.155.204.2) has quit (Quit: trepidaciousMBR)
+2014-08-25 05:53:01	▬▬▶	arturaz (arturas@193.219.158.154) has joined #scala
+2014-08-25 05:54:16	▬▬▶	folex1 (~Adium@217.174.184.93) has joined #scala
+2014-08-25 05:56:21	◀▬▬	folex (~Adium@217.174.184.92) has quit (Ping timeout: 245 seconds)
+2014-08-25 05:57:57	◀▬▬	gli (gli@nat/redhat/x-woeyrgwniqmzimbg) has quit (Ping timeout: 240 seconds)
+2014-08-25 05:58:01	--	irc: disconnected from server
+2014-08-25 06:02:48	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-25 06:02:48	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-25 06:02:48	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-25 06:02:48	--	Channel #scala: 405 nicks (0 ops, 0 voices, 405 normals)
+2014-08-25 06:02:53	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-25 06:03:47	▬▬▶	Sebastien-L (~sebastien@host.214.33.23.62.rev.coltfrance.com) has joined #scala
+2014-08-25 06:05:16	◀▬▬	S11001001 (~sirian@fsf/member/S11001001) has quit (Read error: Connection reset by peer)
+2014-08-25 06:06:46	▬▬▶	red1ynx (~red1ynx@178.124.163.67) has joined #scala
+2014-08-25 06:07:06	▬▬▶	pfurla (~textual@189.122.56.223) has joined #scala
+2014-08-25 06:07:08	▬▬▶	uberwach (~uberwach@f052008218.adsl.alicedsl.de) has joined #scala
+2014-08-25 06:07:56	--	irc: disconnected from server
+2014-08-25 19:12:00	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-25 19:12:00	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-25 19:12:00	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:13
+2014-08-25 19:12:01	--	Channel #scala: 431 nicks (0 ops, 0 voices, 431 normals)
+2014-08-25 19:12:06	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-25 19:12:40	◀▬▬	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 19:14:04	◀▬▬	dirkgr (~dirkgr@162.222.168.66) has quit (Quit: dirkgr)
+2014-08-25 19:14:23	◀▬▬	hexagoxel (~hexagoxel@p20030058EF31AB003E970EFFFE922988.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 19:15:41	--	irc: disconnected from server
+2014-08-25 19:16:00	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-25 19:16:00	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-25 19:16:00	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-25 19:16:00	--	Channel #scala: 428 nicks (0 ops, 0 voices, 428 normals)
+2014-08-25 19:16:06	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-25 19:16:23	◀▬▬	zarul (~zarul@ubuntu/member/zarul) has quit (Read error: Connection reset by peer)
+2014-08-25 19:20:54	◀▬▬	lisak (~lisak@91.219.244.207) has quit (Quit: Leaving)
+2014-08-25 19:21:37	▬▬▶	SilverKey (~SilverKey@rrcs-24-227-222-98.sw.biz.rr.com) has joined #scala
+2014-08-25 19:21:46	◀▬▬	SilverKey (~SilverKey@rrcs-24-227-222-98.sw.biz.rr.com) has quit (Client Quit)
+2014-08-25 19:22:34	◀▬▬	sepp2k (~hungerec@pcclt08.isp.uni-luebeck.de) has quit (Quit: Konversation terminated!)
+2014-08-25 19:25:02	--	zz_sprsquish is now known as sprsquish
+2014-08-25 19:25:33	--	sprsquish is now known as zz_sprsquish
+2014-08-25 19:26:15	◀▬▬	lemonxah (~lemonxah@41.191.126.193) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:26:15	◀▬▬	Sht0 (~5ht0@188.24.173.78) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:28:16	▬▬▶	jasticE1 (~Argus@31.55.127.252) has joined #scala
+2014-08-25 19:30:33	◀▬▬	frankle (uid28567@gateway/web/irccloud.com/x-vdyecyaxdwgvsihm) has quit (Quit: Connection closed for inactivity)
+2014-08-25 19:31:39	◀▬▬	doyouevenmath (~uberwach@f052008036.adsl.alicedsl.de) has quit (Ping timeout: 255 seconds)
+2014-08-25 19:32:11	◀▬▬	jasticE (~Argus@host86-163-7-200.range86-163.btcentralplus.com) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:34:06	◀▬▬	NightRa (uid40361@gateway/web/irccloud.com/x-jodhhwifqzbuoprp) has quit (Quit: Connection closed for inactivity)
+2014-08-25 19:35:44	◀▬▬	deuteros (~deuteros@unaffiliated/deuteros) has quit (Quit: Leaving)
+2014-08-25 19:36:09	▬▬▶	deuteros (~deuteros@unaffiliated/deuteros) has joined #scala
+2014-08-25 19:40:30	▬▬▶	dirkgr (~dirkgr@162.222.168.66) has joined #scala
+2014-08-25 19:42:02	▬▬▶	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has joined #scala
+2014-08-25 19:44:38	◀▬▬	deuteros (~deuteros@unaffiliated/deuteros) has quit (Ping timeout: 264 seconds)
+2014-08-25 19:45:31	▬▬▶	lisak (~lisak@91.219.244.207) has joined #scala
+2014-08-25 19:46:41	◀▬▬	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has quit (Ping timeout: 260 seconds)
+2014-08-25 19:49:28	◀▬▬	pfurla (~textual@189.122.56.223) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 19:50:01	▬▬▶	lemonxah (~lemonxah@41.191.126.193) has joined #scala
+2014-08-25 19:50:24	◀▬▬	DougieBot5000 (~DougieBot@unaffiliated/dougiebot5000) has quit (Quit: Leaving)
+2014-08-25 19:50:35	▬▬▶	deuteros (~deuteros@unaffiliated/deuteros) has joined #scala
+2014-08-25 19:53:09	◀▬▬	Bhaskar (~Bhaskar@66.6.34.253) has quit (Ping timeout: 272 seconds)
+2014-08-25 19:53:54	▬▬▶	xplat (~james@67.205.253.166) has joined #scala
+2014-08-25 19:54:08	◀▬▬	Ven (~textual@AMarseille-158-1-163-171.w86-210.abo.wanadoo.fr) has quit (Read error: Connection reset by peer)
+2014-08-25 19:54:46	◀▬▬	kiviuq (~mo@ip-37-201-241-151.hsi13.unitymediagroup.de) has quit (Ping timeout: 245 seconds)
+2014-08-25 19:56:35	◀▬▬	dubsg (~dubsg@50.247.66.242) has quit (Remote host closed the connection)
+2014-08-25 19:57:01	◀▬▬	raganw (~raganw@66.171.190.186) has quit
+2014-08-25 19:58:03	◀▬▬	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has quit (Remote host closed the connection)
+2014-08-25 19:58:49	◀▬▬	scalapeno (~scalapeno@static-108-13-230-170.lsanca.fios.verizon.net) has quit (Quit: Leaving.)
+2014-08-25 19:58:53	▬▬▶	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has joined #scala
+2014-08-25 19:59:38	◀▬▬	tanner (~tanner@unaffiliated/tanner) has quit
+2014-08-25 20:01:40	▬▬▶	kiviuq (~mo@ip-37-201-241-151.hsi13.unitymediagroup.de) has joined #scala
+2014-08-25 20:02:18	▬▬▶	meoblast001 (~meoblast@dynamic-acs-24-112-252-251.zoominternet.net) has joined #scala
+2014-08-25 20:02:36	▬▬▶	cubed_root (~cubed_roo@c-69-253-148-75.hsd1.nj.comcast.net) has joined #scala
+2014-08-25 20:02:39	◀▬▬	cubed_root (~cubed_roo@c-69-253-148-75.hsd1.nj.comcast.net) has quit (Client Quit)
+2014-08-25 20:04:27	◀▬▬	nuttycom (~nuttycom@70-91-168-190-BusName-Colorado.hfc.comcastbusiness.net) has quit (Quit: Leaving.)
+2014-08-25 20:04:57	◀▬▬	coltfred (~coltfred@inet-aumc05-o.oracle.com) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:06:19	◀▬▬	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has quit (Remote host closed the connection)
+2014-08-25 20:07:50	◀▬▬	mordonez_ (~mordonez@190.102.132.14) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 20:08:11	▬▬▶	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has joined #scala
+2014-08-25 20:09:58	◀▬▬	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has quit (Remote host closed the connection)
+2014-08-25 20:11:59	▬▬▶	ilyam (~ilyam@eng.nat.mtv.ooyala.com) has joined #scala
+2014-08-25 20:12:02	◀▬▬	ceedubs (~ceedubs@ip72-200-169-67.ri.ri.cox.net) has quit (Quit: ceedubs)
+2014-08-25 20:12:19	ilyam	is scala.concurrent.Future thread-safe?
+2014-08-25 20:12:58	▬▬▶	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has joined #scala
+2014-08-25 20:13:19	▬▬▶	mary5030 (~mary5030@75-13-89-6.lightspeed.austtx.sbcglobal.net) has joined #scala
+2014-08-25 20:13:37	ilyam	more specifically: I have a Play web server, and it gets some data from mysql DB and returns the result wrapped in a Future. Can I put that Future into a guava Cache and then have multiple threads operate on the result of the future (and potentially block waiting for the future to complete) at the same time?
+2014-08-25 20:15:10	◀▬▬	kiviuq (~mo@ip-37-201-241-151.hsi13.unitymediagroup.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 20:16:10	◀▬▬	jasticE1 (~Argus@31.55.127.252) has quit (Quit: Leaving.)
+2014-08-25 20:17:26	◀▬▬	mary5030 (~mary5030@75-13-89-6.lightspeed.austtx.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2014-08-25 20:19:18	◀▬▬	lisak (~lisak@91.219.244.207) has quit (Quit: Leaving)
+2014-08-25 20:19:27	j3pl	I believe so. Spray-caching does something similar behind the scenes.
+2014-08-25 20:23:22	▬▬▶	jpfuentes2 (~jacques@71-88-25-233.dhcp.mant.nc.charter.com) has joined #scala
+2014-08-25 20:24:07	◀▬▬	ryanlecompte (~ryanlecom@c-67-180-23-154.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 20:24:17	◀▬▬	FatDarrel (~anandab@50.242.126.113) has quit (Quit: FatDarrel)
+2014-08-25 20:24:23	◀▬▬	dcsobral (~dcsobral@64.58.13.110) has quit (Quit: dcsobral)
+2014-08-25 20:24:45	▬▬▶	kiviuq (~mo@ip-37-201-241-151.hsi13.unitymediagroup.de) has joined #scala
+2014-08-25 20:26:08	▬▬▶	tanner (~tanner@unaffiliated/tanner) has joined #scala
+2014-08-25 20:26:27	--	irc: disconnected from server
+2014-08-25 21:26:21	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-25 21:26:21	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-25 21:26:21	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-25 21:26:21	--	Channel #scala: 410 nicks (0 ops, 0 voices, 410 normals)
+2014-08-25 21:26:28	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-25 21:26:46	◀▬▬	ilyam (~ilyam@eng.nat.mtv.ooyala.com) has quit (Quit: ilyam)
+2014-08-25 21:26:55	▬▬▶	platz (~platz@unaffiliated/platz) has joined #scala
+2014-08-25 21:30:53	▬▬▶	wrmsr|somewhere (~wtimoney@72-18-233-188.static-ip.telepacific.net) has joined #scala
+2014-08-25 21:32:16	▬▬▶	robbyoconnor (~wakawaka@guifications/user/r0bby) has joined #scala
+2014-08-25 21:33:34	◀▬▬	KaneK (~Kane@162.255.32.66) has quit (Quit: KaneK)
+2014-08-25 21:33:51	◀▬▬	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has quit (Ping timeout: 272 seconds)
+2014-08-25 21:35:15	◀▬▬	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 21:36:24	◀▬▬	scalapeno (~scalapeno@cpe-172-249-197-225.socal.res.rr.com) has quit (Quit: Leaving.)
+2014-08-25 21:37:26	◀▬▬	magnifikus (~M@ip-109-90-210-121.hsi11.unitymediagroup.de) has quit (Quit: Leaving.)
+2014-08-25 21:40:07	▬▬▶	KaneK (~Kane@162.255.32.66) has joined #scala
+2014-08-25 21:41:20	▬▬▶	jarod7736 (~jarod7736@108-215-2-143.lightspeed.austtx.sbcglobal.net) has joined #scala
+2014-08-25 21:41:52	qu1j0t3	aarvar: why are you... even in there
+2014-08-25 21:41:57	▬▬▶	onelson (~owen@162.213.76.167) has joined #scala
+2014-08-25 21:43:02	tpolecat	are we watching ##java now?
+2014-08-25 21:43:05	tpolecat	what am i missing?
+2014-08-25 21:44:03	deuteros	Having an interesting discussion about parametric vs/ subtype polymorphism
+2014-08-25 21:44:12	deuteros	(and before you ask, no, no ad hoc)
+2014-08-25 21:45:00	▬▬▶	RainFlying (~textual@222.44.41.33) has joined #scala
+2014-08-25 21:45:02	▬▬▶	pgokeeffe (~pgokeeffe@123-243-191-143.static.tpgi.com.au) has joined #scala
+2014-08-25 21:45:02	▬▬▶	primer_ (~will@cpe-67-243-11-27.nyc.res.rr.com) has joined #scala
+2014-08-25 21:45:20	▬▬▶	red1ynx (~red1ynx@178.124.163.67) has joined #scala
+2014-08-25 21:45:36	tpolecat	also known as very useful and probably not useful polymorphism
+2014-08-25 21:45:56	deuteros	Beg to differ :)
+2014-08-25 21:46:48	aarvar	lol
+2014-08-25 21:46:50	▬▬▶	tobym (~tobym@2604:2000:f2ca:f100:11b7:d07d:67eb:d206) has joined #scala
+2014-08-25 21:47:02	aarvar	deuteros is arguing with me while the other people make comments about how funny I am
+2014-08-25 21:47:10	qu1j0t3	aarvar: u must be bored ?
+2014-08-25 21:47:12	aarvar	one guy likened my argument to saying you only need 0s and 1s
+2014-08-25 21:47:39	tpolecat	ok ok i'll bite
+2014-08-25 21:47:39	deuteros	aarvar I think your questions are fair, it's an interesting discussion to have
+2014-08-25 21:48:21	deuteros	Sadly, most of the ##java people lack some knowledge in the polymorphism area
+2014-08-25 21:48:39	▬▬▶	cubed_root (~cubed_roo@c-69-253-148-75.hsd1.nj.comcast.net) has joined #scala
+2014-08-25 21:49:42	◀▬▬	RainFlying (~textual@222.44.41.33) has quit (Ping timeout: 255 seconds)
+2014-08-25 21:50:08	◀▬▬	red1ynx (~red1ynx@178.124.163.67) has quit (Ping timeout: 260 seconds)
+2014-08-25 21:52:04	▬▬▶	murz (~murz@24.130.12.216) has joined #scala
+2014-08-25 21:52:07	platz	they really need to make a scm (scala virtual machine)
+2014-08-25 21:52:08	▬▬▶	blahdodo (~blahdodo@69.172.154.103) has joined #scala
+2014-08-25 21:52:29	▬▬▶	viktorlund (~viktorlun@dslb-178-005-158-093.178.005.pools.vodafone-ip.de) has joined #scala
+2014-08-25 21:53:11	deuteros	Or maybe just make a decent language running on the JVM
+2014-08-25 21:53:23	deuteros	Learn the lessons from Scala, good and bad
+2014-08-25 21:53:24	aarvar	damn now they're just flinging random insults
+2014-08-25 21:53:47	◀▬▬	dirkgr (~dirkgr@162.222.168.66) has quit (Quit: dirkgr)
+2014-08-25 21:53:53	deuteros	Yeah that sucks, sorry aarvar 
+2014-08-25 21:53:58	▬▬▶	Talryn (~Talryn@unaffiliated/talryn) has joined #scala
+2014-08-25 21:54:14	qu1j0t3	:[
+2014-08-25 21:54:17	▬▬▶	RainFlying (~textual@222.44.41.33) has joined #scala
+2014-08-25 21:54:34	deuteros	I still think your approach is wrong but totally worth discussing (and maybe I'm the one who's wrong)
+2014-08-25 21:54:39	qu1j0t3	platz: well if you like Scala's syntax but don't want the JVM, just run one of the native ML's
+2014-08-25 21:55:06	deuteros	qu1j0t3 I don't like Scala's syntax but I want to have its power, got anything for me? :)
+2014-08-25 21:56:05	platz	ok, but ML barely looks like Scala
+2014-08-25 21:56:34	◀▬▬	murz (~murz@24.130.12.216) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:56:37	deuteros	Actually let me rephrase that: I'm fine with Scala's syntax (mostly) but I have a problem with scalac
+2014-08-25 21:56:41	qu1j0t3	it is however the closest antecedent
+2014-08-25 21:56:48	qu1j0t3	although of course the ML's are much more elegant
+2014-08-25 21:57:00	◀▬▬	viktorlund (~viktorlun@dslb-178-005-158-093.178.005.pools.vodafone-ip.de) has quit (Ping timeout: 250 seconds)
+2014-08-25 21:57:06	aarvar	my approach is wrong? how so
+2014-08-25 21:57:12	▬▬▶	nuttycom (~nuttycom@c-50-183-54-66.hsd1.co.comcast.net) has joined #scala
+2014-08-25 21:57:17	platz	you are focusing on the FP part of Scala.  There's an OO part too
+2014-08-25 21:57:17	aarvar	maybe we should continue here, im starting to get annoyed
+2014-08-25 21:57:34	qu1j0t3	platz: Ocaml does OO, apparently. *shrug*
+2014-08-25 21:57:46	platz	"apparently"
+2014-08-25 21:57:48	◀▬▬	eriksensei (~eriksense@546B12FD.cm-12-4a.dynamic.ziggo.nl) has quit (Quit: Leaving.)
+2014-08-25 21:58:00	qu1j0t3	let's not investigate that tho
+2014-08-25 21:58:37	qu1j0t3	aarvar: so your high hopes for ##java were dashed? 
+2014-08-25 22:00:28	◀▬▬	is-mw (~is-mw@p5DD7531F.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2014-08-25 22:00:29	▬▬▶	amar (~amar@114.143.58.76) has joined #scala
+2014-08-25 22:00:32	▬▬▶	is-mw2 (~is-mw@p5DD75588.dip0.t-ipconnect.de) has joined #scala
+2014-08-25 22:00:53	--	amar is now known as Guest76627
+2014-08-25 22:01:56	◀▬▬	Guest76627 (~amar@114.143.58.76) has quit (Remote host closed the connection)
+2014-08-25 22:02:30	▬▬▶	tupshin (~quassel@207-237-102-71.c3-0.nyr-ubr1.nyr.ny.cable.rcn.com) has joined #scala
+2014-08-25 22:03:00	tpolecat	aarvar: i don't know that you will ever convince java people that typeclasses make sense
+2014-08-25 22:03:03	aarvar	na, I was just bored
+2014-08-25 22:03:10	aarvar	still going on
+2014-08-25 22:03:11	tpolecat	since it involves so much keypressing
+2014-08-25 22:03:14	aarvar	a new idiot has taken up the java side
+2014-08-25 22:03:18	◀▬▬	danclien (~danclien@108-78-174-186.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2014-08-25 22:03:34	◀▬▬	woebtz (~woebtz@12.36.17.197) has quit
+2014-08-25 22:06:57	◀▬▬	datura (~datura@unaffiliated/datura) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:07:11	◀▬▬	nuttycom (~nuttycom@c-50-183-54-66.hsd1.co.comcast.net) has quit (Quit: Leaving.)
+2014-08-25 22:07:53	▬▬▶	danclien (~danclien@108-78-174-186.lightspeed.austtx.sbcglobal.net) has joined #scala
+2014-08-25 22:08:14	◀▬▬	primer_ (~will@cpe-67-243-11-27.nyc.res.rr.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 22:08:17	◀▬▬	nullremains (~godenji@MTRLPQ2853W-LP130-03-1176038718.dsl.bell.ca) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:08:36	▬▬▶	hahuang65 (~hahuang65@2601:9:7e00:b97:c029:5c9:62ad:f01a) has joined #scala
+2014-08-25 22:08:49	aarvar	deuteros: in what way is my approach wrong?
+2014-08-25 22:09:21	deuteros	aarvar I tried to explain it in the noise
+2014-08-25 22:09:22	◀▬▬	pr0ton_ (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has quit (Quit: pr0ton_)
+2014-08-25 22:09:41	aarvar	I think I lost your explanation among all the insults
+2014-08-25 22:10:48	qu1j0t3	wow, you know it's possible to PART channels of no value, right?
+2014-08-25 22:10:49	deuteros	yeah not surprising
+2014-08-25 22:12:03	◀▬▬	danclien (~danclien@108-78-174-186.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2014-08-25 22:12:15	▬▬▶	pr0ton (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has joined #scala
+2014-08-25 22:15:34	tpolecat	jesus i will never grow those brain cells back
+2014-08-25 22:16:23	aarvar	lol
+2014-08-25 22:16:26	▬▬▶	RevBayes (~RevBayes@168.215.217.226) has joined #scala
+2014-08-25 22:16:34	aarvar	now they're talking about map is more heavyweight then a loop
+2014-08-25 22:16:45	aarvar	than
+2014-08-25 22:17:12	tpolecat	yeah i had to leave
+2014-08-25 22:17:14	aarvar	"If a simple iterator loop does well, there's not much "cleaner" one can do:)"
+2014-08-25 22:17:25	tpolecat	those poor fuckers
+2014-08-25 22:18:07	aarvar	it's interesting that all of there arguments are basically "there's no better solution than the one I'm using"
+2014-08-25 22:18:11	aarvar	their
+2014-08-25 22:18:28	copumpkin	I feel oddly dirty watching you guys sit around laughing at them behind their backs
+2014-08-25 22:18:42	tpolecat	the haskell people say that about us, and the idris people about them. it's a rich and commutative tapestry of derision
+2014-08-25 22:18:54	◀▬▬	rmillerx (~rmillerx@24.42.225.24) has quit (Quit: rmillerx)
+2014-08-25 22:19:04	copumpkin	eh
+2014-08-25 22:19:45	tpolecat	i had to leave because i couldn't answer the streams question
+2014-08-25 22:19:50	tpolecat	i haven't looked at the API
+2014-08-25 22:19:55	tpolecat	i know there is a nice solution
+2014-08-25 22:20:03	aarvar	I havent looked at java 8 at all
+2014-08-25 22:20:38	▬▬▶	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has joined #scala
+2014-08-25 22:24:48	▬▬▶	murz (~murz@24.130.12.216) has joined #scala
+2014-08-25 22:26:12	◀▬▬	jarod7736 (~jarod7736@108-215-2-143.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2014-08-25 22:29:34	▬▬▶	rmillerx (~rmillerx@24.42.225.24) has joined #scala
+2014-08-25 22:29:36	▬▬▶	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has joined #scala
+2014-08-25 22:32:17	qu1j0t3	why bother?
+2014-08-25 22:32:47	▬▬▶	gli_ (gli@nat/redhat/x-caafnmtklbplojuk) has joined #scala
+2014-08-25 22:32:59	qu1j0t3	Alan Perlis: 'Some languages manage to absorb change but withstand progress.'
+2014-08-25 22:33:00	◀▬▬	rmillerx (~rmillerx@24.42.225.24) has quit (Client Quit)
+2014-08-25 22:33:13	◀▬▬	gli_ (gli@nat/redhat/x-caafnmtklbplojuk) has quit (Remote host closed the connection)
+2014-08-25 22:34:02	j3pl	wow, kicked
+2014-08-25 22:34:06	aarvar	LOL
+2014-08-25 22:34:11	tpolecat	wow what did you do?
+2014-08-25 22:34:29	aarvar	"ok ill go somewhere else, I guess I was mistaken in thinking discussing better ways of programming in java was relevant to this channel"
+2014-08-25 22:34:34	aarvar	"kicked"
+2014-08-25 22:34:51	wabash	Are we talking about ##java?
+2014-08-25 22:35:05	wabash	aarvar: Was it tjsnell or cheeser?
+2014-08-25 22:35:09	j3pl	tjsnell
+2014-08-25 22:35:16	aarvar	apparently one of the guys laughing at me was a moderator or whatever
+2014-08-25 22:35:16	wabash	ding ding ding!
+2014-08-25 22:35:20	wabash	I am so awesome.
+2014-08-25 22:35:50	▬▬▶	danclien (~danclien@108-78-174-186.lightspeed.austtx.sbcglobal.net) has joined #scala
+2014-08-25 22:36:05	aarvar	how did you know
+2014-08-25 22:36:42	wabash	experience
+2014-08-25 22:36:43	wabash	:)
+2014-08-25 22:37:16	j3pl	They use "idiomatic" over there to mean "only things I can understand"
+2014-08-25 22:37:25	aarvar	I noticed
+2014-08-25 22:37:39	wabash	Perhaps we are viewed the same way on #blub?
+2014-08-25 22:37:40	j3pl	how dare you not write idiomatically
+2014-08-25 22:37:45	wabash	just kidding.
+2014-08-25 22:37:52	aarvar	the one guy who was ranting about how dumb I was obviously had no understanding of what I wrote at all
+2014-08-25 22:38:05	▬▬▶	mordonez_ (~mordonez@181.67.156.195) has joined #scala
+2014-08-25 22:38:20	aarvar	you'd think that java land would love to have a new "design pattern"
+2014-08-25 22:38:26	aarvar	except it uses those evil generics
+2014-08-25 22:38:32	wabash	aarvar: Well... they are actually pretty smart. But a few of the people there are *extremely* impatient, to a personal flaw.
+2014-08-25 22:38:43	qu1j0t3	 | @milessabin      How much interest would there be in a community    
+2014-08-25 22:38:46	qu1j0t3	 |  retweeted by    sponsored fork of the #Scala toolchain? RTs and    
+2014-08-25 22:38:48	qu1j0t3	 |  @gclaramunt     fav's please.                                      
+2014-08-25 22:38:50	qu1j0t3	 | ........................................  http://ur1.ca/i2313       
+2014-08-25 22:38:51	◀▬▬	ceedubs (~ceedubs@ip72-200-169-67.ri.ri.cox.net) has quit (Quit: ceedubs)
+2014-08-25 22:39:05	qu1j0t3	  aarvar | you'd think that java land would love to have a new "design pattern"    || You must be NEW to this entire business.
+2014-08-25 22:39:19	aarvar	lol
+2014-08-25 22:39:26	qu1j0t3	I don't mean that in a patronising way.
+2014-08-25 22:39:29	qu1j0t3	but, yeah.
+2014-08-25 22:39:31	aarvar	indeed I am
+2014-08-25 22:39:31	qu1j0t3	welcome to software.
+2014-08-25 22:39:37	aarvar	I'm in high school
+2014-08-25 22:39:47	aarvar	so new would be an understatement maybe
+2014-08-25 22:39:55	qu1j0t3	brace yourself. nobody wants to learn anything new.
+2014-08-25 22:40:02	qu1j0t3	null is lefit.
+2014-08-25 22:40:05	qu1j0t3	legit*
+2014-08-25 22:40:36	aarvar	not as legit as covariant mutable arrays!
+2014-08-25 22:40:40	qu1j0t3	:)
+2014-08-25 22:40:58	qu1j0t3	sure, there are shades of legit-ness. We should teach the controversy
+2014-08-25 22:41:27	qu1j0t3	SOME PEOPLE MAINTAIN THAT A WEIRD MATHY CONCEPT LIKE REFERENTIAL TRANSPARENCY - THAT NOBODY CAN ACTUALLY UNDERSTAND - MATTERS
+2014-08-25 22:41:40	aarvar	no mathy
+2014-08-25 22:41:43	qu1j0t3	BROGRAMMERS POINT TO FACEBOOK AND SAY NYA-NYA-NYA WHO'S THE BILLIONAIRE
+2014-08-25 22:41:50	◀▬▬	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 22:42:09	j3pl	PHP must be good!
+2014-08-25 22:42:19	qu1j0t3	SO BASICALLY IT'S GAME OVER FOR THE IVORY TOWER. ALL THE RAYBANS BELONG TO US
+2014-08-25 22:42:23	qu1j0t3	j3pl: ikr?
+2014-08-25 22:42:38	qu1j0t3	j3pl: Get shit done, go home early, watch some NASCAR. Fuck Philip Wadler and his beard
+2014-08-25 22:42:58	j3pl	be as pragmatic as possible
+2014-08-25 22:43:01	qu1j0t3	when did MONADS IPO
+2014-08-25 22:43:32	wabash	aarvar: You are in HS?
+2014-08-25 22:43:38	aarvar	yeah
+2014-08-25 22:43:48	wabash	But you are already smarter than me!!!!!!!
+2014-08-25 22:43:52	wabash	That's not good.
+2014-08-25 22:44:01	aarvar	I just read some sutff, I probably don't actually know anything
+2014-08-25 22:44:13	wabash	Well, I have more grey hai^H^H^H^H^H^H experience than you.
+2014-08-25 22:44:28	wabash	:)
+2014-08-25 22:44:39	▬▬▶	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has joined #scala
+2014-08-25 22:45:24	◀▬▬	obcode (~obcode@terraform.cs.hm.edu) has quit (Read error: Connection reset by peer)
+2014-08-25 22:45:33	▬▬▶	obcode (~obcode@terraform.cs.hm.edu) has joined #scala
+2014-08-25 22:45:50	qu1j0t3	wabash: i bet i have more grey hair than you
+2014-08-25 22:46:13	qu1j0t3	i know that tpolecat dyes his
+2014-08-25 22:46:21	aarvar	let's see if trying to suggest subtyping is useless can get me kicked out of #programming!
+2014-08-25 22:46:44	▬▬▶	gli_ (gli@nat/redhat/x-fipfgltmbigfnvjc) has joined #scala
+2014-08-25 22:46:49	j3pl	inheritance is idiomatic bro
+2014-08-25 22:47:22	qu1j0t3	aarvar: like I said, you must be bored :)
+2014-08-25 22:47:25	aarvar	very
+2014-08-25 22:47:27	qu1j0t3	j3pl: OO is the future
+2014-08-25 22:47:31	◀▬▬	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has quit (Client Quit)
+2014-08-25 22:47:52	◀▬▬	leonweber1 (~leonweber@zlogin2.physik.fu-berlin.de) has quit (Ping timeout: 255 seconds)
+2014-08-25 22:48:12	◀▬▬	RevBayes (~RevBayes@168.215.217.226) has quit
+2014-08-25 22:48:47	aarvar	OO is everything. Before OO there was nothing.
+2014-08-25 22:49:08	qu1j0t3	well
+2014-08-25 22:49:12	◀▬▬	platz (~platz@unaffiliated/platz) has left #scala
+2014-08-25 22:49:18	aarvar	it's in the book of OO
+2014-08-25 22:49:18	qu1j0t3	I'll overlook that statement since you're in high school
+2014-08-25 22:49:32	◀▬▬	jpfuentes2 (~jacques@71-88-25-233.dhcp.mant.nc.charter.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-25 22:49:34	▬▬▶	leonweber1 (~leonweber@zlogin2.physik.fu-berlin.de) has joined #scala
+2014-08-25 22:49:42	qu1j0t3	but this is the kind of style you should show in ##java
+2014-08-25 22:49:43	j3pl	reminds me of the song "Elvis is everywhere"
+2014-08-25 22:50:09	aarvar	I remember first learning java 2 years ago; I thought it was so cool
+2014-08-25 22:50:23	▬▬▶	tsandall (~tsandall@89.100.194.172) has joined #scala
+2014-08-25 22:50:32	qu1j0t3	what's cool now?
+2014-08-25 22:50:45	j3pl	eep! "kernel BUG at /build/buildd/linux-3.13.0/mm/memory.c:3756"
+2014-08-25 22:50:57	j3pl	and no one from ops is online
+2014-08-25 22:51:03	aarvar	and then I wrote some java code using a generic pair type and my teacher told me it was unreadable
+2014-08-25 22:51:35	▬▬▶	amiri_ (~amiri@cpe-76-95-109-253.socal.res.rr.com) has joined #scala
+2014-08-25 22:52:48	▬▬▶	viktorlund (~viktorlun@dslb-178-005-226-131.178.005.pools.vodafone-ip.de) has joined #scala
+2014-08-25 22:53:30	▬▬▶	Ethix (~Ethix@c-67-177-166-103.hsd1.tn.comcast.net) has joined #scala
+2014-08-25 22:53:34	▬▬▶	lostone31 (~cbrown198@cpe-071-075-186-175.carolina.res.rr.com) has joined #scala
+2014-08-25 22:54:10	▬▬▶	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has joined #scala
+2014-08-25 22:54:23	j3pl	aarvar: not idiomatic bro
+2014-08-25 22:54:32	◀▬▬	KaneK (~Kane@162.255.32.66) has quit (Quit: KaneK)
+2014-08-25 22:54:41	◀▬▬	tsandall (~tsandall@89.100.194.172) has quit (Ping timeout: 245 seconds)
+2014-08-25 22:54:58	qu1j0t3	aarvar: wtf
+2014-08-25 22:55:01	◀▬▬	amiri (~amiri@cpe-76-95-109-253.socal.res.rr.com) has quit (Ping timeout: 260 seconds)
+2014-08-25 22:55:04	qu1j0t3	aarvar: Sigh.
+2014-08-25 22:55:23	j3pl	aarvar: do you even .lift()?
+2014-08-25 22:55:43	▬▬▶	ryanlecompte (~ryanlecom@2602:306:b8e2:51d0:9ad:1745:60b7:7a08) has joined #scala
+2014-08-25 22:55:51	aarvar	ah darn, ##programming is too calm to be any fun
+2014-08-25 22:55:54	◀▬▬	pgokeeffe (~pgokeeffe@123-243-191-143.static.tpgi.com.au) has quit (Quit: pgokeeffe)
+2014-08-25 22:57:12	◀▬▬	viktorlund (~viktorlun@dslb-178-005-226-131.178.005.pools.vodafone-ip.de) has quit (Ping timeout: 255 seconds)
+2014-08-25 22:57:35	wabash	aarvar: ##programming and #progit are both dearths of useful info.
+2014-08-25 22:58:28	◀▬▬	lostone31 (~cbrown198@cpe-071-075-186-175.carolina.res.rr.com) has quit (Ping timeout: 240 seconds)
+2014-08-25 22:58:39	wabash	j3pl: Love those. Fight java bugs sometimes that stacktrace to glibc.
+2014-08-25 22:58:52	◀▬▬	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has quit (Client Quit)
+2014-08-25 22:59:03	◀▬▬	zkay11 (~joseph@173-18-215-251.client.mchsi.com) has quit (Read error: Connection reset by peer)
+2014-08-25 22:59:52	tpolecat	qu1j0t3: i got more rhymes than i got grey hairs, and thats a lot because i got my share
+2014-08-25 23:00:06	qu1j0t3	tpolecat: I knew it
+2014-08-25 23:00:07	tpolecat	in all honesty i have very few rhymes
+2014-08-25 23:00:14	◀▬▬	zwer (~zwer@gateway/tor-sasl/zwer) has quit (Remote host closed the connection)
+2014-08-25 23:00:23	qu1j0t3	but those you have, typecheck
+2014-08-25 23:00:28	wabash	tpolecat: I do not believe you.
+2014-08-25 23:00:39	▬▬▶	zwer (~zwer@gateway/tor-sasl/zwer) has joined #scala
+2014-08-25 23:01:01	wabash	I believe that you have plenty of fresh lyrics, word yo.
+2014-08-25 23:03:58	qu1j0t3	Fresh Prince of PDX
+2014-08-25 23:04:59	wabash	I was more thinking Pole-E Fresh
+2014-08-25 23:05:09	wabash	6 minutes.... 6 minutes....
+2014-08-25 23:06:23	▬▬▶	ilyam (~ilyam@c-98-248-41-33.hsd1.ca.comcast.net) has joined #scala
+2014-08-25 23:06:32	qu1j0t3	way over my head. I don't even have a TV, dude.
+2014-08-25 23:07:37	◀▬▬	gratimax (~gratimax@c-67-161-27-28.hsd1.ca.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 23:08:19	◀▬▬	arnihr_ (uid1395@gateway/web/irccloud.com/x-tdzlllhkujlpfawd) has quit (Quit: Connection closed for inactivity)
+2014-08-25 23:10:20	◀▬▬	pr0ton (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has quit (Quit: pr0ton)
+2014-08-25 23:11:07	▬▬▶	dibblego (~nobody@203.143.164.152) has joined #scala
+2014-08-25 23:11:49	◀▬▬	jedws (~textual@c220-239-174-38.randw3.nsw.optusnet.com.au) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 23:13:22	▬▬▶	strobegen1 (~Adium@91.191.237.95) has joined #scala
+2014-08-25 23:13:22	◀▬▬	strobegen (~Adium@91.191.237.95) has quit (Read error: Connection reset by peer)
+2014-08-25 23:16:01	▬▬▶	benjen (~benjen@pool-100-33-78-243.nycmny.fios.verizon.net) has joined #scala
+2014-08-25 23:17:00	▬▬▶	scalapeno (~scalapeno@cpe-172-249-197-225.socal.res.rr.com) has joined #scala
+2014-08-25 23:19:55	◀▬▬	scalapeno (~scalapeno@cpe-172-249-197-225.socal.res.rr.com) has quit (Client Quit)
+2014-08-25 23:22:28	◀▬▬	hindog (~Adium@static-108-13-230-170.lsanca.fios.verizon.net) has quit (Quit: Leaving.)
+2014-08-25 23:23:02	◀▬▬	dcb (~textual@208-106-16-146.dedicated.static.sonic.net) has quit (Ping timeout: 245 seconds)
+2014-08-25 23:24:50	wabash	qu1j0t3: Oh, sorry. It's from the 80's.
+2014-08-25 23:25:05	wabash	"The most radical decade in the history of mankind"
+2014-08-25 23:25:53	qu1j0t3	hm, oh, right, during the Enlightenment.
+2014-08-25 23:26:30	◀▬▬	mordonez_ (~mordonez@181.67.156.195) has quit (Quit: Computer has gone to sleep.)
+2014-08-25 23:26:49	qu1j0t3	sorry - not sure if you mean 1380s, 1480s, 1580s, or 1680s.
+2014-08-25 23:26:49	◀▬▬	benjen (~benjen@pool-100-33-78-243.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2014-08-25 23:26:55	qu1j0t3	mindblowing stuff to be sure.
+2014-08-25 23:27:09	▬▬▶	jasonjckn (~jasonjckn@173-164-196-202-SFBA.hfc.comcastbusiness.net) has joined #scala
+2014-08-25 23:27:11	wabash	1680s:  Doug E Fresh of stratford upon Avon.
+2014-08-25 23:27:25	 *	qu1j0t3 sniggers
+2014-08-25 23:27:32	◀▬▬	j3pl (~Adium@38.102.133.126) has quit (Quit: Leaving.)
+2014-08-25 23:27:39	▬▬▶	metasim (~metasim@216.197.68.125) has joined #scala
+2014-08-25 23:27:53	▬▬▶	jpfuentes2 (~jacques@71-88-25-233.dhcp.mant.nc.charter.com) has joined #scala
+2014-08-25 23:28:18	▬▬▶	benjen (~benjen@pool-100-33-78-243.nycmny.fios.verizon.net) has joined #scala
+2014-08-25 23:31:11	▬▬▶	pr0ton (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has joined #scala
+2014-08-25 23:31:47	◀▬▬	jpfuentes2 (~jacques@71-88-25-233.dhcp.mant.nc.charter.com) has quit (Client Quit)
+2014-08-25 23:32:25	◀▬▬	metasim (~metasim@216.197.68.125) has quit (Ping timeout: 255 seconds)
+2014-08-25 23:38:49	◀▬▬	benjen (~benjen@pool-100-33-78-243.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2014-08-25 23:44:30	◀▬▬	murz (~murz@24.130.12.216) has quit (Remote host closed the connection)
+2014-08-25 23:45:16	◀▬▬	ilyam (~ilyam@c-98-248-41-33.hsd1.ca.comcast.net) has quit (Quit: ilyam)
+2014-08-25 23:46:10	◀▬▬	stantonk (~stantonk@c-50-148-37-173.hsd1.il.comcast.net) has quit (Remote host closed the connection)
+2014-08-25 23:46:37	◀▬▬	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has quit (Ping timeout: 246 seconds)
+2014-08-25 23:47:21	▬▬▶	pfurla (~textual@189.122.56.223) has joined #scala
+2014-08-25 23:47:49	▬▬▶	benjen (~benjen@pool-100-33-78-243.nycmny.fios.verizon.net) has joined #scala
+2014-08-25 23:48:27	aarvar	I should try ##csharp now
+2014-08-25 23:48:47	dibblego	it's funny, I actually tried a discussion in ##csharp once
+2014-08-25 23:48:52	dibblego	I work on a FP project using C#
+2014-08-25 23:49:08	aarvar	how did that discussion go
+2014-08-25 23:49:25	dibblego	and since Microsoft markets their monad comprehensions (LINQ) only using two specific monads (IObservable, IQueryable), all C# programmers think that LINQ is related to those two things — I had no idea
+2014-08-25 23:49:57	dibblego	well, it's kind of predictable thinking back, but I had none of that information
+2014-08-25 23:50:28	▬▬▶	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has joined #scala
+2014-08-25 23:50:41	aarvar	maybe I'll do a test to see if I get kicked from ##csharp faster than ##java
+2014-08-25 23:51:00	dibblego	try to find smart people in there
+2014-08-25 23:51:12	dibblego	sometimes you can get one or two people thinking about interesting stuff
+2014-08-25 23:51:52	aarvar	hhmm, in #java I got flamed with too many insults for anyone to read what I was saying
+2014-08-25 23:52:56	dibblego	yeah ##java has fewer candidates I would expect
+2014-08-25 23:53:09	▬▬▶	viktorlund (~viktorlun@dslb-178-005-226-131.178.005.pools.vodafone-ip.de) has joined #scala
+2014-08-25 23:53:19	aarvar	I don't really know C#, the syntax is pretty much the same as java right
+2014-08-25 23:53:41	texasmynsted	heh
+2014-08-25 23:53:54	dibblego	it has monad comprehensions and HOFs (Java does too now though)
+2014-08-25 23:54:03	dibblego	it also unfortunately has type reification
+2014-08-25 23:54:08	aarvar	yeah, LINQ right
+2014-08-25 23:54:15	▬▬▶	jedws (~textual@eth59-167-133-100.static.internode.on.net) has joined #scala
+2014-08-25 23:54:19	dibblego	and it has this "default" keyword, which is just an unsafe, inflexible monoid thingo
+2014-08-25 23:54:25	deuteros	HOF in C# are called delegates I believe
+2014-08-25 23:54:35	dibblego	no, that is just one way
+2014-08-25 23:54:39	dibblego	there is also System.Func
+2014-08-25 23:54:42	deuteros	ah
+2014-08-25 23:54:44	texasmynsted	It adopts new ideas faster that Java, but the CLR is an even bigger problem than the JVM.
+2014-08-25 23:54:45	dibblego	delegate was around before then though
+2014-08-25 23:55:07	deuteros	They appeared in Microsoft's version of Java, yeah
+2014-08-25 23:55:16	dibblego	C# is quite exactly Erik Meijer taking good ideas from haskell, renaming them and removing all the good bits *precisely so as not to scare the C# developers*
+2014-08-25 23:55:23	dibblego	Erik openly admits this
+2014-08-25 23:55:29	aarvar	is type reification the reason F# doesn't have higher kinds, or is it because they want better C# compatability?
+2014-08-25 23:55:31	texasmynsted	LOL!
+2014-08-25 23:55:49	aarvar	or is it a combination of both
+2014-08-25 23:56:14	dibblego	aarvar: it is related, yes
+2014-08-25 23:56:25	dibblego	there is no IL instruction for higher kinds
+2014-08-25 23:56:30	texasmynsted	I do not see why one would deliberately get closer to C#
+2014-08-25 23:56:59	dibblego	well, like I said, I write C# occasionally
+2014-08-25 23:57:05	dibblego	https://github.com/NICTA/xsharpx/
+2014-08-25 23:58:01	qu1j0t3	aarvar: there's always F#.
+2014-08-25 23:58:16	◀▬▬	viktorlund (~viktorlun@dslb-178-005-226-131.178.005.pools.vodafone-ip.de) has quit (Ping timeout: 272 seconds)
+2014-08-25 23:58:19	dibblego	F# really is not an improvement on C# 
+2014-08-25 23:58:35	dibblego	it is only good for people who are obsessed with syntax (not so much solving problems)
+2014-08-26 00:00:37	--	irc: disconnected from server
+2014-08-26 17:42:59	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-26 17:42:59	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-26 17:42:59	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-26 17:42:59	--	Channel #scala: 455 nicks (0 ops, 0 voices, 455 normals)
+2014-08-26 17:43:02	scalator	i heard http://bookrealworldhaskell.org is pretty good
+2014-08-26 17:43:04	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-26 17:43:07	▬▬▶	treehug88 (~treehug88@static-96-239-100-47.nycmny.fios.verizon.net) has joined #scala
+2014-08-26 17:43:12	scalator	i heard http://book.realworldhaskell.org even
+2014-08-26 17:43:34	scalator	tpolecat you here?
+2014-08-26 17:43:52	▬▬▶	cugni_ (~cugni@205.106.135.37.dynamic.jazztel.es) has joined #scala
+2014-08-26 17:44:16	texasmynsted	scalator, you can read it online for free
+2014-08-26 17:44:20	◀▬▬	Ven (~textual@AMarseille-158-1-161-99.w86-210.abo.wanadoo.fr) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-08-26 17:44:39	sp77	owning the physical paper-version of this book: "real world haskell" is worth reading
+2014-08-26 17:44:53	texasmynsted	better than lyahfgg?
+2014-08-26 17:45:31	sp77	lyahfgg?
+2014-08-26 17:45:33	pdxleif	Not seeing exactly how strictness rules out infinity for the Nat case any better than Haskell would
+2014-08-26 17:45:50	pdxleif	Rules out cyclic references?  Which seems like it could be a limitation...
+2014-08-26 17:46:23	texasmynsted	http://learnyouahaskell.com
+2014-08-26 17:46:31	pdxleif	! abstract class Nat; object Zero extends Nat; case class Succ(n: Nat) extends Nat
+2014-08-26 17:46:39	aarvar	I started reading that and found it really boring
+2014-08-26 17:46:42	multibot__	 defined class Nat
+2014-08-26 17:46:43	multibot__	 defined object Zero
+2014-08-26 17:46:44	multibot__	 defined class Succ
+2014-08-26 17:46:51	pdxleif	! val inf: Nat = Succ(inf)
+2014-08-26 17:46:51	multibot__	 inf: Nat = Succ(null)
+2014-08-26 17:47:24	sp77	personal preference: (real world haskell) better_than (learnyouahaskell)
+2014-08-26 17:47:38	aarvar	sp77 got banned from ##java too
+2014-08-26 17:47:40	aarvar	!
+2014-08-26 17:48:10	pdxleif	what's the ##java craze?
+2014-08-26 17:48:22	aarvar	there isnt one
+2014-08-26 17:48:27	texasmynsted	was he trolling too?
+2014-08-26 17:48:27	▬▬▶	askalski (~akuda@91.238.216.1) has joined #scala
+2014-08-26 17:48:28	◀▬▬	cugni_ (~cugni@205.106.135.37.dynamic.jazztel.es) has quit (Ping timeout: 255 seconds)
+2014-08-26 17:48:31	sp77	aarvar: I don't even know why
+2014-08-26 17:48:33	aarvar	idk
+2014-08-26 17:48:43	aarvar	I bet that guy thought you were me on another ip
+2014-08-26 17:48:51	aarvar	that's why once yo ustarted talking he unbanned me maybe
+2014-08-26 17:48:53	texasmynsted	I never saw any trolling when I was in there
+2014-08-26 17:49:01	aarvar	there wasnt
+2014-08-26 17:49:11	aarvar	that one op is just an idiot
+2014-08-26 17:49:19	sp77	and my question were really naive (at least I hoped so)
+2014-08-26 17:49:37	texasmynsted	maybe the channel needs to read "who moved my cheese?" book
+2014-08-26 17:50:23	sp77	I am back in ##java
+2014-08-26 17:50:38	aarvar	you were unbanned?
+2014-08-26 17:50:41	texasmynsted	Worked for a company that at one point encouraged the MIS department to read that book.  That was a ominous signal, I think.
+2014-08-26 17:50:47	aarvar	ask if you can write monads in java
+2014-08-26 17:50:54	texasmynsted	zomg
+2014-08-26 17:50:57	sp77	aarvar: seems so
+2014-08-26 17:51:23	aarvar	no, ask what a monad is
+2014-08-26 17:51:25	texasmynsted	why are you taunting them? 
+2014-08-26 17:51:48	aarvar	ask why java arrays are covariant
+2014-08-26 17:51:56	▬▬▶	rburgosnavas (~rburgosna@173-11-87-218-SFBA.hfc.comcastbusiness.net) has joined #scala
+2014-08-26 17:52:01	sp77	lol aarvar
+2014-08-26 17:52:01	▬▬▶	codesoup (~codesoup@CPE68b6fcf580d3-CM68b6fcf580d0.cpe.net.cable.rogers.com) has joined #scala
+2014-08-26 17:52:14	texasmynsted	Now, THAT would be a good question.
+2014-08-26 17:52:28	aarvar	ok texas you ask it, you might not get banned instantly
+2014-08-26 17:52:36	sp77	I guess this is too obvious now
+2014-08-26 17:52:38	--	filinep_off is now known as filinep
+2014-08-26 17:52:47	aarvar	maybe he's spying on #scala
+2014-08-26 17:52:53	texasmynsted	nah.  The why is really not important.  
+2014-08-26 17:53:09	aarvar	"why does scala attract assholes"
+2014-08-26 17:53:18	texasmynsted	wellll, maybe that is not true, but I do not expect them to know.
+2014-08-26 17:53:28	texasmynsted	iirc Martin explained that one
+2014-08-26 17:53:32	aarvar	he must be spying
+2014-08-26 17:53:32	sp77	from the ##java channel:
+2014-08-26 17:53:33	sp77	tjsnell> why does scala attract assholes?
+2014-08-26 17:53:34	◀▬▬	mary5030 (~mary5030@72.32.115.233) has quit (Remote host closed the connection)
+2014-08-26 17:53:42	sp77	any words?
+2014-08-26 17:53:52	j3pl	just saw that
+2014-08-26 17:54:09	scalator	as a noob, i can say there's alot less assholes in the scala community than the java one
+2014-08-26 17:54:13	aarvar	and its coming from the asshole who bans everyone who says something he doesn't like
+2014-08-26 17:54:14	scalator	or the ruby one
+2014-08-26 17:54:33	scalator	it does attact perl one liner types tho from what i can tell of the codebases :-P
+2014-08-26 17:54:45	scalator	val x = (*&#$(*&$&$$$$(((@# \/ { . }
+2014-08-26 17:54:56	aarvar	na
+2014-08-26 17:55:18	◀▬▬	bblfish (~bblfish@2a01:e35:1395:5c60:3171:548c:a3af:658a) has quit (Remote host closed the connection)
+2014-08-26 17:55:20	▬▬▶	dtrott (~dtrott@cpe-142-129-147-60.socal.res.rr.com) has joined #scala
+2014-08-26 17:55:25	aarvar	texasmynsted: dont bring him in here
+2014-08-26 17:55:42	▬▬▶	srcerer (~chatzilla@dns2.klsairexpress.com) has joined #scala
+2014-08-26 17:55:47	▬▬▶	bblfish (~bblfish@2a01:e35:1395:5c60:3171:548c:a3af:658a) has joined #scala
+2014-08-26 17:56:09	texasmynsted	heh
+2014-08-26 17:56:45	◀▬▬	ceedubs (~ceedubs@ip72-200-169-67.ri.ri.cox.net) has quit (Quit: ceedubs)
+2014-08-26 17:57:16	▬▬▶	doctau (doctau@nat/redhat/x-wtpwoelkuobyhljf) has joined #scala
+2014-08-26 17:57:41	◀▬▬	dubsg (~dubsg@50.247.66.242) has quit (Remote host closed the connection)
+2014-08-26 17:58:17	aarvar	should go ask "I'm trying to make a 3rd party class, AbstractFactoryBuilderProxyThing fit my interface, ProxyAbstractFactoryThingBuilder. Is there a way I can do this in java?"
+2014-08-26 17:59:28	deuteros	scalator: wait a few months and your opinion of the scala community will change :)
+2014-08-26 17:59:43	aarvar	deuteros: to what
+2014-08-26 18:00:00	deuteros	to the fact that the asshole ratio is about constant regardless of the community
+2014-08-26 18:00:15	aarvar	seems false to me
+2014-08-26 18:00:23	aarvar	idk, I haven't been banned from #scala twice
+2014-08-26 18:00:29	◀▬▬	bblfish (~bblfish@2a01:e35:1395:5c60:3171:548c:a3af:658a) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:00:52	sp77	try harder
+2014-08-26 18:00:56	dibblego	the casual name-calling is just as prevalent, as you can see right here, before your eyes
+2014-08-26 18:01:04	deuteros	aarvar: because #scala tolerates off topic much more than ##java does
+2014-08-26 18:01:31	aarvar	if by off-topic you mean discussing useful abstractions in the given language, then yes
+2014-08-26 18:02:00	dibblego	aarvar: even that is frowned upon in Scala e.g. the mailing lists
+2014-08-26 18:02:09	◀▬▬	Guest5170 (~lizzin@c-98-228-65-59.hsd1.il.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-08-26 18:02:28	aarvar	dibblego: they were just talking about you in ##java earlier
+2014-08-26 18:02:38	dibblego	of course they were
+2014-08-26 18:02:45	dibblego	because that is "on-topic"
+2014-08-26 18:02:55	◀▬▬	mischat (~mischat@5751da24.skybroadband.com) has quit (Quit: sleeps ...)
+2014-08-26 18:03:00	dibblego	the hypocrisy of those degenerates is really something
+2014-08-26 18:03:06	aarvar	so, are you going to get texasmynsted's address and physically assault him?
+2014-08-26 18:03:13	dibblego	er wat?
+2014-08-26 18:03:17	aarvar	they said you *probably* wouldn't but...
+2014-08-26 18:03:27	dibblego	oh their pseudo-psychology you mean?
+2014-08-26 18:03:35	dibblego	I have no idea what you are talking about
+2014-08-26 18:03:43	dibblego	they are bricks that have a mouth
+2014-08-26 18:03:57	▬▬▶	JohnTalent (~johnt@ool-457a8633.dyn.optonline.net) has joined #scala
+2014-08-26 18:04:05	aarvar	dreamreal: He *probably* wouldn't try to get your address so that he can physically go to where you are and assault you vigorously
+2014-08-26 18:04:06	▬▬▶	dubsg (~dubsg@c-76-126-203-133.hsd1.ca.comcast.net) has joined #scala
+2014-08-26 18:04:09	dibblego	there are some psychopaths in there, if that is what you mean
+2014-08-26 18:04:12	texasmynsted	I never did understand why they thought dibblego would be unhappy with me in the first place
+2014-08-26 18:04:49	dibblego	yooz r weird
+2014-08-26 18:04:50	texasmynsted	they wanted me to ask you about monads or something.  I do not see how that would be an issue
+2014-08-26 18:05:16	aarvar	they thought yo uwere going to ask in the java way
+2014-08-26 18:05:24	aarvar	"what are monads and how are they useless?"
+2014-08-26 18:05:37	texasmynsted	I simply asked if they knew the freenode channel for functional programming. They said to ask you.  And then giggled a lot and stuff
+2014-08-26 18:05:50	pdxleif	"whatever comes out, you want to feed into another station. The problem is that we are in space" 
+2014-08-26 18:05:58	--	filinep is now known as filinep_off
+2014-08-26 18:06:04	texasmynsted	I mean freenode channel for functional programming in java
+2014-08-26 18:06:14	dibblego	texasmynsted: that's because I wrote functionaljava.org
+2014-08-26 18:06:24	dibblego	and it was precisely to make those people less economical
+2014-08-26 18:06:34	texasmynsted	lol
+2014-08-26 18:06:34	◀▬▬	ColaColin (~ColaColin@232-190-103-86.dynamic.dsl.tng.de) has quit (Quit: Verlassend)
+2014-08-26 18:06:36	dibblego	they think functionaljava is terrible
+2014-08-26 18:06:48	dibblego	what they don't realise is that it is indeed terrible, but the best that java can do
+2014-08-26 18:06:57	pdxleif	https://code.google.com/p/guava-libraries/wiki/FunctionalExplained
+2014-08-26 18:06:57	texasmynsted	ah
+2014-08-26 18:07:12	dibblego	it shines a light on how ridiculous their existence is
+2014-08-26 18:07:17	texasmynsted	how did the talk go?
+2014-08-26 18:07:24	◀▬▬	askalski (~akuda@91.238.216.1) has quit (Quit: Wychodzi)
+2014-08-26 18:07:29	dibblego	it went well, it was just fun more than anything too interesting
+2014-08-26 18:07:37	texasmynsted	:-)
+2014-08-26 18:07:41	dibblego	https://twitter.com/hackuador/status/504202574904299521
+2014-08-26 18:08:02	sp77	perspective of a scala-newbee with a rich java background: topics at #scala are sometimes hard to follow (because of very deep technical details). on the other side, ##java topics are often kind of "propaganda" only, without any real technical / mathematical / logical reasoning
+2014-08-26 18:08:08	texasmynsted	heheh
+2014-08-26 18:08:28	orangerobot	leaving the fact of whether this is good practice or not, shouldn't I be able to chain multiple list operations like this?http://pastie.org/9505136
+2014-08-26 18:08:38	orangerobot	or is there another way?
+2014-08-26 18:14:34	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-26 18:14:34	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-26 18:14:34	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-26 18:14:34	--	Channel #scala: 455 nicks (0 ops, 0 voices, 455 normals)
+2014-08-26 18:14:39	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-26 18:14:57	▬▬▶	HaudRex (~textual@31-209-195-173.dsl.dynamic.simnet.is) has joined #scala
+2014-08-26 18:15:53	▬▬▶	partycoder (~textual@unaffiliated/partycoder) has joined #scala
+2014-08-26 18:15:56	◀▬▬	treehug88 (~treehug88@static-96-239-100-47.nycmny.fios.verizon.net) has quit
+2014-08-26 18:16:23	◀▬▬	PsionTheory (~quassel@cpe-174-109-012-061.nc.res.rr.com) has quit (Read error: Connection reset by peer)
+2014-08-26 18:17:23	◀▬▬	Apocalisp (~textual@31-209-205-4.dsl.dynamic.simnet.is) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:18:04	sp77	texasmynsted: I think you are wrong
+2014-08-26 18:18:15	▬▬▶	digicyc (~AaronA@unaffiliated/digicyc) has joined #scala
+2014-08-26 18:18:42	sp77	"nobody else cares about numbers in the same way that I do" -> most serios developers / architects do care.
+2014-08-26 18:19:16	◀▬▬	primer__ (~will@static-96-239-100-47.nycmny.fios.verizon.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-26 18:19:38	pdxleif	Think d_m would be the jvm numbers guy
+2014-08-26 18:20:40	▬▬▶	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has joined #scala
+2014-08-26 18:21:34	▬▬▶	j3pl1 (~Adium@38.102.133.126) has joined #scala
+2014-08-26 18:21:46	▬▬▶	magnifikus (~M@ip-109-90-210-121.hsi11.unitymediagroup.de) has joined #scala
+2014-08-26 18:22:04	◀▬▬	j3pl (~Adium@38.102.133.126) has quit (Read error: Connection reset by peer)
+2014-08-26 18:22:15	◀▬▬	lanemeyer (~eric@wsip-72-214-116-193.dc.dc.cox.net) has quit (Ping timeout: 245 seconds)
+2014-08-26 18:22:42	◀▬▬	Valdo (~supermac@services.le-valdo.org) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:22:42	◀▬▬	psino (~psino@unaffiliated/psino) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	day (~day@p5080E42D.dip0.t-ipconnect.de) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	voegelas (~voegelas@www.andreasvoegele.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:25	◀▬▬	pdtpatr1ck (~ubuntu@ec2-54-211-230-219.compute-1.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:39	◀▬▬	dirkgr (~dirkgr@162.222.168.66) has quit (Quit: dirkgr)
+2014-08-26 18:23:41	◀▬▬	Jaycob_ (huttunm2@gateway/shell/tkk.fi/x-kemlzcgiiefpsvme) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	DigitalKiwi (~kiwi@unaffiliated/digitalkiwi) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:42	◀▬▬	tnks (~tnks@cpe-66-68-60-238.austin.res.rr.com) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:45	◀▬▬	kinabalu (~kinabalu@unaffiliated/kinabalu) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:23:58	▬▬▶	voegelas (~voegelas@www.andreasvoegele.com) has joined #scala
+2014-08-26 18:24:33	▬▬▶	dobblego (~nobody@14-202-76-73.static.tpgi.com.au) has joined #scala
+2014-08-26 18:24:56	◀▬▬	f00dWorksta (~f00dWorks@158.106.65.66) has quit (Remote host closed the connection)
+2014-08-26 18:25:02	▬▬▶	DigitalKiwi (~kiwi@unaffiliated/digitalkiwi) has joined #scala
+2014-08-26 18:25:09	▬▬▶	Jaycob (huttunm2@gateway/shell/tkk.fi/x-glaaytplymhrxymm) has joined #scala
+2014-08-26 18:25:12	▬▬▶	Valdo (~supermac@services.le-valdo.org) has joined #scala
+2014-08-26 18:25:13	▬▬▶	pdtpatr1ck (~ubuntu@ec2-54-211-230-219.compute-1.amazonaws.com) has joined #scala
+2014-08-26 18:25:25	▬▬▶	dirkgr (~dirkgr@162.222.168.66) has joined #scala
+2014-08-26 18:25:27	▬▬▶	kinabalu (~kinabalu@unaffiliated/kinabalu) has joined #scala
+2014-08-26 18:25:35	◀▬▬	myoriel (~Myoriel@aftr-88-217-180-58.dynamic.mnet-online.de) has quit (Ping timeout: 245 seconds)
+2014-08-26 18:25:40	▬▬▶	bvad_ (~bvad@37.139.31.127) has joined #scala
+2014-08-26 18:25:44	▬▬▶	day (~day@p5080E42D.dip0.t-ipconnect.de) has joined #scala
+2014-08-26 18:25:48	◀▬▬	uberwach (~uberwach@f052010165.adsl.alicedsl.de) has quit (Ping timeout: 250 seconds)
+2014-08-26 18:26:06	▬▬▶	bblfish (~bblfish@81.57.85.198) has joined #scala
+2014-08-26 18:26:16	wabash	aarvar: NightRa: estewei: Thank you for all of your help
+2014-08-26 18:26:20	▬▬▶	boegel_ (~boegel@ca60c171.ugent.be) has joined #scala
+2014-08-26 18:26:23	wabash	everything you said made sense, and helped me a lot.
+2014-08-26 18:26:31	▬▬▶	reeses_ (reeses@2600:3c01::f03c:91ff:fe73:d292) has joined #scala
+2014-08-26 18:26:34	▬▬▶	Apocalisp (~textual@31-209-195-173.dsl.dynamic.simnet.is) has joined #scala
+2014-08-26 18:26:37	wabash	Most of my problems came from spray-jsons extra layer of special magic.
+2014-08-26 18:26:49	▬▬▶	boulderdan_ (~boulderda@ec2-54-201-98-68.us-west-2.compute.amazonaws.com) has joined #scala
+2014-08-26 18:26:59	▬▬▶	steffan_ (~steffan@rainier.zerog.net) has joined #scala
+2014-08-26 18:27:04	wabash	Once I got that figured out, I could de-magic-ize everything by setting up unmarshallers with explicit types.
+2014-08-26 18:27:06	◀▬▬	msaegesser (~msaegesse@50-193-109-57-static.hfc.comcastbusiness.net) has quit (Ping timeout: 250 seconds)
+2014-08-26 18:27:18	wabash	Then my implicit unmarshal method worked perfectly.
+2014-08-26 18:28:59	▬▬▶	tnks (~tnks@cpe-66-68-60-238.austin.res.rr.com) has joined #scala
+2014-08-26 18:28:59	▬▬▶	gseitz_ (~gseitz@217-162-127-140.dynamic.hispeed.ch) has joined #scala
+2014-08-26 18:29:10	▬▬▶	nafg_ (~quassel@pool-72-76-197-87.nwrknj.fios.verizon.net) has joined #scala
+2014-08-26 18:29:52	▬▬▶	imanc_ (sid38308@gateway/web/irccloud.com/x-oigoajvnhhotdfbq) has joined #scala
+2014-08-26 18:29:53	▬▬▶	brainproxy_ (~brainprox@pdpc/supporter/gold/brainproxy) has joined #scala
+2014-08-26 18:30:49	◀▬▬	bblfish (~bblfish@81.57.85.198) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:31:10	◀▬▬	metasim (~metasim@216.197.68.125) has quit (Read error: Connection reset by peer)
+2014-08-26 18:31:13	aarvar	LOL
+2014-08-26 18:31:13	--	j3pl1 is now known as j3pl
+2014-08-26 18:31:24	aarvar	 sp77: actually a channel named ##java sounds like a channel interesting for me (as a Java developer). if you don't like people with other interests here, you should make this more obvious, e.g. by naming the channel #for-java-slaves-only
+2014-08-26 18:31:24	aarvar	(03:30:53 PM) aarvar: sp77: enough already
+2014-08-26 18:31:24	aarvar	(03:31:13 PM) tjsnell:  /kick aarvar
+2014-08-26 18:31:24	aarvar	(03:31:17 PM) You have been kicked by tjsnell: (aarvar)
+2014-08-26 18:31:44	▬▬▶	metasim (~metasim@216.197.68.125) has joined #scala
+2014-08-26 18:32:37	▬▬▶	DougieBot5000_ (~DougieBot@unaffiliated/dougiebot5000) has joined #scala
+2014-08-26 18:32:44	j3pl	Like I said, they're touchy over there
+2014-08-26 18:32:53	aarvar	I said exactly what they were saying
+2014-08-26 18:33:02	▬▬▶	linkd (~linkd@neverfear4-adsl.demon.co.uk) has joined #scala
+2014-08-26 18:33:04	aarvar	"enough already"
+2014-08-26 18:33:11	j3pl	When asked why, they say they're "tired"
+2014-08-26 18:33:18	aarvar	yeah
+2014-08-26 18:33:25	j3pl	Poor embattled Java fans
+2014-08-26 18:33:32	◀▬▬	dtrott (~dtrott@cpe-142-129-147-60.socal.res.rr.com) has quit (Ping timeout: 260 seconds)
+2014-08-26 18:33:34	▬▬▶	jconnoll1 (jconnolly@nat/theladders/session) has joined #scala
+2014-08-26 18:33:36	deuteros	sp77 has been flooding the channel despite being asked by an op to stop, what do you think was going to happen?
+2014-08-26 18:33:37	aarvar	lol I didnt realize two words could get me kicked
+2014-08-26 18:33:39	▬▬▶	Bhaskar1 (~Bhaskar@66.6.34.253) has joined #scala
+2014-08-26 18:33:42	aarvar	two words that weren't java sucks
+2014-08-26 18:33:47	aarvar	I know
+2014-08-26 18:33:51	aarvar	I told him "enough already"
+2014-08-26 18:33:54	aarvar	and they kicked ME too
+2014-08-26 18:34:01	▬▬▶	psino (~psino@unaffiliated/psino) has joined #scala
+2014-08-26 18:34:20	▬▬▶	egp_ (~eric@216.9.29.221) has joined #scala
+2014-08-26 18:34:26	▬▬▶	Apocalis_ (~textual@31-209-195-173.dsl.dynamic.simnet.is) has joined #scala
+2014-08-26 18:34:37	▬▬▶	s1eepyn4te (~sleepynat@162.243.79.61) has joined #scala
+2014-08-26 18:34:46	▬▬▶	SilverKe_ (~SilverKey@rrcs-67-78-97-126.sw.biz.rr.com) has joined #scala
+2014-08-26 18:34:58	◀▬▬	ossek (~ossek@174-30-64-184.desm.qwest.net) has quit (Ping timeout: 246 seconds)
+2014-08-26 18:35:01	▬▬▶	qz_ (~qz@li272-85.members.linode.com) has joined #scala
+2014-08-26 18:35:04	▬▬▶	casualjim_ (~casualjim@static.6.43.9.5.clients.your-server.de) has joined #scala
+2014-08-26 18:35:26	◀▬▬	Bhaskar (~Bhaskar@66.6.34.252) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:35:40	▬▬▶	baseonmars_ (~danyo@xvm-168-5.ghst.net) has joined #scala
+2014-08-26 18:36:12	▬▬▶	EluctariLLC_ (~EluctariL@ec2-54-193-166-177.us-west-1.compute.amazonaws.com) has joined #scala
+2014-08-26 18:36:34	▬▬▶	scalator_ (~ulaskd@vault.isis.poly.edu) has joined #scala
+2014-08-26 18:36:36	▬▬▶	zwer_c (~zwer@orion1601.startdedicated.de) has joined #scala
+2014-08-26 18:36:40	▬▬▶	folex1 (~Adium@broadband-109-173-4-143.nationalcablenetworks.ru) has joined #scala
+2014-08-26 18:36:51	◀▬▬	DougieBot5000 (~DougieBot@unaffiliated/dougiebot5000) has quit (Ping timeout: 255 seconds)
+2014-08-26 18:37:12	▬▬▶	fanf_ (~fanf@shell.normation.com) has joined #scala
+2014-08-26 18:37:13	◀▬▬	aztek (~aztek@cust-95-80-41-232.csbnet.se) has quit (Remote host closed the connection)
+2014-08-26 18:37:19	▬▬▶	jedws (~textual@c220-239-174-38.randw3.nsw.optusnet.com.au) has joined #scala
+2014-08-26 18:37:48	◀▬▬	HaudRex (~textual@31-209-195-173.dsl.dynamic.simnet.is) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	champomy (~champomy@ALille-652-1-160-90.w90-34.abo.wanadoo.fr) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	magnifikus1 (~M@ip-109-90-210-121.hsi11.unitymediagroup.de) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	reim (~riQui@77-173-103-149.ip.telfort.nl) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	ches (~ches@whiskeyandgrits.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	gseitz (~gseitz@217-162-127-140.dynamic.hispeed.ch) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	thereisnospoon (~textual@110-174-236-227.static.tpgi.com.au) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	chiffr (~cirderf@d31128.smhi.se) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	fanf (~fanf@shell.normation.com) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	cythrawll (~cythrawll@unaffiliated/cythrawll) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	nafg (~quassel@pool-72-76-197-87.nwrknj.fios.verizon.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	steffan (~steffan@rainier.zerog.net) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	boegel (~boegel@ca60c171.ugent.be) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	imanc (sid38308@gateway/web/irccloud.com/x-yvrytouthhoqgkex) has quit (*.net *.split)
+2014-08-26 18:37:48	◀▬▬	qz (~qz@unaffiliated/quetzal) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	reeses (~reeses@unaffiliated/reeses) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	brainproxy (~brainprox@pdpc/supporter/gold/brainproxy) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	boulderdan (~boulderda@ec2-54-201-98-68.us-west-2.compute.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:37:49	◀▬▬	bvad (~bvad@37.139.31.127) has quit (*.net *.split)
+2014-08-26 18:38:04	▬▬▶	JohnTale1t (~johnt@ool-457a8633.dyn.optonline.net) has joined #scala
+2014-08-26 18:38:05	▬▬▶	hypervis1 (~na@65.78.180.153) has joined #scala
+2014-08-26 18:38:20	◀▬▬	arnihr_ (uid1395@gateway/web/irccloud.com/x-jrqjckaxbcqytbuq) has quit (Quit: Connection closed for inactivity)
+2014-08-26 18:38:32	◀▬▬	folex (~Adium@broadband-109-173-4-143.nationalcablenetworks.ru) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:32	▬▬▶	michaelneale (~textual@ppp121-44-163-234.lns20.syd7.internode.on.net) has joined #scala
+2014-08-26 18:38:33	◀▬▬	dant3 (dant3@60e-007.static.bnc4free.com) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:34	◀▬▬	[twisti] (~twisti@ipv6.toadwater.com) has quit (Ping timeout: 261 seconds)
+2014-08-26 18:38:34	▬▬▶	jconnoll2 (jconnolly@nat/theladders/session) has joined #scala
+2014-08-26 18:38:44	▬▬▶	cyth (~cythrawll@unaffiliated/cythrawll) has joined #scala
+2014-08-26 18:38:49	▬▬▶	thereisnospoon (~textual@110-174-236-227.static.tpgi.com.au) has joined #scala
+2014-08-26 18:38:52	◀▬▬	folex1 (~Adium@broadband-109-173-4-143.nationalcablenetworks.ru) has quit (Client Quit)
+2014-08-26 18:38:56	◀▬▬	jconnoll1 (jconnolly@nat/theladders/session) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:38:56	◀▬▬	Haifeng (~Haifeng@192.241.210.114) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:38:56	◀▬▬	kyrre (sid18663@gateway/web/irccloud.com/x-pkhtzqrdwtjpmnpf) has quit (Ping timeout: 270 seconds)
+2014-08-26 18:39:01	▬▬▶	[twisti] (~twisti@ipv6.toadwater.com) has joined #scala
+2014-08-26 18:39:04	▬▬▶	Haifeng (~Haifeng@192.241.210.114) has joined #scala
+2014-08-26 18:39:18	▬▬▶	Shozan (~shozan@fsf/member/shodan) has joined #scala
+2014-08-26 18:40:00	--	imanc_ is now known as imanc
+2014-08-26 18:40:32	▬▬▶	kyrre (sid18663@gateway/web/irccloud.com/session) has joined #scala
+2014-08-26 18:40:32	◀▬▬	dobblego (~nobody@14-202-76-73.static.tpgi.com.au) has quit (Excess Flood)
+2014-08-26 18:40:32	--	boulderdan_ is now known as boulderdan
+2014-08-26 18:40:33	--	zz_sprsquish is now known as sprsquish
+2014-08-26 18:40:34	--	sprsquish is now known as zz_zz_sprsquish
+2014-08-26 18:40:37	◀▬▬	casualjim_ (~casualjim@static.6.43.9.5.clients.your-server.de) has quit (Excess Flood)
+2014-08-26 18:40:47	--	zz_zz_sprsquish is now known as sprsquish
+2014-08-26 18:40:48	▬▬▶	dobblego (~nobody@14-202-76-73.static.tpgi.com.au) has joined #scala
+2014-08-26 18:41:05	▬▬▶	casualjim_ (~casualjim@static.6.43.9.5.clients.your-server.de) has joined #scala
+2014-08-26 18:41:06	▬▬▶	reim (~riQui@77-173-103-149.ip.telfort.nl) has joined #scala
+2014-08-26 18:41:07	▬▬▶	Sgeo (~quassel@ool-44c2aebc.dyn.optonline.net) has joined #scala
+2014-08-26 18:41:12	▬▬▶	whaley_ (~whaley@107.170.132.186) has joined #scala
+2014-08-26 18:41:15	▬▬▶	sazzer_ (~sazzer@217.32.210.21) has joined #scala
+2014-08-26 18:41:17	--	sprsquish is now known as zz_sprsquish
+2014-08-26 18:41:36	▬▬▶	contrapumpkin (~copumpkin@unaffiliated/copumpkin) has joined #scala
+2014-08-26 18:41:53	▬▬▶	brainproxy (~brainprox@pdpc/supporter/gold/brainproxy) has joined #scala
+2014-08-26 18:42:08	▬▬▶	ultiprosan` (~ultiprosa@ip2a01-07c8-aaaf-03b0-bad-bad-c0de-22.fayntic.com) has joined #scala
+2014-08-26 18:42:08	◀▬▬	ultiprosan` (~ultiprosa@ip2a01-07c8-aaaf-03b0-bad-bad-c0de-22.fayntic.com) has quit (Changing host)
+2014-08-26 18:42:08	▬▬▶	ultiprosan` (~ultiprosa@fayntic/staff/ultiprosan) has joined #scala
+2014-08-26 18:42:11	wabash	dobblego == dibblego + doppleganger
+2014-08-26 18:42:11	◀▬▬	gluegadget (sid22336@gateway/web/irccloud.com/x-ydtvuwditahbsptz) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	Chikei (uid30203@gateway/web/irccloud.com/x-xgmnnvjbqsqigxiq) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	preyalone (sid21561@gateway/web/irccloud.com/x-tvwqlddvgwdajome) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	ultiprosan (~ultiprosa@fayntic/staff/ultiprosan) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	◀▬▬	Fortescue (sid1929@gateway/web/irccloud.com/x-jcysrpmfaobfebmq) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:11	--	ultiprosan` is now known as ultiprosan
+2014-08-26 18:42:11	◀▬▬	dln (sid16664@gateway/web/irccloud.com/x-qemznvyaytyszeay) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:21	▬▬▶	Chikei (uid30203@gateway/web/irccloud.com/session) has joined #scala
+2014-08-26 18:42:26	◀▬▬	oskarth (sid7236@gateway/web/irccloud.com/x-sfdlihcoakiubkue) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:29	◀▬▬	brainproxy_ (~brainprox@pdpc/supporter/gold/brainproxy) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	Apocalisp (~textual@31-209-195-173.dsl.dynamic.simnet.is) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	dberg_ (~dberg@h-64-236-208-24.nat.aol.com) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	JohnTalent (~johnt@ool-457a8633.dyn.optonline.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	SilverKey (~SilverKey@rrcs-67-78-97-126.sw.biz.rr.com) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	jmvanel (~jmvanel@37.163.101.152) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	joneshf (~joneshf@98.208.35.89) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	egp (~eric@216.9.29.221) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	saml (~saml@adfb12c6.cst.lightpath.net) has quit (*.net *.split)
+2014-08-26 18:42:29	◀▬▬	copumpkin (~copumpkin@unaffiliated/copumpkin) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	SHODAN (~shozan@fsf/member/shodan) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	jconnolly (jconnolly@nat/theladders/x-gopscaddaqmzelwz) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	casualjim (~casualjim@static.6.43.9.5.clients.your-server.de) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	baseonmars (~danyo@xvm-168-5.ghst.net) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	EluctariLLC (~EluctariL@ec2-54-193-166-177.us-west-1.compute.amazonaws.com) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	scalator (~ulaskd@vault.isis.poly.edu) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	alxgnon (~alxgnon@unaffiliated/alxgnon) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	fionnan (fionnan@cube.netsoc.tcd.ie) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	hypervise (~na@65.78.180.153) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	ln2v (~ln2v@laverne.osrc.no) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	janne (dmon@punainen.org) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	bobwilliams (~bobwillia@198.199.95.242) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	hype\ (hype@tunk.io) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	fxhp (~fox@32.212.89.106) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	sleepynate (~sleepynat@162.243.79.61) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	whaley (~whaley@107.170.132.186) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	FrankZZ (~FrankZZ@unaffiliated/frankzz) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	balrog (~balrog@discferret/developer/balrog) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	filinep_off (~filinep@174.136.1.66) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	zwer (~zwer@gateway/tor-sasl/zwer) has quit (*.net *.split)
+2014-08-26 18:42:30	◀▬▬	SparkySparkyBoom (~sparky@gateway/tor-sasl/nyx114) has quit (*.net *.split)
+2014-08-26 18:42:30	--	whaley_ is now known as whaley
+2014-08-26 18:42:33	--	s1eepyn4te is now known as sleepynate
+2014-08-26 18:42:33	--	egp_ is now known as egp
+2014-08-26 18:42:38	--	casualjim_ is now known as casualjim
+2014-08-26 18:42:51	◀▬▬	Apocalis_ (~textual@31-209-195-173.dsl.dynamic.simnet.is) has quit (Quit: Computer has gone to sleep.)
+2014-08-26 18:42:52	◀▬▬	pr0ton (~pr0ton@c-76-25-78-6.hsd1.co.comcast.net) has quit (Quit: pr0ton)
+2014-08-26 18:42:56	◀▬▬	cdk (~cdk@24-52-240-158.cable.teksavvy.com) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:58	◀▬▬	sazzer (~sazzer@217.32.210.21) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:42:58	◀▬▬	agjohnst1 (~agjohnst@38.88.173.154) has quit (Ping timeout: 240 seconds)
+2014-08-26 18:43:02	▬▬▶	OscarZ_ (~samoanbea@a91-156-9-175.elisa-laajakaista.fi) has joined #scala
+2014-08-26 12014-08-28 17:27:51	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-28 17:27:51	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-28 17:27:51	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-28 17:27:51	--	Channel #scala: 450 nicks (0 ops, 0 voices, 450 normals)
+2014-08-28 17:27:53	◀▬▬	infinity0 (~infinity0@freenet/developer/infinity0) has quit (Ping timeout: 246 seconds)
+2014-08-28 17:27:56	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-28 17:28:00	◀▬▬	n0n3such (~n0n3such@cpe-66-68-33-69.austin.res.rr.com) has quit (Remote host closed the connection)
+2014-08-28 17:28:05	◀▬▬	mouse_ (~mouse@99.140.184.62) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:28:26	▬▬▶	infinity0 (~infinity0@freenet/developer/infinity0) has joined #scala
+2014-08-28 17:28:57	▬▬▶	bblfish (~bblfish@2a01:e35:1395:5c60:61bf:414b:179:b2ec) has joined #scala
+2014-08-28 17:29:52	◀▬▬	jeffisabelle (~jeffisabe@78.169.195.255) has quit (Remote host closed the connection)
+2014-08-28 17:32:05	◀▬▬	mouse__ (~mouse@99.140.178.41) has quit (Ping timeout: 240 seconds)
+2014-08-28 17:34:04	--	irc: disconnected from server
+2014-08-28 17:34:19	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-28 17:34:19	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-28 17:34:19	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-28 17:34:19	--	Channel #scala: 447 nicks (0 ops, 0 voices, 447 normals)
+2014-08-28 17:34:24	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-28 17:34:42	▬▬▶	Bhaskar (~Bhaskar@c-68-45-180-57.hsd1.nj.comcast.net) has joined #scala
+2014-08-28 17:35:44	▬▬▶	jarod773_ (~jarod7736@cpe-70-115-151-130.austin.res.rr.com) has joined #scala
+2014-08-28 17:36:54	◀▬▬	amargherio (~MarioEIU@69.197.156.3) has quit (Remote host closed the connection)
+2014-08-28 17:36:58	◀▬▬	mrvisser (~mrvisser@135-23-70-110.cpe.pppoe.ca) has quit (Remote host closed the connection)
+2014-08-28 17:38:47	◀▬▬	jarod7736 (~jarod7736@cpe-70-115-151-130.austin.res.rr.com) has quit (Ping timeout: 245 seconds)
+2014-08-28 17:38:58	▬▬▶	dibblego (~nobody@14-202-76-73.static.tpgi.com.au) has joined #scala
+2014-08-28 17:39:24	▬▬▶	hindog (~Adium@static-108-13-230-170.lsanca.fios.verizon.net) has joined #scala
+2014-08-28 17:40:12	◀▬▬	jarod773_ (~jarod7736@cpe-70-115-151-130.austin.res.rr.com) has quit (Ping timeout: 250 seconds)
+2014-08-28 17:41:49	◀▬▬	MisterD (~MisterD@x590d9389.dyn.telefonica.de) has quit (Quit: Read Error: 1337 (to leet to stay on server))
+2014-08-28 17:42:16	◀▬▬	fabiim (~textual@cpc21-slam6-2-0-cust35.2-4.cable.virginm.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-08-28 17:42:43	▬▬▶	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has joined #scala
+2014-08-28 17:42:54	◀▬▬	pantsman- (~pantsman@cpc12-haye16-2-0-cust45.haye.cable.virginm.net) has quit (Ping timeout: 260 seconds)
+2014-08-28 17:43:37	--	irc: disconnected from server
+2014-08-28 17:51:58	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-28 17:51:58	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-28 17:51:58	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-28 17:51:58	--	Channel #scala: 444 nicks (0 ops, 0 voices, 444 normals)
+2014-08-28 17:52:04	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-28 17:54:52	--	boulderdan_ is now known as boulderdan
+2014-08-28 17:56:04	▬▬▶	doctau (doctau@nat/redhat/x-cvlwpdpwbzzoxltw) has joined #scala
+2014-08-28 18:00:07	◀▬▬	nuttycom (~nuttycom@70-91-168-190-BusName-Colorado.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2014-08-28 18:00:17	▬▬▶	nuttycom (~nuttycom@70-91-168-190-BusName-Colorado.hfc.comcastbusiness.net) has joined #scala
+2014-08-28 18:02:07	◀▬▬	metasim (~metasim@216.197.68.125) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:03:22	▬▬▶	mcescher_ (~mcescher@91.67.125.243) has joined #scala
+2014-08-28 18:05:36	▬▬▶	kawachi (~kawachi@KD121109213142.ppp-bb.dion.ne.jp) has joined #scala
+2014-08-28 18:05:48	◀▬▬	msaegesser (~msaegesse@50-193-109-57-static.hfc.comcastbusiness.net) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:06:42	◀▬▬	HairyFotr (~hairy@89-212-13-127.dynamic.t-2.net) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:06:43	▬▬▶	emrecelikten (~Adium@217.131.154.153) has joined #scala
+2014-08-28 18:06:47	▬▬▶	Apocalisp (~textual@nova006-184.cust-nat.nova.is) has joined #scala
+2014-08-28 18:07:08	▬▬▶	infynyxx_ (~infynyxx@cpe-68-174-176-184.nyc.res.rr.com) has joined #scala
+2014-08-28 18:08:02	◀▬▬	mcescher_ (~mcescher@91.67.125.243) has quit (Ping timeout: 250 seconds)
+2014-08-28 18:08:39	▬▬▶	coltfred (~coltfred@host-72-174-50-152.msl-mt.client.bresnan.net) has joined #scala
+2014-08-28 18:08:51	▬▬▶	florida_ (~florida@70.36.63.67) has joined #scala
+2014-08-28 18:10:27	◀▬▬	florida (~florida@70.36.63.67) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:10:33	◀▬▬	j3pl (~Adium@38.102.133.126) has quit (Read error: Connection reset by peer)
+2014-08-28 18:10:36	◀▬▬	kawachi (~kawachi@KD121109213142.ppp-bb.dion.ne.jp) has quit (Ping timeout: 264 seconds)
+2014-08-28 18:10:47	▬▬▶	j3pl (~Adium@38.102.133.126) has joined #scala
+2014-08-28 18:11:12	▬▬▶	mouse_ (~mouse@adsl-99-140-184-188.dsl.chcgil.sbcglobal.net) has joined #scala
+2014-08-28 18:11:17	◀▬▬	infynyxx_ (~infynyxx@cpe-68-174-176-184.nyc.res.rr.com) has quit (Ping timeout: 245 seconds)
+2014-08-28 18:12:24	▬▬▶	khronnuz (~johnny_ev@187.65.121.229) has joined #scala
+2014-08-28 18:12:46	◀▬▬	tanner (~tanner@unaffiliated/tanner) has quit
+2014-08-28 18:14:06	◀▬▬	mouse__ (~mouse@99.140.179.166) has quit (Ping timeout: 240 seconds)
+2014-08-28 18:14:59	▬▬▶	mdedetrich (~textual@101.170.46.168) has joined #scala
+2014-08-28 18:17:06	◀▬▬	mouse_ (~mouse@adsl-99-140-184-188.dsl.chcgil.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2014-08-28 18:17:50	▬▬▶	mary5030_ (~mary5030@75-13-89-6.lightspeed.austtx.sbcglobal.net) has joined #scala
+2014-08-28 18:19:32	◀▬▬	meoblast001 (~meoblast@dynamic-acs-24-112-252-251.zoominternet.net) has quit (Quit: no)
+2014-08-28 18:20:36	◀▬▬	mary5030 (~mary5030@72.32.115.233) has quit (Ping timeout: 240 seconds)
+2014-08-28 18:20:52	◀▬▬	bblfish (~bblfish@2a01:e35:1395:5c60:61bf:414b:179:b2ec) has quit (Remote host closed the connection)
+2014-08-28 18:21:22	◀▬▬	randomstatistic (~randomsta@64.124.61.215) has quit
+2014-08-28 18:22:08	◀▬▬	Osum (~radu@cpe-67-250-6-83.nyc.res.rr.com) has quit (Ping timeout: 246 seconds)
+2014-08-28 18:23:20	--	irc: disconnected from server
+2014-08-28 23:49:18	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-28 23:49:18	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-28 23:49:18	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-28 23:49:18	--	Channel #scala: 408 nicks (0 ops, 0 voices, 408 normals)
+2014-08-28 23:49:23	◀▬▬	stantonk (~stantonk@c-50-148-37-173.hsd1.il.comcast.net) has quit (Remote host closed the connection)
+2014-08-28 23:49:24	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-28 23:50:45	▬▬▶	stantonk (~stantonk@c-50-148-37-173.hsd1.il.comcast.net) has joined #scala
+2014-08-28 23:51:01	▬▬▶	nkhodyunya (~Adium@dnm.89.4.188.95.dsl.krasnet.ru) has joined #scala
+2014-08-28 23:51:58	▬▬▶	kawachi (~kawachi@KD121109213142.ppp-bb.dion.ne.jp) has joined #scala
+2014-08-28 23:52:07	▬▬▶	KaneK (~Kane@cpe-172-250-146-23.socal.res.rr.com) has joined #scala
+2014-08-28 23:52:14	◀▬▬	zkay11 (~joseph@173-18-215-251.client.mchsi.com) has left #scala
+2014-08-28 23:52:22	▬▬▶	stantonk_ (~stantonk@c-50-148-37-173.hsd1.il.comcast.net) has joined #scala
+2014-08-28 23:52:46	◀▬▬	stantonk (~stantonk@c-50-148-37-173.hsd1.il.comcast.net) has quit (Read error: Connection reset by peer)
+2014-08-28 23:54:25	▬▬▶	bblfish (~bblfish@81.57.85.198) has joined #scala
+2014-08-28 23:54:42	◀▬▬	tkuchiki (~tkuchiki@133.208.195.15) has quit (Remote host closed the connection)
+2014-08-28 23:58:58	◀▬▬	bblfish (~bblfish@81.57.85.198) has quit (Ping timeout: 246 seconds)
+2014-08-29 00:05:35	▬▬▶	LuxuryMode (~LuxuryMod@pool-71-183-97-22.nycmny.fios.verizon.net) has joined #scala
+2014-08-29 00:07:41	▬▬▶	tsandall (~tsandall@89.100.194.172) has joined #scala
+2014-08-29 00:10:16	--	irc: disconnected from server
+2014-08-29 00:10:34	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-29 00:10:34	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-29 00:10:34	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-29 00:10:34	--	Channel #scala: 411 nicks (0 ops, 0 voices, 411 normals)
+2014-08-29 00:10:40	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-29 00:11:47	◀▬▬	tsandall (~tsandall@89.100.194.172) has quit (Ping timeout: 245 seconds)
+2014-08-29 00:15:46	▬▬▶	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has joined #scala
+2014-08-29 00:16:18	▬▬▶	emilyst (emilyst@emily.st) has joined #scala
+2014-08-29 18:36:16	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925417071.dsl.bell.ca) has joined #scala
+2014-08-29 18:36:16	--	Topic for #scala is "The Scala Programming Language http://www.scala-lang.org/ stable 2.11.2 | Scala API: http://scala-lang.org/api | Scastie http://scastie.org/ | Need help with your coursera course -> #courseraprogfun (Reactive course with Odersky http://www.coursera.org/course/reactive)"
+2014-08-29 18:36:16	--	Topic set by copumpkin (~copumpkin@unaffiliated/copumpkin) on Thu, 24 Jul 2014 20:34:16
+2014-08-29 18:36:16	--	Channel #scala: 423 nicks (0 ops, 0 voices, 423 normals)
+2014-08-29 18:36:21	--	Channel created on Sun, 28 Jan 2007 17:58:41
+2014-08-29 18:37:25	--	zz_sprsquish_ is now known as sprsquish
+2014-08-29 18:38:04	--	sprsquish is now known as zz_sprsquish
+2014-08-29 18:38:51	◀▬▬	kawachi (~kawachi@KD121109213142.ppp-bb.dion.ne.jp) has quit (Ping timeout: 244 seconds)
+2014-08-29 18:39:52	pdxleif	I'm getting: " could not find implicit value for parameter foo: Foo" and it's got an arrow pointing at the "(" in the "bar(" method call...
+2014-08-29 18:40:09	◀▬▬	pr0ton_ (~pr0ton@8.25.197.26) has quit (Quit: pr0ton_)
+2014-08-29 18:40:14	pdxleif	bar doesn't take any implicit params afaik. totally confused
+2014-08-29 18:40:18	▬▬▶	srcerer (~chatzilla@dns2.klsairexpress.com) has joined #scala
+2014-08-29 18:40:52	▬▬▶	pr0ton_ (~pr0ton@8.25.197.26) has joined #scala
+2014-08-29 18:41:05	--	zz_sprsquish is now known as sprsquish
+2014-08-29 18:41:13	◀▬▬	pr0ton_ (~pr0ton@8.25.197.26) has quit (Client Quit)
+2014-08-29 18:41:43	--	sprsquish is now known as zz_sprsquish
+2014-08-29 18:42:01	egp	tpolecat: still thinking
+2014-08-29 18:42:06	◀▬▬	Guest21595 (skarn@binary.firrre.com) has quit (Changing host)
+2014-08-29 18:42:06	▬▬▶	Guest21595 (skarn@unaffiliated/skarn) has joined #scala
+2014-08-29 18:42:28	egp	I probably need to refactor into having a base HasPk subtype, then have HasId, or HasCode extend that
+2014-08-29 18:42:30	--	Guest21595 is now known as skarn
+2014-08-29 18:42:31	alexbobp_	scala type inferrence fails get depressing sometimes >_>
+2014-08-29 18:43:29	--	zz_sprsquish is now known as sprsquish
+2014-08-29 18:43:53	◀▬▬	avita1 (~Adium@8.25.197.26) has quit (Quit: Leaving.)
+2014-08-29 18:44:01	--	sprsquish is now known as zz_sprsquish
+2014-08-29 18:44:12	▬▬▶	shinnya (~shinnya@134.144.197.113.dy.bbexcite.jp) has joined #scala
+2014-08-29 18:45:16	--	zz_sprsquish is now known as sprsquish
+2014-08-29 18:45:28	▬▬▶	avita1 (~Adium@8.25.197.26) has joined #scala
+2014-08-29 18:45:51	--	sprsquish is now known as zz_sprsquish
+2014-08-29 18:46:08	▬▬▶	Apocalisp (~textual@nova006-184.cust-nat.nova.is) has joined #scala
+2014-08-29 18:47:12	◀▬▬	datura (~datura@unaffiliated/datura) has quit (Ping timeout: 240 seconds)
+2014-08-29 18:47:20	◀▬▬	whisller (~Adium@cpc16-lewi14-2-0-cust31.2-4.cable.virginm.net) has quit (Quit: Leaving.)
