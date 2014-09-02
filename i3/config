@@ -16,8 +16,24 @@ font xft:hermit 9
 # use Mouse+Mod4 to drag floating windows to their wanted position
 floating_modifier Mod4
 
-# colors
-client.focused #666a78 #666a78 #ffffff
+# color defines for styled i3
+set $bg     #100c08
+set $fg     #9f9f9f
+set $hi     #efef8f
+set $ac     #7e7e7e
+set $tx     #534b4f
+set $ia     #8f8f8f
+set $be     #ff9f00
+set $yw     #ff4500
+set $gn     #EF4836
+set $rd     #e89393
+
+# set some nice colors      border     background  text
+client.focused              $ac        $ac         $tx
+client.unfocused            $bg        $bg         $ia
+client.focused_inactive     $bg        $bg         $ac
+client.urgent               $rd        $rd         $tx
+
 
 # autostart applications
 exec --no-startup-id numlockx
@@ -32,7 +48,7 @@ bindsym Mod4+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym Mod4+d exec --no-startup-id dmenu_run
-bindsym MOd4+d exec --no-startup-id i3-dmenu-desktop
+bindsym MOd4+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -fn 'hermit -10'"
 # change focus 
 bindsym Mod4+h focus left
 bindsym Mod4+j focus down
@@ -40,7 +56,7 @@ bindsym Mod4+k focus up
 bindsym Mod4+l focus right
 
 # boarder style for new window
-new_window pixel 2
+new_window pixel 6
 
 # alternatively, you can use the cursor keys:
 bindsym Mod4+Left focus left
@@ -122,8 +138,10 @@ bindsym Mod4+Shift+0 move workspace 0
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod4+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 #bindsym Mod4+Shift+e exit
 bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m 'Do you real want to exit i3 ? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'" 
@@ -164,6 +182,9 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+# enable floating mode for all termite terminal windows
+#for_window [class="^Termite$"] floating enable
 
 bindsym Mod4+r mode "resize"
 # Assign Workspace variables
@@ -208,14 +229,14 @@ bar {
 
 
    colors {
-	statusline	#6e7f80
-	background	#191919
-	separator   #666666
-  #class                 	   border 		backgrd 	text
-        focused_workspace      #191919 		#586E75 	#FFFFFF
-        active_workspace       #191919 		#657BB3 	#FFFFFF
-        inactive_workspace     #191919 		#808080 	#FFFFFF
-        urgent_workspace       #191919 		#191919 	#FFFFFF
+	background          $bg
+        statusline          $fg
+        separator           $hi
+        focused_workspace   $yw        $yw        $tx
+        active_workspace    $gn        $ac        $tx
+        inactive_workspace  $be        $be        $tx
+        urgent_workspace    $rd        $bg        $tx
+
    }     
 }
 
