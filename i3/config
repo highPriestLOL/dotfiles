@@ -27,6 +27,7 @@ set $be     #ff9f00
 set $yw     #ff4500
 set $gn     #EF4836
 set $rd     #e89393
+set $mi     #6C7A89
 
 # set some nice colors      border     background  text
 client.focused              $ac        $ac         $tx
@@ -56,7 +57,7 @@ bindsym Mod4+k focus up
 bindsym Mod4+l focus right
 
 # boarder style for new window
-new_window pixel 6
+new_window pixel 5
 
 # alternatively, you can use the cursor keys:
 bindsym Mod4+Left focus left
@@ -233,7 +234,7 @@ bar {
         statusline          $fg
         separator           $hi
         focused_workspace   $yw        $yw        $tx
-        active_workspace    $gn        $ac        $tx
+        active_workspace    $gn        $gn        $tx
         inactive_workspace  $be        $be        $tx
         urgent_workspace    $rd        $bg        $tx
 
