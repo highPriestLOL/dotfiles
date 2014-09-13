@@ -23,11 +23,11 @@ set $hi     #efef8f
 set $ac     #7e7e7e
 set $tx     #534b4f
 set $ia     #8f8f8f
-set $be     #ff9f00
-set $yw     #ff4500
-set $gn     #EF4836
+set $be     #BFBFBF
+set $yw     #6C7A89
+set $gn     #ABB7B7
 set $rd     #e89393
-set $mi     #6C7A89
+
 
 # set some nice colors      border     background  text
 client.focused              $ac        $ac         $tx
@@ -40,7 +40,7 @@ client.urgent               $rd        $rd         $tx
 exec --no-startup-id numlockx
 exec --no-startup-id setxkbmap
 exec --no-startup-id udiskie
-exec --no-startup-id feh --bg-scale /data/wallpapers/white-dandelions-16801.jpg
+exec --no-startup-id feh --bg-scale /data/wallpapers/blue-wood-pattern.jpg
 # start a terminal
 bindsym Mod4+Return exec --no-startup-id termite
 
