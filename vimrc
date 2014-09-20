@@ -1,58 +1,40 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Use Vim settings. rather than Vi settings
+" This must be first, because it changes other options as a side effect.
+set nocompatible               " required
+filetype off                   " required
 
+" ================ General Config ================
 
+set nu                         " Line numbers on
+set backspace=indent,eol,start " Allow backspace in insert mode
+set history=1000               " Store lots of :cmdline history
+set showcmd                    " Show incomplete cmds down the bottom
+set mousehide                  " Hide the mouse cursor while typing
 
-
-" General settings
-filetype plugin indent on     " Automatically detect file types.
-
-set mouse=a                   " Automaticaly enable mouse usage
-set mousehide                 " Hide the mouse cursor while typing
-set enc=utf-8
+set enc=utf-8                  " File encoding
 scriptencoding utf-8
 
-if has('clipboard')
-        if has('unnamedplus') " When possible use + register for copy-paste
-            set clipboard=unnamedplus
-        else " On mac and Windows, use * register for copy-paste
-            set clipboard=unnamed
-        endif
-endif 
-
-set autowrite                   " Automatically write a file when leaving a modified buffer
-set shortmess+=filmnrxoOtT      " Abbrev. of messages (avoids 'hit enter')
-set virtualedit=onemore         " Allow for cursor beyond last character
-set history=1000                " Store a ton of history (default is 20)
-set spell                       " Spell checking on
-
-
-
-
-
-
-
-
-set tabpagemax=15               " Only show 15 tabs
-
-" set cursorline                  " Highlight current line
-highlight clear SignColumn      " SignColumn should match background                 " To use a dartk theme
-highlight clear LineNr          " Current line number row will have same background color in relative mode
-let g:CSApprox_hook_post = ['hi clear SignColumn'] "highlight clear CursorLineNr   Remove highlight color from current line number
-
-if executable('ag')
-    " USe Ag over grep
-   set grepprg=ag\ --nogroup\ --nocolor
-endif
-
+set autowrite                  " Automatically write a file when leaving a modified buffer
+set shortmess+=filmnrxoOtT     " Abbrev. of messages (avoids 'hit enter')
+set virtualedit=onemore        " Allow for cursor beyond last character
+set spell                      " Spell checking on
+set tabpagemax=15              " Only show 15 tabs
+set linespace=0                " No extra spaces between rows
+set showmatch                  " Show matching brackets/parenthesis
+set incsearch                  " Find as you type search
+set hlsearch                   " Highlight search terms ON
+set winminheight=0             " Windows can be 0 line high
+set ignorecase                 " Case insensitive search
+set smartcase                  " Case sensitive when uc present
+set whichwrap=b,s,h,l,<,>,[,]  " Backspace and cursor keys wrap too
+set nolist
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
 if has('cmdline_info')
     set ruler " Show the ruler
     set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " A ruler on steroids
-    set showcmd " Show partial commands in status line and
-" Selected characters/lines in visual mode
+    set showcmd                " Show partial commands in status line and Selected characters/lines in visual mode
 endif
-
 
 if has('statusline')
     set laststatus=2
@@ -66,51 +48,189 @@ if has('statusline')
     set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
 endif
 
+" ================ Color scheme ================
+set background=dark             " To use dark theme
 
-set backspace=indent,eol,start  " Backspace for dummies
-set linespace=0                 " No extra spaces between rows
-set nu                          " Line numbers on
-set showmatch                   " Show matching brackets/parenthesis
-set incsearch                   " Find as you type search
-set hlsearch                    " Highlight search terms ON
-set winminheight=0              " Windows can be 0 line high
-set ignorecase                  " Case insensitive search
-set smartcase                   " Case sensitive when uc present
-set wildmenu                    " Show list instead of just completing
-set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all.
-set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
-set scrolljump=5                " Lines to scroll when cursor leaves screen
-set scrolloff=3                 " Minimum lines to keep above and below cursor
-set foldenable                  " Auto fold code
-set nolist
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+        let g:solarized_termcolors=256
+        let g:solarized_termtrans=1
+        let g:solarized_contrast="normal"
+        let g:solarized_visibility="normal"
+        color solarized " Load a colorscheme
+endif
 
-" Formatting
-set nowrap                      " Do not wrap long lines
-set autoindent                  " Indent at the same level of the previous line
-set shiftwidth=4                " Use indents of 4 spaces
-set expandtab                   " Tabs are spaces, not tabs
-set tabstop=4                   " An indentation every four columns
-set softtabstop=4               " Let backspace delete indent
-set nojoinspaces                " Prevents inserting two spaces after punctuation on a join (J)
-set splitright                  " Puts new vsplit windows to the right of the current
-set splitbelow                  " Puts new split windows to the bottom of the current
 
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
-autocmd FileType haskell setlocal expandtab shiftwidth=2 softtabstop=2
-" preceding line best in a plugin but here for now.
-autocmd BufNewFile,BufRead *.coffee set filetype=coffee
-" Workaround vim-commentary for Haskell
-autocmd FileType haskell setlocal commentstring=--\ %s
-" Workaround broken colour highlighting in Haskell
-autocmd FileType haskell setlocal nospell
+set showmode                   " Show current mode down the bottom
+set gcr=a:blinkon0             " Disable cursor blink
+set visualbell                 " No sounds
+set autoread                   " Reload files changed outside vim
+set hidden                     " Allow buffer switching without saving
+syntax on		       " Syntax highlighting
+
+" ================ Turn Off Swap Files ==============
+
+set noswapfile
+set nobackup
+set nowb
+
+" ================ Persistent Undo ==================
+
+" Keep undo history across sessions, by storing in file.
+" Only works all the time.
+if has('persistent_undo')
+silent !mkdir ~/.vim/backups > /dev/null 2>&1
+set undodir=~/.vim/backups
+set undofile
+endif
+
+" ================ Indentation ======================
+
+set autoindent                         " Indent at the same level of the previous line
+set smartindent                        " Automatically inserts one extra level of indentation
+set smarttab                           " Uses shiftwidith instead of tabstop at start of lines
+set shiftwidth=4                       " Use indents of 4 spaces
+set softtabstop=4                      " Let backspace delete indent
+set tabstop=4                          " An indentation every four columns
+set expandtab                          " Tabs are spaces, not tabs
+set nojoinspaces                       " Prevents inserting two spaces after punctuation on a join (J)
+set splitright                         " Puts new vsplit windows to the right of the current
+set splitbelow                         " Puts new split windows to the bottom of the current
+
+filetype plugin on
+filetype indent on
+
+" ================ Display tabs and trailing spaces visually =======
+
+set list listchars=tab:\ \ ,trail:·
+set nowrap                  " Don't wrap lines
+set linebreak               " Wrap lines at convenient points
+
+" ================ Folds ============================
+
+set foldmethod=indent             " fold based on indent
+set foldnestmax=3                 " deepest fold is 3 levels
+set nofoldenable                  " dont fold by default
+
+" ================ Completion =======================
+
+set wildmode=list:longest,full    " Command <Tab> completion, list matches, then longest common part, then all
+set wildmenu                      "enable ctrl-n and ctrl-p to scroll thru matches
+set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=*.png,*.jpg,*.gif
+
+" ================ Scrolling ========================
+
+set scrolloff=8                " Start scrolling when we're 8 lines away from margins
+set sidescrolloff=15           " Minimum lines to keep above and below cursor 
+set scrolljump=5               " Lines to scroll when cursor leaves screen
+set sidescroll=1
+
+
+" ================ Highlight cursor line =============
+
+highlight clear SignColumn      " SignColumn should match background                 
+highlight clear LineNr          " Current line number row will have same background color in relative mode
+let g:CSApprox_hook_post = ['hi clear SignColumn'] "highlight clear CursorLineNr   Remove highlight color from current line number
+
 
 
 
 " Key (re)Mappings
 let mapleader = ","
 let g:mapleader = ","
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/vundle'
+
+" Deps 
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'mileszs/ack.vim'
+
+
+" General 
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
+Plugin 'tpope/vim-surround'
+Plugin 'townk/vim-autoclose'
+Plugin 'kien/ctrlp.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vim-scripts/sessionman.vim'
+Plugin 'bling/vim-airline'
+Plugin 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
+Plugin 'bling/vim-bufferline'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'godlygeek/csapprox'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'mbbill/undotree'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'mhinz/vim-signify'
+Plugin 'osyo-manga/vim-over'
+Plugin 'tpope/vim-vinegar'
+
+" Programming
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'godlygeek/tabular'
+Plugin 'majutsushi/tagbar'
+
+" Snippets & AutoComplete 
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'Shougo/neocomplete.vim.git'
+
+" Python
+Plugin 'klen/python-mode'
+Plugin 'python.vim'
+Plugin 'python_match.vim'
+Plugin 'pythoncomplete'
+
+" Javascript
+Plugin 'elzr/vim-json'
+Plugin 'groenewege/vim-less'
+Plugin 'pangloss/vim-javascript'
+Plugin 'briancollins/vim-jst'
+Plugin 'kchmck/vim-coffee-script'
+
+" Java
+Plugin 'derekwyatt/vim-scala'
+Plugin 'derekwyatt/vim-sbt'
+
+" Haskell
+Plugin 'amirh/HTML-AutoCloseTag'
+Plugin 'hail2u/vim-css3-syntax'
+" Plugin 'gorodinskiy/vim-coloresque'
+Plugin 'tpope/vim-haml'
+
+" Go 
+Plugin 'Blackrush/vim-gocode'
+
+" Twig 
+Plugin 'beyondwords/vim-twig'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 
 
 
@@ -122,7 +242,7 @@ let g:mapleader = ","
         let b:match_ignorecase = 1
     " }
 
-" neocomplete configuration
+" ================ neocomplete configuration ================
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplete.
@@ -206,6 +326,7 @@ endif
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
+" ================ end of neocomplete configuration ==============
 
 
 " Ctags {
@@ -253,9 +374,4 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
             let g:airline_right_sep='‹' " Slightly fancier than '<'
         endif
     " }
-
-
-
-
-
 
