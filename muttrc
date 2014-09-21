@@ -2,101 +2,236 @@
 # ~/.mutt/muttrc -- Mutt configuration
 #
 
-# Name Info
-set realname = "Dagnachew Argaw"
-set from = "dagnachewa@gmail.com"
+# IMAP Settings {{{
 
-# IMAP Settings
 set imap_user = "dagnachewa@gmail.com"
 set imap_pass = ""
 set folder = "imaps://imap.gmail.com"
 set imap_check_subscribed
 
-# SMTP Settings
-set smtp_url=SMTPtps://$imap_user@smtp.gmail.com
+# }}}
+
+# SMTP Settings {{{
+
+#set smtp_url=SMTPtps://$imap_user@smtp.gmail.com
+set smtp_url=SMTP://dagnachewa@gmail.com@smtp.gmail.com:587
 #set smtp_pass = `grep 'Gmail' ~/gmail.password.txt | awk '{print $2}'`
 
-# keep imap connection alive by polling intermittently (time in seconds)
-set imap_keepalive = 900
+# }}}
 
-# set timeout (time in seconds)
-set timeout = 600
+# Editor {{{
 
-# how often to check for new mail (time in seconds)
-set mail_check = 5
+# Use Vim to compose email, with a few default options.
+set editor = "/usr/local/bin/vim -c 'normal! }' -c 'redraw'"
 
-# to make mutt look like a split-pane e-mail browser like gmail,outlook etc
-set sidebar_width = 25
-set sidebar_visible = yes
-set sidebar_delim= '|'
-set sidebar_sort = no
-set pager_index_lines = 10
+# }}}
 
+# Contacts {{{
 
-
-
-# Folders
-mailboxes     = "imaps://imap.gmail.com/[Gmail]/All Mail"
-set spoolfile = "+INBOX"
-set postponed = "+[Gmail]/Drafts"
-set record 	  = /dev/null
-
-# Need trash patch for this to work
-set trash = "+[Gmail]/Trash"
-
-# store message headers locally to speed things up
-set header_cache = ~/.mutt/cache/headers
-
-# how about store messages too
-set message_cachedir =~/.mutt/cache/bodies
-
-# Mailcap (autoexecute program declarations)
-set mailcap_path 	= ~/.mutt/mailcap
-
-# Auto display html
-auto_view text/html
-
-# Archive Messages (A) and some other nifty commands
-bind editor <space> noop #fix for spaces in names of folders
-macro index,pager A "<enter-command>unset trash\n <delete-message>" "Gmail archive message"
-macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
-macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
-macro index,pager gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to starred messages"
-macro index,pager gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
-macro pager \cu |urlview\n
-
-# Goobook query (google contacts)
 set query_command="goobook query '%s'" 
 bind editor \t complete-query
 
-# Add contacts to google
-macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
+# }}}
 
-# Reload goobook db
-macro index,pager gr "!goobook reload\n" "Goobook reload"
+# Basic Options {{{
 
-# Dont request to move messages
-set move = no
+set imap_keepalive = 900 # keep imap connection alive by polling intermittently (time in seconds)
+set wait_key = no        # shut up, mutt
+set mbox_type = Maildir  # mailbox type
+set timeout = 3          # idle time before scanning
+set mail_check = 0       # minimum time between scans
+unset move               # gmail does that
+set delete               # don't ask, just do
+unset confirmappend      # don't ask, just do!
+set quit                 # don't ask, just do!!
+unset mark_old           # read/new is good enough for me
+set beep_new             # bell on new mails
+set pipe_decode          # strip headers and eval mimes when piping
+set thorough_search      # strip headers and eval mimes before searching
 
-# Auto include copy of original message when you reply
-set include = yes
+# }}}
 
-# Thread Sort (Top = newest messages)
-set sort = threads
-set sort_aux = 'reverse-last-date-received'
+# Sidebar Patch {{{
 
-# Unset Markers (don't add + signs if message wraps)
-unset markers
+set sidebar_delim   = '  │'
+set sidebar_visible = yes
+set sidebar_width   = 32
+color sidebar_new color221 color233
+bind index,pager <down>   sidebar-next
+bind index,pager <up>     sidebar-prev
+bind index,pager <right>  sidebar-open
+set sidebar_format = "%B %> %S"
 
-# allow mutt to open new imap connection automatically
-unset imap_passive
+# }}}
 
-# vim: filetype=muttrc
+# Status Bar {{{
 
-#
-#
-# make sure that you are using mutt linked against slang, not ncurses, or
-# suffer the consequences of weird color issues. use "mutt -v" to check this.
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
+# }}}
+
+# Index View Options {{{
+
+set date_format = "%m/%d"
+set index_format = "[%Z]  %D  %-20.20F  %s"
+set sort = threads                         # like gmail
+set sort_aux = reverse-last-date-received  # like gmail
+set uncollapse_jump                        # don't collapse on an unread message
+set sort_re                                # thread based on regex
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+
+# }}}
+# Pager View Options {{{
+
+set pager_index_lines = 10 # number of index lines to show
+set pager_context = 3      # number of context lines to show
+set pager_stop             # don't go to next message automatically
+set menu_scroll            # scroll in menus
+set tilde                  # show tildes like in vim
+unset markers              # no ugly plus signs
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+alternative_order text/plain text/enriched text/html
+
+set display_filter = "clean_mail" # clean up shitty mail
+
+# }}}
+
+# Compose View Options {{{
+
+set realname = "Dagnachew Argaw"     # who am i?
+set envelope_from                    # which from?
+set sig_dashes                       # dashes before sig
+set edit_headers                     # show headers when composing
+set fast_reply                       # skip to compose when replying
+set askcc                            # ask for CC:
+set fcc_attach                       # save attachments with the body
+unset mime_forward                   # forward attachments as part of body
+set forward_format = "Fwd: %s"       # format of subject when forwarding
+set forward_decode                   # decode when forwarding
+set attribution = "On %d, %n wrote:" # format of quoting header
+set reply_to                         # reply to Reply to: field
+set reverse_name                     # reply as whomever it was to
+set include                          # include message in replies
+set forward_quote                    # include message in forwards
+
+# }}}
+# Attachment View Options {{{
+
+set attach_format = "[%D %t] %2n [%-7.7m/%10.10M] %.40d %> [%s] "
+
+# }}}
+# Headers {{{
+
+ignore *                                # ignore all headers
+unignore from: to: cc: date: subject:   # show only these
+unhdr_order *
+hdr_order from: to: cc: date: subject:  # and in this order
+
+# }}}
+
+# dagnachewa@gmail.com
+
+# Default inbox.
+set spoolfile = "+INBOX"
+
+# Alternate email addresses.
+alternates dagnachewa@outlook.com
+
+# Mailboxes to show in the sidebar.
+mailboxes +INBOX \
+          +Important-a-garder \
+          +sent \
+          +drafts \
+          +temporary/search \
+
+# Other special folders.
+mailboxes     = "imaps://imap.gmail.com/[Gmail]/All Mail"
+#set mbox      = "+steve-stevelosh.com/archive"
+set postponed = "+[Gmail]/Drafts"
+
+# Sending email.
+set from     = "dagnachewa@gmail.com"
+set sendmail = "/usr/local/bin/msmtp -a dagnachew"
+set sendmail_wait = 0 # no please don't silently fail, email is important
+unset record
+
+# }}}
+# Key Bindings {{{
+
+# Index {{{
+
+bind index \#       noop
+bind index R        group-reply
+bind index <tab>    sync-mailbox
+bind index k        previous-entry
+bind index j        next-entry
+bind index gg       first-entry
+bind index G        last-entry
+bind index p        recall-message
+bind index <space>  collapse-thread
+bind index N        search-opposite
+macro index s "<pipe-message>cat > ~/Desktop/"  "save message as"
+
+# Mark all as read
+macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
+
+# Sync email
+macro index O "<shell-escape>offlineimap<enter>"           "run offlineimap to sync all mail"
+macro index o "<shell-escape>offlineimap -qf INBOX<enter>" "run offlineimap to sync inbox"
+
+# Saner copy/move dialogs
+macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
+macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
+
+# Quickly change mailboxes
+macro index \' "<change-folder>+simple/INBOX<enter>"   "go to INBOX"
+macro index \" "<change-folder>+simple/archive<enter>" "go to archive"
+
+# Search with notmuch
+macro index S "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py -G ~/.mail/search<enter><change-folder-readonly>+search<enter>" "search mail (using notmuch)"
+
+# Unlimit (show [a]ll)
+macro index a "<limit>all\n" "show all messages (undo limit)"
+
+# }}}
+# Pager {{{
+
+bind pager \# noop
+bind pager k  previous-line
+bind pager j  next-line
+bind pager gg top
+bind pager G  bottom
+
+bind pager R  group-reply
+bind pager N  search-opposite
+
+macro pager \Cu "|urlview<enter>" "call urlview to open links"
+macro pager s "<pipe-message>cat > ~/Desktop/"  "save message as"
+
+# Quickly change mailboxes
+macro pager \' "<exit><change-folder>+dagnachewa@gmail.com/INBOX<enter>"   "go to INBOX"
+macro pager \" "<exit><change-folder>+dagnachewa@gmail.com/archive<enter>" "go to archive"
+
+# }}}
+# Compose {{{
+
+bind compose p postpone-message
+
+# }}}
+# Attachment {{{
+
+# View, god dammit!
+bind attach <return> view-mailcap
+
+# }}}
+# "Open in Vim" {{{
+
+macro index,pager V "|vim -c 'setlocal ft=mail' -c 'setlocal buftype=nofile' -<enter>"              "open in vim"
+macro index,pager M "|mvim -c 'setlocal ft=mail' -c 'setlocal buftype=nofile' - >/dev/null<enter>"  "open in macvim"
+
+# }}}
+
 
 
 # color scheme
