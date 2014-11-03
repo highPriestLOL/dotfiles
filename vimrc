@@ -1,3 +1,9 @@
+if has('cmdline_info')
+    set ruler " Show the ruler
+    set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " A ruler on steroids
+    set showcmd " Show partial commands in status line and
+" Selected characters/lines in visual mode
+endif
 " Use Vim settings. rather than Vi settings
 " This must be first, because it changes other options as a side effect.
 set nocompatible               " required
@@ -58,6 +64,12 @@ if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"
         let g:solarized_visibility="normal"
         color solarized " Load a colorscheme
 endif
+
+"let base16colorspace=256  " Access colors present in 256 colorspace "
+"colorscheme base16-tomorrow
+
+" ================ \Color scheme
+
 
 
 set showmode                   " Show current mode down the bottom
@@ -328,6 +340,8 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " ================ end of neocomplete configuration ==============
 
+" Vim-slime
+let g:slime_target = "tmux"
 
 " Ctags {
         set tags=./tags;/,~/.vimtags
@@ -374,4 +388,5 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
             let g:airline_right_sep='‹' " Slightly fancier than '<'
         endif
     " }
-
+" Tagbar 
+nmap <F8> :TagBarToggle<CR>
