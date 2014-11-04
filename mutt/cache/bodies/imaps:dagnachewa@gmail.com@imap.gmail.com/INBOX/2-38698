@@ -1,0 +1,1141 @@
+Delivered-To: dagnachewa@gmail.com
+Received: by 10.140.235.10 with SMTP id g10csp287601qhc;
+        Mon, 3 Nov 2014 11:05:26 -0800 (PST)
+X-Received: by 10.170.96.3 with SMTP id n3mr4219734yka.82.1415041526136;
+        Mon, 03 Nov 2014 11:05:26 -0800 (PST)
+Return-Path: <delivery@mx.sailthru.com>
+Received: from pmta7.sailthru.com (pmta7.sailthru.com. [192.64.237.231])
+        by mx.google.com with ESMTP id q95si30893042qgq.67.2014.11.03.11.05.26
+        for <dagnachewa@gmail.com>;
+        Mon, 03 Nov 2014 11:05:26 -0800 (PST)
+Received-SPF: pass (google.com: domain of delivery@mx.sailthru.com designates 192.64.237.231 as permitted sender) client-ip=192.64.237.231;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of delivery@mx.sailthru.com designates 192.64.237.231 as permitted sender) smtp.mail=delivery@mx.sailthru.com;
+       dkim=pass header.i=@e.food52.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; s=mt; d=pmta.sailthru.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe;
+ bh=GHJWGCkujidbFH+IcGkeo/ZsRPg=;
+ b=aDDgBuOcvZwLFKOiIUN1uIX4c8h0hHK+lQQVtJcCbXXoYmjBoaiD4Ek2qqkiHlmuODqgkEj82XiB
+   2ZH9Ied4RoZnnCdSIcskJNVQrxILWCdoYisNx1JJLVJw6YfoLFW8QRr4548JqKNcIF60DTspW6Ar
+   w/3bPEGqQ7LZQWpZA+o=
+Received: from 173-228-155-52-mx.sailthru.com (173.228.155.52) by pmta7.sailthru.com id hav8va1qqbsf for <dagnachewa@gmail.com>; Mon, 3 Nov 2014 14:05:00 -0500 (envelope-from <delivery@mx.sailthru.com>)
+Received: from nj1-p-oddmango-prd-jma-14.flt (172.18.20.19) by 173-228-155-52-mx.sailthru.com id hav8to1qqbsv for <dagnachewa@gmail.com>; Mon, 3 Nov 2014 14:02:21 -0500 (envelope-from <delivery@mx.sailthru.com>)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; t=1415041341;
+	s=sailthru; d=e.food52.com;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe;
+	bh=zvxd1wlsOySdqv6WifWqYsCyMdUABOs1kF/l+Tn5HZM=;
+	b=IfUhhdNQojd39xuZUYMLf44XqRs4QvFFICP7aoF0b60WAUtDGhXxHml/IA69rGJY
+	rCPPNaxVpcnJuX0lPOD743k9MWC2V77wloH7uCmW5Ihh55aJI9XONABD4owg2pM8CZL
+	fBHgzDitcgjOfLky7Zc7YpqZqAlzR/h2BaeOaRoA=
+Date: Mon, 3 Nov 2014 14:02:21 -0500 (EST)
+From: Food52 <provisions@e.food52.com>
+To: dagnachewa@gmail.com
+Message-ID: <20141103190221.3257759.70517@sailthru.com>
+Subject: Food52 + Noritake: The Keys to Stress-Free Entertaining
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_6935870_887386900.1415041341215"
+Precedence: bulk
+X-Feedback-ID: 4912:3257759:campaign:sailthru
+X-TM-ID: 20141103190221.3257759.70517
+X-Info: Message sent by sailthru.com customer Food52
+X-Info: We do not permit unsolicited commercial email
+X-Info: Please report abuse by forwarding complete headers to
+X-Info: abuse@sailthru.com
+X-Mailer: sailthru.com
+X-JMailer: nj1-p-oddmango-prd-jma-14.flt
+X-IADB-IP: 172.18.56.2
+X-IADB-IP-REVERSE: 2.56.18.172
+X-IADB-URL: http://www.isipp.com/iadb.php
+X-Unsubscribe-Web: http://l.food52.com/oc/5424a238a6cba877558b722e1xtpb.1iet/34106920
+List-Unsubscribe: <http://l.food52.com/oc/5424a238a6cba877558b722e1xtpb.1iet/34106920>, <mailto:unsubscribe_20141103190221.3257759.70517@mx.sailthru.com>
+X-rpcampaign: sthgy3257759
+
+------=_Part_6935870_887386900.1415041341215
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0" />
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+<title></title>
+<style type=3D"text/css">
+/* Reset and Generic Styles */
+/* //////////////////////////////////// */
+#outlook a {padding:0;}
+table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0p=
+t; }
+table td { border-collapse: collapse; }
+* { font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; }
+body {
+width:100% !important;
+-webkit-text-size-adjust:100%;
+-ms-text-size-adjust:100%;
+margin:0;
+padding:0;
+background:#fff;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:14px;
+}
+img {
+outline:none;
+text-decoration:none;
+-ms-interpolation-mode:bicubic;
+max-width: 100%;
+}
+a img { border:none; }
+a {
+color:#666;
+text-decoration:none;
+}
+h1 {
+font-weight: 300;
+font-size: 28px;
+text-align: center;
+margin: 0 0 10px;
+color:#666;
+line-height:1.25em;
+text-transform: uppercase;
+}
+h2 {
+font-weight: 300;
+font-size: 21px;
+text-align: center;
+margin: 0 0 10px;
+color:#666;
+line-height:1.25em;
+}
+h3 {
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 18px;
+font-weight: normal;
+margin: 0 0 8px 0;
+}
+h4 {
+font-weight: bold;
+font-size: 16px;
+color: #7d9093;
+margin: 0 0 6px;
+}
+h5 {
+font-size: 13px;
+color: #666;
+text-transform: uppercase;
+margin: 0 0 4px;
+}
+h6 {
+text-transform: uppercase;
+font-weight: 400;
+font-size: 14px;
+margin: 0 0 6px;
+color: #a3a3a3;
+}
+/* Wrapper Styles */
+/* //////////////////////////////////// */
+.frame{
+max-width: 790px;
+margin:0 auto;
+padding:0;
+}
+.container { margin: 0 15px; }
+#survey .container {
+margin: 0;
+}
+/* Pre-Header Styles */
+/* //////////////////////////////////// */
+.pre-header {
+font-size:11px;
+color:#ccc;
+padding-top:5px;
+font-weight:normal;
+text-align:center;
+}
+.pre-header a { color:#ccc; }
+.pre-header a span { text-decoration: underline; }
+/* Header Styles */
+/* //////////////////////////////////// */
+.email-header{
+text-align:center;
+margin:15px 0 0;
+}
+.email-header-title {
+padding:8px 0;
+color:#a3a3a3;
+font-size: 11px;
+}
+.email-header-title a { color: #a3a3a3; }
+.email-header-date{
+color:#a3a3a3;
+font-style:italic;
+}
+/* Partner Header Styles */
+/* //////////////////////////////////// */
+.partner-header-table {
+width: 100%;
+}
+.partner-header-table a {
+display: block;
+}
+.partner-header-table .logo {
+width: 268px;
+text-align: left;
+}
+.partner-header-table .plus {
+width: 23px;
+}
+.partner-header-table .partner {
+width: 268px;
+text-align: right;
+}
+/* Divider Styles */
+/* //////////////////////////////////// */
+.section-divider {
+width:100%;
+height:5px;
+margin:0 auto;
+border-top:solid 20px #fff;
+border-bottom:solid 20px #fff;
+}
+.section-divider td {
+height:5px;
+background-color:#f7f7f7;
+line-height:5px;
+}
+.section-divider td.gutter{ width:0; }
+.section-divider.header { border-bottom: none; }
+.section-divider.blank { border-top:solid 10px #fff; }
+.section-divider.blank td { background-color: #FFF; }
+/* Element Styles */
+/* //////////////////////////////////// */
+/* Featured Label */
+.exclusive {
+float:right;
+height:20px;
+line-height:20px;
+margin-left:10px;
+display:inline-block;
+background-color:#7b9196;
+color:#fff;
+text-decoration:none;
+padding:0 6px;
+text-align:center;
+font-family:Arial, sans-serif;
+font-size:12px;
+border-radius:2px;
+}
+/* Leaderboard Ad */
+.leaderboard-ad {
+text-align:center;
+width: 100%;
+}
+/* Signature */
+.am-signature {
+display: block;
+margin: 20px auto;
+}
+/* Content Block */
+.content-block{
+color: #666;
+width: 100%;
+line-height: 1.5;
+text-align: center;
+margin: 0 0 15px 0;
+}
+.content-block-header {
+margin: 0 0 18px 0;
+}
+.content-block-header h2 { color: #608e95; }
+#survey-bg {
+background: #FFF url("http://media.sailthru.com/3sg/1jy/8/q/53fc9f5527694.j=
+pg") no-repeat top center;
+}
+div.survey-text {
+background: none;
+width: 430px;
+margin: 0 auto;
+}
+#survey .survey-text h1 {
+color: #5F8C93;
+margin-bottom: 20px;
+text-transform: uppercase;
+margin-top: 40px;
+}
+#survey .survey-text p {
+text-align: left;
+font-size: 18px;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#survey .survey-text p a {
+color: #5F8C93;
+}
+#survey .survey-text p span {
+font-style: normal;
+font-weight: bold;
+text-transform: uppercase;
+}
+#survey .survey-text p span sup {
+color: #555;
+font-size: 14px;
+}
+#survey p.terms {
+color: #787878;
+font-size: 11px;
+}
+.content-block-header h1 {
+margin-top: 18px;
+}
+/* Provisions Nav */
+.provisions-nav {
+width: 100%;
+text-align: center;
+border-bottom: 5px solid #f7f7f7;
+}
+.provisions-nav td {
+text-align: center;
+}
+.provisions-nav td a {
+font-family: "Georgia", serif;
+text-transform: uppercase;
+color:#8D8D8D;
+font-size: 11px;
+line-height: 33px;
+display: block;
+}
+/* Terms */
+.terms {
+font-size: 11px;
+color: #CCC;
+}
+/* Hero Content */
+/* //////////////////////////////////// */
+.hero-content .hero-image a { display: block; }
+.hero-content{
+display:inline-block;
+text-align:center;
+color:#666;
+width: 100%;
+margin: 0;
+}
+.hero-content .hero-headline { margin: 16px 0; }
+.hero-content .hero-headline h1 a { color: #608e95; }
+.hero-content .hero-headline h3 a {
+color: #608e95;
+text-transform: uppercase;
+}
+.hero-content.wide.am &gt; div.hero-description { padding: 0 15px; }
+.hero-content.wide.am &gt; div.hero-description { padding: 0 40px; }
+.hero-content.wide &gt; div.hero-image { padding: 0; }
+.hero-image { margin: 0 0 8px; }
+.hero-description {
+margin: 0 0 18px;
+text-align: left;
+}
+.hero-content.wide.am &gt; div.hero-description { text-align: center; }
+.hero-link { padding:15px 0 }
+.hero-description p a {
+color: #AB977D;
+font-weight: bold;
+}
+.hero-content.partner {
+text-align: left;
+}
+.hero-content.wide.partner &gt; div.hero-description { padding: 0 15px; }
+/* Partner CTA */
+/* //////////////////////////////////// */
+.partner-cta {
+border: 3px solid #F7F7F7;
+width: 100%;
+margin: 0 0 16px 0;
+}
+.partner-cta .partner-logo {
+padding: 10px 0 10px 10px;
+}
+.partner-cta .partner-button h4 {
+font-size: 15px;
+color: #AB977D;
+}
+.partner-cta .partner-button {
+text-align: center;
+padding: 10px 0;
+}
+/* Related Content */
+/* //////////////////////////////////// */
+.related-content table {
+margin-bottom: 10px;
+}
+/* Content Items */
+/* //////////////////////////////////// */
+.content-label {
+text-align: left;
+}
+.content-description {
+text-align: left;
+}
+.content-description h5 {
+text-transform: capitalize;
+}
+.content-description a {
+color: #555;
+text-decoration: none;
+}
+.content-image a {
+display: block;
+text-align: center;
+margin: 0 0 6px;
+}
+/* Two and Three Column Items */
+/* //////////////////////////////////// */
+.two-col .col,
+.three-col .col { text-align: center; }
+.two-col .col table,
+.three-col .col table { width: 100%; }
+.two-col .content-item.large .content-description,
+.two-col .content-item.large .content-image a,
+.three-col .content-item .content-description h5 {
+text-align: center;
+margin-right: 0;
+}
+.two-col &gt; table ,
+.three-col &gt; table { margin-bottom: 12px; }
+/* Two Column Items */
+/* //////////////////////////////////// */
+.two-col .content-item { margin: 0 0 10px; }
+.two-col .content-image { float: left; }
+.two-col .content-image a {
+display: block;
+margin: 0 10px 6px 0;
+}
+.two-col .content-item.large .content-image { float: none; }
+.two-col .content-item.large .content-description,
+.two-col .content-item.large .content-image a {
+text-align: center;
+margin-right: 0;
+}
+.two-col &gt; table .col { padding: 0 10px; }
+.wide-layout .two-col &gt; table .col { padding: 0 8px; }
+/* Three Column Items */
+.three-col &gt; table {
+margin-bottom: 24px;
+}
+.three-col &gt; table .col { padding: 0 13px; }
+.wide-layout .three-col &gt; table .col {
+padding: 0 11px;
+}
+/* Welcome Content */
+/* //////////////////////////////////// */
+.welcome-content {
+text-align: center;
+color: #666;
+}
+.welcome-content tr td { width: 100%; }
+.welcome-content .section-content {
+padding-left: 60px;
+padding-right: 60px;
+margin-bottom: 24px;
+}
+/* Partner Listing */
+/* //////////////////////////////////// */
+.ad-partner { text-align: center; }
+.ad-partner div { background-color:#f6f6f6; }
+.ad-partner-content {
+margin:15px 0;
+padding:15px;
+background-color:#f6f6f6;
+text-align:left;
+}
+.ad-partner .ad-partner-image { background: none; }
+.ad-partner-image a { display: block; }
+.partner-listing { text-align: center; }
+.partner-listing-title {
+text-transform:uppercase;
+color:#7d9093;
+font-size:16px;
+font-weight:bold;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.partner-listing-heading,
+.partner-listing-text {
+font-family:Arial, sans-serif;
+font-size:12px;
+color:#666;
+}
+.partner-listing-heading{
+padding:12px 0 5px;
+text-transform:uppercase;
+font-weight:bold;
+}
+/* Provisions Credit and Disclaimer Styles */
+/* //////////////////////////////////// */
+.provisions-credit {
+background: #F3F3F3;
+margin-bottom: 16px;
+}
+.provisions-icon {
+width: 107px;
+padding: 10px;
+}
+.provisions-icon a { display: block }
+.provisions-disclaimer,
+.provisions-deal {
+padding: 10px;
+}
+.provisions-deal a {
+color: #5F8C93;
+}
+.provisions-deal p {
+color: #555;
+}
+.provisions-disclaimer p {
+font-size: 12px;
+vertical-align: top;
+margin: 0;
+}
+/* Footer Styles */
+/* //////////////////////////////////// */
+.footer-cta {
+width: 100%;
+margin-bottom: 0;
+}
+.footer-cta div { background: #F7F7F7; }
+.footer-cta td {
+border-top:solid 5px #f7f7f7;
+border-bottom:solid 5px #f7f7f7;
+padding:5px 0;
+text-align:center;
+}
+.footer-cta td &gt; div {
+padding:30px 10px;
+}
+.footer-cta h3 {
+margin:0;font: 21px Georgia, serif;
+}
+.footer-cta td &gt; div .tagline {
+padding:5px 0 15px;
+}
+.email-footer {
+text-align:center;
+font-size:10px;
+color:#666;
+line-height:1.7em;
+padding:14px 0 40px;
+}
+.social-icons {
+padding:0 0 10px;
+}
+.social-icons a {
+padding:0 5px;
+}
+.footer-text a {
+text-decoration: underline;
+}
+/* Responsive Media Queries */
+/* //////////////////////////////////// */
+/* Generic Element MQs */
+@media only screen and (max-width: 480px){
+img{
+max-width:100% !important;
+height:auto !important;
+}
+}
+@media only screen and (max-width: 480px) {
+.content-block {
+margin-bottom: 0;
+}
+table[class=3D"content-block"] td[class=3D"spacer"] {
+width: 100%;
+display: block;
+height: 10px;
+}
+}
+@media only screen and (max-width: 480px) {
+.ad-partner-content {
+margin: 0 0 32px 0;
+}
+}
+/* Hero Content and Ad Partner MQs */
+@media only screen and (max-width: 599px){
+td[class=3D"hero-content-container"] { width: 63%; }
+td[class=3D"hero-content-container"] .hero-content { width: 100%; }
+td[class=3D"ad-partner-container"] { width: 33%; }
+td[class=3D"hero-content-container"] .ad-partner { width: 100%; }
+.hero-content.wide { margin-bottom: 16px; }
+}
+@media only screen and (max-width: 480px) {
+td[class=3D"hero-content-container"] {
+width: 100%;
+display: block;
+}
+td[class=3D"ad-partner-container"] {
+display: block;
+width: 100%;
+}
+.hero-content.wide &gt; div.hero-description { padding: 0 10px; }
+}
+/* Two and Three Column MQs */
+@media only screen and (max-width: 480px) {
+td[class=3D"three-col"] td[class=3D"spacer"],
+td[class=3D"two-col"] td[class=3D"spacer"] {
+width: 100%;
+display: block;
+height: 10px;
+}
+td[class=3D"three-col"] td[class=3D"content-item"],
+td[class=3D"two-col"] td[class=3D"content-item"] {
+display: block;
+margin-bottom: 24px;
+}
+.two-col &gt; table ,
+.three-col &gt; table { margin-bottom: 0; }
+.two-col &gt; table &gt; tbody &gt; tr &gt; .spacer,
+.three-col &gt; table &gt; tbody &gt; tr &gt; .spacer { height: 0; }
+.two-col &gt; table .content-image a,
+.three-col &gt; table .content-image a { margin-bottom: 8px; }
+.wide-layout .two-col &gt; table .col,
+.wide-layout .three-col &gt; table .col { padding: 0; }
+}
+/* Two Column MQs */
+@media only screen and (max-width: 599px){
+td[class=3D"two-col"] table { width: 100%; }
+td[class=3D"two-col"] .col { width: 48%; }
+}
+@media only screen and (max-width: 480px){
+td[class=3D"two-col"] .col {
+width: 100%;
+display: block;
+}
+td[class=3D"two-col"] &gt; table .col {
+margin-bottom: 16px;
+padding: 0;
+}
+td[class=3D"two-col"] .content-item.large .content-image a { margin-left: 0=
+; }
+}
+/* Three Column MQs */
+@media only screen and (max-width: 599px){
+td[class=3D"three-col"] table { width: 100%; }
+td[class=3D"three-col"] .col { width: 33%; }
+}
+@media only screen and (max-width: 480px) {
+td[class=3D"three-col"] table { margin: 0; }
+td[class=3D"three-col"] .col {
+width: 100%;
+display: block;
+margin-bottom: 0;
+padding: 0;
+}
+td[class=3D"three-col"] .content-item { text-align: left; }
+td[class=3D"three-col"] .content-image {
+float: left;
+width: 100px;
+margin-right: 20px;
+}
+}
+/* Partner Header Table MQs */
+@media only screen and (max-width: 490px) {
+table[class=3D"partner-header-table"] td[class=3D"logo"],
+table[class=3D"partner-header-table"] td[class=3D"plus"],
+table[class=3D"partner-header-table"] td[class=3D"partner"] {
+text-align: center;
+display: block;
+width: 100%;
+margin-bottom: 8px;
+}
+table[class=3D"partner-header-table"] td[class=3D"partner"] { margin-bottom=
+: 0; }
+}
+/* Provisions Nav MQs */
+@media only screen and (max-width: 490px) {
+table[class=3D"provisions-nav"] { display: none; }
+}
+/* Partner CTA MQs */
+@media only screen and (max-width: 490px) {
+table[class=3D"partner-cta"] {
+border: none;
+}
+table[class=3D"partner-cta"] td {
+width: 100%;
+display: block;
+text-align: center;
+}
+}
+</style>
+</head>
+<body style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; =
+background: #fff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; font-size: 14px; margin: 0; padding: 0; width: 100% !important" bgcolor=
+=3D"#fff"><style type=3D"text/css">
+body {
+width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; margin: 0; padding: 0; background: #fff; font-family: "Helvetica N=
+eue", Helvetica, Arial, sans-serif; font-size: 14px;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-=
+width: 100%;
+}
+</style>
+<div class=3D"frame weekly-digest" style=3D"font-family: 'Helvetica Neue', =
+Helvetica, Arial, sans-serif; margin: 0 auto; max-width: 790px; padding: 0"=
+>
+<table cellpadding=3D"0" cellspacing=3D"0" class=3D"container" style=3D"bor=
+der-collapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sa=
+ns-serif; margin: 0 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td valign=3D"top" style=3D"border-collapse: collapse; font-family: 'Helvet=
+ica Neue', Helvetica, Arial, sans-serif">
+<!-- Pre-Header -->
+<div class=3D"pre-header" style=3D"color: #ccc; font-family: 'Helvetica Neu=
+e', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: normal; pad=
+ding-top: 5px; text-align: center" align=3D"center">
+<a href=3D"http://l.food52.com/5424a238a6cba877558b722e1xtpb.1iet/T3XhYC0WM=
+KiKDBFSB4bdb" style=3D"color: #ccc; font-family: 'Helvetica Neue', Helvetic=
+a, Arial, sans-serif; text-decoration: none">Don't break a sweat.</a>
+|=20
+<a href=3D"http://l.food52.com/view/5424a238a6cba877558b722e1xtpb.1iet/a353=
+f1af" style=3D"color: #ccc; font-family: 'Helvetica Neue', Helvetica, Arial=
+, sans-serif; text-decoration: none"><span style=3D"font-family: 'Helvetica=
+ Neue', Helvetica, Arial, sans-serif; text-decoration: underline">View this=
+ email in your browser</span></a>.
+</div>
+<!-- /Pre-Header -->
+<!-- Header -->
+<div class=3D"email-header" style=3D"font-family: 'Helvetica Neue', Helveti=
+ca, Arial, sans-serif; margin: 15px 0 0; text-align: center" align=3D"cente=
+r">
+<a href=3D"http://l.food52.com/5424a238a6cba877558b722e1xtpb.1iet/UgEVfeYQK=
+XcSlLxzBe6be" title=3D"Provisions" target=3D"_blank" style=3D"color: #666; =
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoratio=
+n: none">
+<img src=3D"http://media.sailthru.com/3sg/1jy/6/n/53a86b7ba93a4.png" alt=3D=
+"Food52" width=3D"212" height=3D"40" style=3D"-ms-interpolation-mode: bicub=
+ic; border: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; max-width: 100%; outline: none; text-decoration: none" />
+</a>
+<div class=3D"email-header-date" style=3D"color: #a3a3a3; font-family: 'Hel=
+vetica Neue', Helvetica, Arial, sans-serif; font-style: italic"></div>
+</div>
+<!-- /Header -->
+<!-- Divider -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"section-di=
+vider header" style=3D"border-bottom-color: #fff; border-bottom-style: none=
+; border-bottom-width: 20px; border-collapse: collapse; border-top-color: #=
+fff; border-top-style: solid; border-top-width: 20px; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; height: 5px; margin: 0 auto; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"gutter" style=3D"background: #f7f7f7; border-collapse: collaps=
+e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 5px=
+; line-height: 5px; width: 0" bgcolor=3D"#f7f7f7"></td>
+<td style=3D"background: #f7f7f7; border-collapse: collapse; font-family: '=
+Helvetica Neue', Helvetica, Arial, sans-serif; height: 5px; line-height: 5p=
+x" bgcolor=3D"#f7f7f7">=C2=A0</td>
+<td class=3D"gutter" style=3D"background: #f7f7f7; border-collapse: collaps=
+e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 5px=
+; line-height: 5px; width: 0" bgcolor=3D"#f7f7f7"></td>
+</tr>
+</table>
+<!-- /Divider -->
+<div class=3D"wide-layout" style=3D"font-family: 'Helvetica Neue', Helvetic=
+a, Arial, sans-serif">
+<!-- Large Hero Content Block -->
+<table class=3D"content-block" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" style=3D"border-collapse: collapse; color: #666; font-family: 'Helve=
+tica Neue', Helvetica, Arial, sans-serif; line-height: 1.5; margin: 0 0 15p=
+x; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; width:=
+ 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<!-- Hero Content -->
+<td valign=3D"top" class=3D"hero-content-container" width=3D"430" align=3D"=
+left" style=3D"border-collapse: collapse; font-family: 'Helvetica Neue', He=
+lvetica, Arial, sans-serif">
+<div class=3D"hero-content" style=3D"color: #666; display: inline-block; fo=
+nt-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; text-=
+align: center; width: 100%" align=3D"center">
+<div class=3D"hero-image" style=3D"font-family: 'Helvetica Neue', Helvetica=
+, Arial, sans-serif; margin: 0 0 8px">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIKBd7ef" style=3D"color: #666; display: block; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: no=
+ne"><img src=3D"http://media.sailthru.com/3sg/1jy/b/1/545529dbb7995.jpg" wi=
+dth=3D"435" border=3D"0"  alt=3D"unnamed"/>
+</div> <!-- /hero-image -->
+<div class=3D"hero-headline" style=3D"font-family: 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif; margin: 16px 0">
+<h3 style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; f=
+ont-size: 18px; font-weight: normal; margin: 0 0 8px"><a href=3D"http://l.f=
+ood52.com/5424a238a6cba877558b722e1xtpb.1iet/VE_s9kmOdVV5odIKCe848" style=
+=3D"color: #608e95; font-family: 'Helvetica Neue', Helvetica, Arial, sans-s=
+erif; text-decoration: none; text-transform: uppercase">Stress-free Enterta=
+ining</a></h3>
+</div> <!-- /hero-headline -->
+<div class=3D"hero-description" style=3D"font-family: 'Helvetica Neue', Hel=
+vetica, Arial, sans-serif; margin: 0 0 18px; text-align: left" align=3D"lef=
+t">We believe you shouldn't need an occasion to gather around the table -- =
+the food is occasion enough. Arm yourself with great serveware and a few re=
+cipes you could make in your sleep, and then invite your friends. You're go=
+ing to throw a party -- and not even break a sweat. </div>=20
+<!-- /hero-description -->
+<!-- /hero-content -->
+<!--[if mso]>
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schem=
+as-microsoft-com:office:word" href=3D"https://food52.com/blog/11495-how-to-=
+transform-a-head-of-cauliflower-into-dinner" style=3D"height:40px;v-text-an=
+chor:middle;width:200px;" arcsize=3D"5%" stroke=3D"f" fillcolor=3D"#AB977D"=
+>
+<w:anchorlock/>
+<center>
+<![endif]-->
+<!--[if mso]>
+</center>
+</v:roundrect>
+<![endif]--></div>
+</td> <!-- hero-content-container -->
+<!-- Ad Partner Content -->
+<td width=3D"30" class=3D"spacer" style=3D"border-collapse: collapse; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif"></td>
+<td valign=3D"top" class=3D"ad-partner-container" width=3D"300" align=3D"ri=
+ght" style=3D"border-collapse: collapse; font-family: 'Helvetica Neue', Hel=
+vetica, Arial, sans-serif">
+<div class=3D"ad-partner" style=3D"font-family: 'Helvetica Neue', Helvetica=
+, Arial, sans-serif; text-align: center" align=3D"center">
+<div class=3D"ad-partner-image" style=3D"background: #f6f6f6 none; font-fam=
+ily: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VFOCw0mOTZobNJgBBd3da" style=3D"color: #666; display: block; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: no=
+ne"> <img src=3D"http://media.sailthru.com/3sg/1jy/a/v/5453829dd18fa.gif" w=
+idth=3D"300" border=3D"0" alt=3D"Green_Floral_for_Email_103014"/>
+</a>
+</div> <!-- /ad-partner-image -->
+<div class=3D"ad-partner-content" style=3D"background: #f6f6f6; font-family=
+: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 15px 0; padding: =
+15px; text-align: left" align=3D"left">
+<div class=3D"ad-partner-headline" style=3D"background: #f6f6f6; font-famil=
+y: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<h5 style=3D"color: #666; font-family: 'Helvetica Neue', Helvetica, Arial, =
+sans-serif; font-size: 13px; margin: 0 0 4px; text-transform: none"><a href=
+=3D"http://l.food52.com/5424a238a6cba877558b722e1xtpb.1iet/VFOCw0mOTZobNJgB=
+C4b32" style=3D"color: #608e95; font-family: 'Helvetica Neue', Helvetica, A=
+rial, sans-serif; text-decoration: none;">Browse the dishes we used to set =
+our brunch table, and receive 20% off with code FOOD52 here &raquo;</a></h5=
+>
+</div> <!-- /ad-partner-content -->
+</div> <!-- /ad-partner -->
+</td> <!-- /ad-partner-container -->
+</tr>
+</table> <!-- /content-block -->
+<!-- Three Column Content Block -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"content-bl=
+ock" style=3D"border-collapse: collapse; color: #666; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; line-height: 1.5; margin: 0 0 15px;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; width: 1=
+00%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td style=3D"border-collapse: collapse; font-family: 'Helvetica Neue', Helv=
+etica, Arial, sans-serif">
+<div class=3D"content-block-header" style=3D"font-family: 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif; margin: 0 0 18px">
+<h2 style=3D"color: #608e95; font-family: 'Helvetica Neue', Helvetica, Aria=
+l, sans-serif; font-size: 21px; font-weight: 300; line-height: 1.25em; marg=
+in: 0 0 10px; text-align: center" align=3D"center">ENTERTAIN WITH EASE</h2>
+</div> <!-- /content-block-header -->
+</td>
+</tr>
+<!-- Start of Three Columns -->
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"three-col" style=3D"border-collapse: collapse; font-family: 'H=
+elvetica Neue', Helvetica, Arial, sans-serif">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; margin-bottom: 24px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"col first" width=3D"230" align=3D"left" valign=3D"top" style=
+=3D"border-collapse: collapse; font-family: 'Helvetica Neue', Helvetica, Ar=
+ial, sans-serif; padding: 0 13px; text-align: center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"content-item" style=3D"border-collapse: collapse; font-family:=
+ 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<div class=3D"content-image" style=3D"font-family: 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIIBa596" style=3D"color: #666; display: block; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 6px; te=
+xt-align: center; text-decoration: none"><img src=3D"http://media.sailthru.=
+com/3sg/1jy/a/s/54501af09f903.jpg" width=3D"230" border=3D"0" alt=3D"brusse=
+ls sprouts"/>
+</a>
+</div> <!-- /content-image -->
+<div class=3D"content-description" style=3D"font-family: 'Helvetica Neue', =
+Helvetica, Arial, sans-serif; text-align: left" align=3D"left">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIIC7680" style=3D"color: #555; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; text-decoration: none">Brussels Spr=
+outs with Pine Nuts<br /> & Thyme</a>
+</div> <!-- /content-description -->
+</td>
+</tr>
+</table>
+</td> <!-- /content-listing -->
+<td class=3D"col last" width=3D"230" align=3D"center" valign=3D"top" style=
+=3D"border-collapse: collapse; font-family: 'Helvetica Neue', Helvetica, Ar=
+ial, sans-serif; padding: 0 13px; text-align: center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"content-item" style=3D"border-collapse: collapse; font-family:=
+ 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<div class=3D"content-image" style=3D"font-family: 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIHB9443" style=3D"color: #666; display: block; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 6px; te=
+xt-align: center; text-decoration: none"><img src=3D"http://media.sailthru.=
+com/3sg/1jy/a/s/54501ad6d62d1.jpg" width=3D"230" border=3D"0"alt=3D"2014-02=
+04_deep-chocolate-cake-orange-icing-005"/>
+</a>
+</div> <!-- /content-image -->
+<div class=3D"content-description" style=3D"font-family: 'Helvetica Neue', =
+Helvetica, Arial, sans-serif; text-align: left" align=3D"left">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIHCfc77" style=3D"color: #555; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; text-decoration: none">Deep Chocola=
+te Cake <br />with Orange Icing</a>
+</div> <!-- /content-description -->
+</td>
+</tr>
+</table>
+</td> <!-- /content-listing -->
+<td class=3D"col last" width=3D"230" align=3D"center" valign=3D"top" style=
+=3D"border-collapse: collapse; font-family: 'Helvetica Neue', Helvetica, Ar=
+ial, sans-serif; padding: 0 13px; text-align: center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"content-item" style=3D"border-collapse: collapse; font-family:=
+ 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<div class=3D"content-image" style=3D"font-family: 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIJB9b95" style=3D"color: #666; display: block; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 6px; te=
+xt-align: center; text-decoration: none"><img src=3D"http://media.sailthru.=
+com/3sg/1jy/a/s/54501b44a1753.jpg" width=3D"230" border=3D"0" alt=3D"2013-1=
+203_clara_strata-015"/>
+</a>
+</div> <!-- /content-image -->
+<div class=3D"content-description" style=3D"font-family: 'Helvetica Neue', =
+Helvetica, Arial, sans-serif; text-align: left" align=3D"left">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIJC6f17" style=3D"color: #555; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; text-decoration: none">Strata with =
+Sausage<br /> and Greens</a>
+</div> <!-- /content-description -->
+</td>
+</tr>
+</table>
+</td> <!-- /content-listing -->
+</tr>
+</table>
+</td> <!-- /related-content -->
+</tr>
+</table> <!-- /Content Block -->
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"three-col" style=3D"border-collapse: collapse; font-family: 'H=
+elvetica Neue', Helvetica, Arial, sans-serif">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; margin-bottom: 24px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"col first" width=3D"230" align=3D"left" valign=3D"top" style=
+=3D"border-collapse: collapse; font-family: 'Helvetica Neue', Helvetica, Ar=
+ial, sans-serif; padding: 0 13px; text-align: center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"content-item" style=3D"border-collapse: collapse; font-family:=
+ 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<div class=3D"content-image" style=3D"font-family: 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIKD044a" style=3D"color: #666; display: block; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 6px; te=
+xt-align: center; text-decoration: none"><img src=3D"http://media.sailthru.=
+com/3sg/1jy/a/t/5451081886769.png" width=3D"230" border=3D"0"  alt=3D"stres=
+sfreebrunch"/>
+</a>
+</div> <!-- /content-image -->
+<div class=3D"content-description" style=3D"font-family: 'Helvetica Neue', =
+Helvetica, Arial, sans-serif; text-align: left" align=3D"left">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIKEdba9" style=3D"color: #555; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; text-decoration: none">How to Throw=
+ a Stress-Free Brunch</a>
+</div> <!-- /content-description -->
+</td>
+</tr>
+</table>
+</td> <!-- /content-listing -->
+<td class=3D"col last" width=3D"230" align=3D"center" valign=3D"top" style=
+=3D"border-collapse: collapse; font-family: 'Helvetica Neue', Helvetica, Ar=
+ial, sans-serif; padding: 0 13px; text-align: center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"content-item" style=3D"border-collapse: collapse; font-family:=
+ 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<div class=3D"content-image" style=3D"font-family: 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odILB5f0a" style=3D"color: #666; display: block; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 6px; te=
+xt-align: center; text-decoration: none"><img src=3D"http://media.sailthru.=
+com/3sg/1jy/b/1/5455193b7a214.jpg" width=3D"230" border=3D"0" alt=3D"144023=
+22661_206c57e36e_o"/>
+</a>
+</div> <!-- /content-image -->
+<div class=3D"content-description" style=3D"font-family: 'Helvetica Neue', =
+Helvetica, Arial, sans-serif; text-align: left" align=3D"left">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odILC35a9" style=3D"color: #555; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; text-decoration: none">How to Make =
+Big Batch Cocktails</a>
+</div> <!-- /content-description -->
+</td>
+</tr>
+</table>
+</td> <!-- /content-listing -->
+<td class=3D"col last" width=3D"230" align=3D"center" valign=3D"top" style=
+=3D"border-collapse: collapse; font-family: 'Helvetica Neue', Helvetica, Ar=
+ial, sans-serif; padding: 0 13px; text-align: center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse: collapse; font-family: 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"content-item" style=3D"border-collapse: collapse; font-family:=
+ 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<div class=3D"content-image" style=3D"font-family: 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIMB30a1" style=3D"color: #666; display: block; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 6px; te=
+xt-align: center; text-decoration: none"><img src=3D"http://media.sailthru.=
+com/3sg/1jy/a/s/54501be716663.jpg" width=3D"230" border=3D"0" alt=3D"entert=
+ainingrecipes"/>
+</a>
+</div> <!-- /content-image -->
+<div class=3D"content-description" style=3D"font-family: 'Helvetica Neue', =
+Helvetica, Arial, sans-serif; text-align: left" align=3D"left">
+<a target=3D"_blank" href=3D"http://l.food52.com/5424a238a6cba877558b722e1x=
+tpb.1iet/VE_s9kmOdVV5odIMC40fb" style=3D"color: #555; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; text-decoration: none">10 Entertain=
+ing Recipes You Loved This Month</a>
+</div> <!-- /content-description -->
+</td>
+</tr>
+</table>
+</td> <!-- /content-listing -->
+</tr>
+</table>
+</td> <!-- /related-content -->
+</tr>
+</table>
+<!-- /Content Block -->
+<!-- Divider -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"section-di=
+vider" style=3D"border-bottom-color: #fff; border-bottom-style: solid; bord=
+er-bottom-width: 20px; border-collapse: collapse; border-top-color: #fff; b=
+order-top-style: solid; border-top-width: 20px; font-family: 'Helvetica Neu=
+e', Helvetica, Arial, sans-serif; height: 5px; margin: 0 auto; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; width: 100%">
+<tr style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<td class=3D"gutter" style=3D"background: #f7f7f7; border-collapse: collaps=
+e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 5px=
+; line-height: 5px; width: 0" bgcolor=3D"#f7f7f7"></td>
+<td style=3D"background: #f7f7f7; border-collapse: collapse; font-family: '=
+Helvetica Neue', Helvetica, Arial, sans-serif; height: 5px; line-height: 5p=
+x" bgcolor=3D"#f7f7f7">=C2=A0</td>
+<td class=3D"gutter" style=3D"background: #f7f7f7; border-collapse: collaps=
+e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 5px=
+; line-height: 5px; width: 0" bgcolor=3D"#f7f7f7"></td>
+</tr>
+</table>
+<!-- /Divider -->
+<!-- Footer -->
+<div class=3D"email-footer" style=3D"color: #666; font-family: 'Helvetica N=
+eue', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1.7em; pa=
+dding: 14px 0 40px; text-align: center" align=3D"center">
+<div class=3D"social-icons" style=3D"font-family: 'Helvetica Neue', Helveti=
+ca, Arial, sans-serif; padding: 0 0 10px">
+<a href=3D"http://l.food52.com/5424a238a6cba877558b722e1xtpb.1iet/U8VwXuYQT=
+N10coANBca2b" target=3D"_blank" style=3D"color: #666; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; padding: 0 5px; text-decoration: no=
+ne"><img src=3D"http://media.sailthru.com/3sg/1jy/6/n/53a86c5ac0309.png" al=
+t=3D"Facebook" style=3D"-ms-interpolation-mode: bicubic; border: none; font=
+-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 100%; o=
+utline: none; text-decoration: none" /></a>
+<a href=3D"http://l.food52.com/5424a238a6cba877558b722e1xtpb.1iet/U-JU8uYQh=
+VE-pFquBc285" target=3D"_blank" style=3D"color: #666; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; padding: 0 5px; text-decoration: no=
+ne"><img src=3D"http://media.sailthru.com/3sg/1jy/6/n/53a86c747f14b.png" al=
+t=3D"Twitter" style=3D"-ms-interpolation-mode: bicubic; border: none; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 100%; ou=
+tline: none; text-decoration: none" /></a>
+<a href=3D"http://l.food52.com/5424a238a6cba877558b722e1xtpb.1iet/U-JU8uYQh=
+VE-pFqvB486d" target=3D"_blank" style=3D"color: #666; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; padding: 0 5px; text-decoration: no=
+ne"><img src=3D"http://media.sailthru.com/3sg/1jy/6/n/53a86c6d92653.png" al=
+t=3D"Pinterest" style=3D"-ms-interpolation-mode: bicubic; border: none; fon=
+t-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 100%; =
+outline: none; text-decoration: none" /></a>
+<a href=3D"http://l.food52.com/5424a238a6cba877558b722e1xtpb.1iet/U6sfX-YQX=
+K0_7bO4B4658" target=3D"_blank" style=3D"color: #666; font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; padding: 0 5px; text-decoration: no=
+ne"><img src=3D"http://media.sailthru.com/3sg/1jy/6/n/53a86c6219ea8.png" al=
+t=3D"Instagram" style=3D"-ms-interpolation-mode: bicubic; border: none; fon=
+t-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 100%; =
+outline: none; text-decoration: none" /></a>
+</div>
+<div class=3D"footer-text" style=3D"font-family: 'Helvetica Neue', Helvetic=
+a, Arial, sans-serif">
+<a href=3D"http://l.food52.com/forward/5424a238a6cba877558b722e1xtpb.1iet/f=
+4352988" target=3D"_blank" style=3D"color: #666; font-family: 'Helvetica Ne=
+ue', Helvetica, Arial, sans-serif; text-decoration: underline">Forward this=
+ email</a> to a friend.
+<a href=3D"http://l.food52.com/oc/5424a238a6cba877558b722e1xtpb.1iet/341069=
+20" target=3D"_blank" style=3D"color: #666; font-family: 'Helvetica Neue', =
+Helvetica, Arial, sans-serif; text-decoration: underline">Click here to uns=
+ubscribe or manage your preferences.</a>
+<br style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif" /=
+>
+=C2=A9 November 3, 2014 Food52. All Rights Reserved.
+<br style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif" /=
+>
+251 W 30th St. Suite 13W New York, NY 10001 USA
+</div>
+<a href=3D"http://l.food52.com/5424a238a6cba877558b722e1xtpb.1iet/T3tkAC0WG=
+OtXQ24yA7a8a"><img src=3D"http://l.food52.com/img/5424a238a6cba877558b722e1=
+xtpb.1iet/e528a6a4.gif" alt=3D"" border=3D"0" /></a>
+</div>
+<!-- /Footer -->
+</td>
+</tr>
+</table>
+</div> <!-- /frame -->
+</body>
+</html>
+
+------=_Part_6935870_887386900.1415041341215--
+

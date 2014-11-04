@@ -1,0 +1,222 @@
+Delivered-To: dagnachewa@gmail.com
+Received: by 10.140.235.10 with SMTP id g10csp310340qhc;
+        Mon, 3 Nov 2014 14:32:00 -0800 (PST)
+Return-Path: <linux-ethiopia+bncBDXI3NNRQAARBX4E4CRAKGQEYRMD4AY@googlegroups.com>
+Received-SPF: pass (google.com: domain of linux-ethiopia+bncBDXI3NNRQAARBX4E4CRAKGQEYRMD4AY@googlegroups.com designates 10.50.65.33 as permitted sender) client-ip=10.50.65.33
+Authentication-Results: mr.google.com;
+       spf=pass (google.com: domain of linux-ethiopia+bncBDXI3NNRQAARBX4E4CRAKGQEYRMD4AY@googlegroups.com designates 10.50.65.33 as permitted sender) smtp.mail=linux-ethiopia+bncBDXI3NNRQAARBX4E4CRAKGQEYRMD4AY@googlegroups.com;
+       dkim=pass header.i=@googlegroups.com
+X-Received: from mr.google.com ([10.50.65.33])
+        by 10.50.65.33 with SMTP id u1mr195677igs.17.1415053919123 (num_hops = 1);
+        Mon, 03 Nov 2014 14:31:59 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=20120806;
+        h=mime-version:to:from:subject:message-id:date:x-original-sender
+         :reply-to:precedence:mailing-list:list-id:list-post:list-help
+         :list-archive:sender:list-subscribe:list-unsubscribe:content-type;
+        bh=BAAyHCarDjUqr8AUXPr5pl3x77ojbPY2dKF0LUMukrM=;
+        b=O2La7TzadFnVvStdOqbw6xFMkAibhhRnNbpCIBRksVzekr2HM6SHxY4dBKd/5wKL6T
+         VAvRljpdwgK1MVI7kyYgY1cptpR417R4fcCVYCVxC6waDyaWTgvlOXIKdqZBf6Qlm36H
+         /3Ij2S2c+7FHTCJC4Z/31OPPuKvvD2DGOAGSV1Ylmz4KJSVertYY2wre3knWQFFQsVIt
+         vq9jST5Zx3ZwfRRBOmxwk2mdzO6KqfdljokYeEzgyOnuKrFqNsGtH45c2FpNQpP95tew
+         47ljrAlbp50CYk7mJcdvD7hASiK9Ih6BMZZ+txcj/RRekeFiWpuRfKXYJgjvjJHr0JG9
+         1w+Q==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=20120806;
+        h=mime-version:to:from:subject:message-id:date:x-original-sender
+         :reply-to:precedence:mailing-list:list-id:list-post:list-help
+         :list-archive:sender:list-subscribe:list-unsubscribe:content-type;
+        bh=BAAyHCarDjUqr8AUXPr5pl3x77ojbPY2dKF0LUMukrM=;
+        b=O2La7TzadFnVvStdOqbw6xFMkAibhhRnNbpCIBRksVzekr2HM6SHxY4dBKd/5wKL6T
+         VAvRljpdwgK1MVI7kyYgY1cptpR417R4fcCVYCVxC6waDyaWTgvlOXIKdqZBf6Qlm36H
+         /3Ij2S2c+7FHTCJC4Z/31OPPuKvvD2DGOAGSV1Ylmz4KJSVertYY2wre3knWQFFQsVIt
+         vq9jST5Zx3ZwfRRBOmxwk2mdzO6KqfdljokYeEzgyOnuKrFqNsGtH45c2FpNQpP95tew
+         47ljrAlbp50CYk7mJcdvD7hASiK9Ih6BMZZ+txcj/RRekeFiWpuRfKXYJgjvjJHr0JG9
+         1w+Q==
+X-Received: by 10.50.65.33 with SMTP id u1mr195677igs.17.1415053919116;
+        Mon, 03 Nov 2014 14:31:59 -0800 (PST)
+X-BeenThere: linux-ethiopia@googlegroups.com
+Received: by 10.107.172.2 with SMTP id v2ls2125744ioe.1.gmail; Mon, 03 Nov
+ 2014 14:31:59 -0800 (PST)
+X-Received: by 10.66.233.73 with SMTP id tu9mr34171219pac.31.1415053918975;
+        Mon, 03 Nov 2014 14:31:58 -0800 (PST)
+MIME-Version: 1.0
+To: Abridged recipients <linux-ethiopia@googlegroups.com>
+From: linux-ethiopia@googlegroups.com
+Subject: Linux-Ethiopia Abridged summary of linux-ethiopia@googlegroups.com -
+ 1 update in 1 topic
+Message-ID: <20cf300faa552d2b610506fbeaa7@google.com>
+Date: Mon, 03 Nov 2014 22:31:58 +0000
+X-Original-Sender: linux-ethiopia@googlegroups.com
+Reply-To: linux-ethiopia@googlegroups.com
+Precedence: list
+Mailing-list: list linux-ethiopia@googlegroups.com; contact linux-ethiopia+owners@googlegroups.com
+List-ID: <linux-ethiopia.googlegroups.com>
+X-Google-Group-Id: 34463368942
+List-Post: <http://groups.google.com/group/linux-ethiopia/post>, <mailto:linux-ethiopia@googlegroups.com>
+List-Help: <http://groups.google.com/support/>, <mailto:linux-ethiopia+help@googlegroups.com>
+List-Archive: <http://groups.google.com/group/linux-ethiopia
+Sender: linux-ethiopia@googlegroups.com
+List-Subscribe: <http://groups.google.com/group/linux-ethiopia/subscribe>, <mailto:linux-ethiopia+subscribe@googlegroups.com>
+List-Unsubscribe: <mailto:googlegroups-manage+34463368942+unsubscribe@googlegroups.com>,
+ <http://groups.google.com/group/linux-ethiopia/subscribe>
+Content-Type: multipart/alternative; boundary=0016367f94b4b30060474d22062
+
+--0016367f94b4b30060474d22062
+Content-Type: text/plain; charset=UTF-8
+
+=============================================================================
+Today's topic summary
+=============================================================================
+
+Group: linux-ethiopia@googlegroups.com
+Url: 
+  https://groups.google.com/forum/?utm_source=digest&utm_medium=email/#!forum/linux-ethiopia/topics
+
+
+  - Mintlinux 17 and Amharic review [1 Update]
+    http://groups.google.com/group/linux-ethiopia/t/6d9aae1969f9f8a9
+
+
+=============================================================================
+Topic: Mintlinux 17 and Amharic review
+Url: http://groups.google.com/group/linux-ethiopia/t/6d9aae1969f9f8a9
+=============================================================================
+
+---------- 1 of 1 ----------
+From: Fantaw Tesema <fantaw@gmail.com>
+Date: Nov 03 09:41PM +0100
+Url: http://groups.google.com/group/linux-ethiopia/msg/dece3b28c1acbd8e
+
+Hey Tegegne,
+
+Thanks for the details, and I agree specially by your last statement. As
+the same time I am not sure if open HW developing is less waste if
+everybody who share the design want to
+
+
+
+
+
+--
+You received this digest because you're subscribed to updates for this group. You can change your settings on the group membership page: 
+  https://groups.google.com/forum/?utm_source=digest&utm_medium=email/#!forum/linux-ethiopia/join
+.
+To unsubscribe from this group and stop receiving emails from it send an email to linux-ethiopia+unsubscribe@googlegroups.com.
+
+
+--0016367f94b4b30060474d22062
+Content-Type: text/html; charset=UTF-8
+
+
+<div style="border:1px solid #d3d3d3;max-width:850px;font-family:Arial,sans-serif;color:#000000;">
+  <div style="background-color:#f5f5f5;padding:10px 20px">
+    <table cellpadding="0" cellspacing="0" style="width:100%">
+      <tbody>
+        <tr>
+          <td style="width:70%">
+            <span style="font:18px/20px arial;color:#333333">
+              <a href="
+  https://groups.google.com/forum/?utm_source=digest&utm_medium=email/#!forum/linux-ethiopia/topics
+" style="text-decoration:none; color:#333333">
+              linux-ethiopia@googlegroups.com</a>
+            </span>
+          </td>
+          <td style="text-align:right;width:30%">
+            <span style="font:20px/24px arial"><a style="color:#dd4b39; text-decoration:none;" href="https://groups.google.com/forum/?utm_source=digest&utm_medium=email/#!overview" target="_blank">Google Groups</a></span>
+          </td>
+          <td style="width:32px;">
+            <a href="https://groups.google.com/forum/?utm_source=digest&utm_medium=email/#!overview" target="_blank"><img style="border:0;vertical-align:middle"
+                src="http://www.google.com/images/icons/product/groups-32.png"></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
+  <div style="padding:20px; background-color: #f5f5f5;">
+
+
+<div style="font-family: arial; color: #222222; padding: 0px">
+  <a name="digest_top" style="font-size:21px;">
+  
+    Today's topic summary
+  
+  
+  </a><br>
+  <span style="font-size:11px">
+    <a style="color:#1155cc;text-decoration:none" href="
+  https://groups.google.com/forum/?utm_source=digest&utm_medium=email/#!forum/linux-ethiopia/topics
+">View all topics</a>
+  </span>
+</div>
+<div style="font: 13px/18px arial; color:#222222; padding: 0px; margin-bottom:30px">
+  <ul style="margin-left:3px; padding-left:0px">
+  
+    <li>
+      <a style="color:#1155cc;text-decoration:none" href="#group_thread_0">
+      Mintlinux 17 and Amharic review</a> -
+      <span style="color:#777777">1 Update</span>
+    </li>
+  
+  </ul>
+</div>
+
+
+
+  
+  <a name="group_thread_0"></a>
+  <div style="display:inline-block; font-family: arial; padding: 4px 0 5px 0px;">
+  
+    <a target="_blank" href="http://groups.google.com/group/linux-ethiopia/t/6d9aae1969f9f8a9?utm_source=digest&utm_medium=email" style="font-size:21px; color:#1155CC; text-decoration:none">
+      Mintlinux 17 and Amharic review
+    </a>
+  
+  </div>
+
+  <table style="border-collapse: collapse; width: 100%">
+    
+    <tr><td style="background-color: #FFFFFF; color:#2E2E2E; font-family: arial; padding:10px 15px; border:1px solid #d3d3d3;">
+      <span style="color:#B1B0B0; font-size: 15px;">
+        Fantaw Tesema &lt;fantaw@gmail.com&gt;: Nov 03 09:41PM +0100
+      </span>
+      <br /><br />
+      Hey Tegegne,<br />
+&nbsp;<br />
+Thanks for the details, and I agree specially by your last statement. As<br />
+the same time I am not sure if open HW developing is less waste if<br />
+everybody who share the design want to
+      
+        <span style="font-size:11px;"><a style="color:#1155cc;text-decoration:none" href="http://groups.google.com/group/linux-ethiopia/msg/dece3b28c1acbd8e?utm_source=digest&utm_medium=email">...more</a></span>
+        <br />
+      
+    </td></tr>
+    
+  </table>
+  <div style="align:right; font-size:11px; margin-bottom: 40px; margin-top:5px;">
+    <a style="color:#1155cc;text-decoration:none" href="#digest_top">Back to top</a>
+  </div>
+
+
+
+
+  </div>
+  <div style="background-color: #f5f5f5;padding: 5px 20px;">
+  <table cellpadding="0" cellspacing="0" style="width:100%">
+  <tbody><tr>
+    <td style="padding-top:4px;font-family:arial,sans-serif;color:#636363;font-size:11px">
+      
+      You received this digest because you're subscribed to updates for this group. You can change your settings on the <a href="
+  https://groups.google.com/forum/?utm_source=digest&utm_medium=email/#!forum/linux-ethiopia/join
+" style="color:#1155cc;text-decoration:none">group membership page</a>.<br/>
+      To unsubscribe from this group and stop receiving emails from it send an email to linux-ethiopia+unsubscribe@googlegroups.com.
+    </td>
+  </tr></tbody>
+  </table>
+  </div>
+</div>
+
+
+--0016367f94b4b30060474d22062--
+
+
