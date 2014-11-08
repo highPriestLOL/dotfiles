@@ -1,0 +1,13 @@
+2014-10-15 20:58:21		dagnachew (~dagnachew@bas1-montreal30-2925416877.dsl.bell.ca) has joined #postgresqlfr
+2014-10-15 20:58:21	--	Topic for #postgresqlfr is "Testez la 9.4 beta2 ! http://www.postgresql.org/about/news/1522/ http://wiki.postgresql.org/wiki/HowToBetaTest | La 9.3.5 est sortie ! Notes de Version: http://www.postgresql.org/docs/9.3/static/release-9-3-5.html || Canal officiel PostgreSQL francophone http://www.PostgreSQL.fr | Dernières versions stables: 9.3.5, 9.2.9, 9.1.14, 9.0.18, 8.4.22 (EOL)"
+2014-10-15 20:58:21	--	Topic set by low (~low@88.191.188.237) on Thu, 24 Jul 2014 06:46:20
+2014-10-15 20:58:21	--	Channel #postgresqlfr: 34 nicks (0 ops, 0 voices, 34 normals)
+2014-10-15 20:58:21	--	PvNotice(ChanServ): Bienvenue sur #PostgreSQLfr
+2014-10-15 20:58:21	--	URL for #postgresqlfr: http://www.postgresql.fr
+2014-10-15 20:58:24	--	Channel created on Sun, 26 Nov 2006 01:43:05
+2014-10-15 20:58:26	dagnachew	bonsoir a tous
+2014-10-15 20:59:52	dagnachew	j'aimerais avoir un avis sur ce diagramme svp  c'est un diagramme pour une base de donnée d'un sport professionnel ici la Ligue Nationale de Hockey nord americain. Voici le digramme encore au stade tres tres embryonnaire
+2014-10-15 20:59:56	dagnachew	https://imageshack.com/i/ipvZsp9sp
+2014-10-15 21:35:53		Bena- (~bena5@maison.titou.org) has quit
+2014-10-15 23:13:37		tamentis (tamentis@tarvos.tamentis.com) has quit (Ping timeout: 260 seconds)
+2014-10-15 23:14:19		tamentis (tamentis@tarvos.tamentis.com) has joined #postgresqlfr

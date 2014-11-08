@@ -1,0 +1,177 @@
+2014-11-06 21:42:39		dagnachew (~dagnachew@bas1-montreal30-2925416228.dsl.bell.ca) has joined #html
+2014-11-06 21:42:39	--	Topic for #html is "HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste"
+2014-11-06 21:42:39	--	Topic set by lilmonkey on Tue, 08 Jul 2014 16:43:58
+2014-11-06 21:42:39	--	Channel #html: 171 nicks (0 ops, 0 voices, 171 normals)
+2014-11-06 21:42:39	--	URL for #html: www.htmlHelp.com
+2014-11-06 21:42:42	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-11-06 21:42:42	dagnachew	hi all
+2014-11-06 21:43:40	dagnachew	I get this error . It looks like your header's font-size is 32px instead of 16px
+2014-11-06 21:44:01	oksushi	dagnachew: #css
+2014-11-06 21:45:55	dagnachew	oksushi: am not in to css yet am learing html and following the great tutorial at codeacademy and am stuck
+2014-11-06 21:46:08	oksushi	the error you gave relates to css
+2014-11-06 21:46:11	oksushi	not HTML
+2014-11-06 21:49:26		annoymouse (uid11754@gateway/web/irccloud.com/x-ijcnbhaflzrdkbhs) has joined #html
+2014-11-06 21:49:30		annoymouse (uid11754@gateway/web/irccloud.com/x-ijcnbhaflzrdkbhs) has quit (Changing host)
+2014-11-06 21:49:30		annoymouse (uid11754@unaffiliated/pzp) has joined #html
+2014-11-06 21:49:30		annoymouse (uid11754@unaffiliated/pzp) has quit (Changing host)
+2014-11-06 21:49:30		annoymouse (uid11754@gateway/web/irccloud.com/x-ijcnbhaflzrdkbhs) has joined #html
+2014-11-06 21:49:57		LiENUS (~LiENUS@ip72-219-28-141.br.br.cox.net) has joined #html
+2014-11-06 21:51:29		d3m0n (~d3m0n@unaffiliated/d3m0n) has joined #html
+2014-11-06 21:57:12		doc|mobile (~doc_mobil@69.172.155.225) has joined #html
+2014-11-06 21:57:12		doc|mobile (~doc_mobil@69.172.155.225) has quit (Changing host)
+2014-11-06 21:57:12		doc|mobile (~doc_mobil@gentoo/contributor/doc-007) has joined #html
+2014-11-06 22:02:20		ObjectiveMatt (~Objective@66.87.150.17) has joined #html
+2014-11-06 22:09:35		happyowl (~a@unaffiliated/happyowl) has quit (Remote host closed the connection)
+2014-11-06 22:21:24		P1RATEZ (~piratez@CPEbc1401e23523-CMbc1401e23520.cpe.net.cable.rogers.com) has quit
+2014-11-06 22:35:09		Tagor (~Tagor@53567E1F.cm-6-7b.dynamic.ziggo.nl) has quit (Ping timeout: 250 seconds)
+2014-11-06 22:37:25		mepowers (~mepowers6@unaffiliated/mepowers) has quit (Remote host closed the connection)
+2014-11-06 22:49:21	--	irc: disconnected from server
+2014-11-07 19:34:07		dagnachew (~dagnachew@bas1-montreal30-2925416228.dsl.bell.ca) has joined #html
+2014-11-07 19:34:07	--	Topic for #html is "HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste"
+2014-11-07 19:34:07	--	Topic set by lilmonkey on Tue, 08 Jul 2014 16:43:58
+2014-11-07 19:34:07	--	Channel #html: 175 nicks (0 ops, 0 voices, 175 normals)
+2014-11-07 19:34:08	--	URL for #html: www.htmlHelp.com
+2014-11-07 19:34:25	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-11-07 19:36:16	dagnachew	hi all
+2014-11-07 19:45:16		agentDio (~Agent@5ED1C216.cm-7-2d.dynamic.ziggo.nl) has quit (Quit: Leaving)
+2014-11-07 19:52:13		nkumari (~nkumari@216.207.42.134) has joined #html
+2014-11-07 19:57:05		nkumari (~nkumari@216.207.42.134) has quit (Remote host closed the connection)
+2014-11-07 19:57:27		inerkick (~inerkick@122.172.78.212) has joined #html
+2014-11-07 20:08:56		blackjack (~BJ@unaffiliated/blackjack) has quit (Ping timeout: 245 seconds)
+2014-11-07 20:10:59		blackjack (~BJ@5.175.139.37) has joined #html
+2014-11-07 20:14:27		NanoArro1 (~NanoArrow@5.231.35.142) has quit (Ping timeout: 255 seconds)
+2014-11-07 20:15:06		NanoArro1 (~NanoArrow@5.231.35.142) has joined #html
+2014-11-07 20:19:49		tyteen4a04 (tyteen4a03@daedalusx.net) has joined #html
+2014-11-07 20:20:02		graphitemaster_ (~graphitem@198.52.199.148) has joined #html
+2014-11-07 20:20:06		Ulrike_Schultz (~Ulrike_Ra@cpe-65-24-84-7.columbus.res.rr.com) has joined #html
+2014-11-07 20:20:10		blackjack (~BJ@5.175.139.37) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:10		MonkeyJamboree (~MonkeyJam@24-247-154-105.dhcp.monr.mi.charter.com) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:12		mnms_ (mnms@otacon.fal-net.pl) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:12		Korvin (~Korvin@concrete5/79063/Korvin) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:12		tyteen4a03 (tyteen4a03@unaffiliated/tyteen4a03) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:12		ikonia (~irc@unaffiliated/ikonia) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:12		Aero (~Aero@unaffiliated/aero) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:12		Ulrike_Rayne (~Ulrike_Ra@cpe-65-24-84-7.columbus.res.rr.com) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:12		Nubville (~dgarman@75-145-175-108-Illinois.hfc.comcastbusiness.net) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:13		graphitemaster (~graphitem@unaffiliated/graphitemaster) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:13		Cork (~Cork@firefox/community/cork) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:20:14		Mobber (~Oakland@109.201.152.1) has quit (Excess Flood)
+2014-11-07 20:20:14		ikonia (~irc@bender.dnsdata.co.uk) has joined #html
+2014-11-07 20:20:14		ikonia (~irc@bender.dnsdata.co.uk) has quit (Changing host)
+2014-11-07 20:20:14		ikonia (~irc@unaffiliated/ikonia) has joined #html
+2014-11-07 20:20:18		Aero-kun (~Aero@i.am.rly.sx) has joined #html
+2014-11-07 20:20:19		Garmageddon (~dgarman@75-145-175-108-Illinois.hfc.comcastbusiness.net) has joined #html
+2014-11-07 20:20:23		Mobber (~Oakland@109.201.152.1) has joined #html
+2014-11-07 20:20:40		mnms_ (mnms@otacon.fal-net.pl) has joined #html
+2014-11-07 20:20:57		robert_ (~hellspawn@objectx/robert) has quit (Read error: Connection reset by peer)
+2014-11-07 20:20:58		Korvin (~Korvin@concrete5/79063/Korvin) has joined #html
+2014-11-07 20:21:03		MonkeyJamboree (~MonkeyJam@24-247-154-105.dhcp.monr.mi.charter.com) has joined #html
+2014-11-07 20:21:28		iliketurtles (~iliketurt@174.46.233.4) has quit (Ping timeout: 244 seconds)
+2014-11-07 20:21:35		robert_ (~hellspawn@static-96-254-212-18.tampfl.fios.verizon.net) has joined #html
+2014-11-07 20:21:35		robert_ (~hellspawn@static-96-254-212-18.tampfl.fios.verizon.net) has quit (Changing host)
+2014-11-07 20:21:35		robert_ (~hellspawn@objectx/robert) has joined #html
+2014-11-07 20:23:55		Cork (~Cork@firefox/community/cork) has joined #html
+2014-11-07 20:24:30		blackjack_ (~BJ@5.175.139.37) has joined #html
+2014-11-07 20:26:04		happyowl (~a@unaffiliated/happyowl) has quit (Quit: Leaving)
+2014-11-07 20:28:24		scriptThis (~scriptThi@174-16-205-186.hlrn.qwest.net) has joined #html
+2014-11-07 20:31:00		_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has joined #html
+2014-11-07 20:33:07		scriptThis (~scriptThi@174-16-205-186.hlrn.qwest.net) has quit (Ping timeout: 256 seconds)
+2014-11-07 20:33:27		Guest32723 (~jen@cpc6-brmb8-2-0-cust235.1-3.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2014-11-07 20:35:19		ObjectiveMatt (~Objective@66.87.151.150) has joined #html
+2014-11-07 20:37:41		EvilPenguin (~EvilPengu@173.247.204.218) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-07 20:41:36		|oop (~loop@79.sub-174-236-130.myvzw.com) has joined #html
+2014-11-07 20:42:19		scriptThis (~scriptThi@174-16-205-186.hlrn.qwest.net) has joined #html
+2014-11-07 20:42:46		chaotix (~chaotix@pool-72-94-86-205.phlapa.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2014-11-07 20:47:55		Sc0tty- (~Scottyyy@86.53.112.194) has quit
+2014-11-07 20:51:53		gde33 (kvirc@546A0B75.cm-12-3a.dynamic.ziggo.nl) has joined #html
+2014-11-07 20:53:06		SPF|Cloud (uid11755@wikipedia/Southparkfan) has quit (Quit: Connection closed for inactivity)
+2014-11-07 20:57:13		iliketurtles (~iliketurt@c-71-198-250-181.hsd1.ca.comcast.net) has joined #html
+2014-11-07 21:00:13		iliketurtles (~iliketurt@c-71-198-250-181.hsd1.ca.comcast.net) has quit (Client Quit)
+2014-11-07 21:01:11		|oop (~loop@79.sub-174-236-130.myvzw.com) has quit (Read error: Connection reset by peer)
+2014-11-07 21:01:26		|oop (~loop@79.sub-174-236-130.myvzw.com) has joined #html
+2014-11-07 21:02:24		Streusel (~Anonymous@unaffiliated/streusel) has quit (Remote host closed the connection)
+2014-11-07 21:06:27		Lucretia (~laguest@90.216.207.217) has quit (Ping timeout: 264 seconds)
+2014-11-07 21:06:44		Lucretia (~laguest@05450e2f.skybroadband.com) has joined #html
+2014-11-07 21:09:33		jen (~jen@cpc6-brmb8-2-0-cust235.1-3.cable.virginm.net) has joined #html
+2014-11-07 21:09:56	--	jen is now known as Guest1732
+2014-11-07 21:12:50		Leates (~Leates@unaffiliated/leates) has quit (Ping timeout: 258 seconds)
+2014-11-07 21:16:00		pibu7 (~kvirc@62.18.7.188) has quit (Ping timeout: 256 seconds)
+2014-11-07 21:33:22		ObjectiveMatt (~Objective@66.87.151.150) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-11-07 21:35:05		scriptThis (~scriptThi@174-16-205-186.hlrn.qwest.net) has quit (Ping timeout: 255 seconds)
+2014-11-07 21:44:48		DingoYabuki (~DingoYabu@2601:c:9b00:11d0:8864:c99f:16d8:1e7d) has joined #html
+2014-11-07 21:49:49		circ-user-aBRAm (~circuser-@sushi.pld.ttu.ee) has quit (Ping timeout: 265 seconds)
+2014-11-07 21:56:10		inerkick (~inerkick@122.172.78.212) has quit (Read error: Connection reset by peer)
+2014-11-07 21:59:24	dagnachew	how awesome is codecademy ??? in less than 2 days I have progressed a lot in my journey to become a web dev. I am still at starting point but the codecademy is so well tought that it's a joy to learn html
+2014-11-07 22:00:15		|oop (~loop@79.sub-174-236-130.myvzw.com) has quit (Read error: Connection reset by peer)
+2014-11-07 22:00:35	Visage	dagnachew: They're an okay starting point, but there's waaaaay more out there to learn. They just teach you the absolute basics.
+2014-11-07 22:03:16		graphitemaster_ (~graphitem@198.52.199.148) has quit (Changing host)
+2014-11-07 22:03:16		graphitemaster_ (~graphitem@unaffiliated/graphitemaster) has joined #html
+2014-11-07 22:03:20	--	graphitemaster_ is now known as graphitemaster
+2014-11-07 22:04:01		|oop (~loop@79.sub-174-236-130.myvzw.com) has joined #html
+2014-11-07 22:05:57		Dingo_Yabuki (~DingoYabu@50.143.225.18) has joined #html
+2014-11-07 22:08:21		ObjectiveMatt (~Objective@66.87.151.150) has joined #html
+2014-11-07 22:09:38		DingoYabuki (~DingoYabu@2601:c:9b00:11d0:8864:c99f:16d8:1e7d) has quit (Ping timeout: 265 seconds)
+2014-11-07 22:13:37		pibu7 (~kvirc@62.18.7.188) has joined #html
+2014-11-07 22:15:22		gonedrk1 (~gonedrk@d40a6497.rev.stofanet.dk) has quit (Quit: Leaving)
+2014-11-07 22:17:48		thecontrarian___ (sid31835@gateway/web/irccloud.com/x-sultwnejnlylpsbt) has quit (Ping timeout: 265 seconds)
+2014-11-07 22:18:16	dagnachew	Visage: do you have links please to great tutorials ?
+2014-11-07 22:20:41		thecontrarian___ (sid31835@gateway/web/irccloud.com/x-rlbpnzfpfefgacbc) has joined #html
+2014-11-07 22:22:58		ObjectiveMatt (~Objective@66.87.151.150) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-11-07 22:23:16	dagnachew	Visage: I am realy happy since I never tought it will be this easy to start. 
+2014-11-07 22:25:58	Kabal619	http://www.theodinproject.com/
+2014-11-07 22:28:25		mepowers (~mepowers6@unaffiliated/mepowers) has joined #html
+2014-11-07 22:30:14		pibu7 (~kvirc@62.18.7.188) has quit (Ping timeout: 256 seconds)
+2014-11-07 22:33:19		geonao (~geonao@unaffiliated/geonao) has quit (Quit: user just quit!)
+2014-11-07 22:33:22		LiENUS (~LiENUS@ip72-219-28-141.br.br.cox.net) has joined #html
+2014-11-07 22:37:29		ObjectiveMatt (~Objective@66.87.151.150) has joined #html
+2014-11-07 22:40:21		Dingo-Yabuki (~DingoYabu@2601:c:9b00:11d0:8864:c99f:16d8:1e7d) has joined #html
+2014-11-07 22:41:50		YarnFive8 (YarnFive8@unaffiliated/yarnfive8) has quit
+2014-11-07 22:44:35		Dingo_Yabuki (~DingoYabu@50.143.225.18) has quit (Ping timeout: 260 seconds)
+2014-11-07 22:45:48		cheaterman (~cheaterma@65.93.186.219) has joined #html
+2014-11-07 22:45:48		cheaterman (~cheaterma@65.93.186.219) has quit (Changing host)
+2014-11-07 22:45:48		cheaterman (~cheaterma@unaffiliated/cheaterman) has joined #html
+2014-11-07 22:52:30		codeman (~gabriel@187.57.245.40) has joined #html
+2014-11-07 22:52:45		Biohazard872014 (~biohazard@pa-67-234-11-31.dhcp.embarqhsd.net) has joined #html
+2014-11-07 22:58:45		Biohazard872014 (~biohazard@pa-67-234-11-31.dhcp.embarqhsd.net) has quit (Quit:  Want to be different? Try HydraIRC -> http://www.hydrairc.com <-)
+2014-11-07 22:59:27		Biohazard872014 (~biohazard@pa-67-234-11-31.dhcp.embarqhsd.net) has joined #html
+2014-11-07 23:00:17		ObjectiveMatt (~Objective@66.87.151.150) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-11-07 23:01:39		ObjectiveMatt (~Objective@66-87-151-150.pools.spcsdns.net) has joined #html
+2014-11-07 23:01:39		ObjectiveMatt (~Objective@66-87-151-150.pools.spcsdns.net) has quit (Client Quit)
+2014-11-07 23:03:11	--	Ulrike_Schultz is now known as Ulrike_Rayne
+2014-11-07 23:07:39		LucasTT (~lucastt@201-79-187-180.user.veloxzone.com.br) has quit (Quit: Saindo)
+2014-11-07 23:12:50		Pullphinger (~Pullxinge@73.44.212.38) has joined #html
+2014-11-07 23:13:32		mepowers (~mepowers6@unaffiliated/mepowers) has quit (Remote host closed the connection)
+2014-11-07 23:21:40		Streusel_ (~Anonymous@s01060026bb6e36e4.vn.shawcable.net) has joined #html
+2014-11-07 23:22:51		toothe (~mongolian@unaffiliated/toothe) has joined #html
+2014-11-07 23:23:00	toothe	in modern HTML, do people still use <table> or some sort of div setup
+2014-11-07 23:23:08	toothe	when presenting table'ish data?
+2014-11-07 23:24:04	Visage	toothe: We use tables for tabular data, not for layout. See the topic.
+2014-11-07 23:24:25	Visage	Divs are also not a direct replacement for anything.
+2014-11-07 23:28:03		Dingo-Yabuki (~DingoYabu@2601:c:9b00:11d0:8864:c99f:16d8:1e7d) has quit (Read error: Connection reset by peer)
+2014-11-07 23:36:21		DingoYabuki (~DingoYabu@2601:c:9b00:11d0:8864:c99f:16d8:1e7d) has joined #html
+2014-11-07 23:46:06	toothe	ahh...yes, okay
+2014-11-07 23:46:18	toothe	yes, tabular data, like a spreadsheet or list of items.
+2014-11-07 23:50:26		codeman (~gabriel@187.57.245.40) has quit (Quit: Saindo)
+2014-11-07 23:50:45	--	irc: disconnected from server
+2014-11-08 09:02:44		dagnachew (~dagnachew@bas1-montreal30-2925416228.dsl.bell.ca) has joined #html
+2014-11-08 09:02:44	--	Topic for #html is "HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste"
+2014-11-08 09:02:44	--	Topic set by lilmonkey on Tue, 08 Jul 2014 16:43:58
+2014-11-08 09:02:44	--	Channel #html: 188 nicks (0 ops, 0 voices, 188 normals)
+2014-11-08 09:02:45	--	URL for #html: www.htmlHelp.com
+2014-11-08 09:03:02	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2014-11-08 09:04:01		unlockus (~unlockus@cpe-318898.ip.primehome.com) has quit (Quit: Leaving)
+2014-11-08 09:09:54		nilurie (null@bescr.com) has joined #html
+2014-11-08 09:13:05		nilurie (null@bescr.com) has left #html
+2014-11-08 09:19:00		widoz (~widoz@host132-217-dynamic.252-95-r.retail.telecomitalia.it) has quit (Ping timeout: 265 seconds)
+2014-11-08 09:19:29		widoz (~widoz@host237-238-dynamic.9-79-r.retail.telecomitalia.it) has joined #html
+2014-11-08 09:20:54		Shilon (~Shilon@a81-84-0-229.cpe.netcabo.pt) has joined #html
+2014-11-08 09:22:00		AxdNOY_ (~Quassel@dsl-hkibrasgw5-50dced-55.dhcp.inet.fi) has quit (Remote host closed the connection)
+2014-11-08 09:34:36		dziga (sid11210@gateway/web/irccloud.com/x-qylmahmwnibjocek) has quit (Ping timeout: 272 seconds)
+2014-11-08 09:36:38		headrx1 (~headrx@h106.176.20.98.dynamic.ip.windstream.net) has joined #html
+2014-11-08 09:37:02		dziga (sid11210@gateway/web/irccloud.com/x-fjktgiroahibduzw) has joined #html
+2014-11-08 09:39:25		headrx (~headrx@h3.217.22.98.dynamic.ip.windstream.net) has quit (Ping timeout: 264 seconds)
+2014-11-08 09:40:22		gonedrk (~gonedrk@d40a6497.rev.stofanet.dk) has joined #html
+2014-11-08 09:49:30		|oop (~loop@79.sub-174-236-130.myvzw.com) has quit (Read error: Connection reset by peer)
+2014-11-08 09:51:13		mepowers (~mepowers6@unaffiliated/mepowers) has joined #html
+2014-11-08 09:53:20		|oop (~loop@79.sub-174-236-130.myvzw.com) has joined #html
+2014-11-08 09:59:49		SupaYoshi_ (~SupaYoshi@a80-101-216-193.adsl.xs4all.nl) has quit (Ping timeout: 250 seconds)

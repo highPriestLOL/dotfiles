@@ -1,0 +1,80 @@
+2014-09-21 11:44:53		dagnachew (~dagnachew@bas1-montreal30-2925416431.dsl.bell.ca) has joined #mutt
+2014-09-21 11:44:53	--	Topic for #mutt is "latest mutt: 1.5.23 (security fix) | http://WIKI.mutt.org/ | read "MuttChannel" guidelines there! channel statistics and excerpts are logged | paste to http://paste.lisp.org/new/mutt | remember pdmef (Rocco)"
+2014-09-21 11:44:53	--	Topic set by rudi_s on Mon, 17 Mar 2014 12:54:50
+2014-09-21 11:44:53	--	Channel #mutt: 144 nicks (0 ops, 0 voices, 144 normals)
+2014-09-21 11:44:53	--	PvNotice(ChanServ): Welcome to #mutt. Please, BEFORE YOU ASK, READ FIRST  MuttChannel  guidelines, see "/topic"!
+2014-09-21 11:44:53	--	URL for #mutt: http://www.mutt.org/
+2014-09-21 11:44:57	dagnachew	hi all
+2014-09-21 11:45:11	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-09-21 11:46:04	dagnachew	I have configured mutt with gmail and can read my mails but can't send email I get Invalid SMTP URL: SMTPtps://abcd@gmail.com@smtp.gmail.com
+2014-09-21 11:47:21	--	Matrixiumn is now known as Zackio
+2014-09-21 11:52:03	--	Wurst is now known as mz
+2014-09-21 11:52:22	dagnachew	cant send mail 
+2014-09-21 11:52:46	dagnachew	I can read my from my gmail account but can't send mail
+2014-09-21 11:52:50	dagnachew	I get 
+2014-09-21 11:52:58	dagnachew	invalid smtp url
+2014-09-21 11:53:51	dagnachew	my smtp_url=SMTPtps://abcd@gmail.com@smtp.gmail.com:587
+2014-09-21 11:58:46	dagnachew	anyone ?
+2014-09-21 11:58:50	dagnachew	plz help
+2014-09-21 12:03:41	gernot	dagnachew, there is at least a typo in your SMTP address.  Try smtp://abcd@gmail.com@smtp.gmail.com .
+2014-09-21 12:05:02	dagnachew	gernot: where the typo ?
+2014-09-21 12:06:59		diniwed1 (~gavron@pool-74-108-225-30.nycmny.fios.verizon.net) has quit (Ping timeout: 272 seconds)
+2014-09-21 12:08:26	dagnachew	gernot: thanks a lot I remouved the tps
+2014-09-21 12:08:31	dagnachew	gernot it worked
+2014-09-21 12:09:08	dagnachew	gernot: how is that it asks me again my password when I was alreday identified to send a message to my self ?
+2014-09-21 12:11:46	gernot	dagnachew, set smtp_pass.
+2014-09-21 12:12:42	dagnachew	thanks a lot
+2014-09-21 12:13:16	dagnachew	gernot: do you keep your muttrc encrypted ?
+2014-09-21 12:13:31	dagnachew	gernot: you have set your password in your muttrc ?
+2014-09-21 12:15:25		dollylaggle (~nick@gateway/tor-sasl/dollylaggle) has joined #mutt
+2014-09-21 12:17:38	dagnachew	how can I navigate between my folders in mutt I have left pane for folders 
+2014-09-21 12:23:15		FabTG_ (~ftg@AAnnecy-651-1-303-204.w90-27.abo.wanadoo.fr) has quit (Ping timeout: 246 seconds)
+2014-09-21 12:28:14		_Cody (~x@gateway/tor-sasl/commandercody/x-44464735) has joined #mutt
+2014-09-21 12:52:35		FJKong (~FJKong@199.180.254.151) has left #mutt ("WeeChat 0.4.2")
+2014-09-21 12:58:08		ircuser-1 (~ircuser-1@158.183-62-69.ftth.swbr.surewest.net) has quit (Quit: ircuser-1)
+2014-09-21 13:02:50		hyperair (~hyperair@ubuntu/member/hyperair) has quit (Ping timeout: 245 seconds)
+2014-09-21 13:04:53		FabTG_ (~ftg@AAnnecy-651-1-79-29.w86-209.abo.wanadoo.fr) has joined #mutt
+2014-09-21 13:19:32		hyperair (~hyperair@ubuntu/member/hyperair) has joined #mutt
+2014-09-21 13:21:17	--	irc: disconnected from server
+2014-11-02 18:54:59		dagnachew (~dagnachew@bas1-montreal30-2925416228.dsl.bell.ca) has joined #mutt
+2014-11-02 18:54:59	--	Topic for #mutt is "latest mutt: 1.5.23 (security fix) | http://WIKI.mutt.org/ | read "MuttChannel" guidelines there! channel statistics and excerpts are logged | paste to http://paste.lisp.org/new/mutt | remember pdmef (Rocco)"
+2014-11-02 18:54:59	--	Topic set by rudi_s on Mon, 17 Mar 2014 12:54:50
+2014-11-02 18:54:59	--	Channel #mutt: 140 nicks (0 ops, 0 voices, 140 normals)
+2014-11-02 18:54:59	--	PvNotice(ChanServ): Welcome to #mutt. Please, BEFORE YOU ASK, READ FIRST  MuttChannel  guidelines, see "/topic"!
+2014-11-02 18:54:59	--	URL for #mutt: http://www.mutt.org/
+2014-11-02 18:55:01	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2014-11-02 18:55:03	dagnachew	hi all
+2014-11-02 18:55:42	dagnachew	I can't read my mails I log ok in my gmail butt when I want to read I get sh: clean_mail command not found
+2014-11-02 19:18:21	dagnachew	anyone ?
+2014-11-02 19:20:25		diniwed (~gavron@pool-74-108-225-30.nycmny.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2014-11-02 19:36:55	dagnachew	please anyone 
+2014-11-02 19:42:01	dagnachew	what is going on ?
+2014-11-02 19:42:28	dagnachew	mutt navigation dont work sync does not work
+2014-11-02 19:42:37	dagnachew	please help
+2014-11-02 20:10:03		robustus|Off (~robustus@g224153158.adsl.alicedsl.de) has quit (Ping timeout: 255 seconds)
+2014-11-02 20:11:30		robustus|Off (~robustus@g224153212.adsl.alicedsl.de) has joined #mutt
+2014-11-02 20:11:47	--	robustus|Off is now known as robustus
+2014-11-02 20:23:38	dagnachew	robustus: hello
+2014-11-02 20:24:37	--	Topic for #mutt is "latest mutt: 1.5.23 (security fix) | http://WIKI.mutt.org/ | read "MuttChannel" guidelines there! channel statistics and excerpts are logged | paste to http://paste.lisp.org/new/mutt | remember pdmef (Rocco)"
+2014-11-02 20:24:37	--	Topic set by rudi_s on Mon, 17 Mar 2014 12:54:50
+2014-11-02 20:25:20	dagnachew	please help me
+2014-11-02 20:25:52	dagnachew	I get Fetching message...sh: clean_mail: command not found
+2014-11-02 20:25:52	dagnachew	Could not copy message
+2014-11-02 20:25:52	dagnachew	y
+2014-11-02 20:44:47		weiyang (~weiyang@220.248.0.154) has joined #mutt
+2014-11-02 20:45:46		ircuser-1 (~ircuser-1@158.183-62-69.ftth.swbr.surewest.net) has quit (Ping timeout: 240 seconds)
+2014-11-02 20:49:33		skered (~dereks@unaffiliated/skered) has quit (Quit: ircII EPIC5-1.1.10 -- Are we there yet?)
+2014-11-02 20:49:49		skered (~dereks@unaffiliated/skered) has joined #mutt
+2014-11-02 20:51:19		Gazpaxxo (~bizarro_1@123.Red-83-47-144.dynamicIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2014-11-02 21:05:57		weiyang (~weiyang@220.248.0.154) has quit (Ping timeout: 244 seconds)
+2014-11-02 21:16:08		sharky (~sharky@unaffiliated/sharky) has quit (Remote host closed the connection)
+2014-11-02 21:17:33		sharky (~sharky@unaffiliated/sharky) has joined #mutt
+2014-11-02 21:18:28		Lorn (~lorn@unaffiliated/lorn) has quit (Ping timeout: 255 seconds)
+2014-11-02 21:21:09		lorn (~lorn@unaffiliated/lorn) has joined #mutt
+2014-11-02 21:26:36		gf3 (~gf3@aether.gf3.ca) has quit (Ping timeout: 245 seconds)
+2014-11-02 21:27:16		hyperair (~hyperair@ubuntu/member/hyperair) has joined #mutt
+2014-11-02 21:27:32		gf3 (~gf3@aether.gf3.ca) has joined #mutt
+2014-11-02 21:36:07	dale___	anyone got an example Muttrc file for secure pop/smtp, I followed the dev-docs for 1.5.23 but doesn't work, maybe re-install
+2014-11-02 22:03:21		weiyang (~weiyang@220.248.0.154) has joined #mutt
+2014-11-02 22:15:39		diniwed (~gavron@pool-74-108-225-30.nycmny.fios.verizon.net) has joined #mutt
+2014-11-02 22:28:43	--	irc: disconnected from server

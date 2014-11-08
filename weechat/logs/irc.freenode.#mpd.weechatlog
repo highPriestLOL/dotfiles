@@ -1,0 +1,391 @@
+2014-09-01 10:47:28	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925416431.dsl.bell.ca) has joined #mpd
+2014-09-01 10:47:28	--	Topic for #mpd is "Music Player Daemon | Latest 0.18.13 | http://www.musicpd.org/ | Problems? Just ask away, and please provide the info as explained on: http://www.musicpd.org/help/"
+2014-09-01 10:47:28	--	Topic set by cirrus on Sun, 31 Aug 2014 10:27:07
+2014-09-01 10:47:28	--	Channel #mpd: 106 nicks (2 ops, 0 voices, 104 normals)
+2014-09-01 10:47:28	--	PvNotice(ChanServ): Welcome to the Music Player Daemon channel.  Before you ask for help, please read and follow http://www.musicpd.org/help/
+2014-09-01 10:47:30	--	Channel created on Sun, 26 Nov 2006 01:42:55
+2014-09-01 10:47:31	dagnachew	hi all
+2014-09-01 10:47:39	dagnachew	in ncmpcpp I get no database
+2014-09-01 10:47:44	dagnachew	I updated with u
+2014-09-01 10:50:44	Rasi	mpd.conf, mpd --version, mpd verbose log
+2014-09-01 11:08:18	dagnachew	Rasi: .mpdconf http://pastie.org/private/mergxw8xnh0pcc17zxo4kg 
+2014-09-01 11:09:10	dagnachew	Rasi: mpd --version http://pastie.org/private/3azhu6opbbc7hrsrdegyq
+2014-09-01 11:14:57	dagnachew	can anyone help me please 
+2014-09-01 11:15:08	dagnachew	no database in ncmpcpp
+2014-09-01 11:18:22	--	irc: disconnected from server
+2014-09-01 11:22:21	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925416431.dsl.bell.ca) has joined #mpd
+2014-09-01 11:22:21	--	Topic for #mpd is "Music Player Daemon | Latest 0.18.13 | http://www.musicpd.org/ | Problems? Just ask away, and please provide the info as explained on: http://www.musicpd.org/help/"
+2014-09-01 11:22:21	--	Topic set by cirrus on Sun, 31 Aug 2014 10:27:07
+2014-09-01 11:22:21	--	Channel #mpd: 106 nicks (2 ops, 0 voices, 104 normals)
+2014-09-01 11:22:21	--	PvNotice(ChanServ): Welcome to the Music Player Daemon channel.  Before you ask for help, please read and follow http://www.musicpd.org/help/
+2014-09-01 11:22:23	--	Channel created on Sun, 26 Nov 2006 01:42:55
+2014-09-01 11:41:04	Rasi	lol, that config
+2014-09-01 11:41:34	dagnachew	Rasi: the config is not good ?
+2014-09-01 11:41:34	Rasi	dagnachew: you havent defined any database file
+2014-09-01 11:41:42	Rasi	infact you havent defined ANYTHING
+2014-09-01 11:43:45	dagnachew	Rasi: like this mpd --create-db ?
+2014-09-01 11:43:52	Rasi	no
+2014-09-01 11:43:55	Rasi	that command doesnt even exist
+2014-09-01 11:44:03	Rasi	mpd will NOT create a config file for you
+2014-09-01 11:44:12	Rasi	you have to edit it yourself
+2014-09-01 11:44:20	dagnachew	Rasi: I have configured my mpd.conf
+2014-09-01 11:44:20	Rasi	or use my script
+2014-09-01 11:44:28	dagnachew	I just launch mpd ?
+2014-09-01 11:44:29	Rasi	dagnachew: your paste has nothing configured
+2014-09-01 11:44:43	dagnachew	sorry I will show you a new paste
+2014-09-01 11:45:29	dagnachew	http://pastie.org/private/wpve2t08facrrk4frb2g
+2014-09-01 11:49:21	▬▬▶	the_al (~the_al@2-233-235-39.ip220.fastwebnet.it) has joined #mpd
+2014-09-01 11:50:07	dagnachew	Rasi: I started mpd and in ncmpcpp when I do "u" it says no database
+2014-09-01 11:50:12	dagnachew	Rasi: please help
+2014-09-01 11:50:36	Rasi	wait
+2014-09-01 11:50:43	dagnachew	thanks
+2014-09-01 11:50:53	Rasi	you start mpd as user?
+2014-09-01 11:50:57	Rasi	or as root
+2014-09-01 11:51:20	Rasi	to make things easy i recommend as user for now
+2014-09-01 11:51:36	Rasi	line 67 and 74, comment those out
+2014-09-01 11:51:52	dagnachew	Rasi: as user it gave me Sep 01 11:51 : server_socket: bind to '0.0.0.0:6600' failed: Address already in use (continuing anyway, because binding to '[::]:6600' succeeded)
+2014-09-01 11:51:52	dagnachew	Sep 01 11:51 : fatal_error: Failed to set group 92: Operation not permitted
+2014-09-01 11:51:59	dagnachew	rasi as root it works
+2014-09-01 11:52:06	Rasi	as i said
+2014-09-01 11:52:09	Rasi	comment out those 2 lines
+2014-09-01 11:52:38	Rasi	then start mpd like this:
+2014-09-01 11:52:44	Rasi	mpd --verbose --stdout --no-daemon
+2014-09-01 11:52:48	Rasi	to see what it actually does
+2014-09-01 11:56:36	dagnachew	~ ❯❯❯ mpd --stdout --verbose                                                                 ⏎
+2014-09-01 11:56:36	dagnachew	config_file: loading file /home/dagnachew/.config/mpd/mpd.conf
+2014-09-01 11:56:36	dagnachew	fatal_error: Failed to set group 92: Operation not permitted
+2014-09-01 11:56:51	Rasi	i said comment out line 74
+2014-09-01 11:56:57	dagnachew	Rasi: I added mpd to audio group
+2014-09-01 11:57:05	Rasi	still
+2014-09-01 11:57:07	Rasi	do it
+2014-09-01 11:57:10	dagnachew	mpd is run as user dagnachew
+2014-09-01 11:57:13	Rasi	also you do NOT start as user mpd
+2014-09-01 11:57:23	Rasi	so it doesnt matter in what group user mpd is
+2014-09-01 11:57:36	Rasi	just comment out those 2 lines like i told y ou
+2014-09-01 11:57:47	dagnachew	Rasi: I did
+2014-09-01 11:57:50	Rasi	no you didnt
+2014-09-01 11:57:56	Rasi	that error clearly said it wants to change group
+2014-09-01 11:58:13	Rasi	/home/dagnachew/.config/mpd/mpd.conf this config file is relevant
+2014-09-01 11:58:31	Rasi	you dont want to set a user or group
+2014-09-01 11:59:12	dagnachew	Rasi: you want me to comment user and group right
+2014-09-01 11:59:19	Rasi	yes
+2014-09-01 12:00:41	dagnachew	Rasi: almost done 
+2014-09-01 12:00:52	dagnachew	Rasi: by the way thanks for all the time
+2014-09-01 12:01:13	dagnachew	Rasi: know I get when I started mpd as normal user : database corrupted
+2014-09-01 12:01:27	Rasi	dont worry, it should restart scanning now
+2014-09-01 12:01:30	Rasi	which you should see
+2014-09-01 12:05:12	dagnachew	Rasi: it works know
+2014-09-01 12:06:23	◀▬▬	Chais (~Chais@chello062178229110.15.15.vie.surfer.at) has quit (Read error: Connection reset by peer)
+2014-09-01 12:15:27	▬▬▶	Chais (~Chais@chello062178229110.15.15.vie.surfer.at) has joined #mpd
+2014-09-01 12:42:53	rhoering	Rasi: Thamks for all the help you give us. best regards, Ron
+2014-09-01 13:00:14	◀▬▬	mavhc (~mavhc@cpc65310-basf8-2-0-cust204.12-3.cable.virginm.net) has quit (Excess Flood)
+2014-09-01 13:01:34	▬▬▶	mavhc (~mavhc@cpc65310-basf8-2-0-cust204.12-3.cable.virginm.net) has joined #mpd
+2014-09-01 13:05:11	◀▬▬	mavhc (~mavhc@cpc65310-basf8-2-0-cust204.12-3.cable.virginm.net) has quit (Excess Flood)
+2014-09-01 13:08:04	▬▬▶	mavhc (~mavhc@cpc65310-basf8-2-0-cust204.12-3.cable.virginm.net) has joined #mpd
+2014-09-01 13:24:11	◀▬▬	the_al (~the_al@2-233-235-39.ip220.fastwebnet.it) has quit (Remote host closed the connection)
+2014-09-01 13:28:27	▬▬▶	krabador (~krabador_@host228-176-dynamic.55-79-r.retail.telecomitalia.it) has joined #mpd
+2014-09-01 13:28:28	◀▬▬	krabador (~krabador_@host228-176-dynamic.55-79-r.retail.telecomitalia.it) has quit (Changing host)
+2014-09-01 13:28:28	▬▬▶	krabador (~krabador_@unaffiliated/krabador) has joined #mpd
+2014-09-01 13:40:27	◀▬▬	sahib (~sahib@p5B1245DF.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2014-09-01 14:03:21	◀▬▬	pale3 (~marko@78-3-121-9.adsl.net.t-com.hr) has quit (Ping timeout: 255 seconds)
+2014-09-01 14:20:16	▬▬▶	pale3 (~marko@78-3-121-9.adsl.net.t-com.hr) has joined #mpd
+2014-09-01 14:24:24	◀▬▬	Rasi (~carnager@archlinux/support/rasi) has quit (Quit: WeeChat 1.0-rc2)
+2014-09-01 14:24:36	▬▬▶	Rasi (~carnager@archlinux/support/rasi) has joined #mpd
+2014-09-01 14:48:49	◀▬▬	pale3 (~marko@78-3-121-9.adsl.net.t-com.hr) has quit (Ping timeout: 260 seconds)
+2014-09-01 15:10:25	▬▬▶	pale3 (~marko@78-3-121-9.adsl.net.t-com.hr) has joined #mpd
+2014-09-01 15:11:31	▬▬▶	the_al (~the_al@2-233-235-39.ip220.fastwebnet.it) has joined #mpd
+2014-09-01 15:12:38	◀▬▬	aandre (~aandre@ACayenne-651-1-119-100.w90-31.abo.wanadoo.fr) has quit (Ping timeout: 240 seconds)
+2014-09-01 15:25:33	--	jat_ is now known as jat
+2014-09-01 15:25:38	◀▬▬	jat (~jat@pegasus.spatialrift.net) has quit (Quit: Reconnecting)
+2014-09-01 15:25:44	▬▬▶	jat (~jat@pegasus.spatialrift.net) has joined #mpd
+2014-09-01 15:26:13	◀▬▬	pale3 (~marko@78-3-121-9.adsl.net.t-com.hr) has quit (Ping timeout: 245 seconds)
+2014-09-01 15:28:33	▬▬▶	aandre (~aandre@ACayenne-651-1-158-44.w80-12.abo.wanadoo.fr) has joined #mpd
+2014-09-01 15:43:54	◀▬▬	crawlman (~crawlman@41-135-206-146.dsl.mweb.co.za) has quit (Quit: Leaving)
+2014-09-01 15:55:39	▬▬▶	gimbel (~seb@p4FC85C35.dip0.t-ipconnect.de) has joined #mpd
+2014-09-01 15:56:08	--	irc: disconnected from server
+2014-09-07 18:50:30	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925416431.dsl.bell.ca) has joined #mpd
+2014-09-07 18:50:31	--	Topic for #mpd is "Music Player Daemon | Latest 0.18.13 | http://www.musicpd.org/ | Problems? Just ask away, and please provide the info as explained on: http://www.musicpd.org/help/"
+2014-09-07 18:50:31	--	Topic set by cirrus on Sun, 31 Aug 2014 10:27:07
+2014-09-07 18:50:31	--	Channel #mpd: 105 nicks (1 op, 0 voices, 104 normals)
+2014-09-07 18:50:31	--	PvNotice(ChanServ): Welcome to the Music Player Daemon channel.  Before you ask for help, please read and follow http://www.musicpd.org/help/
+2014-09-07 18:50:32	--	Channel created on Sun, 26 Nov 2006 01:42:55
+2014-09-07 18:50:33	dagnachew	hi all
+2014-09-07 18:51:51	dagnachew	media_library_album_format = "{(%y) }%b" ncmpcpp tells me unkown format
+2014-09-07 19:02:00	Rasi	uhm... isnt that the default format anyway? :)
+2014-09-07 19:04:41	◀▬▬	the_al (~the_al@2-233-235-39.ip220.fastwebnet.it) has quit (Ping timeout: 246 seconds)
+2014-09-07 19:05:08	Rasi	also i cant test
+2014-09-07 19:05:10	Rasi	Unknown option: media_library_album_format
+2014-09-07 19:05:15	Rasi	that option got removed, it seems
+2014-09-07 19:05:47	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 260 seconds)
+2014-09-07 19:10:12	▬▬▶	caveat- (hoax@2a01:4f8:191:9111:30::10) has joined #mpd
+2014-09-07 19:13:51	dagnachew	does any of you has a nice looking config ? or a link to the most awesome ncmpcpp config ?
+2014-09-07 19:14:07	Rasi	dotshare.it
+2014-09-07 19:14:10	Rasi	has some
+2014-09-07 19:14:14	dagnachew	I had one but it did not work anymore with the latest ncmpcpp
+2014-09-07 19:14:27	dagnachew	Rasi: I took one from dotshare and i got the complain
+2014-09-07 19:14:41	Rasi	then.. remove the line?
+2014-09-07 19:14:56	Rasi	https://fb.53280.de/fWk/
+2014-09-07 19:14:59	Rasi	this is my config
+2014-09-07 19:15:01	Rasi	i like it
+2014-09-07 19:15:03	Rasi	obviously
+2014-09-07 19:15:05	Rasi	:P
+2014-09-07 19:17:29	◀▬▬	caveat- (hoax@2a01:4f8:191:9111:30::10) has quit (Ping timeout: 272 seconds)
+2014-09-07 19:17:56	dagnachew	Rasi: I have plenty uknown this uknown  that 
+2014-09-07 19:18:05	dagnachew	Rasi: can I see your screenshot ?
+2014-09-07 19:18:14	Rasi	works fine here.. using latest version (0.6)
+2014-09-07 19:19:02	▬▬▶	rafi (~cyx@unaffiliated/rafi/x-9332275) has joined #mpd
+2014-09-07 19:19:19	Rasi	https://fb.53280.de/KELP/
+2014-09-07 19:19:28	dagnachew	Rasi: works fine here too :0)
+2014-09-07 19:22:01	dagnachew	Rasi: why is that it does not see some of my music 
+2014-09-07 19:22:02	dagnachew	?
+2014-09-07 19:23:01	dagnachew	does the music need to be formated weel ?
+2014-09-07 19:23:03	dagnachew	well
+2014-09-07 19:25:10	dagnachew	Rasi: are you there ?
+2014-09-07 19:25:26	dagnachew	ncmpcpp does not see all my songs even after doing u for update
+2014-09-07 19:26:28	dagnachew	Rasi: never mind I saw them in media library
+2014-09-07 19:26:40	▬▬▶	caveat- (hoax@2a01:4f8:191:9111:30::10) has joined #mpd
+2014-09-07 19:29:06	dagnachew	guys is there a way to move songs up on the play list ?
+2014-09-07 19:52:29	--	irc: disconnected from server
+2014-09-10 11:11:23	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925416431.dsl.bell.ca) has joined #mpd
+2014-09-10 11:11:23	--	Topic for #mpd is "Music Player Daemon | Latest 0.18.13 | http://www.musicpd.org/ | Problems? Just ask away, and please provide the info as explained on: http://www.musicpd.org/help/"
+2014-09-10 11:11:23	--	Topic set by cirrus on Sun, 31 Aug 2014 10:27:07
+2014-09-10 11:11:23	--	Channel #mpd: 112 nicks (1 op, 0 voices, 111 normals)
+2014-09-10 11:11:23	--	PvNotice(ChanServ): Welcome to the Music Player Daemon channel.  Before you ask for help, please read and follow http://www.musicpd.org/help/
+2014-09-10 11:11:27	dagnachew	hi all
+2014-09-10 11:11:39	--	Channel created on Sun, 26 Nov 2006 01:42:55
+2014-09-10 11:11:47	dagnachew	how can I mouve a song in a playlist up and down in ncmpcpp ?
+2014-09-10 11:12:23	tidux	rm -rf /usr
+2014-09-10 11:12:26	◀▬▬	tidux (~jon@24.1.246.217) has left #mpd ("EOL")
+2014-09-10 11:13:34	Rasi	dagnachew m n
+2014-09-10 11:13:42	Rasi	see help screen
+2014-09-10 11:13:48	Rasi	(f1)
+2014-09-10 11:15:00	dagnachew	Rasi: thanks a lot that was the only thing missing for me to ditch the great deadbeef music player and go 100 % ncmpcpp
+2014-09-10 11:15:49	Rasi	you can also move a selection of songs
+2014-09-10 11:17:44	dagnachew	Rasi: I added a song to playlist updated playlist but can't do it anymore
+2014-09-10 11:18:12	dagnachew	Rasi: am in playlist editor and I see a song added twice
+2014-09-10 11:18:21	dagnachew	how can I remove one of them ?
+2014-09-10 11:22:21	dagnachew	how can I delete a song in playlist editor
+2014-09-10 11:22:22	dagnachew	?
+2014-09-10 11:22:58	Rasi	del?
+2014-09-10 11:23:25	dagnachew	thanks a lot
+2014-09-10 11:24:50	Rasi	again: its all documented.. hit F1
+2014-09-10 11:25:48	dagnachew	thanks
+2014-09-10 11:27:31	k15h	Hi all - Just got MPD working over wifi+wan : Just wondering is there any precautions i should be taking before exposing this to WAN? i have the streaming and MPD port forwarded and a password ... need i do anymore?
+2014-09-10 11:28:55	k15h	Also.. ON another note - Is anyone else having Issues with ncmpcpp ? Just installed and the password input seems to be 'wrong' .. it doesnt work .. MPDroid works so its not the server itself
+2014-09-10 11:30:52	dagnachew	Rasi: I keep adding a song it does not get added to playlist just in plalist editro
+2014-09-10 11:34:33	dagnachew	Rasi: nevermind 
+2014-09-10 11:34:41	dagnachew	got it I had to relaod the playlist
+2014-09-10 11:39:24	▬▬▶	apollo (~apollo@S010678ca39faafc6.ss.shawcable.net) has joined #mpd
+2014-09-10 11:44:57	◀▬▬	apollo (~apollo@S010678ca39faafc6.ss.shawcable.net) has quit (Changing host)
+2014-09-10 11:44:58	▬▬▶	apollo (~apollo@unaffiliated/pkuk) has joined #mpd
+2014-09-10 11:45:34	dagnachew	k15h: your going to stream to your self ?
+2014-09-10 11:46:00	◀▬▬	apollo (~apollo@unaffiliated/pkuk) has left #mpd
+2014-09-10 11:48:34	k15h	dagnachew:  I have an RPI with MPD + external HDD with music -> So whilst away from home i can play through my phone/laptop
+2014-09-10 11:48:52	k15h	dagnachew: hence i hav the output as HTTPD stream not Alsa or similar local output
+2014-09-10 11:49:08	k15h	dagnachew: ther may hve been a better way around this - please tell me if so
+2014-09-10 11:52:04	▬▬▶	Lorem-Ipsum (~Lorem-Ips@unaffiliated/lorem-ipsum) has joined #mpd
+2014-09-10 11:52:12	dagnachew	k15h am pretty knew to mpd 
+2014-09-10 11:52:17	Rasi	k15h: if its local network only: pulseaudio
+2014-09-10 11:53:00	dagnachew	k15h: in canada streaming is more or less expensive I have 3 GB/month plan for my cell phone 
+2014-09-10 11:53:27	◀▬▬	Lorem-Ipsum (~Lorem-Ips@unaffiliated/lorem-ipsum) has left #mpd ("WeeChat 1.0")
+2014-09-10 11:55:19	k15h	Rasi: For when im away from home ... But does that mean i could also SSH -> Then use Pulse?
+2014-09-10 11:55:39	k15h	Rasi: What would be the benefit of this (SSH -> Pulse) over httpd
+2014-09-10 11:55:44	k15h	dagnachew: that sucks!!
+2014-09-10 11:56:00	k15h	dagnachew: really?! how much does that cost? ... in the UK i have unlimited data/calls/texts for 15GBP/month
+2014-09-10 11:56:21	k15h	>4gb gets capped at like 500kbps but so what thats fine
+2014-09-10 11:56:35	▬▬▶	DHermit (~Thunderbi@2a02:8071:2182:b400:21c:c0ff:fe8b:a7d) has joined #mpd
+2014-09-10 11:58:24	dagnachew	k15h: my home internet is more or less like yours I have 125GB/month 25 mbt/s for 70$ US
+2014-09-10 11:59:04	dagnachew	k15h: but for the cell phone I only have 3 GB/month if I listen music from internet i will pass the 3gb soon
+2014-09-10 11:59:31	dagnachew	k15h: why not install the music on your cellphone not all the music but your favourites songs
+2014-09-10 12:01:26	Rasi	k15h: as i said, pulse is only an option for home
+2014-09-10 12:01:55	Rasi	advantage is that you dont need another player to play back the stream
+2014-09-10 12:03:16	◀▬▬	DHermit (~Thunderbi@2a02:8071:2182:b400:21c:c0ff:fe8b:a7d) has quit (Quit: DHermit)
+2014-09-10 12:03:28	▬▬▶	DHermit (~Thunderbi@2a02:8071:2182:b400:21c:c0ff:fe8b:a7d) has joined #mpd
+2014-09-10 12:03:57	◀▬▬	DHermit (~Thunderbi@2a02:8071:2182:b400:21c:c0ff:fe8b:a7d) has quit (Client Quit)
+2014-09-10 12:04:08	▬▬▶	DHermit (~Thunderbi@2a02:8071:2182:b400:21c:c0ff:fe8b:a7d) has joined #mpd
+2014-09-10 12:06:05	k15h	Rasi: ah okay great thanks
+2014-09-10 12:06:17	k15h	dagnachew: still limited? i dont understand
+2014-09-10 12:06:23	k15h	dagnachew: i thought everyone could get unlimited internet
+2014-09-10 12:06:25	k15h	dagnac
+2014-09-10 12:07:01	k15h	dagnachew: thats mental! so really you cant just leave your computer on torrenting or anything like that
+2014-09-10 12:35:27	◀▬▬	DHermit (~Thunderbi@2a02:8071:2182:b400:21c:c0ff:fe8b:a7d) has quit (Remote host closed the connection)
+2014-09-10 12:36:43	▬▬▶	the_al (~the_al@2-233-235-39.ip220.fastwebnet.it) has joined #mpd
+2014-09-10 12:38:51	DagobertDuck	latest pulse work fine. use it daily
+2014-09-10 12:38:53	DagobertDuck	over network
+2014-09-10 12:57:14	◀▬▬	crawlman (~crawlman@41-135-206-146.dsl.mweb.co.za) has quit (Quit: Leaving)
+2014-09-10 13:20:07	▬▬▶	apollo (~apollo@unaffiliated/pkuk) has joined #mpd
+2014-09-10 13:20:34	apollo	is there a built-in feature to watch a directory for new files and add them to the playlist?
+2014-09-10 13:20:43	apollo	I suppose I could script it...
+2014-09-10 13:31:41	◀▬▬	pale3 (~marko@78-3-124-28.adsl.net.t-com.hr) has quit (Quit: Lost terminal)
+2014-09-10 13:36:08	Rasi	i suppose you should
+2014-09-10 13:36:10	Rasi	"{
+2014-09-10 13:36:12	Rasi	:P
+2014-09-10 13:45:31	▬▬▶	Human_G33k (~Human_G33@139.103.181.178) has joined #mpd
+2014-09-10 13:50:55	◀▬▬	smlb (~Smlb@unaffiliated/smlb) has quit (Ping timeout: 240 seconds)
+2014-09-10 14:02:20	▬▬▶	mmu_man (~revol@sdi.iut-valence.fr) has joined #mpd
+2014-09-10 14:09:07	▬▬▶	MRWITEK (~cat@213.21.36.144) has joined #mpd
+2014-09-10 14:13:50	Jupelius	How difficult it is to report a bug? Does it require registering and all that shit?
+2014-09-10 14:14:02	Rasi	yes
+2014-09-10 14:14:12	Jupelius	Shit
+2014-09-10 14:14:29	Rasi	yea, registering is really complicated...
+2014-09-10 14:14:33	Rasi	</irony>
+2014-09-10 14:14:51	Jupelius	Never underestimate my laziness
+2014-09-10 14:14:54	DagobertDuck	We made registration manditory after I spend hours cleaning up several 10thousand of spam reports
+2014-09-10 14:15:20	DagobertDuck	file a bug report and we refund you the full amount you payed us for MPD
+2014-09-10 14:15:29	Jupelius	But have anyone else had this playlist sorting issue with ncmpcpp 0.6_beta2?
+2014-09-10 14:15:50	Jupelius	DagobertDuck: what about if the bug is about ncmpcpp, do I still get the refund?
+2014-09-10 14:16:00	DagobertDuck	no, sorry..
+2014-09-10 14:16:07	DagobertDuck	you have to put a dollar in the swear jar
+2014-09-10 14:17:13	Jupelius	Can I pay in coins? I have only euros
+2014-09-10 14:17:24	DagobertDuck	euros are fine.
+2014-09-10 14:17:29	Jupelius	Wait a minute, that was a lie. I do have one dollar bill somewhere
+2014-09-10 14:18:23	DagobertDuck	cirrus is german, so you can probably pay him in beers too
+2014-09-10 14:18:46	Jupelius	Well, one dollar is about... 1/5 beers
+2014-09-10 14:18:56	DagobertDuck	depends on where you buy it
+2014-09-10 14:19:05	◀▬▬	k15h (~kish@unaffiliated/k15h) has quit (Ping timeout: 260 seconds)
+2014-09-10 14:21:33	Jupelius	I just came home from a bar and I spent ~14 euros on two beers
+2014-09-10 14:21:47	DagobertDuck	*cough* idiot *cough*
+2014-09-10 14:21:51	DagobertDuck	joking
+2014-09-10 14:22:17	Jupelius	I should learn (more) german and move there
+2014-09-10 14:22:28	Jupelius	There prices are still reasonable
+2014-09-10 14:22:38	DagobertDuck	for food, yes
+2014-09-10 14:22:47	DagobertDuck	I love going to germany and stuffing myself
+2014-09-10 14:22:55	DagobertDuck	praha is also good
+2014-09-10 14:23:27	Jupelius	Yeah, I must visit my friend who's in Praha for the next 6 months
+2014-09-10 14:23:51	Jupelius	Where do I report the bug? in bugs.musicpd.org?
+2014-09-10 14:24:12	Jupelius	Ah, yes. There's this project selecting thingie in the corner
+2014-09-10 14:24:16	DagobertDuck	yes
+2014-09-10 14:24:31	DagobertDuck	thx for reporting the bug
+2014-09-10 14:24:36	--	DagobertDuck is now known as DaveDavenport
+2014-09-10 14:24:41	◀▬▬	DaveDavenport (~qball@ipd50a4125.speed.planet.nl) has quit (Changing host)
+2014-09-10 14:24:41	▬▬▶	DaveDavenport (~qball@unaffiliated/qball) has joined #mpd
+2014-09-10 14:24:41	--	Mode #mpd [+o DaveDavenport] by ChanServ
+2014-09-10 14:24:43	Jupelius	Don't thank me yet.
+2014-09-10 14:24:45	--	Mode #mpd [-o DaveDavenport] by DaveDavenport
+2014-09-10 14:31:10	▬▬▶	FabTG_ (~ftg@AAnnecy-651-1-159-28.w90-27.abo.wanadoo.fr) has joined #mpd
+2014-09-10 14:45:35	▬▬▶	MRWITEK1 (~cat@213.21.38.159) has joined #mpd
+2014-09-10 14:46:29	Jupelius	Arrrggh
+2014-09-10 14:46:48	Jupelius	I was almost finished with the report and I decided to erase a word with C-w
+2014-09-10 14:46:48	Jupelius	Classic
+2014-09-10 14:47:23	▬▬▶	ColKurtz (~ColKurtz@69.31.123.126) has joined #mpd
+2014-09-10 14:47:34	◀▬▬	MRWITEK (~cat@213.21.36.144) has quit (Ping timeout: 260 seconds)
+2014-09-10 14:47:50	Jupelius	New Mantis feature: Ask if user wants to close the window if you've written anything in the bug report fields
+2014-09-10 14:49:33	DaveDavenport	my browser normally does that
+2014-09-10 14:50:04	Jupelius	What browser do you use?
+2014-09-10 14:50:19	Jupelius	I wonder if the option is available in Firefox but I just don't have it enabled
+2014-09-10 14:51:08	--	irc: disconnected from server
+2014-09-20 14:55:55	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925416431.dsl.bell.ca) has joined #mpd
+2014-09-20 14:55:55	--	Topic for #mpd is "Music Player Daemon | Latest 0.18.14 | http://www.musicpd.org/ | Problems? Just ask away, and please provide the info as explained on: http://www.musicpd.org/help/"
+2014-09-20 14:55:55	--	Topic set by cirrus on Thu, 11 Sep 2014 13:34:35
+2014-09-20 14:55:55	--	Channel #mpd: 110 nicks (2 ops, 0 voices, 108 normals)
+2014-09-20 14:55:55	--	PvNotice(ChanServ): Welcome to the Music Player Daemon channel.  Before you ask for help, please read and follow http://www.musicpd.org/help/
+2014-09-20 14:55:57	dagnachew	hi all
+2014-09-20 14:56:01	--	Channel created on Sun, 26 Nov 2006 01:42:55
+2014-09-20 14:56:16	dagnachew	how can I remove a song from a playlist I tried d it did not work 
+2014-09-20 14:56:33	Rasi	that depends on your client...
+2014-09-20 14:56:56	dagnachew	Rasi: ncmpcpp
+2014-09-20 14:57:02	Rasi	then its del
+2014-09-20 14:57:29	Rasi	why does ncmpcpp have the help screen if noone uses it
+2014-09-20 14:57:34	Rasi	all hotkeys are listed there
+2014-09-20 14:57:37	Rasi	for each screen
+2014-09-20 15:02:48	dagnachew	how are you Rasi 
+2014-09-20 15:03:00	Rasi	fine, thanks :P
+2014-09-20 15:03:19	dagnachew	great
+2014-09-20 15:04:35	▬▬▶	ne555_ (~ne555@181.88.213.36) has joined #mpd
+2014-09-20 15:10:25	◀▬▬	ne555 (~ne555@host82.190-138-128.telecom.net.ar) has quit (Ping timeout: 260 seconds)
+2014-09-20 15:16:58	▬▬▶	rellla (~rellla@lvps176-28-13-64.dedicated.hosteurope.de) has joined #mpd
+2014-09-20 15:19:19	--	irc: disconnected from server
+2014-10-02 17:36:57		dagnachew (~dagnachew@bas1-montreal30-2925417210.dsl.bell.ca) has joined #mpd
+2014-10-02 17:36:57	--	Topic for #mpd is "Music Player Daemon | Latest 0.18.16 | http://www.musicpd.org/ | Problems? Just ask away, and please provide the info as explained on: http://www.musicpd.org/help/"
+2014-10-02 17:36:57	--	Topic set by cirrus on Fri, 26 Sep 2014 05:02:28
+2014-10-02 17:36:57	--	Channel #mpd: 113 nicks (1 op, 0 voices, 112 normals)
+2014-10-02 17:36:57	--	PvNotice(ChanServ): Welcome to the Music Player Daemon channel.  Before you ask for help, please read and follow http://www.musicpd.org/help/
+2014-10-02 17:36:59	dagnachew	hi all
+2014-10-02 17:36:59	--	Channel created on Sun, 26 Nov 2006 01:42:55
+2014-10-02 17:37:19	dagnachew	is it normal that mpd takes few seconds more to start ? same for ncmpcpp
+2014-10-02 17:37:30	Rasi	no
+2014-10-02 17:37:49	dagnachew	Rasi: since 3 days it starts slow both 
+2014-10-02 17:37:49	Rasi	what does it say when starting verbose
+2014-10-02 17:40:10	dagnachew	Rasi: I will paste 
+2014-10-02 17:41:26	dagnachew	http://pastie.org/9615248
+2014-10-02 17:42:07	Rasi	can you time that? :)
+2014-10-02 17:42:45	dagnachew	Rasi: 10 secs
+2014-10-02 17:42:48	dagnachew	more or less
+2014-10-02 17:42:50	Rasi	wtf
+2014-10-02 17:42:53	Rasi	config?
+2014-10-02 17:43:08	dagnachew	?
+2014-10-02 17:43:12	dagnachew	time what
+2014-10-02 17:43:26	Rasi	what? you already answered that question
+2014-10-02 17:43:30	Rasi	show your config
+2014-10-02 17:47:57	dagnachew	Rasi: http://ix.io/eAW
+2014-10-02 17:48:18	Rasi	add this:
+2014-10-02 17:48:25	Rasi	bind_to_address "127.0.0.1"
+2014-10-02 17:48:30	Rasi	and check if this speeds things up
+2014-10-02 17:48:41	dagnachew	Rasi: the first is /etc/mpd.conf this one is ~/.mpdconf http://ix.io/eAX
+2014-10-02 17:48:54	Rasi	...
+2014-10-02 17:48:56	Rasi	ok
+2014-10-02 17:49:00	Rasi	the 2nd one is actually used
+2014-10-02 17:49:06	Rasi	according to your verbose log
+2014-10-02 17:49:19	dagnachew	so I add in the second one 
+2014-10-02 17:49:26		youx (~youx@c2fa8f31.fsp.oleane.fr) has quit (Ping timeout: 272 seconds)
+2014-10-02 17:49:29	Rasi	and that already has that line
+2014-10-02 17:49:32	Rasi	hmmm odd
+2014-10-02 17:49:45	Rasi	uhm wait
+2014-10-02 17:49:50	Rasi	something is odd
+2014-10-02 17:50:19	Rasi	your ~/.mpdconf cant work
+2014-10-02 17:50:20	Rasi	config_file: loading file /home/dagnachew/.config/mpd/mpd.conf
+2014-10-02 17:50:22	Rasi	this one is used
+2014-10-02 17:50:30	Rasi	please delete ~/.mpdconf
+2014-10-02 17:50:42	Rasi	its a) not used and b) wont work
+2014-10-02 17:50:58	dagnachew	q!
+2014-10-02 17:51:00		youx (~youx@c2fa8f31.fsp.oleane.fr) has joined #mpd
+2014-10-02 17:51:33	dagnachew	Rasi: know it takes longer too
+2014-10-02 17:51:47	Rasi	show that config...
+2014-10-02 17:52:02	Rasi	you havent shown your actual config yet
+2014-10-02 17:52:13	Rasi	/home/dagnachew/.config/mpd/mpd.conf this one was used
+2014-10-02 17:53:01	dagnachew	http://ix.io/eAY
+2014-10-02 17:53:16	Rasi	bind_to_address"localhost"
+2014-10-02 17:53:20	Rasi	change this to 127.0.0.1
+2014-10-02 17:53:27	Rasi	and try again
+2014-10-02 17:54:01	dagnachew	mpd started instantly
+2014-10-02 17:54:09	dagnachew	ncmpcpp took longer
+2014-10-02 17:54:14	Rasi	of course
+2014-10-02 17:54:19	Rasi	make ncmpcpp connect to 127.0.0.1 too
+2014-10-02 17:54:23	dagnachew	becouse I have more songs 
+2014-10-02 17:54:24	dagnachew	?
+2014-10-02 17:54:29	dagnachew	oic
+2014-10-02 17:54:42	Rasi	you seem to have some misconfigured network
+2014-10-02 17:54:51	Rasi	but thats outside of this channels scope
+2014-10-02 17:54:53	Rasi	:)
+2014-10-02 17:55:36	dagnachew	Rasi: misconfigured network related to mpd only or all
+2014-10-02 17:55:42	dagnachew	su
+2014-10-02 17:55:55	Rasi	no, not mpd related
+2014-10-02 17:56:11	Rasi	your localhost needs a while to resolve, that must have a reason
+2014-10-02 17:56:58	dagnachew	Rasi: You want to see my /etc/hosts ?
+2014-10-02 17:57:28	Rasi	nah, i am not good with network stuff
+2014-10-02 17:57:37	Rasi	:)
+2014-10-02 18:00:24	dagnachew	Rasi: in ncmpcpp I changed mpd_host = 127.
+2014-10-02 18:00:36	dagnachew	127.0.0.1 and still few more seconds
+2014-10-02 18:01:50	dagnachew	Rasi: nevermind
+2014-10-02 18:02:12	dagnachew	Rasi: I placed the config under .ncmpcpp/ and know ncmpcpp starts as fast as I can type
+2014-10-02 18:02:23	dagnachew	Rasi: thanks a lot for your help
+2014-10-02 18:06:12		ranperry (~Stereolog@206.191.119.10) has quit (Quit: Leaving)
+2014-10-02 18:43:04		ColKurtz (~ColKurtz@69.31.123.126) has quit (Ping timeout: 258 seconds)
+2014-10-20 20:14:20		dagnachew (~dagnachew@bas1-montreal30-2925416877.dsl.bell.ca) has joined #mpd
+2014-10-20 20:14:21	--	Topic for #mpd is "Music Player Daemon | Latest 0.19.1 | http://www.musicpd.org/ | Problems? Just ask away, and please provide the info as explained on: http://www.musicpd.org/help/"
+2014-10-20 20:14:21	--	Topic set by cirrus on Sat, 18 Oct 2014 19:11:49
+2014-10-20 20:14:21	--	Channel #mpd: 111 nicks (1 op, 0 voices, 110 normals)
+2014-10-20 20:14:21	--	PvNotice(ChanServ): Welcome to the Music Player Daemon channel.  Before you ask for help, please read and follow http://www.musicpd.org/help/
+2014-10-20 20:14:22	--	Channel created on Sun, 26 Nov 2006 01:42:55
+2014-10-20 20:14:22	dagnachew	hi all
+2014-10-20 20:15:06	dagnachew	when I want to move up a song in ncmpcpp it does not work anymore. I have to add a song twice to mouve it up 
+2014-10-20 20:15:27	dagnachew	in the play list
+2014-10-20 20:58:14		cornerma1 (~cornerman@xdsl-78-34-101-58.netcologne.de) has joined #mpd
+2014-10-20 21:01:24		cornerman (~cornerman@xdsl-78-34-237-79.netcologne.de) has quit (Ping timeout: 245 seconds)
+2014-10-20 21:01:24	--	cornerma1 is now known as cornerman
+2014-10-20 21:24:18		MistahKurtz (~ColKurtz@69.31.123.126) has quit (Ping timeout: 258 seconds)
+2014-10-20 21:26:25		MistahKurtz (~ColKurtz@69.31.123.126) has joined #mpd
+2014-10-20 22:32:23		pale3 (~marko@149.71.80.204) has quit (Remote host closed the connection)
+2014-10-20 22:37:23		christoph_debian (~christoph@host-188-174-221-156.customer.m-online.net) has quit (Ping timeout: 244 seconds)
+2014-10-20 22:50:10		MistahKurtz (~ColKurtz@69.31.123.126) has quit (Ping timeout: 245 seconds)
+2014-10-20 22:51:47		christoph_debian (~christoph@ppp-188-174-155-152.dynamic.mnet-online.de) has joined #mpd

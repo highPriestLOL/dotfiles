@@ -1,0 +1,26 @@
+2014-09-15 21:23:04	▬▬▶	dagnachew (~dagnachew@bas1-montreal30-2925416431.dsl.bell.ca) has joined #firefox
+2014-09-15 21:23:04	--	Topic for #firefox is "Get Firefox from http://www.firefox.com/ | Go to irc.mozilla.org for #thunderbird , Firefox OS #b2g and #seamonkey | http://support.mozilla.org/kb/troubleshoot-and-diagnose-firefox-problems"
+2014-09-15 21:23:04	--	Topic set by kbrosnan (~kbrosnan@firefox/community/qa/kbrosnan) on Mon, 06 May 2013 13:51:58
+2014-09-15 21:23:04	--	Channel #firefox: 262 nicks (4 ops, 0 voices, 258 normals)
+2014-09-15 21:23:07	--	Channel created on Sun, 26 Nov 2006 01:42:46
+2014-09-15 21:23:08	dagnachew	hi all
+2014-09-15 21:23:19	dagnachew	how can I have smooth fonts ?
+2014-09-15 21:25:34	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined #firefox
+2014-09-27 07:42:57		dagnachew (~dagnachew@bas1-montreal30-2925417210.dsl.bell.ca) has joined #firefox
+2014-09-27 07:42:57	--	Topic for #firefox is "Get Firefox from http://www.firefox.com/ | Go to irc.mozilla.org for #thunderbird , Firefox OS #b2g and #seamonkey | http://support.mozilla.org/kb/troubleshoot-and-diagnose-firefox-problems"
+2014-09-27 07:42:57	--	Topic set by kbrosnan (~kbrosnan@firefox/community/qa/kbrosnan) on Mon, 06 May 2013 13:51:58
+2014-09-27 07:42:58	--	Channel #firefox: 261 nicks (5 ops, 0 voices, 256 normals)
+2014-09-27 07:43:00	dagnachew	hi all
+2014-09-27 07:43:08	--	Channel created on Sun, 26 Nov 2006 01:42:46
+2014-09-27 07:43:09	dagnachew	I can't play yahoo videos 
+2014-09-27 07:46:46		Daekdroom (~Daekdroom@191.33.153.4) has joined #firefox
+2014-09-27 07:46:46		Daekdroom (~Daekdroom@191.33.153.4) has quit (Changing host)
+2014-09-27 07:46:46		Daekdroom (~Daekdroom@unaffiliated/daekdroom) has joined #firefox
+2014-09-27 07:48:37		irc-5225225 (~irc-52252@46.33.129.10) has joined #firefox
+2014-09-27 07:52:39	irc-5225225	I'm getting a segfault when running firefox, even when passing -safe-mode to it. I'm watching an embedded youtube video, and it prints this twice in the console: [28669] ###!!! ABORT: Aborting on channel error.: file /build/buildd/firefox-30.0+build1/ipc/glue/MessageChannel.cpp, line 1522
+2014-09-27 07:53:04	irc-5225225	I have plenty of disk space and free RAM.
+2014-09-27 07:53:21	irc-5225225	running version 30.0 on linux mint
+2014-09-27 07:57:39		Jackneill (~Jackneill@unaffiliated/jackneill) has joined #firefox
+2014-09-27 07:58:42		echevemaster (~echevemas@fedora/echevemaster) has joined #firefox
+2014-09-27 08:00:50	irc-5225225	making and using a new profile seems to of fixed it. I'll reply if it crashes again. I'm running it from the console so I have stdout
+2014-09-27 08:13:17	--	irc: disconnected from server

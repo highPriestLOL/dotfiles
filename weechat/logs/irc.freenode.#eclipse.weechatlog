@@ -1,0 +1,51 @@
+2014-11-04 20:27:31		dagnachew (~dagnachew@bas1-montreal30-2925416228.dsl.bell.ca) has joined #eclipse
+2014-11-04 20:27:31	--	Topic for #eclipse is "eclipse.org | Luna SR1 and Eclipse 4.4.1 have been released. Your question can only be answered if you're still here to see the replies. While you wait, check the FAQ at http://wiki.eclipse.org/IRC_FAQ and read some blogs at http://www.planeteclipse.org/ . | This channel is logged at http://echelog.com/logs/browse/eclipse , so behave."
+2014-11-04 20:27:31	--	Topic set by tlync (~tlync@101.110.31.120) on Thu, 16 Oct 2014 06:03:09
+2014-11-04 20:27:31	--	Channel #eclipse: 131 nicks (0 ops, 0 voices, 131 normals)
+2014-11-04 20:27:32	--	URL for #eclipse: http://eclipse.org
+2014-11-04 20:27:33	--	Channel created on Sun, 26 Nov 2006 01:42:43
+2014-11-04 20:27:34	dagnachew	hi all
+2014-11-04 20:27:36		Vivekananda_y510 (~vvikramjh@pool-96-234-225-219.bltmmd.fios.verizon.net) has quit (Max SendQ exceeded)
+2014-11-04 20:27:57	dagnachew	is there a tool for createjs like code completion 
+2014-11-04 20:27:59	dagnachew	?
+2014-11-04 20:28:30		Vivekananda_y510 (~vvikramjh@pool-96-234-225-219.bltmmd.fios.verizon.net) has joined #eclipse
+2014-11-04 20:33:08		poysh (~poysh@p5482D769.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2014-11-04 20:34:33		ianbrandt (~ianbrandt@99-111-99-153.uvs.sndgca.sbcglobal.net) has quit (Quit: ianbrandt)
+2014-11-04 20:35:31	nitind	You might have to explain what that means without using the term "createjs."
+2014-11-04 20:39:02		bsd (~bsd@198-200-100-80.cpe.distributel.net) has quit (Quit: Leaving.)
+2014-11-04 20:40:12		basiclaser_ (uid10861@gateway/web/irccloud.com/x-zwtpfvvdhedoopai) has quit (Quit: Connection closed for inactivity)
+2014-11-04 20:42:30		darkbasic (~quassel@niko.linuxsystems.it) has quit (Quit: No Ping reply in 180 seconds.)
+2014-11-04 20:42:56		darkbasic (~quassel@niko.linuxsystems.it) has joined #eclipse
+2014-11-04 20:46:18		strykerawb (~rob@redhat/jboss/rawblem) has joined #eclipse
+2014-11-04 21:02:17		darkbasic_ (~quassel@niko.linuxsystems.it) has joined #eclipse
+2014-11-04 21:02:57		darkbasic (~quassel@niko.linuxsystems.it) has quit (Ping timeout: 260 seconds)
+2014-11-04 21:08:27		darkbasic (~quassel@niko.linuxsystems.it) has joined #eclipse
+2014-11-04 21:09:29		darkbasic_ (~quassel@niko.linuxsystems.it) has quit (Ping timeout: 260 seconds)
+2014-11-04 21:09:45		hija (~hija@host-78-147-133-36.as13285.net) has quit (Ping timeout: 256 seconds)
+2014-11-04 21:10:23		hija (~hija@host-78-147-133-36.as13285.net) has joined #eclipse
+2014-11-04 21:23:44		Rickmasta (~Rick@pool-108-41-62-242.nycmny.fios.verizon.net) has joined #eclipse
+2014-11-04 21:24:53		hija (~hija@host-78-147-133-36.as13285.net) has quit (Ping timeout: 260 seconds)
+2014-11-04 21:30:15		siwsky (~steve@71-215-119-129.hlrn.qwest.net) has left #eclipse
+2014-11-04 21:30:25		hija (~hija@host-78-147-133-36.as13285.net) has joined #eclipse
+2014-11-04 21:32:18		sene (~sene@187.64.247.137) has joined #eclipse
+2014-11-04 21:32:20		sene (~sene@187.64.247.137) has quit (Client Quit)
+2014-11-04 21:37:15		hija (~hija@host-78-147-133-36.as13285.net) has quit (Ping timeout: 258 seconds)
+2014-11-04 21:39:07		D9 (~un@104.156.240.158) has joined #eclipse
+2014-11-04 21:40:32		hija (~hija@host-78-147-133-36.as13285.net) has joined #eclipse
+2014-11-04 21:42:01		paulweb515 (~pwebster@eclipse/developer/Eclipse/paulweb515) has quit (Quit: Leaving.)
+2014-11-04 21:42:27		dvdgsng (~Miranda@p578a744d.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2014-11-04 21:44:01		_retux_ (~retux@p579B821D.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2014-11-04 21:45:43		retux (~retux@p579B85FB.dip0.t-ipconnect.de) has joined #eclipse
+2014-11-04 21:53:10		gercan (gercan@redhat/jboss/gercan) has quit (Ping timeout: 265 seconds)
+2014-11-04 21:59:42		gercan (gercan@redhat/jboss/gercan) has joined #eclipse
+2014-11-04 21:59:56		hija (~hija@host-78-147-133-36.as13285.net) has quit (Ping timeout: 265 seconds)
+2014-11-04 22:00:15		darkbasic (~quassel@niko.linuxsystems.it) has quit (Read error: Connection reset by peer)
+2014-11-04 22:00:36		hija (~hija@host-78-147-133-36.as13285.net) has joined #eclipse
+2014-11-04 22:00:51		darkbasic (~quassel@niko.linuxsystems.it) has joined #eclipse
+2014-11-04 22:07:23		Vivekananda_y510 (~vvikramjh@pool-96-234-225-219.bltmmd.fios.verizon.net) has quit (Quit: Leaving)
+2014-11-04 22:32:35		binaryStar (~blabla@p20030057ED0F63002DAC85B9564CF4B3.dip0.t-ipconnect.de) has joined #eclipse
+2014-11-04 22:36:40		bstar_ (~blabla@p4FE03F87.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2014-11-04 22:49:14		darkbasic (~quassel@niko.linuxsystems.it) has quit (Ping timeout: 265 seconds)
+2014-11-04 22:50:40		darkbasic (~quassel@niko.linuxsystems.it) has joined #eclipse
+2014-11-04 23:00:29		TheSeven (~quassel@rockbox/developer/TheSeven) has quit (Disconnected by services)
+2014-11-04 23:00:40		[7] (~quassel@rockbox/developer/TheSeven) has joined #eclipse
