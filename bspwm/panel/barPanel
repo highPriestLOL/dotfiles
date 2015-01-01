@@ -1,0 +1,9 @@
+#!/bin/sh
+
+BARHEIGHT=15
+EDGEWIDTH=5
+SCREENHEIGHT=$(xrandr -q | grep Screen | awk '{print $10}' | sed s/,//)
+SCREENWIDTH=$(xrandr -q | grep Screen | awk '{print $8}')
+BARWIDTH=$(($SCREENWIDTH - $(($EDGEWIDTH * 2))))
+
+zsh ~/.config/bspwm/panel/barScript.sh | bar -p -g ${BARWIDTH}x${BARHEIGHT} -B "#FFf0ebcd" -F "#FF666666" -f "-*-tewi-medium-*-*-*-11-*-*-*-*-*-*-*"  | sh &

@@ -1,22 +1,21 @@
-#! /bin/sh
+#!/bin/bash
 
-bspc config border_width        2
-bspc config window_gap         12
+bspc monitor -d 1 2 3 4 5 
 
-bspc config split_ratio         0.52
-bspc config borderless_monocle  true
-bspc config gapless_monocle     true
-bspc config focus_by_distance   true
+bspc config border_width        5
+bspc config window_gap          5
+bspc config split_ratio         0.5
+bspc config borderless_monocle  false
+bspc config gapless_monocle     false
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc config top_padding 17px
+bspc config presel_border_color "#568090"
+bspc config normal_border_color "#f0ebcd"
+bspc config focused_border_color "#7fa4b3"
+bspc config focus_follows_pointer true
 
-bspc rule -a Gimp desktop=^8 follow=on floating=on
-bspc rule -a Chromium desktop=^2
-bspc rule -a mplayer2 floating=on
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-nitrogen --restore
-xsetroot -cursor_name left_ptr
-compton --config ~/.config/compton.conf
-panel &
+bspc rule -a Gimp desktop=^3 follow=on floating=on
+bspc rule -a pavucontrol floating=on focus=on
+xsetroot -cursor_name left_ptr &
 
+$HOME/.config/bspwm/panel/barPanel &
