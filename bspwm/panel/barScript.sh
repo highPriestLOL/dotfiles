@@ -1,15 +1,15 @@
 #!/bin/bash
 
 WHITE=#FFf0ebcd
-DARK=#FF568090
-LIGHT=#FFc08158
+#DARK=#FF568090
+#LIGHT=#FFc08158
 
 # ----- Summer ----- #
 #DARK=#FF648ea7
 #LIGHT=#FF91b6c6
 # ----- PINK ----- #
-#DARK=#FFf36b6b
-#LIGHT=#FFff897d
+DARK=#FFf36b6b
+LIGHT=#FFff897d
 
 # ----- Bliss ----- #
 #DARK=#FF1369ee
@@ -40,6 +40,10 @@ workspace(){
 #    echo -n  $(acpi -a | if grep -q "on-line"; then echo -n ""; else echo -n "⭫ $(chg)%"; fi)
 #}
 
+network() {
+        ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo -n " "  || echo "disconnected "
+}
+
 ram(){
     echo -n  $(free -m | awk '/Mem/ {print $3}')
 }
@@ -63,6 +67,13 @@ paws(){
 }
 
 while :; do
-    printf "%s\n" "%{A:mpc toggle:}%{B$DARK} %{F$WHITE}$(paws) %{F$DARK}%{B$LIGHT}%{A}%{A:osd:}%{F-}%{B-}%{F$WHITE}%{B$LIGHT} $(mus) %{B-}%{F-}%{F$LIGHT}%{B-}%{A}%{c}%{B$DARK}%{F$WHITE}%{B-}%{F-}%{B$DARK} %{F$WHITE}$(workspace) %{B-}%{F-}%{F$WHITE}%{B$DARK}%{B-}%{F-}%{c}%{r}%{F$LIGHT}%{F-}%{B$LIGHT}%{F$WHITE} ram $(ram) vol $(vol)% %{B-}%{F-}%{F$DARK}%{B$LIGHT}%{F-}%{B-}%{B$DARK}%{F$WHITE} $(dat) %{B-}%{F-}"
+    printf "%s\n" "%{A:mpc toggle:}%{B$DARK} %{F$WHITE}$(paws) %{F$DARK}%{B$LIGHT}  %{A}%{A:osd:}%{F-}%{B-}%{F$WHITE}%{B$LIGHT} $(mus) %{B-}%{F-}%{F$LIGHT}  %{B-}%{A}%{c}%{B$DARK}%{F$WHITE}  %{B-}%{F-}%{B$DARK} %{F$WHITE}$(workspace) %{B-}%{F-}%{F$WHITE}%{B$DARK}  %{B-}%{F-}%{c}%{r}%{F$LIGHT} > %{F-}%{B$LIGHT}%{F$WHITE} $(network)  $(ram) vol $(vol)% %{B-}%{F-}%{F$DARK}%{B$LIGHT}  %{F-}%{B-}%{B$DARK}%{F$WHITE}   $(dat) %{B-}%{F-}"
 sleep 1
 done
+
+#while :; do
+#    printf "%s\n" "%{A:mpc toggle:}%{B$DARK} %{F$WHITE}$(paws) %{F$DARK}%{B$LIGHT}%{A}%{A:osd:}%{F-}%{B-}%{F$WHITE}%{B$LIGHT} $(mus) %{B-}%{F-}%{F$LIGHT}%{B-}%{A}%{c}%{B$DARK}%{F$WHITE}%{B-}%{F-}%{B$DARK} %{F$WHITE}$(workspace) %{B-}%{F-}%{F$WHITE}%{B$DARK}%{B-}%{F-}%{c}%{r}%{F$LIGHT}%{F-}%{B$LIGHT}%{F$WHITE} $(network) ram $(ram) vol $(vol)% %{B-}%{F-}%{F$DARK}%{B$LIGHT}%{F-}%{B-}%{B$DARK}%{F$WHITE} $(dat) %{B-}%{F-}"
+#sleep 1
+#done
+
+
