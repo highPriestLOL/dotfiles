@@ -66,14 +66,14 @@ paws(){
     #echo -n $(cmus-remote -Q | if grep -q "paused"; then echo -n "▮▮"; else echo -n "♫"; fi)
 }
 
-
 #while :; do
-#    printf "%s\n" "%{A:mpc toggle:}%{B$DARK} %{F$WHITE}$(paws) %{F$DARK}%{B$LIGHT}>%{A}%{A:osd:}%{F-}%{B-}%{F$WHITE}%{B$LIGHT} $(mus) %{B-}%{F-}%{F$LIGHT}>%{B-}%{A}%{c}%{B$DARK}%{F$WHITE}>%{B-}%{F-}%{B$DARK} %{F$WHITE}$(workspace) %{B-}%{F-}%{F$WHITE}%{B$DARK}>%{B-}%{F-}%{c}%{r}%{F$LIGHT}>%{F-}%{B$LIGHT}%{F$WHITE} $(network)  $(ram) vol $(vol)% %{B-}%{F-}%{F$DARK}%{B$LIGHT}>%{F-}%{B-}%{B$DARK}%{F$WHITE}   $(dat) %{B-}%{F-}"
+#    printf "%s\n" "%{A:mpc toggle:}%{B$DARK} %{F$WHITE}$(paws) %{F$DARK}%{B$LIGHT}⮀%{A}%{A:osd:}%{F-}%{B-}%{F$WHITE}%{B$LIGHT} $(mus) %{B-}%{F-}%{F$LIGHT}⮀%{B-}%{A}%{c}%{B$DARK}%{F$WHITE}⮀%{B-}%{F-}%{B$DARK} %{F$WHITE}$(workspace) %{B-}%{F-}%{F$WHITE}%{B$DARK}⮂%{B-}%{F-}%{c}%{r}%{F$LIGHT}⮂%{F-}%{B$LIGHT}%{F$WHITE} $(network) ram $(ram) vol $(vol) %{B-}%{F-}%{F$DARK}%{B$LIGHT}⮂%{F-}%{B-}%{B$DARK}%{F$WHITE} $(dat) %{B-}%{F-}"
 #sleep 1
 #done
 
+
 while :; do
-    printf "%s\n" "%{A:mpc toggle:}%{B$DARK} %{F$WHITE}$(paws) %{F$DARK}%{B$LIGHT}⮀%{A}%{A:osd:}%{F-}%{B-}%{F$WHITE}%{B$LIGHT} $(mus) %{B-}%{F-}%{F$LIGHT}⮀%{B-}%{A}%{c}%{B$DARK}%{F$WHITE}⮀%{B-}%{F-}%{B$DARK} %{F$WHITE}$(workspace) %{B-}%{F-}%{F$WHITE}%{B$DARK}⮂%{B-}%{F-}%{c}%{r}%{F$LIGHT}⮂%{F-}%{B$LIGHT}%{F$WHITE} $(network) ram $(ram) vol $(vol)% %{B-}%{F-}%{F$DARK}%{B$LIGHT}⮂%{F-}%{B-}%{B$DARK}%{F$WHITE} $(dat) %{B-}%{F-}"
+    printf "%s\n" "%{A:mpc toggle:}%{B$DARK} %{F$WHITE}$(paws) %{F$DARK}%{B$LIGHT}⮀%{A}%{A:osd:}%{F-}%{B-}%{F$WHITE}%{B$LIGHT} $(mus) %{B-}%{F-}%{F$LIGHT}⮀%{B-}%{A}%{c}%{B$DARK}%{F$WHITE}⮀%{B-}%{F-}%{B$DARK} %{F$WHITE}$(workspace) %{B-}%{F-}%{F$WHITE}%{B$DARK}⮂%{B-}%{F-}%{c}%{r}%{F$LIGHT}⮂%{F-}%{B$LIGHT}%{F$WHITE} $(network) ram $(ram) vol $(vol) %{B-}%{F-}%{F$DARK}%{B$LIGHT}⮂%{F-}%{B-}%{B$DARK}%{F$WHITE} $(dat) %{B-}%{F-}"
 sleep 1
 done
 
