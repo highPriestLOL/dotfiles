@@ -1,14 +1,14 @@
 #! /bin/sh
 
 CBR='%{B-}'         # reset bg color
-CB1='%{B#FF69D2E7}' # aqua
-CB2='%{B#FFA7DBD8}' # off white
+CB1='%{B#FF6CBDB5}' # aqua
+CB2='%{B#FF93CCC6}' # off white
 
 CFR='%{F-}'         # reset fg color
 CF1='%{F#FF49483E}' # dark gray
-CF2='%{F#FF69D2E7}' # aqua
+CF2='%{F#FF6CBDB5}' # aqua
 CF3='%{F#FFF92672}' # violet
-CF4='%{F#FFA7DBD8}' # off white 
+CF4='%{F#FF93CCC6}' # off white 
 
 RA='%{r}'           # right align
 AC='%{A:'           # start click area
