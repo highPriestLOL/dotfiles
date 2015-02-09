@@ -1,14 +1,15 @@
 #! /bin/sh
 
 CBR='%{B-}'         # reset bg color
-CB1='%{B#FF6CBDB5}' # aqua
-CB2='%{B#FF93CCC6}' # off white
+CB1='%{B#FF3D4C53}' # aqua
+CB2='%{B#FF90C9A8}' # off yellow
 
 CFR='%{F-}'         # reset fg color
-CF1='%{F#FF49483E}' # dark gray
-CF2='%{F#FF6CBDB5}' # aqua
+CF1='%{F#FF22313F}' # EBONY CLAY
+CF2='%{F#FF3D4C53}' # aqua
 CF3='%{F#FFF92672}' # violet
-CF4='%{F#FF93CCC6}' # off white 
+CF4='%{F#FF90C9A8}' # off yellow
+CF5='%{F#FFF9BF3B}' # orange
 
 RA='%{r}'           # right align
 AC='%{A:'           # start click area
@@ -24,7 +25,7 @@ DF=''              # free desktop
 goto='bspc desktop -f'       # go to this desktop
 cycle='bspc desktop -l next' # cycle tiled/monocle
 
-logo="${CB1}${CF1}${AC}~/.config/bspwm/panel/scripts/spawn_dmenu${AB} $(hostname -s) ${CB2}${CF2}⮀${AE}"
+logo="${CB1}${CF5}${AC}~/.config/bspwm/panel/scripts/spawn_dmenu${AB} $(hostname -s) ${CB2}${CF2}⮀${AE}"
 
 while read -r line ; do
 	case $line in

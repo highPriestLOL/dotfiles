@@ -6,18 +6,18 @@ update_interval 3
 template0 ~/.config/bspwm/panel/scripts/toggle_conky \1
 
 TEXT
-S%{F\#FFFb9ca4a}⮂%{F\#FF49483E}%{B\#FFb9ca4a} \
-%{A:${template0 net}:} ${addr enp3s6}%{A} %{F\#FFFFFE3DFBA}⮂%{F\#FF49483E}%{B\#FFFFFE3DFBA}\
+S%{F\#FFFF2C249}⮂%{F\#FF019875}%{B\#FFF2C249} \
+%{A:${template0 net}:} ${addr enp3s6}%{A} %{F\#FFFFFE6772E}⮂%{F\#FF49483E}%{B\#FFFFFE6772E}\
 %{A:${template0 disk}:} / ${fs_used_perc /}%% \
 /data ${fs_used_perc /data}%%%{A}  \
-%{A:${template0 mem}:} ${memperc}%%%{A} %{F\#FFFFC8D6BF}⮂%{F\#FF49483E}%{B\#FFFFC8D6BF} \
+%{A:${template0 mem}:} ${memperc}%%%{A} %{F\#FFFF4DB3B3}⮂%{F\#FFD91E18}%{B\#FFFF4DB3B3} \
 ${if_match ${cpu cpu0} > 75}\
 %{F\#FFD75F5F}${endif}\
-%{A:${template0 cpu}:} ${cpu cpu0}%%%{A}%{F\#FF49483E}  \
+%{A:${template0 cpu}:} ${cpu cpu0}%%%{A}%{F\#FFD91E18}  \
 ${if_match ${hwmon 0 temp 1} > 59}\
 %{F\#FFD75F5F}${endif} \
-%{A:${template0 temp}:} ${hwmon 0 temp 1}°%{A}%{F\#FF49483E} %{F\#FFF793CCC6}⮂%{F\#FF49483E}%{B\#FF793CCC6} \
+%{A:${template0 temp}:} ${hwmon 0 temp 1}°%{A}%{F\#FF49483E} %{F\#FFF7E64A45}⮂%{F\#FF49483E}%{B\#FF7E64A45} \
 %{A:${template0 mpd}:}${exec scripts/panel_volume}%{A}  \
-%{F\#FFF6CBDB5}⮂%{F\#FF49483E}%{B\#FFFF6CBDB5} %{A:${template0 cal}:} ${time %a %d.%m.%Y. %H:%M}%{A}%{B-}
+%{F\#FFF3D4C53}⮂%{F\#FFF9BF3B}%{B\#FFFF3D4C53} %{A:${template0 cal}:} ${time %a %d.%m.%Y. %H:%M}%{A}%{B-}
 
 
