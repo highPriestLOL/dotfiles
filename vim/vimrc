@@ -78,6 +78,7 @@ Bundle "NagatoPain/AutoSQLUpperCase.vim"
 if neocomplete_mode == 1
   Bundle "Shougo/neocomplete"
   Bundle "Shougo/neosnippet"
+  Bundle "Shougo/neosnippet-snippets"
   Bundle "honza/vim-snippets"
   Bundle "Shougo/echodoc.vim"
 else
