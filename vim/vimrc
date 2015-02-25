@@ -48,6 +48,7 @@ Bundle "scrooloose/nerdtree"
 Bundle "tpope/vim-vinegar"
 Bundle "vim-scripts/taglist.vim"
 Bundle "majutsushi/tagbar"
+Bundle "rbgrouleff/bclose.vim"
 
 " language vundles
 Bundle "pangloss/vim-javascript"
