@@ -42,6 +42,7 @@ Bundle "godlygeek/tabular"
 Bundle "airblade/vim-gitgutter"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "rhysd/clever-f.vim"
+Bundle "mhinz/vim-startify"
 
 " togglable panels
 Bundle "scrooloose/nerdtree"
@@ -55,6 +56,10 @@ Bundle "pangloss/vim-javascript"
 Bundle "marijnh/tern_for_vim"
 Bundle "kchmck/vim-coffee-script"
 Bundle "othree/javascript-libraries-syntax.vim"
+
+
+" LISP slimv
+Bundle "kovisoft/slimv"
 
 Bundle "vim-ruby/vim-ruby"
 Bundle "tpope/vim-rails"
@@ -244,10 +249,20 @@ nnoremap <leader>3 :TlistToggle<CR>
 nnoremap <leader>4 :TagbarToggle<CR>
 nnoremap <leader>5 :NERDTreeToggle<CR>
 
-" ctrlP config
+" ctrlp config
 let g:ctrlp_map = "<c-p>"
+let g:ctrlp_cmd = "CtrlP"
+let g:ctrlp_working_path_mode = "ra" 
+
+" Exclude files and directories 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux"
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
 nnoremap <leader>t :CtrlPMRU<CR>
 nnoremap <leader>bp :CtrlPBuffer<CR>
+
+" end ctrlp config
+
 
 " clever-f prompt
 let g:clever_f_show_prompt = 1
