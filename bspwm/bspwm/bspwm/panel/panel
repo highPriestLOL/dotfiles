@@ -1,0 +1,20 @@
+#! /bin/sh
+
+PANEL_FIFO=/tmp/panel_fifo
+
+cd $(dirname $0)
+
+if [ $(pgrep -cx panel) -gt 1 ] ; then
+    printf "%s\n" "The panel is already running." >&2
+    exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+bspc control --subscribe > "$PANEL_FIFO" &
+xtitle -sf 'T%s' > "$PANEL_FIFO" &
+echo "T" >  "$PANEL_FIFO" &
+conky -c ./panel_conky > "$PANEL_FIFO" &
+
+WIDTH=$(xrandr  | grep \* | cut -d x -f1)
+cat "$PANEL_FIFO" | ./panel_bar | bar -g ${WIDTH}x12 -f "-misc-stlarch-medium-r-normal--10-100-75-75-c-80-iso10646-1,-lucy-tewi-medium-r-normal--11-90-75-75-p-58-iso10646-1" -u 0 -B '#FF1A1F1E' -F '#FFF8F8F2' | sh

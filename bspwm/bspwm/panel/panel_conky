@@ -1,0 +1,23 @@
+background yes
+out_to_console yes
+out_to_x no
+update_interval 3
+
+template0 ~/.config/bspwm/panel/scripts/toggle_conky \1
+
+TEXT
+S%{F\#FFF839496}⮂%{F\#FF002b36}%{B\#FF839496} \
+%{A:${template0 net}:} ${addr enp3s6}%{A} %{F\#FFFFFfdf6e3}⮂%{F\#FF002b36}%{B\#FFFFFfdf6e3}\
+%{A:${template0 disk}:} / ${fs_used_perc /}%% \
+/data ${fs_used_perc /data}%%%{A} %{F\#FFFFF839496}⮂%{F\#FF002b36}%{B\#FFFFF839496} \
+%{A:${template0 mem}:} ${memperc}%%%{A} %{F\#FFFFfdf6e3}⮂%{F\#FF002b36}%{B\#FFFFfdf6e3} \
+${if_match ${cpu cpu0} > 75}\
+%{F\#FFD75F5F}${endif}\
+%{A:${template0 cpu}:} ${cpu cpu0}%%%{A}%{F\#FFD91E18}  \
+${if_match ${hwmon 0 temp 1} > 59}\
+%{F\#FFD75F5F}${endif} \
+%{A:${template0 temp}:} ${hwmon 0 temp 1}°%{A}%{F\#FF49483E} %{F\#FFF7839496}⮂%{F\#FF002b36}%{B\#FF7839496} \
+%{A:${template0 mpd}:}${exec scripts/panel_volume}%{A}  \
+%{F\#FFFfdf6e3}⮂%{F\#FF002b36}%{B\#FFFFfdf6e3} %{A:${template0 cal}:} ${time %a %d.%m.%Y. %H:%M}%{A}%{B-}
+
+
