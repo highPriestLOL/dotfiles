@@ -13,9 +13,9 @@ XPOS=$EDGEWIDTH
 YPOS=$(($(($SCREENHEIGHT / 2)) - 15))
 
 FGSELECT="#A3A6AB"
-BGSELECT="#8C9440"
-FG="#6F7277"
-BG="#34322E"
+BGSELECT="#f93254"
+FG="#F89406"
+BG="#22313F"
 FONT="-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*"
 
 dmenu_run -w $DMENUWIDTH -x $XPOS -y $YPOS -fn ${FONT} -nb $BG -nf $FG -sb $BGSELECT -p "%"
