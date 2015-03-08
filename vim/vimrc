@@ -1,7 +1,8 @@
 " not a vi
 set nocompatible
 set encoding=utf-8
-
+set exrc
+set secure
 
 " switch between YCM and NeoComplete
 let neocomplete_mode = 1
@@ -56,6 +57,9 @@ Bundle "pangloss/vim-javascript"
 Bundle "marijnh/tern_for_vim"
 Bundle "kchmck/vim-coffee-script"
 Bundle "othree/javascript-libraries-syntax.vim"
+Bundle "octol/vim-cpp-enhanced-highlight"
+" haskell
+Bundle "raichoo/haskell-vim"
 
 
 " LISP slimv
@@ -124,7 +128,7 @@ set wildmenu
 set ttyfast
 set noshowmode
 set cmdheight=1
-"set paste   " what a shame
+set paste   " what a shame
 
 if has('cmdline_info')
     set ruler " Show the ruler
@@ -534,6 +538,7 @@ endif
 " linked databases
 " let g:dbext_default_profile='vincere'
 " let g:dbext_default_profile_vincere = 'type=PGSQL:user=vincere:passwd=:dbname=vincere_development'
+
 
 " angularjs syntasic ovveride
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
