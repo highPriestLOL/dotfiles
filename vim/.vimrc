@@ -46,12 +46,11 @@ Bundle "majutsushi/tagbar"
 Bundle "pangloss/vim-javascript"
 Bundle "marijnh/tern_for_vim"
 Bundle "kchmck/vim-coffee-script"
+Bundle "raichoo/haskell-vim"
 Bundle "othree/javascript-libraries-syntax.vim"
 
-Bundle "vim-ruby/vim-ruby"
-Bundle "tpope/vim-rails"
+
 Bundle "kana/vim-textobj-user"
-Bundle "nelstrom/vim-textobj-rubyblock"
 
 Bundle "fatih/vim-go"
 Bundle "plasticboy/vim-markdown"
@@ -389,8 +388,6 @@ nnoremap <leader>C :!ctags -R --exclude=.git --exclude=log --exclude=tmp *<CR><C
 function! LangRunner()
   if(&ft=="python")
     nnoremap <leader>r :!python2 %<cr>
-  elseif(&ft=="ruby")
-    nnoremap <leader>r :!ruby %<cr>
   elseif(&ft=="javascript")
     nnoremap <leader>r :!node %<cr>
   elseif(&ft=="dart")
