@@ -1,8 +1,8 @@
 # Credentials ---------------------------------
 # For use with "plain" IMAP synchronisation
-set imap_user       = "dagnachewa@gmail.com"
+set imap_user       = "@gmail.com"
 set imap_pass       = ""
-set smtp_url        = "SMTP://dagnachewa@gmail.com@smtp.gmail.com:587"
+set smtp_url        = "SMTP://@gmail.com@smtp.gmail.com:587"
 #set smtp_pass       = "some.password"
 set imap_keepalive = 900
 
@@ -22,7 +22,7 @@ set mail_check      = 0
 #set trash          = "+Bin"
 
 ## General mutt settings file
-set realname        = "Dagnachew Argaw"
+set realname        = "my real name"
 set charset         = "utf-8"
 
 # How often should mutt check for new mail? ----

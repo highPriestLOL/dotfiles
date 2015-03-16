@@ -1,0 +1,87 @@
+[options]
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = true
+visible_bell = false
+mouse_autohide = false
+allow_bold = false
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = hermit 11
+#font = Source Code Pro 11
+scrollback_lines = 1000
+search_wrap = true
+geometry = 560x400
+#icon_name = terminal
+
+# 0.0 =  opaque, 1.0 =  transparent
+transparency = 0.0
+pseudo_transparency = false
+
+# "system", "on" or "off"
+cursor_blink = off
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# $BROWSER is used by default
+browser = chromium
+
+# word characters used for word selection
+# (default if unset =  all graphic non-punctuation/space characters)
+word_chars = -A-Za-z,./?%&# = _=+@~
+
+[colors]
+foreground = #98d1ce
+foreground_bold = #fedfed
+#foreground_dim = #888888
+#background = #1c2027
+background = #0a0f14
+#cursor = #dcdccc
+
+# my colors cozmoss colours
+# black
+color0 =       #0a0f14
+color8 =       #10151b
+
+# red
+color1 =       #c33027
+color9 =       #d26939
+
+# green
+color2 =       #26a98b
+color10 =      #081f2d
+
+# yellow
+color3 =       #edb54b
+color11 =      #245361
+
+# blue
+color4 =       #195465
+color12 =      #093748
+
+# magenta
+color5 =       #4e5165
+color13 =      #888ba5
+
+# cyan
+color6 =       #33859d
+color14 =      #599caa
+
+# white
+color7 =       #98d1ce
+color15 =      #d3ebe9
+
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim =  ft=dosini
