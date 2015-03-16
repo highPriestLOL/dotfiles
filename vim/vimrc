@@ -10,6 +10,7 @@ call vundle#rc()
 " core plugins
 Bundle "gmarik/vundle"
 Bundle "flazz/vim-colorschemes"
+Bundle "whatyouhide/vim-gotham"
 Bundle "kien/ctrlp.vim"
 
 " vim main plugins
@@ -165,7 +166,8 @@ if filereadable(expand("~/.vim/bundle/vim-colorschemes/colors/solarized.vim"))
         let g:solarized_visibility="normal"
         color solarized " Load a colorscheme
 endif
-
+"colorscheme gotham256
+highlight LineNr ctermbg=NONE guibg=NONE
 
 
 
