@@ -34,45 +34,31 @@ browser = chromium
 word_chars = -A-Za-z,./?%&# = _=+@~
 
 [colors]
-foreground = #98d1ce
-foreground_bold = #fedfed
-#foreground_dim = #888888
-#background = #1c2027
-background = #0a0f14
-#cursor = #dcdccc
+
 
 # my colors cozmoss colours
-# black
-color0 =       #0a0f14
-color8 =       #10151b
+# vim =  set filetype=xdefaults  = 
+foreground =  	#E8DFD6
+background =  	#021B21
+cursorColor =   #2E3340
+color0 =        #032C36
+color8 =        #065F73
+color1 =        #C2454E
+color9 =        #EF5847
+color2 =        #7CBF9E
+color10 =       #A2D9B1
+color3 =        #8A7A63
+color11 =       #BEB090
+color4 =        #2E3340
+color12 =       #61778D
+color5 =        #FF5879
+color13 =       #FF99A1
+color6 =        #44B5B1
+color14 =       #9ED9D8
+color7 =        #F2F1B9
+color15 =       #F6F6C9
 
-# red
-color1 =       #c33027
-color9 =       #d26939
 
-# green
-color2 =       #26a98b
-color10 =      #081f2d
-
-# yellow
-color3 =       #edb54b
-color11 =      #245361
-
-# blue
-color4 =       #195465
-color12 =      #093748
-
-# magenta
-color5 =       #4e5165
-color13 =      #888ba5
-
-# cyan
-color6 =       #33859d
-color14 =      #599caa
-
-# white
-color7 =       #98d1ce
-color15 =      #d3ebe9
 
 
 [hints]
