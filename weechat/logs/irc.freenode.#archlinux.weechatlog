@@ -1,0 +1,2178 @@
+2015-03-31 18:09:18	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-03-31 18:09:18	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-03-31 18:09:18	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-03-31 18:09:18	--	Channel #archlinux: 1965 nicks (1 op, 1 voice, 1963 normals)
+2015-03-31 18:09:21	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-03-31 18:09:42	▬▬▶	jakobw (~jakobw@archlinux/developer/jakobw) has joined #archlinux
+2015-03-31 18:10:06	◀▬▬	Bonstra (~Bonstra@mar75-h06-87-91-15-194.dsl.sta.abo.bbox.fr) has quit (Ping timeout: 245 seconds)
+2015-03-31 18:10:15	◀▬▬	fce_ (~fabian@i53872B33.versanet.de) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:10:23	▬▬▶	driti (~driti@wsip-68-15-57-158.ri.ri.cox.net) has joined #archlinux
+2015-03-31 18:10:24	eletious	oh my god -t isn't even necessary
+2015-03-31 18:10:26	eletious	ffs
+2015-03-31 18:10:32	◀▬▬	IntergeN (~christoph@noc.al.privatesystems.net) has quit (Quit: Konversation terminated!)
+2015-03-31 18:10:42	beest	rarely
+2015-03-31 18:10:44	◀▬▬	berceanu_ (~berceanu@151.62.42.19) has quit (Quit: Leaving)
+2015-03-31 18:10:45	eletious	How did I not catch that.
+2015-03-31 18:10:51	d_garbage	the automagic of mount
+2015-03-31 18:11:11	moviuro	Hi everyone, I need help to setup a duplicity server in a secure fashion. I opened the discussion here: https://wiki.archlinux.org/index.php/Talk:Duplicity and hope some of you can help me: I'm trying to use a reasonable protocol (not ftp) and prevent the users from a) hitting the disk size limit b) logging into the server
+2015-03-31 18:11:12	phrik	Title: Talk:Duplicity - ArchWiki (at wiki.archlinux.org)
+2015-03-31 18:11:13	beest	you'll mostly only need that with odd isos
+2015-03-31 18:11:13	d_garbage	eletious, you know you can mount ISO's too? Groovy stuff
+2015-03-31 18:11:16	moviuro	first one shouldn't be too difficult with BTRFS/ZFS subvolumes but the second one is not as trivial
+2015-03-31 18:11:22	▬▬▶	Bonstra (~Bonstra@mar75-h06-87-91-15-194.dsl.sta.abo.bbox.fr) has joined #archlinux
+2015-03-31 18:11:25	▬▬▶	YaknotiS (~YaknotiS@nap-public.u-strasbg.fr) has joined #archlinux
+2015-03-31 18:11:31	▬▬▶	dac0it (~dacoit@unaffiliated/dacoit) has joined #archlinux
+2015-03-31 18:11:50	eletious	memory serving... aren't iso's just compressed directories, saved as a file?
+2015-03-31 18:11:50	moviuro	Hi everyone, I need help to setup a duplicity server in a secure fashion. I opened the discussion here: https://wiki.archlinux.org/index.php/Talk:Duplicity and hope some of you can help me: I'm trying to use a reasonable protocol (not ftp) and prevent the users from a) hitting the disk size limit b) logging into the server
+2015-03-31 18:11:51	moviuro	first one shouldn't be too difficult with BTRFS/ZFS subvolumes but the second one is not as trivial
+2015-03-31 18:11:52	phrik	Title: Talk:Duplicity - ArchWiki (at wiki.archlinux.org)
+2015-03-31 18:11:53	--	irc: disconnected from server
+2015-03-31 18:12:10	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-03-31 18:12:10	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-03-31 18:12:10	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-03-31 18:12:11	--	Channel #archlinux: 1967 nicks (1 op, 1 voice, 1965 normals)
+2015-03-31 18:12:14	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-03-31 18:12:27	eletious	i mean it'd make sense to be able to mount iso's if that's the case... but then can you also mount zips or tarballs?
+2015-03-31 18:12:31	◀▬▬	dacoit (~dacoit@unaffiliated/dacoit) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:12:35	◀▬▬	palbrecht (~palbrecht@ip1886254f.dynamic.kabel-deutschland.de) has quit (Client Quit)
+2015-03-31 18:12:44	NolanSyKinsley	you.. can mount isos
+2015-03-31 18:13:13	◀▬▬	driti (~driti@wsip-68-15-57-158.ri.ri.cox.net) has quit (Client Quit)
+2015-03-31 18:13:14	eletious	that's what I've gathered from this
+2015-03-31 18:13:28	eletious	also i read the wrong part of man pages because I don't read man man
+2015-03-31 18:13:29	◀▬▬	desy (~desy@h2267898.stratoserver.net) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:13:43	◀▬▬	Guest10941 (~florin@188.25.7.254) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-03-31 18:13:44	◀▬▬	khjh (~kent@87-60-111-44-dynamic.dk.customer.tdc.net) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:13:57	d_garbage	maybe? that was mostly a (bad) joke on my part :P
+2015-03-31 18:14:16	eletious	i took it for serious and it helped
+2015-03-31 18:14:19	◀▬▬	marshal0505 (~marshal05@trivialand/elite/marshal0505) has quit (Quit: Reconnecting)
+2015-03-31 18:14:23	◀▬▬	martinbm1dsen (~martinbma@188.226.252.120) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:14:25	beest	damn your useful jocularity
+2015-03-31 18:14:28	eletious	turns out -t is an optional command that I took as necessary
+2015-03-31 18:14:41	▬▬▶	marshal0505 (~marshal05@trivialand/elite/marshal0505) has joined #archlinux
+2015-03-31 18:14:45	eletious	and then looked at the syntax in man man and realized I'm a fool haha
+2015-03-31 18:14:51	d_garbage	eletious, you know you can search man pages? type /<text> and 'n' for next hit
+2015-03-31 18:15:03	hapislacker	woot
+2015-03-31 18:15:03	--	#archlinux: Cannot send to channel
+2015-03-31 18:15:07	eletious	i... i did not.
+2015-03-31 18:15:14	d_garbage	My, aren't I MrHelpy today?
+2015-03-31 18:15:15	▬▬▶	maveric7911 (~maveric79@pool-71-244-171-102.bltmmd.fios.verizon.net) has joined #archlinux
+2015-03-31 18:15:19	◀▬▬	azbarcea (~alex@149.134.173.218) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:15:25	▬▬▶	dr4ke (~darth@c-75-71-44-50.hsd1.co.comcast.net) has joined #archlinux
+2015-03-31 18:15:31	eletious	indeed. Many thanks
+2015-03-31 18:15:37	beest	except don't forget to hit enter before you start mashing `n` or else you'll be search for `mappernnnnn` as i often do in vim
+2015-03-31 18:15:43	d_garbage	lol
+2015-03-31 18:15:48	▬▬▶	desy (~desy@h2267898.stratoserver.net) has joined #archlinux
+2015-03-31 18:15:53	d_garbage	that made me chuckle
+2015-03-31 18:16:00	◀▬▬	unknwn (~nezinau@78-56-20-17.static.zebra.lt) has quit (Read error: Connection reset by peer)
+2015-03-31 18:16:17	◀▬▬	dac0it (~dacoit@unaffiliated/dacoit) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:16:23	◀▬▬	lihp (~lihp@ip1886254f.dynamic.kabel-deutschland.de) has quit (Remote host closed the connection)
+2015-03-31 18:16:53	▬▬▶	sapi1 (~sapi1@dslb-188-109-177-064.188.109.pools.vodafone-ip.de) has joined #archlinux
+2015-03-31 18:18:33	--	mittald_ is now known as mittald
+2015-03-31 18:19:22	▬▬▶	sammj (~sam@122.99.82.10) has joined #archlinux
+2015-03-31 18:19:45	▬▬▶	escondida (~joyfulgir@archlinux/op/escondida) has joined #archlinux
+2015-03-31 18:20:03	◀▬▬	FLHerne (~flh@unaffiliated/flherne) has quit (Remote host closed the connection)
+2015-03-31 18:20:03	▬▬▶	FLHerne_ (~flh@unaffiliated/flherne) has joined #archlinux
+2015-03-31 18:20:10	--	FLHerne_ is now known as FLHerne
+2015-03-31 18:20:11	◀▬▬	xaqi (~xaqi@cac94-8-82-245-27-76.fbx.proxad.net) has quit (Remote host closed the connection)
+2015-03-31 18:20:12	◀▬▬	grrk-bzzt (~grrk-bzzt@unaffiliated/grrk-bzzt) has quit (Remote host closed the connection)
+2015-03-31 18:20:14	◀▬▬	jakobw (~jakobw@archlinux/developer/jakobw) has quit (Ping timeout: 244 seconds)
+2015-03-31 18:20:27	◀▬▬	v{}id (~david@95.91.235.240) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:20:38	▬▬▶	jakobw (~jakobw@194.255.101.2) has joined #archlinux
+2015-03-31 18:20:38	◀▬▬	jakobw (~jakobw@194.255.101.2) has quit (Changing host)
+2015-03-31 18:20:38	▬▬▶	jakobw (~jakobw@archlinux/developer/jakobw) has joined #archlinux
+2015-03-31 18:20:43	◀▬▬	w4ffles (~w4ffles@12.144.194.186) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:21:06	▬▬▶	mauro_ (~mauro@151.77.37.46) has joined #archlinux
+2015-03-31 18:21:18	◀▬▬	setty1 (~ale@84.126.29.66.dyn.user.ono.com) has quit (Quit: Lost terminal)
+2015-03-31 18:21:54	▬▬▶	axyridis (~axyridis@209-6-238-14.c3-0.wrx-ubr1.sbo-wrx.ma.cable.rcn.com) has joined #archlinux
+2015-03-31 18:21:57	◀▬▬	sapi1 (~sapi1@dslb-188-109-177-064.188.109.pools.vodafone-ip.de) has quit (Read error: Connection reset by peer)
+2015-03-31 18:22:10	◀▬▬	SpaghettiCat (~Spaghetti@x5f70feec.dyn.telefonica.de) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:22:42	▬▬▶	xace (~noname@unaffiliated/xace) has joined #archlinux
+2015-03-31 18:22:58	▬▬▶	fci (~fci@105.154.85.99) has joined #archlinux
+2015-03-31 18:23:23	◀▬▬	Case_Of (~Case_Of@unaffiliated/itruc) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:23:35	◀▬▬	hackhalo2 (~hackhalo2@24-247-58-240.dhcp.aldl.mi.charter.com) has quit (Quit: Leaving)
+2015-03-31 18:23:42	◀▬▬	o77o (~damn@p57B4A092.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:23:52	▬▬▶	Florin (~florin@188.25.7.254) has joined #archlinux
+2015-03-31 18:24:06	◀▬▬	fci (~fci@105.154.85.99) has quit (Excess Flood)
+2015-03-31 18:24:10	▬▬▶	neckutrek (~neckutrek@h-88-107.a163.priv.bahnhof.se) has joined #archlinux
+2015-03-31 18:24:15	--	Florin is now known as Guest89841
+2015-03-31 18:24:42	◀▬▬	new_one (~new_one@128.42.88.169) has quit (Remote host closed the connection)
+2015-03-31 18:25:03	◀▬▬	AlmAck (~AlmAck@191.68.198.178.dynamic.wline.res.cust.swisscom.ch) has quit (Quit: Konversation terminated!)
+2015-03-31 18:25:08	▬▬▶	KnusperKeks (~quassel@p3b9238e2.tokynt01.ap.so-net.ne.jp) has joined #archlinux
+2015-03-31 18:25:09	◀▬▬	zweihundertneun (~zweihunde@p5497CA89.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2015-03-31 18:25:17	▬▬▶	obscura (~obscura@host135-2.natpool.mwn.de) has joined #archlinux
+2015-03-31 18:25:32	◀▬▬	m0ellemeister (~m0ellemei@ipb219c0e5.dynamic.kabel-deutschland.de) has quit (Quit: Verlassend)
+2015-03-31 18:25:44	▬▬▶	Max-P (~Max-P@64.229.106.211) has joined #archlinux
+2015-03-31 18:25:53	◀▬▬	mcescher (~mcescher@ip5b41e7a9.dynamic.kabel-deutschland.de) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:26:04	obscura	hey guys... I am using pulse audio and configure it using pavucontrol, but since recently it doesn't show all applications any mire
+2015-03-31 18:26:06	obscura	*more
+2015-03-31 18:26:42	◀▬▬	tharugrim (~tharugrim@unaffiliated/tharugrim) has quit (Quit: WeeChat 1.2-dev)
+2015-03-31 18:26:47	▬▬▶	daq (~daq@105.154.85.99) has joined #archlinux
+2015-03-31 18:26:54	◀▬▬	styles (~styles@unaffiliated/styles) has quit (Quit: Leaving)
+2015-03-31 18:27:16	◀▬▬	TheLemonMan (~lemonboy@unaffiliated/thelemonman) has quit (Quit: "It's now safe to turn off your computer.")
+2015-03-31 18:27:38	d_garbage	obscura, what's missing?
+2015-03-31 18:27:54	◀▬▬	eminor (~eminor@p548CED83.dip0.t-ipconnect.de) has quit (Quit: eminor)
+2015-03-31 18:27:57	d_garbage	same programs, random or what?
+2015-03-31 18:28:32	▬▬▶	Metiu07 (~mato@adsl-dyn-172.95-102-249.t-com.sk) has joined #archlinux
+2015-03-31 18:28:46	◀▬▬	asdertfd (~asdertfd@78-3-244-115.adsl.net.t-com.hr) has quit (Remote host closed the connection)
+2015-03-31 18:28:52	obscura	for example, it doesn't show the silverlight plugin used by firefox (via pipelight). But normal firefox (html5) shows up. Which means i can't configure it any more when I am watching netflix.
+2015-03-31 18:28:58	◀▬▬	daq (~daq@105.154.85.99) has quit (Excess Flood)
+2015-03-31 18:29:13	◀▬▬	davidosomething (~Adium@209.251.200.244) has quit (Quit: Leaving.)
+2015-03-31 18:29:25	◀▬▬	drekar (~drekar@ip67-88-120-130.z120-88-67.customer.algx.net) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:29:27	▬▬▶	leafybasil (~leafybasi@cpc73842-dals21-2-0-cust776.20-2.cable.virginm.net) has joined #archlinux
+2015-03-31 18:29:38	▬▬▶	Vjuk (~Vjuk@cac94-8-82-245-27-76.fbx.proxad.net) has joined #archlinux
+2015-03-31 18:29:40	obscura	I just noticed that I can increase/decrease volume of the silverlight plugin by changing the volume of "spotify" which is also running. That is somehow strange.
+2015-03-31 18:29:52	◀▬▬	Vjuk (~Vjuk@cac94-8-82-245-27-76.fbx.proxad.net) has quit (Excess Flood)
+2015-03-31 18:29:59	d_garbage	dunno personally, thought it might be a case of missing pulseaudio-alsa, but thanks for answering maybe someone else can help
+2015-03-31 18:30:06	▬▬▶	psykotik1 (~an0n@99-165-232-137.lightspeed.hstntx.sbcglobal.net) has joined #archlinux
+2015-03-31 18:30:06	◀▬▬	psykotik1 (~an0n@99-165-232-137.lightspeed.hstntx.sbcglobal.net) has quit (Changing host)
+2015-03-31 18:30:06	▬▬▶	psykotik1 (~an0n@unaffiliated/999/x-4697496) has joined #archlinux
+2015-03-31 18:30:27	obscura	that package is installed.
+2015-03-31 18:30:31	d_garbage	indeed
+2015-03-31 18:30:34	◀▬▬	DerisiveLogic (~smuxi@rrcs-24-103-2-36.nyc.biz.rr.com) has quit (Ping timeout: 272 seconds)
+2015-03-31 18:30:39	▬▬▶	Eruu (~Eruu@105.154.85.99) has joined #archlinux
+2015-03-31 18:30:51	◀▬▬	nighty-_ (~nighty@hokuriku.rural-networks.com) has quit (Quit: Disappears in a puff of smoke)
+2015-03-31 18:30:55	◀▬▬	AccessGranted (~pihpah@mm-18-8-84-93.mgts.dynamic.pppoe.byfly.by) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:30:58	d_garbage	that would be the "maybe someone else can help" part :)
+2015-03-31 18:31:05	▬▬▶	w4ffles (~w4ffles@cpe-72-182-99-88.austin.res.rr.com) has joined #archlinux
+2015-03-31 18:31:15	◀▬▬	hiptobecubic (~john@unaffiliated/hiptobecubic) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:31:40	◀▬▬	Metiu07 (~mato@adsl-dyn-172.95-102-249.t-com.sk) has left #archlinux
+2015-03-31 18:32:00	▬▬▶	promulo__ (~quassel@dslb-088-075-019-008.088.075.pools.vodafone-ip.de) has joined #archlinux
+2015-03-31 18:32:01	obscura	how can I uninstall a programm together with all its configuration files?
+2015-03-31 18:32:14	obscura	maybe reinstalling pavucontrol completely helps.
+2015-03-31 18:32:16	▬▬▶	Soul_Eater (~marcelo@187-127-51-17.user.veloxzone.com.br) has joined #archlinux
+2015-03-31 18:32:16	◀▬▬	Soul_Eater (~marcelo@187-127-51-17.user.veloxzone.com.br) has quit (Changing host)
+2015-03-31 18:32:16	▬▬▶	Soul_Eater (~marcelo@unaffiliated/soul-eater/x-4649632) has joined #archlinux
+2015-03-31 18:32:21	◀▬▬	promulo (~quassel@nl03.vpn.ht) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:32:21	◀▬▬	margjakob (~margjakob@36.70.105.207) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:32:21	d_garbage	unlikely
+2015-03-31 18:32:44	▬▬▶	loungin (~loungin@c-50-134-136-16.hsd1.co.comcast.net) has joined #archlinux
+2015-03-31 18:33:07	d_garbage	if you just want default configs (that are part of the package) you can just grab them from you package cache
+2015-03-31 18:33:22	◀▬▬	glendc (~glendc@212.159.48.149) has quit (Remote host closed the connection)
+2015-03-31 18:33:41	▬▬▶	ouioui (~nicolas@neu67-h02-31-39-189-49.dsl.sta.abo.bbox.fr) has joined #archlinux
+2015-03-31 18:34:13	◀▬▬	ouioui (~nicolas@neu67-h02-31-39-189-49.dsl.sta.abo.bbox.fr) has left #archlinux
+2015-03-31 18:34:33	◀▬▬	richteer (~eric@128.153.182.88) has quit (Quit: WeeChat 1.1.1)
+2015-03-31 18:34:47	◀▬▬	dr4ke (~darth@c-75-71-44-50.hsd1.co.comcast.net) has quit (Quit: leaving)
+2015-03-31 18:34:47	▬▬▶	CTtechguy (~CTtechguy@unaffiliated/cttechguy) has joined #archlinux
+2015-03-31 18:35:19	▬▬▶	Case_Of (~Case_Of@85.69.190.107) has joined #archlinux
+2015-03-31 18:35:19	◀▬▬	Case_Of (~Case_Of@85.69.190.107) has quit (Changing host)
+2015-03-31 18:35:19	▬▬▶	Case_Of (~Case_Of@unaffiliated/itruc) has joined #archlinux
+2015-03-31 18:35:21	d_garbage	if your on a single user system you want to be configuring it for the user anyway
+2015-03-31 18:35:21	▬▬▶	mecalopolis (~mecalopol@2400:7800:4def:9800:2ab2:bdff:feae:4c0a) has joined #archlinux
+2015-03-31 18:35:27	d_garbage	you're
+2015-03-31 18:35:49	◀▬▬	kaipee (~kaipee@host86-152-243-19.range86-152.btcentralplus.com) has quit (Quit: Leaving)
+2015-03-31 18:35:56	d_garbage	user configs override, iirc
+2015-03-31 18:36:53	▬▬▶	krisman_ (~krisman@187.56.54.229) has joined #archlinux
+2015-03-31 18:36:59	◀▬▬	obscura (~obscura@host135-2.natpool.mwn.de) has quit (Quit: WeeChat 1.1.1)
+2015-03-31 18:38:07	◀▬▬	iqualfragile (~iqualfrag@unaffiliated/iqualfragile) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:38:25	▬▬▶	iqualfragile (~iqualfrag@unaffiliated/iqualfragile) has joined #archlinux
+2015-03-31 18:39:00	◀▬▬	normalra (~normal@unaffiliated/normalra) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:39:15	◀▬▬	iconz (~Unknown@90.198.122.71) has quit (Quit: leaving)
+2015-03-31 18:39:27	▬▬▶	petterk (~petterk@46.1.124.175) has joined #archlinux
+2015-03-31 18:39:28	▬▬▶	qgnox (~qgnox@190.234.13.143) has joined #archlinux
+2015-03-31 18:39:29	◀▬▬	Guest89841 (~florin@188.25.7.254) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-03-31 18:39:34	◀▬▬	boombatower (~boombatow@drupal.org/user/214218/view) has quit (Quit: Konversation terminated!)
+2015-03-31 18:40:45	eletious	hey, so I got that disk mounted
+2015-03-31 18:40:45	▬▬▶	Florin (~florin@188.25.7.254) has joined #archlinux
+2015-03-31 18:40:53	▬▬▶	margjakob (~margjakob@125.166.213.238) has joined #archlinux
+2015-03-31 18:40:57	▬▬▶	agregory (~agregory@cpe-076-182-127-008.nc.res.rr.com) has joined #archlinux
+2015-03-31 18:41:01	◀▬▬	mecalopolis (~mecalopol@2400:7800:4def:9800:2ab2:bdff:feae:4c0a) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:41:10	--	Florin is now known as Guest93355
+2015-03-31 18:41:27	◀▬▬	hx0x (~hx0x@109.235.227.79) has quit (Remote host closed the connection)
+2015-03-31 18:41:46	◀▬▬	zaxe (~anklebite@184-89-152-126.res.bhn.net) has quit (Ping timeout: 245 seconds)
+2015-03-31 18:41:50	eletious	it's ntfs, and I can open a few files.  I used chmod to add read/write permissions to most of them, but a few (like the resume I'm trying to edit) throw an error when I try to change permissions, saying that the operation is not supported
+2015-03-31 18:41:56	◀▬▬	able16 (~able16@lawn-143-215-62-218.lawn.gatech.edu) has quit (Ping timeout: 244 seconds)
+2015-03-31 18:42:01	beest	need ntfs-3g for r/w support
+2015-03-31 18:42:01	▬▬▶	mafrasi2 (~pi@aftr-88-153-7-35.unity-media.net) has joined #archlinux
+2015-03-31 18:42:15	eletious	that's a package, I'm assuming?
+2015-03-31 18:42:18	beest	kernel ntfs support is pants
+2015-03-31 18:42:27	◀▬▬	Salastil (~Salastil@c-73-188-202-80.hsd1.pa.comcast.net) has quit (Remote host closed the connection)
+2015-03-31 18:42:52	eletious	I have no idea what that means
+2015-03-31 18:43:00	▬▬▶	normalra (~normal@unaffiliated/normalra) has joined #archlinux
+2015-03-31 18:43:02	◀▬▬	Kelzier (~duka@77.105.31.54) has quit (Quit: leaving)
+2015-03-31 18:43:06	◀▬▬	glyf (~glyf@host86-185-209-56.range86-185.btcentralplus.com) has quit (Remote host closed the connection)
+2015-03-31 18:43:06	beest	pants is a highly technical term for "rubbish"
+2015-03-31 18:43:06	◀▬▬	Tiedemann (~Oscar@23.92-220-186.customer.lyse.net) has quit (Quit: Leaving)
+2015-03-31 18:43:55	beest	when all else fails, check the wiki, it's not always horrible
+2015-03-31 18:43:56	eletious	Ahh.  I could see why, but in this case it's rather important... i'm copying old files from HDDs that were saved on a windows installation
+2015-03-31 18:44:15	--	irc: disconnected from server
+2015-03-31 23:15:57	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-03-31 23:15:57	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-03-31 23:15:57	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-03-31 23:15:58	--	Channel #archlinux: 1911 nicks (1 op, 1 voice, 1909 normals)
+2015-03-31 23:16:00	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-03-31 23:16:00	sudokode	https://www.youtube.com/watch?v=WYvv6UYpvoQ
+2015-03-31 23:16:00	phrik	Title: Mary J - Desirable Sun (Lyrics) - YouTube (at www.youtube.com)
+2015-03-31 23:16:02	sudokode	I love this song
+2015-03-31 23:16:05	ThurnisH41ey	beest: I mean maybe hackintosh but then what's the point
+2015-03-31 23:16:09	sudokode	one-hit wonder
+2015-03-31 23:16:34	◀▬▬	masterom1 (~masteroma@93-139-218-34.adsl.net.t-com.hr) has quit (Read error: Connection reset by peer)
+2015-03-31 23:16:44	lemon_snowCone	dacoit, Yeah I was installing a package from yaourt and lost power during the install. Can't seem to find a solution to it on the arch forums
+2015-03-31 23:16:49	sudokode	only found this song because they it was at the end of an episode of weeds :D
+2015-03-31 23:16:49	ThurnisH41ey	!give sudokode yt 50 ways telekinesis
+2015-03-31 23:16:50	phrik	sudokode: Telekinesis - 50 Ways - YouTube: <http://www.youtube.com/watch?v=6tsynxtBPDM>
+2015-03-31 23:16:55	◀▬▬	azbarcea (~alex@c-98-218-39-38.hsd1.va.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-03-31 23:16:55	◀▬▬	Apasmara (~rene@55d40fc4.access.ecotel.net) has quit (Ping timeout: 264 seconds)
+2015-03-31 23:17:08	ThurnisH41ey	sudokode: this shit's hilarious though
+2015-03-31 23:17:11	▬▬▶	masterom1 (~masteroma@93-139-218-34.adsl.net.t-com.hr) has joined #archlinux
+2015-03-31 23:17:12	sudokode	:D
+2015-03-31 23:17:17	▬▬▶	mchearty (~mchearty@c-24-22-235-202.hsd1.wa.comcast.net) has joined #archlinux
+2015-03-31 23:17:19	▬▬▶	aajjbb (~aajjbb@177.193.226.200) has joined #archlinux
+2015-03-31 23:17:29	dr4ke	Are you guys Radiohead fans?
+2015-03-31 23:17:33	▬▬▶	rwiggins (~rwiggins@unaffiliated/rwiggins) has joined #archlinux
+2015-03-31 23:17:38	sudokode	hit or miss
+2015-03-31 23:17:41	dacoit	lemon_snowCone: I see. Have you looked in /var/log/pacman.log for any clues?
+2015-03-31 23:17:45	beest	sure, very nice live
+2015-03-31 23:17:53	sudokode	like pearl jam
+2015-03-31 23:18:01	◀▬▬	sdothum (~sdothum@dsl-173-206-51-12.tor.primus.ca) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2015-03-31 23:18:06	▬▬▶	mortdeus (~mortdeus@74.196.96.19) has joined #archlinux
+2015-03-31 23:18:07	dr4ke	Fair enough.
+2015-03-31 23:18:08	dacoit	!yt Yellow Led better
+2015-03-31 23:18:09	phrik	dacoit: Pearl Jam - Yellow Ledbetter - YouTube: <http://www.youtube.com/watch?v=hs8y3kneqrs>
+2015-03-31 23:18:21	dr4ke	Are you guys beer lovers?
+2015-03-31 23:18:23	◀▬▬	MarcMyWord (~marcus@c-67-165-66-119.hsd1.oh.comcast.net) has quit (Quit: Leaving)
+2015-03-31 23:18:32	lemon_snowCone	dacoit, having a look :)
+2015-03-31 23:18:36	ThurnisH41ey	dr4ke: YES
+2015-03-31 23:18:40	▬▬▶	MarcMyWord (~marcus@c-67-165-66-119.hsd1.oh.comcast.net) has joined #archlinux
+2015-03-31 23:18:42	ThurnisH41ey	!give dr4ke yt let down radiohead
+2015-03-31 23:18:43	phrik	dr4ke: 5. Let Down - YouTube: <http://www.youtube.com/watch?v=-Z_NvVMUcG8>
+2015-03-31 23:18:49	◀▬▬	mchearty (~mchearty@c-24-22-235-202.hsd1.wa.comcast.net) has quit (Client Quit)
+2015-03-31 23:18:54	dr4ke	ThurnisH41ey: Wow. That was emphatic as fuck.
+2015-03-31 23:18:57	sudokode	lol too much music at once
+2015-03-31 23:19:02	--	irc: disconnected from server
+2015-03-31 23:19:21	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-03-31 23:19:21	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-03-31 23:19:21	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-03-31 23:19:21	--	Channel #archlinux: 1910 nicks (1 op, 1 voice, 1908 normals)
+2015-03-31 23:19:24	◀▬▬	upamanyu (~upamanyu@c-76-112-7-5.hsd1.mi.comcast.net) has left #archlinux
+2015-03-31 23:19:24	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-03-31 23:19:24	▬▬▶	MarcMyWord (~marcus@c-67-165-66-119.hsd1.oh.comcast.net) has joined #archlinux
+2015-03-31 23:19:32	MarcMyWord	dr4ke: What's your favorite song by Radiohead?
+2015-03-31 23:19:47	sudokode	sad songs
+2015-03-31 23:19:51	dr4ke	MarcMyWord: Holy shit... putting me on the spot.
+2015-03-31 23:19:55	◀▬▬	Soul_Eater (~marcelo@unaffiliated/soul-eater/x-4649632) has quit (Remote host closed the connection)
+2015-03-31 23:19:56	sudokode	pearl jam's newer stuff is a bit heavier
+2015-03-31 23:20:03	▬▬▶	mchearty (~mchearty@c-24-22-235-202.hsd1.wa.comcast.net) has joined #archlinux
+2015-03-31 23:20:05	ThurnisH41ey	MarcMyWord: no way he can answer that so quickly
+2015-03-31 23:20:09	dr4ke	MarcMyWord: I can say my favorite ablum is Kid A... the whole thing.
+2015-03-31 23:20:09	◀▬▬	hooker (~alex@199.76.150.215) has quit (Quit: leaving)
+2015-03-31 23:20:13	MarcMyWord	sudokode: I didn't know Pearl Jam was still together. I haven't heard of them in years.
+2015-03-31 23:20:28	MarcMyWord	Here's a topic to discuss, what is everyone's favorite band?
+2015-03-31 23:20:28	hapislacker	hey
+2015-03-31 23:20:28	--	#archlinux: Cannot send to channel
+2015-03-31 23:20:38	jasonwryan	!offtopic
+2015-03-31 23:20:39	phrik	Take it to #archlinux-offtopic
+2015-03-31 23:20:42	dr4ke	ThurnisH41ey: No doubt. I would feel strongly too. OK Computer and Kid A might be two of the best albums I've ever heard. In Rainbows is up there for me too.
+2015-03-31 23:20:51	lemon_snowCone	dacoit, nothing out of the ordinary, http://dpaste.com/1Y9XA1F
+2015-03-31 23:20:52	phrik	Title: dpaste: 1Y9XA1F (at dpaste.com)
+2015-03-31 23:21:00	dr4ke	Sorry. I'll shut up about music.
+2015-03-31 23:21:23	▬▬▶	duncannz (~duncannz@121-74-212-37.telstraclear.net) has joined #archlinux
+2015-03-31 23:21:25	ThurnisH41ey	dr4ke sudokode dacoit MarcMyWord let's move to archlinux-offtopic
+2015-03-31 23:21:29	jasonwryan	lemon_snowCone: run pacman, not yaourt, with the debug flag
+2015-03-31 23:21:31	◀▬▬	alexwe (~alex@p57A30309.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2015-03-31 23:21:49	dr4ke	ThurnisH41ey: I'm down.
+2015-03-31 23:21:51	sudokode	MarcMyWord: well newish
+2015-03-31 23:21:53	◀▬▬	duncannz (~duncannz@121-74-212-37.telstraclear.net) has quit (Max SendQ exceeded)
+2015-03-31 23:21:56	beest	first guess is the core db got mangled
+2015-03-31 23:21:59	sudokode	lightning bolt?
+2015-03-31 23:22:12	sudokode	!yt pearl jam mind your manners
+2015-03-31 23:22:13	phrik	sudokode: Mind Your Manners (Official Music Video) - Pearl Jam - YouTube: <http://www.youtube.com/watch?v=jWQYYavheUA>
+2015-03-31 23:22:24	beest	seriously guys, even i'm having an issue following support
+2015-03-31 23:22:32	jasonwryan	beest: or some other repo is in there, screwing it up
+2015-03-31 23:22:41	sudokode	beest: you're home. go drunk
+2015-03-31 23:22:43	▬▬▶	duncannz (~duncannz@121-74-212-37.telstraclear.net) has joined #archlinux
+2015-03-31 23:22:56	beest	yup, those are the only two causes i usually see
+2015-03-31 23:23:15	--	irc: disconnected from server
+2015-03-31 23:23:33	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-03-31 23:23:33	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-03-31 23:23:33	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-03-31 23:23:34	--	Channel #archlinux: 1909 nicks (1 op, 1 voice, 1907 normals)
+2015-03-31 23:23:36	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-03-31 23:23:36	dacoit	pacman -Qk[k] perhaps
+2015-03-31 23:23:49	dacoit	But segfault :| yikes
+2015-03-31 23:24:15	beest	not ridiculously uncommon
+2015-03-31 23:24:39	◀▬▬	PetrVod (~vodicka@c-66-30-114-105.hsd1.ma.comcast.net) has quit (Remote host closed the connection)
+2015-03-31 23:24:55	▬▬▶	maldoror (~maldoror@ACaen-652-1-277-45.w92-154.abo.wanadoo.fr) has joined #archlinux
+2015-03-31 23:24:55	lemon_snowCone	pacman --debug output : http://dpaste.com/3JE0KYY
+2015-03-31 23:24:56	phrik	Title: dpaste: 3JE0KYY (at dpaste.com)
+2015-03-31 23:25:06	beest	sudokode: and that wasn't directed at you, enabler as you are :P
+2015-03-31 23:25:11	sudokode	MarcMyWord: sounds more like a foo fighters song
+2015-03-31 23:25:34	◀▬▬	throstur (~throstur@unaffiliated/throstur) has quit (Quit: WeeChat 1.1.1)
+2015-03-31 23:25:35	beest	totally is
+2015-03-31 23:25:42	--	irc: disconnected from server
+2015-04-01 15:17:38	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-04-01 15:17:38	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-04-01 15:17:38	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-04-01 15:17:38	--	Channel #archlinux: 2026 nicks (1 op, 1 voice, 2024 normals)
+2015-04-01 15:17:40	hapislacker	hi all
+2015-04-01 15:17:42	beest	GO GO GO
+2015-04-01 15:17:43	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-04-01 15:17:50	dac0it	lol
+2015-04-01 15:17:53	hairypaulsack	yo yo yo
+2015-04-01 15:17:55	TheLemonMan	RUST RUST RUST
+2015-04-01 15:18:03	▬▬▶	Justice (~commander@217.115.47.184) has joined #archlinux
+2015-04-01 15:18:13	dac0it	I'm in position
+2015-04-01 15:18:24	▬▬▶	gimbel (~seb@p3EE3C43B.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-01 15:18:24	▬▬▶	obedmr (~obedmr@187.188.63.40) has joined #archlinux
+2015-04-01 15:18:32	Namarrgon	LITHP LITHP LITHP
+2015-04-01 15:18:39	▬▬▶	tigrmesh (~tigrmesh@archlinux/op/tigrmesh) has joined #archlinux
+2015-04-01 15:18:53	▬▬▶	bel3atar (~bel3atar@41.141.221.65) has joined #archlinux
+2015-04-01 15:18:54	◀▬▬	mihok (~mihok@CPE00180a0f3f8a-CM00222d76471d.cpe.net.cable.rogers.com) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:18:55	◀▬▬	meisth0th (~th0th@fsf/member/meisth0th) has quit (Quit: Leaving)
+2015-04-01 15:18:57	▬▬▶	helasraizam (~helasraiz@nagini-96.dynamic.rpi.edu) has joined #archlinux
+2015-04-01 15:19:05	▬▬▶	krofek (~krofek@BSN-210-230-119.dynamic.siol.net) has joined #archlinux
+2015-04-01 15:19:06	◀▬▬	obedmr (~obedmr@187.188.63.40) has quit (Client Quit)
+2015-04-01 15:19:10	▬▬▶	Xenoth (~xenoth@104-56-166-31.lightspeed.cicril.sbcglobal.net) has joined #archlinux
+2015-04-01 15:19:15	◀▬▬	Guest60619 (~bpe@41.251.93.125) has quit (Remote host closed the connection)
+2015-04-01 15:19:16	▬▬▶	obedmr (~obedmr@187.188.63.40) has joined #archlinux
+2015-04-01 15:19:41	▬▬▶	ThaWeatherman (~ThaWeathe@71.206.26.52) has joined #archlinux
+2015-04-01 15:19:44	gehidore	!grab Namarrgon 
+2015-04-01 15:19:45	phrik	gehidore: Tada!
+2015-04-01 15:20:01	beest	i would hate to be an emacs user with a speech impediment
+2015-04-01 15:20:09	gehidore	heheh
+2015-04-01 15:20:22	▬▬▶	loofygun (~loofygun@unaffiliated/loofygun) has joined #archlinux
+2015-04-01 15:20:25	◀▬▬	JethroTux (~giuseppe@unaffiliated/jethrotux) has quit (Quit: brb)
+2015-04-01 15:20:31	▬▬▶	tyrion-mx (~tyrion-mx@2-236-4-85.ip231.fastwebnet.it) has joined #archlinux
+2015-04-01 15:20:43	dac0it	I would hate it regardless :<
+2015-04-01 15:20:45	▬▬▶	MuffinMan` (~muffin@dh207-109-206.xnet.hr) has joined #archlinux
+2015-04-01 15:21:04	▬▬▶	angerctl (~Namarrgon@55d44843.access.ecotel.net) has joined #archlinux
+2015-04-01 15:21:04	◀▬▬	Nizumzen (~Nizumzen@cpc1-reig5-2-0-cust251.6-3.cable.virginm.net) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2015-04-01 15:21:08	▬▬▶	Qpbs (~Qpbs@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has joined #archlinux
+2015-04-01 15:21:10	◀▬▬	w4ffles (~w4ffles@ip-64-134-159-227.public.wayport.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 15:21:10	◀▬▬	Namarrgon (~Namarrgon@55d412ee.access.ecotel.net) has quit (Disconnected by services)
+2015-04-01 15:21:11	▬▬▶	fahlmant (fahlmant@osuosl/staff/fahlmant) has joined #archlinux
+2015-04-01 15:21:12	--	angerctl is now known as Namarrgon
+2015-04-01 15:21:12	◀▬▬	tigr (~tigrmesh@archlinux/op/tigrmesh) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:21:14	◀▬▬	ghr (~ghr@91.108.165.45) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:21:49	◀▬▬	Qpbs (~Qpbs@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has quit (Excess Flood)
+2015-04-01 15:21:54	▬▬▶	j12t_ (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has joined #archlinux
+2015-04-01 15:22:06	◀▬▬	stef204 (~kvirc@unaffiliated/stef-204/x-384198) has quit (Read error: Connection reset by peer)
+2015-04-01 15:22:51	▬▬▶	Wpp (~Wpp@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has joined #archlinux
+2015-04-01 15:23:22	◀▬▬	admincomplex (~admincomp@aftr-185-17-205-42.dynamic.mnet-online.de) has quit (Quit: Leaving.)
+2015-04-01 15:23:28	◀▬▬	nootan (~nootan@27.34.6.180) has quit (Ping timeout: 246 seconds)
+2015-04-01 15:23:30	◀▬▬	Justice (~commander@217.115.47.184) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:23:33	◀▬▬	Soni (SoniEx2@unaffiliated/soniex2) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:23:34	▬▬▶	stef204 (~kvirc@unaffiliated/stef-204/x-384198) has joined #archlinux
+2015-04-01 15:24:46	◀▬▬	FreezingCold (~FreezingC@135.0.41.14) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:24:56	◀▬▬	WyReSP (~wyre@80.30.187.232) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:25:08	◀▬▬	josuess (~josue@189.26.202.192.dynamic.adsl.gvt.net.br) has quit (Quit: josuess)
+2015-04-01 15:25:09	◀▬▬	hairypaulsack (~hairypaul@104-7-144-225.lightspeed.irvnca.sbcglobal.net) has left #archlinux ("Leaving")
+2015-04-01 15:25:13	◀▬▬	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit (Ping timeout: 246 seconds)
+2015-04-01 15:25:42	▬▬▶	hairypaulsack (~hairypaul@104-7-144-225.lightspeed.irvnca.sbcglobal.net) has joined #archlinux
+2015-04-01 15:25:52	◀▬▬	Lorcatar (~BostonMA1@unaffiliated/bostonma1776) has quit (Read error: Connection reset by peer)
+2015-04-01 15:26:02	◀▬▬	wej (~j@2001:1af8:4010:a08c:1::6e) has quit (Ping timeout: 245 seconds)
+2015-04-01 15:26:45	◀▬▬	ZJvandeWeg (~zegerjan@ip166-41-176-143.adsl2.static.versatel.nl) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 15:27:11	◀▬▬	GriefNorth (~sanek@91.144.177.87) has quit (Ping timeout: 255 seconds)
+2015-04-01 15:27:53	hiptobecubic	Therth nothing wrong with thpeech impedimenth or emacth
+2015-04-01 15:27:56	◀▬▬	fazky (~user@i122mc151.vu-wien.ac.at) has quit (Remote host closed the connection)
+2015-04-01 15:28:11	▬▬▶	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has joined #archlinux
+2015-04-01 15:28:12	▬▬▶	kunev (~kunev@78-83-70-142.spectrumnet.bg) has joined #archlinux
+2015-04-01 15:28:20	hiptobecubic	It's hard to even read that properly.
+2015-04-01 15:28:27	◀▬▬	brb3 (~textual@host-184-174-177-154.WISOLT3.epbfi.com) has quit (Quit: ZZZzzz…)
+2015-04-01 15:28:33	▬▬▶	Justice (~commander@217.115.47.210) has joined #archlinux
+2015-04-01 15:29:04	◀▬▬	skunkos1 (~Martin_Ro@94-74-207-55.client.rionet.cz) has quit (Read error: Connection reset by peer)
+2015-04-01 15:29:24	▬▬▶	neobechs1ein (~KanneKaff@mail.nerdpapi.de) has joined #archlinux
+2015-04-01 15:29:56	◀▬▬	candhare (671b082b@gateway/web/freenode/ip.103.27.8.43) has quit (Ping timeout: 246 seconds)
+2015-04-01 15:29:57	▬▬▶	sheddow (~sheddow@94-246-33.188.3p.ntebredband.no) has joined #archlinux
+2015-04-01 15:30:14	◀▬▬	kriegersaurusrex (~akrieger@128.146.149.112) has quit (Read error: Connection reset by peer)
+2015-04-01 15:30:59	▬▬▶	WyReSP (~wyre@80.30.187.232) has joined #archlinux
+2015-04-01 15:30:59	◀▬▬	geheheh (~geheheh@95.90.17.111) has quit (Read error: Connection reset by peer)
+2015-04-01 15:31:14	▬▬▶	pid1 (~pid1@67.221.65.32) has joined #archlinux
+2015-04-01 15:31:36	◀▬▬	pid1 (~pid1@67.221.65.32) has left #archlinux
+2015-04-01 15:31:46	▬▬▶	wej (~j@2001:1af8:4010:a08c:1::6e) has joined #archlinux
+2015-04-01 15:32:27	▬▬▶	zarubin_ (~zarubin@109.251.149.199) has joined #archlinux
+2015-04-01 15:32:34	◀▬▬	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has quit (Ping timeout: 245 seconds)
+2015-04-01 15:33:20	◀▬▬	Wpp (~Wpp@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2015-04-01 15:33:34	◀▬▬	WyReSP (~wyre@80.30.187.232) has quit (Client Quit)
+2015-04-01 15:33:48	◀▬▬	neobechs1ein (~KanneKaff@mail.nerdpapi.de) has quit (Ping timeout: 245 seconds)
+2015-04-01 15:34:15	◀▬▬	acarrico (~acarrico@richmon1-dhcp-75.greenmountainaccess.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:34:42	◀▬▬	Numerius (~nednewton@dynamic-addr-143-42.resnet.rochester.edu) has left #archlinux
+2015-04-01 15:35:16	▬▬▶	acarrico (~acarrico@richmon1-dhcp-75.greenmountainaccess.net) has joined #archlinux
+2015-04-01 15:35:24	▬▬▶	SunDwarf (~Eyes@WiseOS/Founder/Eyes) has joined #archlinux
+2015-04-01 15:35:25	◀▬▬	hairypaulsack (~hairypaul@104-7-144-225.lightspeed.irvnca.sbcglobal.net) has quit (Quit: Leaving)
+2015-04-01 15:35:48	◀▬▬	schnedan (~Thunderbi@dslb-188-104-236-019.188.104.pools.vodafone-ip.de) has quit (Quit: schnedan)
+2015-04-01 15:36:23	▬▬▶	Utp (~Utp@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has joined #archlinux
+2015-04-01 15:36:30	◀▬▬	tyrion-mx (~tyrion-mx@2-236-4-85.ip231.fastwebnet.it) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:36:34	◀▬▬	pandeiro (~user@177.33.185.41) has quit (Read error: Connection reset by peer)
+2015-04-01 15:37:09	◀▬▬	julemand101 (~julemand1@pdpc/supporter/student/julemand101) has quit (Ping timeout: 245 seconds)
+2015-04-01 15:37:29	▬▬▶	greenbagels (~gb@cpe-65-25-124-183.neo.res.rr.com) has joined #archlinux
+2015-04-01 15:37:45	◀▬▬	Eyes (~Eyes@WiseOS/Founder/Eyes) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:38:04	oats	emacth ith awethome
+2015-04-01 15:38:09	◀▬▬	Phiphler (~archphiph@90-231-119-202-no64.tbcn.telia.com) has quit (Remote host closed the connection)
+2015-04-01 15:38:35	▬▬▶	_Ulan (~Thunderbi@2.26.80.135) has joined #archlinux
+2015-04-01 15:38:50	▬▬▶	cifvts (~cifvts@host99-58-static.12-87-b.business.telecomitalia.it) has joined #archlinux
+2015-04-01 15:40:45	◀▬▬	wej (~j@2001:1af8:4010:a08c:1::6e) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:40:51	◀▬▬	linfan (~linfan@c80-216-207-157.bredband.comhem.se) has quit (Quit: Lämnar)
+2015-04-01 15:40:57	▬▬▶	brb3 (~textual@host-184-174-177-154.WISOLT3.epbfi.com) has joined #archlinux
+2015-04-01 15:41:26	◀▬▬	hugovs (~hugo@177.159.144.73) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:42:22	◀▬▬	stef204 (~kvirc@unaffiliated/stef-204/x-384198) has quit (Ping timeout: 246 seconds)
+2015-04-01 15:42:45	◀▬▬	helasraizam (~helasraiz@nagini-96.dynamic.rpi.edu) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:42:46	▬▬▶	stef204 (~kvirc@unaffiliated/stef-204/x-384198) has joined #archlinux
+2015-04-01 15:42:54	◀▬▬	giab (~giard_b@163.5.141.94) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:43:34	▬▬▶	suspects (~suspects@c-50-133-145-120.hsd1.ma.comcast.net) has joined #archlinux
+2015-04-01 15:43:56	▬▬▶	SysGh0st (~sysghost@178-132-252-222.customer.universal.se) has joined #archlinux
+2015-04-01 15:44:08	◀▬▬	Kurt_P (~Kurt_P@96.243.206.221) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 15:44:24	◀▬▬	v{}id (~david@2a02:810d:a80:bb0::3) has quit (Quit: Bye.)
+2015-04-01 15:45:02	▬▬▶	mihok (~mihok@63.250.107.210) has joined #archlinux
+2015-04-01 15:46:10	◀▬▬	jjin (~jjin@wireless-205-208-124-239.uchicago.edu) has quit (Ping timeout: 244 seconds)
+2015-04-01 15:46:18	◀▬▬	airdem (~airdem@2a02:8109:a380:172c:5550:795b:7e6c:7716) has quit (Quit: Leaving)
+2015-04-01 15:46:29	◀▬▬	krz (~foo@unaffiliated/krz) has quit (Quit: WeeChat 1.0.1)
+2015-04-01 15:46:50	▬▬▶	Lorcatar (~BostonMA1@unaffiliated/bostonma1776) has joined #archlinux
+2015-04-01 15:46:56	▬▬▶	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has joined #archlinux
+2015-04-01 15:47:37	▬▬▶	Human_G33k (~Human_G33@139.103.177.173) has joined #archlinux
+2015-04-01 15:48:07	▬▬▶	newke (~newke@88-223-71-157.meganet.lt) has joined #archlinux
+2015-04-01 15:48:14	▬▬▶	hugovs (~hugo@177.159.144.73) has joined #archlinux
+2015-04-01 15:48:33	◀▬▬	whitebook (~whitebook@ool-6caa654a.static.optonline.net) has quit (Remote host closed the connection)
+2015-04-01 15:48:50	▬▬▶	john_f (~jwf@unaffiliated/john-f) has joined #archlinux
+2015-04-01 15:49:04	◀▬▬	suspects (~suspects@c-50-133-145-120.hsd1.ma.comcast.net) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 15:49:06	▬▬▶	jlle (~jlle@chello062178188104.1.15.vie.surfer.at) has joined #archlinux
+2015-04-01 15:49:09	▬▬▶	whitebook (~whitebook@ool-6caa654a.static.optonline.net) has joined #archlinux
+2015-04-01 15:49:24	▬▬▶	suspects (~suspects@c-50-133-145-120.hsd1.ma.comcast.net) has joined #archlinux
+2015-04-01 15:49:35	newke	hi. what package provides locate tool?
+2015-04-01 15:49:47	▬▬▶	wej (~j@2001:1af8:4010:a08c:1::6e) has joined #archlinux
+2015-04-01 15:49:55	GodGinrai	newke: for the future, use pkgfile to figure this out
+2015-04-01 15:50:00	GodGinrai	in the mean time:
+2015-04-01 15:50:06	GodGinrai	!give newke wtf is locate
+2015-04-01 15:50:07	phrik	newke: core/mlocate
+2015-04-01 15:50:26	GodGinrai	!next
+2015-04-01 15:50:27	phrik	Another satisfied customer! NEXT!
+2015-04-01 15:51:00	▬▬▶	cykacykacyka (~dog@theflat69.plus.com) has joined #archlinux
+2015-04-01 15:51:07	◀▬▬	whitebook (~whitebook@ool-6caa654a.static.optonline.net) has quit (Read error: No route to host)
+2015-04-01 15:51:20	◀▬▬	Case_Of (~Case_Of@unaffiliated/itruc) has quit (Ping timeout: 244 seconds)
+2015-04-01 15:51:54	▬▬▶	whitebook (~whitebook@ool-6caa654a.static.optonline.net) has joined #archlinux
+2015-04-01 15:51:54	▬▬▶	Gazpaxxo (~bizarro_1@36.Red-83-50-59.dynamicIP.rima-tde.net) has joined #archlinux
+2015-04-01 15:52:10	SysGh0st	There's no more customers. =S
+2015-04-01 15:52:23	◀▬▬	mihok (~mihok@63.250.107.210) has quit (Ping timeout: 272 seconds)
+2015-04-01 15:52:37	◀▬▬	chjj (~chjj@unaffiliated/chjj) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:52:43	◀▬▬	bizarro_1 (~bizarro_1@206.Red-88-20-112.staticIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-01 15:52:50	▬▬▶	Soni (SoniEx2@unaffiliated/soniex2) has joined #archlinux
+2015-04-01 15:53:10	Soni	I ran Windows, it crashed Linux
+2015-04-01 15:53:21	GodGinrai	!verp
+2015-04-01 15:53:22	phrik	!VERP !remotsuc deifsitasnu rehtonA
+2015-04-01 15:53:23	Soni	wasn't VBox supposed to protect against that?
+2015-04-01 15:53:30	Desu	no
+2015-04-01 15:53:44	Desu	there are a lot of things that can cause vbox to crash the host too
+2015-04-01 15:54:04	Desu	some of them bugs, others impossible to get around features of x86
+2015-04-01 15:54:07	selby	vbox will eat your children, beware!
+2015-04-01 15:54:20	Desu	it is usually rare though
+2015-04-01 15:54:20	▬▬▶	nateive (~nate@230.84.195.178.dynamic.wline.res.cust.swisscom.ch) has joined #archlinux
+2015-04-01 15:54:27	▬▬▶	julemand101 (~julemand1@pdpc/supporter/student/julemand101) has joined #archlinux
+2015-04-01 15:54:27	Soni	meh, maybe I need more RAM
+2015-04-01 15:54:36	▬▬▶	escondida (~joyfulgir@archlinux/op/escondida) has joined #archlinux
+2015-04-01 15:54:49	Desu	Soni: bugs like https://www.virtualbox.org/ticket/12381
+2015-04-01 15:54:52	phrik	Title: #12381 ([4.3.0 regression] VirtualBox keeps crashing the host OS (constant kernel panics)) – Oracle VM VirtualBox (at www.virtualbox.org)
+2015-04-01 15:54:59	▬▬▶	daze (~daze@unaffiliated/daze) has joined #archlinux
+2015-04-01 15:55:22	Desu	vbox have had a lot of similar bugs
+2015-04-01 15:55:25	Soni	my issue is that HDD usage went all the way up and everything froze
+2015-04-01 15:55:31	◀▬▬	Elish (~x@unaffiliated/elish) has quit (Quit: Elish)
+2015-04-01 15:55:33	▬▬▶	w4ffles (~w4ffles@ip-64-134-159-227.public.wayport.net) has joined #archlinux
+2015-04-01 15:55:53	selby	Soni: btrfs?
+2015-04-01 15:56:10	selby	If so, could be copy-on-write
+2015-04-01 15:56:12	Soni	selby, no, ext4
+2015-04-01 15:56:29	Desu	virtualbox doesn't do any IO limiting etc
+2015-04-01 15:56:36	◀▬▬	daze (~daze@unaffiliated/daze) has quit (Remote host closed the connection)
+2015-04-01 15:56:46	Desu	it will let guests hammer your disk as much as they like
+2015-04-01 15:56:59	Soni	ugh
+2015-04-01 15:57:14	selby	sounds like a rude guest
+2015-04-01 15:57:14	Soni	fuck vbox >.>
+2015-04-01 15:57:22	Desu	well you can limit disk bw
+2015-04-01 15:57:25	Desu	but that is about it
+2015-04-01 15:57:28	▬▬▶	daze (~daze@unaffiliated/daze) has joined #archlinux
+2015-04-01 15:57:31	Desu	sort of limit it
+2015-04-01 15:57:31	▬▬▶	jottr_ (~jottr@unaffiliated/jottr) has joined #archlinux
+2015-04-01 15:57:45	▬▬▶	SolarAquarion (~solaraqua@unaffiliated/solaraquarion) has joined #archlinux
+2015-04-01 15:57:45	Desu	https://www.virtualbox.org/manual/ch05.html#storage-bandwidth-limit
+2015-04-01 15:57:46	phrik	Title: Chapter�5.�Virtual storage (at www.virtualbox.org)
+2015-04-01 15:58:26	Desu	will still let the guest do as many IOops as it likes
+2015-04-01 15:58:27	◀▬▬	deepend (~deepend@unaffiliated/za-lord) has quit (Quit: Leaving)
+2015-04-01 15:59:05	▬▬▶	phre4k (~phre4k@55d42633.access.ecotel.net) has joined #archlinux
+2015-04-01 15:59:45	Desu	also oracle fails at utf8
+2015-04-01 15:59:53	▬▬▶	arselinux (~dicks@173-24-183-225.client.mchsi.com) has joined #archlinux
+2015-04-01 16:00:18	◀▬▬	aaro (~aaro@unaffiliated/xyox/x-040147) has quit (Quit: WeeChat 0.3.8)
+2015-04-01 16:00:20	Soni	ok, I'll look into it, thanks
+2015-04-01 16:00:34	◀▬▬	maveric7911 (~maveric79@166.170.35.172) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:00:52	nateive	join #jekyll
+2015-04-01 16:00:58	nateive	ups sry
+2015-04-01 16:01:19	GodGinrai	nateive: nah, #hyde is more fun
+2015-04-01 16:01:34	◀▬▬	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has quit (Remote host closed the connection)
+2015-04-01 16:01:47	teraflop	damn every time I see this shit i feel so bad  http://a.pomf.se/tmckaz.png
+2015-04-01 16:02:10	Earnestly	:D
+2015-04-01 16:02:26	◀▬▬	jottr_ (~jottr@unaffiliated/jottr) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:02:48	◀▬▬	SolarAquarion (~solaraqua@unaffiliated/solaraquarion) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:03:01	holomorph	replacement character lol
+2015-04-01 16:03:22	Desu	phrik does utf8, oracle does not
+2015-04-01 16:03:27	◀▬▬	GodGinrai (~godginrai@unaffiliated/godginrai) has quit (Quit: Leaving Work)
+2015-04-01 16:03:42	stef204	Soni: I run Windows with heavyy/expensive (in terms of resources) apps in a Vbox VM and very stable, never has crashed Linux host (for me). I use ext4 as well. I make extensive use of that VM (unfortunately). Possibly, your VM is not configured properly...That's where I would look, tweaking that.
+2015-04-01 16:03:55	◀▬▬	`ajven (~luis@178235004062.warszawa.vectranet.pl) has quit (Quit: Konversation terminated!)
+2015-04-01 16:04:26	SysGh0st	Having trouble with my laptops sdcard reader. While copying files from it, it'll eventually stop, and dmesg spits out: http://sprunge.us/KGAY What is wrong?
+2015-04-01 16:04:29	▬▬▶	tyrion-mx (~tyrion-mx@2-236-4-85.ip231.fastwebnet.it) has joined #archlinux
+2015-04-01 16:04:30	◀▬▬	eric_lagergren (~barsonme@c-76-121-113-163.hsd1.wa.comcast.net) has quit (Read error: Connection reset by peer)
+2015-04-01 16:04:34	▬▬▶	plww (~plw@abtp6.neoplus.adsl.tpnet.pl) has joined #archlinux
+2015-04-01 16:05:39	▬▬▶	Case_Of (~Case_Of@unaffiliated/itruc) has joined #archlinux
+2015-04-01 16:05:46	▬▬▶	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has joined #archlinux
+2015-04-01 16:06:07	◀▬▬	phre4k (~phre4k@55d42633.access.ecotel.net) has quit (Quit: Leaving)
+2015-04-01 16:06:19	▬▬▶	harha_ (harha_@d639.ip16.netikka.fi) has joined #archlinux
+2015-04-01 16:06:38	◀▬▬	eletious (~eletious@oh-71-48-92-56.dhcp.embarqhsd.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:06:47	◀▬▬	Jackneill (~Jackneill@unaffiliated/jackneill) has quit (Remote host closed the connection)
+2015-04-01 16:07:12	▬▬▶	Paris (~Paris@65.188.232.44) has joined #archlinux
+2015-04-01 16:07:15	SysGh0st	Even more strange is that this happens when around 6 GiB has been transfered. Every time. Hard to copy files larger than 6 GiB
+2015-04-01 16:07:16	▬▬▶	woga (~woga@plb95-1-82-229-89-38.fbx.proxad.net) has joined #archlinux
+2015-04-01 16:07:35	◀▬▬	jceb (~jceb@2001:6f8:900:8e46:8a53:2eff:fe91:4709) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:07:38	▬▬▶	ProfessorKaos64 (~mikeyd@216.49.11.4.res-cmts.pnt.ptd.net) has joined #archlinux
+2015-04-01 16:07:57	◀▬▬	dual1 (~dual@office-mail.ciestudios.com) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:08:01	▬▬▶	Romzetron (~Romzetron@71-82-53-158.dhcp.bycy.mi.charter.com) has joined #archlinux
+2015-04-01 16:09:02	▬▬▶	neckutrek (~neckutrek@c-931de555.018-202-6f72651.cust.bredbandsbolaget.se) has joined #archlinux
+2015-04-01 16:09:30	◀▬▬	Romzetron (~Romzetron@71-82-53-158.dhcp.bycy.mi.charter.com) has quit (Remote host closed the connection)
+2015-04-01 16:09:31	▬▬▶	Bastian82 (~grzempek@77-253-153-82.adsl.inetia.pl) has joined #archlinux
+2015-04-01 16:09:56	◀▬▬	Utp (~Utp@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:10:55	Namarrgon	It only happens with that one card?
+2015-04-01 16:12:12	◀▬▬	Xenoth (~xenoth@104-56-166-31.lightspeed.cicril.sbcglobal.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:12:24	SysGh0st	Nope. any card of any type. All cards works flawlessly on other computers
+2015-04-01 16:12:55	SysGh0st	I suspect this particular reader with this kernel have this problem.
+2015-04-01 16:13:15	SysGh0st	I'll try downgrading the kernel. Didn't have this problem a while ago.
+2015-04-01 16:13:23	◀▬▬	Frickelpit (~pit@ubuntuusers/emeritus/frickelpit) has quit (Quit: Adios!)
+2015-04-01 16:13:36	SysGh0st	current version 3.19.2
+2015-04-01 16:14:41	◀▬▬	frankyboy_ (~franky@ppp109-252-17-43.pppoe.spdop.ru) has quit (Remote host closed the connection)
+2015-04-01 16:15:10	▬▬▶	mrblgrnt (mrblgrnt@gateway/vpn/mullvad/x-cltmqysixduqjuco) has joined #archlinux
+2015-04-01 16:15:11	Namarrgon	which reader is it?
+2015-04-01 16:15:54	SysGh0st	internal laptop reader: 08:01.1 SD Host controller: Ricoh Co Ltd R5C822 SD/SDIO/MMC/MS/MSPro Host Adapter (rev 22)
+2015-04-01 16:16:05	◀▬▬	itai86 (~indstwetr@ip565b8107.direct-adsl.nl) has quit (Quit: WeeChat 1.1-dev)
+2015-04-01 16:16:07	SysGh0st	found via lspci
+2015-04-01 16:16:09	teraflop	3.19.3-1 not big deal here :(
+2015-04-01 16:16:16	▬▬▶	evil-work (~noident@77.119.131.90.wireless.dyn.drei.com) has joined #archlinux
+2015-04-01 16:16:19	◀▬▬	kiviuq (~mo@aftr-37-201-241-149.unity-media.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:16:19	◀▬▬	maddogie (~jim@ip1886e090.dynamic.kabel-deutschland.de) has quit (Quit: Konversation terminated!)
+2015-04-01 16:16:30	◀▬▬	Femtox (~fmtx@unaffiliated/femtox) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:16:35	◀▬▬	freestyl3r (~free@ppp005055046178.access.hol.gr) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 16:17:09	◀▬▬	addtru (~adlight@5-15-30-140.residential.rdsnet.ro) has quit (Quit: Leaving)
+2015-04-01 16:17:50	◀▬▬	dunkel2 (~dunkel2@200.239.11.199) has quit (Quit: dunkel2)
+2015-04-01 16:17:53	sudokode	4.0 damnit
+2015-04-01 16:17:56	sudokode	https://kernel.org
+2015-04-01 16:17:58	phrik	Title: The Hurr Durr Archives (at kernel.org)
+2015-04-01 16:18:08	sudokode	3 days since rc6
+2015-04-01 16:18:22	▬▬▶	ascii_ch (~quassel@78.82.0.85.dynamic.wline.res.cust.swisscom.ch) has joined #archlinux
+2015-04-01 16:18:32	▬▬▶	tumbler (~tumbler@unaffiliated/tumbler) has joined #archlinux
+2015-04-01 16:18:37	▬▬▶	berceanu_ (~berceanu@151.62.42.19) has joined #archlinux
+2015-04-01 16:18:38	◀▬▬	c_korn (~c_korn@2001:a60:10ea:5601:c5c6:5ab0:dcdf:a373) has quit (Quit: Leaving)
+2015-04-01 16:18:55	▬▬▶	memori (~eno@104-6-213-192.lightspeed.gdrpmi.sbcglobal.net) has joined #archlinux
+2015-04-01 16:18:55	◀▬▬	memori (~eno@104-6-213-192.lightspeed.gdrpmi.sbcglobal.net) has quit (Changing host)
+2015-04-01 16:18:55	▬▬▶	memori (~eno@unaffiliated/memori) has joined #archlinux
+2015-04-01 16:19:20	Namarrgon	and another 7 till rc7
+2015-04-01 16:19:24	▬▬▶	babati (~babati@92.247.63.15) has joined #archlinux
+2015-04-01 16:19:42	▬▬▶	phre4k (~phre4k@55d42633.access.ecotel.net) has joined #archlinux
+2015-04-01 16:19:48	▬▬▶	itai86 (~indstwetr@ip565b8107.direct-adsl.nl) has joined #archlinux
+2015-04-01 16:20:24	◀▬▬	maeb (~maeb@a83-161-141-10.adsl.xs4all.nl) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:20:34	sudokode	eh
+2015-04-01 16:20:38	sudokode	it's coming up on release time
+2015-04-01 16:20:50	sudokode	probably another week or so until 4.0 hits stable
+2015-04-01 16:21:07	▬▬▶	LAC1213 (~lambert@adsl-89-217-31-76.adslplus.ch) has joined #archlinux
+2015-04-01 16:21:14	sudokode	new minor release roughly every 2 months
+2015-04-01 16:21:22	◀▬▬	itai86 (~indstwetr@ip565b8107.direct-adsl.nl) has quit (Client Quit)
+2015-04-01 16:21:32	SysGh0st	"The Hurr Durr Archives" ... lol
+2015-04-01 16:21:32	▬▬▶	Femtox (~fmtx@unaffiliated/femtox) has joined #archlinux
+2015-04-01 16:21:34	◀▬▬	vitimiti (~vitimiti@unaffiliated/vitimiti) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:21:38	▬▬▶	hectior (~Thunderbi@c-50-139-109-206.hsd1.or.comcast.net) has joined #archlinux
+2015-04-01 16:21:47	sudokode	08/03/14  10/05/14  12/08/14  02/09/15
+2015-04-01 16:21:54	▬▬▶	vitimiti (~vitimiti@unaffiliated/vitimiti) has joined #archlinux
+2015-04-01 16:21:55	Namarrgon	wonder why 3.19.3 is still not in [core]
+2015-04-01 16:21:57	◀▬▬	LAC1213 (~lambert@adsl-89-217-31-76.adslplus.ch) has left #archlinux
+2015-04-01 16:22:08	▬▬▶	mihok (~mihok@CPE00180a0f3f8a-CM00222d76471d.cpe.net.cable.rogers.com) has joined #archlinux
+2015-04-01 16:22:09	sudokode	I predict a release on 04/11/15
+2015-04-01 16:22:21	◀▬▬	unknwn (~nezinau@78-56-20-17.static.zebra.lt) has quit (Read error: Connection reset by peer)
+2015-04-01 16:22:25	◀▬▬	babati (~babati@92.247.63.15) has quit
+2015-04-01 16:22:55	▬▬▶	Xenoth (~xenoth@104-56-166-31.lightspeed.cicril.sbcglobal.net) has joined #archlinux
+2015-04-01 16:23:01	sudokode	no it's usually sunday or monday
+2015-04-01 16:23:10	▬▬▶	_X_C_V_B_ (~XCVB@dur-dhcp-1-240.dsl.airstreamcomm.net) has joined #archlinux
+2015-04-01 16:23:15	sudokode	so maybe april 13 or 14
+2015-04-01 16:23:57	beest	yeah, they've been shooting for the first half of april and it's usually the beginning of the week so i'm thinking the 14th
+2015-04-01 16:24:00	sudokode	unless they release it next week
+2015-04-01 16:24:22	▬▬▶	dual1 (~dual@pool-173-57-48-146.dllstx.fios.verizon.net) has joined #archlinux
+2015-04-01 16:24:22	▬▬▶	T-Sourcemaker (~Joungai3q@2a02:8071:a81:7f00:f66d:4ff:fe79:2ef9) has joined #archlinux
+2015-04-01 16:24:41	Desu	beest: they have been shooting for that long and the police have not came yet?
+2015-04-01 16:24:42	◀▬▬	w4ffles (~w4ffles@ip-64-134-159-227.public.wayport.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:24:51	sudokode	so funny
+2015-04-01 16:24:51	Desu	beest: it this syria?
+2015-04-01 16:24:53	--	Chocobozzz is now known as Chocobozzz_afk
+2015-04-01 16:25:18	beest	no, if it were syria their aim would be better :(
+2015-04-01 16:25:23	▬▬▶	utack (~utack@ip923464f1.dynamic.kabel-deutschland.de) has joined #archlinux
+2015-04-01 16:25:30	▬▬▶	caldog20_ (~caldog20@66.199.31.1) has joined #archlinux
+2015-04-01 16:25:32	▬▬▶	itai86 (~indstwetr@ip565b8107.direct-adsl.nl) has joined #archlinux
+2015-04-01 16:25:34	◀▬▬	newke (~newke@88-223-71-157.meganet.lt) has quit (Remote host closed the connection)
+2015-04-01 16:26:04	sudokode	what did google end up doing
+2015-04-01 16:26:19	beest	pac-man in maps i think
+2015-04-01 16:27:13	Namarrgon	not the com.google thing?
+2015-04-01 16:27:27	▬▬▶	tjger (~tjger@46.128.43.80.dynamic.cablesurf.de) has joined #archlinux
+2015-04-01 16:28:12	sudokode	cute
+2015-04-01 16:28:14	◀▬▬	caldog20 (~caldog20@66.199.31.1) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:28:58	sudokode	that's fun
+2015-04-01 16:29:01	sudokode	I bet that took some work
+2015-04-01 16:29:06	◀▬▬	neibo (~neibo@98.85-84-20.dynamic.clientes.euskaltel.es) has quit (Remote host closed the connection)
+2015-04-01 16:29:20	▬▬▶	FLHerne (~flh@unaffiliated/flherne) has joined #archlinux
+2015-04-01 16:29:28	sudokode	pretty reserved this year though
+2015-04-01 16:29:35	SysGh0st	Now trying to copy files from the problematic sd card reader with kernel core/linux-lts 3.14.37-1. We'll see soon...
+2015-04-01 16:29:42	▬▬▶	maveric7911 (~maveric79@pool-71-244-171-102.bltmmd.fios.verizon.net) has joined #archlinux
+2015-04-01 16:29:48	beest	i'm a boring prick who haites april fools' day but i liked richard branson saying he's moving virgin to branson, missouri
+2015-04-01 16:29:55	beest	haites, really?
+2015-04-01 16:29:58	◀▬▬	pandark (~arbre@2a01:e34:ecca:a8b0:be5f:f4ff:fe68:1def) has quit (Remote host closed the connection)
+2015-04-01 16:30:08	▬▬▶	mtn (~mtn@dpc6744160092.direcpc.com) has joined #archlinux
+2015-04-01 16:30:23	▬▬▶	pandeiro (~user@177.33.185.41) has joined #archlinux
+2015-04-01 16:30:34	SysGh0st	First thing I notice is that it a bit slower this time. only 6-7 MiB/sec, instead of 10-11 MiB/sec
+2015-04-01 16:30:54	◀▬▬	tharugrim (~tharugrim@unaffiliated/tharugrim) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:31:12	sudokode	https://twitter.com/CERN/status/583147747710263296/photo/1
+2015-04-01 16:31:13	phrik	Title: CERN auf Twitter: "Breaking news: CERN researchers confirm existence of the Force http://t.co/BPp2wV01dp http://t.co/1TXkbUTdsm" (at twitter.com)
+2015-04-01 16:31:15	▬▬▶	nous (~nous@130.43.36.178.dsl.dyn.forthnet.gr) has joined #archlinux
+2015-04-01 16:31:16	▬▬▶	semeion (~semeion@unaffiliated/semeion) has joined #archlinux
+2015-04-01 16:31:21	◀▬▬	mihok (~mihok@CPE00180a0f3f8a-CM00222d76471d.cpe.net.cable.rogers.com) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:31:26	▬▬▶	benanne (~rijdier@ip-81-11-161-239.dsl.scarlet.be) has joined #archlinux
+2015-04-01 16:31:36	◀▬▬	zarubin_ (~zarubin@109.251.149.199) has quit (Remote host closed the connection)
+2015-04-01 16:31:50	▬▬▶	Linuts_ (~linus@c106-205.i07-27.onvol.net) has joined #archlinux
+2015-04-01 16:31:51	▬▬▶	Linuts (~linus@c106-205.i07-27.onvol.net) has joined #archlinux
+2015-04-01 16:31:54	▬▬▶	diego_ (~diego@181.66.156.237) has joined #archlinux
+2015-04-01 16:32:14	▬▬▶	apt-get_ (~apt-get@adsl196-146-98-217-196.adsl196-12.iam.net.ma) has joined #archlinux
+2015-04-01 16:32:30	◀▬▬	vitimiti (~vitimiti@unaffiliated/vitimiti) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:32:33	◀▬▬	DogPolice (~RJones@unaffiliated/rjones) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:32:47	escondida	heh
+2015-04-01 16:32:51	sudokode	“The Force is what gives a particle physicist his powers,” said CERN theorist Ben Kenobi of the University of Mos Eisley, Tatooine.
+2015-04-01 16:32:54	sudokode	fun
+2015-04-01 16:33:15	◀▬▬	thesilentboatman (~thesilent@c83-248-87-13.bredband.comhem.se) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:33:20	◀▬▬	ParokshaX (~ParokshaX@gateway/shell/elitebnc/x-zshmbnxwljcahnvh) has quit (Remote host closed the connection)
+2015-04-01 16:33:33	◀▬▬	margjakob (~margjakob@36.70.119.8) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:33:42	◀▬▬	hectior (~Thunderbi@c-50-139-109-206.hsd1.or.comcast.net) has quit (Quit: hectior)
+2015-04-01 16:34:00	▬▬▶	ParokshaX (ParokshaX@gateway/shell/elitebnc/x-andobzcioenxyqhs) has joined #archlinux
+2015-04-01 16:34:14	▬▬▶	nuk3 (~user@168.253.196.224) has joined #archlinux
+2015-04-01 16:34:36	▬▬▶	deepblue (~linuxator@unaffiliated/rampageripper) has joined #archlinux
+2015-04-01 16:34:52	SysGh0st	lol @ http://www.thinkgeek.com/product/iljn/?pfm=HP_FeaturedProducts_4_iljn
+2015-04-01 16:34:53	phrik	Title: Steam-Powered Gaming Cabinet | ThinkGeek (at www.thinkgeek.com)
+2015-04-01 16:35:27	◀▬▬	TheAtomicGoose (~jesse@74-94-190-9-NewEngland.hfc.comcastbusiness.net) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:35:50	◀▬▬	apt-get__ (~apt-get@adsl196-139-100-217-196.adsl196-12.iam.net.ma) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:36:09	◀▬▬	caldog20_ (~caldog20@66.199.31.1) has quit (Remote host closed the connection)
+2015-04-01 16:36:44	▬▬▶	caldog20 (~caldog20@66.199.31.1) has joined #archlinux
+2015-04-01 16:36:45	◀▬▬	olegfusion (~olegfusio@46.191.226.49) has quit (Read error: Connection reset by peer)
+2015-04-01 16:36:58	▬▬▶	TheAtomicGoose (~jesse@74-94-190-9-NewEngland.hfc.comcastbusiness.net) has joined #archlinux
+2015-04-01 16:37:11	sudokode	haha
+2015-04-01 16:37:19	◀▬▬	dac0it (~dacoit@gateway/vpn/privateinternetaccess/dacoit) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:37:32	▬▬▶	vera1 (~vera1@unaffiliated/vera1) has joined #archlinux
+2015-04-01 16:37:36	◀▬▬	itai86 (~indstwetr@ip565b8107.direct-adsl.nl) has quit (Quit: WeeChat 1.1-dev)
+2015-04-01 16:37:36	vera1	hi
+2015-04-01 16:37:40	vera1	question
+2015-04-01 16:37:42	sudokode	hi
+2015-04-01 16:37:46	sudokode	okay
+2015-04-01 16:37:50	◀▬▬	SunDwarf (~Eyes@WiseOS/Founder/Eyes) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:37:52	 *	SysGh0st prepares
+2015-04-01 16:37:57	 *	holomorph taps fingers
+2015-04-01 16:37:59	vera1	does anyone know what kind of links creates 'netctl enable'
+2015-04-01 16:38:09	holomorph	yes, someone knows
+2015-04-01 16:38:11	vera1	I have a raspberry pi for which I made a mistake in my netctl file
+2015-04-01 16:38:16	holomorph	!alarm
+2015-04-01 16:38:16	phrik	If you're here because of an issue with your Raspberry Pi or other ARM device, join #archlinux-arm.
+2015-04-01 16:38:25	vera1	so I mounted the SD in another computer and modified it
+2015-04-01 16:38:35	vera1	well, it's pretty general
+2015-04-01 16:38:40	vera1	not raspberry pi specific
+2015-04-01 16:38:48	caldog20	symlink for netctl@interface.service
+2015-04-01 16:38:55	caldog20	netctl@eth0.service for example
+2015-04-01 16:38:57	holomorph	and doesn't alarm use networkd by default nowadays, anyways
+2015-04-01 16:39:11	caldog20	netcl
+2015-04-01 16:39:13	vera1	but in principle, if I change the ESSID in the /etc/netctl/myfile
+2015-04-01 16:39:19	▬▬▶	syslock (~syslock@xd932eed3.dyn.telefonica.de) has joined #archlinux
+2015-04-01 16:39:19	vera1	it should be enough, right?
+2015-04-01 16:39:57	◀▬▬	Soni (SoniEx2@unaffiliated/soniex2) has quit (Remote host closed the connection)
+2015-04-01 16:40:00	▬▬▶	blabla__ (~blabla@p57BD7E1D.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-01 16:40:01	◀▬▬	o77o (~damn@p57B4A092.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:40:20	▬▬▶	thesilentboatman (~thesilent@c83-248-87-13.bredband.comhem.se) has joined #archlinux
+2015-04-01 16:41:21	▬▬▶	CaptainCrunch (~ken@HSI-KBW-046-005-000-044.hsi8.kabel-badenwuerttemberg.de) has joined #archlinux
+2015-04-01 16:41:23	▬▬▶	rendy (~rendy@150.209.broadband18.iol.cz) has joined #archlinux
+2015-04-01 16:41:50	▬▬▶	towhatend (~alex@h-12-9.a329.priv.bahnhof.se) has joined #archlinux
+2015-04-01 16:41:54	◀▬▬	visibilityspots (~Jan@d54C5967C.access.telenet.be) has quit (Quit: See you)
+2015-04-01 16:42:03	▬▬▶	NeuerGolf2 (~cvcxc4@p5DDF69F2.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-01 16:42:03	◀▬▬	krazykral (~krazykral@63.167.102.144) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:42:38	▬▬▶	jottr_ (~jottr@unaffiliated/jottr) has joined #archlinux
+2015-04-01 16:42:46	▬▬▶	margjakob (~margjakob@36.71.137.101) has joined #archlinux
+2015-04-01 16:43:19	◀▬▬	jlle (~jlle@chello062178188104.1.15.vie.surfer.at) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 16:43:41	◀▬▬	rendy (~rendy@150.209.broadband18.iol.cz) has left #archlinux
+2015-04-01 16:43:43	◀▬▬	blabla_ (~blabla@ip-80-226-1-8.vodafone-net.de) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:43:57	◀▬▬	kelnoky (~shao@95.91.228.4) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 16:44:07	▬▬▶	AleXoundOS (~AleXoundO@ip-95-221-217-71.bb.netbynet.ru) has joined #archlinux
+2015-04-01 16:44:27	▬▬▶	Maxels (~Maxel@24-159-207-34.static.roch.mn.charter.com) has joined #archlinux
+2015-04-01 16:44:49	◀▬▬	towhatend (~alex@h-12-9.a329.priv.bahnhof.se) has quit (Client Quit)
+2015-04-01 16:44:53	▬▬▶	geomyidae_ (uid214@gateway/web/irccloud.com/x-nymurgtnlksdudyw) has joined #archlinux
+2015-04-01 16:44:58	◀▬▬	alexwe (~alex@p57A306D1.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:44:59	sudokode	the probably is really netctl
+2015-04-01 16:45:04	▬▬▶	blabla_ (~blabla@ip-80-226-1-23.vodafone-net.de) has joined #archlinux
+2015-04-01 16:45:09	◀▬▬	nGolf (~cvcxc4@p5DDF636A.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:45:16	◀▬▬	deepblue (~linuxator@unaffiliated/rampageripper) has quit (Read error: Connection reset by peer)
+2015-04-01 16:45:18	sudokode	not only are you on raspi, but you're also using something almost no one in here likes or supports
+2015-04-01 16:45:30	sudokode	and yes it's somehow still in base
+2015-04-01 16:45:38	vera1	netctl you mean?
+2015-04-01 16:45:39	sudokode	s/probably/problem/
+2015-04-01 16:45:41	▬▬▶	visibilityspots (~Jan@d54c5967c.access.telenet.be) has joined #archlinux
+2015-04-01 16:45:44	sudokode	yes
+2015-04-01 16:45:46	◀▬▬	capeta (~capeta@unaffiliated/capeta) has quit (Quit: Sair)
+2015-04-01 16:46:02	sudokode	!wiki wpa_supplicant
+2015-04-01 16:46:03	phrik	sudokode: https://wiki.archlinux.org/index.php/WPA_supplicant
+2015-04-01 16:46:05	vera1	I though it was pretty standard 
+2015-04-01 16:46:27	sudokode	well that's the problem
+2015-04-01 16:46:29	holomorph	it's a standard pile of shit
+2015-04-01 16:46:31	bougyman	wpa_cli is quite easy to use.
+2015-04-01 16:46:37	holomorph	^
+2015-04-01 16:46:44	holomorph	!wpa_cli
+2015-04-01 16:46:45	phrik	https://gist.github.com/buhman/7162560
+2015-04-01 16:46:52	◀▬▬	Maxel (~Maxel@24-159-207-34.static.roch.mn.charter.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:47:03	eto	what's wrong with wpa supplicant?
+2015-04-01 16:47:16	▬▬▶	zarubin_ (~zarubin@109.251.149.199) has joined #archlinux
+2015-04-01 16:47:21	sudokode	nothing
+2015-04-01 16:47:30	sudokode	read above
+2015-04-01 16:47:36	holomorph	i'd say the very terse doc/help text
+2015-04-01 16:47:39	◀▬▬	vlatkoB (~IRC_clien@unaffiliated/vlatkob) has quit (Remote host closed the connection)
+2015-04-01 16:47:40	◀▬▬	blabla__ (~blabla@p57BD7E1D.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2015-04-01 16:47:41	vera1	well, in this particular network I have only wep
+2015-04-01 16:47:50	vera1	I know it's insecure, bla bla bla
+2015-04-01 16:47:59	holomorph	and? is that supposed to mean something
+2015-04-01 16:48:07	vera1	but physically I have even problems to connect it from my place
+2015-04-01 16:48:10	bougyman	for wep you can still use wpa_cli
+2015-04-01 16:48:12	◀▬▬	SgtMurder (~Sgtmurder@89-27-65-20.bb.dnainternet.fi) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:48:17	bougyman	or you can use straight iw
+2015-04-01 16:48:18	◀▬▬	HM2 (~HM@81.4.101.225) has quit (Remote host closed the connection)
+2015-04-01 16:48:20	vera1	I don't expect anyone to be able to connect or crack it from the outside
+2015-04-01 16:48:26	◀▬▬	andyrtr (~andyrtr_l@archlinux/developer/andyrtr) has quit (Quit: Ex-Chat)
+2015-04-01 16:48:37	▬▬▶	stormysea (~stormysea@unaffiliated/stormysea) has joined #archlinux
+2015-04-01 16:48:39	beest	also there are very nice and helpful people in #archlinux-arm right now who are very sad because you are using another distro's support channel
+2015-04-01 16:48:41	saivert	hmpf.. vmware doesn't build the modules with latest kernel
+2015-04-01 16:48:46	beest	i can hear them ... crying.
+2015-04-01 16:48:57	holomorph	!leming
+2015-04-01 16:48:58	phrik	<leming> if you can't even get the irc channel right, the chances you can operate arch are next to nil
+2015-04-01 16:49:01	vera1	hahaha
+2015-04-01 16:49:03	vera1	ok ok
+2015-04-01 16:49:06	sudokode	probably because they're laughing so hard that we do their work for them
+2015-04-01 16:49:35	◀▬▬	chengsun (~x@host86-142-225-39.range86-142.btcentralplus.com) has quit (Quit: Lost terminal)
+2015-04-01 16:49:35	▬▬▶	bjarki (~bjarki@dsl-ls-106-231.du.vortex.is) has joined #archlinux
+2015-04-01 16:49:41	vera1	mmm, but is it not this an Arch Linux channel?
+2015-04-01 16:49:43	◀▬▬	bjarki (~bjarki@dsl-ls-106-231.du.vortex.is) has quit (Client Quit)
+2015-04-01 16:49:51	holomorph	arch linux arm isn't arch linux
+2015-04-01 16:49:53	holomorph	holy shit
+2015-04-01 16:49:56	vera1	come on
+2015-04-01 16:49:58	sudokode	two different distros
+2015-04-01 16:49:59	holomorph	!gtfo
+2015-04-01 16:50:00	phrik	http://arch.har-ikkje.net/gfx/gtfo2.png
+2015-04-01 16:50:00	▬▬▶	blabla__ (~blabla@p57BD7E1D.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-01 16:50:04	sudokode	separate projects
+2015-04-01 16:50:11	◀▬▬	visibilityspots (~Jan@d54c5967c.access.telenet.be) has quit (Client Quit)
+2015-04-01 16:50:13	sudokode	perhaps one day they will merge, but it is not this day
+2015-04-01 16:50:19	vera1	it's like saying raspbian is not debian
+2015-04-01 16:50:23	▬▬▶	bjarki (~bjarki@dsl-ls-106-231.du.vortex.is) has joined #archlinux
+2015-04-01 16:50:25	Namarrgon	today could have been this day
+2015-04-01 16:50:29	◀▬▬	blabla_ (~blabla@ip-80-226-1-23.vodafone-net.de) has quit (Ping timeout: 245 seconds)
+2015-04-01 16:50:30	sudokode	it's not
+2015-04-01 16:50:31	holomorph	!ops
+2015-04-01 16:50:32	phrik	demize, escondida, falconindy, grawity, heftig, jelle, MrElendig/Mion, tigrmesh/tigr, wonder/ioni, vodik – come and save holomorph from this troll horde!
+2015-04-01 16:50:37	vera1	psss
+2015-04-01 16:50:43	sudokode	there are reason these are forks
+2015-04-01 16:50:44	beest	holomorph: no reason for that
+2015-04-01 16:50:45	escondida	holomorph: who?
+2015-04-01 16:50:49	eto	sudokode: ah so wpa_cli instead of netctl?
+2015-04-01 16:50:50	holomorph	beest: dilligaf
+2015-04-01 16:50:52	vera1	they are separated projects, but they are the same
+2015-04-01 16:50:57	holomorph	escondida: vera1
+2015-04-01 16:50:57	sudokode	the different architecture can present problems for the others
+2015-04-01 16:51:03	◀▬▬	mcescher (~mcescher@ip5b41e7a9.dynamic.kabel-deutschland.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:51:04	▬▬▶	mihok (~mihok@63.250.107.210) has joined #archlinux
+2015-04-01 16:51:11	vera1	sudokode: but netctl is general
+2015-04-01 16:51:12	grawity	what now
+2015-04-01 16:51:21	teraflop	vera1: the same what?
+2015-04-01 16:51:22	vera1	and also it's systemd
+2015-04-01 16:51:27	eto	holomorph: when will the two finally merge?
+2015-04-01 16:51:29	◀▬▬	f00l (~d@75-136-68-45.dhcp.nwtn.ct.charter.com) has quit (Quit: Leaving)
+2015-04-01 16:51:31	SysGh0st	saying that raspian is debian is like saying any distribution is any distribution.
+2015-04-01 16:51:38	▬▬▶	visibilityspots (~Jan@d54c5967c.access.telenet.be) has joined #archlinux
+2015-04-01 16:51:39	◀▬▬	AleXoundOS (~AleXoundO@ip-95-221-217-71.bb.netbynet.ru) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:51:40	vera1	and they are nowadays
+2015-04-01 16:51:43	sudokode	yeah but what if arch users went to archlinux arm expecting help for their x86 stuff?
+2015-04-01 16:51:46	--	Mode #archlinux [+o escondida] by ChanServ
+2015-04-01 16:51:48	◀▬▬	tier_ (~tier@68.170.18.125) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:51:52	sudokode	escondida is a fucking op now?
+2015-04-01 16:51:55	vera1	systemd is pretty general stuff
+2015-04-01 16:51:56	◀▬▬	benanne (~rijdier@ip-81-11-161-239.dsl.scarlet.be) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:51:59	eto	sudokode: lolz
+2015-04-01 16:52:00	sudokode	everyone's a goddamn op but me
+2015-04-01 16:52:01	holomorph	sudokode: welcome to a long ass time ago
+2015-04-01 16:52:08	wasamasa	sudokode: you slowpoke
+2015-04-01 16:52:10	sudokode	I don't remember it
+2015-04-01 16:52:16	@escondida	vera1: ARM questions go to #archlinux-arm
+2015-04-01 16:52:19	beest	you were an op once, it was a dark day, you even opped me
+2015-04-01 16:52:20	◀▬▬	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:52:23	grawity	okay, how many minutes did you just spend arguing that you should be eligible to get help here
+2015-04-01 16:52:31	eto	sudokode: do you want to be op too? :)
+2015-04-01 16:52:37	sudokode	yes plz
+2015-04-01 16:52:50	◀▬▬	patou (~patou@Sansfil-Securise-Etudiants-Lassonde-246-14.polymtl.ca) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:52:53	 *	eto suggests to ask grawity
+2015-04-01 16:52:54	◀▬▬	jottr_ (~jottr@unaffiliated/jottr) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:52:56	eto	buhaha
+2015-04-01 16:53:00	sudokode	pfft
+2015-04-01 16:53:04	eto	pfffft
+2015-04-01 16:53:07	grawity	I mean, yes, systemd is fairly general, but if you're told to ask elsewhere, then ask elsewhere you do.
+2015-04-01 16:53:08	sudokode	we all know how that conversation will go
+2015-04-01 16:53:15	sudokode	watch
+2015-04-01 16:53:20	eto	nou
+2015-04-01 16:53:20	beest	heh
+2015-04-01 16:53:20	sudokode	grawity: do I have your vote for op?
+2015-04-01 16:53:21	wasamasa	grawity: turn the minutes spent into hours of muting
+2015-04-01 16:53:28	▬▬▶	dearhawk (~smurfa@unaffiliated/smurfa) has joined #archlinux
+2015-04-01 16:53:34	grawity	sudokode: mu
+2015-04-01 16:53:39	eto	te
+2015-04-01 16:53:41	SysGh0st	try #systemd
+2015-04-01 16:53:42	sudokode	is that yes
+2015-04-01 16:53:49	vera1	ok, I won't argue
+2015-04-01 16:53:54	sudokode	I only speak american
+2015-04-01 16:53:56	▬▬▶	jottr_ (~jottr@unaffiliated/jottr) has joined #archlinux
+2015-04-01 16:53:57	@escondida	Good.
+2015-04-01 16:54:03	vera1	but I would say that this question is pretty general
+2015-04-01 16:54:11	teraflop	zZZzzzZ
+2015-04-01 16:54:12	vera1	if I haven't said it was a Raspberry
+2015-04-01 16:54:14	◀▬▬	escondida has kicked vera1 (vera1)
+2015-04-01 16:54:17	wasamasa	lol
+2015-04-01 16:54:20	holomorph	like a broken record
+2015-04-01 16:54:24	beest	"i won't argue but i'll continue to argue"
+2015-04-01 16:54:26	saivert	so this patch broke vmware vmnet driver: http://lists.openwall.net/linux-kernel/2014/12/09/713
+2015-04-01 16:54:27	◀▬▬	sniner (~s9r@2a02:810d:abbf:d400:1959:d2d8:1e09:b7d9) has quit (Quit: Konversation terminated!)
+2015-04-01 16:54:27	phrik	Title: linux-kernel - [PATCH 24/25] skb_copy_datagram_iovec() can die (at lists.openwall.net)
+2015-04-01 16:54:37	saivert	with sneaky comment "no callers other than itself."
+2015-04-01 16:54:44	◀▬▬	mattkrea (~textual@harbortouch04.h.subnet.rcn.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 16:54:48	eto	kickhamma hell yeah
+2015-04-01 16:54:55	--	Mode #archlinux [-o escondida] by escondida
+2015-04-01 16:54:57	sudokode	hm
+2015-04-01 16:55:03	saivert	changing around things in the kernel is fair game as long as it breaks drivers
+2015-04-01 16:55:25	eto	i am still waiting for translation of mu in grawityspeak
+2015-04-01 16:55:34	◀▬▬	bjarki (~bjarki@dsl-ls-106-231.du.vortex.is) has quit (Quit: leaving)
+2015-04-01 16:55:37	holomorph	escondida: gracias :3
+2015-04-01 16:55:41	escondida	de nada
+2015-04-01 16:55:52	beest	 <-- | leming has kicked vera1 (stop harassing the x86 channel about your pi)
+2015-04-01 16:55:53	escondida	sudokode: "mu" is an answer that is neither yes nor no; it's a denial of the question
+2015-04-01 16:56:00	holomorph	beest: LOL
+2015-04-01 16:56:03	eto	beest: pipi
+2015-04-01 16:56:10	escondida	beest: When was that?
+2015-04-01 16:56:12	sudokode	haha
+2015-04-01 16:56:13	grawity	!grab beest 
+2015-04-01 16:56:13	phrik	grawity: Tada!
+2015-04-01 16:56:14	beest	just now.
+2015-04-01 16:56:35	wasamasa	!give holomorph yt roger rabbit merry go round broke down
+2015-04-01 16:56:37	phrik	holomorph: Roger Rabbit Music Video - The Merry-Go-Round Broke Down ...: <http://www.youtube.com/watch?v=UxsPF1uM5tE>
+2015-04-01 16:56:39	SysGh0st	Seems it's my sd card reader that's borked. same problem with lts kernel. Dang... I keep having hardware faults all over.
+2015-04-01 16:56:49	eto	beest: tear in your eye? haa? haaa?
+2015-04-01 16:56:59	sudokode	we should all go annoy leming 
+2015-04-01 16:57:09	grawity	no
+2015-04-01 16:57:11	sudokode	"hi I have a problem with my x86 arch"
+2015-04-01 16:57:12	beest	let's not, they're fucking saints in there sometimes
+2015-04-01 16:57:18	▬▬▶	bjarki (~bjarki@dsl-ls-106-231.du.vortex.is) has joined #archlinux
+2015-04-01 16:57:19	leming	that wouldn't be nice ;)
+2015-04-01 16:57:24	holomorph	beest++
+2015-04-01 16:57:29	holomorph	wasamasa: idgi
+2015-04-01 16:57:40	◀▬▬	neckutrek (~neckutrek@c-931de555.018-202-6f72651.cust.bredbandsbolaget.se) has quit (Remote host closed the connection)
+2015-04-01 16:57:44	▬▬▶	rettori (~rettori@2601:6:2c00:cc3:fdb1:4015:9435:55d3) has joined #archlinux
+2015-04-01 16:57:48	beest	you are just idging all over the place today
+2015-04-01 16:57:50	sudokode	leming: I'll use the april fools excuse
+2015-04-01 16:57:55	sudokode	I get one on irc
+2015-04-01 16:57:59	grawity	sudokode: part of why you don't have ops, I guess
+2015-04-01 16:58:04	sudokode	pfft
+2015-04-01 16:58:05	wasamasa	holomorph: as the broken record repeats itself, roger repeats the lyrics and continues breaking the stack of plates on his head
+2015-04-01 16:58:05	holomorph	beest: that's the first time i said it
+2015-04-01 16:58:09	◀▬▬	yomii (~void@ip4d14af38.dynamic.kabel-deutschland.de) has quit (Read error: Connection reset by peer)
+2015-04-01 16:58:14	sudokode	I'm the nicest person I know
+2015-04-01 16:58:16	wasamasa	holomorph: wrecking more and moar havoc
+2015-04-01 16:58:17	holomorph	wasamasa: ooh
+2015-04-01 16:58:21	escondida	sudokode: Ask me what the operator nature is.
+2015-04-01 16:58:22	holomorph	hahaha
+2015-04-01 16:58:27	wasamasa	holomorph: it's a wonderful scene
+2015-04-01 16:58:28	Halfwit	You're nicer than Santa Clause, sudokode 
+2015-04-01 16:58:38	sudokode	escondida: is that more effectice than operator nurture?
+2015-04-01 16:58:43	wasamasa	holomorph: then eddie pulls him by his ears and puts him somewhere else
+2015-04-01 16:58:44	▬▬▶	HM (~HM@81.4.101.225) has joined #archlinux
+2015-04-01 16:58:50	escondida	Halfwit: Santa Clause is crazy and scary.
+2015-04-01 16:58:51	sudokode	I hear cuddling ops when they're young is good for their well-being
+2015-04-01 16:58:53	▬▬▶	Feksclaus (~Claus@80-71-135-32.u.parknet.dk) has joined #archlinux
+2015-04-01 16:59:01	escondida	sudokode: hehe
+2015-04-01 16:59:12	escondida	Anyway, the answer is "five pounds of rice"
+2015-04-01 16:59:21	Halfwit	It was a bad set of movies.
+2015-04-01 16:59:30	eto	i love rice
+2015-04-01 17:00:02	wasamasa	holomorph: "It feels so great to smash a plate and look there is no pain, no pain, ..."
+2015-04-01 17:00:06	◀▬▬	margjakob (~margjakob@36.71.137.101) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:00:13	◀▬▬	loungin (~loungin@67.133.173.131) has quit (Quit: fiddle biddle)
+2015-04-01 17:00:21	▬▬▶	Romzetron (~Romzetron@71-82-53-158.dhcp.bycy.mi.charter.com) has joined #archlinux
+2015-04-01 17:00:28	▬▬▶	xificurC (~xificurC@chello085216176057.chello.sk) has joined #archlinux
+2015-04-01 17:00:45	sudokode	wasamasa: wtf
+2015-04-01 17:00:48	◀▬▬	Femtox (~fmtx@unaffiliated/femtox) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 17:00:48	◀▬▬	Proinsias (~gary@cpc8-thor5-2-0-cust32.14-2.cable.virginm.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 17:00:57	◀▬▬	brb3 (~textual@host-184-174-177-154.WISOLT3.epbfi.com) has quit (Quit: <.<)
+2015-04-01 17:01:00	wasamasa	sudokode: don't tell me you don't know the movie
+2015-04-01 17:01:03	▬▬▶	passenger (~hxgrm@unaffiliated/passenger) has joined #archlinux
+2015-04-01 17:01:15	sudokode	no but it sounds like something a crack addict might say
+2015-04-01 17:01:24	◀▬▬	kirre (~kirre@2602:301:7793:7180:721a:4ff:fe9e:5cf5) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:01:26	wasamasa	well, cartoons behave like crack addicts
+2015-04-01 17:01:31	sudokode	true
+2015-04-01 17:01:40	wasamasa	and we love them for that
+2015-04-01 17:01:44	▬▬▶	w4ffles (~w4ffles@2605:6000:edcd:eb00:cd0:3da:80bb:a70a) has joined #archlinux
+2015-04-01 17:01:55	◀▬▬	Bastian82 (~grzempek@77-253-153-82.adsl.inetia.pl) has quit (Quit: Konversation terminated!)
+2015-04-01 17:02:01	holomorph	!yt aqua cartoon heroes
+2015-04-01 17:02:02	phrik	holomorph: Aqua - Cartoon Heroes - YouTube: <http://www.youtube.com/watch?v=Q_LPJllaogU>
+2015-04-01 17:02:04	◀▬▬	disharmonic (~disharmon@unaffiliated/disharmonic) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:02:08	▬▬▶	byfrost (~byfrost@ip-208-109-239-64.ip.secureserver.net) has joined #archlinux
+2015-04-01 17:02:10	◀▬▬	mihok (~mihok@63.250.107.210) has quit (Remote host closed the connection)
+2015-04-01 17:02:13	◀▬▬	wej (~j@2001:1af8:4010:a08c:1::6e) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:02:16	sudokode	I still find it strange when someone over the age of 14 sits by oneself and watches cartoons
+2015-04-01 17:02:20	▬▬▶	Proinsias (~gary@cpc8-thor5-2-0-cust32.14-2.cable.virginm.net) has joined #archlinux
+2015-04-01 17:02:29	▬▬▶	DogPolice (~RJones@unaffiliated/rjones) has joined #archlinux
+2015-04-01 17:02:33	◀▬▬	Romzetron (~Romzetron@71-82-53-158.dhcp.bycy.mi.charter.com) has quit (Remote host closed the connection)
+2015-04-01 17:02:35	▬▬▶	dexterity (c2ff6502@gateway/web/freenode/ip.194.255.101.2) has joined #archlinux
+2015-04-01 17:02:37	▬▬▶	kirre (~kirre@2602:301:7793:7180:721a:4ff:fe9e:5cf5) has joined #archlinux
+2015-04-01 17:02:38	sudokode	perhaps I have lost all of my childhood innocence
+2015-04-01 17:02:42	saivert	as opposed to other entertainment?
+2015-04-01 17:02:45	holomorph	i watched cowboy bebop in full a couple years ago, does that count
+2015-04-01 17:02:54	sudokode	yes
+2015-04-01 17:02:57	▬▬▶	neckutrek (~neckutrek@c-931de555.018-202-6f72651.cust.bredbandsbolaget.se) has joined #archlinux
+2015-04-01 17:02:59	wasamasa	chinese cartoons don't count
+2015-04-01 17:03:07	sudokode	anime never counts
+2015-04-01 17:03:16	wasamasa	http://arch.har-ikkje.net/gfx/anime-art.jpg
+2015-04-01 17:03:22	dexterity	Has anyone managed to get HBO Nordic/Go working on Arch Linux with Pipelight or otherwise?
+2015-04-01 17:03:22	▬▬▶	benanne (~rijdier@ip-81-11-161-239.dsl.scarlet.be) has joined #archlinux
+2015-04-01 17:03:23	sudokode	no one watches anime and thinks "hey I should this to young children"
+2015-04-01 17:03:31	sudokode	+sho
+2015-04-01 17:03:32	sudokode	show
+2015-04-01 17:03:33	sudokode	jesus
+2015-04-01 17:03:34	◀▬▬	MadAGu (~MadAGu@ppp089210186108.access.hol.gr) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:03:39	wasamasa	sudokode: indeed, why they'd make children watch this is beyond me
+2015-04-01 17:04:00	hiptobecubic	sudokode, most children's shows are like that
+2015-04-01 17:04:15	sudokode	anime tends to be a bit less subtle
+2015-04-01 17:04:19	eto	sudokode: it's same like watching porn or playing games, what's the problem?
+2015-04-01 17:04:19	hiptobecubic	sudokode, have you seen boobah? Anime is nothing compared to that existential crisis of a show
+2015-04-01 17:04:21	dexterity	I installed pipelight and activated the widevine plugin but the video never started
+2015-04-01 17:04:24	▬▬▶	Miju (~Shnurchen@46-237-31-31.pppoe.yaroslavl.ru) has joined #archlinux
+2015-04-01 17:04:32	sudokode	sure there are plenty of adult jokes in children's shows though
+2015-04-01 17:04:33	beest	dexterity: i wouldn't try too hard to get most DRM'd and geo-ip'd content to work sans flash
+2015-04-01 17:04:45	eto	sudokode: i like gore
+2015-04-01 17:04:50	◀▬▬	topyli (~topyli@unaffiliated/topyli) has quit (Quit: I quit!)
+2015-04-01 17:04:56	◀▬▬	GI_Jack (~GI_Jack@pdpc/supporter/active/gi-jack) has quit (Quit: Leaving)
+2015-04-01 17:04:57	wasamasa	sudokode: uhuh
+2015-04-01 17:05:25	sudokode	who remembers swat kats?
+2015-04-01 17:05:26	holomorph	i want a latlon thing. google has some api for it
+2015-04-01 17:05:38	wasamasa	sudokode: like, https://www.youtube.com/watch?v=kofOJDzckbM
+2015-04-01 17:05:39	phrik	Title: The Mask - The balloon animals scene - YouTube (at www.youtube.com)
+2015-04-01 17:05:39	sudokode	now there was a good show for kids
+2015-04-01 17:05:51	sudokode	wholesome but with enough implied violence to calm the mind
+2015-04-01 17:05:56	wasamasa	sudokode: as a kid I didn't get that this guy pulled out an used condom out of their pocket
+2015-04-01 17:06:03	eto	sudokode: i remember
+2015-04-01 17:06:09	wasamasa	sudokode: I just thought that it was a weird balloon
+2015-04-01 17:06:18	eto	sudokode: i also liked old batman from that time 
+2015-04-01 17:06:23	▬▬▶	MajorBiscuit (~MajorBisc@31-54-44.netrun.cytanet.com.cy) has joined #archlinux
+2015-04-01 17:06:33	◀▬▬	esph (~weechat@66.196.63.210.dynamic.hamilton.net) has left #archlinux ("WeeChat 1.1.1")
+2015-04-01 17:06:44	▬▬▶	itai86 (~indstwetr@ip565b8107.direct-adsl.nl) has joined #archlinux
+2015-04-01 17:06:45	◀▬▬	Lord^Anubis (~anubis@unaffiliated/lordanubis/x-837129) has quit (Read error: Connection reset by peer)
+2015-04-01 17:06:47	◀▬▬	DasMoehhh (~Orlando@HSI-KBW-078-043-166-230.hsi4.kabel-badenwuerttemberg.de) has quit (Ping timeout: 244 seconds)
+2015-04-01 17:06:51	eto	first collective dish we got as block of flats had cartoon network
+2015-04-01 17:06:51	sudokode	wasamasa: I remember when I was kid and some of the old neighborhood kids left a used condom in my yard as a joke. but I had no idea what it was
+2015-04-01 17:07:04	sudokode	and then years later I figured it out and was like OH YOU DICKS
+2015-04-01 17:07:18	eto	sudokode: and started playing with it in sand - you called it mister octopuss
+2015-04-01 17:07:19	▬▬▶	eyvindandersen (~eyvind@80-71-131-193.u.parknet.dk) has joined #archlinux
+2015-04-01 17:07:26	saivert	cow and chicken
+2015-04-01 17:07:29	saivert	wonderful
+2015-04-01 17:07:35	▬▬▶	erilaz (~erilaz@75-131-208-87.dhcp.gwnt.ga.charter.com) has joined #archlinux
+2015-04-01 17:07:35	▬▬▶	FR^2 (~frquadrat@2001:41d0:2:842d::cafe) has joined #archlinux
+2015-04-01 17:07:38	◀▬▬	wicope (~wicope@117.Red-88-27-63.staticIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:07:39	◀▬▬	driti (~driti@50-202-198-202-static.hfc.comcastbusiness.net) has quit (Quit: pz.)
+2015-04-01 17:07:39	eto	saivert: that one was fucking afwull
+2015-04-01 17:07:39	sudokode	eto: haha no
+2015-04-01 17:07:50	eto	saivert: i can't ever forget that gay devil
+2015-04-01 17:08:00	▬▬▶	behelit (~behelit@89-253-113-182.customers.ownit.se) has joined #archlinux
+2015-04-01 17:08:04	saivert	and courage the cowardly dog
+2015-04-01 17:08:08	eto	he was seriously fucked up
+2015-04-01 17:08:10	saivert	I remember all that
+2015-04-01 17:08:11	sudokode	yes courage
+2015-04-01 17:08:16	sudokode	this was all cartoon network stuff
+2015-04-01 17:08:17	◀▬▬	dexterity (c2ff6502@gateway/web/freenode/ip.194.255.101.2) has quit (Quit: Page closed)
+2015-04-01 17:08:21	sudokode	cause fuck nicelodeon
+2015-04-01 17:08:25	sudokode	nickelodeon
+2015-04-01 17:08:32	saivert	we had Fox kids
+2015-04-01 17:08:32	eto	cartoon network was so daring back in the day
+2015-04-01 17:08:36	sudokode	or fox kids
+2015-04-01 17:08:37	eto	faux kids?
+2015-04-01 17:08:37	saivert	instead of nick
+2015-04-01 17:08:59	behelit	laptop wakes up seconds after i suspend. new phenomena, has been working correctly for a long time. any usual suspects while im digging through dmesg?
+2015-04-01 17:09:02	eto	fortunately iw as subjecten only to cn and tnt those two were actually great
+2015-04-01 17:09:05	◀▬▬	drfate (~drfate@unaffiliated/drfate) has quit (Remote host closed the connection)
+2015-04-01 17:09:15	eto	anybody remeber that wacko freakazoid?
+2015-04-01 17:09:21	beest	nick got pretty bold in the early-mid 80s
+2015-04-01 17:09:21	sudokode	behelit: wake on lan?
+2015-04-01 17:09:28	eto	remember
+2015-04-01 17:09:31	sudokode	beest: you're old
+2015-04-01 17:09:37	beest	i didn't even have cable then
+2015-04-01 17:09:41	▬▬▶	drfate (~drfate@184.91.25.151) has joined #archlinux
+2015-04-01 17:09:41	◀▬▬	drfate (~drfate@184.91.25.151) has quit (Changing host)
+2015-04-01 17:09:41	▬▬▶	drfate (~drfate@unaffiliated/drfate) has joined #archlinux
+2015-04-01 17:09:43	beest	had to go to my aunt's
+2015-04-01 17:09:46	◀▬▬	Cthulu201 (~Cthulu201@unaffiliated/cthulu201) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 17:09:47	◀▬▬	Halfwit (~Michael@d162-157-153-64.abhsia.telus.net) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 17:09:49	beest	i lived in the sticks
+2015-04-01 17:09:49	◀▬▬	stormysea (~stormysea@unaffiliated/stormysea) has left #archlinux ("Leaving")
+2015-04-01 17:09:51	▬▬▶	sarkyniin (~apt-get@adsl196-146-98-217-196.adsl196-12.iam.net.ma) has joined #archlinux
+2015-04-01 17:09:58	◀▬▬	apt-get_ (~apt-get@adsl196-146-98-217-196.adsl196-12.iam.net.ma) has quit (Read error: No route to host)
+2015-04-01 17:10:04	◀▬▬	The_Loko (~The_Loko@215.150.20.95.dynamic.jazztel.es) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:10:07	beest	!enter
+2015-04-01 17:10:08	phrik	Stop hitting the enter key. Can't you even type a full sentence?
+2015-04-01 17:10:08	SysGh0st	I had that waking up problem a while ago. Updated the kernel and it was solved. Was something about the USB system.
+2015-04-01 17:10:27	◀▬▬	murray (~murray@p5DC4D799.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2015-04-01 17:10:28	plww	 /quit 
+2015-04-01 17:10:32	◀▬▬	plww (~plw@abtp6.neoplus.adsl.tpnet.pl) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 17:10:45	◀▬▬	zarubin_ (~zarubin@109.251.149.199) has quit (Remote host closed the connection)
+2015-04-01 17:10:49	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 17:10:56	◀▬▬	vinegret (~vinegret@nat2-vitebsk-pool-46-53-214-254.telecom.by) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:11:16	▬▬▶	runfunc (~runfunc@37.250.42.83.bredband.tre.se) has joined #archlinux
+2015-04-01 17:11:31	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 17:11:39	◀▬▬	erilaz (~erilaz@75-131-208-87.dhcp.gwnt.ga.charter.com) has quit (Client Quit)
+2015-04-01 17:11:42	sudokode	anybody want a free .xyz?
+2015-04-01 17:11:43	▬▬▶	ghr (~ghr@2.121.36.26) has joined #archlinux
+2015-04-01 17:11:54	▬▬▶	Lord^Anubis (~anubis@unaffiliated/lordanubis/x-837129) has joined #archlinux
+2015-04-01 17:11:54	▬▬▶	margjakob (~margjakob@36.70.123.126) has joined #archlinux
+2015-04-01 17:11:56	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 17:11:58	◀▬▬	drizzd (~drizzd@p5B22CA18.dip0.t-ipconnect.de) has quit (Quit: leaving)
+2015-04-01 17:12:03	◀▬▬	fce (~fabian@94.134.250.172) has quit (Ping timeout: 264 seconds)
+2015-04-01 17:12:10	holomorph	a what
+2015-04-01 17:12:15	sudokode	.xyz domain
+2015-04-01 17:12:20	beest	it's horsedicks.xyz, isn't it
+2015-04-01 17:12:29	SysGh0st	sure. What's the catch?
+2015-04-01 17:12:32	sudokode	you pick
+2015-04-01 17:12:35	sudokode	new registration
+2015-04-01 17:12:48	sudokode	you gotta pay after the first year though I think
+2015-04-01 17:12:50	behelit	SysGh0st: i think it might've been the other way around for me; the problems started appearing around the time of the last kernel update.
+2015-04-01 17:12:53	◀▬▬	nateive (~nate@230.84.195.178.dynamic.wline.res.cust.swisscom.ch) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:12:57	◀▬▬	palasso (~palasso@palassopoulosge.ath.forthnet.gr) has quit (Read error: Connection reset by peer)
+2015-04-01 17:12:57	▬▬▶	brauliobo (~braulio@189.89.150.190) has joined #archlinux
+2015-04-01 17:13:19	◀▬▬	dylix-HAF (dylix@23-124-242-235.lightspeed.hstntx.sbcglobal.net) has quit (Quit: ircN 8.00 for mIRC (20100904) - www.ircN.org)
+2015-04-01 17:13:40	brauliobo	hello all, how to install kde apps and plasma 5? i need most of kde package, except kdebase-workspace that conflicts with plasma 5
+2015-04-01 17:13:43	SysGh0st	ow... welll.. I'm happy with my free sytes.net ;)
+2015-04-01 17:13:46	sudokode	horsedicks.xyz is available
+2015-04-01 17:13:55	◀▬▬	margjakob (~margjakob@36.70.123.126) has quit (Read error: Connection reset by peer)
+2015-04-01 17:14:00	◀▬▬	neckutrek (~neckutrek@c-931de555.018-202-6f72651.cust.bredbandsbolaget.se) has quit (Remote host closed the connection)
+2015-04-01 17:14:09	◀▬▬	TheAtomicGoose (~jesse@74-94-190-9-NewEngland.hfc.comcastbusiness.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:14:10	eto	sudokode: what is xyz?
+2015-04-01 17:14:21	◀▬▬	winter (~winter@4.35.108.50) has quit (Quit: Leaving)
+2015-04-01 17:14:26	eto	sudokode: ah tld it seems
+2015-04-01 17:14:30	sudokode	some new tld
+2015-04-01 17:14:32	▬▬▶	barkus (~root@cpe-98-15-140-39.hvc.res.rr.com) has joined #archlinux
+2015-04-01 17:14:42	◀▬▬	AlmAck (~AlmAck@191.68.198.178.dynamic.wline.res.cust.swisscom.ch) has quit (Quit: Konversation terminated!)
+2015-04-01 17:14:45	eto	sudokode: dere seem to be .google now
+2015-04-01 17:14:56	sudokode	well this promo code is for .xyz
+2015-04-01 17:15:03	sudokode	so you ain't got much choice
+2015-04-01 17:15:08	beest	redundancy.google.google
+2015-04-01 17:15:12	eto	can one get promo code for .google? :)
+2015-04-01 17:15:13	sudokode	let me see if gandi gives me anything else
+2015-04-01 17:15:18	sudokode	probably not
+2015-04-01 17:15:22	eto	beest: like com.google
+2015-04-01 17:15:24	eto	:)
+2015-04-01 17:15:27	sudokode	this is some promotional thing if you already have gandi.net
+2015-04-01 17:15:29	▬▬▶	Cthulu201 (~Cthulu201@unaffiliated/cthulu201) has joined #archlinux
+2015-04-01 17:15:32	sudokode	https://15.gandi.net
+2015-04-01 17:15:33	phrik	Title: It's Gandi's 15th Anniversary (at 15.gandi.net)
+2015-04-01 17:15:44	eto	it's missing h
+2015-04-01 17:16:08	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 17:16:14	SysGh0st	behelit: unplug any non essential hardware and see if the waking up persist.
+2015-04-01 17:16:18	◀▬▬	asdil12 (~asdil12@89.204.130.21) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:16:19	brauliobo	can't use systemsettings from kde 4...
+2015-04-01 17:16:33	◀▬▬	aberlin (~aberlin@91.102.9.98) has quit (Ping timeout: 255 seconds)
+2015-04-01 17:16:49	▬▬▶	dylix (dylix@unaffiliated/dylix) has joined #archlinux
+2015-04-01 17:17:04	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 17:17:34	sudokode	archlinux.xyz is available :D
+2015-04-01 17:17:35	▬▬▶	dylix-HAF (dylix@23-124-242-235.lightspeed.hstntx.sbcglobal.net) has joined #archlinux
+2015-04-01 17:17:50	▬▬▶	SuprDewd (~SuprDewd@dsl-ls-106-231.du.vortex.is) has joined #archlinux
+2015-04-01 17:17:52	◀▬▬	mister2 (~mister2_@d162-156-186-72.bchsia.telus.net) has quit (Quit: Leaving)
+2015-04-01 17:18:28	◀▬▬	keto (~keto@unaffiliated/keto) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 17:19:08	▬▬▶	cupantae (~cupantae@31-187-18-3.dynamic.upc.ie) has joined #archlinux
+2015-04-01 17:19:16	◀▬▬	h0ru5 (~quassel@ipbcc141cf.dynamic.kabel-deutschland.de) has quit (Remote host closed the connection)
+2015-04-01 17:19:29	SuprDewd	hey guys. i'm on arch linux and i recently did a system upgrade. but now jpegs are not rendered in firefox/chrome (pngs work fine, and jpegs work in opera). does anyone have a clue what might be wrong, or can point me to someone who might know?
+2015-04-01 17:19:31	sudokode	what's a good .xyz domain
+2015-04-01 17:19:31	sudokode	hm
+2015-04-01 17:19:32	◀▬▬	HuMu_ (~Huub@197.155.156.171) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:19:36	◀▬▬	HuMu (~Huub@197.155.156.171) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:19:50	teraflop	sudokode: a 3 letter one
+2015-04-01 17:20:02	◀▬▬	j12t_ (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:20:04	--	irc: disconnected from server
+2015-04-01 17:29:25	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-04-01 17:29:25	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-04-01 17:29:25	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-04-01 17:29:26	--	Channel #archlinux: 1991 nicks (1 op, 1 voice, 1989 normals)
+2015-04-01 17:29:29	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-04-01 17:30:26	◀▬▬	davidosomething (~Adium@209.251.200.244) has quit (Quit: Leaving.)
+2015-04-01 17:30:27	◀▬▬	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has quit (Quit:  ◀▬▬ •••They Must've taken my marbles away••◀▬▬)
+2015-04-01 17:31:32	◀▬▬	berceanu_ (~berceanu@151.62.42.19) has quit (Quit: Leaving)
+2015-04-01 17:31:39	◀▬▬	WyReSP (~wyre@80.30.187.232) has quit (Client Quit)
+2015-04-01 17:31:46	escondida	teraflop: goat.se
+2015-04-01 17:31:56	escondida	?
+2015-04-01 17:32:17	gehidore	is that even a think anymore?
+2015-04-01 17:32:17	◀▬▬	gffa (~unknown@unaffiliated/gffa) has quit (Quit: sleep)
+2015-04-01 17:32:22	gehidore	s/think/thing
+2015-04-01 17:32:25	--	Ristovski is now known as [Ristovski]
+2015-04-01 17:32:27	◀▬▬	firedingo (~firedingo@CPE-58-168-29-130.lns5.cht.bigpond.net.au) has quit (Read error: Connection reset by peer)
+2015-04-01 17:32:34	◀▬▬	hkmix (~hkmix@2620:101:f000:702:8000:0:159:872a) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:33:06	◀▬▬	asdil12 (~asdil12@ip-77-24-204-148.web.vodafone.de) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:33:18	◀▬▬	felipedvorak (~felipedvo@unaffiliated/felipedvorak) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 17:33:21	gehidore	why chromium the suck so much lately
+2015-04-01 17:33:58	beest	got suspended, now someone's selling subdomains off it because who doesn't want to be momsrecipes.goatse.cx
+2015-04-01 17:34:12	hiptobecubic	I certainly do
+2015-04-01 17:35:03	◀▬▬	sarkyniin (~apt-get@adsl196-146-98-217-196.adsl196-12.iam.net.ma) has quit (Remote host closed the connection)
+2015-04-01 17:35:41	▬▬▶	WaReZ (~warez@equ57-3-78-208-125-180.fbx.proxad.net) has joined #archlinux
+2015-04-01 17:35:56	◀▬▬	lswart (~lswart@ec2-54-187-221-250.us-west-2.compute.amazonaws.com) has left #archlinux ("ERC Version 5.3 (IRC client for Emacs)")
+2015-04-01 17:35:58	◀▬▬	cifvts (~cifvts@host99-58-static.12-87-b.business.telecomitalia.it) has quit (Remote host closed the connection)
+2015-04-01 17:36:31	jyc	gehidore, how's it sucking for you?
+2015-04-01 17:36:35	◀▬▬	rettori (~rettori@2601:6:2c00:cc3:fdb1:4015:9435:55d3) has quit (Remote host closed the connection)
+2015-04-01 17:36:35	▬▬▶	Bainos (~Bainos@182.16-64-87.adsl-dyn.isp.belgacom.be) has joined #archlinux
+2015-04-01 17:36:46	▬▬▶	erilaz (~erilaz@75-131-208-87.dhcp.gwnt.ga.charter.com) has joined #archlinux
+2015-04-01 17:36:50	teraflop	escondida: more related to just pick the host in the nick@you.are.a.chupaver.ga to joke some hater
+2015-04-01 17:37:11	gehidore	jyc: eating 3 cpu's while doing diddly
+2015-04-01 17:38:24	▬▬▶	Goatman (~bronco51@c-174-56-104-157.hsd1.nm.comcast.net) has joined #archlinux
+2015-04-01 17:39:20	◀▬▬	BlaXpirit (~blaxpirit@198-44-124-91.pool.ukrtel.net) has quit (Quit: Quit Konversation)
+2015-04-01 17:39:39	escondida	teraflop: huh
+2015-04-01 17:39:44	teraflop	^
+2015-04-01 17:39:58	▬▬▶	Laerten (~Laerten@host160-25-dynamic.5-87-r.retail.telecomitalia.it) has joined #archlinux
+2015-04-01 17:40:23	◀▬▬	giab (~giard_b@eth-east-parth2-46-193-64-166.wb.wifirst.net) has quit (Quit: Rage Quit !)
+2015-04-01 17:40:27	◀▬▬	utack (~utack@ip923464f1.dynamic.kabel-deutschland.de) has quit (Remote host closed the connection)
+2015-04-01 17:40:33	sudokode	shit
+2015-04-01 17:40:43	▬▬▶	giab (~giard_b@eth-east-parth2-46-193-64-166.wb.wifirst.net) has joined #archlinux
+2015-04-01 17:40:56	sudokode	sedo.com suggests setting myseo.xyz at $499 
+2015-04-01 17:41:03	◀▬▬	govg (~govg@unaffiliated/govg) has quit (Quit: leaving)
+2015-04-01 17:41:08	gehidore	heh
+2015-04-01 17:41:27	◀▬▬	xificurC (~xificurC@chello085216176057.chello.sk) has quit (Ping timeout: 264 seconds)
+2015-04-01 17:41:33	◀▬▬	skydrome (~skydrome@unaffiliated/skydrome) has quit (Ping timeout: 264 seconds)
+2015-04-01 17:41:37	▬▬▶	Metsarono (~tiago@37.120.34.77) has joined #archlinux
+2015-04-01 17:41:45	◀▬▬	erilaz (~erilaz@75-131-208-87.dhcp.gwnt.ga.charter.com) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 17:41:58	SysGh0st	sudokode: you're getting rich.
+2015-04-01 17:42:03	sudokode	hopefully
+2015-04-01 17:42:24	▬▬▶	Masca (~salinasv@li455-247.members.linode.com) has joined #archlinux
+2015-04-01 17:42:43	▬▬▶	Rena (~rena@bas13-kitchener06-2925268175.dsl.bell.ca) has joined #archlinux
+2015-04-01 17:42:55	▬▬▶	drekar_ (~drekar@ip67-88-120-130.z120-88-67.customer.algx.net) has joined #archlinux
+2015-04-01 17:42:57	◀▬▬	wej (~j@2001:1af8:4010:a08c:1::6e) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:43:01	▬▬▶	asdil12 (~asdil12@89.204.130.57) has joined #archlinux
+2015-04-01 17:43:09	◀▬▬	lindenk (~lindenk@c-66-31-78-9.hsd1.nh.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 17:43:43	▬▬▶	WyReSP (~wyre@80.30.187.232) has joined #archlinux
+2015-04-01 17:44:07	--	Mode #archlinux [+o eir] by ChanServ
+2015-04-01 17:44:08	--	Mode #archlinux [-bo $a:angevin eir] by eir
+2015-04-01 17:44:11	◀▬▬	T-Sourcemaker (~Joungai3q@2a02:8071:a81:7f00:f66d:4ff:fe79:2ef9) has quit
+2015-04-01 17:44:28	▬▬▶	endiruna (~endiendir@poisson.phc.unipi.it) has joined #archlinux
+2015-04-01 17:44:43	teraflop	escondida: http://a.pomf.se/qojylq.png
+2015-04-01 17:44:46	◀▬▬	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2015-04-01 17:44:54	▬▬▶	disharmonic (~disharmon@unaffiliated/disharmonic) has joined #archlinux
+2015-04-01 17:45:24	◀▬▬	asdil12 (~asdil12@89.204.130.57) has quit (Read error: Connection reset by peer)
+2015-04-01 17:45:30	▬▬▶	j12t (~j12t@50.153.131.35) has joined #archlinux
+2015-04-01 17:45:47	◀▬▬	drekar (~drekar@ip67-88-120-130.z120-88-67.customer.algx.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:45:57	escondida	teraflop: Mmmm, coff.ee
+2015-04-01 17:46:42	◀▬▬	Linuts (~linus@c106-205.i07-27.onvol.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:46:48	▬▬▶	DasMoehh (~Orlando@HSI-KBW-078-043-166-230.hsi4.kabel-badenwuerttemberg.de) has joined #archlinux
+2015-04-01 17:47:09	▬▬▶	erilaz (~erilaz@75-131-208-87.dhcp.gwnt.ga.charter.com) has joined #archlinux
+2015-04-01 17:47:11	◀▬▬	Linuts_ (~linus@c106-205.i07-27.onvol.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:47:14	▬▬▶	TheAtomicGoose (~jesse@2601:6:6380:9a0:225:22ff:fe4e:2aef) has joined #archlinux
+2015-04-01 17:47:17	◀▬▬	CrypticSquared (~CrypticS_@unaffiliated/crypticsquared) has quit (Remote host closed the connection)
+2015-04-01 17:47:40	◀▬▬	passenger (~hxgrm@unaffiliated/passenger) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:48:48	◀▬▬	runfunc (~runfunc@37.250.42.83.bredband.tre.se) has left #archlinux
+2015-04-01 17:48:49	▬▬▶	govg (~govg@unaffiliated/govg) has joined #archlinux
+2015-04-01 17:50:08	◀▬▬	benanne (~rijdier@ip-81-11-161-239.dsl.scarlet.be) has quit (Quit: kbai)
+2015-04-01 17:51:13	◀▬▬	Zupoman (~mistrzmag@unaffiliated/zupoman) has quit (Quit: Plan B failed, time for Plan 9!)
+2015-04-01 17:51:21	◀▬▬	C5OK5Y (~C5OK5Y@ip-78-102-131-85.net.upcbroadband.cz) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:51:32	◀▬▬	m0ellemeister (~m0ellemei@ipb219c0e5.dynamic.kabel-deutschland.de) has quit (Quit: Verlassend)
+2015-04-01 17:51:58	▬▬▶	petterk (~petterk@46.1.124.175) has joined #archlinux
+2015-04-01 17:52:10	▬▬▶	oncle (~know@2a02:a03f:1cf8:b200:790e:895b:9931:42a0) has joined #archlinux
+2015-04-01 17:52:48	◀▬▬	oncle (~know@2a02:a03f:1cf8:b200:790e:895b:9931:42a0) has quit (Remote host closed the connection)
+2015-04-01 17:53:24	▬▬▶	lkirk (~user@162.217.73.242) has joined #archlinux
+2015-04-01 17:53:31	▬▬▶	monto (~monto@static243-215-175.mimer.net) has joined #archlinux
+2015-04-01 17:53:38	◀▬▬	Cahu (~cahu@stm59-3-78-248-13-186.fbx.proxad.net) has quit (Remote host closed the connection)
+2015-04-01 17:54:07	◀▬▬	j12t (~j12t@50.153.131.35) has quit (Remote host closed the connection)
+2015-04-01 17:54:08	▬▬▶	skydrome (~skydrome@unaffiliated/skydrome) has joined #archlinux
+2015-04-01 17:54:30	◀▬▬	lkirk (~user@162.217.73.242) has quit (Client Quit)
+2015-04-01 17:54:51	◀▬▬	eNTi (~nt@185.50.233.47) has quit (Remote host closed the connection)
+2015-04-01 17:54:54	▬▬▶	asdil12 (~asdil12@89.204.137.36) has joined #archlinux
+2015-04-01 17:55:42	sudokode	and a free .com
+2015-04-01 17:55:43	sudokode	hm
+2015-04-01 17:55:56	▬▬▶	wej (~j@2001:1af8:4010:a08c:1::6e) has joined #archlinux
+2015-04-01 17:56:01	▬▬▶	geordream (~puchi@unaffiliated/puchi) has joined #archlinux
+2015-04-01 17:56:15	◀▬▬	zenguy_pc (~oracle__@ool-44c71438.dyn.optonline.net) has quit (Ping timeout: 248 seconds)
+2015-04-01 17:56:26	◀▬▬	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has quit (Remote host closed the connection)
+2015-04-01 17:56:35	◀▬▬	Icedman (~Icey@unaffiliated/icedman) has quit (Quit: Everyone quits one day. You just wasted 3 seconds reading this.)
+2015-04-01 17:56:43	◀▬▬	hugovs (~hugo@177.159.144.73) has quit (Quit: leaving)
+2015-04-01 17:56:52	▬▬▶	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has joined #archlinux
+2015-04-01 17:57:36	◀▬▬	Spacew00t (~Spacew00t@static-100-37-240-75.nycmny.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 17:57:53	▬▬▶	sigmundv (~sigmundv@178.167.254.223.threembb.ie) has joined #archlinux
+2015-04-01 17:57:57	▬▬▶	j12t (~j12t@50.153.131.35) has joined #archlinux
+2015-04-01 17:58:15	◀▬▬	ziocroc (~ziocroc3@151.74.2.189) has quit (Quit: ziocroc)
+2015-04-01 17:58:24	◀▬▬	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has quit (Remote host closed the connection)
+2015-04-01 17:58:32	▬▬▶	gavinhungry (~gavinhung@unaffiliated/gavinhungry) has joined #archlinux
+2015-04-01 17:58:38	▬▬▶	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has joined #archlinux
+2015-04-01 17:58:40	◀▬▬	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has quit (Remote host closed the connection)
+2015-04-01 17:58:46	▬▬▶	driti (~driti@209-6-52-185.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com) has joined #archlinux
+2015-04-01 17:58:55	SysGh0st	Weird. Every time I delete a file from an exFAT formatted sd card, it doesn't release the occupied space.
+2015-04-01 17:59:06	▬▬▶	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has joined #archlinux
+2015-04-01 17:59:28	gavinhungry	anybody tried using badvpn-tun2socks with 3.19 Arch kernels? I get "BConnector_Init failed" when trying to establish a TCP connection through the tunnel - works great with 3.18
+2015-04-01 17:59:40	◀▬▬	WyReSP (~wyre@80.30.187.232) has quit (Remote host closed the connection)
+2015-04-01 18:00:25	▬▬▶	WyReSP (~wyre@80.30.187.232) has joined #archlinux
+2015-04-01 18:00:29	▬▬▶	aaro (~aaro@unaffiliated/xyox/x-040147) has joined #archlinux
+2015-04-01 18:00:38	▬▬▶	scientes (~scientes@c-73-42-216-173.hsd1.wa.comcast.net) has joined #archlinux
+2015-04-01 18:00:38	◀▬▬	scientes (~scientes@c-73-42-216-173.hsd1.wa.comcast.net) has quit (Changing host)
+2015-04-01 18:00:38	▬▬▶	scientes (~scientes@unaffiliated/scientes) has joined #archlinux
+2015-04-01 18:00:57	◀▬▬	scientes (~scientes@unaffiliated/scientes) has quit (Max SendQ exceeded)
+2015-04-01 18:01:24	▬▬▶	scientes (~scientes@c-73-42-216-173.hsd1.wa.comcast.net) has joined #archlinux
+2015-04-01 18:01:24	◀▬▬	scientes (~scientes@c-73-42-216-173.hsd1.wa.comcast.net) has quit (Changing host)
+2015-04-01 18:01:24	▬▬▶	scientes (~scientes@unaffiliated/scientes) has joined #archlinux
+2015-04-01 18:01:37	◀▬▬	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:02:36	◀▬▬	scientes (~scientes@unaffiliated/scientes) has quit (Max SendQ exceeded)
+2015-04-01 18:02:43	◀▬▬	typh00nz_ (~typh00nz@cqq41.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:02:44	◀▬▬	erilaz (~erilaz@75-131-208-87.dhcp.gwnt.ga.charter.com) has quit (Quit: Lost terminal)
+2015-04-01 18:03:10	▬▬▶	scientes (~scientes@unaffiliated/scientes) has joined #archlinux
+2015-04-01 18:03:27	◀▬▬	vortex_ape (~vortex_ap@59.177.142.111) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:03:33	◀▬▬	Metsarono (~tiago@37.120.34.77) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:03:34	▬▬▶	silentz0r (5548cd13@gateway/web/freenode/ip.85.72.205.19) has joined #archlinux
+2015-04-01 18:03:37	◀▬▬	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:03:43	◀▬▬	xananax (~xananax@212.36.210.190) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 18:03:43	▬▬▶	cotko (~ahmed@208.71.157.68) has joined #archlinux
+2015-04-01 18:03:46	▬▬▶	vortex_ape (~vortex_ap@59.177.142.145) has joined #archlinux
+2015-04-01 18:03:57	▬▬▶	jjin (~jjin@wireless-205-208-124-239.uchicago.edu) has joined #archlinux
+2015-04-01 18:03:57	◀▬▬	wonderworld (~ww@ip-176-199-166-61.hsi06.unitymediagroup.de) has quit (Remote host closed the connection)
+2015-04-01 18:04:03	silentz0r	alright, I'm witnessing the weirdest bug, I'll try to explain
+2015-04-01 18:04:13	◀▬▬	iconz (~Unknown@90.194.75.28) has quit (Quit: leaving)
+2015-04-01 18:04:24	▬▬▶	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has joined #archlinux
+2015-04-01 18:04:39	▬▬▶	zarubin_ (~zarubin@109.251.149.199) has joined #archlinux
+2015-04-01 18:04:50	▬▬▶	awesomehaircut (~Jesus@67-1-235-200.tcso.qwest.net) has joined #archlinux
+2015-04-01 18:04:50	silentz0r	90%+ cpu usage after manual startx, unresponsive desktop etc. Also happens after coming out of suspend for many hours
+2015-04-01 18:05:15	◀▬▬	blabla__ (~blabla@p57BD7E1D.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2015-04-01 18:06:33	◀▬▬	ssalenik (~smuxi@mtl.savoirfairelinux.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:06:44	◀▬▬	WyReSP (~wyre@80.30.187.232) has quit (Read error: Connection reset by peer)
+2015-04-01 18:06:55	▬▬▶	WyReSP (~wyre@80.30.187.232) has joined #archlinux
+2015-04-01 18:07:07	Earnestly	silentz0r: It'd help to know what is causing the cpu usage
+2015-04-01 18:07:08	▬▬▶	aarvar (~aaron@50-47-100-244.evrt.wa.frontiernet.net) has joined #archlinux
+2015-04-01 18:07:11	silentz0r	also, only started happening about a week ago
+2015-04-01 18:07:28	▬▬▶	soixante (~tstark@host109-153-225-104.range109-153.btcentralplus.com) has joined #archlinux
+2015-04-01 18:07:29	◀▬▬	setty1 (~ale@84.126.219.6.dyn.user.ono.com) has quit (Quit: Lost terminal)
+2015-04-01 18:07:42	silentz0r	Earnestly: X is (/usr/bin/X)
+2015-04-01 18:07:44	soixante	guys. Where do i get the PKGBUILD file from for an AUR repo?
+2015-04-01 18:07:51	beest	and how you're starting it that /doesn't/ cause this behavior
+2015-04-01 18:08:00	sledgehammer	!give soixante wiki aur
+2015-04-01 18:08:01	phrik	soixante: https://wiki.archlinux.org/index.php/Arch_User_Repository
+2015-04-01 18:08:08	◀▬▬	tumbler (~tumbler@unaffiliated/tumbler) has quit (Quit: i have to leave ... see you soon)
+2015-04-01 18:08:14	sledgehammer	soixante, read ^^, it's all there
+2015-04-01 18:08:14	▬▬▶	zenguy_pc (~oracle__@ool-44c71438.dyn.optonline.net) has joined #archlinux
+2015-04-01 18:08:15	silentz0r	beest: haven't tested it otherwise, I just wanted to mention I use startx but ingrish no stronk
+2015-04-01 18:08:15	▬▬▶	DevPump (~DevPump@pool-173-65-27-55.tampfl.fios.verizon.net) has joined #archlinux
+2015-04-01 18:08:24	▬▬▶	lieutenant_x64 (~textual@225.Red-88-23-255.staticIP.rima-tde.net) has joined #archlinux
+2015-04-01 18:08:32	Earnestly	silentz0r: Check the log for Xorg, if not that, dmesg, if not that, attach strace and see what it's doing
+2015-04-01 18:08:34	◀▬▬	zephcom (~zephcom@2001:2002:51e9:31e0:ba27:ebff:fe5c:c0a5) has quit (Ping timeout: 272 seconds)
+2015-04-01 18:08:36	Earnestly	Or perf...
+2015-04-01 18:08:45	Earnestly	perf might make more sense here as strace makes syscalls very slow
+2015-04-01 18:09:01	silentz0r	Earnestly: done and done, haven't strace'd
+2015-04-01 18:09:22	▬▬▶	blabla (~blabla@p57BD6694.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-01 18:09:39	◀▬▬	zarubin_ (~zarubin@109.251.149.199) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:09:43	DevPump	Does anyone have an issue with gnome-sound-recorder when clicking the record button? I recieve this error: "Unable to set the pipeline to the recording state"
+2015-04-01 18:09:44	silentz0r	Earnestly: Xorg log is just informative messages (II) and then a bunch of uki messages (around 50 of them)
+2015-04-01 18:09:57	beest	i misinterpreted, i assumed you meant that using startx caused constant high cpu as opposed to brief
+2015-04-01 18:10:07	Earnestly	sudo perf record -e 'syscalls:sys_enter_*' -p $(pgrep -u $USER Xorg)
+2015-04-01 18:10:09	Earnestly	heh
+2015-04-01 18:10:15	◀▬▬	REK_007 (~stREaKer@unaffiliated/rek-007/x-4500098) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:10:21	Earnestly	Maybe erm
+2015-04-01 18:10:23	Earnestly	Not sys_enter
+2015-04-01 18:10:32	sudokode	you fucked it
+2015-04-01 18:10:34	silentz0r	Do I put this in system32?
+2015-04-01 18:10:46	sudokode	The domain, fuckeditup.com, is unavailable. 
+2015-04-01 18:10:47	soixante	phrik: sledgehammer  THANK YOU
+2015-04-01 18:10:51	◀▬▬	hexagoxel (~hexagoxel@x5f769dec.dyn.telefonica.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:10:59	▬▬▶	hardfalcon (~hardfalco@f049241024.adsl.alicedsl.de) has joined #archlinux
+2015-04-01 18:11:01	sudokode	fuckingobama.com is available
+2015-04-01 18:11:03	sudokode	haha dare I
+2015-04-01 18:11:12	◀▬▬	gavinhungry (~gavinhung@unaffiliated/gavinhungry) has quit (Quit: Leaving)
+2015-04-01 18:11:16	◀▬▬	TheLemonMan (~lemonboy@unaffiliated/thelemonman) has quit (Quit: "It's now safe to turn off your computer.")
+2015-04-01 18:11:17	sledgehammer	soixante, ... ALWAYS check the wiki first
+2015-04-01 18:11:18	◀▬▬	Vile` (~Vile@unaffiliated/vile/x-1886500) has quit (Read error: Connection reset by peer)
+2015-04-01 18:11:21	switchy	sudokode, of course you do
+2015-04-01 18:11:46	--	Rasi is now known as deprifreak
+2015-04-01 18:11:48	Earnestly	Actiually
+2015-04-01 18:11:51	Earnestly	No enter_* is fine
+2015-04-01 18:12:01	◀▬▬	lieutenant_x64 (~textual@225.Red-88-23-255.staticIP.rima-tde.net) has quit (Client Quit)
+2015-04-01 18:12:05	▬▬▶	hexagoxel (~hexagoxel@x4d067213.dyn.telefonica.de) has joined #archlinux
+2015-04-01 18:12:06	beest	godaddy's holding on to thanksobama.com, surprised they haven't had any takers
+2015-04-01 18:12:13	sudokode	fuckingobama.com: We're sorry, but we cannot allow you to add this domain to your account due to a potential violation of Sedo's policy against domains that include obscene or illegal subject matter.
+2015-04-01 18:12:21	--	deprifreak is now known as Rasi
+2015-04-01 18:12:22	sudokode	what a fucking disaster
+2015-04-01 18:13:01	beest	i think they're implying you want to consummate with our president
+2015-04-01 18:13:19	sudokode	The domain, osamaobama.com, is unavailable. 
+2015-04-01 18:13:21	sudokode	haha
+2015-04-01 18:13:25	sudokode	why am I not surprised
+2015-04-01 18:13:35	sudokode	those sorts of domains could go for a lot too
+2015-04-01 18:13:35	◀▬▬	Shinryuu (~shn@85-76-17-53-nat.elisa-mobile.fi) has quit (Quit: zZzz)
+2015-04-01 18:13:50	▬▬▶	Vile` (~Vile@unaffiliated/vile/x-1886500) has joined #archlinux
+2015-04-01 18:13:51	◀▬▬	blabla (~blabla@p57BD6694.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:14:01	beest	yeah, they're all parked
+2015-04-01 18:14:50	hiptobecubic	i really with parking were somehow banned
+2015-04-01 18:15:06	hiptobecubic	it geth in the way and ith not at all utheful
+2015-04-01 18:15:21	hiptobecubic	ith like being a patent troll
+2015-04-01 18:15:53	◀▬▬	FunkyAss (~Funky@unaffiliated/funkyass) has quit (Quit: Make my Funk the P-Funk)
+2015-04-01 18:16:01	beest	disappoint that beest.net now redirects to a chinese flash maker stealing the old DC comics logo
+2015-04-01 18:16:17	▬▬▶	lieutenant_x64 (~textual@225.Red-88-23-255.staticIP.rima-tde.net) has joined #archlinux
+2015-04-01 18:16:17	◀▬▬	monto (~monto@static243-215-175.mimer.net) has quit (Quit: monto)
+2015-04-01 18:16:18	◀▬▬	acarrico (~acarrico@richmon1-dhcp-75.greenmountainaccess.net) has quit (Quit: Leaving.)
+2015-04-01 18:16:31	sudokode	lol
+2015-04-01 18:16:34	sudokode	http://beest.net
+2015-04-01 18:16:52	hiptobecubic	haha
+2015-04-01 18:16:58	◀▬▬	askatasuna (~askatasun@181.30.22.74) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:17:22	--	irc: disconnected from server
+2015-04-01 18:22:41	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-04-01 18:22:41	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-04-01 18:22:41	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-04-01 18:22:42	--	Channel #archlinux: 1963 nicks (1 op, 1 voice, 1961 normals)
+2015-04-01 18:22:45	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-04-01 18:22:56	◀▬▬	driti (~driti@209-6-52-185.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com) has quit (Quit: pz.)
+2015-04-01 18:23:12	◀▬▬	silentz0r (5548cd13@gateway/web/freenode/ip.85.72.205.19) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:23:13	◀▬▬	WyReSP (~wyre@80.30.187.232) has quit (Client Quit)
+2015-04-01 18:23:27	◀▬▬	mtn (~mtn@dpc6744160092.direcpc.com) has quit (Quit: Konversation terminated!)
+2015-04-01 18:23:29	hiptobecubic	that was  taken *years* ago
+2015-04-01 18:23:39	◀▬▬	lieutenant_x64 (~textual@225.Red-88-23-255.staticIP.rima-tde.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 18:23:48	▬▬▶	acarrico (~acarrico@richmon1-dhcp-75.greenmountainaccess.net) has joined #archlinux
+2015-04-01 18:23:56	◀▬▬	nuk3 (~user@168.253.196.224) has quit (Remote host closed the connection)
+2015-04-01 18:23:59	◀▬▬	Lirux (~Liran@nwcse-202.cs.huji.ac.il) has quit (Read error: Connection reset by peer)
+2015-04-01 18:23:59	◀▬▬	zweihundertneun (~zweihunde@p5497CA89.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2015-04-01 18:24:15	▬▬▶	silentz0r (5548cd13@gateway/web/freenode/ip.85.72.205.19) has joined #archlinux
+2015-04-01 18:24:36	◀▬▬	holomorph (~holomorph@unaffiliated/holomorph) has quit (Quit: holomorph)
+2015-04-01 18:24:40	drfate	sudokode: probably a porn site
+2015-04-01 18:24:47	sudokode	you should find out
+2015-04-01 18:24:50	Earnestly	Or a horse reseller
+2015-04-01 18:25:14	sudokode	timeout
+2015-04-01 18:25:18	▬▬▶	WyReSP (~wyre@80.30.187.232) has joined #archlinux
+2015-04-01 18:25:32	sudokode	The domain, horse4sale.com, is unavailable. 
+2015-04-01 18:25:38	▬▬▶	goodlukas (~goodlukas@153.23.38.86.static.lrtc.lt) has joined #archlinux
+2015-04-01 18:25:38	▬▬▶	holomorph (~holomorph@unaffiliated/holomorph) has joined #archlinux
+2015-04-01 18:25:39	sudokode	there's your horse reseller
+2015-04-01 18:25:46	drfate	sudokode: DNS error 
+2015-04-01 18:25:58	drfate	probably not in use
+2015-04-01 18:26:09	Earnestly	sudokode: amazinghorse
+2015-04-01 18:26:24	▬▬▶	oriba (~oriba@x55b201a6.dyn.telefonica.de) has joined #archlinux
+2015-04-01 18:26:28	◀▬▬	scientes (~scientes@unaffiliated/scientes) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:26:33	sudokode	taken
+2015-04-01 18:26:33	beest	is there anything left that isn't parked?
+2015-04-01 18:26:37	▬▬▶	alexwe (~alex@p57A306D1.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-01 18:26:42	Earnestly	sudokode: A subsidiary of epiclemonade
+2015-04-01 18:26:57	sudokode	if you mean the video, then yes I know what it is
+2015-04-01 18:27:02	Earnestly	LLC of course
+2015-04-01 18:27:03	sudokode	!yt amazing horse
+2015-04-01 18:27:04	phrik	sudokode: Amazing Horse : animated music video : MrWeebl - YouTube: <http://www.youtube.com/watch?v=GUl9_5kK9ts>
+2015-04-01 18:27:21	◀▬▬	Shoe14 (uid40690@gateway/web/irccloud.com/x-acqlsbmovelcxgdt) has quit (Quit: Connection closed for inactivity)
+2015-04-01 18:27:28	▬▬▶	igordcard_ (~overlayer@198.3.115.89.rev.vodafone.pt) has joined #archlinux
+2015-04-01 18:27:29	▬▬▶	alexandros_c (~alexandro@unaffiliated/alexandros-c/x-1684531) has joined #archlinux
+2015-04-01 18:27:30	sudokode	nsfw?
+2015-04-01 18:27:35	◀▬▬	anthony25 (~anthony25@aruhier.fr) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:27:40	sudokode	I guess cartoon dick counts as nsfw
+2015-04-01 18:27:45	beest	ugh, i can't whinge about the state of american education when britons without criminal records insist on spelling the word "carnt" without irony
+2015-04-01 18:27:47	◀▬▬	Laerten (~Laerten@host160-25-dynamic.5-87-r.retail.telecomitalia.it) has quit (Quit: Leaving)
+2015-04-01 18:27:48	sudokode	even for a horse
+2015-04-01 18:27:53	sudokode	I'm jelly btw
+2015-04-01 18:27:58	silentz0r	so, strace -p /usr/bin/x hung my system
+2015-04-01 18:28:02	sudokode	I need to find a domain
+2015-04-01 18:28:04	silentz0r	wait
+2015-04-01 18:28:07	Earnestly	beest: :|
+2015-04-01 18:28:09	silentz0r	not /usr/bin/X but the process
+2015-04-01 18:28:12	▬▬▶	anthony25 (~anthony25@aruhier.fr) has joined #archlinux
+2015-04-01 18:28:14	Earnestly	beest: To be fair, I've not come across any
+2015-04-01 18:28:32	Earnestly	Even chavs spell that properly
+2015-04-01 18:28:35	beest	lol
+2015-04-01 18:28:35	▬▬▶	loungin (~loungin@c-50-134-136-16.hsd1.co.comcast.net) has joined #archlinux
+2015-04-01 18:28:43	◀▬▬	phre4k (~phre4k@55d42633.access.ecotel.net) has quit (Quit: Leaving)
+2015-04-01 18:29:22	◀▬▬	syslock (~syslock@xd932eed3.dyn.telefonica.de) has quit (Quit: tschüß...)
+2015-04-01 18:29:32	sudokode	wtf is a carnt
+2015-04-01 18:29:40	sudokode	carnation?
+2015-04-01 18:29:40	beest	i carnt tell you
+2015-04-01 18:29:45	sudokode	oh that word
+2015-04-01 18:29:46	drfate	^ ^ ^  ^ ^ ^ ^ ^ ^ 
+2015-04-01 18:29:54	sudokode	how do you even turn it even into that
+2015-04-01 18:29:59	silentz0r	it's what people who can't spell sound like when they talk
+2015-04-01 18:30:05	drfate	carat 
+2015-04-01 18:30:06	▬▬▶	pirithous (~pirithous@unaffiliated/pirithous) has joined #archlinux
+2015-04-01 18:30:13	◀▬▬	drekar_ (~drekar@ip67-88-120-130.z120-88-67.customer.algx.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:30:16	drfate	carrot caret 
+2015-04-01 18:30:17	sudokode	:(
+2015-04-01 18:30:35	◀▬▬	Bainos (~Bainos@182.16-64-87.adsl-dyn.isp.belgacom.be) has quit (Quit: Lost terminal)
+2015-04-01 18:30:40	sudokode	I've never come close to mispronouncing that word
+2015-04-01 18:30:54	◀▬▬	davispuh (~quassel@212.93.114.132) has quit (Remote host closed the connection)
+2015-04-01 18:30:58	hapislacker	hi all
+2015-04-01 18:31:11	sudokode	it's really not possible to do so because you have to put so much conscious thought into saying it
+2015-04-01 18:31:12	Earnestly	sudokode: Oh, but here in England, there's a bajillion of seriously strong acsents which leave you considering if it was English at all
+2015-04-01 18:31:17	Earnestly	accents*
+2015-04-01 18:31:22	◀▬▬	WyReSP (~wyre@80.30.187.232) has quit (Read error: Connection reset by peer)
+2015-04-01 18:31:26	◀▬▬	normalra (~normal@unaffiliated/normalra) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:31:29	sudokode	except in the UK where that word is used widely
+2015-04-01 18:31:35	Earnestly	And pronouncing can't as carnt, is a thing in some parts
+2015-04-01 18:31:36	▬▬▶	scientes (~scientes@c-73-42-216-173.hsd1.wa.comcast.net) has joined #archlinux
+2015-04-01 18:31:36	◀▬▬	scientes (~scientes@c-73-42-216-173.hsd1.wa.comcast.net) has quit (Changing host)
+2015-04-01 18:31:36	▬▬▶	scientes (~scientes@unaffiliated/scientes) has joined #archlinux
+2015-04-01 18:31:44	sudokode	oh can't?
+2015-04-01 18:31:50	hapislacker	anyone does know an image hosting website that ends with .io ? I was looking to use their service since they offer free email and hosting too I forgot the name 
+2015-04-01 18:31:51	sudokode	I thought we were discussing s/a/u/
+2015-04-01 18:32:01	sudokode	beest: you lied to me
+2015-04-01 18:32:18	beest	did i not just say "i carnt tell you"?
+2015-04-01 18:32:23	▬▬▶	davispuh (~quassel@212.93.114.132) has joined #archlinux
+2015-04-01 18:32:26	▬▬▶	WyReSP (~wyre@80.30.187.232) has joined #archlinux
+2015-04-01 18:32:29	silentz0r	Earnestly: whereabouts are you from?
+2015-04-01 18:32:30	sudokode	no you said
+2015-04-01 18:32:33	sudokode	oh you did
+2015-04-01 18:32:36	beest	your capacity for inference is not that poor
+2015-04-01 18:32:36	◀▬▬	CaptainCrunch (~ken@HSI-KBW-046-005-000-044.hsi8.kabel-badenwuerttemberg.de) has quit (Ping timeout: 255 seconds)
+2015-04-01 18:32:40	sudokode	fucking brain assuming things
+2015-04-01 18:33:03	sudokode	carnt really looks like can't if you're reading fast
+2015-04-01 18:33:05	Earnestly	I love that we can talk about our brains as a 3rd party
+2015-04-01 18:33:13	sudokode	lol
+2015-04-01 18:33:15	▬▬▶	lmat (~lmat@ip-64-134-174-163.public.wayport.net) has joined #archlinux
+2015-04-01 18:33:39	◀▬▬	AKBlindy (~jticket@jt-lx.info) has quit (Max SendQ exceeded)
+2015-04-01 18:33:49	▬▬▶	phre4k (~phre4k@55d42633.access.ecotel.net) has joined #archlinux
+2015-04-01 18:33:51	▬▬▶	endiruna (~endiendir@x5ce25da4.dyn.telefonica.de) has joined #archlinux
+2015-04-01 18:33:54	Earnestly	Maybe that's the key to AI
+2015-04-01 18:33:59	◀▬▬	caldog20 (~caldog20@66.199.31.1) has quit
+2015-04-01 18:34:07	◀▬▬	jjin (~jjin@wireless-205-208-124-239.uchicago.edu) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:34:16	sudokode	if the world was a simulation, we could not imagine it as such because it would mean the simulator is self-aware
+2015-04-01 18:34:23	Earnestly	Yes
+2015-04-01 18:34:26	▬▬▶	driti (~driti@209-6-52-185.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com) has joined #archlinux
+2015-04-01 18:34:27	silentz0r	BOOM
+2015-04-01 18:34:32	▬▬▶	AKBlindy (~jticket@jt-lx.info) has joined #archlinux
+2015-04-01 18:34:33	Earnestly	That's what I mean
+2015-04-01 18:34:35	silentz0r	I love the AM conversations
+2015-04-01 18:34:41	sudokode	well, a philosophy major would tell you otherwise
+2015-04-01 18:34:42	drfate	sudokode: self-aware simulations
+2015-04-01 18:34:51	drfate	sudokode: wtf did you just invent
+2015-04-01 18:34:51	Earnestly	You have to somehow trick the AI into thinking that it's not an AI
+2015-04-01 18:35:00	sudokode	drfate: the universe
+2015-04-01 18:35:03	sudokode	2.0
+2015-04-01 18:35:09	Earnestly	So it can have conversations with itself
+2015-04-01 18:35:23	Earnestly	But it has to process both sides of it without realising that it is
+2015-04-01 18:35:23	▬▬▶	zephcom (~zephcom@81-233-49-224-no23.tbcn.telia.com) has joined #archlinux
+2015-04-01 18:35:36	beest	so my crazy aunt is an AI, that explains a lot
+2015-04-01 18:35:40	drfate	sudokode: universe would be all like, its gonna be meteor showers in this mug ALL THE TIME 
+2015-04-01 18:35:45	▬▬▶	Bainos (~Bainos@182.16-64-87.adsl-dyn.isp.belgacom.be) has joined #archlinux
+2015-04-01 18:35:53	◀▬▬	j12t (~j12t@50.153.131.35) has quit (Remote host closed the connection)
+2015-04-01 18:35:54	phre4k	okay, I want to move away from yaourt. I heard cower would be a good alternative. How do I set up a workflow which is as automated as possible?
+2015-04-01 18:35:56	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined #archlinux
+2015-04-01 18:35:57	sudokode	lol who invited this guy
+2015-04-01 18:35:58	Earnestly	beest: Well, mental issues do teach us the most
+2015-04-01 18:35:59	sudokode	he's funny
+2015-04-01 18:36:01	◀▬▬	phoxmeh (~phox@2602:306:cebe:16f0::2) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 18:36:02	▬▬▶	passenger (~hxgrm@unaffiliated/passenger) has joined #archlinux
+2015-04-01 18:36:27	Earnestly	phre4k: tsort needs more love
+2015-04-01 18:36:29	sudokode	phre4k: cower isn't an alternative to yaourt
+2015-04-01 18:36:35	beest	Earnestly: my ex is a clinical social worker, it does give you amazing insight at the brain's ability to persist against reason
+2015-04-01 18:36:50	▬▬▶	beohoff (~hoff@c-76-22-179-64.hsd1.tn.comcast.net) has joined #archlinux
+2015-04-01 18:36:59	Earnestly	beest: I can certainly say that I do not understand it
+2015-04-01 18:37:03	sudokode	an alternative to yaourt would be something like makepkg+cower
+2015-04-01 18:37:23	Earnestly	beest: How illogical people can be and seemingly be not able to even see the trick
+2015-04-01 18:37:23	sudokode	or more like pacaur or packer
+2015-04-01 18:37:29	▬▬▶	Soni (SoniEx2@unaffiliated/soniex2) has joined #archlinux
+2015-04-01 18:37:36	sudokode	but you can get by with less features than yaourt
+2015-04-01 18:37:42	◀▬▬	asdil12 (~asdil12@89.204.137.36) has quit (Read error: Connection reset by peer)
+2015-04-01 18:37:49	◀▬▬	T-Sourcemaker (~Joungai3q@2a02:8071:a81:7f00:f66d:4ff:fe79:2ef9) has quit
+2015-04-01 18:37:50	sudokode	you can always just use ye olde pacman for the other junk
+2015-04-01 18:37:51	◀▬▬	SpaghettiCat (~Spaghetti@x5f73933c.dyn.telefonica.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:37:54	Earnestly	beest: I know I have my moments, but I have to conceed at some point
+2015-04-01 18:38:00	◀▬▬	WaReZ (~warez@equ57-3-78-208-125-180.fbx.proxad.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 18:38:02	beest	hehe
+2015-04-01 18:38:12	silentz0r	Earnestly: concede*, I dunno why I did that
+2015-04-01 18:38:14	◀▬▬	SgrA (~sgra@unaffiliated/sgra) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:38:15	sudokode	Earnestly: concede
+2015-04-01 18:38:21	silentz0r	ouch
+2015-04-01 18:38:24	Earnestly	Yeah, typed too fast
+2015-04-01 18:38:35	sudokode	you did not succede
+2015-04-01 18:38:38	phre4k	sudokode: I know. For me it is.
+2015-04-01 18:38:43	sudokode	what?
+2015-04-01 18:38:45	phre4k	Earnestly: ty, looking into tsort
+2015-04-01 18:38:46	sudokode	oh
+2015-04-01 18:38:56	silentz0r	dunno if trolling or not, but fuck it: suceed
+2015-04-01 18:39:00	Earnestly	I did not, the dance of 'edc' on qwerty is odd
+2015-04-01 18:39:01	silentz0r	DAMN
+2015-04-01 18:39:02	▬▬▶	phoxmeh (~phox@2602:306:cebe:16f0:ca60:ff:fee3:56ee) has joined #archlinux
+2015-04-01 18:39:13	phre4k	lol, srsly :D now I remember
+2015-04-01 18:39:19	beest	i'm seceding from this conversation
+2015-04-01 18:39:32	▬▬▶	blabla_ (~blabla@ip-80-226-1-10.vodafone-net.de) has joined #archlinux
+2015-04-01 18:39:35	sudokode	silentz0r: I think you meant succeed
+2015-04-01 18:39:45	sudokode	unless you're also trolling
+2015-04-01 18:39:51	sudokode	then you got me. but I got you too
+2015-04-01 18:40:03	▬▬▶	SgrA (~sgra@unaffiliated/sgra) has joined #archlinux
+2015-04-01 18:40:04	silentz0r	I just got mindfucked while mindfucking
+2015-04-01 18:40:08	silentz0r	This feels interesting
+2015-04-01 18:40:14	sudokode	!twss
+2015-04-01 18:40:15	phrik	That's what she said!
+2015-04-01 18:40:26	beest	Earnestly: if i didn't play the piano i'd have a lot of difficulty with keystroke jumps like that, i just kinda legato the fingerings :P
+2015-04-01 18:40:31	eto	sudokode: how do you even ...
+2015-04-01 18:40:36	▬▬▶	gigahurt (~gigahurt@c-71-225-150-179.hsd1.pa.comcast.net) has joined #archlinux
+2015-04-01 18:40:41	silentz0r	oh god, I do that too
+2015-04-01 18:40:42	sudokode	eto.com
+2015-04-01 18:40:42	sudokode	hm
+2015-04-01 18:40:47	Earnestly	beest: A piano is mostly... horizontal
+2015-04-01 18:40:55	Earnestly	beest: edc is vertical :<
+2015-04-01 18:40:56	sudokode	taken
+2015-04-01 18:40:57	▬▬▶	Strum (~Strum@139.216.176.37) has joined #archlinux
+2015-04-01 18:41:00	eto	sudokode: not me
+2015-04-01 18:41:05	beest	irrelevant, same motion
+2015-04-01 18:41:23	eto	sudokode: but he is awesome
+2015-04-01 18:41:31	Earnestly	beest: But... it's not D:, I mean if you're going from white to black, you'd use two fingers?
+2015-04-01 18:41:32	sudokode	heh
+2015-04-01 18:41:34	◀▬▬	_Ulan (~Thunderbi@2.26.80.135) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:41:41	Earnestly	That said, I suppose you can
+2015-04-01 18:41:50	endiruna	how do I set the permitions on a tmpfs mount i tried    tmpfs foo tmpfs umask=077 0 0   but does not work. I can not find the answer googling
+2015-04-01 18:42:05	Earnestly	beest: Yeah, fair enough, that is easy :P
+2015-04-01 18:42:14	sudokode	<Earnestly> "...I mean if you're going from white to black, you'd use two fingers?"
+2015-04-01 18:42:18	◀▬▬	tasse_ (~tasse@p4FFA1D45.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2015-04-01 18:42:22	Earnestly	beest: (I can only do Grade 1 and some Grade 2, because I am lazy)
+2015-04-01 18:42:23	sudokode	that's a decent quote
+2015-04-01 18:42:38	beest	see? i querty with only one sharp :P
+2015-04-01 18:42:38	silentz0r	^
+2015-04-01 18:42:39	sudokode	Earnestly: you play the paino?
+2015-04-01 18:42:46	Earnestly	sudokode: "No"
+2015-04-01 18:42:49	sudokode	or piano
+2015-04-01 18:42:56	sudokode	you should
+2015-04-01 18:43:01	◀▬▬	Xenoth (~xenoth@104-56-166-31.lightspeed.cicril.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2015-04-01 18:43:01	sudokode	you seem like a piano player
+2015-04-01 18:43:06	Earnestly	sudokode: If by playing you mean, can push keys in some memorized orders, just about, then yes
+2015-04-01 18:43:10	sudokode	a penis or whatever they're called
+2015-04-01 18:43:13	silentz0r	he plays the paino when two fingers are involved
+2015-04-01 18:43:28	beest	sudokode: he carnt be a penis
+2015-04-01 18:43:42	Earnestly	sudokode: But realistically, no, not a hope
+2015-04-01 18:43:45	sudokode	Earnestly: oh so you're saying you're just another average piano player, not a virtuoso
+2015-04-01 18:43:53	sudokode	sorry, man
+2015-04-01 18:43:53	Earnestly	sudokode: Not even average
+2015-04-01 18:44:07	◀▬▬	_404`d (~404d@2001:470:7826::c0ff:ee:face) has quit (Quit: WeeChat 1.2-dev)
+2015-04-01 18:44:14	sudokode	what are you good at
+2015-04-01 18:44:26	◀▬▬	jottr_ (~jottr@unaffiliated/jottr) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:44:27	beest	telling people to use pgrep
+2015-04-01 18:44:49	Phreakachu	a useful skill
+2015-04-01 18:44:49	◀▬▬	silentz0r (5548cd13@gateway/web/freenode/ip.85.72.205.19) has quit (Quit: Page closed)
+2015-04-01 18:45:03	◀▬▬	kerim (~kerim@178.233.48.89) has quit (Read error: Connection reset by peer)
+2015-04-01 18:45:09	Earnestly	[Probably flying helicopters]
+2015-04-01 18:45:35	sudokode	if you're gonna fly a helicopter, there's not much room for probably
+2015-04-01 18:45:35	beest	he skulks around IT labs in a guy fawkes mask carrying signs that say "WE ARE WATCHING YOU GREP PS"
+2015-04-01 18:45:46	Earnestly	sudokode: There is when you fly with someone who can
+2015-04-01 18:45:56	◀▬▬	AccessGranted (~pihpah@93.84.11.146) has quit (Ping timeout: 272 seconds)
+2015-04-01 18:46:04	sudokode	that's cheating though
+2015-04-01 18:46:07	Earnestly	heh
+2015-04-01 18:46:30	▬▬▶	moonlander (~moonlande@ip72-192-35-26.ri.ri.cox.net) has joined #archlinux
+2015-04-01 18:46:34	sudokode	I guess the better question is, can you land?
+2015-04-01 18:46:43	Earnestly	sudokode: Almost
+2015-04-01 18:46:58	sudokode	crashing gently counts as landing 9 times out of 10
+2015-04-01 18:47:01	◀▬▬	SuprDewd (~SuprDewd@dsl-ls-106-231.du.vortex.is) has quit (Quit: leaving)
+2015-04-01 18:47:03	◀▬▬	bjarki (~bjarki@dsl-ls-106-231.du.vortex.is) has quit (Quit: leaving)
+2015-04-01 18:47:11	sudokode	in helos anyway
+2015-04-01 18:47:27	Earnestly	auto-rotate is also much nicer than people think
+2015-04-01 18:47:58	◀▬▬	grrk-bzzt (~grrk-bzzt@unaffiliated/grrk-bzzt) has quit (Remote host closed the connection)
+2015-04-01 18:48:02	Earnestly	That is, cut the engine at 1000ft.  It almost feels like it's gliding at how slowly it comes down
+2015-04-01 18:48:12	sudokode	yes, but crashing into the ground at a casual descent of 5mph is still rough on the spine and neck
+2015-04-01 18:48:12	◀▬▬	LBV_User (~leonardo@179.182.78.147) has quit (Quit: done with this Instant Ramen Cup)
+2015-04-01 18:48:36	◀▬▬	DevPump (~DevPump@pool-173-65-27-55.tampfl.fios.verizon.net) has quit (Quit: Leaving)
+2015-04-01 18:48:42	Earnestly	sudokode: There's this guy who can open a bottle of beer with a beer opener taped to the skid
+2015-04-01 18:48:46	sudokode	plus it's scarier when you're spinning D:
+2015-04-01 18:48:49	◀▬▬	blabla_ (~blabla@ip-80-226-1-10.vodafone-net.de) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:48:58	sudokode	heh
+2015-04-01 18:49:05	▬▬▶	jottr_ (~jottr@unaffiliated/jottr) has joined #archlinux
+2015-04-01 18:49:24	Earnestly	At that altitude, with plenty of updraft, that is not... easy
+2015-04-01 18:49:38	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:49:56	Earnestly	I don't know if you know either, but the flight sticks are not spring-loaded either, which is a bit different to most gaming/sim flight sticks you can buy
+2015-04-01 18:50:01	◀▬▬	xarik (~xarik2@192.12.88.128) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:50:07	eto	sudokode: amortisers?
+2015-04-01 18:50:14	▬▬▶	Metsarono (~tiago@37.120.34.77) has joined #archlinux
+2015-04-01 18:50:28	eto	sudokode: in da chair?
+2015-04-01 18:50:31	◀▬▬	Mossepo (~Mossepo@dsl-espbrasgw1-54fa72-189.dhcp.inet.fi) has quit (Quit: Mossepo)
+2015-04-01 18:50:40	▬▬▶	Mossepo (~Mossepo@dsl-espbrasgw1-54fa72-189.dhcp.inet.fi) has joined #archlinux
+2015-04-01 18:50:43	▬▬▶	blabla (~blabla@ip-80-226-1-17.vodafone-net.de) has joined #archlinux
+2015-04-01 18:50:46	◀▬▬	k1000 (~quassel@2607:5300:100::54f) has quit (Quit: k1000)
+2015-04-01 18:50:46	Earnestly	sudokode: It's actually easier to land them like a fixed wing heh, because staying in one position is extremely tricky
+2015-04-01 18:50:57	sudokode	Earnestly: spring-loaded seems like it would be dangerous in something you want to control while hovering
+2015-04-01 18:51:01	◀▬▬	nous (~nous@130.43.36.178.dsl.dyn.forthnet.gr) has quit (Quit: void space(void);)
+2015-04-01 18:51:25	Earnestly	sudokode: Yeah, but it's just something people may not realise if you're coming from say, a game stick
+2015-04-01 18:51:36	sudokode	true
+2015-04-01 18:52:02	◀▬▬	zokeber (~zokeber@unaffiliated/zokeber) has quit (Quit: ...)
+2015-04-01 18:52:07	lmat	I'm booting from arch linux iso in a VM. I have two hard drives attached to the vm at hda and hdd. The hdd one is an ISO. This should work? Does arch linux do anything weird with attached disks? ^_^
+2015-04-01 18:52:10	sudokode	plus you have to use more controls at once than in a fixed-wing
+2015-04-01 18:52:13	Earnestly	sudokode: I usually remove the spring from them anyway, because nothing that uses a stick will spring back like that, not even jet fighters
+2015-04-01 18:52:17	◀▬▬	watsonalgas (~diomekes@71.56.124.213) has quit (Remote host closed the connection)
+2015-04-01 18:52:33	◀▬▬	Lorcatar (~BostonMA1@unaffiliated/bostonma1776) has quit (Read error: Connection reset by peer)
+2015-04-01 18:52:40	Earnestly	sudokode: Big helicopters, like the merlins and such with two jet engines, you mostly adjust position via a little hat
+2015-04-01 18:52:51	sudokode	how are they controlled in jet fighters? hydraulics?
+2015-04-01 18:52:58	Earnestly	sudokode: Yeah
+2015-04-01 18:53:03	sudokode	fancy
+2015-04-01 18:53:11	eto	Earnestly: anybody who sat in heli once even on groundm, and saw the sticks with all the frigging controls should be pretty much aware it's fucking hard thing to pilot
+2015-04-01 18:53:21	◀▬▬	geomyidae_ (uid214@gateway/web/irccloud.com/x-nymurgtnlksdudyw) has quit (Quit: Connection closed for inactivity)
+2015-04-01 18:53:51	◀▬▬	flexat0r (~felix@dslb-188-102-052-034.188.102.pools.vodafone-ip.de) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:53:53	Earnestly	eto: Light ones don't have anything
+2015-04-01 18:53:58	Earnestly	It's just a stick
+2015-04-01 18:54:17	◀▬▬	MasterPiece (~MasterPie@unaffiliated/masterpiece) has quit (Read error: Connection reset by peer)
+2015-04-01 18:54:20	Earnestly	One stick you move about, another you lift/lower and twist
+2015-04-01 18:54:20	sudokode	you have pedals too
+2015-04-01 18:54:25	Earnestly	Yep
+2015-04-01 18:54:26	eto	sudokode: from what i gathered you move all your four limbs to achive movement and plus turn your head around to see, so you must be like drummer or octopuss
+2015-04-01 18:54:28	brotatos	Anyone here have any experience with Arduino? I want to upload a simple blink program to the board without using the Arduino IDE.
+2015-04-01 18:54:35	▬▬▶	_404`d (~404d@2001:470:7826::c0ff:ee:face) has joined #archlinux
+2015-04-01 18:54:43	Earnestly	twist = changes of angle of attack of the rotors
+2015-04-01 18:54:52	Earnestly	rise/lower just changes the rpm
+2015-04-01 18:54:57	eto	eg gas
+2015-04-01 18:55:14	Earnestly	And if you don't get the balance right it will complain to you :P
+2015-04-01 18:55:19	◀▬▬	blabla (~blabla@ip-80-226-1-17.vodafone-net.de) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:55:22	Earnestly	That is, lights will come on
+2015-04-01 18:55:41	▬▬▶	blabla (~blabla@ip-80-226-1-25.vodafone-net.de) has joined #archlinux
+2015-04-01 18:56:06	◀▬▬	Longlius (~longlius@2602:301:7767:6df0:a64e:31ff:fe19:d320) has quit (Remote host closed the connection)
+2015-04-01 18:56:28	◀▬▬	Stiky (~gary@d154-20-185-186.bchsia.telus.net) has quit (Read error: Connection reset by peer)
+2015-04-01 18:56:49	▬▬▶	utack (~utack@ip923464f1.dynamic.kabel-deutschland.de) has joined #archlinux
+2015-04-01 18:57:05	eto	i once got a chance but watching pilot i was so scared shitless i gave up immediately - although he said controls are connected and he is in control
+2015-04-01 18:57:09	Earnestly	sudokode: Another thing that freaks you out is how much everything shakes, even stable platforms like the seaking: https://www.youtube.com/watch?v=PxCEMuIxHWc
+2015-04-01 18:57:09	◀▬▬	WyReSP (~wyre@80.30.187.232) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:57:10	phrik	Title: Sea King Helicopter Flying Along The Azores Islands - YouTube (at www.youtube.com)
+2015-04-01 18:57:34	Earnestly	sudokode: Nothing prepares you for the vibrations in these things, it feels like it's going to rip itself apart any second D:
+2015-04-01 18:57:44	eto	i also got chance to try a small plane and that was really easy - in air mind you
+2015-04-01 18:57:45	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined #archlinux
+2015-04-01 18:58:35	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 18:58:39	◀▬▬	hiptobecubic (~john@unaffiliated/hiptobecubic) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:58:50	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 18:59:16	◀▬▬	qgnox (~qgnox@190.234.13.143) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:59:20	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 18:59:29	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 18:59:30	Earnestly	sudokode: It shakes so  much that it's almost impossilble to even read the guages :P
+2015-04-01 19:00:00	eto	Earnestly: so how much does it cost?
+2015-04-01 19:00:06	Earnestly	(No simulators seem to simulate this.  Needles read perfectly)
+2015-04-01 19:00:18	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:00:27	lmat	If I want a MBR, what should I use to create the partition? Will gpt work?
+2015-04-01 19:00:38	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:00:41	Earnestly	lmat: What are you trying to do?
+2015-04-01 19:00:54	◀▬▬	ptalbot (~ptalbot@gra94-16-83-154-129-4.fbx.proxad.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 19:01:14	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:01:17	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:01:23	◀▬▬	mittald_ (~mittald@dhcp-v80-001180.wireless.unc.edu) has quit (Remote host closed the connection)
+2015-04-01 19:01:38	▬▬▶	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has joined #archlinux
+2015-04-01 19:01:43	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:01:50	◀▬▬	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has quit (Remote host closed the connection)
+2015-04-01 19:01:52	◀▬▬	whitebook (~whitebook@ool-6caa654a.static.optonline.net) has quit (Remote host closed the connection)
+2015-04-01 19:02:10	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:02:11	lmat	Earnestly: I'm trying to clone an old system to put it in a VM.
+2015-04-01 19:02:14	◀▬▬	cupantae (~cupantae@31-187-18-3.dynamic.upc.ie) has quit (Quit: slán agaibh)
+2015-04-01 19:02:15	▬▬▶	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has joined #archlinux
+2015-04-01 19:02:30	◀▬▬	goligo (~goligo@244.111.89.92.rev.sfr.net) has quit (Read error: Connection reset by peer)
+2015-04-01 19:02:36	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:02:48	sudokode	ahhh
+2015-04-01 19:02:54	sudokode	I know what I'm gonna do for april fools
+2015-04-01 19:03:02	◀▬▬	jehaby (~urf@ip-95-221-122-106.bb.netbynet.ru) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:03:06	sudokode	gotta play a prank on my parents
+2015-04-01 19:03:07	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:03:07	◀▬▬	MonkZ (~monkz@unaffiliated/monkz) has left #archlinux
+2015-04-01 19:03:20	▬▬▶	Demon_Jester (~DJ89@cpe-75-81-20-24.kc.res.rr.com) has joined #archlinux
+2015-04-01 19:03:21	sudokode	no doubt they're going to bingo tonight... and I know the code to their car
+2015-04-01 19:03:27	▬▬▶	k1000 (~k1000@55.ip-198-50-149.net) has joined #archlinux
+2015-04-01 19:03:37	lmat	I ran fdisk on the old computer, and it can't read the partition table...
+2015-04-01 19:03:38	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:03:44	sudokode	if they leave a key in it, I could take it
+2015-04-01 19:03:53	sudokode	or I could pop the hood and disconnect the battery
+2015-04-01 19:04:02	sudokode	oh this is gonna be fun
+2015-04-01 19:04:05	▬▬▶	Romzetron (~Romzetron@71-82-53-158.dhcp.bycy.mi.charter.com) has joined #archlinux
+2015-04-01 19:04:09	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:04:10	lmat	sudokode: Remember to only disconnect the ground :-)
+2015-04-01 19:04:25	sudokode	that's the black one right?
+2015-04-01 19:04:28	lmat	sudokode: yes
+2015-04-01 19:04:33	s00pcan	it could be any color!
+2015-04-01 19:04:35	sudokode	roger
+2015-04-01 19:04:37	sudokode	WHAT
+2015-04-01 19:04:38	sudokode	oh no
+2015-04-01 19:04:42	sudokode	don't tell me that
+2015-04-01 19:04:46	lmat	sudokode: If you disconnect the other one, it could come into contact with the body of the car and short and weld itself to the car...
+2015-04-01 19:04:52	lmat	sudokode: If you see a black and red, go for the black ;-)
+2015-04-01 19:04:54	sudokode	haha fun
+2015-04-01 19:04:58	beest	lick it, only way to tell
+2015-04-01 19:04:59	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:05:02	sudokode	yeah, the negative terminal, right?
+2015-04-01 19:05:03	lmat	hah!!
+2015-04-01 19:05:05	s00pcan	beest is on the right track
+2015-04-01 19:05:08	sudokode	beest: good idea
+2015-04-01 19:05:13	lmat	sudokode: yes, you want the one with (-), not (+) ^_^
+2015-04-01 19:05:20	◀▬▬	LordShiva (~LordShiva@unaffiliated/lordshiva) has quit (Remote host closed the connection)
+2015-04-01 19:05:22	sudokode	are you lying to me
+2015-04-01 19:05:30	◀▬▬	Nicop06 (~nicolas@2a01:e35:2e3e:55b0:697d:28b1:22e9:9b6) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:05:33	lmat	sudokode: I'm not lying, I don't know about the others.
+2015-04-01 19:05:33	s00pcan	I wouldn't suggest anything I wouldn't do myself
+2015-04-01 19:05:33	▬▬▶	tkmr (~tkmr@c-67-190-102-186.hsd1.co.comcast.net) has joined #archlinux
+2015-04-01 19:05:33	sudokode	I trust no one today
+2015-04-01 19:05:39	▬▬▶	erdave (~erdave@190.39.252.77) has joined #archlinux
+2015-04-01 19:05:40	lmat	sudokode: good idea...
+2015-04-01 19:05:50	lmat	so, can I put a MBR on a gpt disk?
+2015-04-01 19:05:57	sudokode	https://www.google.com/search?q=how+to+disconnect+a+car+battery&ie=utf-8&oe=utf-8
+2015-04-01 19:05:58	◀▬▬	kirre (~kirre@2602:301:7793:7180:721a:4ff:fe9e:5cf5) has quit (Ping timeout: 265 seconds)
+2015-04-01 19:05:58	phrik	Title: how to disconnect a car battery - Google-Suche (at www.google.com)
+2015-04-01 19:06:00	sudokode	wow thanks google
+2015-04-01 19:06:04	s00pcan	sudokode: but you at least have trust in human nature right?
+2015-04-01 19:06:13	sudokode	s00pcan: not at all
+2015-04-01 19:06:16	s00pcan	otherwise you'd have to distrust your distrust 
+2015-04-01 19:06:19	lmat	I need to copy the MBR from the old disk onto the current disk.
+2015-04-01 19:06:20	lmat	whoa
+2015-04-01 19:06:21	sudokode	if I'm anything to judge by
+2015-04-01 19:06:22	▬▬▶	Morph4me (~morph4me@d67-193-222-69.home3.cgocable.net) has joined #archlinux
+2015-04-01 19:06:24	▬▬▶	kirre (~kirre@2602:301:7793:7180:721a:4ff:fe9e:5cf5) has joined #archlinux
+2015-04-01 19:06:44	◀▬▬	mittald (~mittald@dhcp-v80-001180.wireless.unc.edu) has quit (Ping timeout: 245 seconds)
+2015-04-01 19:07:03	▬▬▶	dacoit (~dacoit@gateway/vpn/privateinternetaccess/dacoit) has joined #archlinux
+2015-04-01 19:07:08	Demon_Jester	Hey guys, I installed feh and getting use to it, but I am wondering did I need to install imageviewer like feh to view images and set my wallpaper or was there one already pre installed I would assume there is no image viewer installed, I just didn't want to be question "why did you install feh when [insert package name here] already comes with arch"
+2015-04-01 19:07:08	sudokode	Loosen the nut on the positive terminal and disconnect it from the battery. Remove the battery, being careful not to let the positive terminal touch any metal part of the car.
+2015-04-01 19:07:09	◀▬▬	PSG_Luna (uid48908@gateway/web/irccloud.com/x-zsdaczmsuthszxei) has quit (Quit: Connection closed for inactivity)
+2015-04-01 19:07:12	sudokode	okay I'm satisfied
+2015-04-01 19:07:12	▬▬▶	bwayne (~bwayne@2601:e:c681:c649:5eac:4cff:fe1c:1d1b) has joined #archlinux
+2015-04-01 19:07:25	sudokode	I won't trust random people in irc but I will trust a random website
+2015-04-01 19:07:44	▬▬▶	P67 (~rene@dhcp-077-249-068-181.chello.nl) has joined #archlinux
+2015-04-01 19:07:44	▬▬▶	lindenk (~lindenk@c-66-31-78-9.hsd1.nh.comcast.net) has joined #archlinux
+2015-04-01 19:07:51	◀▬▬	Romzetron (~Romzetron@71-82-53-158.dhcp.bycy.mi.charter.com) has quit (Client Quit)
+2015-04-01 19:07:52	s00pcan	Demon_Jester: I have feh, so you're in good company
+2015-04-01 19:07:59	lmat	sudokode: hey!
+2015-04-01 19:08:14	sudokode	good thing those code pads on cars don't have a lockout period
+2015-04-01 19:08:17	lmat	sudokode: I said *negative*! you see where it says "being careful not to let..." Bad things happen if it touches!
+2015-04-01 19:08:21	sudokode	I usually fuck up their code a few times
+2015-04-01 19:08:30	sudokode	lmat: right
+2015-04-01 19:08:31	lmat	sudokode: That's why you should take out the negative, and just make sure it doesn't touch the positive. Much less risk.
+2015-04-01 19:08:35	sudokode	that confirmed what you said
+2015-04-01 19:08:36	Demon_Jester	s00pcan, ok thanks!
+2015-04-01 19:08:40	sudokode	lmat: I'm not an idiot
+2015-04-01 19:08:41	sudokode	:(
+2015-04-01 19:08:42	lmat	sudokode: okay, good ;-)
+2015-04-01 19:08:51	P67	Earnestly: Guess what, I got the hibernation problems again. Currently in the state of testing it out with pm_test (/sys/power/pm_test) but that all works flawlessly in testing mode..
+2015-04-01 19:08:58	drfate	lol people that can't use jumper cables are amusing
+2015-04-01 19:09:21	s00pcan	tv told me that all the cool kids have jumper battery packs in their truck nowadays
+2015-04-01 19:09:22	sudokode	I can use jumper cables :o
+2015-04-01 19:09:24	▬▬▶	r0x (~r0x@95.236.119.29) has joined #archlinux
+2015-04-01 19:09:27	sudokode	I just don't understand batteries
+2015-04-01 19:09:28	◀▬▬	igordcard (~igordcard@2001:690:2380:7770:34c5:3e2d:b59d:429a) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:09:31	sudokode	or electricity
+2015-04-01 19:09:33	sudokode	or chemistry
+2015-04-01 19:09:36	drfate	"oh yeah I've done this plenty of times", in reality, "actually I watched other people do it but I've never done it myself" 
+2015-04-01 19:09:38	sudokode	or magic boxes
+2015-04-01 19:09:46	◀▬▬	r0x (~r0x@95.236.119.29) has left #archlinux
+2015-04-01 19:09:50	sudokode	I like magic boxes though
+2015-04-01 19:09:58	drfate	black -> negative, red -> positive 
+2015-04-01 19:10:04	sudokode	I got that
+2015-04-01 19:10:10	◀▬▬	nighty-_ (~nighty@hokuriku.rural-networks.com) has quit (Quit: Disappears in a puff of smoke)
+2015-04-01 19:10:11	◀▬▬	julemand101 (~julemand1@pdpc/supporter/student/julemand101) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:10:11	sudokode	so positive is hot and negative is ground
+2015-04-01 19:10:16	drfate	yes
+2015-04-01 19:10:16	sudokode	that's the part I always mix up
+2015-04-01 19:10:22	sudokode	I think negative like electrons
+2015-04-01 19:10:25	sudokode	and electricity
+2015-04-01 19:10:29	▬▬▶	MonkZ (~monkz@unaffiliated/monkz) has joined #archlinux
+2015-04-01 19:10:33	▬▬▶	julemand101 (~julemand1@pdpc/supporter/student/julemand101) has joined #archlinux
+2015-04-01 19:10:38	lmat	oh crap... I did   cgdisk /dev/sda; created a partition table, mkfs.ext2 /dev/sda1 (and sda2); dd if=oldmbr of=/dev/sda bs=512 count=1;   then cgdisk can't read the partition table anymore :(
+2015-04-01 19:10:38	◀▬▬	scientes (~scientes@unaffiliated/scientes) has quit (Ping timeout: 245 seconds)
+2015-04-01 19:10:39	Earnestly	red is live
+2015-04-01 19:10:45	drfate	ground is black (and normally is black for a few other electronic wiring too its a common pneumonic color scheme) 
+2015-04-01 19:10:47	◀▬▬	Metsarono (~tiago@37.120.34.77) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:10:47	◀▬▬	dalarmmst (~dalarmmst@c83-250-95-50.bredband.comhem.se) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:10:49	Earnestly	danger :o
+2015-04-01 19:10:51	lmat	sudokode: yeah, if you want to know how it *really* works...
+2015-04-01 19:10:55	sudokode	life is a positive thing
+2015-04-01 19:10:59	sudokode	live is positive
+2015-04-01 19:11:01	▬▬▶	watsonalgas (~diomekes@71.56.124.213) has joined #archlinux
+2015-04-01 19:11:09	sudokode	the ground isn't very negative though
+2015-04-01 19:11:10	▬▬▶	veksev (~veksev@lawn-128-61-124-203.lawn.gatech.edu) has joined #archlinux
+2015-04-01 19:11:14	sudokode	unless you hit it really hard
+2015-04-01 19:11:23	s00pcan	can't have positive without negative
+2015-04-01 19:11:27	sudokode	sure why not
+2015-04-01 19:11:30	▬▬▶	vaskozl (~vaskozl@unaffiliated/einherjar) has joined #archlinux
+2015-04-01 19:11:38	beest	earth is negative, the destroyer of worlds
+2015-04-01 19:11:41	Earnestly	sudokode: Because they are defined in terms of each other :P
+2015-04-01 19:11:48	Earnestly	Just like mind and thought
+2015-04-01 19:11:49	drfate	in case you don't know, if you hook up one side correctly and the other side backwards the copper will heat up enough to break with very little force
+2015-04-01 19:11:57	s00pcan	Earnestly: there is no mind!
+2015-04-01 19:12:00	vaskozl	Hey what was the pacman flag that would not redownload packages that are already on a update?
+2015-04-01 19:12:03	lmat	teraflop: You're the man! I dd the MBR to .img file. Now I need to put it back.
+2015-04-01 19:12:06	Earnestly	s00pcan: Look them up, you'll see
+2015-04-01 19:12:09	▬▬▶	saknussemm (~saknussem@181.167.52.40) has joined #archlinux
+2015-04-01 19:12:11	sudokode	okay
+2015-04-01 19:12:12	sudokode	I got this
+2015-04-01 19:12:17	s00pcan	Earnestly: better to discover for yourself
+2015-04-01 19:12:21	lmat	oh... 446 bytes, the rest is partition table, DOH!
+2015-04-01 19:12:24	▬▬▶	qgnox (~qgnox@190.234.13.143) has joined #archlinux
+2015-04-01 19:12:27	beest	"hey dad, i blew up your car, april fool!"
+2015-04-01 19:12:28	drfate	which is why I now no longer have jumper cables and now have a I don't trust any body to do anything right policy 
+2015-04-01 19:12:44	◀▬▬	kirre (~kirre@2602:301:7793:7180:721a:4ff:fe9e:5cf5) has quit (Ping timeout: 265 seconds)
+2015-04-01 19:12:49	drfate	cause dufus wired his side wrong and melted my cord
+2015-04-01 19:13:06	▬▬▶	kirre (~kirre@2602:301:7793:7180:721a:4ff:fe9e:5cf5) has joined #archlinux
+2015-04-01 19:13:12	Earnestly	Eh, you can melt cords on car batteries?
+2015-04-01 19:13:15	s00pcan	how do you even screw up jumper cabling?
+2015-04-01 19:13:18	dacoit	Yup
+2015-04-01 19:13:22	drfate	Earnestly: yup
+2015-04-01 19:13:22	Earnestly	wat
+2015-04-01 19:13:24	sudokode	Earnestly: car batteries can do a lot of stuff
+2015-04-01 19:13:29	vaskozl	I accidentally missed pressing Y on the install and don't want to redownload everything...
+2015-04-01 19:13:35	Earnestly	sudokode: 24 volts
+2015-04-01 19:13:37	◀▬▬	Mossepo (~Mossepo@dsl-espbrasgw1-54fa72-189.dhcp.inet.fi) has quit (Quit: Mossepo)
+2015-04-01 19:13:50	s00pcan	I had to do that many times with my last car until I realised that my alternater was a pile of broken metal
+2015-04-01 19:13:51	◀▬▬	MonkZ (~monkz@unaffiliated/monkz) has quit (Client Quit)
+2015-04-01 19:13:52	drfate	Earnestly: if you wire your cables wrong and you leave it running long enough the copper will heat up exponentially 
+2015-04-01 19:13:57	◀▬▬	wongie (~wongie@f212137.upc-f.chello.nl) has quit (Quit: Ik ga weg)
+2015-04-01 19:13:59	sudokode	I prefer 9v
+2015-04-01 19:14:02	Earnestly	drfate: Interesting, never actually done that
+2015-04-01 19:14:04	dacoit	You can spot weld in a pinch with ~3 car batteries in parallel :p If you're ever stranded beyond the thunderdome
+2015-04-01 19:14:06	sudokode	I like sticking them on my tongue
+2015-04-01 19:14:08	▬▬▶	masteroman (~masteroma@93-139-172-20.adsl.net.t-com.hr) has joined #archlinux
+2015-04-01 19:14:08	sudokode	:#
+2015-04-01 19:14:12	▬▬▶	chjj (~chjj@unaffiliated/chjj) has joined #archlinux
+2015-04-01 19:14:14	vaskozl	please?
+2015-04-01 19:14:17	Demon_Jester	s00pcan, I was wondering if you can help me have feh set my wallpaper, I open the image and set it as wallpaper, but my screen is back to default on reboot, do I need to add something to my .bashrc?
+2015-04-01 19:14:23	drfate	Earnestly: you probably don't want to I nearly burnt myself cause of dufuses' mistake 
+2015-04-01 19:14:37	sudokode	vaskozl: you won't. you'll use the cache on your new system
+2015-04-01 19:14:49	drfate	Earnestly: which I later found out his battery was fine he needed an alternator 
+2015-04-01 19:14:50	s00pcan	Demon_Jester: my wallpaper is #000000, althrough I did script feh to stroble lights one night to confuse the neighbors
+2015-04-01 19:15:01	drfate	and new ignition 
+2015-04-01 19:15:03	Earnestly	drfate: Well yeah, I mean it's pretty obvious how to wire jumper cables, I've never done it wrong to find out (not that I tend to use them a lot either)
+2015-04-01 19:15:04	▬▬▶	zenguy_pc2 (~oracle__@ool-44c71438.dyn.optonline.net) has joined #archlinux
+2015-04-01 19:15:13	▬▬▶	rkreis (~rkreis@unaffiliated/rkreis) has joined #archlinux
+2015-04-01 19:15:20	vaskozl	sudokode: oh you were right :)
+2015-04-01 19:15:22	sudokode	vaskozl: so everything downloaded is in /mnt/var/cache/pacman/pkg/
+2015-04-01 19:15:26	drfate	Earnestly: not really a need to use them unless you are on the interstate or highway 
+2015-04-01 19:15:32	vaskozl	sudokode: yeah it worked thanks
+2015-04-01 19:15:36	sudokode	np
+2015-04-01 19:15:41	vaskozl	or no
+2015-04-01 19:15:42	vaskozl	it didn't
+2015-04-01 19:15:44	drfate	if your in town there is usually a mechanic shop within walking distance
+2015-04-01 19:15:44	▬▬▶	blabla_ (~blabla@x5ce2589d.dyn.telefonica.de) has joined #archlinux
+2015-04-01 19:15:45	vaskozl	I'm redownloading again
+2015-04-01 19:15:47	sudokode	really?
+2015-04-01 19:15:49	Earnestly	drfate: Pretty much (although replace those two places with "in the middle of nowhere"
+2015-04-01 19:15:55	◀▬▬	benemorius (~benemoriu@unaffiliated/benemorius) has quit (Remote host closed the connection)
+2015-04-01 19:15:56	vaskozl	I'm running pacman -Syu
+2015-04-01 19:15:57	drfate	Earnestly: pretty much 
+2015-04-01 19:15:57	dacoit	Red dead - read live - black live - exposed metal on dead
+2015-04-01 19:15:57	Demon_Jester	s00pcan, lol that is funny. so, would I need to make a script to load my wallpaper every reboot? If you know.
+2015-04-01 19:16:05	Earnestly	drfate: Yeah, country side doesn't have many of those lying around :P
+2015-04-01 19:16:11	sudokode	vaskozl: where did you hit 'n' instead of 'y'
+2015-04-01 19:16:15	◀▬▬	zenguy_pc (~oracle__@ool-44c71438.dyn.optonline.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:16:26	vaskozl	sudokode: yeah my ssh session expired and didn't hit anything
+2015-04-01 19:16:29	drfate	Earnestly: heh thankfully daytona is a tourist trap so there are like 50 different mechanic shops around here
+2015-04-01 19:16:34	sudokode	ooo
+2015-04-01 19:16:36	s00pcan	Demon_Jester: .xinitrc
+2015-04-01 19:16:39	drfate	Earnestly: as well as a place for "Rent to own Tires" 
+2015-04-01 19:16:39	sudokode	always use a multiplexer over ssh
+2015-04-01 19:16:57	vaskozl	yeah, but kinda lost cause now :D
+2015-04-01 19:16:58	◀▬▬	qgnox (~qgnox@190.234.13.143) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:16:59	Demon_Jester	s00pcan, oh right xinitrc. My bad ok I will work on it.
+2015-04-01 19:17:01	sudokode	anything in /mnt//var/cache/pacman/pkg/?
+2015-04-01 19:17:01	◀▬▬	tetris4a (~tetris4@176.92.201.9) has quit (Quit: Konversation terminated!)
+2015-04-01 19:17:22	▬▬▶	mzgnr (~mzgnr@85.102.73.67) has joined #archlinux
+2015-04-01 19:17:23	vaskozl	in /var/cache/pacman/pkg/ ?
+2015-04-01 19:17:27	s00pcan	Demon_Jester: also see hsetroot -solid "#000000"  I have it commeted out though
+2015-04-01 19:17:29	sudokode	no in /mnt
+2015-04-01 19:17:32	sudokode	you're installing, right?
+2015-04-01 19:17:42	◀▬▬	OxDB (~dennis@allegro/user/Dennis) has quit (Quit: good night world :))
+2015-04-01 19:17:44	vaskozl	no I'm updating
+2015-04-01 19:17:51	sudokode	oh nvm
+2015-04-01 19:17:51	vaskozl	the stuff is in the cache
+2015-04-01 19:17:51	▬▬▶	Nicop06 (~nicolas@2a01:e35:2e3e:55b0:f4ab:cfe9:166:531a) has joined #archlinux
+2015-04-01 19:17:54	sudokode	yeah
+2015-04-01 19:17:59	sudokode	it should continue then
+2015-04-01 19:18:03	Earnestly	xsetroot -mod 16 16 -fg '#343d46' -bg '#2b303b'
+2015-04-01 19:18:07	s00pcan	I made an arch virtualbox vm with efi boot on my new work laptop (windows host) today.  Should keep me sane
+2015-04-01 19:18:08	utack	i am getting a lit of missing files when building from aur today "can not stat ...". could that be a permission problem in /tmp?
+2015-04-01 19:18:08	mzgnr	hello archers.
+2015-04-01 19:18:13	▬▬▶	Romzetron (~Romzetron@71-82-53-158.dhcp.bycy.mi.charter.com) has joined #archlinux
+2015-04-01 19:18:20	◀▬▬	sellers (~sellers@c-98-251-17-206.hsd1.ga.comcast.net) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 19:18:26	sudokode	at what point did you not hit 'y' though?
+2015-04-01 19:18:30	◀▬▬	rkreis_ (~rkreis@unaffiliated/rkreis) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:18:36	endiruna	i am having problems with atd. i get Cannot open lockfile /var/spool/atd/.SEQ: No such file or directory. anyone had similar issues?
+2015-04-01 19:18:38	sudokode	was it asking you if you wanna upgrade or asking you to replace something...
+2015-04-01 19:18:51	sudokode	there's no yes/no prompt after you start downloading upgrades
+2015-04-01 19:18:58	vaskozl	after it had pulled the packages and asking me if I'd like to install them
+2015-04-01 19:19:01	◀▬▬	Rena (~rena@bas13-kitchener06-2925268175.dsl.bell.ca) has quit (Ping timeout: 265 seconds)
+2015-04-01 19:19:04	◀▬▬	sammj (~sam@122.99.82.10) has quit (Quit: leaving)
+2015-04-01 19:19:10	sudokode	no, it pulled the new databases
+2015-04-01 19:19:17	◀▬▬	gatekeep (~gatekeep@pe-1-0.wan.rtr1.jmp.cx) has quit (Read error: Connection reset by peer)
+2015-04-01 19:19:26	sudokode	you ran -Syu, so the first part is refreshing the sync DBs
+2015-04-01 19:19:31	◀▬▬	blabla (~blabla@ip-80-226-1-25.vodafone-net.de) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:19:33	sudokode	for the repos you have enabled
+2015-04-01 19:19:35	vaskozl	yes
+2015-04-01 19:19:44	◀▬▬	AvianFlu (~avianflu@207-38-246-118.c3-0.43d-ubr2.qens-43d.ny.cable.rcn.com) has quit (Remote host closed the connection)
+2015-04-01 19:19:46	◀▬▬	elementalest (~elemental@unaffiliated/elementalest) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:19:48	sudokode	just run -Su now
+2015-04-01 19:19:54	sudokode	the DBs are tiny. that shouldn't matter
+2015-04-01 19:20:00	Demon_Jester	s00pcan, I can probably use that
+2015-04-01 19:20:21	sudokode	you'll start downloading actual packages after you hit 'y' to upgrade
+2015-04-01 19:20:26	vaskozl	It doesn't ask me to update -y
+2015-04-01 19:20:37	mzgnr	does anyone have issue with chromium icon on xfce panel bar ?
+2015-04-01 19:20:37	sudokode	you can remove the -y now
+2015-04-01 19:20:43	sudokode	-y is refresh the sync DBs
+2015-04-01 19:20:47	sudokode	-u is a system upgrade
+2015-04-01 19:20:53	vaskozl	yeah but when I run pacman -Sy it doesn't want a yes
+2015-04-01 19:20:56	sudokode	you use them together because that's the safest way to go
+2015-04-01 19:21:01	vaskozl	the only time it wants a yes is before installing the packages
+2015-04-01 19:21:02	◀▬▬	P67 (~rene@dhcp-077-249-068-181.chello.nl) has quit (Quit: leaving)
+2015-04-01 19:21:05	vaskozl	after it has downloaded all of them
+2015-04-01 19:21:07	sudokode	right, you haven't told it to install anything
+2015-04-01 19:21:19	◀▬▬	diego_ (~diego@181.66.156.237) has quit (Quit: Leaving)
+2015-04-01 19:21:24	sudokode	vaskozl: no, it hasn't downloaded them yet
+2015-04-01 19:21:32	vaskozl	but it did
+2015-04-01 19:21:42	vaskozl	why would it not have?
+2015-04-01 19:21:44	sudokode	take one of the packages and find it in /var/cache/pacman/pkg/ then
+2015-04-01 19:21:53	▬▬▶	dunkel2 (~dunkel2@200.239.11.199) has joined #archlinux
+2015-04-01 19:21:58	sudokode	pkg-x.y.z-1.pkg.tar.xz
+2015-04-01 19:22:13	sudokode	if it's there, the new one is downloaded. if it's an older version, it hasn't downloaded
+2015-04-01 19:22:17	▬▬▶	dude051 (~dude051@cpe-66-69-62-115.satx.res.rr.com) has joined #archlinux
+2015-04-01 19:22:39	vaskozl	oooh
+2015-04-01 19:22:45	▬▬▶	muscles (~muscles@unaffiliated/muscles) has joined #archlinux
+2015-04-01 19:22:45	▬▬▶	stalwart729 (~andy@87.112.41.34) has joined #archlinux
+2015-04-01 19:22:49	vaskozl	I think the session timed out in the middle of the pulling
+2015-04-01 19:22:52	◀▬▬	Gathis (~TheGrey@unaffiliated/gathis) has quit (Remote host closed the connection)
+2015-04-01 19:22:56	sudokode	that could be
+2015-04-01 19:22:59	vaskozl	so there are still quite a few left
+2015-04-01 19:23:02	sudokode	then it'll resume downloading
+2015-04-01 19:23:04	◀▬▬	stalwart829 (~andy@237.70.115.87.dyn.plus.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:23:07	vaskozl	yeah I see now
+2015-04-01 19:23:09	vaskozl	thanks
+2015-04-01 19:23:11	sudokode	np
+2015-04-01 19:23:11	◀▬▬	Lovot (~Lovot@69.73.124.32) has quit (Ping timeout: 248 seconds)
+2015-04-01 19:23:44	▬▬▶	sammj (~sam@122.99.82.10) has joined #archlinux
+2015-04-01 19:23:53	mzgnr	nobody ?
+2015-04-01 19:23:58	◀▬▬	jakobw (~jakobw@archlinux/developer/jakobw) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:24:01	s00pcan	mzgnr: wrong question
+2015-04-01 19:24:09	◀▬▬	dacoit (~dacoit@gateway/vpn/privateinternetaccess/dacoit) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:24:28	sudokode	the real question is what is an icon really?
+2015-04-01 19:24:55	▬▬▶	jpope (~jpope@173-25-24-24.client.mchsi.com) has joined #archlinux
+2015-04-01 19:25:15	mzgnr	I mean i change the icon theme but it doesnt effect the chromium icon on xfce bar
+2015-04-01 19:25:43	mzgnr	it changes on everywhere but not in xfce bar :D
+2015-04-01 19:26:08	◀▬▬	SysGh0st (~sysghost@178-132-252-222.customer.universal.se) has quit (Quit: Konversation terminated!)
+2015-04-01 19:26:17	◀▬▬	Justice (~commander@217.115.47.210) has quit (Ping timeout: 265 seconds)
+2015-04-01 19:26:24	endiruna	what does this mean?  /var/spool/atd The directory for storing output; this should be mode 700, owner daemon.    should there be a user at or atd and the directory should be owned by it? I am having problems running at service? 
+2015-04-01 19:26:54	▬▬▶	broken_symlink (~broken_sy@c-73-165-69-3.hsd1.pa.comcast.net) has joined #archlinux
+2015-04-01 19:26:56	◀▬▬	MuffinMan` (~muffin@dh207-109-206.xnet.hr) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 19:26:59	sudokode	endiruna: did the package create a user or group for it?
+2015-04-01 19:27:04	mzgnr	anyways i think im asking this question in the wrong place :)
+2015-04-01 19:27:18	s00pcan	mzgnr: not big on guis
+2015-04-01 19:27:28	▬▬▶	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has joined #archlinux
+2015-04-01 19:27:35	sudokode	mzgnr: there is a daemon user
+2015-04-01 19:27:45	▬▬▶	stalwart829 (~andy@31.185.214.50) has joined #archlinux
+2015-04-01 19:27:47	▬▬▶	Porkepix (~Porkepix@159.175.24.109.rev.sfr.net) has joined #archlinux
+2015-04-01 19:27:52	sudokode	it's probably an account meant for running random daemons
+2015-04-01 19:27:52	◀▬▬	daria (~me@unaffiliated/daria) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:27:53	mzgnr	okay i get it have a good day! :)
+2015-04-01 19:28:14	sudokode	k..
+2015-04-01 19:28:30	◀▬▬	vaskozl (~vaskozl@unaffiliated/einherjar) has left #archlinux
+2015-04-01 19:28:41	◀▬▬	stalwart729 (~andy@87.112.41.34) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:29:05	▬▬▶	chef1991 (~tylercook@69.67.112.5) has joined #archlinux
+2015-04-01 19:29:14	▬▬▶	Justice (~commander@c-82-209-157-169.cust.bredband2.com) has joined #archlinux
+2015-04-01 19:29:38	endiruna	sudokode: i think no but not sure. i checked both /etc/group and /etc/passwd and I can not find anything
+2015-04-01 19:29:47	◀▬▬	FLHerne (~flh@unaffiliated/flherne) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:29:53	◀▬▬	lmat (~lmat@ip-64-134-174-163.public.wayport.net) has quit (Ping timeout: 246 seconds)
+2015-04-01 19:29:53	▬▬▶	qgnox (~qgnox@190.234.13.143) has joined #archlinux
+2015-04-01 19:29:54	sudokode	oh wait
+2015-04-01 19:29:56	sudokode	wrong person
+2015-04-01 19:29:59	sudokode	this shit gets confusing
+2015-04-01 19:30:07	▬▬▶	nerfquark (~nerfquark@wsip-72-210-92-130.tu.ok.cox.net) has joined #archlinux
+2015-04-01 19:30:23	sudokode	endiruna: daemon exists in /etc/passwd
+2015-04-01 19:30:44	sudokode	uid 2
+2015-04-01 19:30:50	sudokode	probably pretty important
+2015-04-01 19:30:51	s00pcan	I've been working with just linux/vim for web dev for a few years now, and this job has me using visual studio.  Imagine my confusion
+2015-04-01 19:31:00	endiruna	oh daemon i thought it ment  a group named 'at'
+2015-04-01 19:31:01	s00pcan	too much bullshit on the screen at once for me to focus
+2015-04-01 19:31:04	endiruna	:D
+2015-04-01 19:31:06	endiruna	thanks
+2015-04-01 19:31:17	sudokode	s00pcan: have you changed the color scheme yet?
+2015-04-01 19:31:25	s00pcan	sudokode: you mean to dark? yes
+2015-04-01 19:31:30	sudokode	lol
+2015-04-01 19:31:37	sudokode	only two options? bright and dark?
+2015-04-01 19:31:41	mzgnr	I got an internship at Microsoft people didnt know the difference what string and boolean are -_-
+2015-04-01 19:31:43	--	irc: disconnected from server
+2015-04-01 19:32:06	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #archlinux
+2015-04-01 19:32:06	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> http://lists.gnu.org/archive/html/nano-devel/2015-03/msg00068.html , now we just need cold fusion and intergalactic travel <+> Be patient with those willing to learn and be kind to those willing to teach."
+2015-04-01 19:32:06	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 29 Mar 2015 02:24:54
+2015-04-01 19:32:07	--	Channel #archlinux: 1933 nicks (1 op, 1 voice, 1931 normals)
+2015-04-01 19:32:10	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-04-01 19:32:10	sudokode	lol
+2015-04-01 19:32:10	◀▬▬	erikw1 (~Erik@c-36ffe253.05-133-6c756e10.cust.bredbandsbolaget.se) has quit (Quit: Lost terminal)
+2015-04-01 19:32:14	Earnestly	mzgnr: Microsoft Research won't even hire you without a PhD
+2015-04-01 19:32:23	sudokode	we were born, but it wasn't yesterday
+2015-04-01 19:32:24	s00pcan	Earnestly: key word is internship
+2015-04-01 19:32:26	mzgnr	not in united states
+2015-04-01 19:32:32	Earnestly	s00pcan: No?
+2015-04-01 19:32:40	soixante	sledgehammer:  acknowledged
+2015-04-01 19:32:44	Earnestly	He probably got a tech support internship and assumes that's microsoft
+2015-04-01 19:32:50	sudokode	are types different outside of the US?
+2015-04-01 19:32:51	Earnestly	mzgnr: Yes, in America.
+2015-04-01 19:33:01	sudokode	Earnestly: what do you use instead of string and boolean?
+2015-04-01 19:33:02	◀▬▬	rashy (~rashdanml@S010628c68e00b41e.vc.shawcable.net) has quit (Read error: Connection reset by peer)
+2015-04-01 19:33:09	s00pcan	Earnestly: meant with regards to hiring
+2015-04-01 19:33:10	mzgnr	I mean my internship was not in united states and it was short-term
+2015-04-01 19:33:11	Earnestly	sudokode: What?
+2015-04-01 19:33:18	◀▬▬	soixante (~tstark@host109-153-225-104.range109-153.btcentralplus.com) has quit (Quit: leaving)
+2015-04-01 19:33:22	sudokode	Earnestly: you're not in the US
+2015-04-01 19:33:24	beest	https://clbin.com/0KD9LP.png
+2015-04-01 19:33:26	beest	damn it to hell
+2015-04-01 19:33:27	◀▬▬	stalwart829 (~andy@31.185.214.50) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:33:33	▬▬▶	patou (~patou@69-165-208-10.cable.teksavvy.com) has joined #archlinux
+2015-04-01 19:33:42	◀▬▬	oriba (~oriba@x55b201a6.dyn.telefonica.de) has quit (Quit: oriba)
+2015-04-01 19:34:02	sudokode	beest: wtf
+2015-04-01 19:34:23	▬▬▶	Rena (~rena@bas13-kitchener06-2925268175.dsl.bell.ca) has joined #archlinux
+2015-04-01 19:34:23	◀▬▬	hubutm20 (~hubutm20@cablelink-86-127-176-144.rdstm.ro) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:34:23	beest	"damn it to hell" is code for "ignore pls"
+2015-04-01 19:34:36	sudokode	no it exists now
+2015-04-01 19:34:47	Earnestly	beest: But, that's Windows cmd.exe-like font
+2015-04-01 19:34:50	beest	it's my dwarf fortress tileset
+2015-04-01 19:34:51	▬▬▶	hubutm20 (~hubutm20@79.114.120.200) has joined #archlinux
+2015-04-01 19:34:54	beest	and no, it's atascii
+2015-04-01 19:34:55	Earnestly	Aha
+2015-04-01 19:35:05	▬▬▶	Xmas13 (~Xmas13@c-68-47-79-179.hsd1.mn.comcast.net) has joined #archlinux
+2015-04-01 19:35:12	◀▬▬	leothrix (~leothrix@elastic/staff/leothrix) has quit
+2015-04-01 19:35:21	Earnestly	beest: Really old game dev toolkits on windows used a similar style, modified with those faces
+2015-04-01 19:35:22	sudokode	beest: cute
+2015-04-01 19:35:28	beest	8-bit atari font with some ST filled in for greek and maths and the rest culled from CGA
+2015-04-01 19:35:51	Earnestly	But yeah, not quite right.  I actually remade the windows one, let me see
+2015-04-01 19:35:56	◀▬▬	broken_symlink (~broken_sy@c-73-165-69-3.hsd1.pa.comcast.net) has quit (Quit: Leaving)
+2015-04-01 19:36:03	▬▬▶	ascarter (~ascarter@c-73-42-173-134.hsd1.wa.comcast.net) has joined #archlinux
+2015-04-01 19:36:04	beest	all done for ibm codepage 437
+2015-04-01 19:36:36	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:36:53	beest	so that may be where you got windows from
+2015-04-01 19:37:05	◀▬▬	phre4k (~phre4k@55d42633.access.ecotel.net) has quit (Quit: Leaving)
+2015-04-01 19:37:16	Earnestly	beest: http://a.pomf.se/spylnm.png
+2015-04-01 19:37:26	beest	because the box-drawing characters should line up
+2015-04-01 19:37:39	beest	ah that one
+2015-04-01 19:37:40	eto	they never do
+2015-04-01 19:37:44	Earnestly	beest: The spacing (kerning) is all off, but it was just something slapped together from reference
+2015-04-01 19:37:45	beest	ick the autobold  lol
+2015-04-01 19:37:51	Earnestly	beest: Yeah, ignore that :P
+2015-04-01 19:38:03	▬▬▶	Mrmaxmei_ (~Mrmaxmeie@p5DC27ACE.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-01 19:38:05	beest	seen worse!
+2015-04-01 19:38:20	▬▬▶	surfhai (~surfhai@unaffiliated/surfhai) has joined #archlinux
+2015-04-01 19:38:46	Earnestly	beest: The glyphs sort of vary slightly in width, so making the kerning look nice in all cases, esp when the serif's encroach on the others.  See the "PhD"
+2015-04-01 19:38:54	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Remote host closed the connection)
+2015-04-01 19:38:54	beest	look at me being a lovely shade of lilac
+2015-04-01 19:39:06	◀▬▬	margjakob (~margjakob@36.71.140.38) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:39:06	◀▬▬	s00pcan (~chris@108-208-65-111.lightspeed.livnmi.sbcglobal.net) has quit (Remote host closed the connection)
+2015-04-01 19:39:43	beest	just the kind of size aspect i like too
+2015-04-01 19:39:44	◀▬▬	harha_ (harha_@d639.ip16.netikka.fi) has quit (Quit: g2g for some reason...)
+2015-04-01 19:39:48	▬▬▶	stalwart729 (~andy@84.51.153.21) has joined #archlinux
+2015-04-01 19:40:14	◀▬▬	rashdanml (~rashdanml@S010628c68e00b41e.vc.shawcable.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:40:19	beest	or will be once the kerning's fixed
+2015-04-01 19:40:35	Earnestly	You can probably find an official one somewhere
+2015-04-01 19:40:56	◀▬▬	Kron (~Kron@dhcp-148-67.aauc-students.carleton.ca) has quit (Quit: Kron awayyy!)
+2015-04-01 19:41:09	▬▬▶	s00pcan (~chris@108-208-65-111.lightspeed.livnmi.sbcglobal.net) has joined #archlinux
+2015-04-01 19:41:12	Earnestly	This was referenced from the SanctuaryRPG game
+2015-04-01 19:41:18	beest	a-ha
+2015-04-01 19:41:28	◀▬▬	Mrmaxmeier (~Mrmaxmeie@p5DC279D3.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:41:42	◀▬▬	richteer (~eric@128.153.191.3) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 19:42:03	▬▬▶	mangocheese (~mangochee@203-206-169-245.perm.iinet.net.au) has joined #archlinux
+2015-04-01 19:42:17	◀▬▬	muscles (~muscles@unaffiliated/muscles) has quit (Quit: Leaving)
+2015-04-01 19:42:53	▬▬▶	margjakob (~margjakob@36.70.99.250) has joined #archlinux
+2015-04-01 19:42:54	◀▬▬	mzgnr (~mzgnr@85.102.73.67) has quit (Quit: Leaving)
+2015-04-01 19:43:56	▬▬▶	CrypticSquared (~CrypticS_@unaffiliated/crypticsquared) has joined #archlinux
+2015-04-01 19:44:12	▬▬▶	mattkrea (~textual@216.164.161.42) has joined #archlinux
+2015-04-01 19:44:37	▬▬▶	dacoit (~dacoit@gateway/vpn/privateinternetaccess/dacoit) has joined #archlinux
+2015-04-01 19:45:15	◀▬▬	m0ikz (~m0ikz@181.29.139.79) has quit (Read error: Connection reset by peer)
+2015-04-01 19:45:18	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined #archlinux
+2015-04-01 19:45:33	◀▬▬	sh1ken (~sh1ken@unaffiliated/sh1ken) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:46:15	▬▬▶	sh1ken (~sh1ken@unaffiliated/sh1ken) has joined #archlinux
+2015-04-01 19:46:25	◀▬▬	dude051 (~dude051@cpe-66-69-62-115.satx.res.rr.com) has quit (Quit: Computer has gone to sleep.)
+2015-04-01 19:46:32	◀▬▬	krosos (~krosos@unaffiliated/krosos) has quit (Quit: WeeChat 1.2-dev)
+2015-04-01 19:46:32	▬▬▶	m0ikz (~m0ikz@181.29.139.79) has joined #archlinux
+2015-04-01 19:47:54	◀▬▬	stef204 (~kvirc@unaffiliated/stef-204/x-384198) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2015-04-01 19:48:17	◀▬▬	new_one (~new_one@128.42.65.39) has quit (Remote host closed the connection)
+2015-04-01 19:48:30	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:49:00	▬▬▶	bill__ (~bill@c-67-160-192-9.hsd1.ca.comcast.net) has joined #archlinux
+2015-04-01 19:49:02	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:49:23	▬▬▶	davidbitton (~davidbitt@ool-44c4506f.dyn.optonline.net) has joined #archlinux
+2015-04-01 19:49:32	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:49:47	◀▬▬	awesomehaircut (~Jesus@67-1-235-200.tcso.qwest.net) has quit (Quit: Off to eat Cake!)
+2015-04-01 19:49:59	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:50:34	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:50:43	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:50:56	saivert	http://i.imgur.com/AoPuDq7.png + http://i.imgur.com/4c9Lwc9.png
+2015-04-01 19:51:08	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:51:18	▬▬▶	Seylerius (~seylerius@104.152.204.229) has joined #archlinux
+2015-04-01 19:51:27	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Max SendQ exceeded)
+2015-04-01 19:51:38	gehidore	cause yer a PRO
+2015-04-01 19:51:44	◀▬▬	Mrmaxmei_ (~Mrmaxmeie@p5DC27ACE.dip0.t-ipconnect.de) has quit (Quit: zzzZZZ)
+2015-04-01 19:52:02	▬▬▶	duncannz (~duncannz@116.251.193.92) has joined #archlinux
+2015-04-01 19:52:49	◀▬▬	patou (~patou@69-165-208-10.cable.teksavvy.com) has quit (Quit: Leaving)
+2015-04-01 19:52:50	◀▬▬	elkorn (~elkorn@031011240084.bielskobiala.vectranet.pl) has quit (Remote host closed the connection)
+2015-04-01 19:53:36	◀▬▬	bill__ (~bill@c-67-160-192-9.hsd1.ca.comcast.net) has quit (Ping timeout: 248 seconds)
+2015-04-01 19:53:39	▬▬▶	mittald (~mittald@cpe-66-57-56-71.nc.res.rr.com) has joined #archlinux
+2015-04-01 19:53:54	▬▬▶	richteer (~eric@128.153.191.3) has joined #archlinux
+2015-04-01 19:53:54	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Remote host closed the connection)
+2015-04-01 19:54:04	◀▬▬	chef1991 (~tylercook@69.67.112.5) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:54:23	▬▬▶	in1t3r (~LordShiva@unaffiliated/lordshiva) has joined #archlinux
+2015-04-01 19:54:40	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined #archlinux
+2015-04-01 19:54:45	▬▬▶	hilo-curado (~quassel@pc-121-139-241-201.cm.vtr.net) has joined #archlinux
+2015-04-01 19:54:49	▬▬▶	new_one (~new_one@128.42.66.104) has joined #archlinux
+2015-04-01 19:54:50	dacoit	:q
+2015-04-01 19:54:58	▬▬▶	Lovot (~Lovot@69.73.124.32) has joined #archlinux
+2015-04-01 19:55:02	◀▬▬	erdave (~erdave@190.39.252.77) has quit (Read error: Connection reset by peer)
+2015-04-01 19:55:20	▬▬▶	erdave (~erdave@190.39.252.77) has joined #archlinux
+2015-04-01 19:55:26	◀▬▬	hx0x (~hx0x@109.235.227.79) has quit (Quit: bbq)
+2015-04-01 19:55:44	◀▬▬	Feksclaus (~Claus@80-71-135-32.u.parknet.dk) has quit (Quit: Leaving)
+2015-04-01 19:55:56	▬▬▶	_999 (~psykotika@unaffiliated/999/x-4697496) has joined #archlinux
+2015-04-01 19:57:10	▬▬▶	kama-shaka (~kama-shak@177.132.54.125) has joined #archlinux
+2015-04-01 19:57:24	▬▬▶	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has joined #archlinux
+2015-04-01 19:57:40	◀▬▬	hexagoxel (~hexagoxel@x4d067213.dyn.telefonica.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:57:50	▬▬▶	chef1991 (~tylercook@69.67.112.5) has joined #archlinux
+2015-04-01 19:58:07	▬▬▶	rdbell_ (~rdbell@206.169.79.235) has joined #archlinux
+2015-04-01 19:58:27	▬▬▶	psychedelicious (~psychedel@host86-150-15-28.range86-150.btcentralplus.com) has joined #archlinux
+2015-04-01 19:58:54	◀▬▬	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Read error: Connection reset by peer)
+2015-04-01 19:59:06	▬▬▶	RunningDroid (~RunningDr@unaffiliated/runningdroid) has joined #archlinux
+2015-04-01 19:59:14	▬▬▶	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined #archlinux
+2015-04-01 19:59:15	▬▬▶	hexagoxel (~hexagoxel@x4d0663c2.dyn.telefonica.de) has joined #archlinux
+2015-04-01 19:59:40	◀▬▬	cykacykacyka (~dog@theflat69.plus.com) has left #archlinux
+2015-04-01 19:59:49	◀▬▬	frostschutz (~frostschu@x2f64807.dyn.telefonica.de) has quit (Remote host closed the connection)
+2015-04-01 20:00:12	◀▬▬	FR^2 (~frquadrat@2001:41d0:2:842d::cafe) has quit (Quit: Leaving)
+2015-04-01 20:00:31	◀▬▬	moonlander (~moonlande@ip72-192-35-26.ri.ri.cox.net) has quit (Quit: Leaving)
+2015-04-01 20:00:50	▬▬▶	NolanSyKinsley (~paco@2606:6000:508b:ae00:b6fd:ce0d:6dc5:ee83) has joined #archlinux
+2015-04-01 20:00:59	◀▬▬	rcr (~rcr@zymeworks.com) has quit (Remote host closed the connection)
+2015-04-01 20:01:52	◀▬▬	sammj (~sam@122.99.82.10) has quit (Quit: leaving)
+2015-04-01 20:01:57	◀▬▬	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has quit (Ping timeout: 244 seconds)
+2015-04-01 20:02:09	◀▬▬	mittald (~mittald@cpe-66-57-56-71.nc.res.rr.com) has quit (Remote host closed the connection)
+2015-04-01 20:02:45	◀▬▬	_X_C_V_B_ (~XCVB@dur-dhcp-1-240.dsl.airstreamcomm.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:02:46	◀▬▬	_999 (~psykotika@unaffiliated/999/x-4697496) has quit (Quit: Lost terminal)
+2015-04-01 20:03:12	▬▬▶	newbrict (~newbrict@unaffiliated/newbrict) has joined #archlinux
+2015-04-01 20:03:22	▬▬▶	SolarAquarion (~solaraqua@unaffiliated/solaraquarion) has joined #archlinux
+2015-04-01 20:03:33	◀▬▬	nerfquark (~nerfquark@wsip-72-210-92-130.tu.ok.cox.net) has quit (Quit: Zzzz Air Zonk!)
+2015-04-01 20:03:54	newbrict	Is there a way for journalctl to show last poweroff, similar to journalctl -b for boots?
+2015-04-01 20:03:58	▬▬▶	sammj (~sam@122.99.82.10) has joined #archlinux
+2015-04-01 20:04:59	◀▬▬	hilo-curado (~quassel@pc-121-139-241-201.cm.vtr.net) has quit (Remote host closed the connection)
+2015-04-01 20:05:12	◀▬▬	chef1991 (~tylercook@69.67.112.5) has quit (Ping timeout: 252 seconds)
+2015-04-01 20:05:17	▬▬▶	raddog (~raddog@71-80-136-101.static.hspr.ca.charter.com) has joined #archlinux
+2015-04-01 20:05:40	▬▬▶	hodapp (~hodapp@hodapp.t4k.org) has joined #archlinux
+2015-04-01 20:05:44	◀▬▬	hodapp (~hodapp@hodapp.t4k.org) has quit (Client Quit)
+2015-04-01 20:06:09	◀▬▬	Nicop06 (~nicolas@2a01:e35:2e3e:55b0:f4ab:cfe9:166:531a) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:06:14	▬▬▶	tylercook (~tylercook@69.67.112.5) has joined #archlinux
+2015-04-01 20:06:16	▬▬▶	hodapp (~hodapp@hodapp.t4k.org) has joined #archlinux
+2015-04-01 20:06:29	◀▬▬	geek (~geek@unaffiliated/geek) has quit (Read error: Connection reset by peer)
+2015-04-01 20:06:38	◀▬▬	hodapp (~hodapp@hodapp.t4k.org) has left #archlinux
+2015-04-01 20:06:49	▬▬▶	lek_ (~lek@49.230.30.205) has joined #archlinux
+2015-04-01 20:06:49	◀▬▬	lek (~lek@49.230.240.42) has quit (Ping timeout: 252 seconds)
+2015-04-01 20:06:50	◀▬▬	maveric7911 (~maveric79@pool-71-244-171-102.bltmmd.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 20:07:29	dacoit	I do -b -1 -r do a the last shutdown :P might be a bit silly if thats not what you want
+2015-04-01 20:07:40	dacoit	(reverse)
+2015-04-01 20:08:01	▬▬▶	xtreme_ (~xtreme@107-140-46-157.lightspeed.wepbfl.sbcglobal.net) has joined #archlinux
+2015-04-01 20:08:09	▬▬▶	Timmy` (~timmy@unaffiliated/timmyt) has joined #archlinux
+2015-04-01 20:08:55	◀▬▬	MajorBiscuit (~MajorBisc@31-54-44.netrun.cytanet.com.cy) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 20:09:14	◀▬▬	obedmr (~obedmr@187.188.63.40) has quit (Ping timeout: 252 seconds)
+2015-04-01 20:09:34	◀▬▬	Xmas13 (~Xmas13@c-68-47-79-179.hsd1.mn.comcast.net) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 20:10:23	◀▬▬	cdk (~cdk@192-0-128-211.cpe.teksavvy.com) has quit (Ping timeout: 264 seconds)
+2015-04-01 20:10:23	◀▬▬	Tecpose (~jan@cable-static-14-4.breitband.ch) has quit (Read error: Connection reset by peer)
+2015-04-01 20:10:47	◀▬▬	erdave (~erdave@190.39.252.77) has quit (Quit: Konversation terminated!)
+2015-04-01 20:11:00	▬▬▶	promulo__ (~quassel@dslb-188-103-018-239.188.103.pools.vodafone-ip.de) has joined #archlinux
+2015-04-01 20:11:01	▬▬▶	cdk (~cdk@192-0-128-211.cpe.teksavvy.com) has joined #archlinux
+2015-04-01 20:11:11	▬▬▶	erdave (~erdave@190.39.252.77) has joined #archlinux
+2015-04-01 20:11:25	▬▬▶	Tecpose (~jan@cable-static-14-4.breitband.ch) has joined #archlinux
+2015-04-01 20:11:28	▬▬▶	nerfquark (~nerfquark@wsip-72-210-92-130.tu.ok.cox.net) has joined #archlinux
+2015-04-01 20:13:00	◀▬▬	duncannz (~duncannz@116.251.193.92) has quit (Ping timeout: 245 seconds)
+2015-04-01 20:13:14	◀▬▬	veksev (~veksev@lawn-128-61-124-203.lawn.gatech.edu) has quit (Quit: leaving)
+2015-04-01 20:13:25	◀▬▬	tylercook (~tylercook@69.67.112.5) has quit (Ping timeout: 245 seconds)
+2015-04-01 20:13:39	▬▬▶	Kurt_P (~Kurt_P@96.243.206.221) has joined #archlinux
+2015-04-01 20:14:00	◀▬▬	blake2 (~blake@c-98-212-224-161.hsd1.il.comcast.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 20:14:01	▬▬▶	Xmas13 (~Xmas13@c-68-47-79-179.hsd1.mn.comcast.net) has joined #archlinux
+2015-04-01 20:14:01	◀▬▬	woga (~woga@plb95-1-82-229-89-38.fbx.proxad.net) has quit (Remote host closed the connection)
+2015-04-01 20:14:30	newbrict	dacoit: doesn't that just show the last powerup?
+2015-04-01 20:14:40	◀▬▬	asch (~asch@unaffiliated/asch) has quit (Ping timeout: 245 seconds)
+2015-04-01 20:15:07	◀▬▬	finisboy (~fstorfa@x1-6-30-46-9a-6c-3e-94.cpe.webspeed.dk) has quit (Ping timeout: 250 seconds)
+2015-04-01 20:15:10	◀▬▬	Xmas13 (~Xmas13@c-68-47-79-179.hsd1.mn.comcast.net) has quit (Client Quit)
+2015-04-01 20:15:13	◀▬▬	promulo (~quassel@dslb-088-074-027-154.088.074.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:16:05	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 246 seconds)
+2015-04-01 20:16:24	dacoit	newbrict: It (should) show the last boot-cycle log in reverse
+2015-04-01 20:16:33	▬▬▶	krisman_ (~krisman@187.56.54.229) has joined #archlinux
+2015-04-01 20:17:53	▬▬▶	geek (~geek@unaffiliated/geek) has joined #archlinux
+2015-04-01 20:18:01	newbrict	dacoit: that works for me, thanks.
+2015-04-01 20:18:33	dacoit	Again this is a kind of dumb way to do it, it's in reverse after all lol. I think there might be a way to focus in on shutdown.target or the like
+2015-04-01 20:19:06	▬▬▶	rettori (~rettori@2601:6:2c00:cc3:9900:29c2:5797:1442) has joined #archlinux
+2015-04-01 20:19:16	▬▬▶	tajidinabd_away (~tajidinab@unaffiliated/tajidinabd) has joined #archlinux
+2015-04-01 20:19:16	--	tajidinabd_away is now known as tajidinabd
+2015-04-01 20:19:30	◀▬▬	xtreme_ (~xtreme@107-140-46-157.lightspeed.wepbfl.sbcglobal.net) has quit (Quit: Leaving)
+2015-04-01 20:19:33	◀▬▬	tyrion-mx (~tyrion-mx@2-236-4-85.ip231.fastwebnet.it) has quit (Quit: Leaving)
+2015-04-01 20:20:03	▬▬▶	pereba (~pereba@unaffiliated/pereba) has joined #archlinux
+2015-04-01 20:20:08	▬▬▶	spareproject (~spareproj@97e38dfb.skybroadband.com) has joined #archlinux
+2015-04-01 20:20:11	sudokode	could just use tail
+2015-04-01 20:20:28	dacoit	If you know ~length, yeah
+2015-04-01 20:20:36	--	irc: disconnected from server

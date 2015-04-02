@@ -1,0 +1,927 @@
+2015-04-01 15:27:25	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c++
+2015-04-01 15:27:25	--	Topic for ##c++ is "##C++ is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2014 (a.k.a. C++14) || http://www.parashift.com/c++-faq-lite/ || pastes: http://ideone.com/"
+2015-04-01 15:27:25	--	Topic set by Adrinael (~adrinael@barrel.rolli.org) on Wed, 20 Aug 2014 06:01:38
+2015-04-01 15:27:25	--	Channel ##c++: 888 nicks (0 ops, 0 voices, 888 normals)
+2015-04-01 15:27:25	--	PvNotice(ChanServ): a topical channel for discussing standard C++ specifications and code. || pastes: http://ideone.com || reference: http://cppreference.com || current standard: ISO/IEC 14882:2014 (C++14) || http://www.parashift.com/c++-faq-lite/
+2015-04-01 15:27:26	--	Channel created on Fri, 14 Sep 2001 23:15:35
+2015-04-01 15:27:28	Eelis	!get 8948
+2015-04-01 15:27:29	nolyc	<Eelis> i could implement a "geordi, fix my code" command, and still most people would remember me for those cursed analog literals.. (Said by: Eelis!n=Eelis@unaffiliated/eelis; grabbed by me22!n=me@modemcable033.52-81-70.mc.videotron.ca at 01:25 AM, September 21, 2009)
+2015-04-01 15:27:31	Eelis	so true
+2015-04-01 15:27:42	JordiGH	I quoted that.
+2015-04-01 15:28:37	hs_	God bless you Eelis
+2015-04-01 15:28:38	Eelis	you should popularize the new thing instead, http://eel.is/c++draft
+2015-04-01 15:29:06	Eelis	that's what i (and others) have been working on the past week
+2015-04-01 15:29:12	▬▬▶	aslant (~aslant@feur003.pndsl.co.uk) has joined ##c++
+2015-04-01 15:29:12	▬▬▶	Kasreyn (~i@unaffiliated/inquisitor) has joined ##c++
+2015-04-01 15:29:14	▬▬▶	nug700 (~nug700@unaffiliated/nug700) has joined ##c++
+2015-04-01 15:29:28	JordiGH	Eelis: You parsed it into HTML?
+2015-04-01 15:29:48	Eelis	yeah https://github.com/Eelis/cxxdraft/tree/master/tools/genhtml
+2015-04-01 15:29:51	▬▬▶	Nightmare637123 (~nightmare@cpe-98-30-204-15.columbus.res.rr.com) has joined ##c++
+2015-04-01 15:30:08	JordiGH	th;dr
+2015-04-01 15:31:39	NinjaPenguin	Of course in Haskell. :D
+2015-04-01 15:31:50	▬▬▶	MrFranky (~fcoulombe@66.102.14.32) has joined ##c++
+2015-04-01 15:31:55	JordiGH	I kid, I kid, I can actually read a bit more Haskell nowadays.
+2015-04-01 15:32:24	▬▬▶	lescactus (~quassel@vpn.free.zevpn.net) has joined ##c++
+2015-04-01 15:32:33	◀▬▬	f10_ (~flo@ip5b403660.dynamic.kabel-deutschland.de) has quit (Read error: No route to host)
+2015-04-01 15:32:55	▬▬▶	Syzygy (~Syzygy@91-115-172-176.adsl.highway.telekom.at) has joined ##c++
+2015-04-01 15:33:20	◀▬▬	Wpp (~Wpp@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2015-04-01 15:34:07	◀▬▬	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:34:56	▬▬▶	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has joined ##c++
+2015-04-01 15:35:28	◀▬▬	eduardomartins (~Thunderbi@189.120.178.222) has quit (Quit: eduardomartins)
+2015-04-01 15:36:01	▬▬▶	Utp (~Utp@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has joined ##c++
+2015-04-01 15:36:39	▬▬▶	Match (~Giovanni@dynamic-adsl-78-14-228-65.clienti.tiscali.it) has joined ##c++
+2015-04-01 15:37:29	▬▬▶	greenbagels (~gb@cpe-65-25-124-183.neo.res.rr.com) has joined ##c++
+2015-04-01 15:38:17	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-04-01 15:39:35	▬▬▶	Vhictour (~Vhictour@41.203.67.165) has joined ##c++
+2015-04-01 15:39:38	▬▬▶	f10 (~flo@ip5b403660.dynamic.kabel-deutschland.de) has joined ##c++
+2015-04-01 15:39:42	◀▬▬	natechan (~natechan@50-205-32-182-static.hfc.comcastbusiness.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 15:40:48	▬▬▶	natechan (~natechan@50-205-32-182-static.hfc.comcastbusiness.net) has joined ##c++
+2015-04-01 15:41:32	▬▬▶	hmmwhatsthisdo|L (45a62f71@gateway/web/freenode/ip.69.166.47.113) has joined ##c++
+2015-04-01 15:42:54	hmmwhatsthisdo|L	Suppose I have class A that includes an instance of class B in its definition (which itself includes an instance of Class C in its definition). If I call ~A, will ~B and ~C be called in turn automatically?
+2015-04-01 15:42:54	▬▬▶	rashwell (~rashwell@cna-89-184.cna-7.depaul.edu) has joined ##c++
+2015-04-01 15:43:15	hs_	yep
+2015-04-01 15:43:16	hmmwhatsthisdo|L	s/If I call ~A/If ~A is called
+2015-04-01 15:43:39	hmmwhatsthisdo|L	Even with the default destructor definitions that VS creates?
+2015-04-01 15:43:46	hs_	yep
+2015-04-01 15:43:49	◀▬▬	Vhictour (~Vhictour@41.203.67.165) has quit (Remote host closed the connection)
+2015-04-01 15:44:06	hmmwhatsthisdo|L	lovely
+2015-04-01 15:44:08	hmmwhatsthisdo|L	Thanks!
+2015-04-01 15:44:12	◀▬▬	hmmwhatsthisdo|L (45a62f71@gateway/web/freenode/ip.69.166.47.113) has quit (Client Quit)
+2015-04-01 15:46:36	ville	Eelis: you made hakcker news front page
+2015-04-01 15:47:09	Eelis	the ycombinator thing?
+2015-04-01 15:47:33	ville	yep https://news.ycombinator.com/
+2015-04-01 15:47:40	Eelis	JordiGH linked to it above
+2015-04-01 15:47:46	▬▬▶	rendar_ (~I@host45-128-dynamic.61-82-r.retail.telecomitalia.it) has joined ##c++
+2015-04-01 15:47:47	◀▬▬	fizzbooz1 (~bp@2620:101:f000:700:1e:9725:4a91:bc61) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:47:50	ville	ok
+2015-04-01 15:48:09	JordiGH	Man, that thing is almost a decade old now.
+2015-04-01 15:48:14	JordiGH	Eelis: How time flies.
+2015-04-01 15:48:17	◀▬▬	rendar (~I@host45-128-dynamic.61-82-r.retail.telecomitalia.it) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:48:23	JordiGH	I remember first seeing it.
+2015-04-01 15:49:27	◀▬▬	Renari (~Renari@204.186.230.196.mte.pal.ptd.net) has quit (Read error: Connection reset by peer)
+2015-04-01 15:49:42	◀▬▬	Programmer_ (~khaotic@unaffiliated/khaotic) has quit (Ping timeout: 255 seconds)
+2015-04-01 15:50:22	▬▬▶	w00die (~anton@broadband-109-173-124-250.nationalcablenetworks.ru) has joined ##c++
+2015-04-01 15:50:37	◀▬▬	eslbaer (~eslbaer@p5B146BF0.dip0.t-ipconnect.de) has quit (Quit: Don't Panic)
+2015-04-01 15:50:52	▬▬▶	Guest92333 (5f4da197@gateway/web/cgi-irc/kiwiirc.com/ip.95.77.161.151) has joined ##c++
+2015-04-01 15:51:14	▬▬▶	samik (~smukherje@netops-83.sfo1.bitgravity.com) has joined ##c++
+2015-04-01 15:51:30	◀▬▬	varibull (~varibull@ta.tainstruments.com) has quit (Remote host closed the connection)
+2015-04-01 15:51:47	▬▬▶	varibull (~varibull@ta.tainstruments.com) has joined ##c++
+2015-04-01 15:52:24	◀▬▬	m0shbear (~011899988@servbox.moshbear.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:52:47	◀▬▬	scai (~scai@pD9EA667A.dip0.t-ipconnect.de) has left ##c++ ("[IRSSI]")
+2015-04-01 15:53:06	◀▬▬	aslant (~aslant@feur003.pndsl.co.uk) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:53:51	V-ille	Eelis: do you think that html-draft is ready for wider circulation?
+2015-04-01 15:54:52	V-ille	I think you should write an isocpp.org blog post or something like that.
+2015-04-01 15:54:53	JordiGH	How much revenue does the actual standard bring to the committee?
+2015-04-01 15:54:59	V-ille	none
+2015-04-01 15:55:10	◀▬▬	System42 (~System42@ws161-104.wireless.dynamic.msstate.edu) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:55:12	JordiGH	So... who's getting that money?
+2015-04-01 15:55:16	JordiGH	ISO for putting their stamp on it?
+2015-04-01 15:56:18	▬▬▶	zenith_ (~zenith@142.150.23.90) has joined ##c++
+2015-04-01 15:56:20	Eelis	V-ille: yeah, probably. outside the few mathy sections, the artifacts are minor
+2015-04-01 15:56:23	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##c++
+2015-04-01 15:57:15	V-ille	JordiGH: yes, ISO gets that money
+2015-04-01 15:57:17	Eelis	yeah, would be cool if isocpp.org linked to it. who maintains that?
+2015-04-01 15:57:20	◀▬▬	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has quit (Read error: Connection reset by peer)
+2015-04-01 15:57:27	JordiGH	V-ille: For doing what? Providing office space?
+2015-04-01 15:57:39	V-ille	for acting all official
+2015-04-01 15:57:50	JordiGH	Are there copyeditors at ISO?
+2015-04-01 15:58:01	V-ille	Eelis: I think Herb does. Potentially others, too.
+2015-04-01 15:58:03	JordiGH	What service are they offering?
+2015-04-01 15:58:09	JordiGH	I mean, why do we have a paywalled standard?
+2015-04-01 15:59:00	V-ille	Eelis: I see a "suggest an article" link in the top right corner
+2015-04-01 15:59:16	Eelis	oh, they just posted analog literals there, too
+2015-04-01 15:59:17	V-ille	but apparently that requires signing in
+2015-04-01 15:59:35	JordiGH	Eelis: HN effect.
+2015-04-01 15:59:36	Oxyd	They even said that analog literals used C++11 user-defined literals. /o\
+2015-04-01 15:59:46	JordiGH	... in 2006?!?
+2015-04-01 15:59:46	Oxyd	I read that article this morning and facepalmed a little.
+2015-04-01 15:59:48	Eelis	LOL
+2015-04-01 15:59:50	JordiGH	LOL
+2015-04-01 16:00:01	V-ille	Eelis: if you write a blog post on some blog of yours, I can at least suggest it
+2015-04-01 16:00:10	Eelis	i don't blog
+2015-04-01 16:00:36	JordiGH	What do you do then? You homepage?
+2015-04-01 16:00:46	V-ille	Eelis: If you want to send me an article about it, I can forward it to the right hands.
+2015-04-01 16:03:12	◀▬▬	zenith_ (~zenith@142.150.23.90) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:03:15	Eelis	V-ille: ok sure, how about: "Some guys from Freenode ##c++ wrote some Haskell code to convert the LaTeX sources of the C++ draft to a set of interlinked HTML pages, check it out!:  http://eel.is/c++-draft  More info: https://github.com/Eelis/cxxdraft"
+2015-04-01 16:03:19	Eelis	doesn't have to be more elaborate than that
+2015-04-01 16:03:25	▬▬▶	deSilva (deSilva@c83-254-212-162.bredband.comhem.se) has joined ##c++
+2015-04-01 16:03:34	V-ille	ok :)
+2015-04-01 16:03:40	JordiGH	Btw, would this work for any other kind of LaTeX?
+2015-04-01 16:03:41	◀▬▬	forgottenone (~forgotten@151.250.163.197) has quit (Quit: Konversation terminated!)
+2015-04-01 16:03:45	Eelis	JordiGH: no
+2015-04-01 16:03:49	JordiGH	:-(
+2015-04-01 16:04:04	Eelis	for that, there's http://hevea.inria.fr/
+2015-04-01 16:04:08	◀▬▬	adek (~adek@199.201.64.134) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:04:28	JordiGH	Oh, nice.
+2015-04-01 16:04:43	JordiGH	I hadn't looked at this problem in a while, but I remember latex2html and texgold or something like it.
+2015-04-01 16:04:59	Eelis	i strongly suspect none of them could do as nice a job as our custom Haskell code
+2015-04-01 16:05:05	JordiGH	Eelis: what are your thoughts on ocaml? Not enough monads?
+2015-04-01 16:05:06	Eelis	except for the math parts
+2015-04-01 16:05:14	◀▬▬	seishun (~Kakera@78.84.167.69) has quit (Quit: ChatZilla 0.9.91.1 [Firefox 36.0.4/20150320202338])
+2015-04-01 16:05:25	V-ille	Eelis: I get a 500 for the draft page, what's up?
+2015-04-01 16:05:27	Eelis	JordiGH: if there was no Haskell i'd probably use Ocaml
+2015-04-01 16:05:29	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-04-01 16:05:36	▬▬▶	seishun (~Kakera@78.84.167.69) has joined ##c++
+2015-04-01 16:05:45	Eelis	V-ille: what's 500? works for me
+2015-04-01 16:05:46	V-ille	argh, I think I need to kill the browser cache again
+2015-04-01 16:05:46	seishun	https://isocpp.org/blog/2015/04/the-c-languages-merge heh
+2015-04-01 16:05:50	Eelis	oh, hyphen
+2015-04-01 16:05:52	Eelis	sorry, no hyphen
+2015-04-01 16:05:57	V-ille	ooh, indeed
+2015-04-01 16:06:03	▬▬▶	danguafer (uid54301@gateway/web/irccloud.com/x-gtfdhazmngwaidqs) has joined ##c++
+2015-04-01 16:06:06	Eelis	thanks for checking
+2015-04-01 16:06:21	◀▬▬	tokam (~tokam@unaffiliated/tokam) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:06:38	▬▬▶	System42 (~System42@ws161-104.wireless.dynamic.msstate.edu) has joined ##c++
+2015-04-01 16:06:44	JordiGH	C+++++
+2015-04-01 16:06:47	◀▬▬	Jackneill (~Jackneill@unaffiliated/jackneill) has quit (Remote host closed the connection)
+2015-04-01 16:06:48	◀▬▬	Joel__ (~Joel@gov91-4-83-152-215-118.fbx.proxad.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:06:55	▬▬▶	woga (~woga@plb95-1-82-229-89-38.fbx.proxad.net) has joined ##c++
+2015-04-01 16:08:34	▬▬▶	tokam (~tokam@unaffiliated/tokam) has joined ##c++
+2015-04-01 16:08:35	Aleric	Why does in the following lambda2 not change the original n, be reference (while lambda1 does):
+2015-04-01 16:08:39	Aleric	{ int n = 0; auto lambda1 = [&n](){ ++n; }; auto lambda2 = lambda1; lambda2(); cout << n; lambda1(); cout << n; }
+2015-04-01 16:08:39	geordi	12
+2015-04-01 16:08:41	◀▬▬	unixpro1970 (~unixpro19@unaffiliated/unixpro1970) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:09:29	Aleric	s/be/by/
+2015-04-01 16:09:49	hs_	say what
+2015-04-01 16:09:50	JordiGH	Eh? aren't both changing it?
+2015-04-01 16:09:56	◀▬▬	Utp (~Utp@ARennes-656-1-402-170.w90-32.abo.wanadoo.fr) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:09:59	JordiGH	You called it twice, first time you got 1, then you got 2.
+2015-04-01 16:10:06	▬▬▶	unixpro1970 (~unixpro19@unaffiliated/unixpro1970) has joined ##c++
+2015-04-01 16:10:08	Aleric	ugh
+2015-04-01 16:10:11	▬▬▶	fizzbooz1 (~bp@2620:101:f000:700:1e:9725:4a91:bc61) has joined ##c++
+2015-04-01 16:10:26	JordiGH	Is a different compiler giving you a different result?
+2015-04-01 16:10:39	Aleric	nevermind, you're right... I was biased to not see the first change cause in my RL example it doesn't do it :/
+2015-04-01 16:10:55	Aleric	maybe... lemme put my other test case on ideone
+2015-04-01 16:11:19	Eelis	btw someone who has an account here should comment that it's not about C++11 user defined literals at all https://isocpp.org/blog/2015/04/analog-literals
+2015-04-01 16:12:03	◀▬▬	Match (~Giovanni@dynamic-adsl-78-14-228-65.clienti.tiscali.it) has quit (Quit: Andandomene vi lascio la mia massima: "meglio essere ottimisti ed avere torto che essere pessimisti ed avere ragione")
+2015-04-01 16:12:06	JordiGH	Eelis: http://jordi.platinum.linux.pl/piccies/enlighten-them.jpg
+2015-04-01 16:12:18	hs_	Eelis, looks like someone has
+2015-04-01 16:12:52	Eelis	ah there, great
+2015-04-01 16:12:54	AbleBacon	{ int x = 0; outside_func(x = inside_func()); } int inside_func() { return 5; } void outside_func(int i) { cout << i; }
+2015-04-01 16:12:54	geordi	5
+2015-04-01 16:12:59	AbleBacon	wow... that... works?
+2015-04-01 16:13:04	◀▬▬	mempko1 (~mempko@65.167.11.254) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:13:17	▬▬▶	bulo (ae32301c@gateway/web/freenode/ip.174.50.48.28) has joined ##c++
+2015-04-01 16:13:26	Oxyd	x = y is a perfectly valid expression, yes.
+2015-04-01 16:13:32	AbleBacon	{ int x = 0; outside_func(x = inside_func()); cout << x; } int inside_func() { return 5; } void outside_func(int i) { cout << i; }
+2015-04-01 16:13:33	geordi	55
+2015-04-01 16:13:37	AbleBacon	well i'll be damned
+2015-04-01 16:13:54	JordiGH	AbleBacon: It's also why x = y = 1 works. It's parsed like this: x = (y = 1).
+2015-04-01 16:13:55	▬▬▶	adek (~adek@199.201.64.134) has joined ##c++
+2015-04-01 16:14:02	AbleBacon	makes sense
+2015-04-01 16:14:11	JordiGH	y = 1 returns the value assigned.
+2015-04-01 16:14:40	AbleBacon	well, shit... i'm gonna go write a function called "run_me_and_time" that runs whatever function you give it and times it. and now i can still assign from the function that i'm running. awesome
+2015-04-01 16:15:07	◀▬▬	bulo (ae32301c@gateway/web/freenode/ip.174.50.48.28) has quit (Client Quit)
+2015-04-01 16:15:29	▬▬▶	bulowhooper (ae32301c@gateway/web/freenode/ip.174.50.48.28) has joined ##c++
+2015-04-01 16:15:29	◀▬▬	imakesense (~imakesens@2605:6000:e9ca:500:7d1f:c7d6:3761:9b24) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:15:31	AbleBacon	hmmm actually the more i think about it, the less that makes sense...
+2015-04-01 16:15:32	◀▬▬	NicoHood (~Thunderbi@p5B3FF902.dip0.t-ipconnect.de) has quit (Quit: *poof*)
+2015-04-01 16:15:38	AbleBacon	i'd have to use std::bind i think
+2015-04-01 16:15:51	AbleBacon	no wait... it'll just be a template!
+2015-04-01 16:16:05	 *	JordiGH can hear the gears grinding.
+2015-04-01 16:16:19	V-ille	Eelis: I decided to emphasize that it's c++03 code, so I added a comment.
+2015-04-01 16:16:27	◀▬▬	bulowhooper (ae32301c@gateway/web/freenode/ip.174.50.48.28) has quit (Client Quit)
+2015-04-01 16:16:27	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##c++
+2015-04-01 16:16:53	◀▬▬	k_dog345 (~kyle@162.17.100.137) has quit (Remote host closed the connection)
+2015-04-01 16:17:30	Eelis	V-ille: thanks :)
+2015-04-01 16:17:50	▬▬▶	nf7 (~nf7@162-246-9-228.dyn.novuscom.net) has joined ##c++
+2015-04-01 16:17:52	V-ille	Eelis: does the html say anywhere which draft it was converted from?
+2015-04-01 16:18:07	Eelis	no. i've been thinking about indicating that at the top of the toc
+2015-04-01 16:18:14	V-ille	that would be nice
+2015-04-01 16:18:24	nf7	Is there a way to iterate through all unicode escape characters, e.g. printing out \u0000 to \uffff?
+2015-04-01 16:18:30	Eelis	but i guess it would be a git commit hash?
+2015-04-01 16:18:35	V-ille	sure
+2015-04-01 16:18:35	Eelis	not sure how useful that is
+2015-04-01 16:18:44	V-ille	well.. it's somewhat useful
+2015-04-01 16:18:49	Oxyd	I think it would be nice to link to the Github repo and also mention the commit hash.
+2015-04-01 16:18:55	V-ille	to see whether it's brand-spanking new or not :P
+2015-04-01 16:19:07	◀▬▬	yeticry (~yeticry@114.96.140.91) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:19:09	Eelis	especially since the commit hash will be of a cxxdraft repo commit
+2015-04-01 16:19:12	Oxyd	Last time I checked, it was one commit behind the draft's master. So it's not. :P
+2015-04-01 16:19:37	Eelis	i would have to change the script to take a git repo path as an argument or something
+2015-04-01 16:19:42	◀▬▬	Rickmasta (~Rick@137.125.137.203) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:19:42	Eelis	so it can html-ize unchanged repos
+2015-04-01 16:19:49	◀▬▬	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has quit (Read error: Connection reset by peer)
+2015-04-01 16:19:51	V-ille	perhaps we can convince the project editor to create his own set of such pages and to keep them up to date
+2015-04-01 16:20:05	Eelis	i don't see how, without teaching him Haskell
+2015-04-01 16:20:15	▬▬▶	yeticry (~yeticry@114.96.140.91) has joined ##c++
+2015-04-01 16:20:17	▬▬▶	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has joined ##c++
+2015-04-01 16:20:25	▬▬▶	drj_ (drj@2600:3c00::f03c:91ff:fe33:39d) has joined ##c++
+2015-04-01 16:20:33	AbleBacon	nf7, try creating a character \u0000 and doing ++ on it each time?
+2015-04-01 16:20:43	AbleBacon	dunno if that'll work with unicode, though
+2015-04-01 16:20:49	V-ille	Eelis: I don't suppose it needs too heavy modifications to work on other repos?
+2015-04-01 16:20:53	◀▬▬	pndemc (~pndemc@69-196-172-110.dsl.teksavvy.com) has quit (Read error: Connection reset by peer)
+2015-04-01 16:21:04	Eelis	V-ille: nah
+2015-04-01 16:21:26	AbleBacon	{ char c = 'a'; for(int i = 0; i < 26; i++) { cout << c } }
+2015-04-01 16:21:26	geordi	error: expected ';' before '}' token
+2015-04-01 16:21:29	AbleBacon	{ char c = 'a'; for(int i = 0; i < 26; i++) { cout << c; } }
+2015-04-01 16:21:30	geordi	aaaaaaaaaaaaaaaaaaaaaaaaaa
+2015-04-01 16:21:35	Eelis	except that it still depends on some changes to tables.tex
+2015-04-01 16:21:36	AbleBacon	OH oops. i'm a dummy
+2015-04-01 16:21:42	V-ille	I bet the editor can grok such things pretty easily, he's a fairly good programmer, a small modification to a haskell program should be well within his capabilities
+2015-04-01 16:21:42	Eelis	because i didn't implement nested macro definitions
+2015-04-01 16:21:46	V-ille	ah, ok
+2015-04-01 16:21:57	AbleBacon	{ for(char c = 'a'; c < 'z'; c++) { cout << c; } }
+2015-04-01 16:21:58	geordi	abcdefghijklmnopqrstuvwxy
+2015-04-01 16:22:06	AbleBacon	something like that, nf7?
+2015-04-01 16:22:18	Aleric	JordiGH: blah, it was a stupid typo bug in my code :p.  It now works, final version here: https://github.com/AlericInglewood/ai-utils/blob/master/at_scope_end.h
+2015-04-01 16:23:00	V-ille	Eelis: I sent Herb your mini-article. :) I added some description material so that he'll understand what it's about.
+2015-04-01 16:23:08	Eelis	cool, thanks!
+2015-04-01 16:23:10	▬▬▶	_X_C_V_B_ (~XCVB@dur-dhcp-1-240.dsl.airstreamcomm.net) has joined ##c++
+2015-04-01 16:24:09	▬▬▶	phinxy (~tehhhd@unaffiliated/phinxy) has joined ##c++
+2015-04-01 16:24:10	Eelis	i guess i could at least add a custom toc header to the toc on eel.is with a github link to the commit, then you can easily click through to find out what's in there
+2015-04-01 16:24:39	Eelis	doesn't necessarily have to be a script feature
+2015-04-01 16:24:46	Eelis	since in general repos won't be on github
+2015-04-01 16:25:13	Eelis	or i could have the script scan the repo's foreign branches and see if github is in there..
+2015-04-01 16:25:28	Eelis	s/foreign/remote/
+2015-04-01 16:25:37	◀▬▬	phinxy_ (tehhhd@host-78-78-49-128.mobileonline.telia.com) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:27:31	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-04-01 16:28:42	Eelis	V-ille: so maybe what i'd really want is for the draft LaTeX to be refactored to use less complex macro expansion
+2015-04-01 16:28:56	Eelis	such as by moving nested commands outside the outer command
+2015-04-01 16:29:00	Eelis	as i did in tables.tex
+2015-04-01 16:29:02	Oxyd	Eelis: Actually, the draft itself has a Date: field on its very first page. Maybe you could use that as a version?
+2015-04-01 16:29:20	▬▬▶	FLHerne (~flh@unaffiliated/flherne) has joined ##c++
+2015-04-01 16:30:07	Eelis	\newcommand{\reldate}{\today}  :)
+2015-04-01 16:30:21	Eelis	that's just the moment of generation
+2015-04-01 16:30:28	Oxyd	Ah, yes. Of course. :)
+2015-04-01 16:30:30	Eelis	not that that wouldn't be useful
+2015-04-01 16:30:43	Oxyd	Still, I'd expect it to have some version tag or something somewhere.
+2015-04-01 16:30:58	▬▬▶	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has joined ##c++
+2015-04-01 16:31:04	Eelis	let me know if you find one
+2015-04-01 16:31:09	▬▬▶	m0shbear (~011899988@servbox.moshbear.net) has joined ##c++
+2015-04-01 16:31:18	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##c++
+2015-04-01 16:31:57	▬▬▶	axess_ (~axess@ool-457f1027.dyn.optonline.net) has joined ##c++
+2015-04-01 16:33:44	▬▬▶	Erfolg (~Erfolg@72-28-182-130-dhcp.aik.sc.atlanticbb.net) has joined ##c++
+2015-04-01 16:33:57	Eelis	i should do some ugly hack to let it work on unmodified repos. maybe just supply a .patch
+2015-04-01 16:34:07	Eelis	that the script applies while reading the file
+2015-04-01 16:34:14	▬▬▶	nuk3 (~user@168.253.196.224) has joined ##c++
+2015-04-01 16:34:26	◀▬▬	xybrek (~kerbymart@121.54.32.158) has quit (Read error: Connection reset by peer)
+2015-04-01 16:34:27	Eelis	or Text.replace >:)
+2015-04-01 16:35:18	Eelis	ooh i know, a regex
+2015-04-01 16:35:48	Oxyd	What would the patch patch?
+2015-04-01 16:36:06	▬▬▶	hithard (~chatzilla@14.139.221.18) has joined ##c++
+2015-04-01 16:36:29	Eelis	basically, there's a coupleof   \newenvironment{bla}{ \newcommand{yada}{dingdong} ...   where yada is to be a command only defined withing environment bla
+2015-04-01 16:36:45	Eelis	i had to move the newcommand outside the newenvironment
+2015-04-01 16:36:54	Eelis	because the Haskell code has a very ad-hoc implementation of macros
+2015-04-01 16:36:57	Oxyd	Oh. You modified the .tex files?
+2015-04-01 16:37:11	Eelis	yep, i mentioned i felt bad about it i think
+2015-04-01 16:37:12	▬▬▶	lolek (~lolek@unaffiliated/marcin) has joined ##c++
+2015-04-01 16:37:15	Eelis	it's also in the todo
+2015-04-01 16:37:18	▬▬▶	sapi1 (~sapi1@dslb-188-109-177-064.188.109.pools.vodafone-ip.de) has joined ##c++
+2015-04-01 16:37:28	◀▬▬	lolek (~lolek@unaffiliated/marcin) has left ##c++
+2015-04-01 16:37:36	Oxyd	I didn't even notice.
+2015-04-01 16:38:10	Eelis	https://github.com/Eelis/cxxdraft/commit/12f63eb6d0e3615b16cf102512410de7fd8d3d69#diff-c86990a2b285f2b95671e771c635c8a8
+2015-04-01 16:38:11	nolyc	<http://tinyurl.com/oloyrz3> (at github.com)
+2015-04-01 16:38:51	Eelis	i bet i can do a regex to move \newcommands outside \newenvironments
+2015-04-01 16:39:02	▬▬▶	ambro718 (~ambro@gentoo/contributor/ambro718) has joined ##c++
+2015-04-01 16:39:11	◀▬▬	rashwell (~rashwell@cna-89-184.cna-7.depaul.edu) has quit (Quit: leaving)
+2015-04-01 16:39:17	◀▬▬	seishun (~Kakera@78.84.167.69) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:39:18	◀▬▬	manuel_v|off (~manuel_v@manuel-voegele.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:39:20	Eelis	or i could do it as a pass on the LaTeX i guess
+2015-04-01 16:39:23	Eelis	like everything else
+2015-04-01 16:39:43	Eelis	that sounds better
+2015-04-01 16:40:41	◀▬▬	Flannel (~flannel@ubuntu/member/flannel) has quit (Read error: Connection reset by peer)
+2015-04-01 16:40:48	Oxyd	Yep. Text.replace is not fun. :)
+2015-04-01 16:40:58	◀▬▬	netj (~netj@naru.stanford.edu) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:41:02	▬▬▶	Flannel (~flannel@cpe-76-176-45-160.san.res.rr.com) has joined ##c++
+2015-04-01 16:41:23	▬▬▶	netj (~netj@128.12.163.109) has joined ##c++
+2015-04-01 16:41:46	▬▬▶	MrDetonia (~MrDetonia@81.130.68.230) has joined ##c++
+2015-04-01 16:41:59	◀▬▬	Yoofie (~chatzilla@75-114-203-47.res.bhn.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:42:35	◀▬▬	irrenhaus3 (~xenon@hms2227.wh-hms.uni-ulm.de) has quit (Quit: Lost terminal)
+2015-04-01 16:42:38	◀▬▬	hithard (~chatzilla@14.139.221.18) has quit (Quit: ChatZilla 0.9.91.1 [Firefox 33.1/20141113113219])
+2015-04-01 16:42:58	▬▬▶	manuel_v (~manuel_v@manuel-voegele.de) has joined ##c++
+2015-04-01 16:43:33	MrDetonia	Hi all. I have a vector of a base class and want to fill it polymorphically with inherited types. How can I initialise inherited types using a pointer to the base class? Or is this not possible. (e.g. 'Base* object = new Derived();')
+2015-04-01 16:43:59	Erlkoenig	exactly the way you wrote...
+2015-04-01 16:44:11	MrDetonia	That is correct? Hmm
+2015-04-01 16:44:13	Erlkoenig	yes
+2015-04-01 16:44:27	▬▬▶	Maxels (~Maxel@24-159-207-34.static.roch.mn.charter.com) has joined ##c++
+2015-04-01 16:44:39	MrDetonia	I'm getting what looks like memory corruption, and I though it was because I was initialising objects incorrectly
+2015-04-01 16:45:41	◀▬▬	Thorn (~Thorn@unaffiliated/thorn) has quit (Quit: Quit)
+2015-04-01 16:46:52	◀▬▬	Maxel (~Maxel@24-159-207-34.static.roch.mn.charter.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:47:36	▬▬▶	leetplayah (~leetplaya@122.233.189.109.customer.cdi.no) has joined ##c++
+2015-04-01 16:48:43	▬▬▶	bulogetrekt (ae32301c@gateway/web/freenode/ip.174.50.48.28) has joined ##c++
+2015-04-01 16:49:15	◀▬▬	bulogetrekt (ae32301c@gateway/web/freenode/ip.174.50.48.28) has quit (Client Quit)
+2015-04-01 16:49:27	◀▬▬	nf7 (~nf7@162-246-9-228.dyn.novuscom.net) has quit (Quit: Lost terminal)
+2015-04-01 16:49:53	▬▬▶	bulomoney (ae32301c@gateway/web/freenode/ip.174.50.48.28) has joined ##c++
+2015-04-01 16:50:01	▬▬▶	Paios (~Paios@p5DD7C8C4.dip0.t-ipconnect.de) has joined ##c++
+2015-04-01 16:50:10	▬▬▶	pict (~pict@134.193.199.210) has joined ##c++
+2015-04-01 16:50:17	hs_	MrDetonia, show us a testcase
+2015-04-01 16:50:18	◀▬▬	usrJayRay (~usrJayRay@150.200.74.127) has quit (Quit: usrJayRay)
+2015-04-01 16:50:34	hs_	or if you suspect it is a simple confusion on your behalf, join us in ##C++-basic
+2015-04-01 16:51:42	AbleBacon	ahahahha! i am a genius (see towards bottom) http://ideone.com/ndssVK
+2015-04-01 16:52:20	◀▬▬	leetplayah (~leetplaya@122.233.189.109.customer.cdi.no) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:52:22	▬▬▶	tuxdev_ (~tim@unaffiliated/tuxdev) has joined ##c++
+2015-04-01 16:52:43	Oxyd	Yeah, but the order of evaluation of function arguments is not guaranteed.
+2015-04-01 16:52:45	MrDetonia	hs_: Well there's a big trail of pointers being passed around, so it's hard to describe what's happening. Essentially, I'm creating objects as I previously stated and pushing pointers to them into a vector. Later on in another class these pointers seem to point to garbage.
+2015-04-01 16:52:56	◀▬▬	Darth_Ginger (~Thunderbi@cpe-96-28-226-195.kya.res.rr.com) has quit (Quit: Darth_Ginger)
+2015-04-01 16:53:17	MrDetonia	hs_: I'm stepping through now in gdb to try to figure out where it's being moved, or if the object is being destroyed early
+2015-04-01 16:53:19	Oxyd	It could easily evaluate pt = some_func(); first, time = ...; second.
+2015-04-01 16:53:27	AbleBacon	ffffff... are you sure?
+2015-04-01 16:53:33	Oxyd	Yes.
+2015-04-01 16:53:36	◀▬▬	pict (~pict@134.193.199.210) has quit (Client Quit)
+2015-04-01 16:54:54	Oxyd	AbleBacon: http://eel.is/c++draft/expr.call#4 // “Such initializations are indeterminately sequenced with respect to each other”
+2015-04-01 16:55:44	◀▬▬	Haswell (~broaderba@unaffiliated/haswell) has quit (Quit: Saliendo)
+2015-04-01 16:55:44	AbleBacon	how can i fix this to ensure the evaluation order i want?
+2015-04-01 16:55:56	◀▬▬	gelignite (~gelignite@i5387AC35.versanet.de) has quit (Quit: http://bit.ly/1kso8Ta)
+2015-04-01 16:56:42	MrDetonia	hs_: If you're willing, you can take a look at the code through git: https://github.com/MrDetonia/LairOfXyrallion/tree/Items
+2015-04-01 16:56:50	MrDetonia	It's the item system that's causing the problem
+2015-04-01 16:56:52	AbleBacon	time().this(x = somefunc());
+2015-04-01 16:57:01	AbleBacon	would that work? the "time" class starts the timer
+2015-04-01 16:57:09	AbleBacon	and "this" finishes it
+2015-04-01 16:57:22	Oxyd	AbleBacon: How about http://ideone.com/oRuvhT ?
+2015-04-01 16:57:50	AbleBacon	does it have to use a lambda?
+2015-04-01 16:58:08	Oxyd	It can use any callable.
+2015-04-01 16:58:22	◀▬▬	samik (~smukherje@netops-83.sfo1.bitgravity.com) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:58:27	▬▬▶	samik_ (~smukherje@netops-233.sfo1.bitgravity.com) has joined ##c++
+2015-04-01 16:58:36	▬▬▶	_war10ck_ (~sayantan@106.51.136.18) has joined ##c++
+2015-04-01 16:59:12	hs_	MrDetonia, where exactly will I find the code?
+2015-04-01 17:00:02	Oxyd	http://ideone.com/GjtrKu – if you hate lambdas.
+2015-04-01 17:00:17	▬▬▶	AckerMANn (~AckerMANn@78.97.136.198) has joined ##c++
+2015-04-01 17:00:18	◀▬▬	Syzygy (~Syzygy@91-115-172-176.adsl.highway.telekom.at) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:00:21	MrDetonia	hs_, src/item.cpp contains the function that generates and returns pointers to items https://github.com/MrDetonia/LairOfXyrallion/blob/Items/src/item.cpp
+2015-04-01 17:00:32	◀▬▬	_Atom_ (~jawat@172.56.38.226) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:00:40	AbleBacon	lol... you just turned the lambda into a closure class instead, Oxyd?
+2015-04-01 17:01:16	MrDetonia	hs_, src/level.cpp contains code that calls generating method and pushes them to a vector (toward the bottom) https://github.com/MrDetonia/LairOfXyrallion/blob/Items/src/level.cpp
+2015-04-01 17:01:36	Oxyd	Yes.
+2015-04-01 17:02:10	◀▬▬	deSilva (deSilva@c83-254-212-162.bredband.comhem.se) has quit
+2015-04-01 17:02:14	MrDetonia	hs_, src/enderer.cpp contains code that uses item objects to draw things to screen https://github.com/MrDetonia/LairOfXyrallion/blob/Items/src/renderer.cpp
+2015-04-01 17:02:41	MrDetonia	line 76 to 95
+2015-04-01 17:02:48	hs_	MrDetonia, try adding a virtual destructor to Item
+2015-04-01 17:02:49	AbleBacon	i might have a better idea. working on it now...
+2015-04-01 17:02:54	◀▬▬	AckerMANn (~AckerMANn@78.97.136.198) has quit
+2015-04-01 17:03:01	MrDetonia	will do, two secs
+2015-04-01 17:03:24	◀▬▬	xrlk (~xrlk@216-58-27-26.cpe.distributel.net) has quit (Quit: allahu akbar)
+2015-04-01 17:04:01	hs_	MrDetonia, also, Item has no virtual member functions.. you know that polymorphism doesn't extend to member objects, right?
+2015-04-01 17:04:11	◀▬▬	Guest92333 (5f4da197@gateway/web/cgi-irc/kiwiirc.com/ip.95.77.161.151) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2015-04-01 17:05:04	◀▬▬	makaveli0227TL (~makaveli0@66.9.135.66) has quit (Remote host closed the connection)
+2015-04-01 17:05:10	▬▬▶	onecool (onecool@unaffiliated/onecool) has joined ##c++
+2015-04-01 17:05:56	MrDetonia	hs_, yes I used the wrong term before. I'm just using a vector of Item pointers to store inherited types. I won't need to access derived functions from that vector (at least not without casting)
+2015-04-01 17:06:51	Oxyd	AbleBacon: http://ideone.com/CIGiye – also this. Just don't forget to start and stop the timer.
+2015-04-01 17:07:19	▬▬▶	eyvindandersen (~eyvind@80-71-131-193.u.parknet.dk) has joined ##c++
+2015-04-01 17:07:35	AbleBacon	oh that's actually really clever. thanks
+2015-04-01 17:07:38	◀▬▬	wicope (~wicope@117.Red-88-27-63.staticIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:08:15	◀▬▬	bigpet (uid25664@gateway/web/irccloud.com/x-bauxuupoucqwvpmn) has quit (Quit: Connection closed for inactivity)
+2015-04-01 17:09:56	MrDetonia	hs_, virtual destructor in Item just throws up errors about undefined reference to vtable. I get the feeling I'm missing something obvious because I'm tired :P
+2015-04-01 17:10:00	▬▬▶	Oleg_ (~mine@pool-71-183-178-58.nycmny.east.verizon.net) has joined ##c++
+2015-04-01 17:10:19	AbleBacon	ah--damn. my idea doesn't work
+2015-04-01 17:10:47	hs_	MrDetonia, if you are storing Item*'s and need to delete them correctly, you must have a virtual ~Item() {}
+2015-04-01 17:11:00	◀▬▬	admg (~admg@host86-139-68-128.range86-139.btcentralplus.com) has quit (Quit: Bye)
+2015-04-01 17:11:07	◀▬▬	maktm (~maktm@197.156.95.77) has quit (Quit: Leaving)
+2015-04-01 17:11:38	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Read error: Connection reset by peer)
+2015-04-01 17:11:46	MrDetonia	hs_, okay. What would be the cause of the vtable error, do you know?
+2015-04-01 17:11:49	hs_	MrDetonia, paste your error somewhere
+2015-04-01 17:12:04	MrDetonia	2 secs, will link a pastebin
+2015-04-01 17:13:00	MrDetonia	hs_, http://pastebin.com/mmYu3dHS
+2015-04-01 17:13:06	▬▬▶	King_Hual (~Hual@94.26.28.68) has joined ##c++
+2015-04-01 17:13:08	◀▬▬	biglama (~Day_dream@tca83-6-88-188-237-189.fbx.proxad.net) has quit (Remote host closed the connection)
+2015-04-01 17:13:26	◀▬▬	King_Hual (~Hual@94.26.28.68) has quit (Changing host)
+2015-04-01 17:13:26	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##c++
+2015-04-01 17:13:55	AbleBacon	how do i get this way to work? http://ideone.com/zeuMHw
+2015-04-01 17:14:04	AbleBacon	why can't the class deduce the template argument like the function could?
+2015-04-01 17:14:27	hs_	MrDetonia, did you push the update? what did you change in item.hpp?
+2015-04-01 17:14:30	▬▬▶	logan0405 (~logan@c-71-230-36-39.hsd1.pa.comcast.net) has joined ##c++
+2015-04-01 17:14:53	◀▬▬	logan0405 (~logan@c-71-230-36-39.hsd1.pa.comcast.net) has quit (Client Quit)
+2015-04-01 17:15:06	MrDetonia	Didn't push. I added "virtual ~Item();" just under the constructor in Item class
+2015-04-01 17:15:19	hs_	"virtual ~Item() { }"
+2015-04-01 17:15:21	 *	MrDetonia facepalms
+2015-04-01 17:15:22	◀▬▬	ToApolytoXaos (~ToApolyto@46.21.62.128) has quit (Quit: I'm off folks. Drop by at http://alifeadv.blogspot.com)
+2015-04-01 17:15:31	AbleBacon	errr... oops i had a function name wrong, but still same error
+2015-04-01 17:15:31	MrDetonia	yep :v realised that after I posted
+2015-04-01 17:15:35	◀▬▬	sapi1 (~sapi1@dslb-188-109-177-064.188.109.pools.vodafone-ip.de) has quit (Read error: Connection reset by peer)
+2015-04-01 17:15:54	--	andreazevedo_ is now known as andreazevedo
+2015-04-01 17:16:24	hs_	AbleBacon, template classes cannot deduce types like that
+2015-04-01 17:16:47	AbleBacon	Oxyd, wouldn't it be possible to use a macro that does your solution using the internal comma operator but with a syntax like "time_this(some_func)"?
+2015-04-01 17:17:01	AbleBacon	why can't they, hs_?
+2015-04-01 17:17:09	▬▬▶	oleo_ (~oleo@unaffiliated/oleo) has joined ##c++
+2015-04-01 17:17:09	--	oleo is now known as Guest2818
+2015-04-01 17:17:21	hs_	AbleBacon, suppose I specialize class time_, and now I only support default construction
+2015-04-01 17:17:21	MrDetonia	hs_, okay, code is compiling but issue is still the same :/
+2015-04-01 17:17:45	◀▬▬	oleo_ (~oleo@unaffiliated/oleo) has quit (Read error: Connection reset by peer)
+2015-04-01 17:17:46	▬▬▶	Rafaelfsilva (~Rafaelfsi@201.162.68.3) has joined ##c++
+2015-04-01 17:17:54	◀▬▬	fizzbooz1 (~bp@2620:101:f000:700:1e:9725:4a91:bc61) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:18:05	◀▬▬	Rafaelfsilva (~Rafaelfsi@201.162.68.3) has quit (Client Quit)
+2015-04-01 17:18:07	opalraava	virtual void const inline more_beer(const Fridge&) const {}
+2015-04-01 17:18:22	Oxyd	AbleBacon: Sure it would. But it would assume that there is some t declared in the enclosing scope.
+2015-04-01 17:18:39	opalraava	hmm meh. arguably i cant take beer from a const Fridge :(
+2015-04-01 17:18:41	AbleBacon	what if you make the timer static?
+2015-04-01 17:19:19	◀▬▬	Guest2818 (~oleo@unaffiliated/oleo) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:19:28	◀▬▬	lmat (~lmat@156-56-177-160.dhcp-bl.indiana.edu) has quit (Quit: leaving)
+2015-04-01 17:19:34	▬▬▶	oleo_ (~oleo@unaffiliated/oleo) has joined ##c++
+2015-04-01 17:19:48	--	oleo_ is now known as oleo
+2015-04-01 17:20:06	--	irc: disconnected from server
+2015-04-01 17:29:29	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c++
+2015-04-01 17:29:29	--	Topic for ##c++ is "##C++ is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2014 (a.k.a. C++14) || http://www.parashift.com/c++-faq-lite/ || pastes: http://ideone.com/"
+2015-04-01 17:29:29	--	Topic set by Adrinael (~adrinael@barrel.rolli.org) on Wed, 20 Aug 2014 06:01:38
+2015-04-01 17:29:29	--	Channel ##c++: 876 nicks (0 ops, 0 voices, 876 normals)
+2015-04-01 17:29:29	--	PvNotice(ChanServ): a topical channel for discussing standard C++ specifications and code. || pastes: http://ideone.com || reference: http://cppreference.com || current standard: ISO/IEC 14882:2014 (C++14) || http://www.parashift.com/c++-faq-lite/
+2015-04-01 17:29:43	hs_	MrDetonia, if you can't extract that from your design, produce some kind of test case that ensures your allocation methods, copies etc are producing the right results
+2015-04-01 17:29:56	--	Channel created on Fri, 14 Sep 2001 23:15:35
+2015-04-01 17:31:02	◀▬▬	nfk|laptop (~nfk@unaffiliated/nfk) has quit (Quit: yawn)
+2015-04-01 17:31:06	hs_	MrDetonia, and by "test case" I mean a minimal "struct A { vector<int> blah; }; ... A** foo;..." demonstration
+2015-04-01 17:31:12	◀▬▬	ncd|leeN (~leeN@x5ce3cfcb.dyn.telefonica.de) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:31:25	MrDetonia	hs_, Will do. I struggle to think of a better way of organising that though. My original system was having the level have a single vector that contained all items on the level. But then each item had to contain it's position in the level, and checking item's positions when generating was silly.
+2015-04-01 17:31:41	hs_	AbleBacon, right; the line in the class definition is just a declaration of time, not a definition
+2015-04-01 17:32:41	hs_	MrDetonia, design discussion is better suited for ##C++-general (many of us are there)
+2015-04-01 17:34:02	▬▬▶	KaffeeJunky123 (~marcel@89.204.130.74) has joined ##c++
+2015-04-01 17:34:15	MrDetonia	okay, I'll pop a question in there and see what people say. Thanks for the help btw :)
+2015-04-01 17:34:21	◀▬▬	vocodork_ (~vocoder@94-226-71-45.access.telenet.be) has quit (Quit: http://viennaensemblepro.com | http://viennamirpro.com)
+2015-04-01 17:34:27	▬▬▶	cbot` (~FS@ool-2f12e4fc.dyn.optonline.net) has joined ##c++
+2015-04-01 17:34:44	◀▬▬	shintah (bebble@h-154-10.a353.priv.bahnhof.se) has quit (Quit: Hejdå!)
+2015-04-01 17:35:23	▬▬▶	pict (~pict@134.193.199.210) has joined ##c++
+2015-04-01 17:35:32	◀▬▬	pbor (~paolo@89.202.223.30) has quit (Quit: Sto andando via)
+2015-04-01 17:36:32	▬▬▶	evangeline_ (~evangelin@93-103-107-74.dynamic.t-2.net) has joined ##c++
+2015-04-01 17:37:42	◀▬▬	evangeline__ (~evangelin@93-103-107-74.dynamic.t-2.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 17:37:57	Eelis	Oxyd, M-ou-se: fyi, V-ille mailed Sutter about linking to c++draft from isocpp.org, but Sutter basically said (paraphrasing) "very nice but we're waging a war with ISO over how strongly copyright over stuff like drafts should be enforced, so not the best time to be linking to stuff like that"
+2015-04-01 17:38:30	V-ille	Indeed. So step carefully.
+2015-04-01 17:38:30	Oxyd	Not surprised.
+2015-04-01 17:38:58	▬▬▶	Rudolf (~rodolfo@unaffiliated/rudolf) has joined ##c++
+2015-04-01 17:39:34	Oxyd	I've been thinking about the legal side of the HTML draft. So far as I know, just because they put the draft on a public git repo doesn't mean anyone's allowed to do what they please with it, including converting to other formats. But I'm not a lawyer.
+2015-04-01 17:40:08	Eelis	i bet lawyers would also distinguish between merely having the fork on github, and hosting the pages on eel.is
+2015-04-01 17:40:11	Eelis	silly lawyers
+2015-04-01 17:40:32	Oxyd	I wouldn't be surprised if a lawyer told you you may not even fork it. :P
+2015-04-01 17:40:36	▬▬▶	antimatroid (~nick@ppp14-2-174-225.lns20.hba2.internode.on.net) has joined ##c++
+2015-04-01 17:40:48	pragma-	the lawyer can go fork themselves
+2015-04-01 17:40:52	◀▬▬	mwbrown (~Bluhd@wikipedia/Bluhd) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:40:54	Eelis	hehe, then github needs to disable the fork button for those repos :P
+2015-04-01 17:41:03	◀▬▬	govg (~govg@unaffiliated/govg) has quit (Quit: leaving)
+2015-04-01 17:41:07	Eelis	i was misled by github!
+2015-04-01 17:41:15	Eelis	github told me to fork
+2015-04-01 17:41:25	Oxyd	Well, it's your responsibility to check if you may use someone else's work in some manner. :P
+2015-04-01 17:42:43	◀▬▬	bazrush (~bazrush@149.152.238.178.in-addr.arpa) has quit (Read error: Connection reset by peer)
+2015-04-01 17:43:11	pragma-	but won't somebody please think of the children?
+2015-04-01 17:43:23	Eelis	barney was on the cc though. now i'm gonna check my server logs if i've had a visit from The One
+2015-04-01 17:43:32	◀▬▬	PigFlu (~herp@unaffiliated/pigflu) has quit (Quit: rthrthrth)
+2015-04-01 17:43:33	Erlkoenig	a priori you may do nothing with things found on github; you have to look at the authors' license if you want to do anything with the stuff
+2015-04-01 17:43:46	Eelis	*to see
+2015-04-01 17:44:11	Oxyd	Erlkoenig: Yep. And since there's no licence file in the repo, nor any notice in the source files themselves…
+2015-04-01 17:44:18	antimatroid	 http://codepad.org/rEUluHU4 can anyone explain why  the second switch matches '!' after matching '~'?
+2015-04-01 17:44:31	Erlkoenig	Oxyd: ... you aren't even allowed to read it. ...
+2015-04-01 17:44:38	◀▬▬	_Atom_ (~jawat@nat-128-62-57-218.public.utexas.edu) has quit (Remote host closed the connection)
+2015-04-01 17:45:04	Oxyd	Erlkoenig: I would love to see a lawsuit about just reading it.
+2015-04-01 17:45:09	Eelis	no no we just wrote the Haskell blind and any suitability for use with the draft sources is pure accident
+2015-04-01 17:45:12	antimatroid	sure I can break after matching ~, but I don't see why that behaviour even happens?
+2015-04-01 17:45:23	▬▬▶	bazrush (~bazrush@149.152.238.178.in-addr.arpa) has joined ##c++
+2015-04-01 17:45:31	kalven	Eelis: just have your generator fetch the files from github on the fly, compile the damn thing with emscripten and only host the big .js blob.
+2015-04-01 17:45:31	Oxyd	antimatroid: Well, why wouldn't it happen?
+2015-04-01 17:45:49	◀▬▬	Munnu (~timo@91-158-143-52.elisa-laajakaista.fi) has quit (Quit: Re-evaluating and compiling the desert of the real.)
+2015-04-01 17:46:02	antimatroid	because s[0] isn't '!' at any point?!
+2015-04-01 17:46:03	▬▬▶	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has joined ##c++
+2015-04-01 17:46:12	Oxyd	kalven: That would be super-fun, seeing how the script runs for a few tens of second. :P
+2015-04-01 17:46:14	Oxyd	antimatroid: So what?
+2015-04-01 17:46:27	antimatroid	so why would case '!': ever be run?
+2015-04-01 17:46:28	Eelis	yeah it's butt slow
+2015-04-01 17:46:54	Eelis	the amount of String<->Text conversions alone would make you cry if you count them
+2015-04-01 17:46:59	Oxyd	antimatroid: Because that's where the control flows after line 14.
+2015-04-01 17:47:36	antimatroid	wut? you can take the first switch out and get the same result, nor does the first switch influence the second? :S
+2015-04-01 17:47:54	kalven	the power of haskell :/
+2015-04-01 17:48:01	Oxyd	antimatroid: What?
+2015-04-01 17:48:06	antimatroid	I'm confused
+2015-04-01 17:48:09	Eelis	the power of not caring about performance
+2015-04-01 17:48:30	Eelis	there's proper Text ways to do them but i just hackily use list ways and convert
+2015-04-01 17:48:34	◀▬▬	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has quit (Read error: Connection reset by peer)
+2015-04-01 17:48:45	◀▬▬	Nightmare637123 (~nightmare@cpe-98-30-204-15.columbus.res.rr.com) has quit (Ping timeout: 264 seconds)
+2015-04-01 17:48:49	▬▬▶	govg (~govg@unaffiliated/govg) has joined ##c++
+2015-04-01 17:48:49	Eelis	s/do them/do operations/
+2015-04-01 17:49:04	▬▬▶	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has joined ##c++
+2015-04-01 17:49:25	antimatroid	when it reaches line 22 what does it check '!' with to see if it matches?
+2015-04-01 17:49:33	antimatroid	I would have expected s[0], but obviously not
+2015-04-01 17:49:35	Eelis	not that strings aren't a mess in Haskell
+2015-04-01 17:49:47	▬▬▶	subrina (~nunya@97-113-187-227.tukw.qwest.net) has joined ##c++
+2015-04-01 17:49:48	Oxyd	antimatroid: Your code only has 20 lines, so what are you talking about?
+2015-04-01 17:50:06	antimatroid	http://codepad.org/v9e5U87X
+2015-04-01 17:50:14	◀▬▬	subrina (~nunya@97-113-187-227.tukw.qwest.net) has quit (Client Quit)
+2015-04-01 17:50:18	antimatroid	that explains the confusion, sorry :P
+2015-04-01 17:50:40	Oxyd	Right. Line 22 doesn't do anything, it's just a case label. So it goes right to line 23.
+2015-04-01 17:50:41	antimatroid	I changed it then pasted the old link, my mistake
+2015-04-01 17:50:59	Eelis	if ISO makes me take c++draft down, i'll make it so that links always expire after 10 minutes, then you can only ever use it for irc
+2015-04-01 17:51:13	◀▬▬	Zupoman (~mistrzmag@unaffiliated/zupoman) has quit (Quit: Plan B failed, time for Plan 9!)
+2015-04-01 17:51:28	Eelis	so they would include some token
+2015-04-01 17:51:29	JordiGH	Can't we take down ISO instead?
+2015-04-01 17:51:31	Oxyd	Eelis: Yeah, but you'll have to look stuff up in the .pdf. :/
+2015-04-01 17:51:32	JordiGH	They sound rather parasitic.
+2015-04-01 17:52:04	▬▬▶	Brutser (~Name@d51A48718.access.telenet.be) has joined ##c++
+2015-04-01 17:52:13	Oxyd	Maybe we should stay low-key and hope ISO doesn't notice. :P
+2015-04-01 17:52:25	Eelis	for now, probably, yeah
+2015-04-01 17:52:31	▬▬▶	halcyone3 (~halcyone3@CPE-58-172-98-234.mqzo1.cht.bigpond.net.au) has joined ##c++
+2015-04-01 17:52:35	Brutser	need help with only implementation and what setup to use really ==>
+2015-04-01 17:52:37	JordiGH	Eelis: Or just filter any IPs coming from ISO. That's what Russia does.
+2015-04-01 17:52:41	Brutser	have a list with tasks in following format: task ; status ; datestamp
+2015-04-01 17:52:41	Eelis	haha
+2015-04-01 17:52:50	Brutser	a continuous loop runs over this list and performs the task - then save the return status in the list
+2015-04-01 17:52:50	antimatroid	ah, so negative on being able to match multiple cases with the one switch?
+2015-04-01 17:52:51	JordiGH	Any IPs coming from the US --> no scanned science books for you.
+2015-04-01 17:52:51	Eelis	JordiGH: that sounds really good actually
+2015-04-01 17:52:55	Brutser	i cannot do all in memory as i need a backup if the script would crash
+2015-04-01 17:52:55	◀▬▬	lescactus (~quassel@vpn.free.zevpn.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:52:56	Oxyd	Another way to poke the bear would be to generate HTML of some previous commit that closely matches C++14. :P
+2015-04-01 17:53:03	Brutser	saving in a text file is not the best way, as updating a text file is troublesome
+2015-04-01 17:53:05	▬▬▶	fizzbooze (~bp@208.113.47.100) has joined ##c++
+2015-04-01 17:53:12	Brutser	any suggestions how to implement?
+2015-04-01 17:53:30	antimatroid	I don't actually want to, just forgot the breaks then was surprised at the outpit
+2015-04-01 17:54:18	Oxyd	antimatroid: So what do you think that break does? You obviously know that it exists, but you're still confused about your code.
+2015-04-01 17:55:16	◀▬▬	rgp100 (~rgp100@2602:306:3a29:e240:21db:75c:174:db40) has quit (Quit: Leaving)
+2015-04-01 17:55:36	antimatroid	break exits the switch loop according to cplusplus.com and what I just tried then
+2015-04-01 17:55:58	▬▬▶	_Atom_ (~jawat@nat-128-62-57-218.public.utexas.edu) has joined ##c++
+2015-04-01 17:56:00	◀▬▬	System42 (~System42@ws161-104.wireless.dynamic.msstate.edu) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:56:11	Eelis	Oxyd: yeah, having links at the top like "Version: <a ..>C++98</a>, <a ..>C++03</a>, ..." would be super sweet
+2015-04-01 17:56:14	Eelis	but impossible
+2015-04-01 17:56:27	hs_	antimatroid, "case blah:" if matched, dumps you there and executes down disregarding any other case lines
+2015-04-01 17:56:33	Oxyd	Eelis: Yep, totally. But that's really asking for it.
+2015-04-01 17:56:40	▬▬▶	badone__ (~brad@CPE-121-215-241-179.static.qld.bigpond.net.au) has joined ##c++
+2015-04-01 17:56:49	antimatroid	hs_: that's what I've been saying I think
+2015-04-01 17:56:52	hs_	antimatroid, break; is the only thing that can stop its terror
+2015-04-01 17:57:57	◀▬▬	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 17:58:00	 *	Eelis dreams of http://eel.is/c++/17/stmt.checked.deref
+2015-04-01 17:58:40	◀▬▬	natechan (~natechan@50-205-32-182-static.hfc.comcastbusiness.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 17:59:14	◀▬▬	pict (~pict@134.193.199.210) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:59:25	 *	kalven dreams of side-by-side diffs
+2015-04-01 17:59:31	◀▬▬	manuel_v (~manuel_v@manuel-voegele.de) has quit (Quit: Of all the worst things that could happen, this is THE WORST POSSIBLE THING)
+2015-04-01 18:00:05	Eelis	would if i could
+2015-04-01 18:00:46	▬▬▶	limecore (~matthew@ppp121-44-183-219.lns20.syd7.internode.on.net) has joined ##c++
+2015-04-01 18:00:49	◀▬▬	cefkamcau (~cefkamcau@afem225.neoplus.adsl.tpnet.pl) has quit (Quit: Leaving)
+2015-04-01 18:00:53	Eelis	i've done lots of difflike processing in Haskell before
+2015-04-01 18:01:05	Eelis	would be no problem technically to make it super nice
+2015-04-01 18:01:10	Eelis	but ISO.
+2015-04-01 18:01:26	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##c++
+2015-04-01 18:01:27	Oxyd	We need non-ISO C++.
+2015-04-01 18:02:15	▬▬▶	paul424 (~chatzilla@apn-46-76-148-6.dynamic.gprs.plus.pl) has joined ##c++
+2015-04-01 18:02:30	◀▬▬	micom (~micom@unaffiliated/micom) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:02:57	▬▬▶	pingupingu (~pinguping@unaffiliated/pingupingu) has joined ##c++
+2015-04-01 18:04:33	◀▬▬	vocodork (~vocoder@94-226-71-45.access.telenet.be) has quit (Quit: http://viennaensemblepro.com | http://viennamirpro.com)
+2015-04-01 18:04:40	▬▬▶	HarryHallman (~joshuaeke@98.158.188.81) has joined ##c++
+2015-04-01 18:05:18	▬▬▶	japro (~japro@144.70.203.62.dynamic.wline.res.cust.swisscom.ch) has joined ##c++
+2015-04-01 18:06:00	◀▬▬	notpara (~para@ip-90-186-45-35.web.vodafone.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:06:14	◀▬▬	_Atom_ (~jawat@nat-128-62-57-218.public.utexas.edu) has quit (Remote host closed the connection)
+2015-04-01 18:07:09	--	andreazevedo is now known as andreazevedo_
+2015-04-01 18:07:24	fizzbooze	why is using a moved value undefined behaviour rather than compile time error?
+2015-04-01 18:07:39	kalven	it's not UB
+2015-04-01 18:07:50	fizzbooze	kalven what is ti
+2015-04-01 18:08:15	fizzbooze	i mean using a value after it's been moved
+2015-04-01 18:08:20	fizzbooze	meaning you don't own it anymore
+2015-04-01 18:08:23	V-ille	Oxyd: I would love to take all of it to ecma, but it's not quite so simple.
+2015-04-01 18:08:30	kalven	fizzbooze: depends on the type
+2015-04-01 18:08:49	fizzbooze	kalven like a std::vector
+2015-04-01 18:08:57	◀▬▬	tuxdev_ (~tim@unaffiliated/tuxdev) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:09:08	V-ille	you can assign to it, you can destroy it, you can invoke any member function that has no preconditions
+2015-04-01 18:09:26	◀▬▬	Amanas (~Amanas@208.118.226.102) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:09:37	V-ille	including, importantly,  .begin() and .end()
+2015-04-01 18:10:24	Eelis	what about invoking member functions with preconditions but only after you've established that those preconditions are true using other member functions that don't have preconditions? ;)
+2015-04-01 18:10:44	◀▬▬	drale2k_ (~drale2k@chello213047091195.1.14.vie.surfer.at) has quit (Read error: Connection reset by peer)
+2015-04-01 18:10:51	◀▬▬	hexagoxel (~hexagoxel@x5f769dec.dyn.telefonica.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:10:56	▬▬▶	CiroboyBR (~kali@187.120.48.64) has joined ##c++
+2015-04-01 18:11:32	◀▬▬	Brklyn_ (~Brkyln@inet-rmmc06-o.oracle.com) has quit (Remote host closed the connection)
+2015-04-01 18:11:34	Eelis	for example, pop_back after you've determined !empty()
+2015-04-01 18:12:05	▬▬▶	hexagoxel (~hexagoxel@x4d067213.dyn.telefonica.de) has joined ##c++
+2015-04-01 18:13:35	▬▬▶	evangeline__ (~evangelin@93-103-107-74.dynamic.t-2.net) has joined ##c++
+2015-04-01 18:13:56	▬▬▶	Asher (~asher@c-24-99-204-98.hsd1.ga.comcast.net) has joined ##c++
+2015-04-01 18:14:11	▬▬▶	notpara (~para@ip-90-186-45-35.web.vodafone.de) has joined ##c++
+2015-04-01 18:14:28	◀▬▬	evangeline_ (~evangelin@93-103-107-74.dynamic.t-2.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:14:41	--	robbyoconnor is now known as ]
+2015-04-01 18:15:23	▬▬▶	lmat (~lmat@ip-64-134-174-163.public.wayport.net) has joined ##c++
+2015-04-01 18:15:53	◀▬▬	FunkyAss (~Funky@unaffiliated/funkyass) has quit (Quit: Make my Funk the P-Funk)
+2015-04-01 18:16:58	◀▬▬	askatasuna (~askatasun@181.30.22.74) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:17:23	--	irc: disconnected from server
+2015-04-01 18:22:45	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c++
+2015-04-01 18:22:45	--	Topic for ##c++ is "##C++ is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2014 (a.k.a. C++14) || http://www.parashift.com/c++-faq-lite/ || pastes: http://ideone.com/"
+2015-04-01 18:22:45	--	Topic set by Adrinael (~adrinael@barrel.rolli.org) on Wed, 20 Aug 2014 06:01:38
+2015-04-01 18:22:45	--	Channel ##c++: 866 nicks (0 ops, 0 voices, 866 normals)
+2015-04-01 18:22:45	--	PvNotice(ChanServ): a topical channel for discussing standard C++ specifications and code. || pastes: http://ideone.com || reference: http://cppreference.com || current standard: ISO/IEC 14882:2014 (C++14) || http://www.parashift.com/c++-faq-lite/
+2015-04-01 18:22:57	▬▬▶	JamesNZ (~james@fedora/JamesNZ) has joined ##c++
+2015-04-01 18:23:04	◀▬▬	Brutser (~Name@d51A48718.access.telenet.be) has quit
+2015-04-01 18:23:15	--	Channel created on Fri, 14 Sep 2001 23:15:35
+2015-04-01 18:23:29	◀▬▬	netj (~netj@128.12.163.109) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:23:33	◀▬▬	Aleric (~Run@unaffiliated/run) has left ##c++ ("Leaving")
+2015-04-01 18:23:40	▬▬▶	netj (~netj@naru.stanford.edu) has joined ##c++
+2015-04-01 18:23:56	◀▬▬	nuk3 (~user@168.253.196.224) has quit (Remote host closed the connection)
+2015-04-01 18:24:33	Oxyd	V-ille: You need to rebel in the coven. :P
+2015-04-01 18:24:39	◀▬▬	mazde (~mazde@164.215.19.98) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:25:16	--	andreazevedo_ is now known as andreazevedo
+2015-04-01 18:25:24	◀▬▬	halcyone3 (~halcyone3@CPE-58-172-98-234.mqzo1.cht.bigpond.net.au) has quit (Quit: This computer has gone to sleep)
+2015-04-01 18:26:08	▬▬▶	Enissay_ (~Enissay@unaffiliated/enissay) has joined ##c++
+2015-04-01 18:27:28	◀▬▬	lukequaint (~lukequain@89-72-70-198.dynamic.chello.pl) has quit (Quit: Bye!)
+2015-04-01 18:28:01	◀▬▬	limecore (~matthew@ppp121-44-183-219.lns20.syd7.internode.on.net) has quit (Quit: Lost terminal)
+2015-04-01 18:28:15	◀▬▬	Enissay (~Enissay@unaffiliated/enissay) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:28:19	◀▬▬	JordiGH (~jordi@octave/developer/JordiGH) has quit (Quit: Jacking out)
+2015-04-01 18:28:22	V-ille	Oxyd: well, we would have to re-write the whole fucking standard :(
+2015-04-01 18:28:33	▬▬▶	mwbrown (~Bluhd@wikipedia/Bluhd) has joined ##c++
+2015-04-01 18:28:39	Eelis	excellent opportunity to do so in Coq
+2015-04-01 18:29:19	V-ille	nice, but I wouldn't call it an excellent opportunity
+2015-04-01 18:29:53	▬▬▶	TheHackOps (~TheHackOp@dsl-124-150-17-198.vic.westnet.com.au) has joined ##c++
+2015-04-01 18:31:37	◀▬▬	Albori (~Albori@64-251-150-248.fidnet.com) has quit (Quit: Part and quit message, you say. Uhh... I guess goodbye!)
+2015-04-01 18:33:39	▬▬▶	CiroboyBR_ (~kali@187.120.48.64) has joined ##c++
+2015-04-01 18:34:09	◀▬▬	Kabal619 (Kabal619@ip72-199-16-199.sd.sd.cox.net) has quit (Remote host closed the connection)
+2015-04-01 18:34:50	◀▬▬	Spec-Chum (~Spec-Chum@90.214.249.171) has quit (Quit: Leaving)
+2015-04-01 18:34:52	--	badone__ is now known as badone
+2015-04-01 18:35:10	▬▬▶	Superlokkus (~Superlokk@141.30.223.183) has joined ##c++
+2015-04-01 18:35:38	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined ##c++
+2015-04-01 18:35:45	▬▬▶	Kabal619 (Kabal619@ip72-199-16-199.sd.sd.cox.net) has joined ##c++
+2015-04-01 18:36:12	▬▬▶	Albori (~Albori@64-251-150-248.fidnet.com) has joined ##c++
+2015-04-01 18:36:31	▬▬▶	Nightmare637123 (~nightmare@cpe-98-30-204-15.columbus.res.rr.com) has joined ##c++
+2015-04-01 18:36:54	◀▬▬	KaffeeJunky123 (~marcel@89.204.130.74) has quit (Remote host closed the connection)
+2015-04-01 18:37:33	◀▬▬	CiroboyBR (~kali@187.120.48.64) has quit (Ping timeout: 255 seconds)
+2015-04-01 18:38:21	▬▬▶	Betal (~Beta@unaffiliated/betal) has joined ##c++
+2015-04-01 18:38:54	◀▬▬	mwbrown (~Bluhd@wikipedia/Bluhd) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:39:10	--	andreazevedo is now known as andreazevedo_
+2015-04-01 18:39:46	Oxyd	Just imagine V-ille speaking before the coven, saying “Let's rewrite it in cock!”
+2015-04-01 18:40:08	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined ##c++
+2015-04-01 18:40:18	▬▬▶	Yoofie (~chatzilla@75-114-203-47.res.bhn.net) has joined ##c++
+2015-04-01 18:41:00	Eelis	i think the C-in-Coq effort is very very far
+2015-04-01 18:41:01	Oxyd	Also, I take it that ISO would be absolutely unwilling to give some other organisation the rights to the standard?
+2015-04-01 18:41:02	▬▬▶	ynix (~nf7@162-246-9-228.dyn.novuscom.net) has joined ##c++
+2015-04-01 18:41:10	ynix	Is there a way to iteratively print every universal character from 0000 to ffff? They are usually written in source code like \u2a4s, and I can't figure out a way to concatenate \u and a hex string to have a unicode character be output
+2015-04-01 18:41:39	◀▬▬	Sc0tty- (~Scott@81.168.24.241) has quit (Quit: Leaving)
+2015-04-01 18:41:52	◀▬▬	MrFlibble (LunarJetma@0540b6a8.skybroadband.com) has quit (Quit: MrFlibble)
+2015-04-01 18:42:33	Oxyd	Just iterate from 0x0000 to 0xffff and convert it to char16_t?
+2015-04-01 18:42:40	kalven	ynix: "%04x" if you use *printf. some awful gobbledygook if you use iostream.
+2015-04-01 18:43:02	ynix	Oxyd: Could you explain that?
+2015-04-01 18:43:07	ynix	kalven: Let me try that.
+2015-04-01 18:43:08	◀▬▬	dzejrou (~dzejrou@ip-62-24-91-129.net.upcbroadband.cz) has quit (Quit: Leaving)
+2015-04-01 18:43:58	kalven	oh, you want the actual unicode output?
+2015-04-01 18:43:59	Oxyd	ynix: Just for (char16_t i = 0; i < 0xFFFF; ++i) output(i);
+2015-04-01 18:44:08	ynix	kalven: Yeah, that's where I'm having a problem
+2015-04-01 18:44:15	Eelis	i think our generation will see the achievement of a certified C++ compiler. and shortly after, superhuman AI will prove that ethics demands that all conscious life be eradicated, and write a C++ program that certifiably does so
+2015-04-01 18:44:27	ynix	Oxyd: But how do I output the character?
+2015-04-01 18:45:06	Oxyd	ynix: Probably something like convert to UTF-8 and cout it. Or something else, depending on what encoding you want.
+2015-04-01 18:45:43	ynix	Yeah that's where I'm having a problem. How do I convert it to a format that will output as the proper symbol. This is my question.
+2015-04-01 18:45:49	◀▬▬	andreazevedo_ (~andreazev@199.201.64.134) has quit (Read error: Connection reset by peer)
+2015-04-01 18:46:05	Oxyd	Use some library that will let you convert UTF-16 to UTF-8. Or do the conversion yourself.
+2015-04-01 18:46:08	▬▬▶	tokam (~tokam@unaffiliated/tokam) has joined ##c++
+2015-04-01 18:46:26	▬▬▶	andreazevedo (~andreazev@199.201.64.134) has joined ##c++
+2015-04-01 18:46:57	Oxyd	Or just cast it to wchar_t and pass it to wcout.
+2015-04-01 18:46:57	◀▬▬	rotkiV (~pi@unaffiliated/xfel) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:47:01	Erlkoenig	for example iconv
+2015-04-01 18:47:27	◀▬▬	talin (~nullptr@unaffiliated/talin) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:47:46	▬▬▶	ferdna (~ferdna@108-230-126-51.lightspeed.elpstx.sbcglobal.net) has joined ##c++
+2015-04-01 18:48:10	◀▬▬	Nightmare637123 (~nightmare@cpe-98-30-204-15.columbus.res.rr.com) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:48:11	◀▬▬	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has quit (Quit: gravitation)
+2015-04-01 18:48:12	◀▬▬	LBV_User (~leonardo@179.182.78.147) has quit (Quit: done with this Instant Ramen Cup)
+2015-04-01 18:48:14	◀▬▬	aslant (~aslant@5751a00f.skybroadband.com) has quit (Remote host closed the connection)
+2015-04-01 18:48:21	◀▬▬	JamesNZ (~james@fedora/JamesNZ) has quit (Remote host closed the connection)
+2015-04-01 18:48:46	ynix	Oxyd: That worked!
+2015-04-01 18:48:56	Oxyd	It did? Great then.
+2015-04-01 18:49:25	ynix	Oxyd: Thanks! Hmmmmm... It looks like one of the characters is stopping terminal output (this is on Windows), is there some way to make it so that none of the characters actually do anything other than print to the console?
+2015-04-01 18:49:38	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:49:57	ynix	oh wiat
+2015-04-01 18:50:01	◀▬▬	xarik (~xarik2@192.12.88.128) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:50:26	Oxyd	Check your Windows documentation for a list of characters that do that and then use an if to not output them.
+2015-04-01 18:50:28	▬▬▶	Kostenko (~Kostenko@bl14-205-114.dsl.telepac.pt) has joined ##c++
+2015-04-01 18:50:46	◀▬▬	k1000 (~quassel@2607:5300:100::54f) has quit (Quit: k1000)
+2015-04-01 18:51:00	▬▬▶	_Atom_ (~jawat@nat-128-62-63-116.public.utexas.edu) has joined ##c++
+2015-04-01 18:51:05	▬▬▶	VladolfPutler (~jasper@5ED7DF59.cm-7-8d.dynamic.ziggo.nl) has joined ##c++
+2015-04-01 18:51:07	▬▬▶	k1000 (~k1000@55.ip-198-50-149.net) has joined ##c++
+2015-04-01 18:51:28	◀▬▬	onecool (onecool@unaffiliated/onecool) has quit (Ping timeout: 265 seconds)
+2015-04-01 18:51:55	▬▬▶	Rickmasta (~Rick@pool-74-101-29-191.nycmny.fios.verizon.net) has joined ##c++
+2015-04-01 18:52:10	ynix	actually it looks like wchar_t only holds up to 255 values, so its just losing the data after that
+2015-04-01 18:52:41	▬▬▶	rriemann (~rriemann@cxr69-h01-31-34-2-69.dsl.sta.abo.bbox.fr) has joined ##c++
+2015-04-01 18:52:50	ynix	is there a char type that can hold up to 0xFFFF and output as a symbol
+2015-04-01 18:52:54	Oxyd	It's possible. Size of a wchar_t isn't specified by C++. I was under the impression that it'll be 16 bits on Windows, though.
+2015-04-01 18:52:56	VladolfPutler	ya hello, when I have a class that uses dynamic memory, I need a copy constructor to prevent double delete. But this solves only part of my memory errors. Do I need to define something else apart from copy constructor?
+2015-04-01 18:53:03	kalven	ynix: wchar_t is 16-bit on windows
+2015-04-01 18:53:05	◀▬▬	adek (~adek@199.201.64.134) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 18:53:13	◀▬▬	Kostenko_ (~Kostenko@bl14-205-114.dsl.telepac.pt) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:53:28	▬▬▶	adek (~adek@199.201.64.134) has joined ##c++
+2015-04-01 18:53:31	kalven	!give VladolfPutler ruleof3
+2015-04-01 18:53:33	nolyc	VladolfPutler: If you have one of 1) non-empty destructor 2) copy constructor 3) copy assignment operator then you almost certainly need _all_ three. In C++11, this is optionally extended to the Rule Of Five.
+2015-04-01 18:53:35	▬▬▶	makaveli0227TL (~makaveli0@66.9.135.66) has joined ##c++
+2015-04-01 18:54:13	◀▬▬	f10 (~flo@ip5b403660.dynamic.kabel-deutschland.de) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:54:17	◀▬▬	MasterPiece (~MasterPie@unaffiliated/masterpiece) has quit (Read error: Connection reset by peer)
+2015-04-01 18:54:22	VladolfPutler	kalven, ah, thanks, that looks helpful
+2015-04-01 18:54:37	VladolfPutler	and I will look into Rule of Five later
+2015-04-01 18:55:18	Erlkoenig	for (uint16_t i = 0; i != 0; ++i) {   char bin [2] = { i & 0xFF, (i >> 8) & 0xFF }; std::cout.write (&bin, 2);  }    writes all 16bit characters
+2015-04-01 18:55:26	◀▬▬	MrDetonia (~MrDetonia@81.130.68.230) has left ##c++ ("Leaving")
+2015-04-01 18:55:32	Erlkoenig	oh well that won't work
+2015-04-01 18:56:00	Erlkoenig	for (uint32_t i = 0; i <= 0xFFFF; ++i) {   char bin [2] = { i & 0xFF, (i >> 8) & 0xFF }; std::cout.write (&bin, 2);  }    writes all 16bit characters
+2015-04-01 18:56:06	◀▬▬	Longlius (~longlius@2602:301:7767:6df0:a64e:31ff:fe19:d320) has quit (Remote host closed the connection)
+2015-04-01 18:56:44	kalven	uhm
+2015-04-01 18:57:27	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined ##c++
+2015-04-01 18:57:43	◀▬▬	makaveli0227TL (~makaveli0@66.9.135.66) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:57:59	▬▬▶	peoliye_ (328d0401@gateway/web/freenode/ip.50.141.4.1) has joined ##c++
+2015-04-01 18:58:20	▬▬▶	Lord_of_Life (Elite12246@gateway/shell/elitebnc/x-klfomlquijenxdtr) has joined ##c++
+2015-04-01 18:58:39	◀▬▬	hiptobecubic (~john@unaffiliated/hiptobecubic) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:59:12	peoliye_	i am trying to pass the function address from class to some other class which i am initialzing. How can i do it?
+2015-04-01 18:59:56	◀▬▬	pi- (~Ohmu@cpc69129-oxfd25-2-0-cust987.4-3.cable.virginm.net) has quit
+2015-04-01 19:00:34	▬▬▶	cefkamcau (~cefkamcau@afem225.neoplus.adsl.tpnet.pl) has joined ##c++
+2015-04-01 19:00:38	Erlkoenig	"function addess"?!
+2015-04-01 19:01:34	Oxyd	“The” function address?
+2015-04-01 19:01:52	hs_	I think that's UB
+2015-04-01 19:02:01	Oxyd	Your program likely has many functions, which function's address do you want to pass?
+2015-04-01 19:02:05	hs_	it says in the standard if you take THE function address... bad things can happen
+2015-04-01 19:02:06	◀▬▬	rriemann (~rriemann@cxr69-h01-31-34-2-69.dsl.sta.abo.bbox.fr) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:02:20	peoliye_	Erlkoenig: basically i am a c developer and trying my hand in c++. I need to pass the function address so that when something happens it gets called by the other class.
+2015-04-01 19:02:35	hs_	only Bjarne has survived the taking of THE function address. His ascension was glorious
+2015-04-01 19:02:47	Erlkoenig	sounds like you want to pass a function pointer. now to WHAT function?
+2015-04-01 19:02:51	▬▬▶	Joel__ (~Joel@gov91-4-83-152-215-118.fbx.proxad.net) has joined ##c++
+2015-04-01 19:03:48	◀▬▬	ambro718 (~ambro@gentoo/contributor/ambro718) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:03:53	peoliye_	Erlkoenig: yes basically function pointer.
+2015-04-01 19:04:11	Oxyd	geordi: struct foo { void (*ptr)(); foo(void (*ptr)()) : ptr{ptr} { } void something() { ptr(); } }; void the_function() { cout << "I am the function"; } struct bar { foo f{&the_function}; }; int main() { bar b; b.f.something(); }
+2015-04-01 19:04:11	geordi	I am the function
+2015-04-01 19:04:14	◀▬▬	rendar_ (~I@host45-128-dynamic.61-82-r.retail.telecomitalia.it) has quit
+2015-04-01 19:05:26	◀▬▬	tokam (~tokam@unaffiliated/tokam) has quit (Read error: Connection reset by peer)
+2015-04-01 19:05:33	▬▬▶	tokam (~tokam@unaffiliated/tokam) has joined ##c++
+2015-04-01 19:05:37	peoliye_	Erlkoenig: void (*func) (int)
+2015-04-01 19:05:48	▬▬▶	r0x (~r0x@95.236.119.29) has joined ##c++
+2015-04-01 19:06:04	◀▬▬	danguafer (uid54301@gateway/web/irccloud.com/x-gtfdhazmngwaidqs) has quit (Quit: Connection closed for inactivity)
+2015-04-01 19:06:19	peoliye_	Erlkoenig: this fucntion is part of the class public function. I think i should send "this" pointer and use that to call right?
+2015-04-01 19:06:30	Oxyd	That's not a function, that's a pointer.
+2015-04-01 19:06:38	Oxyd	You want a pointer to a pointer to a function?
+2015-04-01 19:07:00	◀▬▬	_Atom_ (~jawat@nat-128-62-63-116.public.utexas.edu) has quit (Remote host closed the connection)
+2015-04-01 19:07:09	◀▬▬	PSG_Luna (uid48908@gateway/web/irccloud.com/x-zsdaczmsuthszxei) has quit (Quit: Connection closed for inactivity)
+2015-04-01 19:07:25	◀▬▬	t0by (~t0by@95.237.247.221) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:07:37	◀▬▬	Joel__ (~Joel@gov91-4-83-152-215-118.fbx.proxad.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:08:26	peoliye_	Oxyd: i know intricacies about the pointer. All i need to know is that can i pass this pointer and use this to call the functions on "this" pointer?
+2015-04-01 19:09:09	VladolfPutler	kalven, Rule of 3 is an improvement, but I'm still left with a few errors
+2015-04-01 19:09:09	▬▬▶	mot (~mot@pool-108-28-84-183.washdc.fios.verizon.net) has joined ##c++
+2015-04-01 19:09:35	kalven	VladolfPutler: ok, like what?
+2015-04-01 19:09:39	Oxyd	peoliye_: void (*func)(int) is a pointer to a non-member function. Non-member functions don't take this. If you want a pointer to member, it's void (T::* ptr)(int), for a member of T.
+2015-04-01 19:10:15	◀▬▬	tokam (~tokam@unaffiliated/tokam) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:11:38	ynix	Can someone explain why this will only print the first 255 characters on my computer? https://gist.githubusercontent.com/anonymous/37503ecb4b447a856d74/raw/e89c80533e06ab656e95fae04458cd0be41345ff/.cpp
+2015-04-01 19:11:39	nolyc	<http://tinyurl.com/kds7b8v> (at gist.githubusercontent.com)
+2015-04-01 19:11:42	peoliye_	Oxyd: got it. This will pass the function address but inorder to call it what can i do?
+2015-04-01 19:12:02	VladolfPutler	kalven: I don't know :P
+2015-04-01 19:12:04	ynix	It just stops after it reaches 255
+2015-04-01 19:12:11	Oxyd	peoliye_: Call it like (t.*ptr)(), where t is an object of type T.
+2015-04-01 19:12:32	Oxyd	peoliye_: http://coliru.stacked-crooked.com/a/a7e7116ceac38f9e – like this.
+2015-04-01 19:12:45	VladolfPutler	but valgrind gives me the "conditional jump depends...", but that can be a lot of things
+2015-04-01 19:13:08	◀▬▬	Knarf_ (~franck@AToulouse-652-1-52-29.w2-6.abo.wanadoo.fr) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:13:13	kalven	VladolfPutler: make a testcase
+2015-04-01 19:13:15	peoliye_	Oxyd: that viewer is not showing anything.
+2015-04-01 19:13:34	peoliye_	Oxyd: possible to use ideone.com ?
+2015-04-01 19:13:48	peoliye_	Oxyd: got it never mind.
+2015-04-01 19:14:12	◀▬▬	ejnahc (~hello@chan.je) has quit (Remote host closed the connection)
+2015-04-01 19:15:13	▬▬▶	ejnahc (~hello@chan.je) has joined ##c++
+2015-04-01 19:15:55	◀▬▬	gnidmoo (~gnidmoo@ip-140.net-82-216-139.issy4.rev.numericable.fr) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:16:24	◀▬▬	pfo (~pfo@chello084114049188.14.vie.surfer.at) has quit (Quit: pfo)
+2015-04-01 19:17:18	◀▬▬	ejnahc (~hello@chan.je) has quit (Client Quit)
+2015-04-01 19:17:32	▬▬▶	ejnahc (~hello@chan.je) has joined ##c++
+2015-04-01 19:19:46	◀▬▬	elementalest (~elemental@unaffiliated/elementalest) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:20:24	--	andreazevedo is now known as andreazevedo_
+2015-04-01 19:22:07	◀▬▬	crucerucalin_ (~calin@p22.eregie.pub.ro) has quit (Ping timeout: 248 seconds)
+2015-04-01 19:23:22	▬▬▶	Palsson (~palsson@c-c5fae253.024-21-6e6b702.cust.bredbandsbolaget.se) has joined ##c++
+2015-04-01 19:24:08	▬▬▶	tmager (~Thunderbi@resnet-130-64-128-213.medford.tufts.edu) has joined ##c++
+2015-04-01 19:26:02	◀▬▬	r0x (~r0x@95.236.119.29) has quit (Quit: Sto andando via)
+2015-04-01 19:28:37	▬▬▶	dogarrhea (6881c031@gateway/web/freenode/ip.104.129.192.49) has joined ##c++
+2015-04-01 19:28:45	◀▬▬	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has quit (Remote host closed the connection)
+2015-04-01 19:29:46	◀▬▬	dogarrhea (6881c031@gateway/web/freenode/ip.104.129.192.49) has left ##c++
+2015-04-01 19:29:47	◀▬▬	FLHerne (~flh@unaffiliated/flherne) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:29:51	▬▬▶	dogarrhea (6881c031@gateway/web/freenode/ip.104.129.192.49) has joined ##c++
+2015-04-01 19:29:53	◀▬▬	lmat (~lmat@ip-64-134-174-163.public.wayport.net) has quit (Ping timeout: 246 seconds)
+2015-04-01 19:30:29	◀▬▬	dogarrhea (6881c031@gateway/web/freenode/ip.104.129.192.49) has left ##c++
+2015-04-01 19:31:42	▬▬▶	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has joined ##c++
+2015-04-01 19:31:43	▬▬▶	faioewjfiaowej (6881c031@gateway/web/freenode/ip.104.129.192.49) has joined ##c++
+2015-04-01 19:31:44	--	irc: disconnected from server
+2015-04-01 19:32:09	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c++
+2015-04-01 19:32:09	--	Topic for ##c++ is "##C++ is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2014 (a.k.a. C++14) || http://www.parashift.com/c++-faq-lite/ || pastes: http://ideone.com/"
+2015-04-01 19:32:09	--	Topic set by Adrinael (~adrinael@barrel.rolli.org) on Wed, 20 Aug 2014 06:01:38
+2015-04-01 19:32:10	--	Channel ##c++: 845 nicks (0 ops, 0 voices, 845 normals)
+2015-04-01 19:32:10	--	PvNotice(ChanServ): a topical channel for discussing standard C++ specifications and code. || pastes: http://ideone.com || reference: http://cppreference.com || current standard: ISO/IEC 14882:2014 (C++14) || http://www.parashift.com/c++-faq-lite/
+2015-04-01 19:32:19	faioewjfiaowej	the term "blocking" from what I hear just means "slow". is this accurate?
+2015-04-01 19:32:37	--	Channel created on Fri, 14 Sep 2001 23:15:35
+2015-04-01 19:33:03	Oxyd	Because it's not syntactically valid.
+2015-04-01 19:33:25	Oxyd	Oh wait, it is.
+2015-04-01 19:33:32	◀▬▬	Anodl (~Anodl@p5B15E235.dip0.t-ipconnect.de) has quit (Quit: Leaving.)
+2015-04-01 19:34:01	◀▬▬	sorta (~Adium@unaffiliated/sorta) has quit (Quit: Leaving.)
+2015-04-01 19:34:03	Oxyd	{ for (std::string stockLine; std::getline(std::cin, stockLine);) }  // Oh wait, it isn't.
+2015-04-01 19:34:03	geordi	error: expected primary-expression before '}' token
+2015-04-01 19:34:22	faioewjfiaowej	compiles on c++11
+2015-04-01 19:34:23	◀▬▬	hubutm20 (~hubutm20@cablelink-86-127-176-144.rdstm.ro) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:34:24	Oxyd	{ for (std::string stockLine; std::getline(std::cin, stockLine);) ; }  // Oh wait, it is.
+2015-04-01 19:34:24	geordi	<no output>
+2015-04-01 19:34:48	Oxyd	Anyway
+2015-04-01 19:34:49	Oxyd	!doesnotwork
+2015-04-01 19:34:51	nolyc	Does not work isn't very helpful. What doesn't work? Do you have an error? You need to provide more detailed information. We are not telepathic, you know. Try saying !testcase.
+2015-04-01 19:34:51	▬▬▶	hubutm20 (~hubutm20@79.114.120.200) has joined ##c++
+2015-04-01 19:35:56	faioewjfiaowej	basically i'm having another thread, in fact a completely different process send input to this c++11 process (which is just this thread that getlines what the other process is sending it)
+2015-04-01 19:36:04	faioewjfiaowej	all i get is "something somewhere went wrong"
+2015-04-01 19:36:12	faioewjfiaowej	as is the case with most c++ errors
+2015-04-01 19:36:31	faioewjfiaowej	i tried the dr debug tool but there's no stack trace.
+2015-04-01 19:36:36	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:36:48	Erlkoenig	also "blocking" does not mean "slow"; it means a function (typically an I/O function) waits for an operation to complete and returns after that. This can slow down your program because it can't do any other calculations in that time (which is essentially wasted for waiting), unless you use multithreading.
+2015-04-01 19:37:40	--	andreazevedo_ is now known as andreazevedo
+2015-04-01 19:37:50	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined ##c++
+2015-04-01 19:37:52	faioewjfiaowej	i think there's a problem with the get line function being used in a thread, especially when the input is very very large volume
+2015-04-01 19:38:44	Erlkoenig	line based I/O is probably not a good idea with very very large volumes...
+2015-04-01 19:38:46	faioewjfiaowej	we are talking about a live stream of news.  can a thread that does the infinite std::getline method above even handle something like that?
+2015-04-01 19:39:06	Erlkoenig	depends on what you do with the data
+2015-04-01 19:39:12	▬▬▶	rnickb (~rnickb@ip-64-134-65-241.public.wayport.net) has joined ##c++
+2015-04-01 19:39:19	◀▬▬	aslant (~aslant@5751a00f.skybroadband.com) has quit (Remote host closed the connection)
+2015-04-01 19:39:23	faioewjfiaowej	i'm doing some very heavy parse tree processing on sentences within the content
+2015-04-01 19:39:38	Oxyd	Your program literally says “something somewhere went wrong”?
+2015-04-01 19:39:59	faioewjfiaowej	Oxyd, paraphrasing the windows error which says "blah blah has stopped working"
+2015-04-01 19:40:24	Erlkoenig	ah, so you got a memory access problem. That's more than "something went wrong".
+2015-04-01 19:40:39	Oxyd	And how, exactly, did you determine that line to be the cause?
+2015-04-01 19:41:03	Erlkoenig	what about using a proper debugger such as GDB
+2015-04-01 19:41:07	faioewjfiaowej	i'm still attempting to diagnose it, but i think that the volume of data is screwing it up
+2015-04-01 19:41:28	Erlkoenig	just reading lots of data is not a problem, but if you store it in RAM it might be
+2015-04-01 19:41:39	Erlkoenig	also, reading one line at a time is probably slow.
+2015-04-01 19:41:52	Erlkoenig	why don't you read blocks of, say, 8 MBytes at a time
+2015-04-01 19:42:14	faioewjfiaowej	so there's a possibility that due to the volume, this blocking get line isn't reading fast enough and my RAM is filling up faster than can be processed by it?
+2015-04-01 19:42:19	◀▬▬	c64zottel1 (~orko@host-37-191-199-1.lynet.no) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:42:30	faioewjfiaowej	then i run out of memory?
+2015-04-01 19:42:36	▬▬▶	halcyone3 (~halcyone3@129.78.56.195) has joined ##c++
+2015-04-01 19:42:58	▬▬▶	gnidmoo (~gnidmoo@ip-140.net-82-216-139.issy4.rev.numericable.fr) has joined ##c++
+2015-04-01 19:43:11	Oxyd	Try catching std::bad_alloc if you think you're running out of memory.
+2015-04-01 19:43:15	Erlkoenig	no
+2015-04-01 19:43:27	Erlkoenig	unless you have a very very slow CPU and a very very fast network...
+2015-04-01 19:43:42	faioewjfiaowej	i find that when i put a thread sleep in the program that dumps data onto this particular c++ getline program, the error doesn't happen
+2015-04-01 19:43:58	Erlkoenig	but if there is like 100 GBytes of data without a newline, the RAM will fill up until the application crashes
+2015-04-01 19:44:13	▬▬▶	_Atom_ (~jawat@nat-128-62-56-97.public.utexas.edu) has joined ##c++
+2015-04-01 19:44:45	Erlkoenig	if you have a newline e.g. each 1 KB, only 1 KB of RAM will ever be used by this loop. (roughly)
+2015-04-01 19:44:50	faioewjfiaowej	hrm. that may be possible. dr minnow has now reported a access violation FFFFFFFFF or something
+2015-04-01 19:44:57	faioewjfiaowej	mingw. stupid mac autocorrect
+2015-04-01 19:45:00	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined ##c++
+2015-04-01 19:45:05	▬▬▶	Amanas (~Amanas@2601:6:3500:391:a93c:ce84:531d:28e9) has joined ##c++
+2015-04-01 19:46:19	▬▬▶	sugaku (~ralphf@171.66.209.5) has joined ##c++
+2015-04-01 19:46:37	◀▬▬	halcyone3 (~halcyone3@129.78.56.195) has quit (Client Quit)
+2015-04-01 19:46:41	faioewjfiaowej	ok. that gives me an idea of where it could be failing.  i'm probably missing a "\n" or whatever enplane character that is in the program that's dumping data on the c++ program
+2015-04-01 19:46:45	Erlkoenig	reading big amounts of data through formatted input, such as line-based input, is almost certainly wrong.
+2015-04-01 19:46:47	faioewjfiaowej	endline*
+2015-04-01 19:47:12	▬▬▶	homovitruvius (~user@pool-72-65-232-98.pitbpa.fios.verizon.net) has joined ##c++
+2015-04-01 19:47:26	faioewjfiaowej	Erlkoenig: i read a post about using a while(true), peek, and thread sleep
+2015-04-01 19:47:58	faioewjfiaowej	i'm not sure how to implement it this way. just trying to find out why there are errors. getline if it's blocking, should at least not error if the volume of data is reduced
+2015-04-01 19:48:01	▬▬▶	ftsf (~ftsf@2407:7800:400:107f:3db5:daca:8457:e66a) has joined ##c++
+2015-04-01 19:48:34	Erlkoenig	peek only reads one character... if you want to achieve meaningful I/O performance, you need to read in big blocks of data at a time
+2015-04-01 19:49:07	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:49:13	faioewjfiaowej	this is true, reading blocks at a time, c++ may not even be the right tool if i really want sub millisecond I/O update
+2015-04-01 19:49:45	faioewjfiaowej	if you're reading the news for stock trading, you can't wait till you have enough data. you have to process it as it comes.
+2015-04-01 19:49:57	Erlkoenig	why not:   const size_t size = 1024*1024*128; unique_ptr<char[]> data (new char [size]);  while (true) {   std::cin.read (data.get (), size);   /* process data */ }
+2015-04-01 19:50:10	◀▬▬	smccully (~smccully@c-66-176-130-2.hsd1.fl.comcast.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:50:18	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined ##c++
+2015-04-01 19:50:32	Oxyd	You can't wait for enough data, yet you can wait for a newline that's not even guaranteed to be there?
+2015-04-01 19:50:41	Erlkoenig	uhm
+2015-04-01 19:50:48	▬▬▶	IBiteBack (~|UF|IBite@75.134.228.229) has joined ##c++
+2015-04-01 19:51:00	Erlkoenig	if you read one byte at a time, you will never get it fas tenough
+2015-04-01 19:51:26	Erlkoenig	you can, however, tell the platform api to "read up to 100MB" or something; if only 1 byte is available, it will be read; if more is available, it can be read all at once
+2015-04-01 19:51:34	◀▬▬	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has quit (Quit: Toute Chose Sur Terre a Une Fin)
+2015-04-01 19:51:46	◀▬▬	tmager (~Thunderbi@resnet-130-64-128-213.medford.tufts.edu) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:51:51	Erlkoenig	but forcing the API to squeeze lots of data one byte at a time to your application is very, very slow.
+2015-04-01 19:52:32	◀▬▬	josh (~josh@63.230.14.78) has quit (Ping timeout: 248 seconds)
+2015-04-01 19:52:34	◀▬▬	DJDan_ (~DJDan@115-64-177-188.static.tpgi.com.au) has left ##c++
+2015-04-01 19:53:09	▬▬▶	DJDan (~DJDan@115-64-177-188.static.tpgi.com.au) has joined ##c++
+2015-04-01 19:53:09	Erlkoenig	maybe use   read(2) instead of std::cin, and also set O_NONBLOCK
+2015-04-01 19:53:54	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Remote host closed the connection)
+2015-04-01 19:54:00	DJDan	how can I emulate a USB audio device VID/PID on OSX?
+2015-04-01 19:54:06	Erlkoenig	and generally, what operating system are you using? on ordinary desktop OS'es like windows or linux you can't achieve sub-millisecond reaction times...
+2015-04-01 19:54:28	Erlkoenig	DJDan: what does this have to do with Standard C++?
+2015-04-01 19:54:40	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined ##c++
+2015-04-01 19:54:45	faioewjfiaowej	true. people have custom hardware to do this kind of low level stuff
+2015-04-01 19:55:02	Erlkoenig	hardware isn't the key problem here...
+2015-04-01 19:55:03	DJDan	Erlkoenig:  well it can be done in C++.. anyway do u know how?
+2015-04-01 19:55:22	◀▬▬	fizzbooze (~bp@208.113.47.100) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:55:23	Erlkoenig	It can almost certainly NOT be done in Standard C++.
+2015-04-01 19:55:38	DJDan	Erlkoenig:  well what does it need and do u know how to do it?
+2015-04-01 19:55:39	Erlkoenig	Standard C++ knows nothing about OS X, Audio Devices, or USB
+2015-04-01 19:55:56	◀▬▬	Palsson (~palsson@c-c5fae253.024-21-6e6b702.cust.bredbandsbolaget.se) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:56:00	Erlkoenig	write a kernel driver that emulates the audio device. Probably in C.
+2015-04-01 19:56:11	DJDan	Erlkoenig:  yeah and how do i do that?
+2015-04-01 19:56:18	Erlkoenig	read how to write kernel drivers
+2015-04-01 19:56:37	DJDan	so u dont know?
+2015-04-01 19:56:40	◀▬▬	c64zottel (~merlin@host-37-191-199-1.lynet.no) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:56:44	Erlkoenig	no.
+2015-04-01 19:57:09	Erlkoenig	and i doubt it can be done in C++, you probably need C.
+2015-04-01 19:57:40	◀▬▬	hexagoxel (~hexagoxel@x4d067213.dyn.telefonica.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:58:03	faioewjfiaowej	goldman sachs pays people 2 million dollars a year to create a piece of hardware that connects directly to a NIC and it takes the data directly from your network and runs some fourier analysis on it without going through the traditional von neumann architecture
+2015-04-01 19:58:17	faioewjfiaowej	because its 200 nanoseconds faster.
+2015-04-01 19:58:54	◀▬▬	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Read error: Connection reset by peer)
+2015-04-01 19:59:14	▬▬▶	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined ##c++
+2015-04-01 19:59:15	▬▬▶	hexagoxel (~hexagoxel@x4d0663c2.dyn.telefonica.de) has joined ##c++
+2015-04-01 19:59:29	▬▬▶	fizzbooze (~bp@208.113.47.100) has joined ##c++
+2015-04-01 19:59:59	kalven	that's the price you pay for sub-zero latency
+2015-04-01 20:00:02	Erlkoenig	sounds like a job for FPGA's
+2015-04-01 20:00:17	◀▬▬	Betal (~Beta@unaffiliated/betal) has quit (Remote host closed the connection)
+2015-04-01 20:00:22	▬▬▶	davidstone (~david@71-33-195-48.hlrn.qwest.net) has joined ##c++
+2015-04-01 20:00:27	Erlkoenig	nothing new in electrical engineering and signal processing... :P
+2015-04-01 20:01:10	--	dual-pyon is now known as n-pyon-complete
+2015-04-01 20:01:55	ac_slater_	faioewjfiaowej: I got offered a gig at a high-freq trading firm in NYC ... no engineer there made more $120k/yr doing what you described
+2015-04-01 20:02:12	Erlkoenig	poor guys.
+2015-04-01 20:02:22	faioewjfiaowej	of course. this is how it works.
+2015-04-01 20:02:33	ac_slater_	faioewjfiaowej: it's also a little crazier than in->fft->out ... these things are in a megacluster
+2015-04-01 20:02:45	◀▬▬	_X_C_V_B_ (~XCVB@dur-dhcp-1-240.dsl.airstreamcomm.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:02:56	ac_slater_	they all wore suits too .. :(
+2015-04-01 20:03:28	faioewjfiaowej	i'm sure it's a lot more complex than i imagine
+2015-04-01 20:03:43	◀▬▬	wordsToLiveBy (~wordsToLi@cpe-104-230-102-177.neo.res.rr.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 20:04:08	faioewjfiaowej	http://en.wikipedia.org/wiki/Sergey_Aleynikov they imprisoned this guy for seeking a job closer to 1 million dollars / year
+2015-04-01 20:04:20	Erlkoenig	hopefully they code in COBOL like every proper finance company
+2015-04-01 20:04:23	faioewjfiaowej	of course they are going to treat the engineers like shit with 120k/year jobs to make billions
+2015-04-01 20:04:32	faioewjfiaowej	they are afraid of them
+2015-04-01 20:04:34	▬▬▶	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has joined ##c++
+2015-04-01 20:05:22	◀▬▬	CEnnis91 (uid3543@gateway/web/irccloud.com/x-llneqjvqbioafutk) has quit (Quit: Connection closed for inactivity)
+2015-04-01 20:06:00	◀▬▬	_war10ck_ (~sayantan@106.51.136.18) has quit (Quit: leaving)
+2015-04-01 20:06:08	ac_slater_	I'm sure there are some engineering positions that offer 500k+ though. It's a cool field, it just seems stressful
+2015-04-01 20:07:01	faioewjfiaowej	fedex pays 1 million dollars per year to their research people to help implement non-solutions of the travelling salesman problem just slightly more efficiently
+2015-04-01 20:07:35	Erlkoenig	now which field is more evil, defence or finance.....
+2015-04-01 20:09:04	◀▬▬	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 20:09:07	faioewjfiaowej	defense is polynomial time reducible to finance and vice versa.
+2015-04-01 20:09:15	◀▬▬	Superlokkus (~Superlokk@141.30.223.183) has quit (Quit: Bye!)
+2015-04-01 20:10:41	◀▬▬	mot (~mot@pool-108-28-84-183.washdc.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 20:10:55	Erlkoenig	heh.
+2015-04-01 20:14:01	◀▬▬	woga (~woga@plb95-1-82-229-89-38.fbx.proxad.net) has quit (Remote host closed the connection)
+2015-04-01 20:15:28	◀▬▬	thejohnfreeman (~Thunderbi@pool-71-183-121-243.nycmny.fios.verizon.net) has quit (Ping timeout: 248 seconds)
+2015-04-01 20:16:05	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 246 seconds)
+2015-04-01 20:16:23	ac_slater_	I work in defense... I do really cool non-military things
+2015-04-01 20:17:09	▬▬▶	arescorpio (~arescorpi@51-255-114-200.fibertel.com.ar) has joined ##c++
+2015-04-01 20:17:28	ac_slater_	half of the contracts I work on are just the next step above an experiment. It's like "lets see your multimillion dollar project work once, then please place it nicely in the closet"
+2015-04-01 20:17:42	◀▬▬	comand (~comand@2620:79:0:140:1ec1:deff:fe33:6bfd) has quit (Quit: Bye)
+2015-04-01 20:18:02	ac_slater_	I'm sure other people that work at the top of the contract chain have weird jobs though
+2015-04-01 20:18:40	◀▬▬	ac_slater_ (~weechat@dhcp89-69-173.bbn.com) has left ##c++ ("WeeChat 1.0.1")
+2015-04-01 20:19:52	▬▬▶	Oleg_ (~mine@pool-71-183-178-58.nycmny.east.verizon.net) has joined ##c++
+2015-04-01 20:20:37	--	irc: disconnected from server

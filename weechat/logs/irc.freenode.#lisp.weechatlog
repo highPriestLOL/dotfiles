@@ -1,0 +1,74 @@
+2015-03-31 18:09:18	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #lisp
+2015-03-31 18:09:18	--	Topic for #lisp is "Common Lisp, the #1=(programmable . #1#) programming language <http://cliki.net/> <http://paste.lisp.org/new> logs:<http://ccl.clozure.com/irc-logs/lisp/>|contact op if muted|Drakma 1.3.14, Hunchentoot 1.2.31, SBCL 1.2.9"
+2015-03-31 18:09:18	--	Topic set by Bicyclidine (~Glossina@wl-nat108.it.wsu.edu) on Wed, 25 Mar 2015 16:34:27
+2015-03-31 18:09:18	--	Channel #lisp: 403 nicks (0 ops, 0 voices, 403 normals)
+2015-03-31 18:09:25	--	Channel created on Sun, 03 Aug 2003 17:30:32
+2015-03-31 18:11:53	--	irc: disconnected from server
+2015-03-31 18:12:11	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #lisp
+2015-03-31 18:12:11	--	Topic for #lisp is "Common Lisp, the #1=(programmable . #1#) programming language <http://cliki.net/> <http://paste.lisp.org/new> logs:<http://ccl.clozure.com/irc-logs/lisp/>|contact op if muted|Drakma 1.3.14, Hunchentoot 1.2.31, SBCL 1.2.9"
+2015-03-31 18:12:11	--	Topic set by Bicyclidine (~Glossina@wl-nat108.it.wsu.edu) on Wed, 25 Mar 2015 16:34:27
+2015-03-31 18:12:11	--	Channel #lisp: 403 nicks (0 ops, 0 voices, 403 normals)
+2015-03-31 18:12:17	--	Channel created on Sun, 03 Aug 2003 17:30:32
+2015-03-31 18:12:24	▬▬▶	MoALTz__ (~no@78.11.179.104) has joined #lisp
+2015-03-31 18:13:27	drmeister	Clasp+Cleavir now takes 13 seconds to startup - there are about 4600 top-level forms that are evaluated during startup.
+2015-03-31 18:13:50	◀▬▬	electrojustin (~electroju@96-36-102-246.static.hckr.nc.charter.com) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:14:07	drmeister	The most expensive top-level form is when I install beach's "stealth-mixins"  - that takes 1.66 seconds.
+2015-03-31 18:14:13	◀▬▬	MoALTz_ (~no@78.11.179.104) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:15:04	◀▬▬	sunwukong (~sunwukong@catv-89-133-47-216.catv.broadband.hu) has quit (Ping timeout: 244 seconds)
+2015-03-31 18:15:08	◀▬▬	zacts (~user@freebsd/geek/zacts) has quit (Quit: ERC Version 5.3 (IRC client for Emacs))
+2015-03-31 18:16:37	▬▬▶	innertracks (~Thunderbi@c-98-203-134-27.hsd1.wa.comcast.net) has joined #lisp
+2015-03-31 18:23:33	◀▬▬	stepnem (~stepnem@77.78.117.8) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:26:42	◀▬▬	tharugrim (~tharugrim@unaffiliated/tharugrim) has quit (Quit: WeeChat 1.2-dev)
+2015-03-31 18:29:05	▬▬▶	quazimodo (~quazimodo@eth6553.nsw.adsl.internode.on.net) has joined #lisp
+2015-03-31 18:29:26	◀▬▬	ASau (~user@46.115.142.53) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:36:06	◀▬▬	Slothel (~css106420@216.51.77.3) has quit (Read error: Connection reset by peer)
+2015-03-31 18:37:32	▬▬▶	przl (~przlrkt@p4FC31A72.dip0.t-ipconnect.de) has joined #lisp
+2015-03-31 18:42:57	◀▬▬	przl (~przlrkt@p4FC31A72.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:44:15	--	irc: disconnected from server
+2015-03-31 23:15:58	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #lisp
+2015-03-31 23:15:58	--	Topic for #lisp is "Common Lisp, the #1=(programmable . #1#) programming language <http://cliki.net/> <http://paste.lisp.org/new> logs:<http://ccl.clozure.com/irc-logs/lisp/>|contact op if muted|Drakma 1.3.14, Hunchentoot 1.2.31, SBCL 1.2.9"
+2015-03-31 23:15:58	--	Topic set by Bicyclidine (~Glossina@wl-nat108.it.wsu.edu) on Wed, 25 Mar 2015 16:34:27
+2015-03-31 23:15:58	--	Channel #lisp: 395 nicks (0 ops, 0 voices, 395 normals)
+2015-03-31 23:16:04	--	Channel created on Sun, 03 Aug 2003 17:30:32
+2015-03-31 23:16:13	|3b|	hmm, maybe not :(
+2015-03-31 23:16:32	emaczen	So, I've expanded the macros all the way with C-c C-m and pasted the expansion into my code and everything works. I'm confused as to why it does not work when I don't expand it.
+2015-03-31 23:16:35	◀▬▬	nyef (~nyef@pool-108-26-194-226.bstnma.fios.verizon.net) has quit (Quit: G'night all)
+2015-03-31 23:17:06	|3b|	possibly doesn't get expanded in the order you tried it manually?
+2015-03-31 23:17:15	drmeister	It's defective as well - interesting.   I modified ECL's SHIFTF based on reading SBCL's SHIFTF - I wonder if my hybrid has the problem.
+2015-03-31 23:17:24	drmeister	beach: Do you have a test case?
+2015-03-31 23:17:42	beach	drmeister: Hold on...
+2015-03-31 23:17:51	drmeister	You should check ROTATEF as well - the ECL version will suffer the same problem as SHIFTF
+2015-03-31 23:17:56	|3b|	ah, i guess M-x slime-macroexpand-1-inplace or something like that
+2015-03-31 23:18:01	◀▬▬	sdothum (~sdothum@dsl-173-206-51-12.tor.primus.ca) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2015-03-31 23:18:29	|3b|	emaczen: maybe try starting with M-- C-c C-m
+2015-03-31 23:18:43	emaczen	|3b|: What is M-- ?
+2015-03-31 23:18:46	|3b|	which i think will expand outer macros fully if the expansion is a macro
+2015-03-31 23:18:48	beach	drmeister: http://paste.lisp.org/+353V
+2015-03-31 23:18:52	◀▬▬	scymtym_ (~user@ip-95-223-10-175.hsi16.unitymediagroup.de) has quit (Ping timeout: 255 seconds)
+2015-03-31 23:19:03	--	irc: disconnected from server
+2015-03-31 23:19:21	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #lisp
+2015-03-31 23:19:21	--	Topic for #lisp is "Common Lisp, the #1=(programmable . #1#) programming language <http://cliki.net/> <http://paste.lisp.org/new> logs:<http://ccl.clozure.com/irc-logs/lisp/>|contact op if muted|Drakma 1.3.14, Hunchentoot 1.2.31, SBCL 1.2.9"
+2015-03-31 23:19:21	--	Topic set by Bicyclidine (~Glossina@wl-nat108.it.wsu.edu) on Wed, 25 Mar 2015 16:34:27
+2015-03-31 23:19:21	--	Channel #lisp: 392 nicks (0 ops, 0 voices, 392 normals)
+2015-03-31 23:19:27	--	Channel created on Sun, 03 Aug 2003 17:30:32
+2015-03-31 23:19:42	beach	drmeister: Don't steal ROTATEF yet, though.  Not sufficiently tested yet.
+2015-03-31 23:19:45	|3b|	emaczen: C-c C-m behaves differently with a prefix argument, M-- gives it one
+2015-03-31 23:20:03	 *	|3b| isn't sure if it is a good one, no idea if i have a reason for using that
+2015-03-31 23:20:24	drmeister	Thank you.
+2015-03-31 23:21:30	emaczen	|3b|: I don't know how to enter M-- Is that just the meta key followed by typing the minus sign?
+2015-03-31 23:21:37	|3b|	right
+2015-03-31 23:21:48	|3b|	M-1 should work too, or C-u
+2015-03-31 23:22:18	emaczen	|3b|: Ok I can see that difference now.
+2015-03-31 23:22:26	emaczen	What happens is that it does not expand the nested macro
+2015-03-31 23:23:01	emaczen	What I have is (macro1 (macro2 ... a bunch of other stuff (macro3)))
+2015-03-31 23:23:07	emaczen	macro3 is not getting expanded
+2015-03-31 23:23:15	--	irc: disconnected from server
+2015-03-31 23:23:34	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #lisp
+2015-03-31 23:23:34	--	Topic for #lisp is "Common Lisp, the #1=(programmable . #1#) programming language <http://cliki.net/> <http://paste.lisp.org/new> logs:<http://ccl.clozure.com/irc-logs/lisp/>|contact op if muted|Drakma 1.3.14, Hunchentoot 1.2.31, SBCL 1.2.9"
+2015-03-31 23:23:34	--	Topic set by Bicyclidine (~Glossina@wl-nat108.it.wsu.edu) on Wed, 25 Mar 2015 16:34:27
+2015-03-31 23:23:34	--	Channel #lisp: 392 nicks (0 ops, 0 voices, 392 normals)
+2015-03-31 23:23:40	--	Channel created on Sun, 03 Aug 2003 17:30:32
+2015-03-31 23:24:08	|3b|	addin M-- just expand the outer call until it isn't a macro form, it doesn't expand nested calls
+2015-03-31 23:24:52	|3b|	but that's what CL would do, so might as well do so as well if doing it one layer at a time doesn't expose the problem
+2015-03-31 23:25:24	|3b|	so M-- C-c C-m on outer call, then on macro2 in expansion buffer, then make sure macro3 is somewhere it would be evaluated correctly
+2015-03-31 23:25:42	--	irc: disconnected from server

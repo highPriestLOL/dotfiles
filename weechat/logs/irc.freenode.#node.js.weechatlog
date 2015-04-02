@@ -1,0 +1,1516 @@
+2015-03-31 18:09:19	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-03-31 18:09:19	--	Topic for #Node.js is "Current Stable v0.12.1, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-03-31 18:09:19	--	Topic set by Aria (~aredridel@polis.nbtsc.org) on Sat, 28 Mar 2015 17:29:29
+2015-03-31 18:09:19	--	Channel #Node.js: 1413 nicks (16 ops, 0 voices, 1397 normals)
+2015-03-31 18:09:21	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-03-31 18:09:21	--	URL for #node.js: http://nodejs.org/
+2015-03-31 18:09:26	▬▬▶	senayar (~senayar@unaffiliated/senayar) has joined #Node.js
+2015-03-31 18:09:39	▬▬▶	roddy_ (~roddy_@192.0.53.31) has joined #Node.js
+2015-03-31 18:09:41	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-03-31 18:09:56	◀▬▬	tgriesser (~tgriesser@2601:b:ca01:ac64:e179:6930:e0f1:7dfb) has quit (Remote host closed the connection)
+2015-03-31 18:09:57	▬▬▶	octetcloud (~Sam_Rober@24.86.40.208) has joined #Node.js
+2015-03-31 18:10:19	--	Danielss89 is now known as Danielss89_
+2015-03-31 18:10:25	Sawbones	Could everyone mention an npm module they feel they could never live without?
+2015-03-31 18:10:37	◀▬▬	jmckind (~jmckind@50.56.229.5) has quit
+2015-03-31 18:11:02	◀▬▬	karlmikko (~karlmikko@210.56.91.29) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:11:23	nathan7	Sawbones: https://www.npmjs.com/package/npm
+2015-03-31 18:11:24	nathan7	Sawbones: q=
+2015-03-31 18:11:41	▬▬▶	DaveDH2 (~davedh2@199.87.82.66) has joined #Node.js
+2015-03-31 18:11:47	▬▬▶	mcqueeno_ (~mcqueenor@161.170.193.99) has joined #Node.js
+2015-03-31 18:11:54	--	irc: disconnected from server
+2015-03-31 18:12:12	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-03-31 18:12:12	--	Topic for #Node.js is "Current Stable v0.12.1, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-03-31 18:12:12	--	Topic set by Aria (~aredridel@polis.nbtsc.org) on Sat, 28 Mar 2015 17:29:29
+2015-03-31 18:12:12	--	Channel #Node.js: 1413 nicks (16 ops, 0 voices, 1397 normals)
+2015-03-31 18:12:13	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-03-31 18:12:14	--	URL for #node.js: http://nodejs.org/
+2015-03-31 18:12:23	◀▬▬	mcqueenorama (~mcqueenor@161.170.193.99) has quit (Read error: Connection reset by peer)
+2015-03-31 18:12:33	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-03-31 18:12:45	◀▬▬	MI6 (~tjfontain@unaffiliated/tjfontaine) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:13:02	◀▬▬	crueber (~crueber@c-204-169-15-205.wifi.ties.k12.mn.us) has quit (Quit: Leaving.)
+2015-03-31 18:13:21	▬▬▶	goabonga (~goabonga@bre87-1-88-172-22-13.fbx.proxad.net) has joined #Node.js
+2015-03-31 18:13:34	◀▬▬	mberk (~mberk@216.3.192.100) has quit (Read error: Connection reset by peer)
+2015-03-31 18:13:54	▬▬▶	tgriesser (~tgriesser@c-73-165-248-235.hsd1.pa.comcast.net) has joined #Node.js
+2015-03-31 18:14:11	◀▬▬	roddy_ (~roddy_@192.0.53.31) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:14:23	◀▬▬	martinbm1dsen (~martinbma@188.226.252.120) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:14:35	◀▬▬	IAmNotDorian (~OrphanedG@unaffiliated/orphanedgland) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:15:01	◀▬▬	cocoadaemon (~foo@2a01:e35:8a99:e90:48f0:42b2:7194:96b8) has quit (Quit: Quitte)
+2015-03-31 18:15:01	▬▬▶	IAmNotDorian (~OrphanedG@229.213.3.123.dynamic.dsl.dv.iprimus.net.au) has joined #Node.js
+2015-03-31 18:15:01	◀▬▬	IAmNotDorian (~OrphanedG@229.213.3.123.dynamic.dsl.dv.iprimus.net.au) has quit (Changing host)
+2015-03-31 18:15:01	▬▬▶	IAmNotDorian (~OrphanedG@unaffiliated/orphanedgland) has joined #Node.js
+2015-03-31 18:15:10	◀▬▬	fredrikslattman (54dbae97@gateway/web/cgi-irc/kiwiirc.com/ip.84.219.174.151) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2015-03-31 18:15:59	◀▬▬	zackiv31 (~zackiv31@fw.nyc2.appnexus.com) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:16:14	◀▬▬	nettoweb (~textual@187.112.252.141) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-03-31 18:16:24	◀▬▬	Morhaus (~Morhaus@212-198-72-127.rev.numericable.fr) has quit (Remote host closed the connection)
+2015-03-31 18:17:01	◀▬▬	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Remote host closed the connection)
+2015-03-31 18:17:10	◀▬▬	tcurdt (~tcurdt@p5795BA7B.dip0.t-ipconnect.de) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-03-31 18:17:17	▬▬▶	mberk (~mberk@216.3.192.100) has joined #Node.js
+2015-03-31 18:17:21	▬▬▶	danecando (~danecando@c-71-57-164-138.hsd1.fl.comcast.net) has joined #Node.js
+2015-03-31 18:18:12	orionstein	Sawbones, depends, different tools are useful for different situations, i feel tools should be determined after requirements
+2015-03-31 18:18:13	◀▬▬	reliability (~dsd@77-57-111-246.dclient.hispeed.ch) has quit (Quit: ...)
+2015-03-31 18:18:39	◀▬▬	TheAceOfHearts (~TheAceOfH@50.247.73.165) has quit (Quit: Leaving.)
+2015-03-31 18:19:00	◀▬▬	Kamuela (~Kamuela@host86-163-52-54.range86-163.btcentralplus.com) has quit (Quit: Leaving)
+2015-03-31 18:19:00	▬▬▶	mcqueenorama (~mcqueenor@161.170.193.104) has joined #Node.js
+2015-03-31 18:19:05	◀▬▬	skyhd0t1 (~Adium@c-76-121-66-56.hsd1.wa.comcast.net) has quit (Quit: Leaving.)
+2015-03-31 18:19:17	◀▬▬	mcqueeno_ (~mcqueenor@161.170.193.99) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:19:33	ArtskydJ	sawbones: browserify
+2015-03-31 18:19:57	orionstein	how about nop
+2015-03-31 18:20:01	▬▬▶	CodeBot3000 (~CodeBot30@69-165-215-248.cable.teksavvy.com) has joined #Node.js
+2015-03-31 18:20:02	◀▬▬	plato (~orbital@unaffiliated/therealplato) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:20:11	◀▬▬	dling (~na@c213-89-114-68.bredband.comhem.se) has quit
+2015-03-31 18:20:21	orionstein	you can fit it in anywhere!
+2015-03-31 18:20:25	◀▬▬	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-03-31 18:20:27	◀▬▬	ircretary (~ircretary@165.225.132.207) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:21:10	▬▬▶	morenoh149 (~morenoh14@208-90-214-199.PUBLIC.monkeybrains.net) has joined #Node.js
+2015-03-31 18:21:17	▬▬▶	olekenneth (~olekennet@185.56.185.82) has joined #Node.js
+2015-03-31 18:21:23	sterns	(still) looking for testers for a tor instant messaging app: https://github.com/mattcollier/noxious  join us at #noxious if assistance is needed.
+2015-03-31 18:21:52	◀▬▬	avens (~avens@198.0.159.99) has quit (Remote host closed the connection)
+2015-03-31 18:22:14	◀▬▬	DaveDH2 (~davedh2@199.87.82.66) has quit (Remote host closed the connection)
+2015-03-31 18:22:14	◀▬▬	PeterMetz (~petermetz@cpc5-mort6-2-0-cust640.croy.cable.virginm.net) has quit (Remote host closed the connection)
+2015-03-31 18:22:36	◀▬▬	nya (~nya@p7902d147.tokynt01.ap.so-net.ne.jp) has quit (Read error: Connection reset by peer)
+2015-03-31 18:22:56	kevireilly	lols mscdex
+2015-03-31 18:22:58	▬▬▶	nya (~nya@p7902d147.tokynt01.ap.so-net.ne.jp) has joined #Node.js
+2015-03-31 18:23:35	c0fe	everyone was kung fu fighting
+2015-03-31 18:23:43	◀▬▬	winteregel (~winterege@91.181.136.79) has quit (Quit: (null))
+2015-03-31 18:24:03	@ljharb	Sawbones: npmjs.com/tape
+2015-03-31 18:24:03	◀▬▬	Aswebb_ (~Aswebb_@mtl93-1-82-67-180-2.fbx.proxad.net) has quit
+2015-03-31 18:24:04	c0fe	sterns should change that to obnoxious
+2015-03-31 18:24:06	▬▬▶	MI6 (~tjfontain@unaffiliated/tjfontaine) has joined #Node.js
+2015-03-31 18:24:06	--	Mode #Node.js [+o MI6] by ChanServ
+2015-03-31 18:24:22	kevireilly	d4rklit3: might be able to by using the "Node interpreter" field as forever instead of node. Alternatively may be able to make a wrapper, but at some point you might be debugging forever and not the application itself (assuming you'd like to maintain breakpoint support and what not)
+2015-03-31 18:24:23	c0fe	im curious to know if anyone is familiar with FireFoxOS?
+2015-03-31 18:24:56	◀▬▬	occultus (~occultus@71-32-62-133.hlna.qwest.net) has quit (Quit: Leaving)
+2015-03-31 18:25:22	▬▬▶	speeddragon (~speeddrag@193.137.28.200) has joined #Node.js
+2015-03-31 18:25:25	kevireilly	d4rklit3: may I ask what the underlying goal is? filesystem change based reloads?
+2015-03-31 18:25:28	▬▬▶	DaveDH2 (~davedh2@199.21.87.214) has joined #Node.js
+2015-03-31 18:26:08	▬▬▶	bulkan (~bulkan@118.82.33.130) has joined #Node.js
+2015-03-31 18:26:28	▬▬▶	rmg (~rmg@d75-157-43-202.bchsia.telus.net) has joined #Node.js
+2015-03-31 18:26:33	--	rigor789 is now known as rigor789|away
+2015-03-31 18:26:33	▬▬▶	kassens_ (~kassens@199.201.64.132) has joined #Node.js
+2015-03-31 18:27:29	◀▬▬	kassens (~kassens@199.201.64.129) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:27:41	◀▬▬	MacWinner (~Blah@152.179.131.162) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:27:44	◀▬▬	primitive (~primitive@209.117.251.114) has quit (Quit: primitive)
+2015-03-31 18:27:54	◀▬▬	eminor (~eminor@p548CED83.dip0.t-ipconnect.de) has quit (Quit: eminor)
+2015-03-31 18:28:01	◀▬▬	surrealanalysis (~kevin@c-68-37-97-219.hsd1.mi.comcast.net) has quit (Quit: surrealanalysis)
+2015-03-31 18:28:28	▬▬▶	phrozensilver (~phrozensi@174-126-2-175.cpe.cableone.net) has joined #Node.js
+2015-03-31 18:28:35	▬▬▶	primitive (~primitive@209.117.251.114) has joined #Node.js
+2015-03-31 18:28:35	◀▬▬	plutoniix (~plutoniix@node-11fb.pool-180-180.dynamic.totbb.net) has quit (Quit: จรลี จรลา)
+2015-03-31 18:28:36	▬▬▶	bradleymeck (~bradleyme@70.114.246.88) has joined #Node.js
+2015-03-31 18:28:54	▬▬▶	MacWinner (~Blah@152.179.131.162) has joined #Node.js
+2015-03-31 18:29:27	▬▬▶	leafybasil (~leafybasi@cpc73842-dals21-2-0-cust776.20-2.cable.virginm.net) has joined #Node.js
+2015-03-31 18:29:48	--	bikes is now known as mudkips
+2015-03-31 18:29:54	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:29:55	--	mudkips is now known as cars
+2015-03-31 18:29:58	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined #Node.js
+2015-03-31 18:29:58	--	cars is now known as bikes
+2015-03-31 18:30:05	◀▬▬	speeddragon (~speeddrag@193.137.28.200) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:30:07	▬▬▶	codeFiend (~anton@c-98-248-210-217.hsd1.ca.comcast.net) has joined #Node.js
+2015-03-31 18:30:17	▬▬▶	Draggor (~Draggor@216-80-103-113.mct-bsr1.chi-mct.il.static.cable.rcn.com) has joined #Node.js
+2015-03-31 18:30:30	codeFiend	hi all
+2015-03-31 18:30:34	◀▬▬	DerisiveLogic (~smuxi@rrcs-24-103-2-36.nyc.biz.rr.com) has quit (Ping timeout: 272 seconds)
+2015-03-31 18:31:21	◀▬▬	bradleymeck (~bradleyme@70.114.246.88) has quit (Read error: Connection reset by peer)
+2015-03-31 18:31:28	codeFiend	i am getting zombie process in pm2; it is one that was defined at one point, but I have deleted it from pm2 and it should no longer be running. however, when I log into the server a day later, there it is again. Is there anything obvious I should check that could be re-adding it to pm2 config?
+2015-03-31 18:31:48	codeFiend	i checked resurrect file, it is not in there
+2015-03-31 18:31:52	▬▬▶	plato (~orbital@unaffiliated/therealplato) has joined #Node.js
+2015-03-31 18:31:56	codeFiend	i don't see any entries in crontab for it
+2015-03-31 18:33:10	◀▬▬	mberk (~mberk@216.3.192.100) has quit (Read error: Connection reset by peer)
+2015-03-31 18:33:26	▬▬▶	FernandoBasso (~Fernando@177.82.172.148) has joined #Node.js
+2015-03-31 18:33:28	◀▬▬	mich-cook1 (~me@208.185.32.26) has quit (Quit: Leaving.)
+2015-03-31 18:33:41	▬▬▶	mich-cook (~me@208.185.32.26) has joined #Node.js
+2015-03-31 18:34:17	▬▬▶	jonr22 (~jonr22@2601:6:8000:eaef:1e65:9dff:fe9d:801d) has joined #Node.js
+2015-03-31 18:35:10	◀▬▬	regreddit (~regreddit@unaffiliated/regreddit) has quit (Quit: Leaving)
+2015-03-31 18:36:27	◀▬▬	drmabuse (~drmabuse@HSI-KBW-149-172-17-242.hsi13.kabel-badenwuerttemberg.de) has quit (Remote host closed the connection)
+2015-03-31 18:36:49	◀▬▬	nd__ (~nd@HSI-KBW-37-49-79-47.hsi14.kabel-badenwuerttemberg.de) has quit (Ping timeout: 246 seconds)
+2015-03-31 18:36:50	▬▬▶	mberk (~mberk@216.3.192.100) has joined #Node.js
+2015-03-31 18:36:59	▬▬▶	spentacular (~spentacul@2605:6000:1500:4057:5571:fabe:9c3c:e2b2) has joined #Node.js
+2015-03-31 18:37:10	◀▬▬	Carolin (~Carolin@HSI-KBW-46-223-1-103.hsi.kabel-badenwuerttemberg.de) has quit (Quit: Carolin)
+2015-03-31 18:37:41	▬▬▶	nodweber (~nodweber@5.178.135.214) has joined #Node.js
+2015-03-31 18:37:46	--	rigor789|away is now known as rigor789
+2015-03-31 18:37:53	◀▬▬	mich-cook (~me@208.185.32.26) has quit (Ping timeout: 248 seconds)
+2015-03-31 18:38:04	▬▬▶	Sawbones_ (~sawbon3s@173-168-90-56.res.bhn.net) has joined #Node.js
+2015-03-31 18:38:36	▬▬▶	zenith_ (~zenith@CPE90724008b05d-CMbc4dfb302500.cpe.net.cable.rogers.com) has joined #Node.js
+2015-03-31 18:38:57	▬▬▶	athan (~quassel@50.243.136.91) has joined #Node.js
+2015-03-31 18:39:00	◀▬▬	jonr22 (~jonr22@2601:6:8000:eaef:1e65:9dff:fe9d:801d) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:39:11	▬▬▶	rampart81 (~rampart81@2604:2000:6a2d:a900:4d4f:d1ae:9cdc:917b) has joined #Node.js
+2015-03-31 18:39:22	▬▬▶	Notte (~Portos-@82.84.170.149) has joined #Node.js
+2015-03-31 18:39:41	◀▬▬	plato (~orbital@unaffiliated/therealplato) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:40:04	▬▬▶	jonr22 (~jonr22@2601:6:8000:eaef:1e65:9dff:fe9d:801d) has joined #Node.js
+2015-03-31 18:40:25	◀▬▬	dumpsys (~quassel@dsl-espbrasgw1-54f9cd-61.dhcp.inet.fi) has quit (Remote host closed the connection)
+2015-03-31 18:40:59	◀▬▬	balazs (~balazs@157.166.175.129) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:41:02	--	Danielss89_ is now known as Danielss89
+2015-03-31 18:41:05	▬▬▶	mdolan (~mdolan@40.140.178.130) has joined #Node.js
+2015-03-31 18:41:21	◀▬▬	jonmorehouse (~jonmoreho@192.69.243.130) has quit (Ping timeout: 245 seconds)
+2015-03-31 18:41:28	◀▬▬	zenith_ (~zenith@CPE90724008b05d-CMbc4dfb302500.cpe.net.cable.rogers.com) has quit (Remote host closed the connection)
+2015-03-31 18:42:00	◀▬▬	bbankes_ (~bbankes@50-200-100-242-static.hfc.comcastbusiness.net) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:42:09	◀▬▬	Dude007 (~Dude007@95.172.160.58) has quit (Remote host closed the connection)
+2015-03-31 18:42:11	◀▬▬	bbankes (~bbankes@50-200-100-242-static.hfc.comcastbusiness.net) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:42:20	▬▬▶	TheAceOfHearts (~TheAceOfH@50.247.73.165) has joined #Node.js
+2015-03-31 18:42:36	◀▬▬	nodweber (~nodweber@5.178.135.214) has quit (Ping timeout: 272 seconds)
+2015-03-31 18:42:47	◀▬▬	erandros (~erandros@180-128-231-201.fibertel.com.ar) has quit (Remote host closed the connection)
+2015-03-31 18:43:00	▬▬▶	nickbytes (~nickbytes@cpe-74-71-143-154.nyc.res.rr.com) has joined #Node.js
+2015-03-31 18:43:38	▬▬▶	wildroman2 (~wildroman@109.186.185.235) has joined #Node.js
+2015-03-31 18:43:49	◀▬▬	kassens_ (~kassens@199.201.64.132) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-03-31 18:43:52	◀▬▬	ericf (ericf@nat/yahoo/x-nltbosmscqutvvkt) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-03-31 18:43:57	▬▬▶	prbc (~prbc@150.161.4.224) has joined #Node.js
+2015-03-31 18:44:09	▬▬▶	quakephil (~smuxi@cpe-72-229-52-52.nyc.res.rr.com) has joined #Node.js
+2015-03-31 18:44:15	--	irc: disconnected from server
+2015-03-31 23:15:59	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-03-31 23:15:59	--	Topic for #Node.js is "Current Stable v0.12.2, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-03-31 23:15:59	--	Topic set by ljharb (sid43720@oftn/member/ljharb) on Tue, 31 Mar 2015 21:29:08
+2015-03-31 23:15:59	--	Channel #Node.js: 1334 nicks (15 ops, 0 voices, 1319 normals)
+2015-03-31 23:16:00	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-03-31 23:16:00	--	URL for #node.js: http://nodejs.org/
+2015-03-31 23:16:03	▬▬▶	zzzhc (~Adium@111.192.253.156) has joined #Node.js
+2015-03-31 23:16:16	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-03-31 23:16:20	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-03-31 23:16:52	◀▬▬	momoterra (~momoterra@d75-157-144-146.bchsia.telus.net) has quit (Remote host closed the connection)
+2015-03-31 23:17:25	▬▬▶	momoterra (~momoterra@d75-157-144-146.bchsia.telus.net) has joined #Node.js
+2015-03-31 23:17:32	◀▬▬	DaveDH2 (~davedh2@199.21.87.214) has quit (Remote host closed the connection)
+2015-03-31 23:17:33	▬▬▶	richardbkr (~richardbk@c-73-15-207-74.hsd1.ca.comcast.net) has joined #Node.js
+2015-03-31 23:17:38	▬▬▶	mberk_ (~mberk@216.3.192.100) has joined #Node.js
+2015-03-31 23:17:44	◀▬▬	mberk (~mberk@216.3.192.100) has quit (Read error: Connection reset by peer)
+2015-03-31 23:17:58	◀▬▬	TeddyMurray (~TeddyMurr@ip24-253-95-159.lv.lv.cox.net) has quit (Ping timeout: 255 seconds)
+2015-03-31 23:18:00	◀▬▬	rhonabwy (~rhonabwy@2001:4c50:16f:6500:283f:6058:bae:28fc) has quit (Ping timeout: 265 seconds)
+2015-03-31 23:18:23	◀▬▬	niftylettuce (uid2733@gateway/web/irccloud.com/x-kojoegastcjdtbvg) has quit (Quit: Connection closed for inactivity)
+2015-03-31 23:18:39	▬▬▶	TeddyMurray (~TeddyMurr@ip24-253-95-159.lv.lv.cox.net) has joined #Node.js
+2015-03-31 23:18:58	◀▬▬	mberk_ (~mberk@216.3.192.100) has quit (Read error: Connection reset by peer)
+2015-03-31 23:19:03	--	irc: disconnected from server
+2015-03-31 23:19:22	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-03-31 23:19:22	--	Topic for #Node.js is "Current Stable v0.12.2, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-03-31 23:19:22	--	Topic set by ljharb (sid43720@oftn/member/ljharb) on Tue, 31 Mar 2015 21:29:08
+2015-03-31 23:19:23	--	Channel #Node.js: 1333 nicks (15 ops, 0 voices, 1318 normals)
+2015-03-31 23:19:24	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-03-31 23:19:24	--	URL for #node.js: http://nodejs.org/
+2015-03-31 23:19:26	▬▬▶	mberk (~mberk@216.3.192.100) has joined #Node.js
+2015-03-31 23:19:45	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-03-31 23:21:15	▬▬▶	goodenough (~goodenoug@pool-108-13-18-239.lsanca.fios.verizon.net) has joined #Node.js
+2015-03-31 23:21:50	▬▬▶	DaveDH2 (~davedh2@199.21.87.214) has joined #Node.js
+2015-03-31 23:21:51	◀▬▬	mberk (~mberk@216.3.192.100) has quit (Remote host closed the connection)
+2015-03-31 23:21:57	◀▬▬	momoterra (~momoterra@d75-157-144-146.bchsia.telus.net) has quit (Ping timeout: 256 seconds)
+2015-03-31 23:22:00	▬▬▶	mberk (~mberk@216.3.192.100) has joined #Node.js
+2015-03-31 23:22:14	▬▬▶	loz-- (~quassel@203-219-102-250.static.tpgi.com.au) has joined #Node.js
+2015-03-31 23:23:16	--	irc: disconnected from server
+2015-03-31 23:23:35	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-03-31 23:23:35	--	Topic for #Node.js is "Current Stable v0.12.2, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-03-31 23:23:35	--	Topic set by ljharb (sid43720@oftn/member/ljharb) on Tue, 31 Mar 2015 21:29:08
+2015-03-31 23:23:35	--	Channel #Node.js: 1336 nicks (15 ops, 0 voices, 1321 normals)
+2015-03-31 23:23:36	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-03-31 23:23:36	--	URL for #node.js: http://nodejs.org/
+2015-03-31 23:23:50	▬▬▶	blakmatrix (~blakmatri@c-67-185-160-22.hsd1.wa.comcast.net) has joined #Node.js
+2015-03-31 23:23:58	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-03-31 23:25:19	◀▬▬	sbellina (~sbellina@107.191.0.121.static.utbb.net) has quit (Ping timeout: 264 seconds)
+2015-03-31 23:25:38	▬▬▶	fredrikslattman (54dbae97@gateway/web/cgi-irc/kiwiirc.com/ip.84.219.174.151) has joined #Node.js
+2015-03-31 23:25:43	--	irc: disconnected from server
+2015-04-01 15:24:37	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-04-01 15:24:37	--	Topic for #Node.js is "Current Stable v0.12.2, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-04-01 15:24:37	--	Topic set by ljharb (sid43720@oftn/member/ljharb) on Tue, 31 Mar 2015 21:29:08
+2015-04-01 15:24:37	--	Channel #Node.js: 1460 nicks (16 ops, 0 voices, 1444 normals)
+2015-04-01 15:24:37	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-04-01 15:24:37	--	URL for #node.js: http://nodejs.org/
+2015-04-01 15:24:39	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-04-01 15:24:46	◀▬▬	FreezingCold (~FreezingC@135.0.41.14) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:24:55	▬▬▶	Swizec (~swizec@188-230-171-71.dynamic.t-2.net) has joined #Node.js
+2015-04-01 15:25:04	◀▬▬	Al3xandr3w (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:25:15	▬▬▶	cagedwisdom (~X@124-148-47-81.dyn.iinet.net.au) has joined #Node.js
+2015-04-01 15:25:16	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 15:25:20	▬▬▶	drmabuse (~drmabuse@HSI-KBW-149-172-17-242.hsi13.kabel-badenwuerttemberg.de) has joined #Node.js
+2015-04-01 15:25:36	▬▬▶	iliketurtles (~iliketurt@174.46.233.4) has joined #Node.js
+2015-04-01 15:25:39	◀▬▬	mhernandez1 (~mhernande@165.254.84.238) has quit (Remote host closed the connection)
+2015-04-01 15:26:21	◀▬▬	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 15:26:25	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 15:26:27	▬▬▶	spiderbyte (~dcl@freecode-project/hacker/spiderbyte) has joined #Node.js
+2015-04-01 15:26:31	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 15:26:55	▬▬▶	mhernandez1 (~mhernande@165.254.84.238) has joined #Node.js
+2015-04-01 15:27:48	▬▬▶	bradleymeck (~bradleyme@24.27.227.0) has joined #Node.js
+2015-04-01 15:28:08	▬▬▶	Matadoer (~Matadoer@173.254.235.54) has joined #Node.js
+2015-04-01 15:28:13	▬▬▶	TyrfingMjolnir (~Tyrfing@75.129.broadband18.iol.cz) has joined #Node.js
+2015-04-01 15:28:22	◀▬▬	wallerdev (~wallerdev@208.185.20.30) has quit (Quit: wallerdev)
+2015-04-01 15:28:38	▬▬▶	gasbakid_ (~gasbakid@41.96.34.5) has joined #Node.js
+2015-04-01 15:28:41	▬▬▶	pguruprasad (~pgurupras@64.125.69.70) has joined #Node.js
+2015-04-01 15:28:49	▬▬▶	aslant (~aslant@feur003.pndsl.co.uk) has joined #Node.js
+2015-04-01 15:29:12	◀▬▬	penguin_dan (~dan_johns@168.93.96.4) has quit (Quit: Leaving)
+2015-04-01 15:29:13	▬▬▶	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has joined #Node.js
+2015-04-01 15:29:18	▬▬▶	flux159 (~textual@wsip-70-182-2-52.dc.dc.cox.net) has joined #Node.js
+2015-04-01 15:30:02	▬▬▶	knyio (~kenny@mta-98-147-124-244.hawaii.rr.com) has joined #Node.js
+2015-04-01 15:30:49	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Ping timeout: 246 seconds)
+2015-04-01 15:30:50	◀▬▬	daffl (~daffl@216-129-84-78.dedicated.allstream.net) has quit (Read error: Connection reset by peer)
+2015-04-01 15:30:52	◀▬▬	gasbakid (~gasbakid@41.96.48.117) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:31:04	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 15:31:09	▬▬▶	daffl (~daffl@216-129-84-78.dedicated.allstream.net) has joined #Node.js
+2015-04-01 15:31:23	spuz	felixge, I am trying to find an example of how to use node-mysql to insert a row with multiple columns without much luck. How should I do this?
+2015-04-01 15:31:24	shudon	oh
+2015-04-01 15:31:25	▬▬▶	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has joined #Node.js
+2015-04-01 15:31:28	shudon	no my system didn't skip a beat
+2015-04-01 15:31:29	▬▬▶	savantgarde (~savantgar@c-2d29e555.031-174-73746f10.cust.bredbandsbolaget.se) has joined #Node.js
+2015-04-01 15:31:30	▬▬▶	xonev1 (~Adium@75.142.254.30) has joined #Node.js
+2015-04-01 15:31:31	▬▬▶	sul_ (~Thunderbi@p5B3D52DC.dip0.t-ipconnect.de) has joined #Node.js
+2015-04-01 15:31:32	▬▬▶	expr (~expr@unaffiliated/expr) has joined #Node.js
+2015-04-01 15:31:35	shudon	it finished building a while ago, too
+2015-04-01 15:31:41	◀▬▬	spiderbyte (~dcl@freecode-project/hacker/spiderbyte) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:31:43	▬▬▶	dcl (~dcl@freecode-project/hacker/spiderbyte) has joined #Node.js
+2015-04-01 15:31:48	▬▬▶	braincrash (~braincras@bl12-148-76.dsl.telepac.pt) has joined #Node.js
+2015-04-01 15:31:50	◀▬▬	RWOverdijk (~RWOverdij@4dae0416.ftth.telfortglasvezel.nl) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:32:14	◀▬▬	xonev (~Adium@75.142.254.30) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:32:16	shudon	spuz: how do you insert a row with a single column?
+2015-04-01 15:32:26	◀▬▬	StoneCypher4k (StoneCyphe@c-73-162-135-172.hsd1.ca.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:32:37	▬▬▶	mjpearso_ (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has joined #Node.js
+2015-04-01 15:32:40	◀▬▬	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2015-04-01 15:32:51	--	toddself is now known as toddself_zz
+2015-04-01 15:33:13	◀▬▬	ashemark (~nvx@122.173.220.86) has left #Node.js ("WeeChat 1.1.1")
+2015-04-01 15:33:17	▬▬▶	porri (~porri@6.178.27.77.dynamic.mundo-r.com) has joined #Node.js
+2015-04-01 15:34:07	◀▬▬	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:34:09	▬▬▶	StoneCypher4k (StoneCyphe@c-73-162-135-172.hsd1.ca.comcast.net) has joined #Node.js
+2015-04-01 15:34:22	◀▬▬	knyio (~kenny@mta-98-147-124-244.hawaii.rr.com) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:34:23	▬▬▶	mich-cook (~me@208.185.32.26) has joined #Node.js
+2015-04-01 15:34:36	▬▬▶	relipse (uid16131@gateway/web/irccloud.com/x-wpholuvwnsuoqpnt) has joined #Node.js
+2015-04-01 15:34:42	--	toddself_zz is now known as toddself
+2015-04-01 15:34:53	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 15:34:56	▬▬▶	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has joined #Node.js
+2015-04-01 15:35:20	▬▬▶	c00ljs_ (~c00ljs@177.133.255.77) has joined #Node.js
+2015-04-01 15:35:35	▬▬▶	MistahKurtz (~ColKurtz@69.31.123.126) has joined #Node.js
+2015-04-01 15:35:43	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 15:35:51	◀▬▬	IvailoStoianov (~IvailoSto@194.187.134.162) has quit (Quit: ChatZilla 0.9.91.1 [Firefox 36.0.4/20150320202338])
+2015-04-01 15:35:55	▬▬▶	jagoda (~jjagoda@216.82.234.65) has joined #Node.js
+2015-04-01 15:36:31	▬▬▶	crowCaw (6c23cc22@gateway/web/cgi-irc/kiwiirc.com/ip.108.35.204.34) has joined #Node.js
+2015-04-01 15:36:38	◀▬▬	aquinas (~aquinas_@unaffiliated/aquinas) has quit (Ping timeout: 255 seconds)
+2015-04-01 15:36:45	spuz	shudon, good question, the docs actually do show how to specify multiple columns
+2015-04-01 15:36:46	▬▬▶	mikeywayup (~mikeywaaa@ool-182f45c7.dyn.optonline.net) has joined #Node.js
+2015-04-01 15:36:46	◀▬▬	mikeywayup (~mikeywaaa@ool-182f45c7.dyn.optonline.net) has quit (Read error: Connection reset by peer)
+2015-04-01 15:37:09	▬▬▶	jr3 (~jr3@c-98-194-199-12.hsd1.tx.comcast.net) has joined #Node.js
+2015-04-01 15:37:14	◀▬▬	circ-user-gZkT1 (~circuser-@122.166.165.147) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:37:16	▬▬▶	nym (uid2975@gateway/web/irccloud.com/x-ncjnbhhyokojegsj) has joined #Node.js
+2015-04-01 15:37:20	▬▬▶	luser_ (~luser@d53-133.icpnet.pl) has joined #Node.js
+2015-04-01 15:37:21	▬▬▶	mikeywayup (~mikeywaaa@ool-182f45c7.dyn.optonline.net) has joined #Node.js
+2015-04-01 15:37:45	▬▬▶	benjamingr (uid23465@gateway/web/irccloud.com/x-ezxszbcowrcwgdct) has joined #Node.js
+2015-04-01 15:37:50	◀▬▬	c00ljs (~c00ljs@177.133.255.77) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:38:00	jr3	I dont understand how one get request can return no token found, while the other get and return 200 when  there's no middleware in both
+2015-04-01 15:38:02	▬▬▶	aquinas (~aquinas_@unaffiliated/aquinas) has joined #Node.js
+2015-04-01 15:38:25	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 15:38:34	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 15:38:49	◀▬▬	mikeywayup (~mikeywaaa@ool-182f45c7.dyn.optonline.net) has quit (Client Quit)
+2015-04-01 15:38:57	jr3	but if I convert the first get to a post it works...
+2015-04-01 15:39:07	◀▬▬	luser_ (~luser@d53-133.icpnet.pl) has quit (Client Quit)
+2015-04-01 15:39:11	▬▬▶	mikeywayup (~mikeywaaa@ool-182f45c7.dyn.optonline.net) has joined #Node.js
+2015-04-01 15:39:17	◀▬▬	finnergizer (~finnergiz@24-212-222-91.cable.teksavvy.com) has quit (Remote host closed the connection)
+2015-04-01 15:39:46	▬▬▶	swapnesh (~chatzilla@124.253.25.89) has joined #Node.js
+2015-04-01 15:40:19	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 15:40:44	swapnesh	Is https://www.npmjs.com/package/node-oauth2-server and https://github.com/jaredhanson/passport-oauth2 serve same purpose ? or they are different ?
+2015-04-01 15:40:55	▬▬▶	aesopwolf (~textual@50.59.180.99) has joined #Node.js
+2015-04-01 15:40:58	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 15:41:28	◀▬▬	mikeywayup (~mikeywaaa@ool-182f45c7.dyn.optonline.net) has left #Node.js
+2015-04-01 15:41:39	▬▬▶	mikeywayup (~mikeywaaa@ool-182f45c7.dyn.optonline.net) has joined #Node.js
+2015-04-01 15:42:01	◀▬▬	SeeThruHead (~STH@135-23-149-163.cpe.pppoe.ca) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 15:42:53	◀▬▬	nocigar (~nocigar@90-229-146-189-no193.tbcn.telia.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 15:43:03	▬▬▶	MalfaitRobin (~MalfaitRo@unaffiliated/malfaitrobin) has joined #Node.js
+2015-04-01 15:43:06	▬▬▶	SN4T14_ (~SN4T14@85-220-91-33.dsl.dynamic.simnet.is) has joined #Node.js
+2015-04-01 15:44:11	▬▬▶	fsalgo (~textual@113.193.34.13) has joined #Node.js
+2015-04-01 15:44:14	▬▬▶	bikky (75c950c3@gateway/web/freenode/ip.117.201.80.195) has joined #Node.js
+2015-04-01 15:44:18	▬▬▶	Kamuela (~Kamuela@host86-163-52-54.range86-163.btcentralplus.com) has joined #Node.js
+2015-04-01 15:44:19	◀▬▬	mr_lou (~sirlou@0x555321d8.adsl.cybercity.dk) has quit (Quit: Ex-Chat)
+2015-04-01 15:44:50	◀▬▬	dcl (~dcl@freecode-project/hacker/spiderbyte) has quit (Ping timeout: 252 seconds)
+2015-04-01 15:45:02	▬▬▶	mihok (~mihok@63.250.107.210) has joined #Node.js
+2015-04-01 15:45:04	bikky	nodejs is a server or what?
+2015-04-01 15:45:26	@ljharb	it can be. it's a platform to run javascript on a server.
+2015-04-01 15:45:40	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #Node.js
+2015-04-01 15:45:59	@ljharb	swapnesh: the one on npm is the one people should use. the one on github is for development.
+2015-04-01 15:46:03	▬▬▶	KushS (~kushagra@122.164.44.28) has joined #Node.js
+2015-04-01 15:46:03	▬▬▶	logan_e (~anonymous@73.218.33.124) has joined #Node.js
+2015-04-01 15:46:06	▬▬▶	nocigar^ (~nocigar@90-229-146-189-no193.tbcn.telia.com) has joined #Node.js
+2015-04-01 15:46:07	@ljharb	swapnesh: oh wait no, nvm, those are different.
+2015-04-01 15:46:26	▬▬▶	SeeThruHead (~STH@135-23-149-163.cpe.pppoe.ca) has joined #Node.js
+2015-04-01 15:46:27	◀▬▬	firemanxbr (~firemanxb@177.66.5.244) has quit (Read error: Connection reset by peer)
+2015-04-01 15:46:35	@ljharb	swapnesh: it looks like the first one is an actual app, and the second one is a module you'd use in your app.
+2015-04-01 15:46:46	◀▬▬	bikky (75c950c3@gateway/web/freenode/ip.117.201.80.195) has quit (Client Quit)
+2015-04-01 15:46:51	◀▬▬	SN4T14 (~SN4T14@85-220-91-33.dsl.dynamic.simnet.is) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:47:38	◀▬▬	felixge (~the_undef@miranda/donor/theundefined) has quit (Remote host closed the connection)
+2015-04-01 15:47:42	@MI6	joyent/node: Gireesh Punathil v0.12 * 66b243d : test: relax the timing window in test-child-process-fork-net2.js - http://git.io/jxGT
+2015-04-01 15:47:43	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 15:47:46	▬▬▶	rendar_ (~I@host45-128-dynamic.61-82-r.retail.telecomitalia.it) has joined #Node.js
+2015-04-01 15:47:56	shudon	spuz: good :)
+2015-04-01 15:48:05	▬▬▶	felixge (~the_undef@miranda/donor/theundefined) has joined #Node.js
+2015-04-01 15:48:17	◀▬▬	rendar (~I@host45-128-dynamic.61-82-r.retail.telecomitalia.it) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:48:35	swapnesh	ljharb: basically I am having an app ....and exposes some API for mobile end..now I want to implement oAuth2 server ...so that every request from mobile end consumes oauth2
+2015-04-01 15:48:47	▬▬▶	ctcg (~ctcg@64.20.17.103) has joined #Node.js
+2015-04-01 15:48:49	swapnesh	so I am using node-oauth2
+2015-04-01 15:48:51	▬▬▶	lloydde (~lloydde@208.184.5.170) has joined #Node.js
+2015-04-01 15:49:06	@ljharb	swapnesh: if you already have an app, you probably don't want a separate app just for oauth
+2015-04-01 15:49:08	--	rigor789 is now known as rigor789|away
+2015-04-01 15:49:23	▬▬▶	karrtmomil (karrtmomil@2610:130:116:1800:89:7c6b:7882:dfe2) has joined #Node.js
+2015-04-01 15:49:23	◀▬▬	karrtmomil (karrtmomil@2610:130:116:1800:89:7c6b:7882:dfe2) has quit (Client Quit)
+2015-04-01 15:49:28	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 15:50:03	swapnesh	ljharb: but the problem is I am having a backend as well..which is using passportjs...so my question is do I need to use both these modules or using passortjs oauth2 module will suffice
+2015-04-01 15:50:10	▬▬▶	ArtskydJ (~Michael@97-121-98-88.omah.qwest.net) has joined #Node.js
+2015-04-01 15:50:12	ctcg	When I console.log my error I'm getting this: http://pastebin.com/Ae0ZeVG1. Why does an array appear at the top of this object? When I inspect the keys I am not able to access that array nor can I tell where it is coming from.
+2015-04-01 15:50:33	◀▬▬	Matadoer (~Matadoer@173.254.235.54) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:50:37	ctcg	I would like access to that error array btw
+2015-04-01 15:50:41	@ljharb	swapnesh: don't use the first one at all. only use the second one. that's what i'm saying.
+2015-04-01 15:50:59	@ljharb	ctcg: that's probably not an array, but rather the string representation of it.
+2015-04-01 15:51:04	--	SN4T14_ is now known as SN4T14
+2015-04-01 15:51:14	@ljharb	ctcg: Object.getOwnPropertyNames will give you the non-enumerable ones too.
+2015-04-01 15:51:16	ctcg	Anyway to access that? Or should I be accessing it at all?
+2015-04-01 15:51:30	◀▬▬	varibull (~varibull@ta.tainstruments.com) has quit (Remote host closed the connection)
+2015-04-01 15:51:39	swapnesh	ljharb: ahh okk...but what I need to fill for these, like authorizationURL: 'https://www.example.com/oauth2/authorize', in passport
+2015-04-01 15:51:41	ctcg	I can't believe this is the first i'm learning of this... wow
+2015-04-01 15:51:47	▬▬▶	varibull (~varibull@ta.tainstruments.com) has joined #Node.js
+2015-04-01 15:51:51	@ljharb	ctcg: no idea, it depends on what that thing is.
+2015-04-01 15:52:13	swapnesh	tokenURL, clientID, clientSecret, callbackURL etc
+2015-04-01 15:52:13	▬▬▶	btulchinsky (~btulchins@exchange.qaconsultants.ca) has joined #Node.js
+2015-04-01 15:52:23	◀▬▬	mihok (~mihok@63.250.107.210) has quit (Ping timeout: 272 seconds)
+2015-04-01 15:52:25	saml	how can I do   find . -name "*.js"   in  node.js?
+2015-04-01 15:52:32	@ljharb	swapnesh: ahhh wait, https://github.com/jaredhanson/passport-oauth2 is for you being the oauth client
+2015-04-01 15:52:36	◀▬▬	crowCaw (6c23cc22@gateway/web/cgi-irc/kiwiirc.com/ip.108.35.204.34) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2015-04-01 15:52:37	◀▬▬	chjj (~chjj@unaffiliated/chjj) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:52:47	@ljharb	swapnesh: you want something that lets you plug into your app so that *your* app can be an oauth server.
+2015-04-01 15:52:59	sunscript	breakingthings: (delayed answer) yes, view engine is jade
+2015-04-01 15:53:06	◀▬▬	aslant (~aslant@feur003.pndsl.co.uk) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:53:17	▬▬▶	crowCaw (6c23cc22@gateway/web/cgi-irc/kiwiirc.com/ip.108.35.204.34) has joined #Node.js
+2015-04-01 15:53:21	sunscript	breakingthings: so when I run res.render, the render middleware (right?) would be last one - and nothing is executed afterwards, the response is sent back?
+2015-04-01 15:53:22	swapnesh	yes..exactly and same time it works properly for my backend as well
+2015-04-01 15:53:26	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:53:45	stride	saml: https://www.npmjs.com/package/glob
+2015-04-01 15:53:50	crowCaw	sdadsa
+2015-04-01 15:53:55	crowCaw	d
+2015-04-01 15:54:00	▬▬▶	btulchin_ (~btulchins@exchange.qaconsultants.ca) has joined #Node.js
+2015-04-01 15:54:13	◀▬▬	sunscript (~sunscript@95-210-201-59.ip.skylogicnet.com) has quit (Changing host)
+2015-04-01 15:54:13	▬▬▶	sunscript (~sunscript@unaffiliated/innocentus) has joined #Node.js
+2015-04-01 15:54:16	◀▬▬	michaelbenin (~michaelbe@4.15.211.2) has quit (Remote host closed the connection)
+2015-04-01 15:54:19	◀▬▬	btulchinsky (~btulchins@exchange.qaconsultants.ca) has quit (Read error: Connection reset by peer)
+2015-04-01 15:54:39	◀▬▬	unreal-dude (mirc@216.226.88.167) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:54:53	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Remote host closed the connection)
+2015-04-01 15:54:56	◀▬▬	btulchin_ (~btulchins@exchange.qaconsultants.ca) has quit (Remote host closed the connection)
+2015-04-01 15:55:10	sonthonax	bradleymeck: couldn’t I just create the symlink myself?
+2015-04-01 15:55:12	▬▬▶	naeluh (~chatzilla@162-235-3-38.lightspeed.irvnca.sbcglobal.net) has joined #Node.js
+2015-04-01 15:55:25	◀▬▬	Kamuela (~Kamuela@host86-163-52-54.range86-163.btcentralplus.com) has quit (Quit: Leaving)
+2015-04-01 15:55:44	bradleymeck	sonthonax: you could, but making it via linklocal makes it so other devs don't need to do that
+2015-04-01 15:56:00	▬▬▶	michaelbenin (~michaelbe@4.15.211.2) has joined #Node.js
+2015-04-01 15:56:01	bradleymeck	any install script that makes the links would be fine
+2015-04-01 15:56:01	▬▬▶	unreal-dude (mirc@216.226.88.167) has joined #Node.js
+2015-04-01 15:56:03	▬▬▶	Al3xandr3w (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has joined #Node.js
+2015-04-01 15:56:12	bradleymeck	just use something that can be reused
+2015-04-01 15:56:15	breakingthings	sunscript: "<breakingthings> sunscript: also res.render without a callback should send the response immediately, ending progress along the middleware chain"
+2015-04-01 15:56:18	▬▬▶	zenith_ (~zenith@142.150.23.90) has joined #Node.js
+2015-04-01 15:56:18	▬▬▶	massif (~supernaut@142-254-35-188.dsl.dynamic.sonic.net) has joined #Node.js
+2015-04-01 15:56:27	sonthonax	I’m new to node, so I’m just trying to work out what it did.
+2015-04-01 15:56:39	◀▬▬	bradleymeck (~bradleyme@24.27.227.0) has quit (Quit: bradleymeck)
+2015-04-01 15:56:41	sunscript	breakingthings: good! - thanks
+2015-04-01 15:56:57	michaelbenin	anyone here have experience wrapping mongojs with bluebird?
+2015-04-01 15:57:05	◀▬▬	jonasen (~jonasen@b603.ip15.netikka.fi) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 15:57:20	◀▬▬	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has quit (Read error: Connection reset by peer)
+2015-04-01 15:57:36	▬▬▶	Matadoer (~Matadoer@173.254.235.54) has joined #Node.js
+2015-04-01 15:57:59	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 15:58:17	sunscript	michaelbenin: one usually uses a more high level wrapper like mongoose, mongo-skin or monk.
+2015-04-01 15:58:17	swapnesh	ljharb : any suggestion ?
+2015-04-01 15:58:41	michaelbenin	thanks! I will take a look at monk
+2015-04-01 15:58:42	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 15:59:57	jr3	http://localhost:8080/api/lol/summoner/verification/   <- why does this return no auth token found, but: http://localhost:8080/api/lol/summoner/verification/:name work and doesnt require an auth token?
+2015-04-01 16:00:06	▬▬▶	Crazy_Panda (~Hugo@soy95-10-78-248-243-178.fbx.proxad.net) has joined #Node.js
+2015-04-01 16:00:24	◀▬▬	maraoz (~maraoz@43-161-16-190.fibertel.com.ar) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:00:30	◀▬▬	Pitel (~pitel@ip-94-112-152-134.net.upcbroadband.cz) has quit (Quit: (ノಠ益ಠ)ノ彡┻━┻)
+2015-04-01 16:00:33	mikeywayup	different route
+2015-04-01 16:00:47	▬▬▶	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2015-04-01 16:01:41	▬▬▶	edrocks (~edrocks@66.55.63.166) has joined #Node.js
+2015-04-01 16:01:42	jr3	I understad that but if I do: router.get('/verification', controller.generateVerificationCode); as a get it still returns no auth token found
+2015-04-01 16:01:55	jr3	but if it's a post it'll work and res return
+2015-04-01 16:02:09	 *	jr3 is very confused
+2015-04-01 16:02:15	◀▬▬	MikeS_ (~msmith@8.18.203.252) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:02:24	 *	SaintMoriarty few
+2015-04-01 16:02:32	 *	SaintMoriarty Well what in the world is going on
+2015-04-01 16:02:33	Crazy_Panda	Hye guys ! I don't success to put a "text-decoration: none;" in my CSS code wich is situate in a write.res(.....), someone can help me please?
+2015-04-01 16:03:05	Crazy_Panda	res.write*(...)
+2015-04-01 16:03:12	◀▬▬	zenith_ (~zenith@142.150.23.90) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:03:23	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 16:03:29	▬▬▶	nickbytes (~nickbytes@cpe-74-71-143-154.nyc.res.rr.com) has joined #Node.js
+2015-04-01 16:03:46	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 16:03:49	▬▬▶	ren_hoek (~ren_hoek@cpe-76-187-64-157.tx.res.rr.com) has joined #Node.js
+2015-04-01 16:03:58	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 16:04:30	swapnesh	ljharb: let me know if this is what I am looking for http://z43studio.com/2014/07/oauth2/
+2015-04-01 16:04:31	◀▬▬	Crazy_Panda (~Hugo@soy95-10-78-248-243-178.fbx.proxad.net) has quit (Client Quit)
+2015-04-01 16:04:34	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 16:04:51	swapnesh	will it be what I am looking for
+2015-04-01 16:04:53	@ljharb	swapnesh: looks right
+2015-04-01 16:05:45	▬▬▶	acruz (bdc9fc86@gateway/web/freenode/ip.189.201.252.134) has joined #Node.js
+2015-04-01 16:05:59	◀▬▬	porri (~porri@6.178.27.77.dynamic.mundo-r.com) has quit (Quit: This computer has gone to sleep)
+2015-04-01 16:06:21	acruz	Hello
+2015-04-01 16:06:26	swapnesh	ljharb: its weird that for such a common problem in MEAN stack..no singly functional module exists
+2015-04-01 16:06:28	▬▬▶	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has joined #Node.js
+2015-04-01 16:06:50	◀▬▬	tvw (~tv@212.79.9.150) has quit (Read error: Connection reset by peer)
+2015-04-01 16:06:59	◀▬▬	ludkiller (lud@gateway/shell/elitebnc/x-sfeyrvhugqpaakie) has quit (Excess Flood)
+2015-04-01 16:07:16	▬▬▶	nnyk_ (~nnyk@unaffiliated/nnyk) has joined #Node.js
+2015-04-01 16:07:22	acruz	We are starting a new development using node.js. However, we wish to follow good practices as much as possible... and one of the questions we have is: is there any "standard" as to the type of root directory we have to use?
+2015-04-01 16:07:32	acruz	I've found only this: http://stackoverflow.com/questions/5178334/folder-structure-for-a-node-js-project but nothing official from node...
+2015-04-01 16:08:06	◀▬▬	nickbytes (~nickbytes@cpe-74-71-143-154.nyc.res.rr.com) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:08:07	Sawbones_	What do you guys use for testing your node.js express applications?
+2015-04-01 16:08:08	◀▬▬	jsgui (021e7656@gateway/web/cgi-irc/kiwiirc.com/ip.2.30.118.86) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2015-04-01 16:08:18	◀▬▬	ren_hoek (~ren_hoek@cpe-76-187-64-157.tx.res.rr.com) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:08:31	◀▬▬	wildroman2 (~wildroman@109.186.185.235) has quit (Remote host closed the connection)
+2015-04-01 16:08:41	▬▬▶	porri_ (~porri@6.178.27.77.dynamic.mundo-r.com) has joined #Node.js
+2015-04-01 16:08:42	◀▬▬	simplyshipley (~simplyshi@mail.adtechceramics.com) has quit (Quit: Leaving)
+2015-04-01 16:08:57	stride	acruz: what are you developing? web apps? most popular frameworks usually come with a barebones structure generator that makes some sense
+2015-04-01 16:09:09	▬▬▶	wildroman2 (~wildroman@109.186.185.235) has joined #Node.js
+2015-04-01 16:09:29	michaelbenin	sunscript: wouldn't you still need to wrap mongoskin in bluebird?
+2015-04-01 16:09:44	▬▬▶	ludkiller (lud@gateway/shell/elitebnc/x-zzwixjfavdmlstzw) has joined #Node.js
+2015-04-01 16:09:56	swapnesh	acruz : also look at mean.io/sailjs/yeoman/lineman(my favorite) /keystonejs
+2015-04-01 16:09:56	acruz	stride: it will be a app for web and desktop. We are planning a core module (that will be include by the other two using npm). We will base it on express
+2015-04-01 16:09:58	sunscript	michaelbenin: hm, this depends, bluebird offers a lot of options additionally to just promisifcation.
+2015-04-01 16:10:08	sunscript	stride: even with native support (es6)
+2015-04-01 16:10:09	▬▬▶	laurensclaessen (~laurenscl@2a02:1810:1002:2300:6900:6eb2:eb80:81d3) has joined #Node.js
+2015-04-01 16:10:12	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 16:10:19	sunscript	stride: bluebird got many functions for then-ables.
+2015-04-01 16:11:02	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:11:03	acruz	swapnesh: thanks. We saw it... but we won't use Mongo, but MySQL (seems enough for us at this moment).
+2015-04-01 16:11:04	@ljharb	swapnesh: i don't think being an oauth provider is actually all that common
+2015-04-01 16:11:08	◀▬▬	ArtskydJ (~Michael@97-121-98-88.omah.qwest.net) has left #Node.js
+2015-04-01 16:11:18	◀▬▬	NBhostin_ (~nbhosting@D97BE3F1.cm-3-4d.dynamic.ziggo.nl) has quit
+2015-04-01 16:11:29	◀▬▬	markholmes (~markholme@rrcs-173-198-17-194.west.biz.rr.com) has quit (Quit: Leaving)
+2015-04-01 16:12:03	◀▬▬	drmabuse (~drmabuse@HSI-KBW-149-172-17-242.hsi13.kabel-badenwuerttemberg.de) has quit (Remote host closed the connection)
+2015-04-01 16:12:26	◀▬▬	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:13:05	◀▬▬	jagoda (~jjagoda@216.82.234.65) has quit (Remote host closed the connection)
+2015-04-01 16:13:26	swapnesh	ljharb: yeah ..may be thats why most dev are using JWT these days
+2015-04-01 16:13:31	breakingthings	being an oauth provider is suffering.
+2015-04-01 16:13:32	@ljharb	lol wat
+2015-04-01 16:14:20	◀▬▬	laurensclaessen (~laurenscl@2a02:1810:1002:2300:6900:6eb2:eb80:81d3) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:14:21	◀▬▬	Al3xandr3w (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:14:49	◀▬▬	ed209 (~ed209@165.225.128.67) has quit (Remote host closed the connection)
+2015-04-01 16:14:51	swapnesh	breakingthings: lol ...you are ending me before I start
+2015-04-01 16:14:56	▬▬▶	ed209 (~ed209@165.225.128.67) has joined #Node.js
+2015-04-01 16:15:03	breakingthings	good
+2015-04-01 16:15:05	◀▬▬	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has quit (Remote host closed the connection)
+2015-04-01 16:15:10	breakingthings	being an oauth provider sucks
+2015-04-01 16:15:37	breakingthings	and if you're not using it for the authorization side of things, then it's a waste
+2015-04-01 16:15:44	▬▬▶	systemovich (~geoffrey@105.225.40.83) has joined #Node.js
+2015-04-01 16:15:52	▬▬▶	jeffmjack (uid7712@gateway/web/irccloud.com/x-ealwtysfpcdouisv) has joined #Node.js
+2015-04-01 16:16:16	breakingthings	(after all, OAuth is not an authentication protocol~)
+2015-04-01 16:16:28	◀▬▬	mich-cook (~me@208.185.32.26) has quit (Quit: Leaving.)
+2015-04-01 16:16:40	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:17:12	◀▬▬	arkanciscan (~arkancisc@108-81-107-239.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:17:12	▬▬▶	mich-cook (~me@208.185.32.26) has joined #Node.js
+2015-04-01 16:17:16	▬▬▶	drmabuse (~drmabuse@HSI-KBW-149-172-17-242.hsi13.kabel-badenwuerttemberg.de) has joined #Node.js
+2015-04-01 16:17:18	saml	i wanna do multiple async operation (glob)  and do something when all those operations are finished.   is promise recommended way of diong this?
+2015-04-01 16:17:40	◀▬▬	TheAceOfHearts (~TheAceOfH@50.247.73.165) has quit (Quit: Leaving.)
+2015-04-01 16:17:41	◀▬▬	ssarah (~ssarah@91.10.136.95.rev.vodafone.pt) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:17:44	saml	i didn't want to depend on too many dependencies
+2015-04-01 16:17:48	swapnesh	so do you recommend ..json web tokens over oauth implementation ?? as i need simple authorization for my backend panel as well as mobile apps consuming our apis
+2015-04-01 16:17:55	▬▬▶	gare4ka__ (~gare4ka@2.92.173.213) has joined #Node.js
+2015-04-01 16:17:55	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 16:18:30	◀▬▬	noobee (~noobee@183.177.131.11.ap.gmobb-fix.jp) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:18:51	▬▬▶	Mackseraner (~textual@x5d8627dd.dyn.telefonica.de) has joined #Node.js
+2015-04-01 16:18:53	◀▬▬	Asiajey (~Asiajey@unaffiliated/asiajey) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:19:10	▬▬▶	nettoweb (~textual@187.112.207.229) has joined #Node.js
+2015-04-01 16:19:16	▬▬▶	bobmcw (~bobmcw@redhat/jboss/bobmcw) has joined #Node.js
+2015-04-01 16:19:19	▬▬▶	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has joined #Node.js
+2015-04-01 16:19:53	breakingthings	swapnesh: OAuth 2.0 access tokens are JWTs. If you're going to roll your own, you should be prepared to do some research and reading on the JWT specification to understand what security measures you should take.
+2015-04-01 16:20:12	▬▬▶	Nijikokun (~Nexua@40.140.33.170) has joined #Node.js
+2015-04-01 16:20:13	◀▬▬	Nijikokun (~Nexua@40.140.33.170) has quit (Max SendQ exceeded)
+2015-04-01 16:20:14	◀▬▬	OtterCoder (~quassel@67.199.175.157) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:20:35	breakingthings	swapnesh: The reason people are using JWT alone instead of with OAuth 2.0 is simply because it's easier, and if you don't need the authorization stuff OAuth offers.
+2015-04-01 16:20:41	▬▬▶	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2015-04-01 16:21:04	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #Node.js
+2015-04-01 16:21:31	▬▬▶	oVerde (~oVerde@191.182.166.241) has joined #Node.js
+2015-04-01 16:21:35	Mackseraner	hi, is there any way to get around node and io.js silently failing when you throw errors in a promise chain? https://github.com/iojs/io.js/issues/600 i dont want to hard-code a process.exit(1) because i need to test that an error gets thrown
+2015-04-01 16:21:46	▬▬▶	jamesheston (~jameshest@107-133-27-112.lightspeed.chtnsc.sbcglobal.net) has joined #Node.js
+2015-04-01 16:22:01	▬▬▶	woah (~woah@presence.static.monkeybrains.net) has joined #Node.js
+2015-04-01 16:22:04	▬▬▶	CorySimmons (~textual@cpe-174-103-84-179.mi.res.rr.com) has joined #Node.js
+2015-04-01 16:22:05	▬▬▶	tech-ninja (~apple@mctnnbsa59w-156034052085.dhcp-dynamic.FibreOP.nb.bellaliant.net) has joined #Node.js
+2015-04-01 16:22:09	▬▬▶	mihok (~mihok@CPE00180a0f3f8a-CM00222d76471d.cpe.net.cable.rogers.com) has joined #Node.js
+2015-04-01 16:22:15	@ljharb	Mackseraner: you always add a .catch on the end of the chain
+2015-04-01 16:22:18	◀▬▬	CorySimmons (~textual@cpe-174-103-84-179.mi.res.rr.com) has quit (Client Quit)
+2015-04-01 16:22:22	▬▬▶	Zexorz (~MeTonaTOR@unaffiliated/zexorz) has joined #Node.js
+2015-04-01 16:22:24	◀▬▬	watilde (~watilde@i114-180-106-158.s04.a013.ap.plala.or.jp) has quit (Remote host closed the connection)
+2015-04-01 16:22:38	@ljharb	Mackseraner: a promise is a future value, not something to be used for control flow and throwing exceptions :-)
+2015-04-01 16:22:50	◀▬▬	KHDavidL (~KHDavidL@noc.al.privatesystems.net) has quit (Remote host closed the connection)
+2015-04-01 16:23:04	breakingthings	swapnesh: In as few words as possible: If you want to use JWTs, you will need to have an api endpoint that you use to authenticate the user (eg. have them send their username & password), which should return an access token (jwt), and they should send an "Authorization" header containing the token for every subsequent request to the API. The API should validate the token on every request. Your API will need to be HTTPS from end-to-end.
+2015-04-01 16:23:10	▬▬▶	_X_C_V_B_ (~XCVB@dur-dhcp-1-240.dsl.airstreamcomm.net) has joined #Node.js
+2015-04-01 16:23:14	▬▬▶	qom2 (~qom2@185.6.5.4) has joined #Node.js
+2015-04-01 16:23:35	breakingthings	With that said, I need to run, so best of luck.
+2015-04-01 16:23:44	swapnesh	breakingthings: thx....urs suggestions are constructive though your name sounds equally opposite
+2015-04-01 16:23:53	swapnesh	yeah have a grat day
+2015-04-01 16:24:00	swapnesh	:)
+2015-04-01 16:24:01	▬▬▶	racoon (~textual@146-115-96-205.c3-0.brl-ubr1.sbo-brl.ma.cable.rcn.com) has joined #Node.js
+2015-04-01 16:24:04	Mackseraner	thanks @ljharb using catch works but not for my use case
+2015-04-01 16:24:06	▬▬▶	EGreg2 (~EGreg@213.57.66.104) has joined #Node.js
+2015-04-01 16:24:07	◀▬▬	breakingthings (~no@64.135.12.147) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 16:24:08	swapnesh	great*
+2015-04-01 16:24:26	@ljharb	Mackseraner: what is your use case?
+2015-04-01 16:24:29	▬▬▶	noobee (~noobee@183.177.131.11.ap.gmobb-fix.jp) has joined #Node.js
+2015-04-01 16:24:34	MasterThrall	Hey everyone...  I'd like to click a button on my  webpage and have the .js reboot (die, restart). Is there a way to do this, without an autostarter. ie, I don't want autorestart functionality all the time, while I'm in dev, just manual restart.
+2015-04-01 16:24:42	@ljharb	MasterThrall: yes, it's called "reload"
+2015-04-01 16:24:48	@ljharb	MasterThrall: it's impossible to unload JS any other way.
+2015-04-01 16:24:55	Mackseraner	ljharb im writing a thin wrapper around express
+2015-04-01 16:24:56	@ljharb	or are you talking about the node server
+2015-04-01 16:24:58	MasterThrall	k, I'll google that, thanks ;)
+2015-04-01 16:25:03	▬▬▶	mven (~textual@32.97.110.57) has joined #Node.js
+2015-04-01 16:25:05	◀▬▬	mven (~textual@32.97.110.57) has quit (Excess Flood)
+2015-04-01 16:25:11	@ljharb	Mackseraner: ok, and what error is being thrown that you're worried about?
+2015-04-01 16:25:22	@ljharb	MasterThrall: perhaps i misunderstood you. i meant the browser reload button.
+2015-04-01 16:25:42	Mackseraner	ljharb i just want to make sure that unkown errors ARE thrown and DO crash the process. if possible without doing process.exit(1) so that i have a bit more flexibility
+2015-04-01 16:25:42	◀▬▬	bobmcw (~bobmcw@redhat/jboss/bobmcw) has quit (Remote host closed the connection)
+2015-04-01 16:25:55	◀▬▬	JackoPlane (~Jack@unaffiliated/jackoplane) has quit (Read error: Connection reset by peer)
+2015-04-01 16:25:58	◀▬▬	ludkiller (lud@gateway/shell/elitebnc/x-zzwixjfavdmlstzw) has quit (Excess Flood)
+2015-04-01 16:26:04	@ljharb	Mackseraner: then promises aren't necessarily the right construct to use there.
+2015-04-01 16:26:15	▬▬▶	ludkille- (lud@gateway/shell/elitebnc/x-exkmrtgzwjnrprgf) has joined #Node.js
+2015-04-01 16:26:16	@ljharb	all errors in a promise chain should be known and handlable
+2015-04-01 16:26:19	▬▬▶	bobmcw (~bobmcw@redhat/jboss/bobmcw) has joined #Node.js
+2015-04-01 16:26:26	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 16:26:30	@ljharb	you can certainly use setTimeout to get out of the chain and crash the process.
+2015-04-01 16:26:38	Mackseraner	ljharb ideally, something like this would crash the process: http://snippi.com/s/jb42vsy
+2015-04-01 16:26:44	◀▬▬	EGreg (~EGreg@213.57.66.104) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:26:45	Mackseraner	ah, that might be the trick, ill try that
+2015-04-01 16:26:48	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 16:26:50	@ljharb	Mackseraner: right, i don't think that'd be ideal.
+2015-04-01 16:27:01	@ljharb	Mackseraner: a promise represents a value. it's not just a flow control construct.
+2015-04-01 16:27:12	@ljharb	Mackseraner: `throw err` means you have a rejected promise is all.
+2015-04-01 16:27:24	@ljharb	Mackseraner: what's the actual real error you want thrown out of the promise?
+2015-04-01 16:27:42	◀▬▬	athan (~quassel@173-14-18-245-Colorado.hfc.comcastbusiness.net) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:28:18	◀▬▬	niftylettuce (uid2733@gateway/web/irccloud.com/x-hfvmjaxptwwuutsi) has quit (Quit: Connection closed for inactivity)
+2015-04-01 16:28:22	◀▬▬	tristanp (~tristanp@static-72-70-51-89.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 16:28:34	◀▬▬	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has quit (Quit: Leaving.)
+2015-04-01 16:28:39	◀▬▬	wraithgar (~Gar@24.216.239.218) has quit (Quit: Leaving)
+2015-04-01 16:28:55	▬▬▶	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has joined #Node.js
+2015-04-01 16:29:05	Mackseraner	ljharb im working on cleaning up this little project: https://github.com/maximilianschmitt/express-micro-service
+2015-04-01 16:29:19	swapnesh	Got to go now..ljharb thx for the words...see you soon ..guys ..have a great day
+2015-04-01 16:29:27	◀▬▬	Darryl___ (uid29682@gateway/web/irccloud.com/x-glqgnemqzjyqlwem) has quit (Quit: Connection closed for inactivity)
+2015-04-01 16:29:31	◀▬▬	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has quit (Client Quit)
+2015-04-01 16:29:33	◀▬▬	phiquis (~unknown@c-98-202-172-162.hsd1.ut.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:29:40	MasterThrall	yeah, I believe so ljharb
+2015-04-01 16:29:46	▬▬▶	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has joined #Node.js
+2015-04-01 16:29:52	◀▬▬	swapnesh (~chatzilla@124.253.25.89) has quit (Quit: ChatZilla 0.9.91.1 [Firefox 36.0.4/20150321175551])
+2015-04-01 16:30:13	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 16:30:27	▬▬▶	CorySimmons (~textual@cpe-174-103-84-179.mi.res.rr.com) has joined #Node.js
+2015-04-01 16:30:31	MasterThrall	like, I want part of my code, that I see running in the web browser, to be able to be activated and act like nodemon but not automatically, all the time
+2015-04-01 16:30:36	MasterThrall	only manually, when I say
+2015-04-01 16:30:43	◀▬▬	oVerde (~oVerde@191.182.166.241) has quit (Quit: leaving..)
+2015-04-01 16:30:54	◀▬▬	bobmcw (~bobmcw@redhat/jboss/bobmcw) has quit (Ping timeout: 245 seconds)
+2015-04-01 16:31:03	◀▬▬	racoon (~textual@146-115-96-205.c3-0.brl-ubr1.sbo-brl.ma.cable.rcn.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 16:31:04	MasterThrall	so, manual restart on file change, but nothing to do with file change
+2015-04-01 16:31:07	Mackseraner	ljharb i dont expect you to get it, its not very well documented and the code is horribly written atm
+2015-04-01 16:31:11	▬▬▶	phiquis (~unknown@69.80.103.112) has joined #Node.js
+2015-04-01 16:31:17	▬▬▶	avens (~avens@198.0.159.99) has joined #Node.js
+2015-04-01 16:31:21	◀▬▬	mihok (~mihok@CPE00180a0f3f8a-CM00222d76471d.cpe.net.cable.rogers.com) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:31:31	Mackseraner	ljharb basically, the user can define what errors will be thrown by the "service". those that are not expected should crash the process.
+2015-04-01 16:31:37	▬▬▶	nuizzy (~jason.wal@69.163.48.214) has joined #Node.js
+2015-04-01 16:31:43	Mackseraner	ljharb i didnt know about the setTimeout-trick but i think it will work
+2015-04-01 16:31:48	stride	masterthrall: you can use anything that restarts your process (like forever) and just call process.exit in your code when you want to restart
+2015-04-01 16:31:58	▬▬▶	jlumpe (~jlumpe@176.41.13.179) has joined #Node.js
+2015-04-01 16:32:13	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 16:32:17	◀▬▬	crowCaw (6c23cc22@gateway/web/cgi-irc/kiwiirc.com/ip.108.35.204.34) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2015-04-01 16:32:43	MasterThrall	thanks stride, I presumed forever was a file-change watcher as well
+2015-04-01 16:33:09	▬▬▶	btulchinsky (~btulchins@exchange.qaconsultants.ca) has joined #Node.js
+2015-04-01 16:33:24	◀▬▬	lsiv568 (~lsiv568@173.48.209.254) has quit (Remote host closed the connection)
+2015-04-01 16:33:59	▬▬▶	lsiv568 (~lsiv568@173.48.209.254) has joined #Node.js
+2015-04-01 16:34:07	▬▬▶	lloydde (~lloydde@208.184.5.170) has joined #Node.js
+2015-04-01 16:34:22	◀▬▬	_hollywood (~mynameis@avw252.neoplus.adsl.tpnet.pl) has quit (Quit: Leaving)
+2015-04-01 16:34:28	▬▬▶	JFlash (~JFlash@177.148.156.208) has joined #Node.js
+2015-04-01 16:35:02	▬▬▶	fiveisprime (~fiveispri@207-67-107-174.static.twtelecom.net) has joined #Node.js
+2015-04-01 16:35:20	▬▬▶	ryanxcharles (~ryan@64.124.157.148) has joined #Node.js
+2015-04-01 16:35:26	◀▬▬	acruz (bdc9fc86@gateway/web/freenode/ip.189.201.252.134) has quit (Quit: thanks for your help)
+2015-04-01 16:35:32	stride	masterthrall: forever can do that with -w (iirc) but that's not mandatory. i think the default behaviour without that switch is what you want
+2015-04-01 16:35:50	MasterThrall	thanks, I'll google some more
+2015-04-01 16:36:10	◀▬▬	fps (~tapas@fps.io) has left #Node.js
+2015-04-01 16:36:47	◀▬▬	fiveisprime (~fiveispri@207-67-107-174.static.twtelecom.net) has quit (Client Quit)
+2015-04-01 16:37:28	◀▬▬	buk (~buk@eydis.buks.eu.org) has quit (Remote host closed the connection)
+2015-04-01 16:37:31	◀▬▬	fsalgo (~textual@113.193.34.13) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:37:56	▬▬▶	merobertsjr____ (~meroberts@wsip-184-177-173-29.sd.sd.cox.net) has joined #Node.js
+2015-04-01 16:37:59	▬▬▶	phiquis_ (~unknown@69.80.103.112) has joined #Node.js
+2015-04-01 16:38:02	◀▬▬	lsiv568 (~lsiv568@173.48.209.254) has quit (Remote host closed the connection)
+2015-04-01 16:38:02	◀▬▬	Bob_Gneu (~bob@76-220-41-201.lightspeed.sntcca.sbcglobal.net) has quit (Remote host closed the connection)
+2015-04-01 16:38:12	▬▬▶	__trev (~trev@gw2.advancemags.com) has joined #Node.js
+2015-04-01 16:38:14	▬▬▶	lsiv568 (~lsiv568@173.48.209.254) has joined #Node.js
+2015-04-01 16:38:16	◀▬▬	__trev (~trev@gw2.advancemags.com) has quit (Remote host closed the connection)
+2015-04-01 16:38:29	▬▬▶	Bob_Gneu (~bob@76-220-41-201.lightspeed.sntcca.sbcglobal.net) has joined #Node.js
+2015-04-01 16:38:58	▬▬▶	buk (~buk@eydis.buks.eu.org) has joined #Node.js
+2015-04-01 16:39:12	◀▬▬	mich-cook (~me@208.185.32.26) has quit (Quit: Leaving.)
+2015-04-01 16:39:19	▬▬▶	brianseeders (~Brian@162.254.152.70) has joined #Node.js
+2015-04-01 16:39:27	◀▬▬	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has quit (Remote host closed the connection)
+2015-04-01 16:39:45	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:39:51	◀▬▬	merobertsjr___ (~meroberts@wsip-184-177-173-29.sd.sd.cox.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:40:50	▬▬▶	sonofdirt (~sonofdirt@74.203.179.241) has joined #Node.js
+2015-04-01 16:40:54	◀▬▬	iliketurtles (~iliketurt@174.46.233.4) has quit (Quit: zzzzz…..)
+2015-04-01 16:40:57	◀▬▬	trevorlandau (~trev@69.2.124.17) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:40:58	◀▬▬	netj (~netj@naru.stanford.edu) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:41:23	▬▬▶	netj (~netj@128.12.163.109) has joined #Node.js
+2015-04-01 16:41:37	◀▬▬	MalfaitRobin (~MalfaitRo@unaffiliated/malfaitrobin) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:41:45	◀▬▬	KushS (~kushagra@122.164.44.28) has quit (Remote host closed the connection)
+2015-04-01 16:41:47	◀▬▬	sonofdirt (~sonofdirt@74.203.179.241) has quit (Remote host closed the connection)
+2015-04-01 16:41:49	▬▬▶	Al3xandr3w (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has joined #Node.js
+2015-04-01 16:42:07	▬▬▶	sbellina (~sbellina@107.191.0.99.static.utbb.net) has joined #Node.js
+2015-04-01 16:42:25	▬▬▶	sonofdirt (~sonofdirt@74.203.179.241) has joined #Node.js
+2015-04-01 16:43:03	▬▬▶	vampi-the-frog (~vampirefr@unaffiliated/vampirefrog) has joined #Node.js
+2015-04-01 16:43:05	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:43:36	▬▬▶	dcl (~dcl@freecode-project/hacker/spiderbyte) has joined #Node.js
+2015-04-01 16:43:40	◀▬▬	penguinpowernz (~ppnz@180.189.199.6) has quit (Quit: leaving)
+2015-04-01 16:44:10	▬▬▶	penguinpowernz (~ppnz@180.189.199.6) has joined #Node.js
+2015-04-01 16:44:27	▬▬▶	Maxels (~Maxel@24-159-207-34.static.roch.mn.charter.com) has joined #Node.js
+2015-04-01 16:44:38	◀▬▬	ctcg (~ctcg@64.20.17.103) has quit (Remote host closed the connection)
+2015-04-01 16:44:44	▬▬▶	geomyidae_ (uid214@gateway/web/irccloud.com/x-nymurgtnlksdudyw) has joined #Node.js
+2015-04-01 16:44:53	◀▬▬	aesopwolf (~textual@50.59.180.99) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:45:08	◀▬▬	Hestil (~Hestil@37.142.233.109) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:45:40	--	rigor789|away is now known as rigor789
+2015-04-01 16:45:41	◀▬▬	Thorn (~Thorn@unaffiliated/thorn) has quit (Quit: Quit)
+2015-04-01 16:45:46	▬▬▶	iliketurtles (~iliketurt@174.46.233.4) has joined #Node.js
+2015-04-01 16:46:06	▬▬▶	athan (~quassel@ip-64-134-230-198.public.wayport.net) has joined #Node.js
+2015-04-01 16:46:25	◀▬▬	sbellina (~sbellina@107.191.0.99.static.utbb.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:46:30	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 16:46:51	◀▬▬	sonofdirt (~sonofdirt@74.203.179.241) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:46:52	◀▬▬	Maxel (~Maxel@24-159-207-34.static.roch.mn.charter.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:47:14	◀▬▬	Havvy (~Havvy@unaffiliated/havvy) has quit (Quit: Leaving)
+2015-04-01 16:47:35	▬▬▶	Havvy (~Havvy@unaffiliated/havvy) has joined #Node.js
+2015-04-01 16:47:44	▬▬▶	DrMabuse_ (~drmabuse@HSI-KBW-46-237-201-105.hsi.kabel-badenwuerttemberg.de) has joined #Node.js
+2015-04-01 16:47:51	◀▬▬	lioninawhat (~lioninawh@2605:a601:48c:7401:98ec:48f4:7e26:f278) has quit (Remote host closed the connection)
+2015-04-01 16:48:02	◀▬▬	btulchinsky (~btulchins@exchange.qaconsultants.ca) has quit (Remote host closed the connection)
+2015-04-01 16:48:03	◀▬▬	a5i (uid59278@gateway/web/irccloud.com/x-gxbutrpdyxkstbog) has quit (Quit: Connection closed for inactivity)
+2015-04-01 16:48:31	◀▬▬	stoogenmeyer__ (~stoogenme@bzq-109-67-130-197.red.bezeqint.net) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:49:08	◀▬▬	sgen (~sgen@108-162-137-101.cable.teksavvy.com) has quit (Remote host closed the connection)
+2015-04-01 16:49:32	◀▬▬	eschnou (~eschnou@164.56-247-81.adsl-dyn.isp.belgacom.be) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:49:43	◀▬▬	penguinpowernz (~ppnz@180.189.199.6) has quit (Quit: leaving)
+2015-04-01 16:49:46	▬▬▶	DragonPu_ (~textual@cpe-70-92-146-217.wi.res.rr.com) has joined #Node.js
+2015-04-01 16:49:46	--	GrumpyPixel is now known as GrumpyPixelAway
+2015-04-01 16:50:18	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Remote host closed the connection)
+2015-04-01 16:50:22	▬▬▶	danjenkins (anonymous@nat/digium/x-dvswmucsoiydwdcb) has joined #Node.js
+2015-04-01 16:50:39	▬▬▶	penguinpowernz (~ppnz@180.189.199.6) has joined #Node.js
+2015-04-01 16:50:54	◀▬▬	cav_dan (~jackmcmor@177.133.136.198) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:51:04	▬▬▶	mihok (~mihok@63.250.107.210) has joined #Node.js
+2015-04-01 16:52:02	▬▬▶	toothrot (~mux@unaffiliated/toothrot) has joined #Node.js
+2015-04-01 16:52:03	◀▬▬	DrMabuse_ (~drmabuse@HSI-KBW-46-237-201-105.hsi.kabel-badenwuerttemberg.de) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:52:46	▬▬▶	JackoPlane (~Jack@unaffiliated/jackoplane) has joined #Node.js
+2015-04-01 16:52:46	▬▬▶	fsalgo (~textual@113.193.34.13) has joined #Node.js
+2015-04-01 16:53:14	◀▬▬	mjpearso_ (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2015-04-01 16:53:26	▬▬▶	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has joined #Node.js
+2015-04-01 16:53:36	◀▬▬	StoneCypher (~johnh@70-36-241-155.dedicated.static.sonic.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:53:37	▬▬▶	fredrikslattman (54dbae97@gateway/web/cgi-irc/kiwiirc.com/ip.84.219.174.151) has joined #Node.js
+2015-04-01 16:53:39	▬▬▶	foEs (~foEs@vpn.kempervalve.com) has joined #Node.js
+2015-04-01 16:53:47	◀▬▬	delianides (~delianide@204.116.47.243) has quit (Remote host closed the connection)
+2015-04-01 16:54:30	◀▬▬	Pak_ (~Pak@217.131.221.78) has quit (Read error: Connection reset by peer)
+2015-04-01 16:54:30	◀▬▬	Axy (~Mia@unaffiliated/mia) has quit (Read error: Connection reset by peer)
+2015-04-01 16:54:35	◀▬▬	spage (~spage@198.85.229.3) has quit (Quit: spage)
+2015-04-01 16:54:40	◀▬▬	wildroman2 (~wildroman@109.186.185.235) has quit (Remote host closed the connection)
+2015-04-01 16:54:57	◀▬▬	Keanu73 (~Keanu73@unaffiliated/keanu73) has quit (Quit: Leaving)
+2015-04-01 16:55:13	▬▬▶	cob (~cob@179.187.93.201.dynamic.adsl.gvt.net.br) has joined #Node.js
+2015-04-01 16:55:31	◀▬▬	edrocks (~edrocks@66.55.63.166) has quit (Remote host closed the connection)
+2015-04-01 16:56:23	◀▬▬	gnarMatix (~gnarMatix@bas2-montreal02-1096701403.dsl.bell.ca) has quit (Remote host closed the connection)
+2015-04-01 16:56:37	▬▬▶	lioninawhat (~lioninawh@192-200-230-243.mci.googlefiber.net) has joined #Node.js
+2015-04-01 16:57:28	◀▬▬	drmabuse (~drmabuse@HSI-KBW-149-172-17-242.hsi13.kabel-badenwuerttemberg.de) has quit
+2015-04-01 16:57:32	▬▬▶	StoneCypher (~johnh@70-36-241-155.dedicated.static.sonic.net) has joined #Node.js
+2015-04-01 16:57:42	◀▬▬	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has quit (Quit: Leaving.)
+2015-04-01 16:57:59	▬▬▶	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has joined #Node.js
+2015-04-01 16:58:00	◀▬▬	MistahKurtz (~ColKurtz@69.31.123.126) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:58:00	saml	https://nodejs.org/api/path.html#path_path_join_path1_path2   path.join('./a', 'b')  gives 'a/b' . how can I make it give './a/b' ?
+2015-04-01 16:58:07	◀▬▬	daedelus_j (~amadeus@64.124.196.30) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:58:31	--	GrumpyPixelAway is now known as GrumpyPixel
+2015-04-01 16:58:58	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 16:59:00	▬▬▶	mich-cook (~me@208.185.32.26) has joined #Node.js
+2015-04-01 16:59:02	◀▬▬	johnstorey (~johnstore@71-85-3-48.dhcp.buft.sc.charter.com) has quit (Quit: Nodding off now.)
+2015-04-01 16:59:16	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 16:59:36	◀▬▬	JamesMGreene (~JamesMGre@c-204-169-15-36.wifi.ties.k12.mn.us) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:59:41	▬▬▶	one_zero (~one_zero@ip70-181-75-49.oc.oc.cox.net) has joined #Node.js
+2015-04-01 17:00:15	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #Node.js
+2015-04-01 17:00:15	▬▬▶	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has joined #Node.js
+2015-04-01 17:00:46	◀▬▬	mdibaiee (~mdibaiee@151.244.152.115) has quit (Quit: Leaving)
+2015-04-01 17:00:58	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 17:01:03	▬▬▶	wildroman2 (~wildroman@109.186.185.235) has joined #Node.js
+2015-04-01 17:01:33	◀▬▬	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has quit (Client Quit)
+2015-04-01 17:01:51	▬▬▶	frek818 (~frek818@mc80436d0.tmodns.net) has joined #Node.js
+2015-04-01 17:01:53	◀▬▬	brianseeders (~Brian@162.254.152.70) has quit (Remote host closed the connection)
+2015-04-01 17:01:53	▬▬▶	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has joined #Node.js
+2015-04-01 17:01:56	▬▬▶	EGreg (~EGreg@213.57.65.214) has joined #Node.js
+2015-04-01 17:02:10	◀▬▬	mihok (~mihok@63.250.107.210) has quit (Remote host closed the connection)
+2015-04-01 17:02:26	yoshokatana	wait
+2015-04-01 17:02:34	yoshokatana	saml sam? it's nelson
+2015-04-01 17:02:50	◀▬▬	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has quit (Remote host closed the connection)
+2015-04-01 17:02:58	saml	hello
+2015-04-01 17:03:01	▬▬▶	wallerdev (~wallerdev@208.185.20.30) has joined #Node.js
+2015-04-01 17:03:19	▬▬▶	li0ninawhat (~lioninawh@2605:a601:48c:7401:31be:fcd1:1e89:d513) has joined #Node.js
+2015-04-01 17:03:25	yoshokatana	wait maybe not (I thought you might be my coworker)
+2015-04-01 17:03:27	◀▬▬	FIFOd[a] (~FIFOda]@198.85.229.3) has quit (Remote host closed the connection)
+2015-04-01 17:03:39	◀▬▬	EGreg2 (~EGreg@213.57.66.104) has quit (Ping timeout: 264 seconds)
+2015-04-01 17:03:54	▬▬▶	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has joined #Node.js
+2015-04-01 17:04:36	▬▬▶	ren_hoek (~ren_hoek@2605:6000:9ec0:5400:79b8:c583:ac4d:7884) has joined #Node.js
+2015-04-01 17:04:40	yoshokatana	saml I think you can use path.relative to get that?
+2015-04-01 17:04:43	saml	yah coworker yoshokatana
+2015-04-01 17:04:58	▬▬▶	nj3ma (~nj3ma@105.230.129.22) has joined #Node.js
+2015-04-01 17:05:02	◀▬▬	tech-ninja (~apple@mctnnbsa59w-156034052085.dhcp-dynamic.FibreOP.nb.bellaliant.net) has quit (Quit: tech-ninja)
+2015-04-01 17:05:18	◀▬▬	lioninawhat (~lioninawh@192-200-230-243.mci.googlefiber.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:05:21	◀▬▬	Exclusive (~quassel@82.147.52.201) has quit (Remote host closed the connection)
+2015-04-01 17:05:34	▬▬▶	Exclusive (~quassel@82.147.52.201) has joined #Node.js
+2015-04-01 17:05:36	◀▬▬	Lee1092 (uid13277@gateway/web/irccloud.com/x-oqqojvvubwjvpzbh) has quit (Quit: Connection closed for inactivity)
+2015-04-01 17:05:43	◀▬▬	wildroman2 (~wildroman@109.186.185.235) has quit (Remote host closed the connection)
+2015-04-01 17:06:25	▬▬▶	wildroman2 (~wildroman@109.186.185.235) has joined #Node.js
+2015-04-01 17:06:39	◀▬▬	K4T (~K4T@anv168.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 255 seconds)
+2015-04-01 17:07:09	▬▬▶	OtterCoder (~quassel@67.199.175.157) has joined #Node.js
+2015-04-01 17:07:38	▬▬▶	arkanciscan (~arkancisc@108-81-107-239.lightspeed.sntcca.sbcglobal.net) has joined #Node.js
+2015-04-01 17:07:38	◀▬▬	wicope (~wicope@117.Red-88-27-63.staticIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:07:47	◀▬▬	j0hnsm1th (~jubei@105.210.54.62) has quit (Remote host closed the connection)
+2015-04-01 17:08:15	▬▬▶	mandric (~mandric@108-228-56-140.lightspeed.cicril.sbcglobal.net) has joined #Node.js
+2015-04-01 17:08:21	◀▬▬	jamesheston (~jameshest@107-133-27-112.lightspeed.chtnsc.sbcglobal.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 17:08:44	◀▬▬	qom2 (~qom2@185.6.5.4) has quit (Quit: qom2)
+2015-04-01 17:08:47	◀▬▬	ionprodan (~ionprodan@host-static-89-41-65-137.moldtelecom.md) has quit
+2015-04-01 17:08:52	saml	> 1
+2015-04-01 17:09:22	◀▬▬	harbhub (32fa531a@gateway/web/freenode/ip.50.250.83.26) has quit (Quit: Page closed)
+2015-04-01 17:09:23	◀▬▬	iliketurtles (~iliketurt@174.46.233.4) has quit (Quit: zzzzz…..)
+2015-04-01 17:09:23	◀▬▬	DragonPu_ (~textual@cpe-70-92-146-217.wi.res.rr.com) has quit (Write error: Broken pipe)
+2015-04-01 17:09:29	◀▬▬	Ronyrun (ronyrun@2a01:e34:ec1d:9400:5dea:db61:ceb8:1579) has quit (Quit: Leaving)
+2015-04-01 17:09:40	◀▬▬	ren_hoek (~ren_hoek@2605:6000:9ec0:5400:79b8:c583:ac4d:7884) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:09:59	▬▬▶	Sebmaster (~Sebmaster@h081217056104.dyn.cm.kabsi.at) has joined #Node.js
+2015-04-01 17:09:59	◀▬▬	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 17:10:28	▬▬▶	DragonPu_ (~textual@cpe-70-92-146-217.wi.res.rr.com) has joined #Node.js
+2015-04-01 17:10:56	◀▬▬	skkeeper (~lordvahvu@bl15-216-177.dsl.telepac.pt) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:11:23	◀▬▬	balazs (~balazs@157.166.175.129) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:11:28	◀▬▬	yamadapc (~yamadapc@201.81.172.106) has quit (Remote host closed the connection)
+2015-04-01 17:11:48	◀▬▬	gasbakid_ (~gasbakid@41.96.34.5) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:11:50	◀▬▬	Trangar (~Trangar3@unaffiliated/trangar) has quit (Quit: Leaving)
+2015-04-01 17:11:50	◀▬▬	lsiv568 (~lsiv568@173.48.209.254) has quit (Remote host closed the connection)
+2015-04-01 17:12:18	▬▬▶	iliketurtles (~iliketurt@174.46.233.4) has joined #Node.js
+2015-04-01 17:12:26	▬▬▶	lsiv568 (~lsiv568@173.48.209.254) has joined #Node.js
+2015-04-01 17:12:36	▬▬▶	skkeeper (~lordvahvu@bl6-40-112.dsl.telepac.pt) has joined #Node.js
+2015-04-01 17:12:49	◀▬▬	Tekster (~Tekster@unaffiliated/tekster) has quit (Read error: Connection reset by peer)
+2015-04-01 17:12:51	--	GrumpyPixel is now known as GrumpyPixelAway
+2015-04-01 17:13:37	▬▬▶	trave (~travis@216.51.24.242) has joined #Node.js
+2015-04-01 17:13:58	◀▬▬	it0a (~it0a@rrcs-24-56-88-130.ma.biz.rr.com) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:14:48	◀▬▬	malkomalko (~malkomalk@207.251.103.46) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:14:49	▬▬▶	deol (~michaelde@198.233.187.74) has joined #Node.js
+2015-04-01 17:15:02	▬▬▶	ctcg (~ctcg@108-93-234-82.lightspeed.chtnsc.sbcglobal.net) has joined #Node.js
+2015-04-01 17:16:41	▬▬▶	TheAceOfHearts (~TheAceOfH@50.247.73.165) has joined #Node.js
+2015-04-01 17:16:44	▬▬▶	octetcloud (~Sam_Rober@24.86.40.208) has joined #Node.js
+2015-04-01 17:16:45	◀▬▬	lsiv568 (~lsiv568@173.48.209.254) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:16:47	◀▬▬	sonthonax (~anonymous@host86-163-223-222.range86-163.btcentralplus.com) has quit (Ping timeout: 248 seconds)
+2015-04-01 17:17:08	◀▬▬	CIDIC (~CIDIC@74-92-157-2-WashingtonDC.hfc.comcastbusiness.net) has quit (Quit: CIDIC)
+2015-04-01 17:17:48	◀▬▬	jlumpe (~jlumpe@176.41.13.179) has quit (Quit: jlumpe)
+2015-04-01 17:17:49	▬▬▶	FernandoBasso (~Fernando@177.82.172.148) has joined #Node.js
+2015-04-01 17:18:44	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #Node.js
+2015-04-01 17:19:05	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:19:36	◀▬▬	st34lth (~st34lth@96.88.240.57) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:19:40	▬▬▶	sonthonax (~anonymous@5751e379.skybroadband.com) has joined #Node.js
+2015-04-01 17:20:05	--	irc: disconnected from server
+2015-04-01 17:29:28	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-04-01 17:29:28	--	Topic for #Node.js is "Current Stable v0.12.2, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-04-01 17:29:28	--	Topic set by ljharb (sid43720@oftn/member/ljharb) on Tue, 31 Mar 2015 21:29:08
+2015-04-01 17:29:28	--	Channel #Node.js: 1453 nicks (16 ops, 0 voices, 1437 normals)
+2015-04-01 17:29:29	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-04-01 17:29:29	--	URL for #node.js: http://nodejs.org/
+2015-04-01 17:29:34	◀▬▬	daffl (~daffl@216-129-84-78.dedicated.allstream.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:29:39	hstn	GreenJello: true :L but i prefer to jsut have it run on windows :P
+2015-04-01 17:29:39	GreenJello	I'm on osx and I often run things in linux/windows vms; it's easier than trying to get something to work on a platform that isn't really supported
+2015-04-01 17:29:49	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 17:29:50	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-04-01 17:29:57	▬▬▶	nnyk (~nnyk@unaffiliated/nnyk) has joined #Node.js
+2015-04-01 17:30:02	▬▬▶	Tekster (~Tekster@unaffiliated/tekster) has joined #Node.js
+2015-04-01 17:30:12	◀▬▬	gare4ka__ (~gare4ka@2.92.173.213) has quit (Quit: This computer has gone to sleep)
+2015-04-01 17:30:33	◀▬▬	nnyk_ (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 244 seconds)
+2015-04-01 17:30:38	◀▬▬	savantgarde (~savantgar@c-2d29e555.031-174-73746f10.cust.bredbandsbolaget.se) has quit (Remote host closed the connection)
+2015-04-01 17:31:09	◀▬▬	avens (~avens@198.0.159.99) has quit (Read error: Connection reset by peer)
+2015-04-01 17:31:12	▬▬▶	avens_ (~avens@198.0.159.99) has joined #Node.js
+2015-04-01 17:31:18	dreadheadsic	@hstn hstn: 2015-04-01T22:32:08.753+0100 I STORAGE  [initandlisten] exception in initAndListen: 29 Data directory C:\data\db\ not found., terminating
+2015-04-01 17:31:18	dreadheadsic	 this means you don't have \data\db dir where db is stored. As i said create empty dir c:\data\db and try runing mongod again, it should run.
+2015-04-01 17:31:27	▬▬▶	Morhaus (~Morhaus@212-198-72-127.rev.numericable.fr) has joined #Node.js
+2015-04-01 17:31:27	▬▬▶	mberk_ (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 17:31:34	◀▬▬	Morhaus (~Morhaus@212-198-72-127.rev.numericable.fr) has quit (Remote host closed the connection)
+2015-04-01 17:31:35	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 17:32:04	◀▬▬	EGreg (~EGreg@213.57.65.214) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:32:28	▬▬▶	sagittarian (~kvirc@94.230.86.198) has joined #Node.js
+2015-04-01 17:32:39	▬▬▶	liamkeily (~liamkeily@host217-43-227-128.range217-43.btcentralplus.com) has joined #Node.js
+2015-04-01 17:33:16	▬▬▶	MistahKurtz (~ColKurtz@69.31.123.126) has joined #Node.js
+2015-04-01 17:33:41	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 17:34:11	◀▬▬	proshot_ (uid19902@gateway/web/irccloud.com/x-mozdzhllfrszngyn) has quit (Quit: Connection closed for inactivity)
+2015-04-01 17:34:16	◀▬▬	Fishrock123 (~Fishrock1@OSHWON9562W-LP140-02-1177880221.dsl.bell.ca) has quit (Remote host closed the connection)
+2015-04-01 17:34:33	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #Node.js
+2015-04-01 17:34:38	▬▬▶	Guest42 (~textual@71-14-12-42.static.stbr.ga.charter.com) has joined #Node.js
+2015-04-01 17:35:00	◀▬▬	bazineta__ (~bazineta@c-50-136-188-58.hsd1.ca.comcast.net) has quit (Quit: Be back later ...)
+2015-04-01 17:35:48	◀▬▬	mberk_ (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 17:35:50	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 17:36:20	◀▬▬	bobmcw (~bobmcw@redhat/jboss/bobmcw) has quit (Remote host closed the connection)
+2015-04-01 17:36:27	◀▬▬	knownasilya (uid22190@gateway/web/irccloud.com/x-ljfwimfxzcduopms) has quit (Quit: Connection closed for inactivity)
+2015-04-01 17:36:36	▬▬▶	markholmes (~markholme@rrcs-173-198-17-194.west.biz.rr.com) has joined #Node.js
+2015-04-01 17:36:41	◀▬▬	cryptojuice (~cryptojui@static-108-29-37-6.nycmny.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:36:53	▬▬▶	bobmcw (~bobmcw@redhat/jboss/bobmcw) has joined #Node.js
+2015-04-01 17:37:21	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 17:37:54	◀▬▬	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has quit (Quit: bradleymeck)
+2015-04-01 17:38:10	◀▬▬	malkomalko (~malkomalk@207.251.103.46) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:38:21	--	oddskill is now known as oddskill_away
+2015-04-01 17:40:22	◀▬▬	AaronMT (~AaronMT@CPE0088654f39bd-CM602ad0738a5c.cpe.net.cable.rogers.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 17:40:38	◀▬▬	LucaTM (~Luca@ppp-218-136.33-151.iol.it) has quit (Quit: To infinity and beyond...)
+2015-04-01 17:40:45	◀▬▬	mcspud (~mcspudet@220.240.19.250) has quit (Quit: This computer has gone to sleep)
+2015-04-01 17:40:52	◀▬▬	iliketurtles (~iliketurt@174.46.233.4) has quit (Quit: zzzzz…..)
+2015-04-01 17:40:53	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #Node.js
+2015-04-01 17:40:59	◀▬▬	KushS (~kushagra@122.164.44.28) has quit (Remote host closed the connection)
+2015-04-01 17:41:03	▬▬▶	kevwil (~kevwil@c-71-237-103-128.hsd1.co.comcast.net) has joined #Node.js
+2015-04-01 17:41:38	◀▬▬	bobmcw (~bobmcw@redhat/jboss/bobmcw) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:42:15	mikeywayup	best unit test framework for node??
+2015-04-01 17:42:35	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 17:42:47	mikeywayup	jasmine?
+2015-04-01 17:42:53	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #Node.js
+2015-04-01 17:42:55	▬▬▶	sonofdirt (~sonofdirt@74.203.179.241) has joined #Node.js
+2015-04-01 17:43:02	▬▬▶	iliketurtles (~iliketurt@174.46.233.4) has joined #Node.js
+2015-04-01 17:43:02	@ljharb	tape.
+2015-04-01 17:43:05	◀▬▬	vampi-the-frog (~vampirefr@unaffiliated/vampirefrog) has quit (Quit: Leaving)
+2015-04-01 17:43:07	dreadheadsic	mocha
+2015-04-01 17:43:37	◀▬▬	enaqx (~enaqx@user-206.98.infomir.com.ua) has quit (Remote host closed the connection)
+2015-04-01 17:43:40	Sorella	mikeywayup: jasmine is the worst out of all the options :)
+2015-04-01 17:43:47	▬▬▶	vreo (~vreo@gateway/vpn/privateinternetaccess/vreo) has joined #Node.js
+2015-04-01 17:44:01	--	rigor789 is now known as rigor789|away
+2015-04-01 17:44:44	▬▬▶	lsiv568 (~lsiv568@173.48.209.254) has joined #Node.js
+2015-04-01 17:44:55	◀▬▬	Solid1 (~Solid1@91.231.122.77) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:45:13	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 17:45:15	--	rigor789|away is now known as rigor789
+2015-04-01 17:46:05	◀▬▬	jr3 (~jr3@c-98-194-199-12.hsd1.tx.comcast.net) has quit (Quit: jr3)
+2015-04-01 17:46:06	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 17:46:19	mikeywayup	@Sorella, why is jasmine so terrible? seems Protractor uses it as a test harness
+2015-04-01 17:46:42	▬▬▶	toddself (~toddself@pool-72-89-48-46.nycmny.fios.verizon.net) has joined #Node.js
+2015-04-01 17:47:05	▬▬▶	jr3 (~jr3@c-98-194-199-12.hsd1.tx.comcast.net) has joined #Node.js
+2015-04-01 17:47:05	◀▬▬	jr3 (~jr3@c-98-194-199-12.hsd1.tx.comcast.net) has quit (Client Quit)
+2015-04-01 17:47:20	◀▬▬	sonofdirt (~sonofdirt@74.203.179.241) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:47:23	▬▬▶	athan (~quassel@50.243.136.91) has joined #Node.js
+2015-04-01 17:47:25	◀▬▬	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:47:42	Sorella	mikeywayup: because it has been designed exclusively for browser, and then support for other platforms was hacked awkwardly on top. Same goes for testing asynchronous things.
+2015-04-01 17:47:43	◀▬▬	massif (~supernaut@142-254-35-188.dsl.dynamic.sonic.net) has quit (Quit: massif)
+2015-04-01 17:47:45	▬▬▶	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has joined #Node.js
+2015-04-01 17:48:16	◀▬▬	pguruprasad (~pgurupras@64.125.69.70) has quit (Quit: pguruprasad)
+2015-04-01 17:49:14	◀▬▬	lsiv568 (~lsiv568@173.48.209.254) has quit (Ping timeout: 245 seconds)
+2015-04-01 17:49:17	mikeywayup	@Sorella, thanks! going to give mocha a try, any more recommended besides tape and mocha
+2015-04-01 17:49:20	◀▬▬	Guest42 (~textual@71-14-12-42.static.stbr.ga.charter.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 17:49:47	▬▬▶	arkanciscan (~arkancisc@50.141.64.8) has joined #Node.js
+2015-04-01 17:50:07	◀▬▬	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:50:42	◀▬▬	mumra (~mumra@143.252.1.30) has quit (Ping timeout: 244 seconds)
+2015-04-01 17:51:00	Sorella	I've written my own because none of the existing ones fit my use cases, but it doesn't have enough documentation that I'd be comfortable suggesting people to use it
+2015-04-01 17:51:04	◀▬▬	sunoano (~sa@unaffiliated/sunoano) has quit (Remote host closed the connection)
+2015-04-01 17:51:22	▬▬▶	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has joined #Node.js
+2015-04-01 17:51:32	▬▬▶	pguruprasad (~pgurupras@64.125.69.70) has joined #Node.js
+2015-04-01 17:51:40	◀▬▬	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:52:00	◀▬▬	Sebmaster (~Sebmaster@h081217056104.dyn.cm.kabsi.at) has quit (Quit: Leaving)
+2015-04-01 17:52:50	▬▬▶	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has joined #Node.js
+2015-04-01 17:52:59	▬▬▶	kvz (~kvz@dhcp-089-099-187-093.chello.nl) has joined #Node.js
+2015-04-01 17:53:05	◀▬▬	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has quit (Quit: Limix)
+2015-04-01 17:53:08	◀▬▬	jvrousseau (~jvroussea@outgoing.norman.wdtinc.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 17:53:11	▬▬▶	wraithgar (~Gar@24.216.239.218) has joined #Node.js
+2015-04-01 17:53:48	◀▬▬	DragonPu_ (~textual@cpe-70-92-146-217.wi.res.rr.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 17:54:08	▬▬▶	riets (~quassel@5.158.216.161) has joined #Node.js
+2015-04-01 17:54:19	◀▬▬	arsey (~rhysgrave@23-25-113-57-static.hfc.comcastbusiness.net) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:54:32	▬▬▶	Piotras_ (~pp@188.246.159.115.rev.vline.pl) has joined #Node.js
+2015-04-01 17:54:51	◀▬▬	derbie (050c8979@gateway/web/freenode/ip.5.12.137.121) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:55:10	▬▬▶	Oxyd (~oxyd@pdpc/supporter/student/oxyd) has joined #Node.js
+2015-04-01 17:55:45	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #Node.js
+2015-04-01 17:55:53	▬▬▶	DrShoggoth (~prakwtf@12.116.104.118) has joined #Node.js
+2015-04-01 17:56:20	◀▬▬	hstn (~hstn@mx1.elevateconsulting.co.uk) has quit (Quit: Leaving)
+2015-04-01 17:56:53	◀▬▬	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has quit (Client Quit)
+2015-04-01 17:57:00	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:57:04	◀▬▬	fsalgo (~textual@113.193.34.13) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 17:57:30	◀▬▬	bbankes_ (~bbankes@50-200-100-242-static.hfc.comcastbusiness.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:57:36	◀▬▬	Spacew00t (~Spacew00t@static-100-37-240-75.nycmny.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 17:57:38	▬▬▶	frecel (~quassel@162.254.42.192) has joined #Node.js
+2015-04-01 17:57:48	◀▬▬	bbankes (~bbankes@50-200-100-242-static.hfc.comcastbusiness.net) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:58:16	◀▬▬	modcure (~cure@rrcs-97-79-215-10.sw.biz.rr.com) has quit (Quit: Leaving)
+2015-04-01 17:58:41	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #Node.js
+2015-04-01 17:58:43	▬▬▶	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has joined #Node.js
+2015-04-01 17:59:21	--	toddself is now known as toddself_zz
+2015-04-01 17:59:29	▬▬▶	a5i (uid59278@gateway/web/irccloud.com/x-vqazbyhvbtbrukky) has joined #Node.js
+2015-04-01 18:00:17	◀▬▬	a5i (uid59278@gateway/web/irccloud.com/x-vqazbyhvbtbrukky) has left #Node.js
+2015-04-01 18:00:33	▬▬▶	jamesheston (~jameshest@107-133-27-112.lightspeed.chtnsc.sbcglobal.net) has joined #Node.js
+2015-04-01 18:00:49	◀▬▬	cefkamcau (~cefkamcau@afem225.neoplus.adsl.tpnet.pl) has quit (Quit: Leaving)
+2015-04-01 18:00:57	◀▬▬	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has quit (Client Quit)
+2015-04-01 18:01:22	▬▬▶	jonr22 (~jonr22@2601:6:8000:eaef:1e65:9dff:fe9d:801d) has joined #Node.js
+2015-04-01 18:01:23	◀▬▬	nodweber (~nodweber@5.178.135.214) has quit
+2015-04-01 18:02:30	◀▬▬	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has quit (Read error: Connection reset by peer)
+2015-04-01 18:02:34	gkatsev	tape
+2015-04-01 18:02:42	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Remote host closed the connection)
+2015-04-01 18:02:44	▬▬▶	pimlu (~pimlu@128.172.35.12) has joined #Node.js
+2015-04-01 18:02:59	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 18:03:01	▬▬▶	tech-ninja (~apple@mctnnbsa59w-156034052085.dhcp-dynamic.FibreOP.nb.bellaliant.net) has joined #Node.js
+2015-04-01 18:03:03	◀▬▬	yoshokatana (~yoshokata@adfb12c6.cst.lightpath.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 18:03:14	◀▬▬	macabre (~ibtjw@unaffiliated/macabre) has quit (Quit: Be back later ...)
+2015-04-01 18:03:20	▬▬▶	MikeS_ (~msmith@8.18.203.252) has joined #Node.js
+2015-04-01 18:03:43	▬▬▶	cotko (~ahmed@208.71.157.68) has joined #Node.js
+2015-04-01 18:03:46	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 18:04:21	◀▬▬	wildroman2 (~wildroman@109.186.185.235) has quit (Remote host closed the connection)
+2015-04-01 18:04:23	◀▬▬	ScRaMbLe (~S@unaffiliated/scramble) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:04:29	◀▬▬	fredrikslattman (54dbae97@gateway/web/cgi-irc/kiwiirc.com/ip.84.219.174.151) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2015-04-01 18:05:31	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 18:05:51	◀▬▬	TobiasC (~tobiasc@192-195-82-80.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2015-04-01 18:05:54	▬▬▶	pasukon (~pasukon@162.220.111.43) has joined #Node.js
+2015-04-01 18:06:15	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #Node.js
+2015-04-01 18:06:52	◀▬▬	jmckind (~jmckind@50.56.229.5) has quit
+2015-04-01 18:07:03	--	Dev0n_ is now known as Dev0n
+2015-04-01 18:07:10	◀▬▬	Dev0n (~Dev0n@host-92-0-5-222.as43234.net) has quit (Changing host)
+2015-04-01 18:07:11	▬▬▶	Dev0n (~Dev0n@unaffiliated/dev0n) has joined #Node.js
+2015-04-01 18:07:22	▬▬▶	TobiasC (~tobiasc@192-195-82-80.PUBLIC.monkeybrains.net) has joined #Node.js
+2015-04-01 18:07:24	--	night-owl is now known as zz_night-owl
+2015-04-01 18:07:53	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 18:08:35	◀▬▬	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2015-04-01 18:08:53	▬▬▶	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has joined #Node.js
+2015-04-01 18:09:59	▬▬▶	_orchor_ (~orchor@cpc16-mort6-2-0-cust109.19-2.cable.virginm.net) has joined #Node.js
+2015-04-01 18:10:06	Dev0n	hey, how would you automate new config changes to be set on deployment in a production environment for example?
+2015-04-01 18:10:13	MasterThrall	ya know... if anyone was paying attention to my question... supervisord was the solution.
+2015-04-01 18:10:14	MasterThrall	Recap, need way to manually restart app.js but not associated with code change.
+2015-04-01 18:10:21	MasterThrall	what do you mean devon?
+2015-04-01 18:10:23	◀▬▬	_orchor (~orchor@cpc16-mort6-2-0-cust109.19-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2015-04-01 18:10:25	MasterThrall	or can you be more specific?
+2015-04-01 18:10:46	Dev0n	say I need to introduce a new config option, is there a way this new option could be included in the production config file without manual intervention?
+2015-04-01 18:11:08	◀▬▬	riets (~quassel@5.158.216.161) has quit (Remote host closed the connection)
+2015-04-01 18:11:10	Dev0n	it is a general question I guess so not sure if this is the right place to ask
+2015-04-01 18:11:11	◀▬▬	qdk (~qdk@188.120.76.163) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:11:14	▬▬▶	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has joined #Node.js
+2015-04-01 18:11:43	▬▬▶	lloydde (~lloydde@208.184.5.170) has joined #Node.js
+2015-04-01 18:11:55	◀▬▬	hephaestus (~v3d@178.233.11.49) has quit (Quit: Leaving)
+2015-04-01 18:11:56	MasterThrall	well, new config option was obscure
+2015-04-01 18:12:09	◀▬▬	robertmaxrees (~robert0@unaffiliated/duch-kazatel/x-0361328) has quit
+2015-04-01 18:12:14	▬▬▶	hephaestus (~v3d@178.233.11.49) has joined #Node.js
+2015-04-01 18:12:28	MasterThrall	are you using a code tracking system?
+2015-04-01 18:12:47	MasterThrall	nvm, I'm just going to confuse things ;)  I rarely do things by the book
+2015-04-01 18:12:52	▬▬▶	federicobond (~federicob@thorium.itba.edu.ar) has joined #Node.js
+2015-04-01 18:13:19	Dev0n	MasterThrall, if you mean version control, yes I do.
+2015-04-01 18:13:24	◀▬▬	doug16k (~doug16k@70.51.225.11) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:13:26	◀▬▬	li0ninawhat (~lioninawh@2605:a601:48c:7401:31be:fcd1:1e89:d513) has quit (Remote host closed the connection)
+2015-04-01 18:13:27	▬▬▶	white_crow (~quassel@207.107.159.62) has joined #Node.js
+2015-04-01 18:13:30	@ljharb	MasterThrall: use git. always.
+2015-04-01 18:13:37	Dev0n	yea
+2015-04-01 18:13:38	Dev0n	always
+2015-04-01 18:14:00	▬▬▶	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has joined #Node.js
+2015-04-01 18:14:02	◀▬▬	nya (~nya@p7902d147.tokynt01.ap.so-net.ne.jp) has quit (Remote host closed the connection)
+2015-04-01 18:14:02	Dev0n	anyway, local configs would normally be on ignore so you can have env level config values without it hitting the repo
+2015-04-01 18:14:07	◀▬▬	JackoPlane (~Jack@unaffiliated/jackoplane) has quit (Quit: .)
+2015-04-01 18:14:09	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Remote host closed the connection)
+2015-04-01 18:14:23	Dev0n	however, say the config changes, there isn't much in the way of building config changes to the deployment process right?
+2015-04-01 18:14:28	◀▬▬	oakhay (~dom@dab-ntm1-h-72-7.dab.02.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:14:34	Dev0n	someone is going to have to manually update the config file with the new option?
+2015-04-01 18:14:44	◀▬▬	blessYahu (~blessYahu@static-173-53-48-130.rcmdva.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 18:14:47	_rgn	Dev0n: env variables are great for that
+2015-04-01 18:14:50	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 18:14:58	▬▬▶	jonmorehouse (~jonmoreho@192.69.243.130) has joined #Node.js
+2015-04-01 18:15:11	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #Node.js
+2015-04-01 18:15:36	Dev0n	_rgn, I think I know what you might mean
+2015-04-01 18:15:42	Dev0n	so have the config read env variables?
+2015-04-01 18:15:43	◀▬▬	Argue (~Argue___@s1.BMT-w1.vectant.ne.jp) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:15:44	▬▬▶	Al3xandr3w_ (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has joined #Node.js
+2015-04-01 18:15:48	◀▬▬	kvz (~kvz@dhcp-089-099-187-093.chello.nl) has quit (Quit: kvz)
+2015-04-01 18:16:00	_rgn	config or app directly
+2015-04-01 18:16:02	Dev0n	then have some "service" that you can call/update with new values for the new options?
+2015-04-01 18:16:08	◀▬▬	artemm_ (~artemm@131-117-200-46.pool.ukrtel.net) has quit (Remote host closed the connection)
+2015-04-01 18:16:18	Dev0n	is this a standard approach?
+2015-04-01 18:16:32	_rgn	do you know how heroku does env variables?
+2015-04-01 18:16:40	▬▬▶	artemm (~artemm@131-117-200-46.pool.ukrtel.net) has joined #Node.js
+2015-04-01 18:16:54	Dev0n	not really, I haven't used heroku
+2015-04-01 18:17:07	◀▬▬	TobiasC (~tobiasc@192-195-82-80.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2015-04-01 18:17:23	--	irc: disconnected from server
+2015-04-01 18:22:44	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-04-01 18:22:44	--	Topic for #Node.js is "Current Stable v0.12.2, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-04-01 18:22:44	--	Topic set by ljharb (sid43720@oftn/member/ljharb) on Tue, 31 Mar 2015 21:29:08
+2015-04-01 18:22:44	--	Channel #Node.js: 1426 nicks (16 ops, 0 voices, 1410 normals)
+2015-04-01 18:22:44	--	Notice(verne.freenode.net): [freenode-info] channel flooding and no channel staff around to help? Please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2015-04-01 18:22:45	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-04-01 18:22:45	--	URL for #node.js: http://nodejs.org/
+2015-04-01 18:22:53	◀▬▬	Al3xandr3w_ (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:23:07	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-04-01 18:23:08	▬▬▶	doginal (~agriggs@unaffiliated/doginal) has joined #Node.js
+2015-04-01 18:23:09	▬▬▶	doug16k (~doug16k@70.51.225.11) has joined #Node.js
+2015-04-01 18:23:15	▬▬▶	trunni1 (~trunni@217.91.86.71) has joined #Node.js
+2015-04-01 18:23:18	◀▬▬	billglover (~billglove@host86-162-7-36.range86-162.btcentralplus.com) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:23:29	◀▬▬	netj (~netj@128.12.163.109) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:23:35	◀▬▬	OnkelTem (~onkeltem@pppoe-62-84-112-224.dubna.ru) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 18:23:40	▬▬▶	netj (~netj@naru.stanford.edu) has joined #Node.js
+2015-04-01 18:24:19	▬▬▶	robertmaxrees (~robert0@unaffiliated/duch-kazatel/x-0361328) has joined #Node.js
+2015-04-01 18:24:31	◀▬▬	roddy_ (~roddy_@192.0.53.31) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:25:03	▬▬▶	malkomalko (~malkomalk@ool-457a23b1.dyn.optonline.net) has joined #Node.js
+2015-04-01 18:25:22	◀▬▬	spuz (~spuz@host-92-25-16-167.as13285.net) has quit (Remote host closed the connection)
+2015-04-01 18:25:26	◀▬▬	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2015-04-01 18:25:39	◀▬▬	harrisonm (~harrison@216.1.168.78) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:25:46	◀▬▬	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has quit (Quit: Limix)
+2015-04-01 18:26:10	▬▬▶	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has joined #Node.js
+2015-04-01 18:26:33	◀▬▬	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:26:37	◀▬▬	chrisdotcode (~quassel@unaffiliated/chrisdotcode) has quit (Remote host closed the connection)
+2015-04-01 18:26:49	◀▬▬	expr (~expr@unaffiliated/expr) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 18:27:05	▬▬▶	DaveDH2 (~davedh2@199.87.82.66) has joined #Node.js
+2015-04-01 18:27:32	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Remote host closed the connection)
+2015-04-01 18:27:54	◀▬▬	trunni1 (~trunni@217.91.86.71) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:27:56	▬▬▶	pimlu (~pimlu@128.172.35.12) has joined #Node.js
+2015-04-01 18:28:11	▬▬▶	qdk (~qdk@87.72.0.40) has joined #Node.js
+2015-04-01 18:28:12	◀▬▬	jonr22 (~jonr22@2601:6:8000:eaef:1e65:9dff:fe9d:801d) has quit (Ping timeout: 272 seconds)
+2015-04-01 18:28:33	▬▬▶	ibash (~ibash@192.77.238.102) has joined #Node.js
+2015-04-01 18:28:45	◀▬▬	Scorp1us (~Scorp1us@199.59.208.46) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:28:46	▬▬▶	lloydde (~lloydde@208.184.5.170) has joined #Node.js
+2015-04-01 18:29:08	▬▬▶	Aswebb_ (~Aswebb_@2a01:e35:243b:4020:118f:3da7:9320:3805) has joined #Node.js
+2015-04-01 18:29:08	▬▬▶	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has joined #Node.js
+2015-04-01 18:30:41	▬▬▶	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has joined #Node.js
+2015-04-01 18:30:45	◀▬▬	DrShoggoth (~prakwtf@12.116.104.118) has quit (Quit: Leaving)
+2015-04-01 18:30:46	◀▬▬	danjenkins (anonymous@nat/digium/x-dvswmucsoiydwdcb) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:30:49	◀▬▬	qdk (~qdk@87.72.0.40) has quit (Client Quit)
+2015-04-01 18:31:04	▬▬▶	qdk (~qdk@87.72.0.40) has joined #Node.js
+2015-04-01 18:31:09	▬▬▶	mven (~textual@cpe-72-183-104-138.austin.res.rr.com) has joined #Node.js
+2015-04-01 18:31:10	◀▬▬	mven (~textual@cpe-72-183-104-138.austin.res.rr.com) has quit (Excess Flood)
+2015-04-01 18:31:17	◀▬▬	DaveDH2 (~davedh2@199.87.82.66) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:31:29	▬▬▶	savantgarde (~savantgar@c-2d29e555.031-174-73746f10.cust.bredbandsbolaget.se) has joined #Node.js
+2015-04-01 18:31:35	◀▬▬	leolrrj (~leolrrj@179.111.191.93) has quit (Remote host closed the connection)
+2015-04-01 18:31:39	▬▬▶	occultus (~occultus@71-32-62-133.hlna.qwest.net) has joined #Node.js
+2015-04-01 18:33:03	▬▬▶	ctcg_ (~ctcg@108-93-234-82.lightspeed.chtnsc.sbcglobal.net) has joined #Node.js
+2015-04-01 18:33:24	◀▬▬	ctcg (~ctcg@108-93-234-82.lightspeed.chtnsc.sbcglobal.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:33:30	▬▬▶	john (~msg@p1.ie-freiburg.mpg.de) has joined #Node.js
+2015-04-01 18:33:32	john	hey all:)
+2015-04-01 18:33:36	◀▬▬	judasiendo (~periledo@71.102.134.37.dynamic.jazztel.es) has quit (Quit: Leaving)
+2015-04-01 18:33:38	▬▬▶	DrShoggoth (~prakwtf@12.116.104.118) has joined #Node.js
+2015-04-01 18:33:44	◀▬▬	john (~msg@p1.ie-freiburg.mpg.de) has quit (Changing host)
+2015-04-01 18:33:44	▬▬▶	john (~msg@unaffiliated/john) has joined #Node.js
+2015-04-01 18:34:09	◀▬▬	bdunavant (~bdunavant@static-108-48-124-82.washdc.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 18:34:12	◀▬▬	mupkoo (~mupkoo@95.43.90.153) has quit (Remote host closed the connection)
+2015-04-01 18:34:15	john	It seems my server is taking an AWFULLY long time to respond to clients with JSON for one particular request
+2015-04-01 18:34:48	▬▬▶	massif (~supernaut@142-254-35-188.dsl.dynamic.sonic.net) has joined #Node.js
+2015-04-01 18:34:49	john	Is there a way to see 1) how much data res.json(results); sent?
+2015-04-01 18:35:00	john	and, if it sent it gzipped or plaintext
+2015-04-01 18:35:08	john	That would be super useful :)
+2015-04-01 18:35:08	◀▬▬	shudon (~hdon@wsip-24-234-159-166.lv.lv.cox.net) has left #Node.js ("Leaving")
+2015-04-01 18:35:09	▬▬▶	Fishrock123 (~Fishrock1@OSHWON9562W-LP140-02-1177880221.dsl.bell.ca) has joined #Node.js
+2015-04-01 18:35:21	◀▬▬	senayar (~senayar@unaffiliated/senayar) has quit
+2015-04-01 18:35:21	john	I can console.log() res, but theres so many things i dont even know where to start
+2015-04-01 18:35:33	◀▬▬	patrickarlt (~patrickar@2605:e000:160b:81a2:448f:7218:b837:11a2) has quit (Quit: Leaving...)
+2015-04-01 18:36:03	◀▬▬	avens_ (~avens@198.0.159.99) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:36:10	◀▬▬	markholmes (~markholme@rrcs-173-198-17-194.west.biz.rr.com) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:36:11	◀▬▬	savantgarde (~savantgar@c-2d29e555.031-174-73746f10.cust.bredbandsbolaget.se) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:36:30	▬▬▶	DrMabuse (~drmabuse@HSI-KBW-46-237-201-105.hsi.kabel-badenwuerttemberg.de) has joined #Node.js
+2015-04-01 18:36:32	◀▬▬	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has quit (Remote host closed the connection)
+2015-04-01 18:37:19	◀▬▬	dreadheadsic (~Lingo@cable-178-148-178-126.dynamic.sbb.rs) has quit (Quit: Lingo: www.lingoirc.com)
+2015-04-01 18:37:21	◀▬▬	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 18:37:22	◀▬▬	doug16k (~doug16k@70.51.225.11) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:38:07	◀▬▬	jamesheston (~jameshest@107-133-27-112.lightspeed.chtnsc.sbcglobal.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 18:38:14	▬▬▶	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2015-04-01 18:39:39	◀▬▬	Fishrock123 (~Fishrock1@OSHWON9562W-LP140-02-1177880221.dsl.bell.ca) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:40:00	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined #Node.js
+2015-04-01 18:40:58	◀▬▬	kassens (~kassens@199.201.64.2) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:41:00	◀▬▬	michaelbenin (~michaelbe@4.15.211.2) has quit (Remote host closed the connection)
+2015-04-01 18:41:03	◀▬▬	DrMabuse (~drmabuse@HSI-KBW-46-237-201-105.hsi.kabel-badenwuerttemberg.de) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:42:15	▬▬▶	DragonPu_ (~textual@cpe-70-92-146-217.wi.res.rr.com) has joined #Node.js
+2015-04-01 18:42:24	◀▬▬	jeffmjack (uid7712@gateway/web/irccloud.com/x-ealwtysfpcdouisv) has quit (Quit: Connection closed for inactivity)
+2015-04-01 18:42:26	▬▬▶	zack8181 (42b9a95a@gateway/web/freenode/ip.66.185.169.90) has joined #Node.js
+2015-04-01 18:42:49	◀▬▬	DragonPu_ (~textual@cpe-70-92-146-217.wi.res.rr.com) has quit (Client Quit)
+2015-04-01 18:42:59	node-slackers	[Slack] mplewis: Can you inspect the request with a tool like postman for chrome, paw for os x, runscope?
+2015-04-01 18:43:01	▬▬▶	sbellina (~sbellina@107.191.0.70.static.utbb.net) has joined #Node.js
+2015-04-01 18:43:06	zack8181	Hey anyone who's familiar with the Instagram API - I see that Instagram makes available which users are tagged in posts and you can get a response with everything in a user's feed, but how can I get a list of posts a user was tagged in?
+2015-04-01 18:43:30	zack8181	I am stumped because www.igbox.co was able to pull it off... You can do it with http://igbox.co/<your-user-name>/usertags (if you're not private)
+2015-04-01 18:43:43	▬▬▶	P1RATEZ (piratez@CPEbc1401e23523-CMbc1401e23520.cpe.net.cable.rogers.com) has joined #Node.js
+2015-04-01 18:43:56	▬▬▶	avens (~avens@198.0.159.99) has joined #Node.js
+2015-04-01 18:43:59	▬▬▶	hrtcrw (~hrtcrw@2a02:8071:2687:2d00:2d9c:1abf:c2d4:8370) has joined #Node.js
+2015-04-01 18:44:09	◀▬▬	quakephil (~smuxi@cpe-72-229-52-52.nyc.res.rr.com) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:44:10	◀▬▬	SaintMoriarty (~SaintMori@ip68-228-236-156.ph.ph.cox.net) has quit (Quit: Leaving)
+2015-04-01 18:44:14	▬▬▶	markholmes (~markholme@rrcs-173-198-17-194.west.biz.rr.com) has joined #Node.js
+2015-04-01 18:45:37	◀▬▬	vreo (~vreo@gateway/vpn/privateinternetaccess/vreo) has quit (Quit: Gone)
+2015-04-01 18:45:37	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #Node.js
+2015-04-01 18:45:43	▬▬▶	sonofdirt (~sonofdirt@74.203.179.241) has joined #Node.js
+2015-04-01 18:45:57	danneu	john: first thing i'd rule out is that the database query is slow
+2015-04-01 18:46:02	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 18:46:09	◀▬▬	rho (~rho@drupal.org/user/114058/view) has quit (Ping timeout: 265 seconds)
+2015-04-01 18:46:15	◀▬▬	athan (~quassel@50.243.136.91) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:46:55	◀▬▬	tgriesser (~tgriesser@c-98-225-204-152.hsd1.pa.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 18:47:15	◀▬▬	hrtc (~hrtcrw@2a02:8071:2687:2d00:2d9c:1abf:c2d4:8370) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:47:27	◀▬▬	sbellina (~sbellina@107.191.0.70.static.utbb.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:47:31	john	danneu:  Yup, i've done that - its a LOT of data, queried in parallel, and finishes after something like 3s - but the whole request takes 8s
+2015-04-01 18:47:46	▬▬▶	kassens (~kassens@199.201.64.2) has joined #Node.js
+2015-04-01 18:47:46	◀▬▬	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 18:48:04	danneu	john: can you hit the endpoint in production yourself and take a look at the response?
+2015-04-01 18:48:06	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Remote host closed the connection)
+2015-04-01 18:48:09	▬▬▶	dypsilon_ (~dypsilon@x55b44165.dyn.telefonica.de) has joined #Node.js
+2015-04-01 18:48:14	◀▬▬	aslant (~aslant@5751a00f.skybroadband.com) has quit (Remote host closed the connection)
+2015-04-01 18:48:30	▬▬▶	tgriesser (~tgriesser@c-98-225-204-152.hsd1.pa.comcast.net) has joined #Node.js
+2015-04-01 18:48:31	john	yup - actually im the only one who uses the server right now
+2015-04-01 18:48:47	▬▬▶	nya (~nya@p7902d147.tokynt01.ap.so-net.ne.jp) has joined #Node.js
+2015-04-01 18:49:11	john	http://imgur.com/d9GMgbd
+2015-04-01 18:49:21	▬▬▶	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has joined #Node.js
+2015-04-01 18:49:55	◀▬▬	dcl (~dcl@freecode-project/hacker/spiderbyte) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:50:01	◀▬▬	xarik (~xarik2@192.12.88.128) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:50:10	◀▬▬	koldirg (~nano@97e28a3f.skybroadband.com) has quit (Read error: Connection reset by peer)
+2015-04-01 18:50:14	node-slackers	[Slack] mplewis: That’s 180 ms not spent in db queries
+2015-04-01 18:50:20	◀▬▬	crueber (~crueber@c-204-169-15-205.wifi.ties.k12.mn.us) has quit (Quit: Leaving.)
+2015-04-01 18:50:22	◀▬▬	dypsilon (~dypsilon@x55b4463a.dyn.telefonica.de) has quit (Ping timeout: 272 seconds)
+2015-04-01 18:50:30	◀▬▬	sonofdirt (~sonofdirt@74.203.179.241) has quit (Ping timeout: 265 seconds)
+2015-04-01 18:51:45	john	gah, with compression makes little difference -_-
+2015-04-01 18:51:50	◀▬▬	snapwich (~Adium@216.51.24.242) has quit (Quit: Leaving.)
+2015-04-01 18:52:02	◀▬▬	zokeber (~zokeber@unaffiliated/zokeber) has quit (Quit: ...)
+2015-04-01 18:52:16	▬▬▶	Xatenev (~Xatenev@95.90.204.119) has joined #Node.js
+2015-04-01 18:52:20	john	Or at least, i npm'd 'compression', and the app.use(compress());
+2015-04-01 18:52:22	danneu	john: can you curl it and look at COntent-Legnth? first question is: how much data is that
+2015-04-01 18:52:30	john	oh right
+2015-04-01 18:52:35	◀▬▬	dypsilon_ (~dypsilon@x55b44165.dyn.telefonica.de) has quit (Client Quit)
+2015-04-01 18:52:39	▬▬▶	c0fe (~c0fe@c-24-13-203-46.hsd1.il.comcast.net) has joined #Node.js
+2015-04-01 18:52:40	▬▬▶	lloydde (~lloydde@208.184.5.170) has joined #Node.js
+2015-04-01 18:53:03	▬▬▶	wiak (~wiak@nwgat.ninja) has joined #Node.js
+2015-04-01 18:53:05	john	It's kind of tricky - the request uses a lot of POST data. can  use a browser debugger like firebug or something?
+2015-04-01 18:53:10	john	i mean, i can try
+2015-04-01 18:53:21	◀▬▬	geomyidae_ (uid214@gateway/web/irccloud.com/x-nymurgtnlksdudyw) has quit (Quit: Connection closed for inactivity)
+2015-04-01 18:53:31	danneu	john: yeah, if it's just a GET request, navigate there in chrome with Network console open
+2015-04-01 18:53:39	▬▬▶	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has joined #Node.js
+2015-04-01 18:53:53	◀▬▬	trave (~travis@216.51.24.242) has quit (Ping timeout: 265 seconds)
+2015-04-01 18:54:01	▬▬▶	prbc (~prbc@150.161.4.154) has joined #Node.js
+2015-04-01 18:54:04	◀▬▬	mjpearson (~mjp@pool-100-33-106-64.nycmny.fios.verizon.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:54:13	▬▬▶	Scorp1us (~Scorp1us@pool-108-40-14-23.bltmmd.fios.verizon.net) has joined #Node.js
+2015-04-01 18:54:17	◀▬▬	MasterPiece (~MasterPie@unaffiliated/masterpiece) has quit (Read error: Connection reset by peer)
+2015-04-01 18:54:45	john	hm
+2015-04-01 18:54:51	◀▬▬	zackiv31 (~zackiv31@fw.nyc2.appnexus.com) has quit (Ping timeout: 265 seconds)
+2015-04-01 18:55:05	john	ok so according to Chrome it was a 0.094ms request
+2015-04-01 18:55:14	john	9.28s waiting (TTFB)
+2015-04-01 18:55:23	john	and 7.097ms content download
+2015-04-01 18:55:34	john	Soooo, something tells me this has nothing to do with gzip :)
+2015-04-01 18:55:34	fooey	time to first byte
+2015-04-01 18:55:39	john	ah, ok
+2015-04-01 18:55:47	john	thats a cool metric
+2015-04-01 18:55:53	fooey	so it didn't get any response at all for 9 seconds
+2015-04-01 18:56:10	john	right - but the server said it was done with the dtabase stuff after only 3.1s
+2015-04-01 18:56:21	▬▬▶	dypsilon (~dypsilon@x55b44165.dyn.telefonica.de) has joined #Node.js
+2015-04-01 18:56:34	john	And all it does after the database stuff is res.json(data)
+2015-04-01 18:56:34	fooey	if it's seriouly huge, it could take the server a while to compress it
+2015-04-01 18:56:39	▬▬▶	bazineta__ (~bazineta@68-189-93-214.static.snlo.ca.charter.com) has joined #Node.js
+2015-04-01 18:56:45	fooey	and to format the json
+2015-04-01 18:56:52	john	Maybe thats it - formatting the JSON
+2015-04-01 18:56:52	▬▬▶	koldirg (~nano@97e28a3f.skybroadband.com) has joined #Node.js
+2015-04-01 18:56:55	danneu	and generate ETag
+2015-04-01 18:56:56	john	its pretty fugly json
+2015-04-01 18:57:34	fooey	have you tried just returning 'hello world' to see how fast that is?
+2015-04-01 18:58:54	◀▬▬	daedeloth (~daedeloth@ip-213-49-109-254.dsl.scarlet.be) has quit (Remote host closed the connection)
+2015-04-01 18:59:10	◀▬▬	surrealanalysis (~kevin@c-68-37-97-219.hsd1.mi.comcast.net) has quit (Quit: surrealanalysis)
+2015-04-01 18:59:10	▬▬▶	jamesheston (~jameshest@107-133-27-112.lightspeed.chtnsc.sbcglobal.net) has joined #Node.js
+2015-04-01 18:59:14	◀▬▬	adrianlang (~adrian@wikimedia/codeispoetry) has quit (Ping timeout: 272 seconds)
+2015-04-01 18:59:14	wiak	Greetings!, if anyone is interested, we are seeking developers to our project at https://github.com/roastlechon/nodejs-rtorrent
+2015-04-01 18:59:21	◀▬▬	sonthonax (~anonymous@5751e379.skybroadband.com) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:59:30	▬▬▶	sonthonax (~anonymous@host86-163-223-222.range86-163.btcentralplus.com) has joined #Node.js
+2015-04-01 18:59:54	◀▬▬	hephaestus (~v3d@178.233.11.49) has quit (Read error: Connection reset by peer)
+2015-04-01 19:00:34	MasterThrall	Interesting wiak, when are you installing the bitcoin miner  ;)
+2015-04-01 19:00:34	▬▬▶	cefkamcau (~cefkamcau@afem225.neoplus.adsl.tpnet.pl) has joined #Node.js
+2015-04-01 19:00:46	john	fooey:  i just did, and its fast - and then i tried the 'hello world' equivlient for the data, and it was really fast
+2015-04-01 19:00:49	wiak	MasterThrall? lol
+2015-04-01 19:00:49	▬▬▶	Guest33 (~textual@bdv75-7-82-242-72-191.fbx.proxad.net) has joined #Node.js
+2015-04-01 19:01:01	◀▬▬	sagittarian (~kvirc@94.230.86.198) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:01:02	MasterThrall	u didn't read about your competitor?
+2015-04-01 19:01:04	john	So i think its actually JSON'ifying all this data (a lot of which i dont even plot), that takes the time
+2015-04-01 19:01:04	wiak	well you can read our code, but not µTorrent's soo :P
+2015-04-01 19:01:15	MasterThrall	newest utorrent is dragging, has miner in it
+2015-04-01 19:01:22	▬▬▶	harrisonm (~harrison@99-7-245-79.lightspeed.rcsntx.sbcglobal.net) has joined #Node.js
+2015-04-01 19:01:30	wiak	i know, havnt used µTorrent is years
+2015-04-01 19:01:42	john	Now I edited the database query to not return all the stuff I dont plot, and its muuuuuch faster
+2015-04-01 19:01:43	danneu	john: that those queries take so long shows that it's a lot of data, but im still curious to know Content-Length
+2015-04-01 19:01:52	wiak	the premium thing realy messed it up MasterThrall
+2015-04-01 19:01:59	danneu	john: oh yeah, limit the select projection for sure
+2015-04-01 19:02:05	danneu	john: what db are you using?
+2015-04-01 19:02:09	▬▬▶	WebSpirit (~WebSpirit@adsl-250.109.242.49.tellas.gr) has joined #Node.js
+2015-04-01 19:02:09	◀▬▬	prbc (~prbc@150.161.4.154) has quit (Remote host closed the connection)
+2015-04-01 19:02:09	◀▬▬	nya (~nya@p7902d147.tokynt01.ap.so-net.ne.jp) has quit (Ping timeout: 245 seconds)
+2015-04-01 19:02:19	john	postgresql
+2015-04-01 19:02:24	MasterThrall	wiak, money in general messes most things up  ;)
+2015-04-01 19:02:26	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Remote host closed the connection)
+2015-04-01 19:02:29	john	and sqlite, but not right this second
+2015-04-01 19:02:34	john	i mean, the app accepts both
+2015-04-01 19:02:38	wiak	true MasterThrall
+2015-04-01 19:03:10	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 19:03:28	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #Node.js
+2015-04-01 19:03:29	▬▬▶	lloydde (~lloydde@208.184.5.170) has joined #Node.js
+2015-04-01 19:03:59	john	with the filter its 74738 characters of json
+2015-04-01 19:04:14	◀▬▬	rendar_ (~I@host45-128-dynamic.61-82-r.retail.telecomitalia.it) has quit
+2015-04-01 19:04:31	◀▬▬	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 19:04:33	john	without the filter, its 620253
+2015-04-01 19:04:39	◀▬▬	songawee (~songawee@63-158-128-178.dia.static.qwest.net) has quit (Quit: songawee)
+2015-04-01 19:04:50	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Remote host closed the connection)
+2015-04-01 19:04:57	▬▬▶	jr3 (~jr3@23-125-85-50.lightspeed.hstntx.sbcglobal.net) has joined #Node.js
+2015-04-01 19:05:04	▬▬▶	lloydde (~lloydde@208.184.5.170) has joined #Node.js
+2015-04-01 19:05:21	◀▬▬	diegoaguilar (~diegoagui@189.129.237.180) has quit (Remote host closed the connection)
+2015-04-01 19:05:27	john	http://i.imgur.com/AvrJKnC.png
+2015-04-01 19:05:33	john	Which is actually pretty weird
+2015-04-01 19:05:40	◀▬▬	occultus (~occultus@71-32-62-133.hlna.qwest.net) has quit (Quit: Leaving)
+2015-04-01 19:05:48	john	Now it returns the JSON is just a few ms
+2015-04-01 19:05:49	◀▬▬	kevwil (~kevwil@c-71-237-103-128.hsd1.co.comcast.net) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 19:06:00	john	But when the data is 10x larger, it takes 1000000x longer
+2015-04-01 19:06:09	▬▬▶	mschoening (~mschoenin@c-73-15-50-196.hsd1.ca.comcast.net) has joined #Node.js
+2015-04-01 19:06:09	john	+ or - a 0
+2015-04-01 19:06:19	▬▬▶	ren_hoek (~ren_hoek@cpe-76-187-64-157.tx.res.rr.com) has joined #Node.js
+2015-04-01 19:06:33	john	There must be some bug that when the object to encode is above a certain size, res.json() slows to a crawl
+2015-04-01 19:06:46	◀▬▬	relipse (uid16131@gateway/web/irccloud.com/x-wpholuvwnsuoqpnt) has quit (Quit: Connection closed for inactivity)
+2015-04-01 19:07:04	▬▬▶	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has joined #Node.js
+2015-04-01 19:07:30	◀▬▬	hojberg_ (uid16332@gateway/web/irccloud.com/x-fklvemmckzssqdgk) has quit (Quit: Connection closed for inactivity)
+2015-04-01 19:07:41	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 19:08:26	▬▬▶	Al3xandr3w (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has joined #Node.js
+2015-04-01 19:08:29	▬▬▶	dcl (~dcl@freecode-project/hacker/spiderbyte) has joined #Node.js
+2015-04-01 19:08:50	▬▬▶	athan (~quassel@c-73-217-94-32.hsd1.co.comcast.net) has joined #Node.js
+2015-04-01 19:08:55	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 19:09:01	◀▬▬	frek818 (~frek818@mc80436d0.tmodns.net) has quit (Quit: frek818)
+2015-04-01 19:09:17	▬▬▶	knyio (~kenny@dhcp-168-105-109-222.wireless.manoa.hawaii.edu) has joined #Node.js
+2015-04-01 19:09:30	◀▬▬	mingwandroid (~quassel@cpc68141-bagu14-2-0-cust710.1-3.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2015-04-01 19:09:34	◀▬▬	mcqueeno_ (~mcqueenor@161.170.193.104) has quit (Remote host closed the connection)
+2015-04-01 19:10:07	▬▬▶	mcqueenorama (~mcqueenor@161.170.193.104) has joined #Node.js
+2015-04-01 19:10:43	◀▬▬	noobee (~noobee@183.177.131.11.ap.gmobb-fix.jp) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:10:55	◀▬▬	ren_hoek (~ren_hoek@cpe-76-187-64-157.tx.res.rr.com) has quit (Ping timeout: 248 seconds)
+2015-04-01 19:11:14	◀▬▬	pguruprasad (~pgurupras@64.125.69.70) has quit (Quit: pguruprasad)
+2015-04-01 19:11:26	▬▬▶	BigCat2K_ (~bigcat2k@c-76-113-220-250.hsd1.mn.comcast.net) has joined #Node.js
+2015-04-01 19:11:28	▬▬▶	sthaha (~sthaha@unaffiliated/sthaha) has joined #Node.js
+2015-04-01 19:11:36	▬▬▶	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has joined #Node.js
+2015-04-01 19:11:39	▬▬▶	pguruprasad (~pgurupras@64.125.69.70) has joined #Node.js
+2015-04-01 19:11:44	▬▬▶	chrisdotcode (~quassel@unaffiliated/chrisdotcode) has joined #Node.js
+2015-04-01 19:11:49	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Remote host closed the connection)
+2015-04-01 19:12:01	▬▬▶	MacDaddy (~dcl@freecode-project/hacker/spiderbyte) has joined #Node.js
+2015-04-01 19:12:14	danneu	john: does the response have an ETag header? that also probably gets slow
+2015-04-01 19:12:27	▬▬▶	noobee (~noobee@183.177.131.11.ap.gmobb-fix.jp) has joined #Node.js
+2015-04-01 19:12:33	◀▬▬	imsys (~arthur@189.58.211.248.dynamic.adsl.gvt.net.br) has quit (Read error: Connection reset by peer)
+2015-04-01 19:12:51	◀▬▬	dcl (~dcl@freecode-project/hacker/spiderbyte) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:13:35	◀▬▬	BigCat2K_ (~bigcat2k@c-76-113-220-250.hsd1.mn.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 19:14:07	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Remote host closed the connection)
+2015-04-01 19:14:12	▬▬▶	chjj (~chjj@unaffiliated/chjj) has joined #Node.js
+2015-04-01 19:14:12	◀▬▬	ejnahc (~hello@chan.je) has quit (Remote host closed the connection)
+2015-04-01 19:14:24	◀▬▬	mcqueenorama (~mcqueenor@161.170.193.104) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:14:26	◀▬▬	BigCat2K (~bigcat2k@c-76-113-220-250.hsd1.mn.comcast.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:14:55	▬▬▶	lloydde (~lloydde@208.184.5.170) has joined #Node.js
+2015-04-01 19:14:55	◀▬▬	knyio (~kenny@dhcp-168-105-109-222.wireless.manoa.hawaii.edu) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:15:01	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 19:15:05	▬▬▶	karlmikko (~karlmikko@120.23.111.5) has joined #Node.js
+2015-04-01 19:15:07	◀▬▬	avens (~avens@198.0.159.99) has quit (Remote host closed the connection)
+2015-04-01 19:15:13	▬▬▶	ejnahc (~hello@chan.je) has joined #Node.js
+2015-04-01 19:16:12	▬▬▶	fsalgo (~textual@113.193.32.132) has joined #Node.js
+2015-04-01 19:16:21	◀▬▬	pguruprasad (~pgurupras@64.125.69.70) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:16:28	◀▬▬	Al3xandr3w (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:16:50	◀▬▬	redonkulus (~redonkulu@2001:4998:effd:600:1585:a3a5:7f53:208f) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:16:52	fooey	over a certain size, you're going to be running into GC problems
+2015-04-01 19:17:02	◀▬▬	karlmikko (~karlmikko@120.23.111.5) has quit (Read error: Connection reset by peer)
+2015-04-01 19:17:12	@ljharb	for a response that large, you should probably be streaming it and not just dumping it out
+2015-04-01 19:17:12	▬▬▶	trave (~travis@c-73-20-117-240.hsd1.ut.comcast.net) has joined #Node.js
+2015-04-01 19:17:18	◀▬▬	ejnahc (~hello@chan.je) has quit (Client Quit)
+2015-04-01 19:17:30	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 19:17:32	▬▬▶	ejnahc (~hello@chan.je) has joined #Node.js
+2015-04-01 19:17:34	▬▬▶	pguruprasad (~pgurupras@64.125.69.70) has joined #Node.js
+2015-04-01 19:18:02	▬▬▶	jonr22 (~jonr22@2601:6:8000:eaef:1e65:9dff:fe9d:801d) has joined #Node.js
+2015-04-01 19:19:36	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 19:19:37	▬▬▶	redonkulus (redonkulus@nat/yahoo/x-xpaaoecyqfexkiee) has joined #Node.js
+2015-04-01 19:19:43	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 19:19:44	◀▬▬	AvianFlu (~avianflu@207-38-246-118.c3-0.43d-ubr2.qens-43d.ny.cable.rcn.com) has quit (Remote host closed the connection)
+2015-04-01 19:19:55	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 19:21:16	◀▬▬	woah (~woah@presence.static.monkeybrains.net) has quit (Remote host closed the connection)
+2015-04-01 19:21:33	▬▬▶	mcqueenorama (~mcqueenor@c-50-161-22-49.hsd1.ca.comcast.net) has joined #Node.js
+2015-04-01 19:21:39	◀▬▬	aquinas (~aquinas_@unaffiliated/aquinas) has quit (Read error: Connection reset by peer)
+2015-04-01 19:21:44	▬▬▶	jscheel (~jscheel@drupal.org/user/116197/view) has joined #Node.js
+2015-04-01 19:21:53	◀▬▬	BillCriswell (uid18074@gateway/web/irccloud.com/x-lakhcdfninohimnf) has quit (Quit: Connection closed for inactivity)
+2015-04-01 19:22:24	▬▬▶	lsiv568 (~lsiv568@173.48.209.254) has joined #Node.js
+2015-04-01 19:22:30	▬▬▶	aquinas (~aquinas_@unaffiliated/aquinas) has joined #Node.js
+2015-04-01 19:22:34	◀▬▬	jonmorehouse (~jonmoreho@192.69.243.130) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:23:14	▬▬▶	avens (~avens@50.153.133.6) has joined #Node.js
+2015-04-01 19:23:22	▬▬▶	Palsson (~palsson@c-c5fae253.024-21-6e6b702.cust.bredbandsbolaget.se) has joined #Node.js
+2015-04-01 19:23:44	◀▬▬	dypsilon (~dypsilon@x55b44165.dyn.telefonica.de) has quit (Quit: q)
+2015-04-01 19:23:49	◀▬▬	liamkeily (~liamkeily@host217-43-227-128.range217-43.btcentralplus.com) has quit (Quit: This computer has gone to sleep)
+2015-04-01 19:24:30	◀▬▬	wraithgar (~Gar@24.216.239.218) has quit (Quit: This computer has gone to sleep)
+2015-04-01 19:24:32	▬▬▶	woah (~woah@presence.static.monkeybrains.net) has joined #Node.js
+2015-04-01 19:24:38	▬▬▶	leolrrj (~leolrrj@191.181.35.144) has joined #Node.js
+2015-04-01 19:24:57	▬▬▶	tvw (~tv@f051014158.adsl.alicedsl.de) has joined #Node.js
+2015-04-01 19:25:32	▬▬▶	bon0 (~sidj9n@dsl-aauysd.dyn.edudsl.gr) has joined #Node.js
+2015-04-01 19:25:40	▬▬▶	blakmatrix (~blakmatri@c-67-185-160-22.hsd1.wa.comcast.net) has joined #Node.js
+2015-04-01 19:25:46	◀▬▬	woah (~woah@presence.static.monkeybrains.net) has quit (Read error: Connection reset by peer)
+2015-04-01 19:26:27	▬▬▶	avens_ (~avens@50.153.133.6) has joined #Node.js
+2015-04-01 19:26:28	▬▬▶	mberk_ (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 19:26:33	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 19:26:48	◀▬▬	mcoffee (~mcoffee@d142-058-218-156.wireless.sfu.ca) has quit (Remote host closed the connection)
+2015-04-01 19:26:56	◀▬▬	MuffinMan` (~muffin@dh207-109-206.xnet.hr) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 19:27:08	◀▬▬	avens (~avens@50.153.133.6) has quit (Read error: Connection reset by peer)
+2015-04-01 19:27:16	▬▬▶	diegoaguilar (~diegoagui@189.129.237.180) has joined #Node.js
+2015-04-01 19:27:19	◀▬▬	mberk_ (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 19:27:58	◀▬▬	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has quit (Quit: bradleymeck)
+2015-04-01 19:28:01	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 19:28:45	◀▬▬	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has quit (Remote host closed the connection)
+2015-04-01 19:29:17	▬▬▶	|aaron (~quassel@50.240.202.193) has joined #Node.js
+2015-04-01 19:29:17	▬▬▶	disordleroy (~standardu@209-6-194-189.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) has joined #Node.js
+2015-04-01 19:29:18	▬▬▶	surrealanalysis (~kevin@c-68-37-97-219.hsd1.mi.comcast.net) has joined #Node.js
+2015-04-01 19:29:33	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 19:29:35	▬▬▶	yosuke_furukawa (~yosuke_fu@p3192-ipbf2208marunouchi.tokyo.ocn.ne.jp) has joined #Node.js
+2015-04-01 19:30:09	◀▬▬	surrealanalysis (~kevin@c-68-37-97-219.hsd1.mi.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 19:30:12	◀▬▬	blakmatrix (~blakmatri@c-67-185-160-22.hsd1.wa.comcast.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:30:13	◀▬▬	Zexorz (~MeTonaTOR@unaffiliated/zexorz) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:30:31	◀▬▬	yosuke_furukawa (~yosuke_fu@p3192-ipbf2208marunouchi.tokyo.ocn.ne.jp) has quit (Remote host closed the connection)
+2015-04-01 19:30:34	▬▬▶	Kamuela (~Kamuela@host86-163-52-54.range86-163.btcentralplus.com) has joined #Node.js
+2015-04-01 19:31:12	▬▬▶	tkuchiki (~tkuchiki@113x36x238x26.ap113.ftth.ucom.ne.jp) has joined #Node.js
+2015-04-01 19:31:14	◀▬▬	Kamuela (~Kamuela@host86-163-52-54.range86-163.btcentralplus.com) has quit (Client Quit)
+2015-04-01 19:31:35	▬▬▶	Kamuela (~Kamuela@host86-163-52-54.range86-163.btcentralplus.com) has joined #Node.js
+2015-04-01 19:31:42	▬▬▶	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has joined #Node.js
+2015-04-01 19:31:43	▬▬▶	DaveDH2 (~davedh2@199.87.82.66) has joined #Node.js
+2015-04-01 19:31:44	--	irc: disconnected from server
+2015-04-01 19:32:09	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #Node.js
+2015-04-01 19:32:09	--	Topic for #Node.js is "Current Stable v0.12.2, Unstable v0.11.16 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: https://medium.com/node-js-javascript/codes-of-conduct-82ab2d88112d"
+2015-04-01 19:32:09	--	Topic set by ljharb (sid43720@oftn/member/ljharb) on Tue, 31 Mar 2015 21:29:08
+2015-04-01 19:32:09	--	Channel #Node.js: 1409 nicks (15 ops, 0 voices, 1394 normals)
+2015-04-01 19:32:10	--	PvNotice(ChanServ): Visit the wiki page https://github.com/joyent/node/wiki
+2015-04-01 19:32:10	--	URL for #node.js: http://nodejs.org/
+2015-04-01 19:32:19	▬▬▶	savantgarde (~savantgar@c-2d29e555.031-174-73746f10.cust.bredbandsbolaget.se) has joined #Node.js
+2015-04-01 19:32:31	--	Channel created on Sat, 30 Jan 2010 02:48:24
+2015-04-01 19:32:45	▬▬▶	alexandergugel (~alexander@208.66.27.18) has joined #Node.js
+2015-04-01 19:32:58	▬▬▶	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #Node.js
+2015-04-01 19:33:13	◀▬▬	yosuke_furukawa (~yosuke_fu@p3192-ipbf2208marunouchi.tokyo.ocn.ne.jp) has quit (Remote host closed the connection)
+2015-04-01 19:33:33	▬▬▶	Zexorz (~MeTonaTOR@unaffiliated/zexorz) has joined #Node.js
+2015-04-01 19:33:54	◀▬▬	wallerdev (~wallerdev@208.185.20.30) has quit (Quit: wallerdev)
+2015-04-01 19:34:25	◀▬▬	EGreg2 (~EGreg@213.57.18.199) has quit (Remote host closed the connection)
+2015-04-01 19:35:23	◀▬▬	jr3 (~jr3@23-125-85-50.lightspeed.hstntx.sbcglobal.net) has quit (Quit: jr3)
+2015-04-01 19:35:25	◀▬▬	jscheel (~jscheel@drupal.org/user/116197/view) has quit (Quit: jscheel)
+2015-04-01 19:35:58	▬▬▶	Fishrock123 (~Fishrock1@OSHWON9562W-LP140-02-1177880221.dsl.bell.ca) has joined #Node.js
+2015-04-01 19:36:03	▬▬▶	ascarter (~ascarter@c-73-42-173-134.hsd1.wa.comcast.net) has joined #Node.js
+2015-04-01 19:36:31	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:36:50	◀▬▬	savantgarde (~savantgar@c-2d29e555.031-174-73746f10.cust.bredbandsbolaget.se) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:36:58	◀▬▬	jonno11 (~Jon@host-78-149-183-9.as13285.net) has quit (Quit: Be back later ...)
+2015-04-01 19:37:14	◀▬▬	pguruprasad (~pgurupras@64.125.69.70) has quit (Quit: pguruprasad)
+2015-04-01 19:37:26	◀▬▬	tbo_ (~tbo@c-5d96e255.025-4-64736c14.cust.bredbandsbolaget.se) has quit (Quit: (null))
+2015-04-01 19:37:26	▬▬▶	jr3 (~jr3@23-125-85-50.lightspeed.hstntx.sbcglobal.net) has joined #Node.js
+2015-04-01 19:37:33	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined #Node.js
+2015-04-01 19:37:39	▬▬▶	pguruprasad (~pgurupras@64.125.69.70) has joined #Node.js
+2015-04-01 19:37:51	◀▬▬	DaveDH2 (~davedh2@199.87.82.66) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:38:02	◀▬▬	nj3ma (~nj3ma@105.230.129.22) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:38:36	◀▬▬	_orchor_ (~orchor@cpc16-mort6-2-0-cust109.19-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2015-04-01 19:38:37	▬▬▶	knyio (~kenny@dhcp-168-105-82-163.wireless.manoa.hawaii.edu) has joined #Node.js
+2015-04-01 19:38:46	◀▬▬	lsiv568 (~lsiv568@173.48.209.254) has quit (Remote host closed the connection)
+2015-04-01 19:38:54	◀▬▬	komlev (~komlev@unaffiliated/komlev) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:38:55	▬▬▶	_orchor (~orchor@cpc16-mort6-2-0-cust109.19-2.cable.virginm.net) has joined #Node.js
+2015-04-01 19:39:01	◀▬▬	pimlu (~pimlu@128.172.35.12) has quit (Quit: Leaving)
+2015-04-01 19:39:18	▬▬▶	lsiv568 (~lsiv568@173.48.209.254) has joined #Node.js
+2015-04-01 19:39:19	◀▬▬	aslant (~aslant@5751a00f.skybroadband.com) has quit (Remote host closed the connection)
+2015-04-01 19:40:16	◀▬▬	AciD`` (~gni@jau72-5-78-223-56-21.fbx.proxad.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:40:33	▬▬▶	mdibaiee (~mdibaiee@151.244.152.115) has joined #Node.js
+2015-04-01 19:40:34	◀▬▬	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 19:40:38	◀▬▬	Fishrock123 (~Fishrock1@OSHWON9562W-LP140-02-1177880221.dsl.bell.ca) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:41:34	◀▬▬	FernandoBasso (~Fernando@177.82.172.148) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:42:01	▬▬▶	adritek (~adritek@203.2.218.145) has joined #Node.js
+2015-04-01 19:42:16	◀▬▬	jr3 (~jr3@23-125-85-50.lightspeed.hstntx.sbcglobal.net) has quit (Client Quit)
+2015-04-01 19:42:25	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 19:42:35	◀▬▬	sthaha (~sthaha@unaffiliated/sthaha) has quit (Ping timeout: 245 seconds)
+2015-04-01 19:43:58	◀▬▬	lsiv568 (~lsiv568@173.48.209.254) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:44:03	◀▬▬	adritek (~adritek@203.2.218.145) has quit (Remote host closed the connection)
+2015-04-01 19:44:05	◀▬▬	danecando (~danecando@c-71-57-164-138.hsd1.fl.comcast.net) has quit (Quit: Computer has gone to sleep.)
+2015-04-01 19:44:18	▬▬▶	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has joined #Node.js
+2015-04-01 19:44:51	▬▬▶	adritek (~adritek@202.6.74.6) has joined #Node.js
+2015-04-01 19:45:26	◀▬▬	JBreit (~JBreit4@72.25.48.210) has quit (Read error: Connection reset by peer)
+2015-04-01 19:47:10	◀▬▬	Mackseraner (~textual@x5d8627dd.dyn.telefonica.de) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 19:47:23	◀▬▬	automata (~automata@95.90.242.90) has quit (Ping timeout: 246 seconds)
+2015-04-01 19:47:25	▬▬▶	it0a (~it0a@cpe-76-190-237-208.neo.res.rr.com) has joined #Node.js
+2015-04-01 19:47:27	◀▬▬	Tug (~polo_@195-132-146-223.rev.numericable.fr) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:48:36	◀▬▬	toad-br (toad-br@189.120.189.28) has quit
+2015-04-01 19:48:57	◀▬▬	Aswebb_ (~Aswebb_@2a01:e35:243b:4020:118f:3da7:9320:3805) has quit (Remote host closed the connection)
+2015-04-01 19:49:07	◀▬▬	zero_coder (Elite13693@gateway/shell/elitebnc/x-qqoocykwvtevypea) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:49:09	▬▬▶	FasTTo (~FasTTo@bl16-211-226.dsl.telepac.pt) has joined #Node.js
+2015-04-01 19:49:22	◀▬▬	athan (~quassel@c-73-217-94-32.hsd1.co.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:49:39	▬▬▶	jonmorehouse (~jonmoreho@192.69.243.130) has joined #Node.js
+2015-04-01 19:49:58	◀▬▬	mschoening (~mschoenin@c-73-15-50-196.hsd1.ca.comcast.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:50:12	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined #Node.js
+2015-04-01 19:50:19	◀▬▬	daffl_ (~daffl@216-129-84-78.dedicated.allstream.net) has quit
+2015-04-01 19:50:26	◀▬▬	trave (~travis@c-73-20-117-240.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:50:27	◀▬▬	FasTTo (~FasTTo@bl16-211-226.dsl.telepac.pt) has quit (Client Quit)
+2015-04-01 19:50:37	▬▬▶	mschoening (~mschoenin@c-73-15-50-196.hsd1.ca.comcast.net) has joined #Node.js
+2015-04-01 19:50:49	◀▬▬	pguruprasad (~pgurupras@64.125.69.70) has quit (Quit: pguruprasad)
+2015-04-01 19:50:50	▬▬▶	mchelen (~mchelen@unaffiliated/mchelen) has joined #Node.js
+2015-04-01 19:51:17	▬▬▶	Al3xandr3w (~Al3xandr3@x-132-204-251-196.xtpr.umontreal.ca) has joined #Node.js
+2015-04-01 19:51:34	◀▬▬	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has quit (Quit: Toute Chose Sur Terre a Une Fin)
+2015-04-01 19:52:42	--	DJDan_ is now known as DJDan
+2015-04-01 19:52:43	▬▬▶	zerol (Elite13693@gateway/shell/elitebnc/x-semrfubdheryhhxf) has joined #Node.js
+2015-04-01 19:52:44	▬▬▶	macabre (~ibtjw@unaffiliated/macabre) has joined #Node.js
+2015-04-01 19:52:45	◀▬▬	Antariksha (~Adium@inet-hqmc07-o.oracle.com) has quit (Quit: Leaving.)
+2015-04-01 19:52:59	--	zerol is now known as Guest72320
+2015-04-01 19:53:04	▬▬▶	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2015-04-01 19:53:05	▬▬▶	pguruprasad (~pgurupras@64.125.69.70) has joined #Node.js
+2015-04-01 19:53:18	◀▬▬	mchelen (~mchelen@unaffiliated/mchelen) has quit (Remote host closed the connection)
+2015-04-01 19:53:36	▬▬▶	dlaflamme (~dlaflamme@user-10879a4.cable.mindspring.com) has joined #Node.js
+2015-04-01 19:53:53	▬▬▶	mchelen (~mchelen@unaffiliated/mchelen) has joined #Node.js
+2015-04-01 19:54:39	◀▬▬	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 19:54:46	◀▬▬	nettoweb (~textual@187.112.207.229) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 19:54:51	◀▬▬	ircretary (~ircretary@165.225.132.207) has quit (Remote host closed the connection)
+2015-04-01 19:55:00	▬▬▶	_orchor_ (~orchor@cpc16-mort6-2-0-cust109.19-2.cable.virginm.net) has joined #Node.js
+2015-04-01 19:55:06	▬▬▶	ircretary (~ircretary@165.225.132.207) has joined #Node.js
+2015-04-01 19:55:14	▬▬▶	sbellina (~sbellina@107.191.0.12.static.utbb.net) has joined #Node.js
+2015-04-01 19:55:18	◀▬▬	_orchor (~orchor@cpc16-mort6-2-0-cust109.19-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2015-04-01 19:55:22	◀▬▬	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:55:31	◀▬▬	Xatenev (~Xatenev@95.90.204.119) has left #Node.js
+2015-04-01 19:55:43	▬▬▶	sthaha (~sthaha@unaffiliated/sthaha) has joined #Node.js
+2015-04-01 19:55:56	◀▬▬	Palsson (~palsson@c-c5fae253.024-21-6e6b702.cust.bredbandsbolaget.se) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:57:17	▬▬▶	frek818 (~frek818@mc80436d0.tmodns.net) has joined #Node.js
+2015-04-01 19:57:37	▬▬▶	trave (~travis@c-73-20-117-240.hsd1.ut.comcast.net) has joined #Node.js
+2015-04-01 19:57:43	▬▬▶	Zren_ (~Zren@bas3-guelph22-1096556784.dsl.bell.ca) has joined #Node.js
+2015-04-01 19:57:52	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 19:57:58	▬▬▶	aib_233 (~aib_233@xdsl-188-154-24-191.adslplus.ch) has joined #Node.js
+2015-04-01 19:58:17	◀▬▬	EyePulp_ (~eyepulp@38.89.245.83) has quit (Remote host closed the connection)
+2015-04-01 19:58:19	▬▬▶	nya (~nya@p7902d147.tokynt01.ap.so-net.ne.jp) has joined #Node.js
+2015-04-01 19:58:54	◀▬▬	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Read error: Connection reset by peer)
+2015-04-01 19:58:55	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #Node.js
+2015-04-01 19:58:56	◀▬▬	arkanciscan (~arkancisc@50.141.64.8) has quit (Ping timeout: 248 seconds)
+2015-04-01 19:59:09	▬▬▶	athan (~quassel@65.121.41.130) has joined #Node.js
+2015-04-01 19:59:14	▬▬▶	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined #Node.js
+2015-04-01 19:59:20	▬▬▶	mberk (~mberk@cpe-76-168-52-169.socal.res.rr.com) has joined #Node.js
+2015-04-01 19:59:27	▬▬▶	karlmikko (~karlmikko@120.23.111.5) has joined #Node.js
+2015-04-01 19:59:37	◀▬▬	mdibaiee (~mdibaiee@151.244.152.115) has quit (Quit: Leaving)
+2015-04-01 19:59:41	◀▬▬	redonkulus (redonkulus@nat/yahoo/x-xpaaoecyqfexkiee) has quit (Read error: Connection reset by peer)
+2015-04-01 19:59:48	▬▬▶	redonkulus (~redonkulu@2001:4998:effd:600:90d9:92b5:af1d:2de5) has joined #Node.js
+2015-04-01 19:59:51	▬▬▶	gnarMatix (~gnarMatix@bas2-montreal02-1096701403.dsl.bell.ca) has joined #Node.js
+2015-04-01 20:00:03	◀▬▬	nuizzy (~jason.wal@69.163.48.214) has quit (Quit: nuizzy)
+2015-04-01 20:00:26	◀▬▬	Zren (~Zren@bas3-guelph22-1096556784.dsl.bell.ca) has quit (Ping timeout: 252 seconds)
+2015-04-01 20:00:34	▬▬▶	yosuke_furukawa (~yosuke_fu@p3192-ipbf2208marunouchi.tokyo.ocn.ne.jp) has joined #Node.js
+2015-04-01 20:00:44	◀▬▬	ctcg_ (~ctcg@108-93-234-82.lightspeed.chtnsc.sbcglobal.net) has quit (Quit: Leaving...)
+2015-04-01 20:01:38	--	deol is now known as michaeldeol
+2015-04-01 20:01:42	▬▬▶	automata (~automata@95.90.242.90) has joined #Node.js
+2015-04-01 20:01:48	▬▬▶	superlou (~superlou@ool-4575302e.dyn.optonline.net) has joined #Node.js
+2015-04-01 20:02:31	◀▬▬	mcqueenorama (~mcqueenor@c-50-161-22-49.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 20:02:37	◀▬▬	pretentiousgit (uid46779@gateway/web/irccloud.com/x-xzzsunrcvmxtzucp) has quit (Quit: Connection closed for inactivity)
+2015-04-01 20:02:45	◀▬▬	_X_C_V_B_ (~XCVB@dur-dhcp-1-240.dsl.airstreamcomm.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:02:47	◀▬▬	nya (~nya@p7902d147.tokynt01.ap.so-net.ne.jp) has quit (Ping timeout: 252 seconds)
+2015-04-01 20:02:59	◀▬▬	knyio (~kenny@dhcp-168-105-82-163.wireless.manoa.hawaii.edu) has quit (Ping timeout: 250 seconds)
+2015-04-01 20:03:30	◀▬▬	CorySimmons (~textual@cpe-174-103-84-179.mi.res.rr.com) has quit (Quit: Bye!)
+2015-04-01 20:03:32	◀▬▬	mchelen (~mchelen@unaffiliated/mchelen) has quit (Remote host closed the connection)
+2015-04-01 20:03:47	◀▬▬	yowkah (53567403@gateway/web/freenode/ip.83.86.116.3) has quit (Quit: Page closed)
+2015-04-01 20:04:01	▬▬▶	mchelen (~mchelen@unaffiliated/mchelen) has joined #Node.js
+2015-04-01 20:04:02	◀▬▬	Piotras_ (~pp@188.246.159.115.rev.vline.pl) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:04:11	◀▬▬	artemm (~artemm@131-117-200-46.pool.ukrtel.net) has quit (Ping timeout: 246 seconds)
+2015-04-01 20:04:14	◀▬▬	bberry (~bberry@75-144-44-197-Atlanta.hfc.comcastbusiness.net) has quit (Read error: No route to host)
+2015-04-01 20:04:21	--	blazedd is now known as Blazedd[AFK]
+2015-04-01 20:04:24	◀▬▬	macabre (~ibtjw@unaffiliated/macabre) has quit (Quit: Be back later ...)
+2015-04-01 20:04:28	◀▬▬	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 20:04:37	◀▬▬	ryanxcharles (~ryan@64.124.157.148) has quit (Ping timeout: 252 seconds)
+2015-04-01 20:04:39	▬▬▶	bberry (~bberry@70.46.60.158.nw.nuvox.net) has joined #Node.js
+2015-04-01 20:04:44	◀▬▬	pguruprasad (~pgurupras@64.125.69.70) has quit (Quit: pguruprasad)
+2015-04-01 20:04:49	▬▬▶	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has joined #Node.js
+2015-04-01 20:05:41	◀▬▬	alexandergugel (~alexander@208.66.27.18) has quit (Remote host closed the connection)
+2015-04-01 20:05:55	▬▬▶	knyio (~kenny@dhcp-168-105-82-163.wireless.manoa.hawaii.edu) has joined #Node.js
+2015-04-01 20:06:10	▬▬▶	Piotras_ (~pp@188.246.159.115.rev.vline.pl) has joined #Node.js
+2015-04-01 20:06:20	◀▬▬	harttho (~harttho@162.255.34.90) has quit (Quit: harttho)
+2015-04-01 20:06:41	▬▬▶	chindley (~chindley@cpe-174-97-165-15.nc.res.rr.com) has joined #Node.js
+2015-04-01 20:06:54	▬▬▶	ren_hoek (~ren_hoek@cpe-76-187-64-157.tx.res.rr.com) has joined #Node.js
+2015-04-01 20:07:07	◀▬▬	naeluh (~chatzilla@162-235-3-38.lightspeed.irvnca.sbcglobal.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 20:07:15	▬▬▶	sevvie (~sevvie@c-24-143-67-22.customer.broadstripe.net) has joined #Node.js
+2015-04-01 20:07:37	◀▬▬	Kamuela (~Kamuela@host86-163-52-54.range86-163.btcentralplus.com) has quit (Quit: Leaving)
+2015-04-01 20:07:38	◀▬▬	Foxandxss (~textual@unaffiliated/foxandxss) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 20:07:38	◀▬▬	jonr22 (~jonr22@2601:6:8000:eaef:1e65:9dff:fe9d:801d) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 20:07:51	◀▬▬	manuelbieh (~manuelbie@p57BD7117.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2015-04-01 20:07:51	▬▬▶	ircfox (~ircfox@186.213.185.250) has joined #Node.js
+2015-04-01 20:08:03	ircfox	hello folks!
+2015-04-01 20:08:37	▬▬▶	jarrodpayne (~jarrodpay@c-76-123-231-51.hsd1.tn.comcast.net) has joined #Node.js
+2015-04-01 20:09:01	ircfox	I am learning Node at my localhost and now I want to transfer to my vps and I couldn't figure how I will let node running at the server side. Could someone help me please?
+2015-04-01 20:09:18	◀▬▬	karlmikko (~karlmikko@120.23.111.5) has quit (Read error: Connection reset by peer)
+2015-04-01 20:09:50	kevireilly	ircfox: as in keep your process running even when you logout and such?
+2015-04-01 20:10:26	▬▬▶	hjst_ (~hjst@175.136.156.192) has joined #Node.js
+2015-04-01 20:10:38	▬▬▶	Sawbones (~sawbon3s@173.168.90.56) has joined #Node.js
+2015-04-01 20:10:49	mikeywayup	install node on the server and run your app
+2015-04-01 20:11:15	◀▬▬	knyio (~kenny@dhcp-168-105-82-163.wireless.manoa.hawaii.edu) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:11:20	◀▬▬	ren_hoek (~ren_hoek@cpe-76-187-64-157.tx.res.rr.com) has quit (Ping timeout: 245 seconds)
+2015-04-01 20:11:31	◀▬▬	markholmes (~markholme@rrcs-173-198-17-194.west.biz.rr.com) has quit (Quit: Leaving)
+2015-04-01 20:11:33	◀▬▬	everjeje (uid25240@gateway/web/irccloud.com/x-htrfkdnlvaccgjzy) has quit (Quit: Connection closed for inactivity)
+2015-04-01 20:12:06	ircfox	kevireilly: any tutorial about how to do that?
+2015-04-01 20:12:09	◀▬▬	cspotcode (~cspotcode@64.206.121.41) has quit (Quit: cspotcode)
+2015-04-01 20:12:28	kevireilly	ircfox: some common options are forever, nodemon, upstart, and otherwise
+2015-04-01 20:13:19	ircfox	not sure if I get it.
+2015-04-01 20:13:24	▬▬▶	Seikho_ (~Seikho_@paypac.com.au) has joined #Node.js
+2015-04-01 20:13:27	◀▬▬	Seikho_ (~Seikho_@paypac.com.au) has quit (Changing host)
+2015-04-01 20:13:27	▬▬▶	Seikho_ (~Seikho_@unaffiliated/seikho) has joined #Node.js
+2015-04-01 20:13:35	◀▬▬	lloydde (~lloydde@208.184.5.170) has quit (Remote host closed the connection)
+2015-04-01 20:14:03	mikeywayup	1. install node on the server ( find the binaries for node for the os type )
+2015-04-01 20:14:33	▬▬▶	knyio (~kenny@dhcp-168-105-82-163.wireless.manoa.hawaii.edu) has joined #Node.js
+2015-04-01 20:14:56	◀▬▬	robertwhurst (~robertwhu@s66-183-166-52.bc.hsia.telus.net) has quit (Remote host closed the connection)
+2015-04-01 20:16:06	▬▬▶	arsey (~rhysgrave@pool-173-53-72-77.rcmdva.fios.verizon.net) has joined #Node.js
+2015-04-01 20:16:08	ircfox	mikeywayup: right, it is already installed.
+2015-04-01 20:16:34	ircfox	now I can go to terminal and node app.js
+2015-04-01 20:16:49	node-slackers	[Slack] mplewis: ircfox: check out the docs for <https://github.com/foreverjs/forever>
+2015-04-01 20:16:56	▬▬▶	karlmikko (~karlmikko@120.23.111.5) has joined #Node.js
+2015-04-01 20:17:04	◀▬▬	Piotras_ (~pp@188.246.159.115.rev.vline.pl) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:17:06	node-slackers	[Slack] mplewis: see “[Daemon]"
+2015-04-01 20:17:16	ircfox	I can put a process to run and leave, but I never did that before and I wonder if that is the correct way.
+2015-04-01 20:17:25	MasterThrall	yes and no
+2015-04-01 20:17:38	▬▬▶	jonr22 (~jonr22@2601:6:8000:eaef:1e65:9dff:fe9d:801d) has joined #Node.js
+2015-04-01 20:17:48	MasterThrall	there's no failover or failsafe that way
+2015-04-01 20:17:55	▬▬▶	mentalgr_ (~mentalgri@167.216.15.209) has joined #Node.js
+2015-04-01 20:18:03	◀▬▬	jarrodpayne (~jarrodpay@c-76-123-231-51.hsd1.tn.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 20:18:30	mikeywayup	need a process manager
+2015-04-01 20:18:52	node-slackers	[Slack] mplewis: upstart and supervisord are things I’ve used in the past to keep a process running reliably
+2015-04-01 20:18:52	MasterThrall	1up for supervisord
+2015-04-01 20:18:55	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 20:18:56	◀▬▬	nicolagreco (~mozilla@cpc65977-camd15-2-0-cust46.20-2.cable.virginm.net) has quit (Quit: nicolagreco)
+2015-04-01 20:19:12	node-slackers	[Slack] mplewis: but i’ve also used forever for one-off or small utilities
+2015-04-01 20:19:44	◀▬▬	bradleymeck (~bradleyme@cpe-70-114-246-88.austin.res.rr.com) has quit (Quit: bradleymeck)
+2015-04-01 20:19:51	▬▬▶	avens (~avens@50.153.134.139) has joined #Node.js
+2015-04-01 20:19:56	◀▬▬	avens (~avens@50.153.134.139) has quit (Client Quit)
+2015-04-01 20:20:03	▬▬▶	pereba (~pereba@unaffiliated/pereba) has joined #Node.js
+2015-04-01 20:20:05	◀▬▬	leolrrj (~leolrrj@191.181.35.144) has quit
+2015-04-01 20:20:21	▬▬▶	delianides (~delianide@97-82-169-240.dhcp.hckr.nc.charter.com) has joined #Node.js
+2015-04-01 20:20:37	--	irc: disconnected from server

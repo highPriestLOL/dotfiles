@@ -1,0 +1,390 @@
+2015-03-31 18:09:19	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-03-31 18:09:19	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-03-31 18:09:19	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-03-31 18:09:19	--	Channel #erlang: 444 nicks (0 ops, 1 voice, 443 normals)
+2015-03-31 18:09:26	◀▬▬	bturker (~bturker@17.212.147.145) has quit (Remote host closed the connection)
+2015-03-31 18:09:33	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-03-31 18:10:15	◀▬▬	vladimir-vg (~vg@128-71-92-230.broadband.corbina.ru) has quit (Read error: Connection reset by peer)
+2015-03-31 18:10:23	▬▬▶	driti (~driti@wsip-68-15-57-158.ri.ri.cox.net) has joined #erlang
+2015-03-31 18:10:39	▬▬▶	bturker (~bturker@17.212.147.145) has joined #erlang
+2015-03-31 18:11:12	◀▬▬	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has quit (Remote host closed the connection)
+2015-03-31 18:11:26	▬▬▶	janispauls (~janispaul@88.135.141.87) has joined #erlang
+2015-03-31 18:11:47	▬▬▶	mcqueeno_ (~mcqueenor@161.170.193.99) has joined #erlang
+2015-03-31 18:11:53	--	irc: disconnected from server
+2015-03-31 18:12:11	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-03-31 18:12:11	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-03-31 18:12:11	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-03-31 18:12:11	--	Channel #erlang: 445 nicks (0 ops, 1 voice, 444 normals)
+2015-03-31 18:12:14	▬▬▶	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has joined #erlang
+2015-03-31 18:12:23	◀▬▬	mcqueenorama (~mcqueenor@161.170.193.99) has quit (Read error: Connection reset by peer)
+2015-03-31 18:12:25	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-03-31 18:12:56	◀▬▬	Amanas (~Amanas@208.118.226.102) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:13:13	◀▬▬	driti (~driti@wsip-68-15-57-158.ri.ri.cox.net) has quit (Client Quit)
+2015-03-31 18:15:00	◀▬▬	tane (~tane@x4d087aa4.dyn.telefonica.de) has quit (Quit: Verlassend)
+2015-03-31 18:19:00	▬▬▶	mcqueenorama (~mcqueenor@161.170.193.104) has joined #erlang
+2015-03-31 18:19:17	◀▬▬	mcqueeno_ (~mcqueenor@161.170.193.99) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:20:14	◀▬▬	darrencauthon (~darrencau@107.14.25.33) has quit (Remote host closed the connection)
+2015-03-31 18:21:08	▬▬▶	ferrouswheel (~ferrouswh@121-99-47-77.bng1.nct.orcon.net.nz) has joined #erlang
+2015-03-31 18:21:21	◀▬▬	edgurgel (~eduardo@232.40.255.123.static.snap.net.nz) has quit (Ping timeout: 248 seconds)
+2015-03-31 18:25:13	▬▬▶	laut_ (~vikingo@r167-57-12-232.dialup.adsl.anteldata.net.uy) has joined #erlang
+2015-03-31 18:25:13	◀▬▬	ferrouswheel (~ferrouswh@121-99-47-77.bng1.nct.orcon.net.nz) has quit (Remote host closed the connection)
+2015-03-31 18:26:05	◀▬▬	laut (~vikingo@r167-57-76-220.dialup.adsl.anteldata.net.uy) has quit (Read error: Connection reset by peer)
+2015-03-31 18:26:06	--	laut_ is now known as laut
+2015-03-31 18:30:51	◀▬▬	nighty-_ (~nighty@hokuriku.rural-networks.com) has quit (Quit: Disappears in a puff of smoke)
+2015-03-31 18:35:09	▬▬▶	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has joined #erlang
+2015-03-31 18:35:11	▬▬▶	mecalopolis (~mecalopol@2400:7800:4def:9800:2ab2:bdff:feae:4c0a) has joined #erlang
+2015-03-31 18:36:32	◀▬▬	olauzon (~olauzon@216.194.53.25) has quit (Quit: olauzon)
+2015-03-31 18:37:32	▬▬▶	chrisco (~chrisco@c-71-200-154-188.hsd1.md.comcast.net) has joined #erlang
+2015-03-31 18:39:50	◀▬▬	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:39:51	▬▬▶	seancribbs (seancribbs@gateway/shell/yourbnc/x-uatggbsahzhwoapy) has joined #erlang
+2015-03-31 18:41:01	◀▬▬	mecalopolis (~mecalopol@2400:7800:4def:9800:2ab2:bdff:feae:4c0a) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:41:21	◀▬▬	jonmorehouse (~jonmoreho@192.69.243.130) has quit (Ping timeout: 245 seconds)
+2015-03-31 18:43:38	▬▬▶	wildroman2 (~wildroman@109.186.185.235) has joined #erlang
+2015-03-31 18:44:15	--	irc: disconnected from server
+2015-03-31 23:15:58	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-03-31 23:15:58	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-03-31 23:15:58	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-03-31 23:15:58	--	Channel #erlang: 437 nicks (0 ops, 1 voice, 436 normals)
+2015-03-31 23:15:58	--	Notice(barjavel.freenode.net): [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2015-03-31 23:16:12	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-03-31 23:18:01	◀▬▬	sdothum (~sdothum@dsl-173-206-51-12.tor.primus.ca) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2015-03-31 23:19:03	--	irc: disconnected from server
+2015-03-31 23:19:22	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-03-31 23:19:22	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-03-31 23:19:22	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-03-31 23:19:22	--	Channel #erlang: 436 nicks (0 ops, 1 voice, 435 normals)
+2015-03-31 23:19:37	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-03-31 23:23:16	--	irc: disconnected from server
+2015-03-31 23:23:34	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-03-31 23:23:34	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-03-31 23:23:34	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-03-31 23:23:34	--	Channel #erlang: 436 nicks (0 ops, 1 voice, 435 normals)
+2015-03-31 23:23:40	◀▬▬	darrencauthon (~darrencau@2601:2:501:7bb3:75e5:882b:f86d:777e) has quit (Remote host closed the connection)
+2015-03-31 23:23:48	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-03-31 23:24:58	◀▬▬	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-03-31 23:25:10	▬▬▶	ananthakumaran (~Adium@122.167.67.185) has joined #erlang
+2015-03-31 23:25:43	--	irc: disconnected from server
+2015-04-01 15:23:21	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-04-01 15:23:21	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-04-01 15:23:21	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-04-01 15:23:21	--	Channel #erlang: 466 nicks (0 ops, 1 voice, 465 normals)
+2015-04-01 15:23:23	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-04-01 15:24:17	▬▬▶	avita1 (~Adium@129.21.88.233) has joined #erlang
+2015-04-01 15:24:17	◀▬▬	avita11 (~Adium@129.21.88.233) has quit (Read error: Connection reset by peer)
+2015-04-01 15:26:13	◀▬▬	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has quit (Remote host closed the connection)
+2015-04-01 15:26:59	▬▬▶	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has joined #erlang
+2015-04-01 15:29:40	◀▬▬	telex (teletype@freeshell.de) has quit (Remote host closed the connection)
+2015-04-01 15:29:43	▬▬▶	bjorkintosh (~bjork@ip68-13-224-81.ok.ok.cox.net) has joined #erlang
+2015-04-01 15:31:27	▬▬▶	telex (teletype@freeshell.de) has joined #erlang
+2015-04-01 15:32:26	◀▬▬	StoneCypher4k (StoneCyphe@c-73-162-135-172.hsd1.ca.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:34:09	▬▬▶	StoneCypher4k (StoneCyphe@c-73-162-135-172.hsd1.ca.comcast.net) has joined #erlang
+2015-04-01 15:34:44	◀▬▬	Soup (~zac@static-100-0-172-114.bstnma.fios.verizon.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 15:36:28	◀▬▬	acscherp (~arjan@217-19-31-6.dsl.cambrium.nl) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:38:25	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 15:38:48	▬▬▶	vyorkin (~vyorkin@broadband-37-110-21-113.nationalcablenetworks.ru) has joined #erlang
+2015-04-01 15:38:58	▬▬▶	__paulo (~paulo@189.36.205.198) has joined #erlang
+2015-04-01 15:42:05	◀▬▬	paulovap (~paulo@177.98.205.220) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:42:56	▬▬▶	binarin (~binarin@2a02:6b8:0:408:eef4:bbff:fe5b:9a84) has joined #erlang
+2015-04-01 15:43:33	▬▬▶	jkakar (~textual@d154-20-115-159.bchsia.telus.net) has joined #erlang
+2015-04-01 15:45:40	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #erlang
+2015-04-01 15:47:17	▬▬▶	oneeman (~oneeman__@186.176.28.143) has joined #erlang
+2015-04-01 15:50:46	◀▬▬	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has quit (Remote host closed the connection)
+2015-04-01 15:53:15	▬▬▶	LeHoff (~Adium@0119600432.0.fullrate.dk) has joined #erlang
+2015-04-01 15:54:59	▬▬▶	bturker (~bturker@17.212.147.145) has joined #erlang
+2015-04-01 15:56:41	◀▬▬	avita1 (~Adium@129.21.88.233) has quit (Quit: Leaving.)
+2015-04-01 15:59:15	▬▬▶	kyrylo (~kyrylo@subtle/user/kyrylo) has joined #erlang
+2015-04-01 15:59:20	▬▬▶	mr_bmt (~bmt@host86-151-54-182.range86-151.btcentralplus.com) has joined #erlang
+2015-04-01 16:00:36	◀▬▬	kyrylo__ (~kyrylo@subtle/user/kyrylo) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:00:45	▬▬▶	chewbranca (~chewbranc@couchdb/committer/chewbranca) has joined #erlang
+2015-04-01 16:01:40	◀▬▬	Guest36033 (~davidw@dynamic-adsl-84-220-68-100.clienti.tiscali.it) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:05:39	▬▬▶	Soup (~zac@static-100-0-172-114.bstnma.fios.verizon.net) has joined #erlang
+2015-04-01 16:06:44	▬▬▶	josevalim (~josevalim@ip-94-42-247-242.multimo.pl) has joined #erlang
+2015-04-01 16:07:51	▬▬▶	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has joined #erlang
+2015-04-01 16:08:30	◀▬▬	wildroman2 (~wildroman@109.186.185.235) has quit (Remote host closed the connection)
+2015-04-01 16:09:08	▬▬▶	wildroman2 (~wildroman@109.186.185.235) has joined #erlang
+2015-04-01 16:09:28	▬▬▶	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has joined #erlang
+2015-04-01 16:09:30	◀▬▬	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2015-04-01 16:09:54	▬▬▶	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has joined #erlang
+2015-04-01 16:10:07	◀▬▬	decentdog (~decentdog@78.60.228.26) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:10:42	◀▬▬	zaphar_ps (~zaphar@blender/coder/Zaphar-ps) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:10:44	▬▬▶	zaphar_p1 (~zaphar@50-77-169-246-static.hfc.comcastbusiness.net) has joined #erlang
+2015-04-01 16:11:02	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:13:06	◀▬▬	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:14:46	▬▬▶	kyrylo_ (~kyrylo@subtle/user/kyrylo) has joined #erlang
+2015-04-01 16:15:48	◀▬▬	kyrylo (~kyrylo@subtle/user/kyrylo) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:16:53	◀▬▬	k_dog345 (~kyle@162.17.100.137) has quit (Remote host closed the connection)
+2015-04-01 16:19:11	▬▬▶	k_dog345 (~kyle@162.17.100.137) has joined #erlang
+2015-04-01 16:19:20	◀▬▬	JuanMiguel (~JuanMigue@141.Red-88-12-184.dynamicIP.rima-tde.net) has quit (Quit: This computer has gone to sleep)
+2015-04-01 16:21:04	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #erlang
+2015-04-01 16:22:24	◀▬▬	loz1 (~maxvel@188.242.221.21) has quit (Quit: Leaving.)
+2015-04-01 16:27:09	bencc	when starting an extranl program with open_port
+2015-04-01 16:27:21	bencc	will the external process die when the erlang pid dies?
+2015-04-01 16:27:31	bencc	will the external process die when the erlang vm stopps?
+2015-04-01 16:28:24	emauton	Seems easy to test, maybe catch ALL THE SIGNALS in a small C external and try all of the above to see?
+2015-04-01 16:29:51	bencc	emauton: I stopped both the erlang pid and the erlang vm but the external process keeps running
+2015-04-01 16:29:58	bencc	in my case the external process is gstreamer c app
+2015-04-01 16:30:02	bencc	I'll try again
+2015-04-01 16:30:12	◀▬▬	_andre (~andre@201.76.188.234) has quit (Quit: leaving)
+2015-04-01 16:30:26	emauton	Interesting.
+2015-04-01 16:30:44	◀▬▬	dude-x (~dude-x@208.82.12.18) has quit (Remote host closed the connection)
+2015-04-01 16:31:19	▬▬▶	dude-x (~dude-x@208.82.12.18) has joined #erlang
+2015-04-01 16:31:43	bencc	I'll test again because it doesn't seem reasonable
+2015-04-01 16:32:29	emauton	Cool, curious to hear what you find.
+2015-04-01 16:32:34	okeuday_bak	bencc: it depends on the Erlang port detecting when its fd is closed
+2015-04-01 16:33:03	emauton	okeuday_bak: Huh, so Erlang doesn't send a signal to the child?
+2015-04-01 16:33:32	okeuday_bak	emauton: not unless you add code to do so, but you need to get the pid from the port to do that
+2015-04-01 16:34:01	okeuday_bak	emauton: you would need to use SIGKILL if you care about the port ignoring some signals... it depends on the situation
+2015-04-01 16:34:22	emauton	okeuday_bak: Understood.
+2015-04-01 16:34:36	bencc	you get the pid from open_port
+2015-04-01 16:34:51	emauton	okeuday_bak: I guess I'm just surprised that there's not some standard "hey, we're finished here" signal it sends, even USR1 or somethingl
+2015-04-01 16:34:51	▬▬▶	oscar_toro (~oscar@21.Red-79-146-225.dynamicIP.rima-tde.net) has joined #erlang
+2015-04-01 16:34:53	okeuday_bak	emauton: the other weird situation is if you suspend the erlang VM pid, what does the port do?
+2015-04-01 16:35:16	emauton	Good question, yeah, I mean in terms of what *should* it do ...
+2015-04-01 16:35:33	okeuday_bak	emauton: if you use external CloudI services, it does SIGKILL once the terminate timeout expires, but Erlang ports require custom code
+2015-04-01 16:35:36	◀▬▬	dude-x (~dude-x@208.82.12.18) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:36:04	okeuday_bak	bencc: you get a port from open_port which is like a pid, but different
+2015-04-01 16:36:18	emauton	okeuday_bak: Cool. I'm sorry to say that I've never played with CloudI. It's in my todo list, I'll get there some day. :o)
+2015-04-01 16:36:24	bencc	so it's not an os pid?
+2015-04-01 16:36:31	okeuday_bak	emauton: cool
+2015-04-01 16:37:11	bencc	is there a way to 'link' the erlang process and the externa process?
+2015-04-01 16:37:14	emauton	bencc: Nope. You'll need erlang:port_info to get that
+2015-04-01 16:37:21	emauton	(the OS pid)
+2015-04-01 16:37:30	okeuday_bak	bencc: a port is a connection to something, so it could be a socket, something external the Erlang VM, in this case it is connecting to the two pipes being used for an OS pid, but you don't know what the OS pid actually is
+2015-04-01 16:39:34	okeuday_bak	bencc: you can link to a port if you want to, i.e., by calling erlang:link(Port), but the problem here is the Erlang port code not seeing the close in the Erlang port source code
+2015-04-01 16:39:48	bencc	so I can be left with zombie processes
+2015-04-01 16:39:55	bencc	maybe I need to implement a driver to fix it?
+2015-04-01 16:40:07	okeuday_bak	bencc: not necessarily, it is calling OS fork and it is a child of the Erlang VM
+2015-04-01 16:40:41	okeuday_bak	bencc: the good way to fix it normally is call poll() in the Erlang port program, and detect the close
+2015-04-01 16:41:23	◀▬▬	Alekko (~Akooij@5351DC9B.cm-6-2d.dynamic.ziggo.nl) has quit (Read error: Connection reset by peer)
+2015-04-01 16:41:29	okeuday_bak	bencc: it should be POLLHUP
+2015-04-01 16:41:37	bencc	the problem is not detecting a when the external program is closed
+2015-04-01 16:41:53	bencc	but making sure the external process is closed if the erlang pid crashes
+2015-04-01 16:42:10	bencc	I stopped the erlang vm and now the external process was removed
+2015-04-01 16:42:26	bencc	before I think I had 4 zombie external processes
+2015-04-01 16:42:45	darkling	A zombie process is nothing to worry about.
+2015-04-01 16:42:57	bencc	drakling: won't it use resources?
+2015-04-01 16:43:05	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:43:13	darkling	It takes up precisely two resources: one pid, and one process structure.
+2015-04-01 16:43:34	darkling	The pid is used to identify it, and the process structure is there to keep a record of the return code.
+2015-04-01 16:43:36	bencc	what if it's doing work?
+2015-04-01 16:43:44	emauton	Assuming the parent exits at some point and is not badly-behaved (the Erlang VM shouldn't be), it'll get reaped by init after a little while.
+2015-04-01 16:43:55	darkling	If it's a zombie process, in Z state, that's it. There's nothing more.
+2015-04-01 16:44:01	darkling	If it's doing work, it's not a zombie.
+2015-04-01 16:44:06	emauton	bencc: A zombie is not doing work by ... what darkling said
+2015-04-01 16:44:11	bencc	ok
+2015-04-01 16:44:18	okeuday_bak	bencc: if you want to cleanup a bad Erlang port, you would need the OS pid of the Erlang port and to do an OS kill on it
+2015-04-01 16:44:33	bencc	I meant a process that still doing some work but not needed
+2015-04-01 16:44:40	bencc	ok
+2015-04-01 16:44:45	okeuday_bak	bencc: yeah, you need to kill that
+2015-04-01 16:44:58	emauton	(actually, it could be reaped by something other than init these days, see PR_SET_CHILD_SUBREAPER in prctl(2) on Linux, but it's still unlikely)
+2015-04-01 16:45:39	bencc	okeuday_bak: what do you mean by poll() ?
+2015-04-01 16:46:07	okeuday_bak	bencc: like a normal C poll() function call in poll.h
+2015-04-01 16:47:03	okeuday_bak	bencc: other programming languages normally have a poll function too (or select)
+2015-04-01 16:48:24	◀▬▬	zaphar_p1 (~zaphar@50-77-169-246-static.hfc.comcastbusiness.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 16:49:21	bencc	I'll read about it
+2015-04-01 16:49:35	◀▬▬	LeHoff (~Adium@0119600432.0.fullrate.dk) has quit (Quit: Leaving.)
+2015-04-01 16:52:28	▬▬▶	sthzg (~textual@89-74-119-124.dynamic.chello.pl) has joined #erlang
+2015-04-01 16:53:36	◀▬▬	StoneCypher (~johnh@70-36-241-155.dedicated.static.sonic.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:54:40	◀▬▬	wildroman2 (~wildroman@109.186.185.235) has quit (Remote host closed the connection)
+2015-04-01 16:56:01	▬▬▶	bencc1 (~Ofir@5.29.226.133) has joined #erlang
+2015-04-01 16:57:05	--	kyrylo_ is now known as kyrylo
+2015-04-01 16:57:32	▬▬▶	StoneCypher (~johnh@70-36-241-155.dedicated.static.sonic.net) has joined #erlang
+2015-04-01 16:57:49	◀▬▬	bencc (~Ofir@5.29.226.133) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:01:03	▬▬▶	wildroman2 (~wildroman@109.186.185.235) has joined #erlang
+2015-04-01 17:01:35	◀▬▬	jkakar (~textual@d154-20-115-159.bchsia.telus.net) has quit (Quit: Goodnight)
+2015-04-01 17:01:51	◀▬▬	sthzg (~textual@89-74-119-124.dynamic.chello.pl) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 17:03:48	▬▬▶	osoleole (~osoleole@91.142.158.60) has joined #erlang
+2015-04-01 17:05:43	◀▬▬	wildroman2 (~wildroman@109.186.185.235) has quit (Remote host closed the connection)
+2015-04-01 17:06:25	▬▬▶	wildroman2 (~wildroman@109.186.185.235) has joined #erlang
+2015-04-01 17:07:21	◀▬▬	o_lalertom (~o_lalerto@moonstonemedical/developer/o-lalertom) has quit (Quit: Saindo)
+2015-04-01 17:07:30	▬▬▶	xc0d3r_pt (~pedro.sil@204.214.54.77.rev.vodafone.pt) has joined #erlang
+2015-04-01 17:07:38	◀▬▬	wicope (~wicope@117.Red-88-27-63.staticIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:07:39	◀▬▬	driti (~driti@50-202-198-202-static.hfc.comcastbusiness.net) has quit (Quit: pz.)
+2015-04-01 17:07:51	◀▬▬	chrismccord (~chrismcco@107-137-193-78.lightspeed.cntmoh.sbcglobal.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 17:09:18	▬▬▶	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has joined #erlang
+2015-04-01 17:10:11	◀▬▬	__paulo (~paulo@189.36.205.198) has quit (Quit: Konversation terminated!)
+2015-04-01 17:11:28	◀▬▬	yamadapc (~yamadapc@201.81.172.106) has quit (Remote host closed the connection)
+2015-04-01 17:12:04	▬▬▶	edgurgel (~eduardo@232.40.255.123.static.snap.net.nz) has joined #erlang
+2015-04-01 17:12:04	◀▬▬	edgurgel (~eduardo@232.40.255.123.static.snap.net.nz) has quit (Client Quit)
+2015-04-01 17:12:33	▬▬▶	jkakar (~textual@d154-20-115-159.bchsia.telus.net) has joined #erlang
+2015-04-01 17:12:45	◀▬▬	josevalim (~josevalim@ip-94-42-247-242.multimo.pl) has quit (Quit: josevalim)
+2015-04-01 17:13:37	▬▬▶	dude-x (~dude-x@cpe-68-173-149-115.nyc.res.rr.com) has joined #erlang
+2015-04-01 17:14:07	◀▬▬	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has quit (Ping timeout: 248 seconds)
+2015-04-01 17:14:44	◀▬▬	timc1assic (~timc1assi@rrcs-108-176-28-226.nyc.biz.rr.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:14:48	◀▬▬	osoleole (~osoleole@91.142.158.60) has quit (Quit: This computer has gone to sleep)
+2015-04-01 17:14:48	◀▬▬	malkomalko (~malkomalk@207.251.103.46) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:16:30	▬▬▶	avita1 (~Adium@129.21.88.233) has joined #erlang
+2015-04-01 17:18:44	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #erlang
+2015-04-01 17:19:44	▬▬▶	JuanMiguel (~JuanMigue@141.Red-88-12-184.dynamicIP.rima-tde.net) has joined #erlang
+2015-04-01 17:19:52	◀▬▬	JuanMiguel (~JuanMigue@141.Red-88-12-184.dynamicIP.rima-tde.net) has quit (Client Quit)
+2015-04-01 17:20:05	--	irc: disconnected from server
+2015-04-01 17:29:27	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-04-01 17:29:27	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-04-01 17:29:27	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-04-01 17:29:27	--	Channel #erlang: 461 nicks (0 ops, 1 voice, 460 normals)
+2015-04-01 17:29:27	--	Notice(barjavel.freenode.net): [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2015-04-01 17:29:42	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-04-01 17:30:25	▬▬▶	LeHoff (~Adium@0119600432.0.fullrate.dk) has joined #erlang
+2015-04-01 17:31:55	◀▬▬	mr_bmt (~bmt@host86-151-54-182.range86-151.btcentralplus.com) has quit (Remote host closed the connection)
+2015-04-01 17:31:59	◀▬▬	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has quit (Remote host closed the connection)
+2015-04-01 17:32:10	▬▬▶	ferrouswheel (~ferrouswh@121-99-47-77.bng1.nct.orcon.net.nz) has joined #erlang
+2015-04-01 17:32:51	◀▬▬	LeHoff (~Adium@0119600432.0.fullrate.dk) has quit (Client Quit)
+2015-04-01 17:33:02	▬▬▶	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has joined #erlang
+2015-04-01 17:34:41	◀▬▬	olauzon (~olauzon@216.194.53.25) has quit (Quit: olauzon)
+2015-04-01 17:35:19	▬▬▶	fooflare (~fooflare@x2f54bad.dyn.telefonica.de) has joined #erlang
+2015-04-01 17:35:20	◀▬▬	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 17:37:40	◀▬▬	fooflare (~fooflare@x2f54bad.dyn.telefonica.de) has quit (Client Quit)
+2015-04-01 17:38:10	◀▬▬	malkomalko (~malkomalk@207.251.103.46) has quit (Ping timeout: 272 seconds)
+2015-04-01 17:38:11	▬▬▶	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has joined #erlang
+2015-04-01 17:41:03	◀▬▬	govg (~govg@unaffiliated/govg) has quit (Quit: leaving)
+2015-04-01 17:42:06	▬▬▶	eletuchy (~eletuchy@2601:9:5780:1fd7:baf6:b1ff:fe14:95bf) has joined #erlang
+2015-04-01 17:45:13	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 17:47:11	◀▬▬	eletuchy (~eletuchy@2601:9:5780:1fd7:baf6:b1ff:fe14:95bf) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:48:49	▬▬▶	govg (~govg@unaffiliated/govg) has joined #erlang
+2015-04-01 17:51:06	▬▬▶	avita1 (~Adium@129.21.88.233) has joined #erlang
+2015-04-01 17:55:07	▬▬▶	osoleole (~osoleole@91.142.158.60) has joined #erlang
+2015-04-01 17:55:48	▬▬▶	bencc (~Ofir@5.29.226.133) has joined #erlang
+2015-04-01 17:56:50	▬▬▶	JusticeFries (~textual@c-107-2-139-89.hsd1.co.comcast.net) has joined #erlang
+2015-04-01 17:58:41	◀▬▬	bencc1 (~Ofir@5.29.226.133) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:58:48	▬▬▶	driti (~driti@209-6-52-185.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com) has joined #erlang
+2015-04-01 17:59:14	◀▬▬	JusticeFries (~textual@c-107-2-139-89.hsd1.co.comcast.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:59:33	▬▬▶	JusticeFries (~textual@c-107-2-139-89.hsd1.co.comcast.net) has joined #erlang
+2015-04-01 18:01:32	◀▬▬	vladimir-vg (~vg@128-71-127-196.broadband.corbina.ru) has quit (Remote host closed the connection)
+2015-04-01 18:01:50	◀▬▬	FullTiltProspect (csmiga@nat/cisco/x-tenkjdrdlkembyts) has left #erlang
+2015-04-01 18:02:42	▬▬▶	slogsdon (~slogsdon@cpe-96-28-107-6.kya.res.rr.com) has joined #erlang
+2015-04-01 18:04:21	◀▬▬	wildroman2 (~wildroman@109.186.185.235) has quit (Remote host closed the connection)
+2015-04-01 18:07:01	◀▬▬	codestorm444 (~codestorm@VIXLET-CA-L.edge5.LosAngeles1.Level3.net) has quit (Remote host closed the connection)
+2015-04-01 18:07:15	▬▬▶	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has joined #erlang
+2015-04-01 18:09:26	◀▬▬	Amanas (~Amanas@208.118.226.102) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:10:15	--	zz_flazz is now known as flazz
+2015-04-01 18:11:21	◀▬▬	mrpi (~mrpi@HSI-KBW-085-216-075-147.hsi.kabelbw.de) has quit (Ping timeout: 265 seconds)
+2015-04-01 18:14:58	▬▬▶	jonmorehouse (~jonmoreho@192.69.243.130) has joined #erlang
+2015-04-01 18:16:58	◀▬▬	askatasuna (~askatasun@181.30.22.74) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:17:23	--	irc: disconnected from server
+2015-04-01 18:22:43	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-04-01 18:22:43	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-04-01 18:22:43	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-04-01 18:22:43	--	Channel #erlang: 458 nicks (0 ops, 1 voice, 457 normals)
+2015-04-01 18:22:56	◀▬▬	driti (~driti@209-6-52-185.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com) has quit (Quit: pz.)
+2015-04-01 18:22:59	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-04-01 18:25:03	▬▬▶	malkomalko (~malkomalk@ool-457a23b1.dyn.optonline.net) has joined #erlang
+2015-04-01 18:25:25	◀▬▬	slogsdon (~slogsdon@cpe-96-28-107-6.kya.res.rr.com) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:26:11	◀▬▬	laut (~vikingo@r167-57-26-19.dialup.adsl.anteldata.net.uy) has quit (Read error: Connection reset by peer)
+2015-04-01 18:26:20	▬▬▶	laut (~vikingo@r167-57-13-213.dialup.adsl.anteldata.net.uy) has joined #erlang
+2015-04-01 18:27:59	◀▬▬	darrencauthon (~darrencau@2601:2:501:7bb3:8c25:f004:ec8c:8dd0) has quit (Remote host closed the connection)
+2015-04-01 18:28:51	▬▬▶	corbe (dcorbe@apollo.corbe.net) has joined #erlang
+2015-04-01 18:30:04	◀▬▬	hohum (dcorbe@apollo.corbe.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:30:05	--	corbe is now known as hohum
+2015-04-01 18:32:08	◀▬▬	adamkittelson (~adamkitte@97-83-204-32.dhcp.eucl.wi.charter.com) has quit (Remote host closed the connection)
+2015-04-01 18:33:01	▬▬▶	adamkittelson (~adamkitte@97-83-204-32.dhcp.eucl.wi.charter.com) has joined #erlang
+2015-04-01 18:34:26	▬▬▶	driti (~driti@209-6-52-185.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com) has joined #erlang
+2015-04-01 18:35:26	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined #erlang
+2015-04-01 18:36:55	◀▬▬	ingsoc (~hickin@host-78-144-160-153.as13285.net) has quit (Quit: Leaving.)
+2015-04-01 18:37:51	▬▬▶	slogsdon (~slogsdon@cpe-96-28-107-6.kya.res.rr.com) has joined #erlang
+2015-04-01 18:38:16	▬▬▶	zaphar_ps (~zaphar@50-77-169-246-static.hfc.comcastbusiness.net) has joined #erlang
+2015-04-01 18:38:16	◀▬▬	zaphar_ps (~zaphar@50-77-169-246-static.hfc.comcastbusiness.net) has quit (Changing host)
+2015-04-01 18:38:16	▬▬▶	zaphar_ps (~zaphar@blender/coder/Zaphar-ps) has joined #erlang
+2015-04-01 18:38:49	◀▬▬	laut (~vikingo@r167-57-13-213.dialup.adsl.anteldata.net.uy) has quit (Quit: laut)
+2015-04-01 18:40:07	◀▬▬	dude-x (~dude-x@cpe-68-173-149-115.nyc.res.rr.com) has quit (Remote host closed the connection)
+2015-04-01 18:45:13	◀▬▬	osoleole (~osoleole@91.142.158.60) has quit (Quit: This computer has gone to sleep)
+2015-04-01 18:49:18	◀▬▬	khaldrogox (~anonymous@64.13.138.81) has quit (Quit: khaldrogox)
+2015-04-01 18:49:38	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:50:39	dawik	strawberries, refrigerated or not?
+2015-04-01 18:51:00	◀▬▬	carlosmarin (~carlos.ma@of1-nat2.aus1.rackspace.com) has quit (Quit: Leaving.)
+2015-04-01 18:51:02	◀▬▬	vyorkin (~vyorkin@broadband-37-110-21-113.nationalcablenetworks.ru) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:51:51	◀▬▬	Virtulis (~virtuall@159.148.61.18) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:55:39	◀▬▬	eletuchy (~eletuchy@c-67-180-16-169.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 18:56:11	▬▬▶	eletuchy (~eletuchy@2601:9:5780:1fd7:baf6:b1ff:fe14:95bf) has joined #erlang
+2015-04-01 18:57:03	◀▬▬	Soup (~zac@static-100-0-172-114.bstnma.fios.verizon.net) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:57:15	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined #erlang
+2015-04-01 18:58:02	◀▬▬	eletuchy (~eletuchy@2601:9:5780:1fd7:baf6:b1ff:fe14:95bf) has quit (Read error: No route to host)
+2015-04-01 18:58:09	▬▬▶	eletuchy (~eletuchy@2601:9:5780:1fd7:baf6:b1ff:fe14:95bf) has joined #erlang
+2015-04-01 18:59:38	emauton	Yes.
+2015-04-01 19:01:45	◀▬▬	rossm (~rossm@host-92-28-164-25.as13285.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:02:28	▬▬▶	rossm (~rossm@host-92-28-164-25.as13285.net) has joined #erlang
+2015-04-01 19:03:33	▬▬▶	khaldrogox (~anonymous@64.13.138.81) has joined #erlang
+2015-04-01 19:03:48	◀▬▬	eletuchy (~eletuchy@2601:9:5780:1fd7:baf6:b1ff:fe14:95bf) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:05:17	▬▬▶	bturker_ (~bturker@17.244.31.148) has joined #erlang
+2015-04-01 19:05:23	▬▬▶	Soup (~zac@static-100-0-172-114.bstnma.fios.verizon.net) has joined #erlang
+2015-04-01 19:05:31	◀▬▬	nighty^ (~nighty@static-68-179-124-161.ptr.terago.net) has quit (Remote host closed the connection)
+2015-04-01 19:08:12	◀▬▬	bturker (~bturker@17.212.147.145) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:08:40	--	flazz is now known as zz_flazz
+2015-04-01 19:09:34	◀▬▬	mcqueeno_ (~mcqueenor@161.170.193.104) has quit (Remote host closed the connection)
+2015-04-01 19:09:45	◀▬▬	bturker_ (~bturker@17.244.31.148) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:09:51	◀▬▬	Soup (~zac@static-100-0-172-114.bstnma.fios.verizon.net) has quit (Ping timeout: 248 seconds)
+2015-04-01 19:10:07	▬▬▶	mcqueenorama (~mcqueenor@161.170.193.104) has joined #erlang
+2015-04-01 19:10:10	◀▬▬	nighty-_ (~nighty@hokuriku.rural-networks.com) has quit (Quit: Disappears in a puff of smoke)
+2015-04-01 19:10:21	◀▬▬	JusticeFries (~textual@c-107-2-139-89.hsd1.co.comcast.net) has quit (Read error: Connection reset by peer)
+2015-04-01 19:10:36	▬▬▶	JusticeFries (~textual@c-107-2-139-89.hsd1.co.comcast.net) has joined #erlang
+2015-04-01 19:11:35	pii	i've executed a function from the erl shell that probably wont return for a while, are there any way to stop it? it's important that i don't lose the shell as im debugging something
+2015-04-01 19:11:42	pii	ctrl-g gives me: BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+2015-04-01 19:12:01	pii	im guessing abort or kill will give me my shell back
+2015-04-01 19:12:33	◀▬▬	imsys (~arthur@189.58.211.248.dynamic.adsl.gvt.net.br) has quit (Read error: Connection reset by peer)
+2015-04-01 19:14:24	◀▬▬	mcqueenorama (~mcqueenor@161.170.193.104) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:14:37	◀▬▬	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:15:33	▬▬▶	bturker (~bturker@76.74.153.49) has joined #erlang
+2015-04-01 19:16:20	◀▬▬	zaphar_ps (~zaphar@blender/coder/Zaphar-ps) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:16:55	▬▬▶	kyrylo_ (~kyrylo@subtle/user/kyrylo) has joined #erlang
+2015-04-01 19:18:32	◀▬▬	kyrylo (~kyrylo@subtle/user/kyrylo) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:19:44	◀▬▬	AvianFlu (~avianflu@207-38-246-118.c3-0.43d-ubr2.qens-43d.ny.cable.rcn.com) has quit (Remote host closed the connection)
+2015-04-01 19:21:33	▬▬▶	mcqueenorama (~mcqueenor@c-50-161-22-49.hsd1.ca.comcast.net) has joined #erlang
+2015-04-01 19:22:34	◀▬▬	jonmorehouse (~jonmoreho@192.69.243.130) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:22:50	pii	kill on the first process and then return seems to work on timer:sleep at least
+2015-04-01 19:23:10	◀▬▬	crododile (~crododile@173-14-96-237-nashville.hfc.comcastbusiness.net) has quit (Remote host closed the connection)
+2015-04-01 19:24:34	◀▬▬	cemerick (~cemerick@c-24-34-140-98.hsd1.ma.comcast.net) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:29:02	▬▬▶	nighty^ (~nighty@static-68-179-124-161.ptr.terago.net) has joined #erlang
+2015-04-01 19:30:10	◀▬▬	areski (~areski@80.174.128.96.dyn.user.ono.com) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:30:16	◀▬▬	slogsdon (~slogsdon@cpe-96-28-107-6.kya.res.rr.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:31:44	--	irc: disconnected from server
+2015-04-01 19:32:08	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #erlang
+2015-04-01 19:32:08	--	Topic for #erlang is "Erlang, the programming language | Current Stable Version (17.4): erlang.org/download_release/, github.com/erlang/otp | Docs: erlang.org/erldoc, learnyousomeerlang.com | Community: erlangcentral.org, thisotplife.tumblr.com, #erlounge for banter | Official site: erlang.org"
+2015-04-01 19:32:08	--	Topic set by MononcQc (~ferd@li101-172.members.linode.com) on Thu, 11 Dec 2014 13:11:19
+2015-04-01 19:32:08	--	Channel #erlang: 441 nicks (0 ops, 1 voice, 440 normals)
+2015-04-01 19:32:23	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2015-04-01 19:34:48	▬▬▶	dude-x__ (~dude-x@2600:1001:b120:10d4:c9e3:d3c8:f289:fded) has joined #erlang
+2015-04-01 19:35:29	◀▬▬	CMoH (~cipi@unaffiliated/c-moh) has quit (Quit: Konversation terminated!)
+2015-04-01 19:35:52	▬▬▶	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has joined #erlang
+2015-04-01 19:36:22	▬▬▶	CMoH (~cipi@unaffiliated/c-moh) has joined #erlang
+2015-04-01 19:36:36	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:39:32	◀▬▬	rambocoder (uid20220@gateway/web/irccloud.com/x-qqlqxbmrvtcwhccd) has quit (Quit: Connection closed for inactivity)
+2015-04-01 19:40:23	pii	yeah, got my shell back
+2015-04-01 19:43:50	▬▬▶	trev0r (~textual@r74-195-237-157.stl1cmta01.stwrok.ok.dh.suddenlink.net) has joined #erlang
+2015-04-01 19:44:00	◀▬▬	CMoH (~cipi@unaffiliated/c-moh) has quit (Quit: Konversation terminated!)
+2015-04-01 19:44:09	◀▬▬	emakris (~emakris@fw-1-user-net-flrs.cictr.com) has quit (Read error: Connection reset by peer)
+2015-04-01 19:44:26	◀▬▬	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:44:49	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined #erlang
+2015-04-01 19:45:05	▬▬▶	Amanas (~Amanas@2601:6:3500:391:a93c:ce84:531d:28e9) has joined #erlang
+2015-04-01 19:46:21	▬▬▶	neurosys_ (~neurosys@c-73-179-197-42.hsd1.fl.comcast.net) has joined #erlang
+2015-04-01 19:47:21	▬▬▶	darrencauthon (~darrencau@2601:2:501:7bb3:5832:c0b2:6ac1:d9f8) has joined #erlang
+2015-04-01 19:47:29	▬▬▶	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has joined #erlang
+2015-04-01 19:48:59	--	neurosys_ is now known as neurosys_mac
+2015-04-01 19:49:45	▬▬▶	jonmorehouse (~jonmoreho@192.69.243.130) has joined #erlang
+2015-04-01 19:49:56	▬▬▶	Soup (~zac@static-100-0-172-114.bstnma.fios.verizon.net) has joined #erlang
+2015-04-01 19:49:58	◀▬▬	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has quit (Client Quit)
+2015-04-01 19:50:18	◀▬▬	neurosys_mac (~neurosys@c-73-179-197-42.hsd1.fl.comcast.net) has quit (Client Quit)
+2015-04-01 19:50:43	▬▬▶	neurosys_ (~neurosys@2601:3:2d00:615:61c3:85b6:227c:1262) has joined #erlang
+2015-04-01 19:51:08	--	neurosys_ is now known as neurosys_mac
+2015-04-01 19:51:59	◀▬▬	darrencauthon (~darrencau@2601:2:501:7bb3:5832:c0b2:6ac1:d9f8) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:52:10	◀▬▬	chewbranca (~chewbranc@couchdb/committer/chewbranca) has quit (Remote host closed the connection)
+2015-04-01 19:52:43	▬▬▶	chewbranca (~chewbranc@couchdb/committer/chewbranca) has joined #erlang
+2015-04-01 19:57:11	◀▬▬	chewbranca (~chewbranc@couchdb/committer/chewbranca) has quit (Ping timeout: 246 seconds)
+2015-04-01 19:58:14	▬▬▶	eletuchy (~eletuchy@2601:9:5780:1fd7:baf6:b1ff:fe14:95bf) has joined #erlang
+2015-04-01 20:00:28	▬▬▶	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has joined #erlang
+2015-04-01 20:02:14	▬▬▶	dude-x (~dude-x@2600:1001:b120:10d4:a839:715:9bff:93d9) has joined #erlang
+2015-04-01 20:02:31	◀▬▬	mcqueenorama (~mcqueenor@c-50-161-22-49.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 20:02:45	◀▬▬	eletuchy (~eletuchy@2601:9:5780:1fd7:baf6:b1ff:fe14:95bf) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:02:49	--	zz_flazz is now known as flazz
+2015-04-01 20:05:25	◀▬▬	dude-x__ (~dude-x@2600:1001:b120:10d4:c9e3:d3c8:f289:fded) has quit (Ping timeout: 265 seconds)
+2015-04-01 20:06:24	◀▬▬	rossm (~rossm@host-92-28-164-25.as13285.net) has quit (Ping timeout: 248 seconds)
+2015-04-01 20:06:43	◀▬▬	dude-x (~dude-x@2600:1001:b120:10d4:a839:715:9bff:93d9) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:08:00	◀▬▬	jkakar (~textual@d154-20-115-159.bchsia.telus.net) has quit (Quit: Goodnight)
+2015-04-01 20:09:14	◀▬▬	Soup (~zac@static-100-0-172-114.bstnma.fios.verizon.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 20:10:31	◀▬▬	juanjoc (~juanjoc@57-147-16-190.fibertel.com.ar) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 20:10:46	--	flazz is now known as zz_flazz
+2015-04-01 20:11:38	◀▬▬	neurosys_mac (~neurosys@2601:3:2d00:615:61c3:85b6:227c:1262) has quit (Remote host closed the connection)
+2015-04-01 20:13:22	◀▬▬	avita1 (~Adium@129.21.88.233) has quit (Quit: Leaving.)
+2015-04-01 20:13:34	▬▬▶	jkakar (~textual@d154-20-115-159.bchsia.telus.net) has joined #erlang
+2015-04-01 20:16:05	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 246 seconds)
+2015-04-01 20:17:51	▬▬▶	Soopaman1 (~soopaman@dsl-69-171-136-205.acanac.net) has joined #erlang
+2015-04-01 20:18:46	◀▬▬	Soopaman (~soopaman@dsl-173-248-245-198.acanac.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:20:37	--	irc: disconnected from server

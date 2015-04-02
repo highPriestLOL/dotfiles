@@ -1,0 +1,895 @@
+2015-03-31 18:09:19	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-03-31 18:09:19	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-03-31 18:09:19	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-03-31 18:09:19	--	Channel #postgresql: 962 nicks (0 ops, 0 voices, 962 normals)
+2015-03-31 18:09:21	--	URL for #postgresql: http://www.postgresql.org
+2015-03-31 18:09:31	▬▬▶	gorthx (~Adium@2001:4870:e08a:0:955c:b6bb:a9ae:d913) has joined #postgresql
+2015-03-31 18:09:37	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-03-31 18:09:57	▬▬▶	Luke (~Luke@unaffiliated/luke) has joined #postgresql
+2015-03-31 18:10:56	◀▬▬	Volsus (~mata@2601:7:cc0:158:c1d4:42ae:5c8:f5d4) has quit (Quit: Leaving)
+2015-03-31 18:11:53	--	irc: disconnected from server
+2015-03-31 18:12:11	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-03-31 18:12:11	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-03-31 18:12:11	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-03-31 18:12:11	--	Channel #postgresql: 963 nicks (0 ops, 0 voices, 963 normals)
+2015-03-31 18:12:13	--	URL for #postgresql: http://www.postgresql.org
+2015-03-31 18:12:29	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-03-31 18:12:36	▬▬▶	trailertrash (~trailertr@c-73-19-206-94.hsd1.tn.comcast.net) has joined #postgresql
+2015-03-31 18:12:42	▬▬▶	hillbilly (~trailertr@c-73-19-206-94.hsd1.tn.comcast.net) has joined #postgresql
+2015-03-31 18:13:08	▬▬▶	VictorGrunn (~VictorGru@64.111.143.45) has joined #postgresql
+2015-03-31 18:14:02	◀▬▬	lucian (~lucian@cpc34-bmly9-2-0-cust31.2-3.cable.virginm.net) has quit (Ping timeout: 244 seconds)
+2015-03-31 18:14:23	◀▬▬	martinbm1dsen (~martinbma@188.226.252.120) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:14:35	davidfetter_fbn	well, you've convinced me. i'll make it error on 0, adjust for >= -1
+2015-03-31 18:14:41	davidfetter_fbn	@ johto
+2015-03-31 18:15:11	◀▬▬	xemdetia (xemdetia@nat/ibm/x-tbxyilujwbuoaxbc) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:15:19	◀▬▬	VictorG (~VictorGru@64.111.143.45) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:15:19	--	VictorGrunn is now known as VictorG
+2015-03-31 18:16:14	◀▬▬	nettoweb (~textual@187.112.252.141) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-03-31 18:18:20	▬▬▶	virtualeyes (~godenji@37.205.56.235) has joined #postgresql
+2015-03-31 18:18:33	▬▬▶	eeriegeek (~eeriegeek@c-98-244-112-229.hsd1.va.comcast.net) has joined #postgresql
+2015-03-31 18:19:01	▬▬▶	coderman1 (32fa6e47@gateway/web/freenode/ip.50.250.110.71) has joined #postgresql
+2015-03-31 18:19:06	agliodbs	??keyvil
+2015-03-31 18:19:07	pg_docbot	http://it.toolbox.com/blogs/database-soup/primary-keyvil-part-iii-7365 :: http://it.toolbox.com/blogs/database-soup/primary-keyvil-part-i-7327
+2015-03-31 18:19:07	pg_docbot	http://it.toolbox.com/blogs/database-soup/primary-keyvil-part-ii-7345
+2015-03-31 18:19:18	agliodbs	?forget keyvil
+2015-03-31 18:19:19	pg_docbot	Forgot 3 keys
+2015-03-31 18:19:25	conradwt	Does anyone have any experience with setting up streaming replication with PostgreSQL 9.3 on Ubuntu 14.04?
+2015-03-31 18:19:26	agliodbs	?learn keyvil http://www.databasesoup.com/2015/03/primary-keyvil-reprised.html
+2015-03-31 18:19:27	pg_docbot	Successfully added URL with 1 keyword
+2015-03-31 18:19:52	agliodbs	conradwt: it's pretty straightforwards.  do you have specific questions?
+2015-03-31 18:20:01	▬▬▶	landaire (~landaire@207.173.79.34) has joined #postgresql
+2015-03-31 18:20:25	▬▬▶	SubjectiveBias (~subjectiv@ppp118-208-177-146.lns20.bne4.internode.on.net) has joined #postgresql
+2015-03-31 18:20:25	◀▬▬	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-03-31 18:20:43	conradwt	Yes, when I create a table on the master and I'm not seeing the table on the slave.
+2015-03-31 18:21:25	myndzi	goddamn daylight savings time
+2015-03-31 18:21:33	◀▬▬	ogrady (~Thunderbi@HSI-KBW-109-193-041-101.hsi7.kabel-badenwuerttemberg.de) has quit (Quit: ogrady)
+2015-03-31 18:21:43	conradwt	Is there an up to date tutorial/setup because I have followed several without success?
+2015-03-31 18:21:53	myndzi	would 'edt' only apply daylight savings conversions during the correct range of months?
+2015-03-31 18:22:06	myndzi	and 'est' is basically the time without daylight savings compensation?
+2015-03-31 18:22:14	◀▬▬	PeterMetz (~petermetz@cpc5-mort6-2-0-cust640.croy.cable.virginm.net) has quit (Remote host closed the connection)
+2015-03-31 18:22:21	agliodbs	conradwt: you could try this one: https://github.com/jberkus/pgReplicationTutorial
+2015-03-31 18:22:33	agliodbs	conradwt: what do you see when you do "select * from pg_stat_replication" on the master?
+2015-03-31 18:22:53	johto	myndzi; 'edt' would always be the +1 zone
+2015-03-31 18:23:10	johto	myndzi; you want 'US/Eastern', probably
+2015-03-31 18:23:28	johto	the three-letter names are ambiguous and stupid, don't use them
+2015-03-31 18:23:31	myndzi	which would apply edt when applicable?
+2015-03-31 18:23:32	myndzi	okay
+2015-03-31 18:23:41	myndzi	i wasn't sure what available options there were
+2015-03-31 18:23:47	johto	'EDT' is *always* daylight saving
+2015-03-31 18:23:51	johto	so it'll be wrong half the time
+2015-03-31 18:23:51	myndzi	that's what i thought
+2015-03-31 18:23:56	myndzi	and so will 'EST'
+2015-03-31 18:23:59	myndzi	lol.
+2015-03-31 18:24:03	myndzi	kind of annoying/silly
+2015-03-31 18:24:03	◀▬▬	Aswebb_ (~Aswebb_@mtl93-1-82-67-180-2.fbx.proxad.net) has quit
+2015-03-31 18:24:07	myndzi	but 'US/Eastern' will be correct?
+2015-03-31 18:24:20	johto	yes, 'US/Eastern' will pick the correct one based on the date and time
+2015-03-31 18:24:31	agliodbs	myndzi: you have NO IDEA.  if you think it's a PITA for you, imagine maintaining the TZ database ...
+2015-03-31 18:24:31	myndzi	great :)
+2015-03-31 18:24:42	myndzi	agliodbs: i would rather kill myself i think :P
+2015-03-31 18:24:44	johto	besides, there appears to be like 5 different time zones called 'EST'
+2015-03-31 18:25:04	conradwt	agliodbs:  I'm seeing 0 rows
+2015-03-31 18:25:16	myndzi	why can't i just be in charge of everything in our code even though i came into this 20 years after the fact
+2015-03-31 18:25:17	myndzi	:P
+2015-03-31 18:25:21	agliodbs	conradwt: ok, your replica isn't connected to the master then
+2015-03-31 18:25:22	▬▬▶	speeddragon (~speeddrag@193.137.28.200) has joined #postgresql
+2015-03-31 18:25:26	◀▬▬	jjmalina (~jjmalina@ec2-54-173-11-67.compute-1.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:25:27	agliodbs	tail the activity log for the replica
+2015-03-31 18:25:30	◀▬▬	SubjectiveBias (~subjectiv@ppp118-208-177-146.lns20.bne4.internode.on.net) has quit (Ping timeout: 272 seconds)
+2015-03-31 18:25:57	myndzi	i have 6 'date' columns to convert too
+2015-03-31 18:26:09	myndzi	this conversion will change the date since the dates will be interpreted as midnight
+2015-03-31 18:26:58	◀▬▬	JacksonIsaac (uid13084@gateway/web/irccloud.com/x-chngramqabqzfcnc) has quit (Quit: Connection closed for inactivity)
+2015-03-31 18:27:09	◀▬▬	hpoydar (~hpoydar@cpe-74-73-240-21.nyc.res.rr.com) has quit (Remote host closed the connection)
+2015-03-31 18:27:15	◀▬▬	blackmesa (~blackmesa@aftr-37-201-225-54.unity-media.net) has quit (Ping timeout: 256 seconds)
+2015-03-31 18:27:37	▬▬▶	hpoydar (~hpoydar@cpe-74-73-240-21.nyc.res.rr.com) has joined #postgresql
+2015-03-31 18:27:41	◀▬▬	alaska (~alaska@moist.vrt.sourcefire.com) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:27:48	myndzi	oh, derp
+2015-03-31 18:27:51	myndzi	i'll just call them UTC
+2015-03-31 18:28:53	◀▬▬	dbr (~dobber@46.238.27.138) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:29:11	◀▬▬	virtualeyes (~godenji@37.205.56.235) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:29:17	myndzi	meh, it doesn't matter... reading from Eastern will put them on the right date anyway
+2015-03-31 18:30:01	▬▬▶	Otis (~glen@unaffiliated/ridout) has joined #postgresql
+2015-03-31 18:30:05	◀▬▬	speeddragon (~speeddrag@193.137.28.200) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:31:07	◀▬▬	hpoydar (~hpoydar@cpe-74-73-240-21.nyc.res.rr.com) has quit (Remote host closed the connection)
+2015-03-31 18:31:17	▬▬▶	hpoydar (~hpoydar@cpe-74-73-240-21.nyc.res.rr.com) has joined #postgresql
+2015-03-31 18:31:23	▬▬▶	the_rat (~the_rat@x55b2f9f2.dyn.telefonica.de) has joined #postgresql
+2015-03-31 18:32:38	◀▬▬	Dewin|work (~Dewin@131.191.3.51) has quit (Ping timeout: 255 seconds)
+2015-03-31 18:33:37	◀▬▬	evol_monkey (~vasilis@46-68-182.adsl.cyta.gr) has quit (Ping timeout: 276 seconds)
+2015-03-31 18:35:12	◀▬▬	cartan (~cartan@pD9E32041.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2015-03-31 18:36:09	◀▬▬	Luke (~Luke@unaffiliated/luke) has quit (Quit: part)
+2015-03-31 18:37:10	◀▬▬	Carolin (~Carolin@HSI-KBW-46-223-1-103.hsi.kabel-badenwuerttemberg.de) has quit (Quit: Carolin)
+2015-03-31 18:38:32	◀▬▬	ksha (~ksha@unaffiliated/ksha) has quit (Quit: leaving)
+2015-03-31 18:40:40	◀▬▬	icebourg (~icebourg@198.233.238.206) has quit
+2015-03-31 18:41:21	◀▬▬	jonmorehouse (~jonmoreho@192.69.243.130) has quit (Ping timeout: 245 seconds)
+2015-03-31 18:41:42	◀▬▬	ogny (~orkun@212.253.112.39) has quit (Quit: WeeChat 1.1.1)
+2015-03-31 18:43:44	◀▬▬	Chris- (~Soliah_@203-12-164-142.tpgi.com.au) has left #postgresql
+2015-03-31 18:44:15	--	irc: disconnected from server
+2015-03-31 23:15:58	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-03-31 23:15:58	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-03-31 23:15:58	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-03-31 23:15:58	--	Channel #postgresql: 921 nicks (0 ops, 0 voices, 921 normals)
+2015-03-31 23:16:00	--	URL for #postgresql: http://www.postgresql.org
+2015-03-31 23:16:16	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-03-31 23:17:58	◀▬▬	TeddyMurray (~TeddyMurr@ip24-253-95-159.lv.lv.cox.net) has quit (Ping timeout: 255 seconds)
+2015-03-31 23:18:00	◀▬▬	rhonabwy (~rhonabwy@2001:4c50:16f:6500:283f:6058:bae:28fc) has quit (Ping timeout: 265 seconds)
+2015-03-31 23:18:23	◀▬▬	niftylettuce (uid2733@gateway/web/irccloud.com/x-kojoegastcjdtbvg) has quit (Quit: Connection closed for inactivity)
+2015-03-31 23:18:39	▬▬▶	TeddyMurray (~TeddyMurr@ip24-253-95-159.lv.lv.cox.net) has joined #postgresql
+2015-03-31 23:19:03	--	irc: disconnected from server
+2015-03-31 23:19:22	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-03-31 23:19:22	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-03-31 23:19:22	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-03-31 23:19:22	--	Channel #postgresql: 919 nicks (0 ops, 0 voices, 919 normals)
+2015-03-31 23:19:24	--	URL for #postgresql: http://www.postgresql.org
+2015-03-31 23:19:41	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-03-31 23:22:14	▬▬▶	loz-- (~quassel@203-219-102-250.static.tpgi.com.au) has joined #postgresql
+2015-03-31 23:23:16	--	irc: disconnected from server
+2015-03-31 23:23:34	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-03-31 23:23:34	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-03-31 23:23:34	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-03-31 23:23:34	--	Channel #postgresql: 920 nicks (0 ops, 0 voices, 920 normals)
+2015-03-31 23:23:36	--	URL for #postgresql: http://www.postgresql.org
+2015-03-31 23:23:47	▬▬▶	ron_frown (~ronnyfro@24-176-228-82.static.snlo.ca.charter.com) has joined #postgresql
+2015-03-31 23:23:54	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-03-31 23:24:12	▬▬▶	aditsu (~aditsu@120.88.228.164) has joined #postgresql
+2015-03-31 23:25:43	--	irc: disconnected from server
+2015-04-01 15:18:25	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-04-01 15:18:25	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-04-01 15:18:25	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-04-01 15:18:25	--	Channel #postgresql: 1005 nicks (0 ops, 0 voices, 1005 normals)
+2015-04-01 15:18:25	--	URL for #postgresql: http://www.postgresql.org
+2015-04-01 15:18:27	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-04-01 15:21:04	◀▬▬	Nizumzen (~Nizumzen@cpc1-reig5-2-0-cust251.6-3.cable.virginm.net) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2015-04-01 15:21:10	◀▬▬	ddellacosta (~ddellacos@softbank126114212003.bbtec.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 15:21:10	◀▬▬	winner (~winner@218.50.72.46) has quit (Remote host closed the connection)
+2015-04-01 15:21:15	▬▬▶	rbennacer (~rbennacer@208.89.201.10) has joined #postgresql
+2015-04-01 15:21:54	◀▬▬	rbennacer (~rbennacer@208.89.201.10) has quit (Remote host closed the connection)
+2015-04-01 15:22:19	▬▬▶	rbennacer (~rbennacer@208.89.201.10) has joined #postgresql
+2015-04-01 15:23:54	◀▬▬	TyrfingMjolnir (~Tyrfing@75.129.broadband18.iol.cz) has quit (Quit: Searching for Waimea)
+2015-04-01 15:23:55	◀▬▬	gorthx (~Adium@2001:4870:e08a:0:75b8:5fa7:70c:19a3) has quit (Quit: Leaving.)
+2015-04-01 15:24:12	◀▬▬	ki0 (~ki0@92.58.126.35) has quit
+2015-04-01 15:24:47	▬▬▶	VinceZa (~VinceZa@64-121-12-120.c3-0.tlg-ubr2.atw-tlg.pa.cable.rcn.com) has joined #postgresql
+2015-04-01 15:25:08	▬▬▶	sebhoss (~sebhoss@pD9F60C06.dip0.t-ipconnect.de) has joined #postgresql
+2015-04-01 15:27:11	◀▬▬	johnride (~jgcouture@71-19-188-66.dedicated.allstream.net) has left #postgresql
+2015-04-01 15:28:13	▬▬▶	TyrfingMjolnir (~Tyrfing@75.129.broadband18.iol.cz) has joined #postgresql
+2015-04-01 15:28:34	▬▬▶	gasbakid_ (~gasbakid@41.96.34.5) has joined #postgresql
+2015-04-01 15:28:50	◀▬▬	Xevian (~Xevian@62.172.234.3) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 15:29:15	◀▬▬	kellabyte (uid28573@gateway/web/irccloud.com/x-mfzzpeotrxnsdkkp) has quit (Quit: Connection closed for inactivity)
+2015-04-01 15:30:13	◀▬▬	sebhoss (~sebhoss@pD9F60C06.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2015-04-01 15:30:43	◀▬▬	barrett_g (~barrettg@190.211.95.68) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:30:48	▬▬▶	jeff_wda (~jeff.shaw@128.177.116.85) has joined #postgresql
+2015-04-01 15:30:52	◀▬▬	gasbakid (~gasbakid@41.96.48.117) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:31:48	jeff_wda	I think I knew how to do this at one point, but now I've forgotten. If I have a table t with a row that i want to pass to a function f, how do I do it? "SELECT f(SELECT * FROM t WHERE id = 1))"... something like that, but I can't get the syntax right
+2015-04-01 15:32:06	jeff_wda	f does expect a value of type t.
+2015-04-01 15:32:27	▬▬▶	zarubin_ (~zarubin@109.251.149.199) has joined #postgresql
+2015-04-01 15:33:31	davidfetter_fbn	jeff_wda, SELECT f(t) FROM t WHERE id=1; /* assuming f has one input of table type t */
+2015-04-01 15:33:34	johto	select f(t) from t where id = 1;
+2015-04-01 15:33:47	davidfetter_fbn	^5
+2015-04-01 15:34:06	johto	(is that how cool kids say "high five" these days?)
+2015-04-01 15:34:07	◀▬▬	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:34:22	davidfetter_fbn	probably not, but it was at some time
+2015-04-01 15:34:49	▬▬▶	lifeless (~robertc@125-239-124-167.jetstream.xtra.co.nz) has joined #postgresql
+2015-04-01 15:34:53	 *	davidfetter_fbn short on time to figure out what the "cool kids" are up to at the moment
+2015-04-01 15:34:56	▬▬▶	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has joined #postgresql
+2015-04-01 15:35:02	jeff_wda	thansk, taht works great!
+2015-04-01 15:35:08	▬▬▶	TuxBrother (~TuxBrothe@ip565f9a1c.direct-adsl.nl) has joined #postgresql
+2015-04-01 15:35:09	jeff_wda	even better: thanks! That works great!
+2015-04-01 15:35:14	◀▬▬	TuxBrother (~TuxBrothe@ip565f9a1c.direct-adsl.nl) has quit (Max SendQ exceeded)
+2015-04-01 15:35:20	▬▬▶	c00ljs_ (~c00ljs@177.133.255.77) has joined #postgresql
+2015-04-01 15:35:26	▬▬▶	fcofdezc (~fran@36.Red-88-0-234.dynamicIP.rima-tde.net) has joined #postgresql
+2015-04-01 15:35:27	davidfetter_fbn	transposition. it's a real thing
+2015-04-01 15:36:00	▬▬▶	TuxBrother (~TuxBrothe@ip565f9a1c.direct-adsl.nl) has joined #postgresql
+2015-04-01 15:36:34	◀▬▬	pandeiro (~user@177.33.185.41) has quit (Read error: Connection reset by peer)
+2015-04-01 15:36:36	▬▬▶	ajw0100 (~ajw0100@50-193-11-9-static.hfc.comcastbusiness.net) has joined #postgresql
+2015-04-01 15:37:50	◀▬▬	c00ljs (~c00ljs@177.133.255.77) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:38:09	▬▬▶	Gill (~Gill@static-72-80-16-226.nycmny.fios.verizon.net) has joined #postgresql
+2015-04-01 15:38:21	◀▬▬	Levure (~quassel@152.170-65-87.adsl-dyn.isp.belgacom.be) has quit (Remote host closed the connection)
+2015-04-01 15:38:25	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 15:38:50	▬▬▶	cifvts (~cifvts@host99-58-static.12-87-b.business.telecomitalia.it) has joined #postgresql
+2015-04-01 15:41:52	▬▬▶	latenite (~latenite@p5B374349.dip0.t-ipconnect.de) has joined #postgresql
+2015-04-01 15:42:45	◀▬▬	Gill (~Gill@static-72-80-16-226.nycmny.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:43:02	◀▬▬	tomeara (~tomeara@24.126.75.206) has quit (Read error: Connection reset by peer)
+2015-04-01 15:44:06	◀▬▬	VinceZa (~VinceZa@64-121-12-120.c3-0.tlg-ubr2.atw-tlg.pa.cable.rcn.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 15:44:59	▬▬▶	viod1 (~viod@maxenceahlouche.fr) has joined #postgresql
+2015-04-01 15:45:05	◀▬▬	viod1 (~viod@maxenceahlouche.fr) has quit (Client Quit)
+2015-04-01 15:45:09	◀▬▬	Carloswaldo_ (Carloswald@181.175.91.199) has quit (Read error: Connection reset by peer)
+2015-04-01 15:45:29	▬▬▶	Carloswaldo (Carloswald@181.175.91.199) has joined #postgresql
+2015-04-01 15:45:40	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #postgresql
+2015-04-01 15:45:51	MatheusOl	Also "That works great!" <> "That works, great!"
+2015-04-01 15:46:32	◀▬▬	AugustoCesar (~web@augcesar.com.br) has quit (Remote host closed the connection)
+2015-04-01 15:46:38	▬▬▶	ASnyder1 (~ASnyder@cpe-66-108-104-197.nyc.res.rr.com) has joined #postgresql
+2015-04-01 15:47:14	--	efm is now known as efm_
+2015-04-01 15:47:41	▬▬▶	jcdr (~jcdr@213.221.150.139) has joined #postgresql
+2015-04-01 15:48:09	◀▬▬	ASnyder (~ASnyder@pdpc/supporter/professional/asnyder) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:48:11	◀▬▬	pramsey (~pramsey@S01065c969d6cef90.gv.shawcable.net) has quit (Quit: pramsey)
+2015-04-01 15:49:05	◀▬▬	nineinchnick (~jwas@109.231.17.7) has quit (Quit: Leaving.)
+2015-04-01 15:49:21	▬▬▶	jlle (~jlle@chello062178188104.1.15.vie.surfer.at) has joined #postgresql
+2015-04-01 15:49:27	◀▬▬	tdn (~tdn@syrah.adora.dk) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:52:08	◀▬▬	jmd (~user@de.cellform.com) has quit (Remote host closed the connection)
+2015-04-01 15:52:22	▬▬▶	bluebeeste_ (~bluebeest@2602:30a:2c4a:9f70:215:ff:fe78:17b1) has joined #postgresql
+2015-04-01 15:53:06	◀▬▬	nemothekid (~textual@199-241-202-243.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2015-04-01 15:53:12	▬▬▶	ajw0100_ (~ajw0100@50-193-11-9-static.hfc.comcastbusiness.net) has joined #postgresql
+2015-04-01 15:53:24	◀▬▬	Merixer (~Merixer@5.254.128.240) has quit (Ping timeout: 245 seconds)
+2015-04-01 15:53:33	◀▬▬	ajw0100 (~ajw0100@50-193-11-9-static.hfc.comcastbusiness.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:53:34	◀▬▬	DEA7TH (~quassel@unaffiliated/dea7th) has quit (Ping timeout: 246 seconds)
+2015-04-01 15:54:44	jcdr	Hi, I try to serialise in json format the full content of a table and to use the result to update the content of a jsonb field of an other table. I can get a serialisation of the table 'config' using the query "SELECT array_to_json(array_agg(row_to_json(row))) FROM (SELECT * FROM config) row;", but I fail to construct an UPDATE query that use the result. Any idea ?
+2015-04-01 15:54:56	▬▬▶	evol_mon1ey (~vasilis@46-68-182.adsl.cyta.gr) has joined #postgresql
+2015-04-01 15:55:10	▬▬▶	robinho86 (~robsonjf@201.22.86.124.static.gvt.net.br) has joined #postgresql
+2015-04-01 15:56:40	▬▬▶	include (~include@bl17-134-63.dsl.telepac.pt) has joined #postgresql
+2015-04-01 15:56:45	▬▬▶	hitt (0e8b4545@gateway/web/freenode/ip.14.139.69.69) has joined #postgresql
+2015-04-01 15:56:48	johto	is there only one row in config?
+2015-04-01 15:56:57	johto	actually, sorry, that was a dumb question
+2015-04-01 15:57:04	johto	you want to update all rows in the other table with the result of this query?
+2015-04-01 15:57:05	◀▬▬	jonasen (~jonasen@b603.ip15.netikka.fi) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 15:57:07	▬▬▶	tdn (~tdn@syrah.adora.dk) has joined #postgresql
+2015-04-01 15:57:14	hitt	Hi, can anyone help me with a doubt regarding EXPLAIN ANALYSE?
+2015-04-01 15:57:20	◀▬▬	cefkamcau (~cefkamcau@afjn144.neoplus.adsl.tpnet.pl) has quit (Read error: Connection reset by peer)
+2015-04-01 15:57:21	◀▬▬	kaare_ (~kaare@62.61.159.141) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:57:28	◀▬▬	pur_2357 (~pur_2357@97-113-178-195.tukw.qwest.net) has quit (Remote host closed the connection)
+2015-04-01 15:57:30	◀▬▬	Guest2955 (~lizzin@c-24-14-141-218.hsd1.il.comcast.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:57:36	mastermind	hitt: likely - you just need to ask an actual question...
+2015-04-01 15:57:41	lluad	hitt: Just ask. If someone can help, they'll answer.
+2015-04-01 15:57:56	▬▬▶	pur_2357 (~pur_2357@97-113-178-195.tukw.qwest.net) has joined #postgresql
+2015-04-01 15:58:46	hitt	Sure, I was just trying to experiment with EXPLAIN ANALYSE and it's stats. Are the stats the "actual" runtime stats or are they prepared with a small random set out of the table's values(as I was told)?
+2015-04-01 15:59:22	johto	the "actual" ones are actual stats gathered while running the query
+2015-04-01 15:59:23	◀▬▬	include (~include@bl17-134-63.dsl.telepac.pt) has quit (Client Quit)
+2015-04-01 15:59:25	▬▬▶	VinceZa (~VinceZa@70.44.184.159.res-cmts.lcp.ptd.net) has joined #postgresql
+2015-04-01 15:59:38	▬▬▶	kellabyte (uid28573@gateway/web/irccloud.com/x-ktjfgdebucffppjw) has joined #postgresql
+2015-04-01 15:59:50	johto	the stats that precede the "actual" (I think it says "cost"?) are just stats gathered from a subset of the tables involved and then extrapolated
+2015-04-01 15:59:55	◀▬▬	evol_mon1ey (~vasilis@46-68-182.adsl.cyta.gr) has quit (Ping timeout: 276 seconds)
+2015-04-01 16:00:22	johto	sorry, a subset of the *data* in the tables involved in the query
+2015-04-01 16:00:48	▬▬▶	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #postgresql
+2015-04-01 16:01:06	hitt	johto: so that runtime is based on the subset or is it the real runtime?
+2015-04-01 16:01:31	johto	(actual time=0.009..0.009 rows=1 loops=1)  <-- those are all *not* just a subset
+2015-04-01 16:01:40	◀▬▬	Guest36033 (~davidw@dynamic-adsl-84-220-68-100.clienti.tiscali.it) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:01:55	johto	I'm not doing a very good job of explaining this, am I
+2015-04-01 16:02:02	johto	(cost=0.00..0.01 rows=1 width=0) (actual time=0.009..0.009 rows=1 loops=1)  means:
+2015-04-01 16:02:07	▬▬▶	AugustoCesar (~web@augcesar.com.br) has joined #postgresql
+2015-04-01 16:02:46	hitt	johto: you are, I'm able to understand
+2015-04-01 16:03:16	johto	the estimated cost to fetch the first tuple in arbitrary units is 0.00; the estimated cost to fetch all tuples (in arbitrary units) is 0.01, the estimated number of rows returned is 1, and the expected size of the rows is 0 (perhaps bytes, perhaps arbitrary units, I forget)
+2015-04-01 16:03:46	hitt	got it
+2015-04-01 16:03:57	johto	and then the "actual" part is: 0.009ms to fetch the first tuple; 0.009 to fetch all tuples; 1 rows returned, this particular plan node looped 1 time (i.e. no loop)
+2015-04-01 16:03:57	hitt	but the total runtime is the actual runtime, right?
+2015-04-01 16:04:11	johto	yes
+2015-04-01 16:04:21	▬▬▶	vanrysss (~vanrysss@secure.nwea.org) has joined #postgresql
+2015-04-01 16:04:45	hitt	awesome, thank you for the help johto
+2015-04-01 16:04:46	▬▬▶	Dewin|work (~Dewin@131.191.3.51) has joined #postgresql
+2015-04-01 16:04:47	◀▬▬	threshar (~jeff@pool-173-76-169-240.bstnma.fios.verizon.net) has quit (Quit: threshar)
+2015-04-01 16:05:28	◀▬▬	durianshredder (~pyth0n@d66-183-128-8.bchsia.telus.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:05:37	▬▬▶	BigOrangeSU (~bigorange@204.28.118.156) has joined #postgresql
+2015-04-01 16:05:45	hitt	also johto, so the actual part doesn't refer to the subset but the real values
+2015-04-01 16:06:05	johto	nothing really refers to any subset
+2015-04-01 16:06:12	BigOrangeSU	whats the easiest way to subquery and join a table with 3 rows of names  like SELECT name FROM 'name1','name2','name3' not even sure how to ask that
+2015-04-01 16:06:30	johto	everything refers to the entire query, but the estimates are only produced from a subset of values, and then extrapolated
+2015-04-01 16:06:32	BigOrangeSU	estentially i want a table with 3 rows that i specifiy thir values
+2015-04-01 16:06:41	BigOrangeSU	like a temp table without creating a temop tbale
+2015-04-01 16:07:03	▬▬▶	ariscop (~Phase4@icookc.lnk.telstra.net) has joined #postgresql
+2015-04-01 16:07:34	johto	BigOrangeSU; select * from (values ('name1'), ('name2'), ('name3')) vv(v) join foo on (foo.bar = vv.v)
+2015-04-01 16:08:09	▬▬▶	nemothekid (~textual@199-241-202-243.PUBLIC.monkeybrains.net) has joined #postgresql
+2015-04-01 16:08:16	hitt	yeah so the actual part is for the whole table but the (cost=173026.54..175918.75 rows=1156884 width=4) means it's been estimated on the basis of a subset of values and then extrapolated
+2015-04-01 16:08:24	◀▬▬	Brij-DBA (~BLal@117.195.93.251) has quit (Quit: Leaving.)
+2015-04-01 16:08:33	johto	yes
+2015-04-01 16:08:45	hitt	thank you so much, really helpful
+2015-04-01 16:08:48	johto	well, the "actual" part is how much the query actually read
+2015-04-01 16:08:55	johto	it doesn't necessary mean the entire table if the query doesn't need the entire table
+2015-04-01 16:09:04	hitt	yeah understood
+2015-04-01 16:09:19	BigOrangeSU	johto: wow htat workewd
+2015-04-01 16:09:24	BigOrangeSU	johto: what is that>
+2015-04-01 16:10:08	johto	VALUES is a special type of SELECT. you can put SELECTs into subqueries in FROM and they'll look like a "real" table. then it's just a matter of joining that table to something
+2015-04-01 16:10:30	hitt	also, to study the sorting part of an order by query, is PortalRun the best place to put a breakpoint at and start analzying?
+2015-04-01 16:10:31	◀▬▬	djbkd (~djbkd@98.248.67.209) has quit (Remote host closed the connection)
+2015-04-01 16:10:51	johto	hitt; analyze it from which perspective?
+2015-04-01 16:11:02	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:11:13	hitt	I'm trying to study how sorting actually works in postgres
+2015-04-01 16:11:18	◀▬▬	NBhostin_ (~nbhosting@D97BE3F1.cm-3-4d.dynamic.ziggo.nl) has quit
+2015-04-01 16:11:40	◀▬▬	vanrysss (~vanrysss@secure.nwea.org) has quit (Remote host closed the connection)
+2015-04-01 16:11:48	BigOrangeSU	johto: thanks so much
+2015-04-01 16:12:13	johto	hitt; I'd probably start from src/backend/executor/nodeSort.c and studying the sort interface it uses
+2015-04-01 16:12:26	◀▬▬	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:13:34	▬▬▶	durianshredder (~pyth0n@d66-183-128-8.bchsia.telus.net) has joined #postgresql
+2015-04-01 16:14:15	▬▬▶	xzi11a (~robert@sccc-66-78-236-243.smartcity.com) has joined #postgresql
+2015-04-01 16:14:50	hitt	johto: i was thinking it'd be better to see the codeflow using gdb
+2015-04-01 16:15:15	◀▬▬	Bradipo (itc249apla@22.16-28.45.70.166.in-addr.arpa) has quit (Remote host closed the connection)
+2015-04-01 16:15:41	johto	I doubt it, but to each their own I guess
+2015-04-01 16:15:44	johto	I'd still start from the Sort node
+2015-04-01 16:15:58	johto	way too much stuff going on in PortalRun
+2015-04-01 16:16:39	hitt	johto: it is a complicated process, i agree to that :)
+2015-04-01 16:17:03	hitt	I'd go through nodeSort
+2015-04-01 16:17:10	hitt	thank you :)
+2015-04-01 16:18:28	medmr	why is it called nodeSort, dont they know node is a js runtime?
+2015-04-01 16:18:31	medmr	*rimshot*
+2015-04-01 16:18:49	johto	what makes you think it's not using node.js?
+2015-04-01 16:19:04	medmr	:P
+2015-04-01 16:19:09	MatheusOl	I'm sure it was created with that name long before node.js even exist
+2015-04-01 16:19:10	▬▬▶	nettoweb (~textual@187.112.207.229) has joined #postgresql
+2015-04-01 16:19:13	MatheusOl	Before V8 even
+2015-04-01 16:19:31	MatheusOl	Besides, node is a very generic word
+2015-04-01 16:19:39	medmr	yes many things have and will use the term node and node is consequently a dumb name
+2015-04-01 16:19:53	MatheusOl	Now I wonder, why it is named "node" (the JS, not nodeSort)
+2015-04-01 16:20:08	MatheusOl	Not dumb, it has meaning
+2015-04-01 16:20:25	medmr	they are just following the stupid trend of treating the english language like a domain name registrar and trying to 'take ownership' of words
+2015-04-01 16:20:41	▬▬▶	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #postgresql
+2015-04-01 16:21:04	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #postgresql
+2015-04-01 16:21:38	medmr	i think it was dumb to name nodejs with a generic term, it creates all kinds of issues, makes search queries on the web more ambiguous, namespacing issues in package managers, etc etc
+2015-04-01 16:21:39	▬▬▶	ogny (~orkun@212.253.112.39) has joined #postgresql
+2015-04-01 16:21:44	medmr	the work of marketing people
+2015-04-01 16:22:18	jcdr	johto: about update with the the serialization of a table, no only single field with the type jsonb of a single row of the destination table need to be updated.
+2015-04-01 16:22:40	▬▬▶	nicpottier (32a7b80a@gateway/web/freenode/ip.50.167.184.10) has joined #postgresql
+2015-04-01 16:23:04	◀▬▬	bmomjian (~bmomjian@momjian.us) has quit (Read error: No route to host)
+2015-04-01 16:23:08	▬▬▶	JanC_ (~janc@lugwv/member/JanC) has joined #postgresql
+2015-04-01 16:23:16	▬▬▶	bmomjian (~bmomjian@momjian.us) has joined #postgresql
+2015-04-01 16:23:26	◀▬▬	TheCuban (~thecuban@208.31.255.33) has quit
+2015-04-01 16:23:33	◀▬▬	JanC (~janc@lugwv/member/JanC) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:23:44	johto	jcdr; then just  UPDATE .. SET foo = (SELECT array_whatever(..) FROM ..) WHERE ..;
+2015-04-01 16:24:00	▬▬▶	racoon (~textual@146-115-96-205.c3-0.brl-ubr1.sbo-brl.ma.cable.rcn.com) has joined #postgresql
+2015-04-01 16:24:35	◀▬▬	durianshredder (~pyth0n@d66-183-128-8.bchsia.telus.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:24:59	janos_	ok this is a first for me - i appear to have too many connections to the database
+2015-04-01 16:25:12	janos_	what's the approach to deal with this and minimize the connection count?
+2015-04-01 16:25:34	janos_	can i do a restart -m fast to do an initial clean out?
+2015-04-01 16:25:37	johto	what's the app?
+2015-04-01 16:25:46	nicpottier	wondering if some kind soul can help me understand this explain plan: http://pastebin.com/AQKZcXAb
+2015-04-01 16:25:50	johto	-m fast might help to solve the immediate issue, yes
+2015-04-01 16:25:52	janos_	a combination of things - web going through pgbouncer
+2015-04-01 16:26:00	johto	so where are the connections coming from?
+2015-04-01 16:26:01	◀▬▬	Dedalo (~Dedalo@77-72-35-178-static.bbbell.com) has quit (Remote host closed the connection)
+2015-04-01 16:26:02	MatheusOl	nicpottier: Can you paste it at explain.depesz.com?
+2015-04-01 16:26:07	nicpottier	as i understand it, the query is slow because i need to load the ~2000 records to sort by id, is that a correct understanding?
+2015-04-01 16:26:08	janos_	but anyhting going through pgbouncer is spinning eternally
+2015-04-01 16:26:21	janos_	si i tested and changed to direct hit and it told me all remaining are taken
+2015-04-01 16:26:26	johto	nicpottier; what's your work_mem?
+2015-04-01 16:26:35	janos_	web apps mostly. some console services
+2015-04-01 16:26:42	nicpottier	http://explain.depesz.com/s/BOG
+2015-04-01 16:26:45	▬▬▶	samphippen (~textual@host86-186-207-247.range86-186.btcentralplus.com) has joined #postgresql
+2015-04-01 16:26:45	--	JanC_ is now known as JanC
+2015-04-01 16:26:56	MatheusOl	nicpottier: create an index on (step_uuid, next_uuid, id)
+2015-04-01 16:26:59	jcdr	johto: thanks, but I get this: ERROR:  column "config" is of type jsonb but expression is of type json
+2015-04-01 16:27:05	janos_	the console stuff is direct hit i believe, the web is all pgbouncer
+2015-04-01 16:27:13	jcdr	the query: UPDATE event SET config = (select array_to_json(array_agg(row_to_json(row))) from (select * from config) row) where event_id = 1;
+2015-04-01 16:27:20	johto	janos_; so you're running out of connections even when they're coming from pgbouncer?
+2015-04-01 16:27:21	◀▬▬	bwreilly (~bwreilly@66.193.98.226) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:27:24	MatheusOl	nicpottier: With the above index it won't need to sort, so you'll only get the 15 rows you need
+2015-04-01 16:27:41	nicpottier	Matheus01: is there any way to make it use the existing index on id?
+2015-04-01 16:27:55	janos_	i am not 100% sure. i'm now suspecting that something is hogging the connections and starving pgbouncer
+2015-04-01 16:27:58	MatheusOl	nicpottier: And yes, your thinking was correct, it was loading ~266K rows, sorting them, and then getting the first 15
+2015-04-01 16:28:01	◀▬▬	xzi11a (~robert@sccc-66-78-236-243.smartcity.com) has quit (Quit: Lost terminal)
+2015-04-01 16:28:04	janos_	because bouncer is spinning on requests
+2015-04-01 16:28:05	nicpottier	Matheus01: I'm just surprised it is doing a record lookup instead of just using that existing index
+2015-04-01 16:28:06	◀▬▬	amyers (~icarus127@128.177.88.140) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:28:18	◀▬▬	niftylettuce (uid2733@gateway/web/irccloud.com/x-hfvmjaxptwwuutsi) has quit (Quit: Connection closed for inactivity)
+2015-04-01 16:28:20	janos_	i'm going to cycle the console apps/services now that i think about it
+2015-04-01 16:28:21	MatheusOl	nicpottier: How could it use an index on "id" only?
+2015-04-01 16:28:41	MatheusOl	nicpottier: Unless it needs to traverse the entire index, which is certainly worst than what it is doing now
+2015-04-01 16:28:44	◀▬▬	hitt (0e8b4545@gateway/web/freenode/ip.14.139.69.69) has quit (Quit: Page closed)
+2015-04-01 16:28:49	johto	janos_; what's your max_connections btw?
+2015-04-01 16:28:53	janos_	100
+2015-04-01 16:28:58	nicpottier	Matheus01: I see ok, ya that makes sense
+2015-04-01 16:29:06	▬▬▶	badgerman__ (~badgerman@cpc1-nmal21-2-0-cust224.19-2.cable.virginm.net) has joined #postgresql
+2015-04-01 16:29:08	johto	janos_; and how many connections are coming through pgbouncer?
+2015-04-01 16:29:19	janos_	lemme see, i'm rusty :/
+2015-04-01 16:29:21	MatheusOl	nicpottier: The composite index on the 3 columns will be useful for queries that use only the first 2, so you might just be with the one with 3 and drop the other
+2015-04-01 16:29:30	janos_	show clients;?
+2015-04-01 16:29:40	 *	johto does not use pgbouncer
+2015-04-01 16:29:42	◀▬▬	badgerman__ (~badgerman@cpc1-nmal21-2-0-cust224.19-2.cable.virginm.net) has quit (Client Quit)
+2015-04-01 16:29:47	janos_	ah
+2015-04-01 16:29:48	janos_	np
+2015-04-01 16:29:52	nicpottier	Matheus01: right, ya, i actually have one that exists already on: step, next, and another item rule
+2015-04-01 16:29:59	▬▬▶	badgerman__ (~badgerman@cpc1-nmal21-2-0-cust224.19-2.cable.virginm.net) has joined #postgresql
+2015-04-01 16:30:05	janos_	well show clients is 129, making me more suspect, but my ignorance is a sad hurdle here
+2015-04-01 16:30:11	nicpottier	Matheus01: as i understand it, if i throw 'id' onto the end of that multi, that won't get used since rule will be empty right?
+2015-04-01 16:30:13	DeciBull_	aww, looks like no april fools post from core this year
+2015-04-01 16:30:18	janos_	i'm going to kill a few things and see if it cleans up some
+2015-04-01 16:30:18	◀▬▬	ironm (~ironm@84-75-227-196.dclient.hispeed.ch) has quit (Quit: Verlassend)
+2015-04-01 16:30:26	johto	janos_; you want to see how many connections pgbouncer has to postgres
+2015-04-01 16:30:31	▬▬▶	pandeiro (~user@177.33.185.41) has joined #postgresql
+2015-04-01 16:30:52	▬▬▶	bwreilly (~bwreilly@66.193.98.226) has joined #postgresql
+2015-04-01 16:30:55	janos_	johto, i suspect too many
+2015-04-01 16:31:03	MatheusOl	nicpottier: I don't see "step", "next" nor "rule" being used there
+2015-04-01 16:31:03	◀▬▬	racoon (~textual@146-115-96-205.c3-0.brl-ubr1.sbo-brl.ma.cable.rcn.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 16:31:36	◀▬▬	zarubin_ (~zarubin@109.251.149.199) has quit (Remote host closed the connection)
+2015-04-01 16:31:39	▬▬▶	winner (~winner@218.50.72.46) has joined #postgresql
+2015-04-01 16:31:48	nicpottier	Matheus01:Sorry, step_uuid, next_uuid and rule_uuid, currently querying step_uuid and next_uuid, but sometimes also need to query on rule_uuid as welll
+2015-04-01 16:32:16	johto	always only 15 rows though, in "id" order?
+2015-04-01 16:32:45	nicpottier	johto, yes, usually just care about the most recent items
+2015-04-01 16:32:55	▬▬▶	Luke (~Luke@unaffiliated/luke) has joined #postgresql
+2015-04-01 16:32:56	MatheusOl	nicpottier: If you add "rule_uuid" to the index, it won't be used for queries with only the two first
+2015-04-01 16:32:58	johto	then I'd just leave the rule uuid out of the index
+2015-04-01 16:33:04	jcdr	johto: I have found the solution: UPDATE event SET config = (select array_to_json(array_agg(row_to_json(row))) from (select * from config) row)::jsonb where event_id = 1;
+2015-04-01 16:33:16	jcdr	Problem solved.
+2015-04-01 16:33:16	johto	jcdr; looks reasonable
+2015-04-01 16:33:27	MatheusOl	nicpottier: Create an index on the two+id, then run the query that also includes "rule_uuid" and see if it is fine
+2015-04-01 16:33:35	▬▬▶	gorthx (~Adium@2001:4870:e08a:0:c5fa:e92f:a152:ef9c) has joined #postgresql
+2015-04-01 16:33:37	MatheusOl	nicpottier: The index will be used for that, just not the optimal index
+2015-04-01 16:33:45	MatheusOl	nicpottier: But possible "good enough (TM)"
+2015-04-01 16:33:58	nicpottier	Matheus01: k, will give that a go, thanks (index takes a good while to build, but really appreciate the quick help guys)
+2015-04-01 16:34:20	◀▬▬	LudicrousMango (~Ludicrous@204.244.24.91) has quit
+2015-04-01 16:34:33	MatheusOl	nicpottier: If that is a big table, and in production: (1) increase maintenance_work_mem as maximum as you can and (2) use CREATE INDEX CONCURRENTLY
+2015-04-01 16:34:36	nicpottier	Thanks for the help guys, super impressed by how nice the community is!
+2015-04-01 16:34:51	◀▬▬	Luke (~Luke@unaffiliated/luke) has quit (Client Quit)
+2015-04-01 16:34:52	nicpottier	Matheus01: ya, on my dev box for the time being :)
+2015-04-01 16:35:20	esaym153	can I disable autovacuum on a per schema basis?
+2015-04-01 16:35:34	◀▬▬	bwreilly (~bwreilly@66.193.98.226) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:35:48	xocolatl	esaym153: only on tables or databases
+2015-04-01 16:36:02	◀▬▬	winner (~winner@218.50.72.46) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:37:06	◀▬▬	virtualeyes (~godenji@137.213.114.78.rev.sfr.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:37:08	MatheusOl	nicpottier: (1) still applies then... :)
+2015-04-01 16:37:12	▬▬▶	lolek (~lolek@unaffiliated/marcin) has joined #postgresql
+2015-04-01 16:37:28	◀▬▬	lolek (~lolek@unaffiliated/marcin) has left #postgresql
+2015-04-01 16:39:30	esaym153	xocolatl: that sucks, I have some software that captures changes from a DB2 database, and then applies those changes to a postgres database, but it first copies the data to a staging table in postgres, and then does an insert into the postgres tables from there,
+2015-04-01 16:39:42	▬▬▶	rbennace_ (~rbennacer@208.89.201.10) has joined #postgresql
+2015-04-01 16:39:46	nicpottier	Matheus01: so something like "set local maintenance_work_mem='4000MB';"
+2015-04-01 16:39:52	◀▬▬	korryd (~Adium@va-76-4-65-131.sta.embarqhsd.net) has quit (Quit: Leaving.)
+2015-04-01 16:40:06	▬▬▶	yes (29ba38c1@gateway/web/freenode/ip.41.186.56.193) has joined #postgresql
+2015-04-01 16:40:19	xocolatl	esaym153: so disable it on that table
+2015-04-01 16:40:20	▬▬▶	daivyk (~daivyk@177.40.198.162) has joined #postgresql
+2015-04-01 16:40:26	xocolatl	esaym153: but why disable it at all?
+2015-04-01 16:40:30	--	yes is now known as Guest85932
+2015-04-01 16:40:31	esaym153	problem is that autovacuum is running on the staging table, and then runs on the tables that the data gets inserted into, so I am analyzing the data twice, but this software randomly deletes,creates the staging tables with a different name frequently...
+2015-04-01 16:40:52	esaym153	xocolatl: so since the staging table name changes, I can't just disable it on that table..
+2015-04-01 16:41:03	▬▬▶	djbkd (~djbkd@98.248.67.209) has joined #postgresql
+2015-04-01 16:41:20	esaym153	xocolatl: need to disable it because postgres DB is having trouble keeping up with the change capture process
+2015-04-01 16:41:51	▬▬▶	Luke (~Luke@unaffiliated/luke) has joined #postgresql
+2015-04-01 16:41:54	johto	are the staging tables marked TEMPORARY?
+2015-04-01 16:42:24	MatheusOl	nicpottier: Yes
+2015-04-01 16:42:34	◀▬▬	rbennacer (~rbennacer@208.89.201.10) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:42:35	MatheusOl	nicpottier: "local" only if you are doing it inside a transaction
+2015-04-01 16:42:39	esaym153	johto: don't think so, how to see?
+2015-04-01 16:42:55	MatheusOl	nicpottier: SET already change only for current session, so there is really no need to use "local" in this case
+2015-04-01 16:43:05	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:43:10	nicpottier	Matheus01: ah ok, didn't know that, perfect
+2015-04-01 16:43:12	◀▬▬	wvaske (~wvaske@ec2-54-187-91-236.us-west-2.compute.amazonaws.com) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:43:19	◀▬▬	jlle (~jlle@chello062178188104.1.15.vie.surfer.at) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 16:43:39	◀▬▬	todakure (c896474c@gateway/web/freenode/ip.200.150.71.76) has quit (Quit: Page closed)
+2015-04-01 16:43:59	◀▬▬	jcdr (~jcdr@213.221.150.139) has left #postgresql ("Ex-Chat")
+2015-04-01 16:44:25	◀▬▬	daivyk (~daivyk@177.40.198.162) has quit (Client Quit)
+2015-04-01 16:44:30	◀▬▬	Guest85932 (29ba38c1@gateway/web/freenode/ip.41.186.56.193) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:45:45	▬▬▶	daivyk (~daivyk@177.40.198.162) has joined #postgresql
+2015-04-01 16:46:05	◀▬▬	djbkd (~djbkd@98.248.67.209) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:47:16	▬▬▶	zarubin_ (~zarubin@109.251.149.199) has joined #postgresql
+2015-04-01 16:48:37	▬▬▶	durianshredder (~pyth0n@d66-183-128-8.bchsia.telus.net) has joined #postgresql
+2015-04-01 16:49:08	◀▬▬	sgen (~sgen@108-162-137-101.cable.teksavvy.com) has quit (Remote host closed the connection)
+2015-04-01 16:49:11	◀▬▬	xocolatl (~Vik@ath91-3-88-167-161-184.fbx.proxad.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:49:22	◀▬▬	BigOrangeSU (~bigorange@204.28.118.156) has quit
+2015-04-01 16:50:09	◀▬▬	Nivag (~Nivag@121-99-189-151.bng1.nct.orcon.net.nz) has quit (Remote host closed the connection)
+2015-04-01 16:50:56	hjf	is there an IF(something, value1, value2) that returns value1 if true, or value2 if false?
+2015-04-01 16:51:09	johto	case when something then value1 else value2 end
+2015-04-01 16:51:34	▬▬▶	momomomomo (~momomomom@198.233.242.210) has joined #postgresql
+2015-04-01 16:51:39	johto	you can implement such a function yourself, but there's nothing built-in
+2015-04-01 16:52:12	◀▬▬	dege (~dege@c-9b21e555.027-195-73746f10.cust.bredbandsbolaget.se) has quit
+2015-04-01 16:52:17	MatheusOl	And it probably not a good idea to implement it
+2015-04-01 16:52:32	▬▬▶	toothrot (~mux@unaffiliated/toothrot) has joined #postgresql
+2015-04-01 16:52:38	MatheusOl	CASE does not evaluate the values if not needed to
+2015-04-01 16:52:47	MatheusOl	(of course it doesn't matter in some situations)
+2015-04-01 16:52:57	johto	might even be preferable in some situations
+2015-04-01 16:54:27	hjf	no, case is enough
+2015-04-01 16:54:40	MatheusOl	perhaps
+2015-04-01 16:54:44	◀▬▬	mattkrea (~textual@harbortouch04.h.subnet.rcn.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 16:54:50	hjf	i have a name column, and volume column. i want to combine them only if volume is not null
+2015-04-01 16:54:58	▬▬▶	tomleg (~Thunderbi@CPE68b6fc3c5ff3-CM68b6fc3c5ff0.cpe.net.cable.rogers.com) has joined #postgresql
+2015-04-01 16:55:00	johto	COALESCE() might work as well
+2015-04-01 16:55:08	◀▬▬	pur_2357 (~pur_2357@97-113-178-195.tukw.qwest.net) has quit (Remote host closed the connection)
+2015-04-01 16:55:15	hjf	example name="Watchmen" volume="null" result: "Watchmen"
+2015-04-01 16:55:30	hjf	name="Dragon Ball" volume="3" result: "Dragon Ball #3"
+2015-04-01 16:55:50	johto	name || coalesce(' #' || volume, '')
+2015-04-01 16:55:56	◀▬▬	gelignite (~gelignite@i5387AC35.versanet.de) has quit (Quit: http://bit.ly/1kso8Ta)
+2015-04-01 16:56:12	▬▬▶	pur_2357 (~pur_2357@97-113-178-195.tukw.qwest.net) has joined #postgresql
+2015-04-01 16:56:44	▬▬▶	Nivag (~Nivag@121-99-189-151.bng1.nct.orcon.net.nz) has joined #postgresql
+2015-04-01 16:56:47	MatheusOl	Or concat
+2015-04-01 16:57:00	▬▬▶	krisquigley (~krisquigl@141.170.10.220) has joined #postgresql
+2015-04-01 16:57:38	MatheusOl	concat_ws(' ', name, '#' || volume)
+2015-04-01 16:57:38	▬▬▶	xocolatl (~Vik@ath91-3-88-167-161-184.fbx.proxad.net) has joined #postgresql
+2015-04-01 16:58:11	hjf	ah
+2015-04-01 16:58:50	mschiff	Is there a safe way to purge WAL logs?
+2015-04-01 16:59:11	◀▬▬	Nivag (~Nivag@121-99-189-151.bng1.nct.orcon.net.nz) has quit (Remote host closed the connection)
+2015-04-01 16:59:12	▬▬▶	Mike11 (~Mike@unaffiliated/mike11) has joined #postgresql
+2015-04-01 16:59:16	johto	mschiff; from where, and safe against what?
+2015-04-01 16:59:18	◀▬▬	skyler (~anonymous@108-193-157-167.lightspeed.dybhfl.sbcglobal.net) has quit (Quit: skyler)
+2015-04-01 16:59:23	xocolatl	mschiff: CHECKPOINT;
+2015-04-01 17:00:01	MatheusOl	CHECKPOINT; SELECT pg_switch_xlog();
+2015-04-01 17:00:11	MatheusOl	This is to force a bit
+2015-04-01 17:00:15	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #postgresql
+2015-04-01 17:01:10	▬▬▶	Nivag (~Nivag@121-99-189-151.bng1.nct.orcon.net.nz) has joined #postgresql
+2015-04-01 17:01:13	mschiff	johto: say if you must free disk space in some situation
+2015-04-01 17:01:27	MatheusOl	Oh
+2015-04-01 17:01:32	johto	that doesn't really answer my question in any way
+2015-04-01 17:01:45	MatheusOl	The above will take more space at beginning
+2015-04-01 17:01:47	◀▬▬	lchiessi (~Thunderbi@186.205.238.101) has quit (Quit: lchiessi)
+2015-04-01 17:01:49	hjf	(colecciones.nombre || coalesce(' #' || articulos.volumen, '')) || coalesce(': ' || articulos.nombre,'') as nombrecompleto
+2015-04-01 17:01:52	hjf	dang
+2015-04-01 17:02:07	◀▬▬	krisquigley (~krisquigl@141.170.10.220) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:02:20	MatheusOl	hjf: seems fine
+2015-04-01 17:02:31	mschiff	johto: From where does not matter (some sql or command line tool) and safe in a way that it cannot corrupt current running db cluster
+2015-04-01 17:02:42	johto	mschiff; where are the files you want to delete?
+2015-04-01 17:02:49	MatheusOl	hjf: The parenthesis on the first "||" aren't necessary though
+2015-04-01 17:02:49	johto	in pg_xlog? in an archive? somewhere else?
+2015-04-01 17:02:58	xocolatl	hjf: format()
+2015-04-01 17:03:01	mschiff	johto: Ah! pg_xlog
+2015-04-01 17:03:12	MatheusOl	Finally
+2015-04-01 17:03:12	johto	have you changed wal_keep_segments?
+2015-04-01 17:03:17	johto	or do you have an archive_command?
+2015-04-01 17:03:32	 *	MatheusOl was about to ask
+2015-04-01 17:03:47	mschiff	johto: The question was meant more in gerenal. Reducing wal_keep_segments might be one example...
+2015-04-01 17:03:50	--	efm_ is now known as efm
+2015-04-01 17:03:50	MatheusOl	xocolatl: format wouldn't handle NULLs, would it?
+2015-04-01 17:04:09	xocolatl	MatheusOl: it does
+2015-04-01 17:04:22	MatheusOl	oh
+2015-04-01 17:04:23	johto	mschiff; 1) if your wal_keep_segments is too high, lower it. 2) if you archive_command is failing, make it not fail, 3) adjust checkpoint settings
+2015-04-01 17:04:36	johto	perhaps in order 2, 1, 3
+2015-04-01 17:04:37	▬▬▶	dheerajchand (~dheerajch@108-210-42-136.lightspeed.austtx.sbcglobal.net) has joined #postgresql
+2015-04-01 17:04:49	MatheusOl	High priority on (2)
+2015-04-01 17:05:32	mschiff	johto: Hm yes, ok. But my question was more about: Is there a way to let postgres start pg_xlog from scratch? e.g. like delete all WAL files and just write new ones.
+2015-04-01 17:05:44	johto	no.
+2015-04-01 17:06:20	mschiff	I know that this is not what one might want in normal situations. But it maybe important in case of trouble with diskspace etc
+2015-04-01 17:06:34	◀▬▬	Luke (~Luke@unaffiliated/luke) has quit (Quit: part)
+2015-04-01 17:06:36	johto	if you have trouble with disk space, the above will help
+2015-04-01 17:06:49	◀▬▬	durianshredder (~pyth0n@d66-183-128-8.bchsia.telus.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 17:06:58	mschiff	johto: ok, thanks!
+2015-04-01 17:06:59	johto	(*if* a significant portion of your disk space is used by pg_xlog)
+2015-04-01 17:07:09	▬▬▶	ramfjord (~tramfjord@72.5.114.17) has joined #postgresql
+2015-04-01 17:07:14	myndzi	i've got a subquery used as a select expression where i am returning an array via (select array_agg(id) ...)
+2015-04-01 17:07:19	myndzi	but i need to order the query
+2015-04-01 17:07:26	myndzi	array_agg(select ...) doesn't do it
+2015-04-01 17:07:35	johto	myndzi; do you actually have a GROUP BY or any other aggregates in the query?
+2015-04-01 17:07:38	◀▬▬	wicope (~wicope@117.Red-88-27-63.staticIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:07:45	myndzi	and order by forces aggregation restrictions
+2015-04-01 17:07:46	myndzi	nope
+2015-04-01 17:07:53	▬▬▶	bwreilly (~bwreilly@66.193.98.226) has joined #postgresql
+2015-04-01 17:07:55	johto	SELECT ARRAY(SELECT whatever FROM .. ORDER BY whichever)
+2015-04-01 17:07:58	myndzi	it's a simple query by itself
+2015-04-01 17:08:00	myndzi	ah
+2015-04-01 17:08:02	myndzi	i tried ::array haha
+2015-04-01 17:08:14	myndzi	that does it, thanks!
+2015-04-01 17:08:24	nerium	Why isn’t this working? https://gist.github.com/oleander/a49d2469ce395cc517f3
+2015-04-01 17:08:41	johto	because postgres doesn't support ON DUPLICATE KEY UPDATE?
+2015-04-01 17:08:49	nerium	aha
+2015-04-01 17:09:06	nerium	Is there another way to do it?
+2015-04-01 17:09:59	◀▬▬	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 17:10:21	depesz	??upsert
+2015-04-01 17:10:21	pg_docbot	http://www.postgresql.org/docs/current/static/plpgsql-control-structures.html#PLPGSQL-UPSERT-EXAMPLE :: http://www.depesz.com/2012/06/10/why-is-upsert-so-complicated/
+2015-04-01 17:10:21	pg_docbot	http://johtopg.blogspot.com.br/2014/04/upsertisms-in-postgres.html
+2015-04-01 17:10:39	depesz	nerium: please read some (all) pages linked above.
+2015-04-01 17:10:45	◀▬▬	zarubin_ (~zarubin@109.251.149.199) has quit (Remote host closed the connection)
+2015-04-01 17:11:48	◀▬▬	gasbakid_ (~gasbakid@41.96.34.5) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:12:16	◀▬▬	dheerajchand (~dheerajch@108-210-42-136.lightspeed.austtx.sbcglobal.net) has quit (Quit: dheerajchand)
+2015-04-01 17:12:38	◀▬▬	fcofdezc (~fran@36.Red-88-0-234.dynamicIP.rima-tde.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:12:49	◀▬▬	Tekster (~Tekster@unaffiliated/tekster) has quit (Read error: Connection reset by peer)
+2015-04-01 17:13:58	▬▬▶	sebhoss (~sebhoss@pD9F60C06.dip0.t-ipconnect.de) has joined #postgresql
+2015-04-01 17:14:35	◀▬▬	linuxhiker (~linuxpoet@c-67-168-169-165.hsd1.wa.comcast.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:15:14	MatheusOl	myndzi: array_agg also supports ORDER BY: array_agg(foo ORDER BY bar)
+2015-04-01 17:15:22	MatheusOl	See what suits you better
+2015-04-01 17:15:37	johto	ARRAY() is much better if there's no need to GROUP BY or aggregate other stuff
+2015-04-01 17:16:40	Inspire-	what is this array stuff
+2015-04-01 17:16:49	▬▬▶	Balliad (~textual@52D96D43.cm-11-1b.dynamic.ziggo.nl) has joined #postgresql
+2015-04-01 17:17:05	Inspire-	ooh, looks neat
+2015-04-01 17:17:34	Inspire-	i'll probably have to use that tomorrow - thanks for the unintentional good tip
+2015-04-01 17:17:38	Inspire-	night->
+2015-04-01 17:17:53	◀▬▬	Sinjo (~sinjo@ankh.sinjakli.co.uk) has quit (Quit: leaving)
+2015-04-01 17:18:06	MatheusOl	johto: agreed
+2015-04-01 17:18:37	◀▬▬	adamdecaf (~adamdecaf@65-121-142-238.dia.static.qwest.net) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:18:40	◀▬▬	sebhoss (~sebhoss@pD9F60C06.dip0.t-ipconnect.de) has quit (Ping timeout: 244 seconds)
+2015-04-01 17:18:44	▬▬▶	Guest9000 (~textual@97.97.226.79) has joined #postgresql
+2015-04-01 17:19:08	▬▬▶	Sinjo (~sinjo@ankh.sinjakli.co.uk) has joined #postgresql
+2015-04-01 17:20:04	--	irc: disconnected from server
+2015-04-01 17:29:26	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-04-01 17:29:26	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-04-01 17:29:26	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-04-01 17:29:26	--	Channel #postgresql: 985 nicks (0 ops, 0 voices, 985 normals)
+2015-04-01 17:29:29	--	URL for #postgresql: http://www.postgresql.org
+2015-04-01 17:29:29	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-04-01 17:30:02	▬▬▶	Tekster (~Tekster@unaffiliated/tekster) has joined #postgresql
+2015-04-01 17:31:14	◀▬▬	crobbins (~crobbins@2602:306:3403:d520:d0a5:d82:4814:546d) has quit (Ping timeout: 265 seconds)
+2015-04-01 17:32:15	◀▬▬	eh_eff (~aaron@38.88.6.10) has quit (Ping timeout: 248 seconds)
+2015-04-01 17:32:23	◀▬▬	nicpottier (32a7b80a@gateway/web/freenode/ip.50.167.184.10) has quit (Quit: Page closed)
+2015-04-01 17:32:57	◀▬▬	Jayflux (~Jason@unaffiliated/jayflux) has quit (Read error: Connection reset by peer)
+2015-04-01 17:33:12	▬▬▶	Jayflux (~Jason@host-78-149-24-49.as13285.net) has joined #postgresql
+2015-04-01 17:33:12	◀▬▬	Jayflux (~Jason@host-78-149-24-49.as13285.net) has quit (Changing host)
+2015-04-01 17:33:12	▬▬▶	Jayflux (~Jason@unaffiliated/jayflux) has joined #postgresql
+2015-04-01 17:34:24	▬▬▶	donspaulding (~donspauld@38.89.245.83) has joined #postgresql
+2015-04-01 17:34:41	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #postgresql
+2015-04-01 17:35:34	◀▬▬	donspaulding (~donspauld@38.89.245.83) has quit (Client Quit)
+2015-04-01 17:35:35	◀▬▬	dongu (~dongu@208.91.2.1) has quit (Remote host closed the connection)
+2015-04-01 17:35:41	▬▬▶	khisanth_ (~Khisanth@50.14.244.111) has joined #postgresql
+2015-04-01 17:35:50	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 17:35:50	▬▬▶	dongu (~dongu@208.91.2.1) has joined #postgresql
+2015-04-01 17:35:58	◀▬▬	cifvts (~cifvts@host99-58-static.12-87-b.business.telecomitalia.it) has quit (Remote host closed the connection)
+2015-04-01 17:36:27	◀▬▬	knownasilya (uid22190@gateway/web/irccloud.com/x-ljfwimfxzcduopms) has quit (Quit: Connection closed for inactivity)
+2015-04-01 17:38:13	◀▬▬	Khisanth (~Khisanth@50.14.244.111) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:38:29	◀▬▬	wam (~wam@unaffiliated/wam) has quit (Quit: Ex-Chat)
+2015-04-01 17:39:09	◀▬▬	Ir1sh (~Ir1sh@109.255.196.35) has quit (Remote host closed the connection)
+2015-04-01 17:40:07	◀▬▬	bwreilly (~bwreilly@66.193.98.226) has quit (Quit: welp)
+2015-04-01 17:40:34	▬▬▶	bwreilly (~bwreilly@66.193.98.226) has joined #postgresql
+2015-04-01 17:40:53	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #postgresql
+2015-04-01 17:40:57	◀▬▬	denishpatel (~denish@static-108-48-124-82.washdc.fios.verizon.net) has quit (Quit: Leaving)
+2015-04-01 17:42:05	◀▬▬	Neo-- (~neo@BSN-77-159-184.static.siol.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 17:42:35	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 17:42:53	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #postgresql
+2015-04-01 17:42:56	◀▬▬	sfkeller (~chatzilla@137.226.106.92.dynamic.wline.res.cust.swisscom.ch) has quit (Quit: ChatZilla 0.9.91.1 [Firefox 36.0.4/20150320202338])
+2015-04-01 17:43:14	◀▬▬	lpax_ (~lpax@191.250.16.231) has quit (Quit: Leaving)
+2015-04-01 17:43:35	▬▬▶	Guest82 (~textual@pool-96-242-152-130.nwrknj.fios.verizon.net) has joined #postgresql
+2015-04-01 17:44:22	◀▬▬	momomomomo (~momomomom@198.233.242.210) has quit (Quit: momomomomo)
+2015-04-01 17:45:13	◀▬▬	Guest9000 (~textual@97.97.226.79) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 17:45:49	◀▬▬	rbennace_ (~rbennacer@208.89.201.10) has quit (Remote host closed the connection)
+2015-04-01 17:48:16	ASnyder1	MatheusOl: for the LATERAL way you showed above, doesn't seems like it would work for multiple records of different people on that day. For each day, I can get 1 latest record. But in my case, there might be multiple latest records from different people. I don't want all the updates for each person, just the latest for each person for that day. Any suggestions?
+2015-04-01 17:49:06	ASnyder1	Perhaps I do the lateral from the profile id, and then do the rest
+2015-04-01 17:51:23	johto	sounds like you want a loose index scan instead of LATERAL
+2015-04-01 17:51:31	johto	?? loose
+2015-04-01 17:51:31	pg_docbot	http://wiki.postgresql.org/wiki/Loose_indexscan
+2015-04-01 17:52:25	◀▬▬	Balliad (~textual@52D96D43.cm-11-1b.dynamic.ziggo.nl) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 17:53:05	◀▬▬	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has quit (Quit: Limix)
+2015-04-01 17:53:20	ASnyder1	johto: Thanks. Been looking to use a recursive CTE.
+2015-04-01 17:54:22	▬▬▶	spicyWith (~andres@128.177.113.106) has joined #postgresql
+2015-04-01 17:55:55	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #postgresql
+2015-04-01 17:56:53	◀▬▬	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has quit (Client Quit)
+2015-04-01 17:57:22	◀▬▬	pur_2357 (~pur_2357@97-113-178-195.tukw.qwest.net) has quit (Remote host closed the connection)
+2015-04-01 17:57:42	▬▬▶	cgs_bob (~bob@c-98-208-9-190.hsd1.ca.comcast.net) has joined #postgresql
+2015-04-01 17:58:21	▬▬▶	eh_eff (~aaron@38.88.6.10) has joined #postgresql
+2015-04-01 17:58:49	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #postgresql
+2015-04-01 17:58:53	◀▬▬	hatseflats (~hatseflat@hatsuseno.rootaccess.nl) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:59:15	▬▬▶	Gill (~Gill@static-72-80-16-226.nycmny.fios.verizon.net) has joined #postgresql
+2015-04-01 17:59:37	◀▬▬	ekarlso (~ekarlso@cloudistic.net) has quit (Changing host)
+2015-04-01 17:59:37	▬▬▶	ekarlso (~ekarlso@unaffiliated/zykes) has joined #postgresql
+2015-04-01 17:59:55	▬▬▶	pur_2357 (~pur_2357@97-113-178-195.tukw.qwest.net) has joined #postgresql
+2015-04-01 18:00:06	▬▬▶	NightTrain (~coffee@unaffiliated/ridout) has joined #postgresql
+2015-04-01 18:02:05	▬▬▶	evol_mon1ey (~vasilis@46-68-182.adsl.cyta.gr) has joined #postgresql
+2015-04-01 18:02:59	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 18:03:12	▬▬▶	dethos (~dethos@95.172.172.102) has joined #postgresql
+2015-04-01 18:03:14	◀▬▬	macabre (~ibtjw@unaffiliated/macabre) has quit (Quit: Be back later ...)
+2015-04-01 18:03:14	▬▬▶	snoopybbt (~snoopybbt@151.82.170.234) has joined #postgresql
+2015-04-01 18:04:39	▬▬▶	zarubin_ (~zarubin@109.251.149.199) has joined #postgresql
+2015-04-01 18:06:15	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #postgresql
+2015-04-01 18:07:36	◀▬▬	Luke (~Luke@unaffiliated/luke) has quit (Quit: part)
+2015-04-01 18:08:07	ASnyder1	johto: pretty confused with this RECURSIVE stuff. Not able to mentally map it. So given an "activities" table with columns: activity_id, profile_id, activity_type, time_performed
+2015-04-01 18:08:07	ASnyder1	int, int, string, timestamp
+2015-04-01 18:08:48	▬▬▶	rubyonrailed (~rubyonrai@c-73-165-9-192.hsd1.pa.comcast.net) has joined #postgresql
+2015-04-01 18:08:59	ASnyder1	I want to select activity_id, profile_id, and type, where it's the latest of that activity_type for that person, but for that day
+2015-04-01 18:09:39	◀▬▬	yieldsfalsehood (~esadlon@tor-gateway.afilias.info) has quit (Quit: Leaving.)
+2015-04-01 18:09:39	◀▬▬	zarubin_ (~zarubin@109.251.149.199) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:09:42	▬▬▶	wgrant (~wgrant@ubuntu/member/wgrant) has joined #postgresql
+2015-04-01 18:09:52	ASnyder1	so it might return multiple records for the day for multiple people, and multiple records of multiple people across several days
+2015-04-01 18:11:27	▬▬▶	Luke (~Luke@unaffiliated/luke) has joined #postgresql
+2015-04-01 18:11:53	◀▬▬	blackmesa (~blackmesa@aftr-37-201-225-54.unity-media.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:12:12	MatheusOl	hm... SELECT * FROM (query to get distinct days) t, LATERAL(SELECT * FROM person, LATERAL(SELECT * FROM whatever on that day and for that person LIMIT 1))
+2015-04-01 18:12:18	MatheusOl	Nested LATERAL... o.O
+2015-04-01 18:13:32	▬▬▶	federicobond (~federicob@thorium.itba.edu.ar) has joined #postgresql
+2015-04-01 18:14:19	ASnyder1	MatheusOl: what if I wanted multiple types but only the latest one of that type for each person?
+2015-04-01 18:14:46	ASnyder1	the way you have above seems like it would give me day -> person -> 1 max thing
+2015-04-01 18:14:50	davidfetter_fbn	ORDER BY ... LIMIT 1
+2015-04-01 18:14:50	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 18:14:58	MatheusOl	Yeah, yeah, ORDER BY
+2015-04-01 18:14:58	▬▬▶	jonmorehouse (~jonmoreho@192.69.243.130) has joined #postgresql
+2015-04-01 18:15:11	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #postgresql
+2015-04-01 18:15:50	ASnyder1	MatheusOl: I'll play around with the above. But you wouldn't suggest the RECURSIVE CTE approach johto mentioned?
+2015-04-01 18:15:54	MatheusOl	Nested lateral sounds odd, but I think it will "just work (TM)"
+2015-04-01 18:16:03	◀▬▬	evol_mon1ey (~vasilis@46-68-182.adsl.cyta.gr) has quit (Quit: Lost terminal)
+2015-04-01 18:16:13	ASnyder1	Nested laterals work, I've used them before. LATERAL is one of my favorite things
+2015-04-01 18:16:16	MatheusOl	The RECURSIVE would be good to "query to get distinct days"
+2015-04-01 18:16:27	▬▬▶	ed_ (~ed@201.52.74.139) has joined #postgresql
+2015-04-01 18:17:19	◀▬▬	Gill (~Gill@static-72-80-16-226.nycmny.fios.verizon.net) has quit (Quit: Gill)
+2015-04-01 18:17:22	--	irc: disconnected from server
+2015-04-01 18:22:42	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-04-01 18:22:42	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-04-01 18:22:42	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-04-01 18:22:42	--	Channel #postgresql: 977 nicks (0 ops, 0 voices, 977 normals)
+2015-04-01 18:22:45	--	URL for #postgresql: http://www.postgresql.org
+2015-04-01 18:22:45	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-04-01 18:23:29	MatheusOl	ASnyder1: In your case, I'd start using generate_series to get the range of days, then the nested LATERAL queries, see if that is good
+2015-04-01 18:23:45	MatheusOl	ASnyder1: If you have many gaps in the days, then use the RECURSIVE approach for loose index scan
+2015-04-01 18:23:50	MatheusOl	(to get the days)
+2015-04-01 18:24:12	ASnyder1	MatheusOl: thanks
+2015-04-01 18:24:32	◀▬▬	bmac (~bmac@gateway/shell/bocoup/x-egkkekjbxlvocurt) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 18:25:09	◀▬▬	icebourg (~icebourg@198.233.238.206) has quit
+2015-04-01 18:25:46	◀▬▬	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has quit (Quit: Limix)
+2015-04-01 18:27:52	◀▬▬	rjuju (~rjuju@2a01:e34:ec0e:e930:b0fb:cf7c:11f3:30d6) has quit (Remote host closed the connection)
+2015-04-01 18:28:45	◀▬▬	Haudegen (~quassel@85.124.51.57) has quit (Ping timeout: 265 seconds)
+2015-04-01 18:29:08	▬▬▶	Aswebb_ (~Aswebb_@2a01:e35:243b:4020:118f:3da7:9320:3805) has joined #postgresql
+2015-04-01 18:30:54	◀▬▬	davispuh (~quassel@212.93.114.132) has quit (Remote host closed the connection)
+2015-04-01 18:31:23	◀▬▬	JonathanO (~jono@dog.thdo.woaf.net) has quit (Ping timeout: 276 seconds)
+2015-04-01 18:32:23	▬▬▶	Ir1sh (~Ir1sh@109.255.196.35) has joined #postgresql
+2015-04-01 18:32:28	▬▬▶	davispuh (~quassel@212.93.114.132) has joined #postgresql
+2015-04-01 18:32:42	▬▬▶	JonathanO (~jono@dog.thdo.woaf.net) has joined #postgresql
+2015-04-01 18:33:04	◀▬▬	Ir1sh (~Ir1sh@109.255.196.35) has quit (Client Quit)
+2015-04-01 18:33:25	▬▬▶	john (~msg@p1.ie-freiburg.mpg.de) has joined #postgresql
+2015-04-01 18:33:44	◀▬▬	john (~msg@p1.ie-freiburg.mpg.de) has quit (Changing host)
+2015-04-01 18:33:44	▬▬▶	john (~msg@unaffiliated/john) has joined #postgresql
+2015-04-01 18:34:09	◀▬▬	bdunavant (~bdunavant@static-108-48-124-82.washdc.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 18:35:10	▬▬▶	Superlokkus (~Superlokk@141.30.223.183) has joined #postgresql
+2015-04-01 18:35:10	◀▬▬	ed_ (~ed@201.52.74.139) has quit (Read error: Connection reset by peer)
+2015-04-01 18:35:14	◀▬▬	fike (~fike@200.150.162.42) has quit (Remote host closed the connection)
+2015-04-01 18:35:15	▬▬▶	ed__ (~ed@201.52.74.139) has joined #postgresql
+2015-04-01 18:35:53	▬▬▶	dheerajchand (~dheerajch@108-210-42-136.lightspeed.austtx.sbcglobal.net) has joined #postgresql
+2015-04-01 18:36:21	◀▬▬	ed__ (~ed@201.52.74.139) has quit (Client Quit)
+2015-04-01 18:38:14	▬▬▶	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #postgresql
+2015-04-01 18:38:39	▬▬▶	Betal (~Beta@unaffiliated/betal) has joined #postgresql
+2015-04-01 18:39:16	◀▬▬	kellabyte (uid28573@gateway/web/irccloud.com/x-ktjfgdebucffppjw) has quit (Quit: Connection closed for inactivity)
+2015-04-01 18:39:17	◀▬▬	gamename (~tennis@c-67-177-166-184.hsd1.tn.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 18:40:14	▬▬▶	xlogik (~xlogik@c-73-219-248-99.hsd1.ma.comcast.net) has joined #postgresql
+2015-04-01 18:40:22	◀▬▬	xlogik (~xlogik@c-73-219-248-99.hsd1.ma.comcast.net) has quit (Read error: Connection reset by peer)
+2015-04-01 18:40:48	▬▬▶	xlogik (~xlogik@c-73-219-248-99.hsd1.ma.comcast.net) has joined #postgresql
+2015-04-01 18:41:19	▬▬▶	yaw (~yaw@41.191.244.227) has joined #postgresql
+2015-04-01 18:42:49	◀▬▬	Luke (~Luke@unaffiliated/luke) has quit (Quit: part)
+2015-04-01 18:43:58	yaw	is it possible to have a detail report of an EXPLAIN ANALYZE on a function?
+2015-04-01 18:44:08	eggyknap	:q
+2015-04-01 18:44:12	eggyknap	EWRONGWINDOW, sry :)
+2015-04-01 18:44:23	davidfetter_fbn	eggyknap, long time no see!
+2015-04-01 18:44:32	eggyknap	I'm becoming very talented at lurking.
+2015-04-01 18:44:46	johto	looks like you're not very good at it to be honest
+2015-04-01 18:44:56	johto	or getting worse, at least
+2015-04-01 18:44:58	eggyknap	I have momentary, horrible lapses.
+2015-04-01 18:45:46	▬▬▶	Limix (~Limix@cpe-172-249-174-95.socal.res.rr.com) has joined #postgresql
+2015-04-01 18:45:47	▬▬▶	krisquigley (~krisquigl@141.170.10.220) has joined #postgresql
+2015-04-01 18:47:25	▬▬▶	Haudegen (~quassel@85.124.51.57) has joined #postgresql
+2015-04-01 18:47:30	◀▬▬	donkeyKing1 (~snake@104-8-178-90.lightspeed.hstntx.sbcglobal.net) has quit (Quit: Leaving.)
+2015-04-01 18:47:48	davidfetter_fbn	eggyknap, pm?
+2015-04-01 18:47:53	eggyknap	sure.
+2015-04-01 18:48:09	◀▬▬	NCS_One (~NCS_One@dsl-181-254.bl26.telepac.pt) has quit (Quit: Lost terminal)
+2015-04-01 18:49:09	--	banister is now known as banisterfiend
+2015-04-01 18:50:21	◀▬▬	krisquigley (~krisquigl@141.170.10.220) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:51:46	▬▬▶	Luke (~Luke@unaffiliated/luke) has joined #postgresql
+2015-04-01 18:52:20	◀▬▬	ogrady (~Thunderbi@HSI-KBW-109-193-041-101.hsi7.kabel-badenwuerttemberg.de) has quit (Quit: ogrady)
+2015-04-01 18:54:17	◀▬▬	MasterPiece (~MasterPie@unaffiliated/masterpiece) has quit (Read error: Connection reset by peer)
+2015-04-01 18:55:48	◀▬▬	brockhaywood (~brockhayw@S01066c709fd71834.ok.shawcable.net) has quit (Quit: brockhaywood)
+2015-04-01 18:58:45	▬▬▶	lchiessi (~Thunderbi@186.205.238.101) has joined #postgresql
+2015-04-01 18:59:05	◀▬▬	lchiessi (~Thunderbi@186.205.238.101) has quit (Client Quit)
+2015-04-01 18:59:34	◀▬▬	grayhemp (~skonoplev@209.49.71.131) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:02:18	◀▬▬	rubyonrailed (~rubyonrai@c-73-165-9-192.hsd1.pa.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 19:02:48	▬▬▶	sebhoss (~sebhoss@pD9F60CED.dip0.t-ipconnect.de) has joined #postgresql
+2015-04-01 19:03:10	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 19:03:28	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #postgresql
+2015-04-01 19:05:21	◀▬▬	diegoaguilar (~diegoagui@189.129.237.180) has quit (Remote host closed the connection)
+2015-04-01 19:06:07	▬▬▶	rubyonrailed (~rubyonrai@c-73-165-9-192.hsd1.pa.comcast.net) has joined #postgresql
+2015-04-01 19:07:12	◀▬▬	sebhoss (~sebhoss@pD9F60CED.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:07:52	lluad	yaw: You might find the auto_explain contrib module useful.
+2015-04-01 19:08:14	◀▬▬	ceejh (~ceejh@69.46.237.1) has quit (Quit: Leaving)
+2015-04-01 19:08:42	yaw	lluad: ok, would check it out. thanks :)
+2015-04-01 19:09:11	▬▬▶	dodobrain (~dodobrain@unaffiliated/freakabcd) has joined #postgresql
+2015-04-01 19:09:36	◀▬▬	cartan (~cartan@pD9E318C9.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2015-04-01 19:12:23	▬▬▶	saknussemm (~saknussem@181.167.52.40) has joined #postgresql
+2015-04-01 19:13:34	◀▬▬	idwer (~irc@unaffiliated/idwer) has quit (Remote host closed the connection)
+2015-04-01 19:14:54	◀▬▬	Luke (~Luke@unaffiliated/luke) has quit (Quit: part)
+2015-04-01 19:16:50	▬▬▶	grayhemp (~skonoplev@209.49.71.134) has joined #postgresql
+2015-04-01 19:18:40	▬▬▶	bmac (~bmac@209-6-200-23.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) has joined #postgresql
+2015-04-01 19:19:32	ASnyder1	Okay! Got it working, but would like to speed it up somehow. Sure I'm doing something wrong.
+2015-04-01 19:19:57	◀▬▬	nerium (~linus@c80-217-224-163.bredband.comhem.se) has quit (Quit: nerium)
+2015-04-01 19:20:23	▬▬▶	nerium (~linus@c80-217-224-163.bredband.comhem.se) has joined #postgresql
+2015-04-01 19:20:49	◀▬▬	nerium (~linus@c80-217-224-163.bredband.comhem.se) has quit (Client Quit)
+2015-04-01 19:21:13	▬▬▶	nerium (~linus@c80-217-224-163.bredband.comhem.se) has joined #postgresql
+2015-04-01 19:21:21	ASnyder1	here's query: http://privatepaste.com/4e1cf1302a, and the explain: http://explain.depesz.com/s/KtjD
+2015-04-01 19:21:40	◀▬▬	nerium (~linus@c80-217-224-163.bredband.comhem.se) has quit (Client Quit)
+2015-04-01 19:22:03	▬▬▶	nerium (~linus@c80-217-224-163.bredband.comhem.se) has joined #postgresql
+2015-04-01 19:22:30	◀▬▬	nerium (~linus@c80-217-224-163.bredband.comhem.se) has quit (Client Quit)
+2015-04-01 19:22:34	◀▬▬	jonmorehouse (~jonmoreho@192.69.243.130) has quit (Ping timeout: 255 seconds)
+2015-04-01 19:22:52	▬▬▶	tuneinturnout (~tuneintur@gateway/vpn/privateinternetaccess/tuneinturnout) has joined #postgresql
+2015-04-01 19:22:56	▬▬▶	nerium (~linus@c80-217-224-163.bredband.comhem.se) has joined #postgresql
+2015-04-01 19:23:20	◀▬▬	nerium (~linus@c80-217-224-163.bredband.comhem.se) has quit (Client Quit)
+2015-04-01 19:23:21	tuneinturnout	Every other day, in the middle of the night, I run this script: http://pastebin.com/raw.php?i=W8evmvTv
+2015-04-01 19:23:23	tuneinturnout	Good? Bad?
+2015-04-01 19:23:44	▬▬▶	nerium (~linus@c80-217-224-163.bredband.comhem.se) has joined #postgresql
+2015-04-01 19:24:10	◀▬▬	nerium (~linus@c80-217-224-163.bredband.comhem.se) has quit (Client Quit)
+2015-04-01 19:24:12	ASnyder1	I can get rid of the first fields as the JOINS are enough, but still a bit slower than I would like: http://explain.depesz.com/d/AEj/Q9kQe52vpCvEBmSF6NwcJB84cCGw6zAW9uxn0yipBe4MSWbXtX
+2015-04-01 19:24:33	▬▬▶	nerium (~linus@c80-217-224-163.bredband.comhem.se) has joined #postgresql
+2015-04-01 19:24:52	myndzi	can you guys think of a scenario where database query times would degrade over time that is somehow related to open client sessions?
+2015-04-01 19:25:00	◀▬▬	nerium (~linus@c80-217-224-163.bredband.comhem.se) has quit (Client Quit)
+2015-04-01 19:25:07	myndzi	that is, the problem corrects itself if the client is restarted/disconnected
+2015-04-01 19:25:16	◀▬▬	dantti (~dantti@200.204.2.138) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:25:35	myndzi	possibly associated with jdbc and/or hibernate
+2015-04-01 19:26:31	◀▬▬	rubyonrailed (~rubyonrai@c-73-165-9-192.hsd1.pa.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 19:27:16	▬▬▶	diegoaguilar (~diegoagui@189.129.237.180) has joined #postgresql
+2015-04-01 19:28:45	◀▬▬	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has quit (Remote host closed the connection)
+2015-04-01 19:30:01	▬▬▶	badgerman_ (~badgerman@cpc1-nmal21-2-0-cust224.19-2.cable.virginm.net) has joined #postgresql
+2015-04-01 19:30:11	oicu	davidfetter_fbn, i assume you're happy?
+2015-04-01 19:30:26	davidfetter_fbn	oicu, delighted, and thanks for your help with this :)
+2015-04-01 19:31:42	▬▬▶	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has joined #postgresql
+2015-04-01 19:31:43	--	irc: disconnected from server
+2015-04-01 19:32:07	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #postgresql
+2015-04-01 19:32:07	--	Topic for #postgresql is "Security releases 9.4.1, 9.3.6, 9.2.10, 9.1.15, and 9.0.19 are out.  Upgrade! http://www.postgresql.org/about/news/1569/ ||  8.4 is now EOL. || Paste: http://pgsql.privatepaste.com || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2015-04-01 19:32:07	--	Topic set by davidfetter_fbn (~chatzilla@172.56.38.102) on Thu, 05 Feb 2015 10:04:36
+2015-04-01 19:32:07	--	Channel #postgresql: 969 nicks (0 ops, 0 voices, 969 normals)
+2015-04-01 19:32:10	--	URL for #postgresql: http://www.postgresql.org
+2015-04-01 19:32:10	--	Channel created on Sun, 26 Nov 2006 01:42:42
+2015-04-01 19:34:00	dodobrain	hi all.. how do i write tests that pass/fail with pg_regress ?
+2015-04-01 19:34:12	▬▬▶	lchiessi (~Thunderbi@186.205.238.101) has joined #postgresql
+2015-04-01 19:34:13	dodobrain	i'm not finding documentation on it :(
+2015-04-01 19:34:33	◀▬▬	ajw0100_ (~ajw0100@50-193-11-9-static.hfc.comcastbusiness.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:35:33	▬▬▶	coinbird (~coinbird@ip-178-203-251-11.hsi10.unitymediagroup.de) has joined #postgresql
+2015-04-01 19:35:55	davidfetter_fbn	oicu, so this is more in your recent interests, maybe. is there a way to cast a record to json? i'm thinking of things that return [SETOF] RECORD
+2015-04-01 19:36:03	▬▬▶	ascarter (~ascarter@c-73-42-173-134.hsd1.wa.comcast.net) has joined #postgresql
+2015-04-01 19:37:20	◀▬▬	Guest82 (~textual@pool-96-242-152-130.nwrknj.fios.verizon.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:37:23	◀▬▬	grayhemp (~skonoplev@209.49.71.134) has quit (Ping timeout: 265 seconds)
+2015-04-01 19:37:30	◀▬▬	faw (~Felipe@unaffiliated/faw) has quit (Remote host closed the connection)
+2015-04-01 19:37:53	 *	bmomjian is watching a Postgres webcast from Brazil:  https://plus.google.com/u/1/events/c0hcjhia6p3g1n22nht9qsuarls
+2015-04-01 19:38:09	 *	bmomjian is not sure what they are saying, but it sounds good, and I understand the SQL
+2015-04-01 19:40:34	◀▬▬	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 19:41:09	◀▬▬	bfig (~bruno@srvexchange.datamatic.com.uy) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:41:11	ASnyder1	any performance tips with that query would be much appreciated
+2015-04-01 19:42:35	◀▬▬	alaska (~alaska@moist.vrt.sourcefire.com) has quit (Quit: Leaving...)
+2015-04-01 19:42:56	◀▬▬	lchiessi (~Thunderbi@186.205.238.101) has quit (Quit: lchiessi)
+2015-04-01 19:43:38	◀▬▬	latenite (~latenite@p5B374349.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:44:12	▬▬▶	mattkrea (~textual@216.164.161.42) has joined #postgresql
+2015-04-01 19:44:34	▬▬▶	latenite (~latenite@p549FDF14.dip0.t-ipconnect.de) has joined #postgresql
+2015-04-01 19:44:38	◀▬▬	cigarshark (~Todd@c-73-32-242-184.hsd1.tx.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 19:44:46	◀▬▬	dheerajchand (~dheerajch@108-210-42-136.lightspeed.austtx.sbcglobal.net) has quit (Quit: dheerajchand)
+2015-04-01 19:45:05	▬▬▶	Guina2e690e1Guin (~Guina_32@177.45.188.105) has joined #postgresql
+2015-04-01 19:45:19	▬▬▶	ajw0100 (~ajw0100@50-193-11-9-static.hfc.comcastbusiness.net) has joined #postgresql
+2015-04-01 19:45:49	◀▬▬	nemothekid (~textual@199-241-202-243.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2015-04-01 19:46:01	◀▬▬	djbkd (~djbkd@98.248.67.209) has quit (Remote host closed the connection)
+2015-04-01 19:46:50	▬▬▶	faw (~Felipe@unaffiliated/faw) has joined #postgresql
+2015-04-01 19:46:55	◀▬▬	Guina2e690e1Guin (~Guina_32@177.45.188.105) has left #postgresql
+2015-04-01 19:47:57	◀▬▬	prestorium (~prestoriu@177.220.175.195) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:48:57	◀▬▬	Aswebb_ (~Aswebb_@2a01:e35:243b:4020:118f:3da7:9320:3805) has quit (Remote host closed the connection)
+2015-04-01 19:49:43	▬▬▶	jonmorehouse (~jonmoreho@192.69.243.130) has joined #postgresql
+2015-04-01 19:49:52	▬▬▶	FasTTo (~FasTTo@bl16-211-226.dsl.telepac.pt) has joined #postgresql
+2015-04-01 19:50:15	◀▬▬	gorthx (~Adium@2001:4870:e08a:0:c5fa:e92f:a152:ef9c) has quit (Quit: Leaving.)
+2015-04-01 19:50:27	◀▬▬	FasTTo (~FasTTo@bl16-211-226.dsl.telepac.pt) has quit (Client Quit)
+2015-04-01 19:50:29	▬▬▶	grayhemp (~skonoplev@209.49.71.131) has joined #postgresql
+2015-04-01 19:50:49	▬▬▶	IBiteBack (~|UF|IBite@75.134.228.229) has joined #postgresql
+2015-04-01 19:51:34	◀▬▬	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has quit (Quit: Toute Chose Sur Terre a Une Fin)
+2015-04-01 19:52:19	▬▬▶	djbkd (~djbkd@98.248.67.209) has joined #postgresql
+2015-04-01 19:52:34	Snow-Man	odd.
+2015-04-01 19:52:44	▬▬▶	macabre (~ibtjw@unaffiliated/macabre) has joined #postgresql
+2015-04-01 19:52:45	Snow-Man	We don't change the 'role' GUC for security definer functions at all.
+2015-04-01 19:53:04	▬▬▶	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #postgresql
+2015-04-01 19:53:54	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Remote host closed the connection)
+2015-04-01 19:54:40	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined #postgresql
+2015-04-01 19:54:46	◀▬▬	nettoweb (~textual@187.112.207.229) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 19:55:18	◀▬▬	spicyWith (~andres@128.177.113.106) has quit (Quit: spicyWith)
+2015-04-01 19:55:37	◀▬▬	xlogik (~xlogik@c-73-219-248-99.hsd1.ma.comcast.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:56:44	Snow-Man	well
+2015-04-01 19:56:47	Snow-Man	unless you set it..
+2015-04-01 19:56:48	Snow-Man	hrmmm.
+2015-04-01 19:57:52	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 19:58:09	◀▬▬	tiwula (~lane@70.89.246.241-Busname-UT.hfc.comcastbusiness.net) has quit (Quit: Leaving)
+2015-04-01 19:58:09	▬▬▶	spicyWith (~andres@128.177.113.106) has joined #postgresql
+2015-04-01 19:58:17	◀▬▬	EyePulp_ (~eyepulp@38.89.245.83) has quit (Remote host closed the connection)
+2015-04-01 19:58:30	▬▬▶	rdbell (~rdbell@206.169.79.235) has joined #postgresql
+2015-04-01 19:58:55	▬▬▶	speeddragon (~speeddrag@217.129.192.97) has joined #postgresql
+2015-04-01 20:00:17	◀▬▬	Betal (~Beta@unaffiliated/betal) has quit (Remote host closed the connection)
+2015-04-01 20:01:08	ASnyder1	Any performance tips on: http://privatepaste.com/21e04c0e29, http://explain.depesz.com/s/AEj is much appreciated
+2015-04-01 20:02:28	▬▬▶	emperorcezar (~textual@24.14.228.224) has joined #postgresql
+2015-04-01 20:02:55	PJMODOS	davidfetter_fbn: there is row_to_json()
+2015-04-01 20:03:15	davidfetter_fbn	PJMODOS, does that actually work in the case of RECORD?
+2015-04-01 20:03:35	rasmusto	will the query planner let me use "WHERE tab1_fieldname='blah'" in a query on a separate table partitioned by its own denormalized tab1_id key (the primary key for tab1)?  I would prefer to not have to store tab1_fieldname in the other table
+2015-04-01 20:04:24	◀▬▬	macabre (~ibtjw@unaffiliated/macabre) has quit (Quit: Be back later ...)
+2015-04-01 20:05:04	PJMODOS	davidfetter_fbn: has to have the the fields defined (for example having out params)
+2015-04-01 20:06:09	◀▬▬	cbonobo (~cbonobo@50.232.37.174) has quit (Remote host closed the connection)
+2015-04-01 20:07:14	◀▬▬	Jayflux (~Jason@unaffiliated/jayflux) has quit (Quit: Leaving)
+2015-04-01 20:07:35	davidfetter_fbn	sadly, not the case i'm interested in :/
+2015-04-01 20:08:18	▬▬▶	kingsob (~derek@38.88.246.186) has joined #postgresql
+2015-04-01 20:08:20	PJMODOS	davidfetter_fbn: well the untyped record can't be converted to anything since you don't know what's in it
+2015-04-01 20:08:30	▬▬▶	radiocats (~radiocats@pool-70-106-206-188.clppva.fios.verizon.net) has joined #postgresql
+2015-04-01 20:08:30	◀▬▬	radiocats (~radiocats@pool-70-106-206-188.clppva.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 20:08:37	davidfetter_fbn	this is for that wrapper i wrote around peter eisentraut's work with the pgbouncer SHOW stuff
+2015-04-01 20:08:40	kingsob	is there a way to make postgres automatiaclly kill transactions that last over x seconds?
+2015-04-01 20:08:46	▬▬▶	radiocats (~radiocats@pool-70-106-206-188.clppva.fios.verizon.net) has joined #postgresql
+2015-04-01 20:09:04	◀▬▬	coinbird (~coinbird@ip-178-203-251-11.hsi10.unitymediagroup.de) has quit (Ping timeout: 264 seconds)
+2015-04-01 20:09:15	◀▬▬	Superlokkus (~Superlokk@141.30.223.183) has quit (Quit: Bye!)
+2015-04-01 20:09:49	PJMODOS	davidfetter_fbn: what Peter wrote uses AS (...) for defining the record, that should work with row_to_json too imho
+2015-04-01 20:10:24	davidfetter_fbn	PJMODOS, the issue isn't with the ones he wrote. it's with the ones he didn't because their output formats have changed over time
+2015-04-01 20:10:26	kingsob	I came up with this query, which seems to work, and I suppose I could create a cron to run it every x seconds, but was hoping postgres had some sort of built in spoort for this..  http://pastie.org/10068616
+2015-04-01 20:11:02	◀▬▬	zorak8 (~zorak8@186.226.226.35) has quit (Quit: Leaving)
+2015-04-01 20:11:20	MatheusOl	ASnyder1: That DISTINCT looks bad
+2015-04-01 20:11:30	▬▬▶	mahmoudimus (~mahmoudim@162.217.73.10) has joined #postgresql
+2015-04-01 20:11:30	PJMODOS	davidfetter_fbn: ah, then you are out of luck I guess
+2015-04-01 20:11:31	MatheusOl	ASnyder1: The plan URL isn't valid
+2015-04-01 20:11:57	davidfetter_fbn	PJMODOS, yeah, my best guesses all come from the pgbouncer source, which to put it mildly is not a great thing to have to figure out at run time
+2015-04-01 20:13:05	davidfetter_fbn	oh, and SHOW version; raises a NOTICE. it doesn't return an actual TEXT :P
+2015-04-01 20:13:31	davidfetter_fbn	that seems a little egregious
+2015-04-01 20:14:06	MatheusOl	ASnyder1: And I just realized that you don't need LATERAL for the second query
+2015-04-01 20:14:12	lluad	kingsob: Look at statement_timeout. But don't set it globally or you'll break all the things that take longer than that (like vacuuming and backups and ...).
+2015-04-01 20:14:23	MatheusOl	ASnyder1: Do you have another table with references this that have unique pairs of (type, profile_id) ?
+2015-04-01 20:15:38	MatheusOl	kingsob: Why are you querying pg_locks
+2015-04-01 20:15:49	◀▬▬	emperorcezar (~textual@24.14.228.224) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 20:15:52	MatheusOl	?
+2015-04-01 20:15:58	◀▬▬	grayhemp (~skonoplev@209.49.71.131) has quit (Remote host closed the connection)
+2015-04-01 20:16:13	◀▬▬	jjmalina (~jjmalina@static-71-183-236-90.nycmny.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 20:17:12	▬▬▶	grayhemp (~skonoplev@209.49.71.131) has joined #postgresql
+2015-04-01 20:17:20	▬▬▶	arescorpio (~arescorpi@51-255-114-200.fibertel.com.ar) has joined #postgresql
+2015-04-01 20:17:43	davidfetter_fbn	I suppose i could patch the next version of pgbouncer to respond better to IMPORT FOREIGN SCHEMA
+2015-04-01 20:17:47	◀▬▬	ghostpl_ (~ghostpl@c203-85.icpnet.pl) has quit (Remote host closed the connection)
+2015-04-01 20:17:53	davidfetter_fbn	...but again that kinda cuts off the past
+2015-04-01 20:18:15	▬▬▶	icebourg (~icebourg@65-128-60-99.hlrn.qwest.net) has joined #postgresql
+2015-04-01 20:18:55	◀▬▬	speeddragon (~speeddrag@217.129.192.97) has quit (Remote host closed the connection)
+2015-04-01 20:19:02	MatheusOl	davidfetter_fbn: Not sure if "cutting the past" in the case of pgbouncer is that bad
+2015-04-01 20:19:14	MatheusOl	davidfetter_fbn: Seems to me that pgbouncer is something people should upgrade easily
+2015-04-01 20:19:21	davidfetter_fbn	MatheusOl, good point
+2015-04-01 20:19:26	MatheusOl	Specially people looking for new things like that
+2015-04-01 20:19:45	MatheusOl	So, pgbouncer_fdw?
+2015-04-01 20:19:45	▬▬▶	russw (~russ@bas1-ottawa01-1177966738.dsl.bell.ca) has joined #postgresql
+2015-04-01 20:20:36	--	irc: disconnected from server

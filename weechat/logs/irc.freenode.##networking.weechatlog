@@ -1,0 +1,1191 @@
+2015-03-31 18:09:20	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-03-31 18:09:20	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993 | Please identify with nickserv if you can't speak"
+2015-03-31 18:09:20	--	Topic set by imMute (~immute@about/networking/240.255.255.0/imMute) on Fri, 25 Apr 2014 09:02:03
+2015-03-31 18:09:20	--	Channel ##networking: 956 nicks (1 op, 8 voices, 947 normals)
+2015-03-31 18:09:21	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-03-31 18:09:21	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-03-31 18:09:23	sinshiva	a douchebag of your magnitude would cleanse a whale's vagina
+2015-03-31 18:09:30	◀▬▬	Darzeia (Darzeia@c319.ip15.netikka.fi) has quit
+2015-03-31 18:09:37	▬▬▶	rojem (~rojem@pool-71-174-215-156.bstnma.fios.verizon.net) has joined ##networking
+2015-03-31 18:09:39	sinshiva	my new favorite insult :p
+2015-03-31 18:09:44	zapotah	sinshiva: ++
+2015-03-31 18:09:51	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-03-31 18:09:59	AlphaCore	o.o
+2015-03-31 18:10:09	zapotah	that one goes straight into the glossary of "good ones"
+2015-03-31 18:10:19	AlphaCore	lol
+2015-03-31 18:10:26	◀▬▬	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has quit (Quit: Ex-Chat)
+2015-03-31 18:10:29	YamakasY	zapotah: I don't know what ? do you ?
+2015-03-31 18:10:38	zapotah	YamakasY: me neither
+2015-03-31 18:10:47	zapotah	this MS horseshit is driving me crazy
+2015-03-31 18:10:50	YamakasY	shootbird: zapotah talks like that when he is drunk, but he says he is sober, fail again :P
+2015-03-31 18:10:56	◀▬▬	Volsus (~mata@2601:7:cc0:158:c1d4:42ae:5c8:f5d4) has quit (Quit: Leaving)
+2015-03-31 18:11:02	zapotah	dude i am sober
+2015-03-31 18:11:07	zapotah	for three months nonetheless
+2015-03-31 18:11:08	YamakasY	zapotah: horseshit is actually very clean
+2015-03-31 18:11:28	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-03-31 18:11:37	YamakasY	zapotah: we didn't see any prove and javi404 hacked your webcam, what is that bottle next to you ?
+2015-03-31 18:11:49	 *	zapotah hides the bottle
+2015-03-31 18:11:54	--	irc: disconnected from server
+2015-03-31 18:12:12	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-03-31 18:12:12	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993 | Please identify with nickserv if you can't speak"
+2015-03-31 18:12:12	--	Topic set by imMute (~immute@about/networking/240.255.255.0/imMute) on Fri, 25 Apr 2014 09:02:03
+2015-03-31 18:12:13	--	Channel ##networking: 953 nicks (1 op, 8 voices, 944 normals)
+2015-03-31 18:12:14	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-03-31 18:12:14	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-03-31 18:12:15	◀▬▬	AlexPortable (uid7568@gateway/web/irccloud.com/x-ruoxvzccuhzkyans) has quit (Quit: Connection closed for inactivity)
+2015-03-31 18:12:43	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-03-31 18:12:47	▬▬▶	OtterCoder (~quassel@67.199.175.157) has joined ##networking
+2015-03-31 18:13:28	◀▬▬	Nico____ (9506045a@gateway/web/freenode/ip.149.6.4.90) has quit (Quit: Page closed)
+2015-03-31 18:14:23	◀▬▬	martinbm1dsen (~martinbma@188.226.252.120) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:14:31	YamakasY	zapotah: that one on your forehead with a bird on it
+2015-03-31 18:14:38	YamakasY	you might not be able to see it
+2015-03-31 18:14:55	▬▬▶	SaEeDIRHA (~SaEeD@91.133.149.8) has joined ##networking
+2015-03-31 18:14:59	◀▬▬	Milos|Surface (~Milos@gw1.bhd-akl1.xsrv.net.nz) has quit (Ping timeout: 272 seconds)
+2015-03-31 18:15:11	◀▬▬	thumpba (~thumpba@38.104.231.214) has quit (Ping timeout: 264 seconds)
+2015-03-31 18:15:21	◀▬▬	rickc (~rickc@43.241.188.145) has quit (Quit: Leaving.)
+2015-03-31 18:15:26	◀▬▬	Vexena (~kevindefr@d1F05F3EF.access.telenet.be) has left ##networking
+2015-03-31 18:15:36	SaEeDIRHA	hi, is it possible to monitor wireless traffic for all clients on the wireless network ?
+2015-03-31 18:15:37	SaEeDIRHA	once connected to the network with the password
+2015-03-31 18:15:37	SaEeDIRHA	since its wireless i thought the packet would be sent to all clients on the network , so i was wonderying if i could monitor the communication between router and other client devices on the network
+2015-03-31 18:15:50	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-03-31 18:15:58	AlphaCore	yea
+2015-03-31 18:16:07	AlphaCore	its called a man in the middle SaEeDIRHA
+2015-03-31 18:16:11	AlphaCore	google it
+2015-03-31 18:16:29	◀▬▬	flokuehn (~flokuehn@dslb-178-004-071-230.178.004.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2015-03-31 18:16:31	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-03-31 18:16:51	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-03-31 18:17:02	SaEeDIRHA	AlphaCore, i am aware of that , but it is not the same over wireless network
+2015-03-31 18:17:16	▬▬▶	flokuehn (~flokuehn@dslb-178-004-071-230.178.004.pools.vodafone-ip.de) has joined ##networking
+2015-03-31 18:17:40	SaEeDIRHA	since the packets are already broadcasted into the air to all clients and only the one who has the ip reply to it
+2015-03-31 18:17:51	SaEeDIRHA	i want to capture that
+2015-03-31 18:17:58	AlphaCore	SaEeDIRHA, couldnt you just portfoward
+2015-03-31 18:18:03	AlphaCore	idk I am not an expert at this
+2015-03-31 18:18:13	YamakasY	zapotah: and there is some weird puple cap on your node
+2015-03-31 18:18:14	YamakasY	nose
+2015-03-31 18:18:20	▬▬▶	Batesy (~8e905a4b9@122-49-151-139.ip.adam.com.au) has joined ##networking
+2015-03-31 18:18:31	zapotah	SaEeDIRHA: what is the end goal here?
+2015-03-31 18:18:34	AlphaCore	port foward the packets over the internet
+2015-03-31 18:19:11	SaEeDIRHA	zapotah, its my own network , just curious and trying to learn
+2015-03-31 18:19:12	zapotah	SaEeDIRHA: you can obviously monitor the packets on the medium but say its ssl traffic, you wont be any wiser of the type of traffic
+2015-03-31 18:19:15	squibby1	SaEeDIRHA, it is not as straightforward as you would like it to be, no
+2015-03-31 18:19:34	squibby1	SaEeDIRHA, you are better off doing a packet capture on the wifi controller or some other common point
+2015-03-31 18:19:44	zapotah	^
+2015-03-31 18:19:56	SaEeDIRHA	squibby1, what other common points ?
+2015-03-31 18:20:03	◀▬▬	FLHerne (~flh@unaffiliated/flherne) has quit (Remote host closed the connection)
+2015-03-31 18:20:03	▬▬▶	FLHerne_ (~flh@unaffiliated/flherne) has joined ##networking
+2015-03-31 18:20:04	squibby1	unless you like being frustrated and complicating your life
+2015-03-31 18:20:04	zapotah	SaEeDIRHA: ie, the router
+2015-03-31 18:20:10	--	FLHerne_ is now known as FLHerne
+2015-03-31 18:20:17	squibby1	like the switchport that the AP is connected to
+2015-03-31 18:20:21	◀▬▬	rotbeard (~redbeard@2a02:908:df10:d300:6267:20ff:feb7:c20) has quit (Quit: Leaving)
+2015-03-31 18:20:24	squibby1	since likely all relevant traffic is hitting that switchport
+2015-03-31 18:20:40	squibby1	most communication is not directly between the wireless stations
+2015-03-31 18:21:26	◀▬▬	total_id1ot (~total_idi@90.199.102.89) has quit (Quit: Lost terminal)
+2015-03-31 18:21:36	SaEeDIRHA	i see
+2015-03-31 18:22:18	squibby1	do you not have access to the switch?
+2015-03-31 18:22:43	SaEeDIRHA	yeap, its a linksys WRT54gl with dd-wrt firmwork
+2015-03-31 18:23:17	SaEeDIRHA	i just want to monitor my network traffic from all devices connected to the router
+2015-03-31 18:23:19	squibby1	uh yeah that probably won't help you
+2015-03-31 18:23:19	YamakasY	oh what has happened to end goal of NL ?
+2015-03-31 18:23:41	squibby1	SaEeDIRHA, that's not going to work because the encryption key is dynamically generated per connection per station
+2015-03-31 18:23:47	squibby1	so you have a master preshared key right
+2015-03-31 18:24:07	SaEeDIRHA	squibby1, yes i do
+2015-03-31 18:24:14	squibby1	when a station connects to the ap using WPA2, it goes through a handshake with the AP to determine a use temproary key for that connection
+2015-03-31 18:24:21	squibby1	so all stations connected will have hteir own encryption key
+2015-03-31 18:24:26	squibby1	you can't just sniff the traffic
+2015-03-31 18:24:47	SaEeDIRHA	i see
+2015-03-31 18:24:52	AlphaCore	lol
+2015-03-31 18:24:53	AlphaCore	sniff
+2015-03-31 18:24:58	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-03-31 18:25:14	squibby1	you CAN man in the middle attack but it's not practical for a monitoring solution
+2015-03-31 18:25:29	squibby1	what you need is an AP that's connected to a managed switch
+2015-03-31 18:25:48	▬▬▶	fantum (~NUKEER@84.38.151.137) has joined ##networking
+2015-03-31 18:25:51	SaEeDIRHA	my router is connected to ADSL modem
+2015-03-31 18:25:54	squibby1	and then you setup a mirror/span port on the managed switch that sends the AP traffic to your monitoring station
+2015-03-31 18:25:59	▬▬▶	King_Hual (~Hual@94.26.28.68) has joined ##networking
+2015-03-31 18:25:59	◀▬▬	King_Hual (~Hual@94.26.28.68) has quit (Changing host)
+2015-03-31 18:25:59	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-03-31 18:26:07	squibby1	you're going to need to get a managed switch if you are motivated to make this work
+2015-03-31 18:26:17	▬▬▶	LarchOye (~LarchOye@173-18-138-98.client.mchsi.com) has joined ##networking
+2015-03-31 18:26:27	squibby1	you need a switch that can copy the traffic on the port that your AP connects to
+2015-03-31 18:26:36	squibby1	i'ts called Mirroring or SPAN
+2015-03-31 18:26:43	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-03-31 18:26:51	◀▬▬	flokuehn (~flokuehn@dslb-178-004-071-230.178.004.pools.vodafone-ip.de) has quit (Ping timeout: 252 seconds)
+2015-03-31 18:26:54	◀▬▬	styles (~styles@unaffiliated/styles) has quit (Quit: Leaving)
+2015-03-31 18:26:58	◀▬▬	KickAlong (~quatermas@unaffiliated/sutekh) has quit (Read error: Connection reset by peer)
+2015-03-31 18:27:00	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-03-31 18:27:11	SaEeDIRHA	squibby1, yes i know about that, but i thought in wireless communication everything is broadcast to all clients
+2015-03-31 18:27:38	sinshiva	there's also the TEE jump with iptables, but i don't think it can be done from WRT
+2015-03-31 18:27:57	sinshiva	i haven't tried, at least
+2015-03-31 18:28:03	▬▬▶	Bog4r7 (~Bog4r7@208.76.201.166) has joined ##networking
+2015-03-31 18:28:05	squibby1	SaEeDIRHA, it isn't broadcasted as in the destination addressing is addressed to each station, it's broadcast in that it's RF
+2015-03-31 18:28:20	squibby1	and like what I described before, each station will have its own encryption key
+2015-03-31 18:28:27	squibby1	so you can't just monitor them
+2015-03-31 18:28:34	▬▬▶	rotbeard (~redbeard@2a02:908:df10:d300:76f0:6dff:fe3b:994d) has joined ##networking
+2015-03-31 18:28:37	SaEeDIRHA	yeap i understand now :)
+2015-03-31 18:28:38	◀▬▬	AlphaCore (~AlphaCore@2602:306:cc8c:e00:8988:594d:13cd:2f5a) has quit (Quit: Leaving)
+2015-03-31 18:28:59	SaEeDIRHA	is it possibel to calculate that key ?
+2015-03-31 18:29:07	squibby1	you will only see actual network broadcasts
+2015-03-31 18:29:08	SaEeDIRHA	since i have the master shared key
+2015-03-31 18:29:14	squibby1	traffic sent to FFFFFFF
+2015-03-31 18:29:30	SaEeDIRHA	squibby1, you are right
+2015-03-31 18:29:38	squibby1	SaEeDIRHA, no, you need to first capture the handshake, and then run other tools to derive the key
+2015-03-31 18:29:48	squibby1	it's way more practical to just setup a monitoring station with a mirror port
+2015-03-31 18:29:59	squibby1	you aren't trying to hack your network, you want to monitor it
+2015-03-31 18:30:31	◀▬▬	travnewmatic (~travnewma@corp.external.dfw02.800hosting.net) has quit (Remote host closed the connection)
+2015-03-31 18:30:55	◀▬▬	AccessGranted (~pihpah@mm-18-8-84-93.mgts.dynamic.pppoe.byfly.by) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:31:24	SaEeDIRHA	yeap, the reason i want to monitor it , i want to see for example how viber or whatsapp on iphone would communicate with their server
+2015-03-31 18:32:06	SaEeDIRHA	as mentioned soly out of curiosity
+2015-03-31 18:33:04	squibby1	you can change your network encryption to WEP temporarily
+2015-03-31 18:33:09	squibby1	for as long as it takes to do your study
+2015-03-31 18:33:19	squibby1	but that carries obvious risks
+2015-03-31 18:33:20	squibby1	:)
+2015-03-31 18:34:00	SaEeDIRHA	lol, i know , i have seen how easy is to crack it
+2015-03-31 18:34:38	◀▬▬	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:35:10	sinshiva	SaEeDIRHA you aware of being able to do things like cat /proc/net/ip_conntrack ?
+2015-03-31 18:35:18	sinshiva	there's also conntrack tools
+2015-03-31 18:35:28	SaEeDIRHA	squibby1, what if there is a open wireless network , would that be possible then ?
+2015-03-31 18:35:39	▬▬▶	mrdiesel (~mrdiesel@197.15.129.14) has joined ##networking
+2015-03-31 18:35:48	◀▬▬	mrdiesel (~mrdiesel@197.15.129.14) has quit (Client Quit)
+2015-03-31 18:36:35	squibby1	SaEeDIRHA, yes. but you have to place your wifi card into monitor mode
+2015-03-31 18:36:43	squibby1	you can't just necessarily open wireshark and expect to see everything
+2015-03-31 18:37:01	▬▬▶	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has joined ##networking
+2015-03-31 18:37:01	▬▬▶	slayver (~slayver@197.15.129.14) has joined ##networking
+2015-03-31 18:37:01	squibby1	it's really WAY more practical to use the right equipment. such as the managed switch I keep mentioning.
+2015-03-31 18:37:41	▬▬▶	nodweber (~nodweber@5.178.135.214) has joined ##networking
+2015-03-31 18:37:51	SaEeDIRHA	yeap, of course , but since its my home network , i am not going to buy a new manages switch just for that :)
+2015-03-31 18:38:02	▬▬▶	pereba_ (~pereba@unaffiliated/pereba) has joined ##networking
+2015-03-31 18:38:10	anew	ip route add 81.33.24.17/32 via 152.320.313.1 i run this command which works for ssh and ftp, but apparantly it's not working when i try to connect to apache (web server)
+2015-03-31 18:38:47	squibby1	SaEeDIRHA, why not? you can get a 3550 for like $50 or less on ebay'
+2015-03-31 18:39:03	▬▬▶	brotatos (~robin@unaffiliated/brotatos) has joined ##networking
+2015-03-31 18:39:08	▬▬▶	Batesy_c (~Batesy@122-49-151-139.ip.adam.com.au) has joined ##networking
+2015-03-31 18:39:17	squibby1	SaEeDIRHA, why don't you hook your PC directly into the modem, and then do internet connection sharing to the rest of the devices
+2015-03-31 18:39:20	squibby1	and then run wireshark
+2015-03-31 18:39:20	SaEeDIRHA	squibby1, really ?
+2015-03-31 18:39:33	brotatos	Are there pound defines for protocol types e.g. IP or ARP in libpcap? I can't seem to find them anywhere.
+2015-03-31 18:39:34	◀▬▬	beejee (~beejee@d54c578fe.access.telenet.be) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:39:40	squibby1	multiple ways to skin the cat
+2015-03-31 18:39:48	SaEeDIRHA	squibby1, thats acturally a good suggestion :)
+2015-03-31 18:39:56	squibby1	SaEeDIRHA, the point is that you need to capture at a central location
+2015-03-31 18:40:00	squibby1	that is in the path of the traffic
+2015-03-31 18:40:10	YamakasY	I need my baed and a damn fucking windscreen for my airco!
+2015-03-31 18:40:12	YamakasY	bed
+2015-03-31 18:40:23	SaEeDIRHA	squibby1, thank you very much for very useful information :)
+2015-03-31 18:40:32	YamakasY	so I accidentally pasted that in #debian, they asked if I needed help with Debian :P
+2015-03-31 18:41:13	◀▬▬	Genericenemy (~GE@host-92-10-53-33.as43234.net) has quit (Quit: zzz)
+2015-03-31 18:41:18	◀▬▬	treehug88 (~textual@cpe-74-66-7-27.nyc.res.rr.com) has quit (Read error: No route to host)
+2015-03-31 18:41:20	◀▬▬	pereba (~pereba@unaffiliated/pereba) has quit (Ping timeout: 272 seconds)
+2015-03-31 18:41:25	YamakasY	zapotah: give me some of your left alcohol! I need it
+2015-03-31 18:41:27	--	pereba_ is now known as pereba
+2015-03-31 18:41:55	◀▬▬	x-fak (~WinGuru@reactos/tester/x-fak) has quit (Quit: ExitProcess(0))
+2015-03-31 18:42:28	◀▬▬	Batesy (~8e905a4b9@122-49-151-139.ip.adam.com.au) has quit (Ping timeout: 265 seconds)
+2015-03-31 18:42:36	◀▬▬	nodweber (~nodweber@5.178.135.214) has quit (Ping timeout: 272 seconds)
+2015-03-31 18:42:55	▬▬▶	tmager (~Thunderbi@resnet-130-64-128-213.medford.tufts.edu) has joined ##networking
+2015-03-31 18:43:07	SaEeDIRHA	squibby1, just one more question , is there a unique temp key between every station and AP ?
+2015-03-31 18:44:15	--	irc: disconnected from server
+2015-03-31 23:15:59	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-03-31 23:15:59	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993 | Please identify with nickserv if you can't speak"
+2015-03-31 23:15:59	--	Topic set by imMute (~immute@about/networking/240.255.255.0/imMute) on Fri, 25 Apr 2014 09:02:03
+2015-03-31 23:15:59	--	Channel ##networking: 921 nicks (1 op, 7 voices, 913 normals)
+2015-03-31 23:16:00	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-03-31 23:16:00	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-03-31 23:16:30	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-03-31 23:17:41	▬▬▶	uZiel (~uZiel@c-24-130-108-94.hsd1.ca.comcast.net) has joined ##networking
+2015-03-31 23:17:53	▬▬▶	avoider (~ryn@insid.affix.me) has joined ##networking
+2015-03-31 23:18:06	▬▬▶	mortdeus (~mortdeus@74.196.96.19) has joined ##networking
+2015-03-31 23:18:17	▬▬▶	lobhater (~dylan@unaffiliated/lobhater) has joined ##networking
+2015-03-31 23:19:03	--	irc: disconnected from server
+2015-03-31 23:19:23	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-03-31 23:19:23	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993 | Please identify with nickserv if you can't speak"
+2015-03-31 23:19:23	--	Topic set by imMute (~immute@about/networking/240.255.255.0/imMute) on Fri, 25 Apr 2014 09:02:03
+2015-03-31 23:19:23	--	Channel ##networking: 926 nicks (1 op, 7 voices, 918 normals)
+2015-03-31 23:19:24	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-03-31 23:19:24	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-03-31 23:19:55	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-03-31 23:23:16	--	irc: disconnected from server
+2015-03-31 23:23:35	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-03-31 23:23:35	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993 | Please identify with nickserv if you can't speak"
+2015-03-31 23:23:35	--	Topic set by imMute (~immute@about/networking/240.255.255.0/imMute) on Fri, 25 Apr 2014 09:02:03
+2015-03-31 23:23:36	--	Channel ##networking: 925 nicks (1 op, 7 voices, 917 normals)
+2015-03-31 23:23:36	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-03-31 23:23:36	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-03-31 23:24:02	▬▬▶	catpiggest (~catpig@p5496D764.dip0.t-ipconnect.de) has joined ##networking
+2015-03-31 23:24:08	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-03-31 23:25:00	◀▬▬	catpigger (~catpig@p5496DA88.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2015-03-31 23:25:43	--	irc: disconnected from server
+2015-04-01 15:22:53	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-04-01 15:22:53	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993~"
+2015-04-01 15:22:53	--	Topic set by xand (xand@pdpc/supporter/active/xand) on Wed, 01 Apr 2015 13:33:51
+2015-04-01 15:22:53	--	Channel ##networking: 959 nicks (1 op, 8 voices, 950 normals)
+2015-04-01 15:22:53	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-04-01 15:22:53	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-04-01 15:22:55	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-04-01 15:23:11	◀▬▬	shellgames (~quassel@104.236.11.204) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2015-04-01 15:23:20	▬▬▶	shellgames (~quassel@104.236.11.204) has joined ##networking
+2015-04-01 15:24:12	◀▬▬	ki0 (~ki0@92.58.126.35) has quit
+2015-04-01 15:24:38	◀▬▬	naftilos76 (~quassel@46.251.116.146) has quit (Remote host closed the connection)
+2015-04-01 15:24:46	◀▬▬	FreezingCold (~FreezingC@135.0.41.14) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:24:53	▬▬▶	leesin (~leesin@79.141.161.13) has joined ##networking
+2015-04-01 15:25:05	◀▬▬	x1Rt (~tR@c-71-57-104-25.hsd1.il.comcast.net) has quit
+2015-04-01 15:25:14	◀▬▬	Guest13304 (~ubuntu@99.237.184.148) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:26:28	SporkWitch	is this no longer the funny cat picture channel? :'(
+2015-04-01 15:26:32	◀▬▬	Captain_Awesome (~Captain_A@173.192.105.254) has quit (Disconnected by services)
+2015-04-01 15:26:33	▬▬▶	Captain_Awesome_ (~Captain_A@gateway/vpn/privateinternetaccess/captainawesome/x-53337819) has joined ##networking
+2015-04-01 15:26:35	YamakasY	pppingme: to keep me in comfort my gf sucks when it doesn't do what I want
+2015-04-01 15:26:36	▬▬▶	Corey84 (~Corey84@unaffiliated/corey84) has joined ##networking
+2015-04-01 15:26:37	--	Captain_Awesome_ is now known as Captain_Awesome
+2015-04-01 15:26:44	YamakasY	SporkWitch: no, they got afraid
+2015-04-01 15:26:52	SporkWitch	damn
+2015-04-01 15:26:59	SporkWitch	i posted some cute ones :P
+2015-04-01 15:27:08	YamakasY	there is some kitten channel, they are taking over anime
+2015-04-01 15:27:13	YamakasY	kittens are dangerous
+2015-04-01 15:27:34	SporkWitch	YamakasY: of course they are, anything that adorable should be regulated like any other WMD
+2015-04-01 15:27:36	YamakasY	pppingme: I think we can live with that
+2015-04-01 15:27:51	YamakasY	I'm adorable too
+2015-04-01 15:28:20	▬▬▶	avoider (~ryn@insid.affix.me) has joined ##networking
+2015-04-01 15:30:00	--	avoider is now known as insidious
+2015-04-01 15:30:43	◀▬▬	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2015-04-01 15:31:02	E1ephant	Enzu "optizmizing" BGP: http://i.imgur.com/fmsKk6a.gifv
+2015-04-01 15:31:14	▬▬▶	pid1 (~pid1@67.221.65.32) has joined ##networking
+2015-04-01 15:34:11	YamakasY	E1ephant: wtf, with a bow!
+2015-04-01 15:34:37	YamakasY	what a tard!
+2015-04-01 15:34:58	◀▬▬	rojem (~rojem@199.4.160.73) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 15:35:28	◀▬▬	tvangeste (a58ad313@gateway/web/freenode/ip.165.138.211.19) has quit (Quit: Page closed)
+2015-04-01 15:36:37	YamakasY	E1ephant: shoot the mofo!
+2015-04-01 15:36:38	◀▬▬	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:37:52	--	insidious is now known as avoider
+2015-04-01 15:38:04	--	avoider is now known as insidious
+2015-04-01 15:38:07	◀▬▬	magz0r (~magz0r@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:38:17	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-04-01 15:38:29	▬▬▶	hyphenated (~hyphenate@103.26.17.55) has joined ##networking
+2015-04-01 15:39:19	▬▬▶	peacehope (~peacehope@177.125.216.78) has joined ##networking
+2015-04-01 15:39:37	▬▬▶	jivedude (~jivedude@c-75-67-255-157.hsd1.nh.comcast.net) has joined ##networking
+2015-04-01 15:40:36	▬▬▶	kggr (~korggrodn@nat-minsk-pool-46-53-200-253.telecom.by) has joined ##networking
+2015-04-01 15:41:24	◀▬▬	phutchins (~phutchins@12.219.170.153) has quit (Ping timeout: 250 seconds)
+2015-04-01 15:41:33	▬▬▶	`Cam (~textual@60-241-86-210.static.tpgi.com.au) has joined ##networking
+2015-04-01 15:41:37	▬▬▶	uZiel (~uZiel@128.107.241.187) has joined ##networking
+2015-04-01 15:41:37	◀▬▬	Neutron (~neutron@17.92-220-157.customer.lyse.net) has quit (Ping timeout: 272 seconds)
+2015-04-01 15:41:49	◀▬▬	weaponized_ (~weaponize@unaffiliated/weaponized) has quit (Remote host closed the connection)
+2015-04-01 15:41:57	YamakasY	javi404: yo!
+2015-04-01 15:42:23	▬▬▶	raymondhim (~raymondhi@c-66-41-216-194.hsd1.mn.comcast.net) has joined ##networking
+2015-04-01 15:44:48	▬▬▶	rojem (~rojem@199.4.160.73) has joined ##networking
+2015-04-01 15:45:04	◀▬▬	putney_ (~Adium@ip-240.95.161.119.VOCUS.net.au) has quit (Quit: Leaving.)
+2015-04-01 15:46:51	javi404	YamakasY: yo
+2015-04-01 15:46:52	javi404	whatup
+2015-04-01 15:46:57	◀▬▬	uZiel (~uZiel@128.107.241.187) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:47:54	javi404	E1ephant: what was that he was hunting?
+2015-04-01 15:47:54	▬▬▶	flipapy (~flipapy_3@unaffiliated/science-abc) has joined ##networking
+2015-04-01 15:47:56	javi404	lol
+2015-04-01 15:48:12	E1ephant	a roadrunner I think?
+2015-04-01 15:48:14	E1ephant	not too sure tbh
+2015-04-01 15:48:17	zapotah	pheasant
+2015-04-01 15:48:31	javi404	ah, zapotah, thanks, makes sense.
+2015-04-01 15:48:41	javi404	i don't think i have ever seen one in the wild.
+2015-04-01 15:48:53	 *	zapotah has hunted pheasants
+2015-04-01 15:48:54	terabit	E1ephant: you read the article ?
+2015-04-01 15:49:11	terabit	but yeah..
+2015-04-01 15:49:16	almostworking	your supposed to use a shotgun
+2015-04-01 15:49:21	zapotah	^
+2015-04-01 15:49:25	◀▬▬	max-b_ (~max_b@2601:9:280:efa0:7864:2605:ae33:d506) has quit (Remote host closed the connection)
+2015-04-01 15:49:35	almostworking	wow, @ that  guy " hunting" = gives hunters bad name
+2015-04-01 15:49:37	E1ephant	which one?
+2015-04-01 15:49:42	◀▬▬	Programmer_ (~khaotic@unaffiliated/khaotic) has quit (Ping timeout: 255 seconds)
+2015-04-01 15:49:42	zapotah	almostworking: yup
+2015-04-01 15:49:43	◀▬▬	hyphenated (~hyphenate@103.26.17.55) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:49:48	E1ephant	enzu's or all the fun had today?
+2015-04-01 15:49:55	terabit	I don't like it when they hunt what they won't eat
+2015-04-01 15:50:15	▬▬▶	niseak (~niseak@162.222.47.218) has joined ##networking
+2015-04-01 15:50:15	▬▬▶	PartNAS (6dc81a03@gateway/web/cgi-irc/kiwiirc.com/ip.109.200.26.3) has joined ##networking
+2015-04-01 15:50:18	▬▬▶	Trekka36 (~Trekka12@c-cbf1e355.226-2-64736c11.cust.bredbandsbolaget.se) has joined ##networking
+2015-04-01 15:50:26	YamakasY	no in the US they hun with those bows
+2015-04-01 15:50:27	almostworking	ive only heard of that happening once in 30yrs of knowing people that hunting , including me.
+2015-04-01 15:50:33	YamakasY	I have shoot with them too
+2015-04-01 15:50:46	▬▬▶	hyphenated (~hyphenate@103.26.17.55) has joined ##networking
+2015-04-01 15:50:51	YamakasY	shot
+2015-04-01 15:50:51	◀▬▬	peacehope (~peacehope@177.125.216.78) has quit
+2015-04-01 15:51:07	◀▬▬	jamf25 (~jason.fis@c-76-100-23-87.hsd1.va.comcast.net) has quit (Ping timeout: 272 seconds)
+2015-04-01 15:51:18	almostworking	yes , but we dont shoot at birds with them.
+2015-04-01 15:51:36	▬▬▶	peacehope (~peacehope@177.125.216.78) has joined ##networking
+2015-04-01 15:52:00	E1ephant	I hunt with a slingshot
+2015-04-01 15:52:01	YamakasY	normally deer and so on
+2015-04-01 15:52:08	YamakasY	I only hunt woman
+2015-04-01 15:52:08	almostworking	yes
+2015-04-01 15:52:12	YamakasY	never shoot them tho
+2015-04-01 15:52:21	almostworking	good plan . yea sure.  sure ,
+2015-04-01 15:52:29	 *	almostworking whistles looking around 
+2015-04-01 15:52:37	YamakasY	aha
+2015-04-01 15:52:52	YamakasY	the issue is they always hunt me afterall
+2015-04-01 15:53:13	almostworking	well,  im too old, and too poor for being chased .
+2015-04-01 15:53:26	◀▬▬	Trekka12 (~Trekka12@c-cbf1e355.226-2-64736c11.cust.bredbandsbolaget.se) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:53:33	◀▬▬	niseak_ (~niseak@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 15:54:13	◀▬▬	sunscript (~sunscript@95-210-201-59.ip.skylogicnet.com) has quit (Changing host)
+2015-04-01 15:54:13	▬▬▶	sunscript (~sunscript@unaffiliated/innocentus) has joined ##networking
+2015-04-01 15:54:15	YamakasY	almostworking: no woman like pure men
+2015-04-01 15:54:33	◀▬▬	leesin (~leesin@79.141.161.13) has quit (Quit: Leaving)
+2015-04-01 15:54:34	▬▬▶	bigbadjudas (~666@pool-100-11-50-166.phlapa.fios.verizon.net) has joined ##networking
+2015-04-01 15:54:38	almostworking	not sure what pure means =  metro?  ha
+2015-04-01 15:54:39	YamakasY	almostworking: be pure, don't shave, don't shower for a long time and they will stic to you automaticly when you walk them close by
+2015-04-01 15:54:48	◀▬▬	Bantalon (~Bantalon@c83-251-39-36.bredband.comhem.se) has quit (Remote host closed the connection)
+2015-04-01 15:54:53	YamakasY	*stick
+2015-04-01 15:55:09	◀▬▬	rojem (~rojem@199.4.160.73) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 15:55:23	almostworking	hmm. ive not shaved in 6 months . rockin fishermans captian beard.
+2015-04-01 15:55:35	▬▬▶	rojem (~rojem@199.4.160.73) has joined ##networking
+2015-04-01 15:55:44	▬▬▶	Bantalon (~Bantalon@c83-251-39-36.bredband.comhem.se) has joined ##networking
+2015-04-01 15:56:23	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-04-01 15:57:27	zapotah	almostworking: yarr, ye be no landlubber then matey?
+2015-04-01 15:57:27	◀▬▬	insidious (~ryn@insid.affix.me) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:57:44	▬▬▶	MacGeek (~BSD@2a01:2000:2001:965::1000) has joined ##networking
+2015-04-01 15:58:22	almostworking	I just need a daguerreotype camera , and i could do one of those , 1880 pictures  , with suit with my hand in pocket , on my chest.
+2015-04-01 15:58:40	sunscript	almostworking: hm, no photoshop filter for this yet? :P
+2015-04-01 15:58:43	◀▬▬	Bantalon (~Bantalon@c83-251-39-36.bredband.comhem.se) has quit (Remote host closed the connection)
+2015-04-01 15:58:45	sunscript	ah, an app
+2015-04-01 15:58:53	◀▬▬	MacGeek (~BSD@2a01:2000:2001:965::1000) has quit (Remote host closed the connection)
+2015-04-01 15:58:57	▬▬▶	Bantalon (~Bantalon@c83-251-39-36.bredband.comhem.se) has joined ##networking
+2015-04-01 15:59:27	◀▬▬	Bantalon (~Bantalon@c83-251-39-36.bredband.comhem.se) has quit (Remote host closed the connection)
+2015-04-01 16:00:02	almostworking	drawing a mental image for everyone .
+2015-04-01 16:00:09	▬▬▶	MatthewsFace (~matthewsf@4.31.98.194) has joined ##networking
+2015-04-01 16:00:17	almostworking	photoshop doesnt work , not as dramatic,  " painting a pictures here "  heh
+2015-04-01 16:00:53	YamakasY	javi404: my pants!
+2015-04-01 16:00:56	YamakasY	wash it
+2015-04-01 16:03:09	almostworking	yea zapotah . = sea captian beard.  old spice guy nothing on me.
+2015-04-01 16:03:41	▬▬▶	j1olsen (~user@191.177.189.109.customer.cdi.no) has joined ##networking
+2015-04-01 16:03:41	◀▬▬	Sail0r (~Sailor@ipbcc243dc.dynamic.kabel-deutschland.de) has quit (Remote host closed the connection)
+2015-04-01 16:03:41	javi404	YamakasY: did you cream  your pants or something at work?
+2015-04-01 16:03:49	E1ephant	LOL
+2015-04-01 16:03:55	◀▬▬	ser_rhaegar (~ser_rhaeg@30.sub-70-194-1.myvzw.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 16:04:14	◀▬▬	jivedude (~jivedude@c-75-67-255-157.hsd1.nh.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:04:29	▬▬▶	theRealGent (~theRealGe@unaffiliated/therealgent) has joined ##networking
+2015-04-01 16:04:35	javi404	never a good day when you have to find a change of pants in the office
+2015-04-01 16:04:47	YamakasY	javi404: no, do you never wash you clothes ?
+2015-04-01 16:04:56	javi404	YamakasY: the female does
+2015-04-01 16:05:07	YamakasY	javi404: you are a bitch, so you can do to
+2015-04-01 16:05:09	YamakasY	too
+2015-04-01 16:05:21	YamakasY	javi404: I always have a spare set of clotes @ office or car
+2015-04-01 16:05:29	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-04-01 16:05:36	E1ephant	weir
+2015-04-01 16:05:36	YamakasY	nice when my sexyness goes down
+2015-04-01 16:05:38	E1ephant	d
+2015-04-01 16:05:43	E1ephant	do you use that often?
+2015-04-01 16:05:44	YamakasY	E1ephant: you are weird
+2015-04-01 16:06:03	▬▬▶	danguafer (uid54301@gateway/web/irccloud.com/x-gtfdhazmngwaidqs) has joined ##networking
+2015-04-01 16:06:12	YamakasY	E1ephant: no it's just handy, I have a work pants and normal pants, mostly the normal pants is out of the car
+2015-04-01 16:06:25	forgotten	i live in my car
+2015-04-01 16:06:35	YamakasY	forgotten: really ?
+2015-04-01 16:06:55	forgotten	ya im parked outside of a super 8 motel atm
+2015-04-01 16:06:55	▬▬▶	lucyinthesky (~lucyinthe@unaffiliated/lucyinthesky) has joined ##networking
+2015-04-01 16:07:02	forgotten	leeching sweet sweet interwebs
+2015-04-01 16:07:05	◀▬▬	theRealGent (~theRealGe@unaffiliated/therealgent) has quit (Client Quit)
+2015-04-01 16:07:08	YamakasY	haha
+2015-04-01 16:07:10	YamakasY	really ?
+2015-04-01 16:07:22	forgotten	no not really lol
+2015-04-01 16:07:28	forgotten	trololol
+2015-04-01 16:07:56	◀▬▬	flipapy (~flipapy_3@unaffiliated/science-abc) has quit (Quit: Leaving)
+2015-04-01 16:09:09	◀▬▬	rojem (~rojem@199.4.160.73) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:09:41	▬▬▶	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has joined ##networking
+2015-04-01 16:11:18	◀▬▬	NBhostin_ (~nbhosting@D97BE3F1.cm-3-4d.dynamic.ziggo.nl) has quit
+2015-04-01 16:12:01	YamakasY	forgotten: you Gipsy
+2015-04-01 16:12:21	forgotten	i am from colorado and live in california now
+2015-04-01 16:12:23	forgotten	so
+2015-04-01 16:14:41	almostworking	I keep clothes in my car / suv .
+2015-04-01 16:14:55	◀▬▬	lucyinthesky (~lucyinthe@unaffiliated/lucyinthesky) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:15:18	▬▬▶	user1138 (~user1138@unaffiliated/user1138) has joined ##networking
+2015-04-01 16:15:32	E1ephant	I ride my bicycle
+2015-04-01 16:15:38	xingu	bareback?
+2015-04-01 16:15:39	E1ephant	cars are the devil
+2015-04-01 16:15:46	E1ephant	buttt nakid
+2015-04-01 16:16:12	◀▬▬	Jiyuhen (~quassel@i59F5F221.versanet.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:16:16	+daemonkeeper	E1ephant wants to cycle around all of Texas with his bicylce, buttt nakid
+2015-04-01 16:16:23	▬▬▶	Jiyuhen (~quassel@i59F5FD4D.versanet.de) has joined ##networking
+2015-04-01 16:16:27	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-04-01 16:16:33	▬▬▶	niseak_ (~niseak@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has joined ##networking
+2015-04-01 16:17:22	◀▬▬	arunpyasi (~arun@43.231.209.197) has quit (Read error: Connection reset by peer)
+2015-04-01 16:18:11	▬▬▶	arunpyasi (~arun@43.231.209.197) has joined ##networking
+2015-04-01 16:18:12	◀▬▬	m8 (~m@unaffiliated/m8) has quit (Quit: Sto andando via)
+2015-04-01 16:18:51	YamakasY	daemonkeeper: and you want to watch (on every corner)
+2015-04-01 16:18:53	◀▬▬	Asiajey (~Asiajey@unaffiliated/asiajey) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:18:59	◀▬▬	niseak (~niseak@162.222.47.218) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:19:41	E1ephant	riding to shreveport is a good deal of fun :D
+2015-04-01 16:19:42	◀▬▬	Rickmasta (~Rick@137.125.137.203) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:19:44	▬▬▶	jivedude (~jivedude@inet-aumc08-o.oracle.com) has joined ##networking
+2015-04-01 16:20:03	YamakasY	E1ephant: don't forget to remove the seat ;)
+2015-04-01 16:20:14	◀▬▬	OtterCoder (~quassel@67.199.175.157) has quit (Ping timeout: 250 seconds)
+2015-04-01 16:20:35	▬▬▶	uZiel (~uZiel@128.107.241.187) has joined ##networking
+2015-04-01 16:21:10	◀▬▬	Vexena (~kevindefr@d1f05f3ef.access.telenet.be) has quit (Quit: Leaving.)
+2015-04-01 16:21:50	YamakasY	firday it's buttnaked day @ the office but everyone comes in like a eskimo
+2015-04-01 16:21:53	YamakasY	I never understand
+2015-04-01 16:22:07	▬▬▶	insidious (~ryn@insid.affix.me) has joined ##networking
+2015-04-01 16:23:10	▬▬▶	_X_C_V_B_ (~XCVB@dur-dhcp-1-240.dsl.airstreamcomm.net) has joined ##networking
+2015-04-01 16:23:19	◀▬▬	MatthewsFace (~matthewsf@4.31.98.194) has quit (Remote host closed the connection)
+2015-04-01 16:23:54	YamakasY	I think too much companies are doing casual friday
+2015-04-01 16:23:55	▬▬▶	MatthewsFace (~matthewsf@4.31.98.194) has joined ##networking
+2015-04-01 16:24:39	+catphish	lmao, http://www.reddit.com/r/dataisbeautiful/ has been hijaked, this took me so long to figure out
+2015-04-01 16:25:01	YamakasY	catphish: why so long ? I thought you were a smart piece of shit
+2015-04-01 16:25:07	+catphish	i am not
+2015-04-01 16:25:20	◀▬▬	TomD1 (~Tom@2.31.111.25) has quit (Quit: Leaving)
+2015-04-01 16:25:30	▬▬▶	caldog20_ (~caldog20@66.199.31.1) has joined ##networking
+2015-04-01 16:25:36	YamakasY	catphish: but you want to be ?
+2015-04-01 16:26:04	▬▬▶	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has joined ##networking
+2015-04-01 16:26:28	◀▬▬	hspcd (~hspcd@blade.rpstechnology.com) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:26:35	▬▬▶	SaEeDIRHA (~SaEeD@91.133.149.8) has joined ##networking
+2015-04-01 16:26:38	+catphish	yes
+2015-04-01 16:26:52	YamakasY	catphish: keep trying
+2015-04-01 16:27:31	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Remote host closed the connection)
+2015-04-01 16:28:01	◀▬▬	MatthewsFace (~matthewsf@4.31.98.194) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:28:09	◀▬▬	peacehope (~peacehope@177.125.216.78) has quit
+2015-04-01 16:28:11	▬▬▶	Sail0r (~Sailor@2a01:4f8:190:3484:1::ffb7) has joined ##networking
+2015-04-01 16:28:14	◀▬▬	caldog20 (~caldog20@66.199.31.1) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:28:38	▬▬▶	MatthewsFace (~matthewsf@4.31.98.194) has joined ##networking
+2015-04-01 16:29:20	▬▬▶	FLHerne (~flh@unaffiliated/flherne) has joined ##networking
+2015-04-01 16:29:45	◀▬▬	insidious (~ryn@insid.affix.me) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:30:19	squibby0	http://dagobah.net/flash/Captain_Picard.swf
+2015-04-01 16:30:22	squibby0	^ appropriate
+2015-04-01 16:30:26	▬▬▶	mongo (~mongo@unaffiliated/mongo) has joined ##networking
+2015-04-01 16:31:18	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-04-01 16:31:38	◀▬▬	kichuku (7a988e59@gateway/web/freenode/ip.122.152.142.89) has quit
+2015-04-01 16:32:10	◀▬▬	pid1 (~pid1@67.221.65.32) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:32:10	▬▬▶	brcweggs (~brcweggs@pool-71-177-224-47.lsanca.fios.verizon.net) has joined ##networking
+2015-04-01 16:32:11	 *	YamakasY pokes squibby0 
+2015-04-01 16:34:37	▬▬▶	deepblue (~linuxator@unaffiliated/rampageripper) has joined ##networking
+2015-04-01 16:35:02	◀▬▬	deepblue (~linuxator@unaffiliated/rampageripper) has left ##networking
+2015-04-01 16:35:58	◀▬▬	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:36:09	◀▬▬	caldog20_ (~caldog20@66.199.31.1) has quit (Remote host closed the connection)
+2015-04-01 16:36:18	◀▬▬	`Cam (~textual@60-241-86-210.static.tpgi.com.au) has quit (Quit: ZZZ)
+2015-04-01 16:36:24	+catphish	i dont know what i just watched :|
+2015-04-01 16:36:44	▬▬▶	caldog20 (~caldog20@66.199.31.1) has joined ##networking
+2015-04-01 16:36:44	YamakasY	catphish: damn you are really a dumb pig
+2015-04-01 16:37:11	YamakasY	catphish: can you remember what you just typed ?
+2015-04-01 16:37:31	+catphish	no
+2015-04-01 16:37:32	YamakasY	at the end of the  ? you might already forgot the question
+2015-04-01 16:37:34	YamakasY	damn
+2015-04-01 16:37:36	YamakasY	you moron
+2015-04-01 16:37:49	YamakasY	will be fun with you @ the toilet
+2015-04-01 16:38:56	YamakasY	catphish: gimme all your money!
+2015-04-01 16:39:13	+catphish	what?
+2015-04-01 16:39:14	▬▬▶	slayver (~slayver@41.227.59.156) has joined ##networking
+2015-04-01 16:39:15	+catphish	where?
+2015-04-01 16:39:18	◀▬▬	AndrewMC (~Gryphon@unaffiliated/andrewmc) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:39:43	 *	YamakasY punches catphish in that face until he goes knock out and rips him
+2015-04-01 16:39:55	+catphish	i don't understand
+2015-04-01 16:40:03	YamakasY	catphish: you don't have to
+2015-04-01 16:40:13	YamakasY	don't worry, be happy like a E1ephant
+2015-04-01 16:40:24	YamakasY	and swing your slurf
+2015-04-01 16:40:46	+catphish	this will wake me up: https://www.youtube.com/watch?v=SQoA_wjmE9w
+2015-04-01 16:40:52	YamakasY	catphish: but you will never foret that I'm  sexy!
+2015-04-01 16:40:54	YamakasY	and you know it
+2015-04-01 16:40:57	◀▬▬	SaEeDIRHA (~SaEeD@91.133.149.8) has quit (Quit: Leaving)
+2015-04-01 16:41:27	YamakasY	oh yeah that one is good
+2015-04-01 16:41:48	YamakasY	doesn't line up that wel tho
+2015-04-01 16:41:52	squibby0	I deserved that I guess
+2015-04-01 16:41:54	SporkWitch	he works out
+2015-04-01 16:41:57	YamakasY	damn faggot
+2015-04-01 16:41:59	◀▬▬	Yoofie (~chatzilla@75-114-203-47.res.bhn.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 16:42:00	SporkWitch	(girl, look at that body)
+2015-04-01 16:42:02	YamakasY	SporkWitch: LOL
+2015-04-01 16:42:12	SporkWitch	IT HAD TO BE SAID lol
+2015-04-01 16:42:17	YamakasY	and she get's dizzy
+2015-04-01 16:42:30	YamakasY	and he is shaking the martini
+2015-04-01 16:42:39	◀▬▬	Simon_B (~simon@host-2-99-8-214.as13285.net) has quit (Quit: Leaving)
+2015-04-01 16:42:42	YamakasY	and they all lost him
+2015-04-01 16:42:44	▬▬▶	jamf25 (~jason.fis@c-76-100-23-87.hsd1.va.comcast.net) has joined ##networking
+2015-04-01 16:42:53	YamakasY	and there is no sun but are sunglasses
+2015-04-01 16:43:54	YamakasY	and the bartender tries to do the moonwalk
+2015-04-01 16:43:58	YamakasY	loozah
+2015-04-01 16:44:27	▬▬▶	Maxels (~Maxel@24-159-207-34.static.roch.mn.charter.com) has joined ##networking
+2015-04-01 16:44:32	▬▬▶	lucyinthesky (~lucyinthe@unaffiliated/lucyinthesky) has joined ##networking
+2015-04-01 16:44:48	▬▬▶	geomyidae_ (uid214@gateway/web/irccloud.com/x-nymurgtnlksdudyw) has joined ##networking
+2015-04-01 16:44:53	YamakasY	SporkWitch: that damn workout :P
+2015-04-01 16:45:02	SporkWitch	:P
+2015-04-01 16:45:32	SporkWitch	YamakasY: made me think of this: https://www.youtube.com/watch?v=02t6r_7VhWE
+2015-04-01 16:45:34	YamakasY	SporkWitch: everyoneis following, it must be a deceese
+2015-04-01 16:46:46	◀▬▬	total_idiot (~total_idi@90.199.102.89) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:46:46	YamakasY	SporkWitch: they just need to be boned
+2015-04-01 16:46:52	◀▬▬	Maxel (~Maxel@24-159-207-34.static.roch.mn.charter.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:47:06	YamakasY	at least the woman
+2015-04-01 16:48:12	◀▬▬	SgtMurder (~Sgtmurder@89-27-65-20.bb.dnainternet.fi) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:49:10	▬▬▶	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has joined ##networking
+2015-04-01 16:50:18	◀▬▬	usrJayRay (~usrJayRay@150.200.74.127) has quit (Quit: usrJayRay)
+2015-04-01 16:54:53	◀▬▬	NonSecwitter (~NonSecwit@50.247.185.253) has quit (Ping timeout: 252 seconds)
+2015-04-01 16:55:07	▬▬▶	NonSecwitter (~NonSecwit@50.247.185.253) has joined ##networking
+2015-04-01 16:55:13	◀▬▬	g00gz (~Adium@199.244.84.14) has quit (Quit: Leaving.)
+2015-04-01 16:55:14	▬▬▶	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has joined ##networking
+2015-04-01 16:55:44	◀▬▬	Haswell (~broaderba@unaffiliated/haswell) has quit (Quit: Saliendo)
+2015-04-01 16:55:54	▬▬▶	insidious (~ryn@insid.affix.me) has joined ##networking
+2015-04-01 16:59:03	◀▬▬	Soda (~user@109.229.230.161) has quit (Remote host closed the connection)
+2015-04-01 16:59:12	▬▬▶	Mike11 (~Mike@unaffiliated/mike11) has joined ##networking
+2015-04-01 17:03:05	--	uTiNi is now known as uTiNioFF
+2015-04-01 17:04:16	◀▬▬	t0x0sh (~tosh@t0x0sh.org) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:06:25	▬▬▶	desiph3r (~desipher@bb-va3-tsg-nat-01.blackboard.com) has joined ##networking
+2015-04-01 17:06:36	▬▬▶	Otacon22 (~Otacon22@host31-48-113-180.range31-48.btcentralplus.com) has joined ##networking
+2015-04-01 17:06:51	◀▬▬	mongo (~mongo@unaffiliated/mongo) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 17:07:09	▬▬▶	OtterCoder (~quassel@67.199.175.157) has joined ##networking
+2015-04-01 17:07:19	▬▬▶	eyvindandersen (~eyvind@80-71-131-193.u.parknet.dk) has joined ##networking
+2015-04-01 17:07:38	◀▬▬	wicope (~wicope@117.Red-88-27-63.staticIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:07:55	◀▬▬	insidious (~ryn@insid.affix.me) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2015-04-01 17:08:57	▬▬▶	godba16 (~godba16@197.251.172.6) has joined ##networking
+2015-04-01 17:09:43	godba16	HI please anyone here
+2015-04-01 17:09:56	pclover	more comshit issues
+2015-04-01 17:10:04	pclover	i'm trying higher level support
+2015-04-01 17:10:05	plasma	hi
+2015-04-01 17:10:10	pclover	as tier1 support is fuckin useless
+2015-04-01 17:10:40	▬▬▶	Shogun__ (~quassel@23-29-6-219.netptc.net) has joined ##networking
+2015-04-01 17:10:46	◀▬▬	fleshtheworld (~fleshthew@2602:306:cf0f:4da0:4030:bbf7:f8e6:a4d1) has quit (Quit: Leaving)
+2015-04-01 17:10:51	▬▬▶	niseak (~niseak@162.222.47.218) has joined ##networking
+2015-04-01 17:10:55	◀▬▬	desiph3r (~desipher@bb-va3-tsg-nat-01.blackboard.com) has quit (Ping timeout: 244 seconds)
+2015-04-01 17:11:38	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Read error: Connection reset by peer)
+2015-04-01 17:12:18	YamakasY	pclover: hehe get level 3 for that
+2015-04-01 17:12:45	zapotah	pclover: tier1 are highschoolers reading a script
+2015-04-01 17:12:57	◀▬▬	Shogun (~quassel@23-29-6-219.netptc.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 17:13:06	▬▬▶	total_idiot (~total_idi@90.199.102.89) has joined ##networking
+2015-04-01 17:13:06	▬▬▶	King_Hual (~Hual@94.26.28.68) has joined ##networking
+2015-04-01 17:13:26	◀▬▬	King_Hual (~Hual@94.26.28.68) has quit (Changing host)
+2015-04-01 17:13:26	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-04-01 17:13:40	▬▬▶	El-Aurian (6d9778db@gateway/web/freenode/ip.109.151.120.219) has joined ##networking
+2015-04-01 17:14:01	◀▬▬	niseak_ (~niseak@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:14:24	zapotah	you know
+2015-04-01 17:14:27	zapotah	with some people
+2015-04-01 17:14:29	YamakasY	zapotah: we are talking about networks here, no scriptkissied like you were in the past
+2015-04-01 17:14:57	YamakasY	and my writing sucks
+2015-04-01 17:14:58	zapotah	they are astounded when the help actually doesnt come to them and they have to ask
+2015-04-01 17:15:03	zapotah	YamakasY: drink less
+2015-04-01 17:15:09	zapotah	YamakasY: do less drugs
+2015-04-01 17:15:17	zapotah	YamakasY: dont be a cat with paws
+2015-04-01 17:15:33	▬▬▶	flipapy (~flipapy_3@unaffiliated/science-abc) has joined ##networking
+2015-04-01 17:15:49	YamakasY	zapotah: am I ?
+2015-04-01 17:15:55	zapotah	YamakasY: yes
+2015-04-01 17:16:11	YamakasY	impossible I just cut my nails
+2015-04-01 17:16:24	YamakasY	I may not buy alcohol
+2015-04-01 17:16:37	YamakasY	and I onky sell drugs to become rich from otherones problems
+2015-04-01 17:16:58	YamakasY	I'm not allowed to buy alcohol, I'm 15
+2015-04-01 17:17:06	◀▬▬	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 17:17:09	▬▬▶	oleo_ (~oleo@unaffiliated/oleo) has joined ##networking
+2015-04-01 17:17:09	--	oleo is now known as Guest2818
+2015-04-01 17:17:10	◀▬▬	Sail0r (~Sailor@2a01:4f8:190:3484:1::ffb7) has quit (Quit: Leaving...)
+2015-04-01 17:17:21	+xand	O.o
+2015-04-01 17:17:45	◀▬▬	oleo_ (~oleo@unaffiliated/oleo) has quit (Read error: Connection reset by peer)
+2015-04-01 17:17:52	YamakasY	xand: let's play ball outside
+2015-04-01 17:17:57	+xand	no thanks
+2015-04-01 17:18:09	◀▬▬	total_idiot (~total_idi@90.199.102.89) has quit (Ping timeout: 244 seconds)
+2015-04-01 17:18:36	◀▬▬	slayver (~slayver@41.227.59.156) has quit (Read error: Connection reset by peer)
+2015-04-01 17:19:11	YamakasY	xand: why not, you don't have to play with my balls, you cna bring your own :D
+2015-04-01 17:19:18	▬▬▶	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has joined ##networking
+2015-04-01 17:19:19	◀▬▬	Guest2818 (~oleo@unaffiliated/oleo) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:19:33	▬▬▶	slayver (~slayver@41.227.59.156) has joined ##networking
+2015-04-01 17:19:34	▬▬▶	oleo_ (~oleo@unaffiliated/oleo) has joined ##networking
+2015-04-01 17:19:36	◀▬▬	st34lth (~st34lth@96.88.240.57) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:19:48	--	oleo_ is now known as oleo
+2015-04-01 17:19:51	▬▬▶	SiGNAL[SJS] (~SiGNAL@108-88-102-240.lightspeed.mtryca.sbcglobal.net) has joined ##networking
+2015-04-01 17:19:56	◀▬▬	slayver (~slayver@41.227.59.156) has quit (Read error: Connection reset by peer)
+2015-04-01 17:20:04	◀▬▬	godba16 (~godba16@197.251.172.6) has quit (Ping timeout: 245 seconds)
+2015-04-01 17:20:05	--	irc: disconnected from server
+2015-04-01 17:29:27	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-04-01 17:29:27	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993~"
+2015-04-01 17:29:27	--	Topic set by xand (xand@pdpc/supporter/active/xand) on Wed, 01 Apr 2015 13:33:51
+2015-04-01 17:29:27	--	Channel ##networking: 941 nicks (1 op, 8 voices, 932 normals)
+2015-04-01 17:29:29	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-04-01 17:29:29	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-04-01 17:29:38	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-04-01 17:30:03	▬▬▶	Vexena (~kevindefr@d1F05F3EF.access.telenet.be) has joined ##networking
+2015-04-01 17:30:05	▬▬▶	Fabianius (~Fabianius@dhclient-212-35-3-200.flashcable.ch) has joined ##networking
+2015-04-01 17:30:52	YamakasY	El-Aurian: you must be from IS
+2015-04-01 17:31:02	◀▬▬	nfk|laptop (~nfk@unaffiliated/nfk) has quit (Quit: yawn)
+2015-04-01 17:31:04	YamakasY	daemonkeeper: HACK him!
+2015-04-01 17:31:57	El-Aurian	we have a student wireless internet connection which needs MAC sniffing during gateway traversal, with MAC->profile association (i.e. MAC belongs to student profile, identify protocol as HTTP, interogate HTTP for content filtering))
+2015-04-01 17:32:17	◀▬▬	gffa (~unknown@unaffiliated/gffa) has quit (Quit: sleep)
+2015-04-01 17:33:01	El-Aurian	currently we use session based authentication, but we encounter inherent problems such as session timeouts, unconvenient need to logon, etc
+2015-04-01 17:33:22	 *	catphish does not approve of such surveillance, but it sounds like you already know how to do it
+2015-04-01 17:33:46	+catphish	just check the MAC, automatically log in their IP based on it
+2015-04-01 17:34:17	pclover	zapotah, these people could probably not even tell you want an IP Address is
+2015-04-01 17:34:28	pclover	let alone a packet or any fucking basic internet terms
+2015-04-01 17:34:45	YamakasY	pclover: what is an ip address ?
+2015-04-01 17:35:04	pclover	lol
+2015-04-01 17:35:06	pclover	you know
+2015-04-01 17:35:06	▬▬▶	blape (~blape@207.55.120.20.nen.peak.org) has joined ##networking
+2015-04-01 17:35:08	El-Aurian	can we focus at the task in hand?
+2015-04-01 17:35:53	pclover	El-Aurian, what are you doing?
+2015-04-01 17:36:44	El-Aurian	my question, is how I go from the linux routing drivers to an application which accepts configuration files for authorised MAC addresses, and banned websites (with a HTTP redirect)
+2015-04-01 17:36:55	El-Aurian	hence the "format"
+2015-04-01 17:37:19	pclover	for the student internet why not use a transparent proxy for web filterting
+2015-04-01 17:37:58	pclover	or what is the setup rather
+2015-04-01 17:38:00	El-Aurian	that's exactly what i'm trying to do, except use MAC addresses for associating with the student profiles (for accounting) rather than AD credentials
+2015-04-01 17:38:25	+catphish	El-Aurian: that's a fairly complicated setup unfortunately, you will need a transparrant proxy, but also a method to link MACs with IPs to set up proxy rules
+2015-04-01 17:39:03	El-Aurian	do you know of the technologies I need to investigate?
+2015-04-01 17:39:07	pclover	different students need different rules?
+2015-04-01 17:39:14	+catphish	El-Aurian: maybe read this: http://www.cyberciti.biz/faq/howto-linux-unix-squid-mac-address-filtering/
+2015-04-01 17:39:39	El-Aurian	different students need to be identified and their activity accounted
+2015-04-01 17:39:42	pclover	El-Aurian, are these computers owned by the school or do they bring them
+2015-04-01 17:39:57	pclover	El-Aurian, what county are you in?
+2015-04-01 17:40:23	+catphish	El-Aurian: so yeah, you need a transparrant proxy, and something to link the proxy with the ARP table
+2015-04-01 17:40:29	El-Aurian	they are BYOD, it's student boarding internet access
+2015-04-01 17:40:46	El-Aurian	United Kingdom
+2015-04-01 17:40:52	pclover	you need to inform them that there internet activity will be monitored
+2015-04-01 17:41:02	pclover	or make them sign such agreement
+2015-04-01 17:41:03	◀▬▬	govg (~govg@unaffiliated/govg) has quit (Quit: leaving)
+2015-04-01 17:41:13	pclover	i'm sure there is laws regarding that
+2015-04-01 17:41:18	El-Aurian	pclover: are you in the UK?
+2015-04-01 17:41:19	◀▬▬	uZiel (~uZiel@128.107.241.187) has quit (Ping timeout: 248 seconds)
+2015-04-01 17:41:26	+xand	consent is required
+2015-04-01 17:41:32	pclover	i'm not but catphish and xand is
+2015-04-01 17:41:37	+xand	for spying on users' traffic
+2015-04-01 17:41:50	+catphish	i am, and consent is required to intercept and monitor someone's communications
+2015-04-01 17:41:59	pclover	As i thought
+2015-04-01 17:42:03	+catphish	also, i strongly disapprove of it
+2015-04-01 17:42:06	El-Aurian	which legislation?
+2015-04-01 17:42:11	+xand	RIPA
+2015-04-01 17:42:52	El-Aurian	RIPA only applies to public agencies
+2015-04-01 17:42:58	+xand	no
+2015-04-01 17:43:03	+catphish	http://www.adviceguide.org.uk/england/work_e/work_rights_at_work_e/monitoring_at_work.htm#h_secret_monitoring
+2015-04-01 17:43:08	◀▬▬	nitdega (~nitdega@2602:304:ab12:7851:dc98:c122:fa2a:294d) has quit (Ping timeout: 245 seconds)
+2015-04-01 17:43:14	YamakasY	hehe that guy of cbt nuggets is funny
+2015-04-01 17:43:41	▬▬▶	phutchins (~phutchins@99-39-102-241.lightspeed.tukrga.sbcglobal.net) has joined ##networking
+2015-04-01 17:43:41	+catphish	http://www.worksmart.org.uk/rights/am_i_being_monitored_without_my_knowledge
+2015-04-01 17:43:42	+catphish	etc
+2015-04-01 17:43:47	▬▬▶	vreo (~vreo@gateway/vpn/privateinternetaccess/vreo) has joined ##networking
+2015-04-01 17:44:02	+catphish	that said, its not hard to tell students their internet access will be monitored
+2015-04-01 17:44:15	--	Mark|Wrk is now known as Mark|Wrk|Away
+2015-04-01 17:44:22	pclover	So just create a internet usage agreement with such rules and policies
+2015-04-01 17:44:29	▬▬▶	phuzion (~phuzion@23.227.174.54) has joined ##networking
+2015-04-01 17:44:31	pclover	and they don't get access until they sign it and you're covered
+2015-04-01 17:44:32	+catphish	indeed, as most schools in the UK do
+2015-04-01 17:44:38	pclover	they do in the us as well
+2015-04-01 17:44:53	YamakasY	haha thta guy got ciscoblog.com and cisco took it down
+2015-04-01 17:45:00	YamakasY	I got 100 intel domainnames :D
+2015-04-01 17:45:08	YamakasY	they took them too :P
+2015-04-01 17:45:12	zapotah	also, using macs as identity is extremely ill-advised
+2015-04-01 17:45:15	pclover	if you don't you could face legal action if somebody finds out
+2015-04-01 17:45:20	pclover	you can change a mac easily
+2015-04-01 17:45:27	▬▬▶	Lantech (~Lantech@cpe-104-228-192-10.maine.res.rr.com) has joined ##networking
+2015-04-01 17:45:29	+catphish	whether or not its ethical, or a good idea is a different matter, but its easier to focus on the technical question :)
+2015-04-01 17:45:32	phuzion	Hi. I've got a SonicWall NSA2400 and a SonicWall TZ215 linked together using a standard site-to-site VPN. I've also got SSL VPN enabled on the NSA2400. Where would I go to see why SSL-VPN traffic isn't routing to the site-to-site VPN?
+2015-04-01 17:45:40	+xand	El-Aurian: RIPA does not only apply to public agencies
+2015-04-01 17:45:41	El-Aurian	catphish: that's video monitoring
+2015-04-01 17:46:16	pclover	at the end of the day why not just have a transparent proxy?
+2015-04-01 17:46:25	pclover	for all student internet
+2015-04-01 17:46:36	+catphish	El-Aurian: regadless, the law prevents covert survailence
+2015-04-01 17:46:45	pclover	curious why you need to log all student traffic?
+2015-04-01 17:46:48	El-Aurian	and it's specifically "secret", everyone knows they're being monitored because of the number of "unblock" requests we get
+2015-04-01 17:46:49	zapotah	^
+2015-04-01 17:46:50	+catphish	but its easy to inform people, just make sure you do
+2015-04-01 17:47:00	zapotah	El-Aurian: whats the end goal here
+2015-04-01 17:47:02	▬▬▶	uZiel (~uZiel@128.107.241.187) has joined ##networking
+2015-04-01 17:47:14	+catphish	El-Aurian: he wants to log people into a transparrant proxy by MAC
+2015-04-01 17:47:17	◀▬▬	CrypticSquared (~CrypticS_@unaffiliated/crypticsquared) has quit (Remote host closed the connection)
+2015-04-01 17:47:26	+catphish	zapotah even ^
+2015-04-01 17:47:27	zapotah	which is ill-advised
+2015-04-01 17:47:35	pclover	i don't understand the mac part
+2015-04-01 17:47:38	pclover	why it's even needed
+2015-04-01 17:47:48	+catphish	well proper 802.1X would be much saner
+2015-04-01 17:47:52	+catphish	but MAC "works"
+2015-04-01 17:48:10	pclover	it does but macs can be changed easily
+2015-04-01 17:48:13	+catphish	yes
+2015-04-01 17:48:26	pclover	depends on how smart the student is
+2015-04-01 17:48:36	+catphish	"not very"
+2015-04-01 17:48:40	+catphish	this is the UK
+2015-04-01 17:48:49	▬▬▶	govg (~govg@unaffiliated/govg) has joined ##networking
+2015-04-01 17:49:11	El-Aurian	it's very unlikely students would spoof their iPhone MAC addresses
+2015-04-01 17:49:28	zapotah	a captive portal would be a far saner solution here
+2015-04-01 17:49:35	pclover	^
+2015-04-01 17:49:54	pclover	and ap isolation
+2015-04-01 17:49:55	El-Aurian	zapotah: i'm using a captive portal, as part of a self-service system
+2015-04-01 17:50:31	zapotah	El-Aurian: you still havent answered as to what the end goal is
+2015-04-01 17:50:34	+catphish	captive portal basically = MAC based auth
+2015-04-01 17:50:42	+catphish	once you've auth'd
+2015-04-01 17:50:50	pclover	tho students could just kill wifi and they'd not have filterting
+2015-04-01 17:50:52	pclover	if they have service
+2015-04-01 17:51:02	El-Aurian	that's not my concern
+2015-04-01 17:51:33	pclover	or tether it to their byod device as well but ok
+2015-04-01 17:51:39	+catphish	which really is a sad reflection on why this is being done at all
+2015-04-01 17:52:03	pclover	i don't understand the logging part
+2015-04-01 17:52:06	pclover	but a proxy yes is fine
+2015-04-01 17:52:33	+catphish	El-Aurian: so is there something in particular you cant make work?
+2015-04-01 17:52:33	El-Aurian	it's being done because Ofsted require us to filter and account WWW activity
+2015-04-01 17:52:41	+catphish	or are you looking for a general overview?
+2015-04-01 17:52:56	+xand	glad I work in a uni, not a school... none of that nonsense!
+2015-04-01 17:53:04	+xand	we don't filter or log
+2015-04-01 17:53:19	El-Aurian	xand: which Uni?
+2015-04-01 17:53:27	pclover	i don't mind if malware is filtered
+2015-04-01 17:53:30	pclover	tho that can cause issues
+2015-04-01 17:53:56	pclover	a crude way to log would be DNS traffic
+2015-04-01 17:53:58	pclover	for www
+2015-04-01 17:54:01	pclover	tho that isn't the best way
+2015-04-01 17:54:11	zapotah	hell, we dont filter anything at the uni
+2015-04-01 17:54:22	El-Aurian	catphish: I think your MAC address filtering link is useful
+2015-04-01 17:54:23	zapotah	would be draconian and expensive as fuck
+2015-04-01 17:54:35	pclover	how many students
+2015-04-01 17:54:37	zapotah	and also impossible
+2015-04-01 17:54:41	pclover	and how long do you have to retain such logs for
+2015-04-01 17:54:43	+catphish	El-Aurian: only issue is i dont know if it will work in transparant mode
+2015-04-01 17:54:57	pclover	 transparant is required for BYOD
+2015-04-01 17:54:59	pclover	that's the problem
+2015-04-01 17:55:00	+catphish	if not, you'd need to use some extra app to map MACs to IPs and build proxy filters on the fly
+2015-04-01 17:55:17	+catphish	which is quite possible
+2015-04-01 17:55:23	pclover	well i guess it's not required
+2015-04-01 17:55:31	pclover	but adds complexity for the setup
+2015-04-01 17:55:41	pclover	catphish, not sure how pac files work for proxy setttings and DHCP
+2015-04-01 17:55:43	+catphish	El-Aurian: there is an easier, cruder way
+2015-04-01 17:55:52	◀▬▬	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2015-04-01 17:56:18	◀▬▬	j1olsen (~user@191.177.189.109.customer.cdi.no) has quit (Quit: j1olsen)
+2015-04-01 17:56:18	+catphish	El-Aurian: just use DHCP logs and assign trusted MACs to a different subnet
+2015-04-01 17:56:26	◀▬▬	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has quit (Remote host closed the connection)
+2015-04-01 17:56:27	+catphish	but thats pretty sucky
+2015-04-01 17:56:40	pclover	you could do static leases but that would be very sucky
+2015-04-01 17:56:44	El-Aurian	I assume IP is significant because you need to identify which connection to kill if the HTTP transmission is ilegal?
+2015-04-01 17:56:45	+catphish	indeed
+2015-04-01 17:56:45	pclover	and a major tech overhead
+2015-04-01 17:56:50	◀▬▬	LOMatt (~LOMatt@216.145.113.196) has quit (Read error: Connection reset by peer)
+2015-04-01 17:56:52	▬▬▶	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has joined ##networking
+2015-04-01 17:56:55	▬▬▶	LO_Matt (~LOMatt@216.145.113.196) has joined ##networking
+2015-04-01 17:57:10	+catphish	El-Aurian: the proxy will only see IP, so you need to map IP to MAC somehow
+2015-04-01 17:57:16	pclover	also there is complexies
+2015-04-01 17:57:20	pclover	when dealing with tls
+2015-04-01 17:57:25	pclover	meaning https
+2015-04-01 17:57:30	◀▬▬	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:57:33	El-Aurian	pclover, baby steps
+2015-04-01 17:57:54	pclover	alot of internet traffic is now https
+2015-04-01 17:58:01	zapotah	El-Aurian: youll find that you wont just be issued a public intermediary CA so this filtering of yours is moot
+2015-04-01 17:58:03	El-Aurian	I know, I'm aware of that consideration
+2015-04-01 17:58:09	+catphish	filtering HTTPS is near impossble without a commercial solution
+2015-04-01 17:58:13	◀▬▬	b3h3m0th (uid26288@gateway/web/irccloud.com/x-wddwvmwswamleznd) has quit (Quit: Connection closed for inactivity)
+2015-04-01 17:58:35	pclover	plus it has issues with SNI
+2015-04-01 17:58:36	pclover	afik
+2015-04-01 17:58:44	+catphish	afaik most places just implement IP blocks and make do
+2015-04-01 17:58:47	zapotah	pclover: depends on the solution
+2015-04-01 17:58:57	◀▬▬	corretico (~luis@190.241.180.58) has quit (Remote host closed the connection)
+2015-04-01 17:58:58	+catphish	pclover: actually SNI is what makes SSL filtering possible
+2015-04-01 17:59:11	pclover	ah
+2015-04-01 17:59:12	+catphish	because you can see the domain name requested in cleartext
+2015-04-01 17:59:14	◀▬▬	Corey84 (~Corey84@unaffiliated/corey84) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:59:19	zapotah	catphish: ive seen implementations with url and ip filters
+2015-04-01 17:59:31	zapotah	catphish: which rely on address-lists
+2015-04-01 17:59:39	pclover	i don't think you can rely on SNI just yet tho
+2015-04-01 17:59:40	zapotah	catphish: extremely crude, yes
+2015-04-01 17:59:42	pclover	if you are a business
+2015-04-01 17:59:50	+catphish	zapotah: very effective afaik
+2015-04-01 17:59:52	phuzion	Is this a BYOD environment or are the devices owned by the org that's going to be doing the monitoring?
+2015-04-01 18:00:01	pclover	BYOD device for a school
+2015-04-01 18:00:04	+catphish	BYOD, all kids has iphones :)
+2015-04-01 18:00:06	▬▬▶	NightTrain (~coffee@unaffiliated/ridout) has joined ##networking
+2015-04-01 18:00:17	zapotah	but it will be impossible to do it in a sane fashion
+2015-04-01 18:00:20	pclover	i don't understand why it's allowed in the first place
+2015-04-01 18:00:22	pclover	iphones that is
+2015-04-01 18:00:25	+catphish	El-Aurian: you could just buy a commercial solution :)
+2015-04-01 18:00:29	phuzion	You can't do SSL DPI on BYOD really, unfortunately.
+2015-04-01 18:00:36	pclover	what kind of school is this?
+2015-04-01 18:00:42	+catphish	phuzion: you can with SNU
+2015-04-01 18:00:42	El-Aurian	independent boarding
+2015-04-01 18:00:44	+catphish	*SNI
+2015-04-01 18:01:01	pclover	school in the uk is different than the us
+2015-04-01 18:01:01	zapotah	catphish: no matter what solution he gets he wont be able to intercept anything besides urls
+2015-04-01 18:01:05	pclover	so you'll need to explain
+2015-04-01 18:01:15	zapotah	catphish: and unencrypted content ofc
+2015-04-01 18:01:16	Lantech	anyone know anything about xencenter here?
+2015-04-01 18:01:21	Lantech	sorry, xenserver
+2015-04-01 18:01:23	phuzion	catphish: is SNI outside of the encryption in an HTTPS connection?
+2015-04-01 18:01:23	◀▬▬	nodweber (~nodweber@5.178.135.214) has quit
+2015-04-01 18:01:26	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##networking
+2015-04-01 18:01:31	zapotah	pclover: yes it is
+2015-04-01 18:01:32	zapotah	err
+2015-04-01 18:01:33	zapotah	phuzion:
+2015-04-01 18:01:37	+catphish	http://www.iboss.com/solutions/issue/web_content_filtering.html
+2015-04-01 18:01:37	◀▬▬	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:01:39	phuzion	Oh, gotcha.
+2015-04-01 18:01:52	El-Aurian	zapotah: Ofsted only require us to file URLs, so what else are you thinking I would need to intercept?
+2015-04-01 18:01:57	+catphish	phuzion: i believe so, since the server selects a cert based on the SNI domain name
+2015-04-01 18:02:08	El-Aurian	filter*
+2015-04-01 18:02:12	+catphish	El-Aurian: ofsted are likely wrong / stupid :)
+2015-04-01 18:02:14	phuzion	catphish: yeah, makes sense now
+2015-04-01 18:02:19	+catphish	El-Aurian: better to use common sense
+2015-04-01 18:02:20	zapotah	El-Aurian: well you wont get complete urls with ssl traffic
+2015-04-01 18:02:26	phuzion	Anyone got any ideas on my SonicWall question?
+2015-04-01 18:02:33	+catphish	you absolutely cannot log URLs with HTTPS
+2015-04-01 18:02:40	+catphish	it's impossible, by design
+2015-04-01 18:02:47	pclover	i've been using SophosUTM something you might want to look at
+2015-04-01 18:02:51	pclover	i'm sure others here have used that
+2015-04-01 18:02:58	+catphish	but with a commercial solution like iboss you can log domain names
+2015-04-01 18:03:06	+catphish	(and full paths for HTTP)
+2015-04-01 18:03:10	▬▬▶	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has joined ##networking
+2015-04-01 18:03:23	+catphish	this is also possible with free software but much harder
+2015-04-01 18:03:27	zapotah	phuzion: too little information for your issue
+2015-04-01 18:03:29	◀▬▬	Vexena (~kevindefr@d1F05F3EF.access.telenet.be) has quit (Quit: Leaving.)
+2015-04-01 18:03:42	zapotah	Lantech: just ask
+2015-04-01 18:03:49	phuzion	zapotah: What kind of info might I be able to get you that could help?
+2015-04-01 18:04:04	El-Aurian	catphish: whats the purpose of SNI then?
+2015-04-01 18:04:22	▬▬▶	shirish (~quassel@117.195.114.46) has joined ##networking
+2015-04-01 18:04:29	pclover	you can compare SNI to virtual hosts expect for https
+2015-04-01 18:04:30	El-Aurian	oic, just www.google.co.uk, as apposed to www.google.co.uk/search?q=
+2015-04-01 18:04:31	+catphish	El-Aurian: to allow name-based certificate selection rather than needing an IP per certificate
+2015-04-01 18:04:36	▬▬▶	HarryHallman (~joshuaeke@98.158.188.81) has joined ##networking
+2015-04-01 18:04:40	pclover	^
+2015-04-01 18:04:45	+catphish	yes
+2015-04-01 18:04:49	Lantech	I'm trying to keep xenserver from talking iSCSI over a specific nic.  Multipath storage is addiing the target to that nic and doing round robin.  the problem is that I want to only use the two 10gb nics and not that 1gb for iSCSI
+2015-04-01 18:05:13	+catphish	i feel your school is somewhat behind the curve on this
+2015-04-01 18:05:23	+catphish	unless you're replacing an existing solution
+2015-04-01 18:05:30	pclover	curious what age students
+2015-04-01 18:05:31	pclover	at the school
+2015-04-01 18:05:36	El-Aurian	catphish: yeh, 14-18
+2015-04-01 18:05:46	El-Aurian	we have a watchguard 50 user box
+2015-04-01 18:05:49	◀▬▬	shirish_ (~quassel@117.222.5.140) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:05:51	+catphish	ah ok
+2015-04-01 18:05:58	zapotah	Lantech: are the storage and 10g nics on the same vlan and subnet?
+2015-04-01 18:06:00	◀▬▬	notpara (~para@ip-90-186-45-35.web.vodafone.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:06:10	zapotah	Lantech: dont route iscsi traffic
+2015-04-01 18:06:24	zapotah	Lantech: also, set the 1gb nic on a different vlan and subnet
+2015-04-01 18:06:31	+catphish	Lantech: the iSCSI should only be accessible on the 10G LAN
+2015-04-01 18:06:33	El-Aurian	at present we have a looming ofsted inspection, and woefully slow internet because the watchguard can't handle the activity, and we're the wrong end of the financial year
+2015-04-01 18:06:42	+catphish	they shouldn't be the same subnet or VLAN
+2015-04-01 18:07:14	pclover	El-Aurian, what is your budget for this zero?
+2015-04-01 18:07:22	El-Aurian	pretty much
+2015-04-01 18:07:45	◀▬▬	Otacon22 (~Otacon22@host31-48-113-180.range31-48.btcentralplus.com) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:07:45	+catphish	El-Aurian: this is unfortunate, i oppose ofsteds position on this, but you're basically stuck with it
+2015-04-01 18:07:48	Lantech	The storage array and the servers have 10gb nics to each other.  All three (two servers) also have management NICs on a different subnet.  The iSCSI is being resolved and available on all NICs
+2015-04-01 18:08:10	+catphish	Lantech: dont make the iscsi available on the 1G network
+2015-04-01 18:08:11	+catphish	simple
+2015-04-01 18:08:13	El-Aurian	i already have a server, and I'm an experienced linux systems admin, so my hope is the construct a solution
+2015-04-01 18:08:30	Lantech	catphish if I had that choice in the array I would do that.
+2015-04-01 18:08:31	▬▬▶	chemicalvamp (689fd805@gateway/web/freenode/ip.104.159.216.5) has joined ##networking
+2015-04-01 18:08:37	El-Aurian	catphish: to be honest, SNI filtering is probably all I need to keep Ofsted happy
+2015-04-01 18:08:39	+catphish	El-Aurian: its definitely possible, but you will struggle (fail) when it comes to SSL
+2015-04-01 18:09:00	+catphish	El-Aurian: i couldnt find free software for SNI logging last i looked
+2015-04-01 18:09:01	--	zz_sidv is now known as sidv
+2015-04-01 18:09:03	◀▬▬	niseak (~niseak@162.222.47.218) has quit (Quit: Leaving...)
+2015-04-01 18:09:21	▬▬▶	Soda (~user@109.229.230.161) has joined ##networking
+2015-04-01 18:09:32	zapotah	Lantech: you havent bonded the 10g nics have you?
+2015-04-01 18:09:44	◀▬▬	adac (~adac@c703-fwngw.uibk.ac.at) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:09:47	Lantech	maybe I could do a filter on my switch to deny  iscsi traffic on that port.    I'll give that a try tomorrow.
+2015-04-01 18:09:49	zapotah	Lantech: also, are the array and the 10g nics on the same subnet
+2015-04-01 18:09:51	Lantech	zapotah no
+2015-04-01 18:10:05	+catphish	Lantech: you should be able to blacklist the IPs on the iSCSI clients
+2015-04-01 18:10:17	+catphish	so stop them connecting that way
+2015-04-01 18:10:23	Lantech	catphish exactly.  I can't find how to do that in xenserver though.
+2015-04-01 18:10:31	+catphish	hmm i see ::(
+2015-04-01 18:10:46	+catphish	cant you just manually enter the iscsi IPs to connect to
+2015-04-01 18:10:51	+catphish	and not let it discover new ones?
+2015-04-01 18:11:07	Lantech	but, the enclosure has two 10gb nics each with a /32 to two servers.    when I connect the server to it's IP, all the ISCSI luns are discovered.  both 10gb nics and the 1gb.
+2015-04-01 18:11:33	Lantech	poor mans san, without a switch.
+2015-04-01 18:11:38	+catphish	unfortunate
+2015-04-01 18:12:16	Lantech	but, my switches are juniper and have firewall filters.  that might work.
+2015-04-01 18:12:19	+catphish	id be inclined just to separate the management interfaces by VLAN and not let them talk
+2015-04-01 18:12:45	zapotah	i feel like theres a thought error in there somewhere
+2015-04-01 18:12:53	El-Aurian	catphish: do you know whether the free version of untangle includes the SNI filter? - http://wiki.untangle.com/index.php/Web_Filter#HTTPS_Options
+2015-04-01 18:12:54	+catphish	the SAN sucks though if it cant disable iscsi on its management IPs
+2015-04-01 18:13:07	Lantech	I've got a post to the forum, so we'll see about that
+2015-04-01 18:13:08	+catphish	ah i forgot untangle
+2015-04-01 18:13:22	Lantech	but I agree.  it's a lenovo EMC PX12
+2015-04-01 18:13:41	+catphish	El-Aurian: unknown, its a great free softare though, so try it, shouldnt waste too much time if it doesnt do everything you need
+2015-04-01 18:14:11	▬▬▶	notpara (~para@ip-90-186-45-35.web.vodafone.de) has joined ##networking
+2015-04-01 18:14:22	+catphish	     Process HTTPS traffic by SNI (Server Name Indication) if present.
+2015-04-01 18:14:22	+catphish	    Process HTTPS traffic by IP Address when SNI information not present.
+2015-04-01 18:14:28	+catphish	thats perfect if it works
+2015-04-01 18:14:30	▬▬▶	digilink (~weechat@unaffiliated/digilink) has joined ##networking
+2015-04-01 18:14:42	▬▬▶	Lunatrius` (~Lunatrius@77.38.103.182) has joined ##networking
+2015-04-01 18:14:47	▬▬▶	buzzykins (~0x2fab@68.235.147.153) has joined ##networking
+2015-04-01 18:14:48	+catphish	even if you have to pay for it, will be cheaper then any hardware product like the iboss i mentioned
+2015-04-01 18:14:54	El-Aurian	catphish: yeh, I saw, I just wondered about whether it was a module which is included in the free version
+2015-04-01 18:14:55	◀▬▬	Lunatrius (~Lunatrius@77.38.103.182) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:15:04	+catphish	afraid i dont know
+2015-04-01 18:15:19	▬▬▶	max-b_ (~max_b@rb2011-cory-eth.EECS.Berkeley.EDU) has joined ##networking
+2015-04-01 18:15:25	+catphish	El-Aurian: http://www.untangle.com/shop/HTTPS-Inspector
+2015-04-01 18:15:28	--	Lunatrius` is now known as Lunatrius
+2015-04-01 18:16:28	◀▬▬	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2015-04-01 18:16:34	zapotah	Lantech: so youve two 10gb interfaces on the nas
+2015-04-01 18:16:40	Lantech	right
+2015-04-01 18:16:46	▬▬▶	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has joined ##networking
+2015-04-01 18:16:48	Lantech	dedicated, one to each server
+2015-04-01 18:16:48	zapotah	Lantech: and a 10gb interface on each of the hosts
+2015-04-01 18:16:52	◀▬▬	PartNAS (6dc81a03@gateway/web/cgi-irc/kiwiirc.com/ip.109.200.26.3) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2015-04-01 18:16:56	Lantech	right
+2015-04-01 18:17:04	+catphish	if i werent so busy id write an https filter, its not *that* hard
+2015-04-01 18:17:10	zapotah	Lantech: and then those interfaces are assigned with a /30 subnet?
+2015-04-01 18:17:14	Lantech	right
+2015-04-01 18:17:17	zapotah	Lantech: different subnets
+2015-04-01 18:17:20	Lantech	right
+2015-04-01 18:17:22	--	irc: disconnected from server
+2015-04-01 18:22:43	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-04-01 18:22:43	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993~"
+2015-04-01 18:22:43	--	Topic set by xand (xand@pdpc/supporter/active/xand) on Wed, 01 Apr 2015 13:33:51
+2015-04-01 18:22:43	--	Channel ##networking: 943 nicks (1 op, 8 voices, 934 normals)
+2015-04-01 18:22:45	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-04-01 18:22:45	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-04-01 18:22:53	Lantech	zapotah http://i.imgur.com/YkU6sWD.png
+2015-04-01 18:22:55	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-04-01 18:23:29	Lantech	in order to get both servers to talk to it I have to select the * IQN
+2015-04-01 18:23:43	Lantech	the 10.1.1.220 is the 1gb interface
+2015-04-01 18:23:59	◀▬▬	Lirux (~Liran@nwcse-202.cs.huji.ac.il) has quit (Read error: Connection reset by peer)
+2015-04-01 18:24:16	zapotah	so either you need to configure the array for target masking to separate the traffic, or do acls so the host cannot connect through the other interface
+2015-04-01 18:24:26	▬▬▶	nitdega (~nitdega@2602:306:2421:bf11:dc98:c122:fa2a:294d) has joined ##networking
+2015-04-01 18:24:29	Lantech	right
+2015-04-01 18:24:47	zapotah	id need to check if xenserver allows for client-side hardconfig of the initiator interfaces
+2015-04-01 18:24:50	zapotah	propably
+2015-04-01 18:24:56	Lantech	I can do a filter and keep 3260 off that port.
+2015-04-01 18:24:58	zapotah	but its been two years since i touched xenserver
+2015-04-01 18:25:08	Lantech	I've got a post in the xen forum
+2015-04-01 18:25:16	Lantech	and one on the EMC forum.
+2015-04-01 18:25:22	Lantech	but I'll probably end up with an ACL
+2015-04-01 18:25:30	▬▬▶	Noldorin (~noldorin@unaffiliated/noldorin) has joined ##networking
+2015-04-01 18:25:56	◀▬▬	total_idiot (~total_idi@90.199.102.89) has quit (Quit: zzzzzzzzzz)
+2015-04-01 18:26:46	◀▬▬	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 18:26:57	El-Aurian	catphish: have you seen urlfilterdb in your previous research? - https://www.urlfilterdb.com/products/comparison.html
+2015-04-01 18:27:11	▬▬▶	Whiskey` (~kvirc@71-32-248-202.ptld.qwest.net) has joined ##networking
+2015-04-01 18:27:12	+catphish	nope
+2015-04-01 18:27:16	▬▬▶	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has joined ##networking
+2015-04-01 18:27:35	◀▬▬	anthony25 (~anthony25@aruhier.fr) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:28:12	▬▬▶	anthony25 (~anthony25@aruhier.fr) has joined ##networking
+2015-04-01 18:28:39	◀▬▬	CheckDavid (uid14990@gateway/web/irccloud.com/x-nfzgahbizslzctfg) has quit (Quit: Connection closed for inactivity)
+2015-04-01 18:29:03	--	Sublim3|Home is now known as Sublim3_
+2015-04-01 18:29:25	▬▬▶	goodlukas (~goodlukas@153.23.38.86.static.lrtc.lt) has joined ##networking
+2015-04-01 18:29:57	◀▬▬	shellgames (~quassel@104.236.11.204) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2015-04-01 18:30:23	El-Aurian	they don't seem to support SNI
+2015-04-01 18:31:36	◀▬▬	Nico____ (9506045a@gateway/web/freenode/ip.149.6.4.90) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:31:37	▬▬▶	shirish_ (~quassel@117.195.109.97) has joined ##networking
+2015-04-01 18:31:57	◀▬▬	shirish (~quassel@117.195.114.46) has quit (Read error: Connection reset by peer)
+2015-04-01 18:32:00	◀▬▬	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has quit (Ping timeout: 272 seconds)
+2015-04-01 18:33:59	◀▬▬	caldog20 (~caldog20@66.199.31.1) has quit
+2015-04-01 18:34:42	◀▬▬	AMomchilov (~Alexander@198-200-109-106.cpe.distributel.net) has quit (Quit: my iMac is sleepy...)
+2015-04-01 18:34:56	◀▬▬	max-b_ (~max_b@rb2011-cory-eth.EECS.Berkeley.EDU) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:35:29	▬▬▶	max-b_ (~max_b@169.53.156.243-static.reverse.softlayer.com) has joined ##networking
+2015-04-01 18:36:35	◀▬▬	catphish (~J@unaffiliated/catphish) has quit (Remote host closed the connection)
+2015-04-01 18:36:37	▬▬▶	ser_rhaegar (~ser_rhaeg@149.sub-70-194-3.myvzw.com) has joined ##networking
+2015-04-01 18:36:38	◀▬▬	Schalla (~Schalla@unaffiliated/schalla) has quit (Quit: Leaving)
+2015-04-01 18:37:50	▬▬▶	shirish (~quassel@117.195.97.55) has joined ##networking
+2015-04-01 18:38:27	◀▬▬	kotten (~kotten@h-162-0.a147.priv.bahnhof.se) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:39:04	▬▬▶	Betal (~Beta@unaffiliated/betal) has joined ##networking
+2015-04-01 18:39:59	◀▬▬	shirish_ (~quassel@117.195.109.97) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:40:55	phuzion	Ok, so looking into this SonicWall issue a bit more, I've tracked this down in the logs: "destination for 192.168.168.175 is not allowed by access control", That's the address I'm trying to get to over the SSL VPN. That address is located on the other network that's VPN'd back to the main NSA2400.
+2015-04-01 18:41:23	▬▬▶	Yoofie (~chatzilla@75-114-203-47.res.bhn.net) has joined ##networking
+2015-04-01 18:42:20	▬▬▶	pitch1 (~chatzilla@125.41.200.146.dyn.plus.net) has joined ##networking
+2015-04-01 18:42:44	zapotah	phuzion: so you dont have a firewall rule for the two vpn networks
+2015-04-01 18:42:57	◀▬▬	Batesy (~8e905a4b9@122-49-151-139.ip.adam.com.au) has quit (Ping timeout: 255 seconds)
+2015-04-01 18:43:15	phuzion	zapotah: From SSL VPN to VPN is allowed.
+2015-04-01 18:43:33	▬▬▶	_coop (~coop@a94-132-167-16.cpe.netcabo.pt) has joined ##networking
+2015-04-01 18:44:09	phuzion	zapotah: http://i.imgur.com/cFg6F1l.png Those are my SSL VPN > VPN firewall rules.
+2015-04-01 18:44:50	▬▬▶	Colin_fff (~textual@host81-156-16-11.range81-156.btcentralplus.com) has joined ##networking
+2015-04-01 18:45:15	zapotah	phuzion: better check those rules and address ranges again
+2015-04-01 18:45:37	◀▬▬	vreo (~vreo@gateway/vpn/privateinternetaccess/vreo) has quit (Quit: Gone)
+2015-04-01 18:45:56	◀▬▬	AccessGranted (~pihpah@93.84.11.146) has quit (Ping timeout: 272 seconds)
+2015-04-01 18:46:01	zapotah	phuzion: check that there isnt a rule further up that disallows it or such
+2015-04-01 18:46:06	Lantech	so, what about the other direction?
+2015-04-01 18:46:37	◀▬▬	chemicalvamp (689fd805@gateway/web/freenode/ip.104.159.216.5) has quit (Quit: Page closed)
+2015-04-01 18:46:39	zapotah	assuming its a stateful firewall those are connections allowed
+2015-04-01 18:46:52	zapotah	though with sonicwall one can never know...
+2015-04-01 18:46:53	Lantech	what's that GeoIP filter stuff.  maybe that's screwing you.
+2015-04-01 18:47:26	phuzion	That's on pretty much every single other rule we have. It doesn't do much, afaik
+2015-04-01 18:47:30	◀▬▬	donkeyKing1 (~snake@104-8-178-90.lightspeed.hstntx.sbcglobal.net) has quit (Quit: Leaving.)
+2015-04-01 18:47:33	phuzion	Here's the other direction, Lantech: http://i.imgur.com/cFg6F1l.png
+2015-04-01 18:47:38	phuzion	Er
+2015-04-01 18:47:46	phuzion	Helps if I upload the image
+2015-04-01 18:47:54	phuzion	http://i.imgur.com/T9nXZ2b.png
+2015-04-01 18:48:09	◀▬▬	ser_rhaegar (~ser_rhaeg@149.sub-70-194-3.myvzw.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 18:48:17	Lantech	pretty cut and dry
+2015-04-01 18:48:50	phuzion	As in, there's nothing terribly complicated about the rules there?
+2015-04-01 18:49:34	▬▬▶	Wolsters (~textual@82.147.251.20.generic-hostname.arrownet.dk) has joined ##networking
+2015-04-01 18:49:34	zapotah	phuzion: then test without those filters, i cannot imagine what they would do for traffic that is entirely controlled by you
+2015-04-01 18:49:40	▬▬▶	rcr (~rcr@zymeworks.com) has joined ##networking
+2015-04-01 18:50:08	zapotah	phuzion: besides that, i would imagine the source address or definition to be wrong
+2015-04-01 18:50:11	rcr	Does anyone have thoughts on this book: http://www.nostarch.com/tcpip.htm  Its 40% off today so im thinking of picking it up
+2015-04-01 18:51:41	pppingme	as soon as you get it, rip out chapter 17
+2015-04-01 18:51:55	▬▬▶	Rickmasta (~Rick@pool-74-101-29-191.nycmny.fios.verizon.net) has joined ##networking
+2015-04-01 18:52:28	rcr	maybe ill just read that chapter as a history lesson
+2015-04-01 18:52:34	pppingme	its over 10 years old, wonder if its on a fire sale because there's new editions of it out..
+2015-04-01 18:52:54	rcr	all books on the site are 40% off today
+2015-04-01 18:53:01	Lantech	written in 2006 and still included classful stuff
+2015-04-01 18:53:12	◀▬▬	slayver (~slayver@41.227.59.156) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:53:21	◀▬▬	geomyidae_ (uid214@gateway/web/irccloud.com/x-nymurgtnlksdudyw) has quit (Quit: Connection closed for inactivity)
+2015-04-01 18:53:48	pppingme	wow, even at 40% off, its about the same price as amazon..
+2015-04-01 18:54:10	 *	zapotah has a CCNA book that has frame relay portrayed as a new-ish tech
+2015-04-01 18:54:13	zapotah	:3
+2015-04-01 18:54:51	pppingme	http://www.amazon.com/TCP-Guide-Comprehensive-Illustrated-Protocols/dp/159327047X/ref=sr_1_1?ie=UTF8&qid=1427929120&sr=8-1&keywords=9781593270476
+2015-04-01 18:55:51	zapotah	aww yiss
+2015-04-01 18:55:55	zapotah	this the thing
+2015-04-01 18:56:01	zapotah	ccna study guide first edition
+2015-04-01 18:56:04	zapotah	:D
+2015-04-01 18:56:19	zapotah	hardback
+2015-04-01 18:56:31	◀▬▬	ob-sed (~obesd@unaffiliated/obesd) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:57:46	◀▬▬	pxed (~quassel@unaffiliated/pxed) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:57:56	forgotten	This is interesting amazon...  Searching for "1 year old boy", for search results related to a 1 year old. (Toys, clothes etc etc), this shows up on page 19 of the results.
+2015-04-01 18:58:00	forgotten	Never Have I Ever - The Classic Drinking Game for Adults - Great Game for a Party or Weekend Night, You Will Laugh...
+2015-04-01 18:58:06	rcr	Hmm, ok, well then I'll ask what's the accepted modern equivalent of that book then?
+2015-04-01 18:58:34	zapotah	forgotten: ++
+2015-04-01 18:58:39	YamakasY	home and bed
+2015-04-01 18:58:41	YamakasY	:)
+2015-04-01 18:58:51	zapotah	damn
+2015-04-01 18:58:55	zapotah	this is from 1998
+2015-04-01 18:58:57	zapotah	:D
+2015-04-01 18:58:59	YamakasY	haha
+2015-04-01 18:59:05	YamakasY	ah still the same, nothing changed
+2015-04-01 18:59:05	zapotah	ccna study guide first edition
+2015-04-01 18:59:16	zapotah	oh this portrays frame relay as the shiz
+2015-04-01 18:59:22	zapotah	i had forgotten i had this
+2015-04-01 18:59:31	zapotah	ive got the lab book as well
+2015-04-01 18:59:56	◀▬▬	Dus10 (~quassel@2602:306:378e:c610::3f) has quit (Remote host closed the connection)
+2015-04-01 18:59:59	YamakasY	still usable ?
+2015-04-01 19:00:02	▬▬▶	adac (~adac@chello080109174123.tirol.surfer.at) has joined ##networking
+2015-04-01 19:00:16	zapotah	YamakasY: take a guess
+2015-04-01 19:00:58	zapotah	oh yes, here, "Configuring Novell IPX"
+2015-04-01 19:01:04	zapotah	"Configuring X.25
+2015-04-01 19:01:05	zapotah	"
+2015-04-01 19:01:19	zapotah	this is the stuff
+2015-04-01 19:01:25	◀▬▬	lobhater (~dylan@unaffiliated/lobhater) has quit (Read error: Connection reset by peer)
+2015-04-01 19:04:11	forgotten	zapotah: it happens, people forget things.
+2015-04-01 19:04:37	▬▬▶	raspberrypifan (~raspberry@186.42.146.155) has joined ##networking
+2015-04-01 19:04:56	◀▬▬	shifty1 (~Adium@blackhole.brainstorminternet.net) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:06:04	◀▬▬	danguafer (uid54301@gateway/web/irccloud.com/x-gtfdhazmngwaidqs) has quit (Quit: Connection closed for inactivity)
+2015-04-01 19:06:05	◀▬▬	thumpba (~thumpba@38.104.231.214) has quit (Remote host closed the connection)
+2015-04-01 19:06:27	◀▬▬	Sprvn (~Sprvn@h-145-244.a192.priv.bahnhof.se) has quit (Ping timeout: 265 seconds)
+2015-04-01 19:06:39	▬▬▶	thumpba (~thumpba@38.104.231.214) has joined ##networking
+2015-04-01 19:08:20	zapotah	"igrp, default convergence time of 4,5 minutes"
+2015-04-01 19:08:22	◀▬▬	Trekka36 (~Trekka12@c-cbf1e355.226-2-64736c11.cust.bredbandsbolaget.se) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:09:07	zapotah	no wait, failure detection
+2015-04-01 19:09:09	▬▬▶	mot (~mot@pool-108-28-84-183.washdc.fios.verizon.net) has joined ##networking
+2015-04-01 19:11:33	▬▬▶	Yordan89 (gfdgfdgfdg@77.78.0.47) has joined ##networking
+2015-04-01 19:12:11	◀▬▬	bigbadjesus (~WAT@unaffiliated/psidrome) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:13:45	▬▬▶	st0rm (~ad0re@0x5e91e586.adsl.cybercity.dk) has joined ##networking
+2015-04-01 19:14:21	▬▬▶	ser_rhaegar (~ser_rhaeg@149.sub-70-194-3.myvzw.com) has joined ##networking
+2015-04-01 19:14:57	zapotah	who wants pristine win3.0 licenses and media?
+2015-04-01 19:18:00	◀▬▬	peter__ (~peter@206.111.121.162.ptr.us.xo.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 19:18:37	forgotten	oh oh me me
+2015-04-01 19:18:46	forgotten	lets try to make a win 3 VM!
+2015-04-01 19:19:06	◀▬▬	Wolsters (~textual@82.147.251.20.generic-hostname.arrownet.dk) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 19:19:16	▬▬▶	peter__ (~peter@206.111.121.162.ptr.us.xo.net) has joined ##networking
+2015-04-01 19:19:32	zapotah	ive got a huge box full of themm
+2015-04-01 19:19:35	zapotah	never used
+2015-04-01 19:19:46	◀▬▬	Colin_fff (~textual@host81-156-16-11.range81-156.btcentralplus.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:19:48	S_SubZero	send it to me I'll donate it to Weird Stuff
+2015-04-01 19:20:03	zapotah	S_SubZero: weird stuff?
+2015-04-01 19:20:17	S_SubZero	http://www.weirdstuff.com/
+2015-04-01 19:20:43	zapotah	"high technology" :D
+2015-04-01 19:20:53	S_SubZero	http://www.weirdstuff.com/cgi-bin/item/32030  feel it FEEL IT
+2015-04-01 19:20:54	▬▬▶	Wolsters (~textual@82.147.251.20.generic-hostname.arrownet.dk) has joined ##networking
+2015-04-01 19:21:10	◀▬▬	Wolsters (~textual@82.147.251.20.generic-hostname.arrownet.dk) has quit (Client Quit)
+2015-04-01 19:22:58	 *	zapotah feels it
+2015-04-01 19:23:09	zapotah	OH LORDE DO I FEEL IT!
+2015-04-01 19:23:10	groupers	I have IBM DOS 3.0 (somewhere around that version) in the hard, fabric covered package with docs on 5.25" floppies
+2015-04-01 19:23:14	◀▬▬	thumpba (~thumpba@38.104.231.214) has quit (Remote host closed the connection)
+2015-04-01 19:23:16	▬▬▶	thumpba_ (~thumpba@38.104.231.214) has joined ##networking
+2015-04-01 19:23:28	groupers	who wants it?
+2015-04-01 19:23:31	groupers	I don't want to throw it away
+2015-04-01 19:23:40	zapotah	haha
+2015-04-01 19:23:41	groupers	but it's just going to sit in a box collecting dust
+2015-04-01 19:23:44	S_SubZero	they had an OS/2 box for the longest time, haven't checked if it still there.  I donated an unopened 3COM XJACK cardbus card a while back
+2015-04-01 19:24:08	▬▬▶	tmager (~Thunderbi@resnet-130-64-128-213.medford.tufts.edu) has joined ##networking
+2015-04-01 19:24:17	zapotah	man, if they did pickups from finland i could give them all kinds of things
+2015-04-01 19:24:25	zapotah	10mb hubs
+2015-04-01 19:24:31	groupers	I have an unlabeled 9" floppy somewhere with no sleeve and no drive to read it in
+2015-04-01 19:24:32	zapotah	base2 hubs
+2015-04-01 19:24:39	▬▬▶	lotharn (~kvirc@dynamic-acs-24-101-38-64.zoominternet.net) has joined ##networking
+2015-04-01 19:24:47	groupers	just keep it around to show people
+2015-04-01 19:25:00	groupers	any takers?
+2015-04-01 19:25:04	zapotah	hehe
+2015-04-01 19:25:19	groupers	I don't know where it came from
+2015-04-01 19:25:21	zapotah	we just donated some things to the technical museum
+2015-04-01 19:25:39	zapotah	some voltage generators and whatnot from the fifties or so
+2015-04-01 19:26:03	◀▬▬	adac (~adac@chello080109174123.tirol.surfer.at) has quit (Remote host closed the connection)
+2015-04-01 19:27:19	◀▬▬	lotharn|2 (~kvirc@dynamic-acs-24-101-38-64.zoominternet.net) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:27:26	▬▬▶	poulsen (~none@209.75.249.5.rev.vodafone.pt) has joined ##networking
+2015-04-01 19:27:35	 *	zapotah goes and watches arnolds j-commercials
+2015-04-01 19:27:40	zapotah	PUIPUI
+2015-04-01 19:28:25	◀▬▬	travnewmatic (~travnewma@corp.external.dfw02.800hosting.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 19:28:25	groupers	I have some 30-pin RAM and 8088/8086 laying around - I'm no where near any place that would take it AFAIK
+2015-04-01 19:28:30	▬▬▶	Dumle29 (~quassel@dns5.snuletek.org) has joined ##networking
+2015-04-01 19:28:45	◀▬▬	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has quit (Remote host closed the connection)
+2015-04-01 19:28:50	zapotah	https://www.youtube.com/watch?v=jcfI0gf9oDc
+2015-04-01 19:29:31	Dumle29	Hey there. I'm just a common dude who knows how to log in to my routher. How concerned should I be with port forwarding and such?
+2015-04-01 19:29:38	◀▬▬	gorelative (~gorelativ@141.sub-70-209-70.myvzw.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 19:29:47	◀▬▬	FLHerne (~flh@unaffiliated/flherne) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:30:29	S_SubZero	do you have a need for port forwarding?
+2015-04-01 19:31:03	Dumle29	I had back when I opened them (back then I didn't know of port triggering) and i don't remember what they were opened for. (I'm looking in to that now)
+2015-04-01 19:31:18	zapotah	Dumle29: it causes erectile dysfunction and kidney failure
+2015-04-01 19:31:29	zapotah	Dumle29: so youre right to be concerned
+2015-04-01 19:31:42	▬▬▶	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has joined ##networking
+2015-04-01 19:31:44	--	irc: disconnected from server
+2015-04-01 19:32:08	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##networking
+2015-04-01 19:32:08	--	Topic for ##networking is "Computer Networking | If you have a question, just ask it! | Please don't paste - http://pastebin.com/ | M = mega = (10^6). m = milli = (10^-3). Mi = mebi = (2^20). B = bytes. b = bits. | Vendor Help = #$vendor | pastebin iptables-save | Why aren't you using IPv6 yet? | IP address classes died in 1993~"
+2015-04-01 19:32:08	--	Topic set by xand (xand@pdpc/supporter/active/xand) on Wed, 01 Apr 2015 13:33:52
+2015-04-01 19:32:08	--	Channel ##networking: 931 nicks (1 op, 7 voices, 923 normals)
+2015-04-01 19:32:10	--	PvNotice(ChanServ): Introductory text: "Computer Networks" by Andrew Tanenbaum. If asking for help, please fully specify the context of the environment.
+2015-04-01 19:32:10	--	URL for ##networking: http://intercom.nanoSouffle.net/networking
+2015-04-01 19:32:19	--	Channel created on Sun, 26 Nov 2006 01:42:47
+2015-04-01 19:34:41	Dumle29	Why do I have port 1023 forwarded...
+2015-04-01 19:34:59	Dumle29	to port 80 internal... -_-
+2015-04-01 19:35:16	groupers	Dumle29, you didn't label them?
+2015-04-01 19:35:27	groupers	port 80 is HTTP
+2015-04-01 19:35:33	◀▬▬	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has quit
+2015-04-01 19:35:38	Dumle29	I can't. It's just a cisco modem/routher from out ISP
+2015-04-01 19:35:54	Dumle29	And ISP's in Denmark thankfully aren't satan
+2015-04-01 19:36:00	▬▬▶	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has joined ##networking
+2015-04-01 19:36:19	Dumle29	yeah Seems I ran a server once on an IP. Doesn't seem to be in use currently though
+2015-04-01 19:37:00	◀▬▬	qg_ (~qg@c-73-43-119-1.hsd1.ga.comcast.net) has quit (Client Quit)
+2015-04-01 19:37:23	▬▬▶	qg_ (~qg_@c-73-43-119-1.hsd1.ga.comcast.net) has joined ##networking
+2015-04-01 19:40:34	◀▬▬	BOKALDO (~BOKALDO@87.110.77.17) has quit (Quit: Leaving)
+2015-04-01 19:41:42	▬▬▶	flipapy (~flipapy_3@unaffiliated/science-abc) has joined ##networking
+2015-04-01 19:42:08	◀▬▬	ser_rhaegar (~ser_rhaeg@149.sub-70-194-3.myvzw.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:43:40	◀▬▬	qg_ (~qg_@c-73-43-119-1.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2015-04-01 19:43:56	▬▬▶	CrypticSquared (~CrypticS_@unaffiliated/crypticsquared) has joined ##networking
+2015-04-01 19:46:04	◀▬▬	MatthewsFace (~matthewsf@4.31.98.194) has quit (Remote host closed the connection)
+2015-04-01 19:49:07	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:50:10	◀▬▬	smccully (~smccully@c-66-176-130-2.hsd1.fl.comcast.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:50:58	▬▬▶	Sprvn (~Sprvn@h-145-244.a192.priv.bahnhof.se) has joined ##networking
+2015-04-01 19:51:13	Phtes	Hi, what would you guys consider to be high load for a server running on 4 vCPU's?
+2015-04-01 19:51:34	◀▬▬	Lancien (~devian@2a01:e35:2efa:a590:dad3:85ff:fe2b:6204) has quit (Quit: Toute Chose Sur Terre a Une Fin)
+2015-04-01 19:51:46	◀▬▬	tmager (~Thunderbi@resnet-130-64-128-213.medford.tufts.edu) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:52:12	S_SubZero	72,000%
+2015-04-01 19:52:17	Phtes	:(
+2015-04-01 19:52:25	S_SubZero	admit it, that would be high
+2015-04-01 19:52:29	Phtes	yes it would
+2015-04-01 19:52:30	Phtes	lol
+2015-04-01 19:52:30	coppercore	ITS OVER 9000
+2015-04-01 19:52:39	coppercore	Phtes: what's the server doing?
+2015-04-01 19:52:48	Phtes	hosting a high traffic website
+2015-04-01 19:53:04	nemith	highest load would be 1005
+2015-04-01 19:53:06	nemith	100%
+2015-04-01 19:53:08	coppercore	what's the load average?
+2015-04-01 19:53:21	Phtes	past few months average is around .6 - .7
+2015-04-01 19:53:26	Phtes	4GB RAM, 4 vCPU
+2015-04-01 19:53:40	nemith	thats nothing
+2015-04-01 19:53:41	coppercore	Phtes: eh, it's fine then, .7 means that barley any one cpu is being used 100%
+2015-04-01 19:53:54	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Remote host closed the connection)
+2015-04-01 19:53:54	coppercore	load average takes the % of all cores and averages it
+2015-04-01 19:53:57	Phtes	so max woudl be 4.0 correct?
+2015-04-01 19:54:00	coppercore	yes
+2015-04-01 19:54:02	Phtes	ah ok
+2015-04-01 19:54:03	Phtes	:)
+2015-04-01 19:54:04	Phtes	sweet
+2015-04-01 19:54:06	nemith	why 4 vCPU?
+2015-04-01 19:54:19	coppercore	i'd worry more about disk IO unless if it's caching really well
+2015-04-01 19:54:21	Phtes	theres periods of intense traffic
+2015-04-01 19:54:38	Phtes	using rackspace GP server so dont relaly control the vCPu amount
+2015-04-01 19:54:40	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined ##networking
+2015-04-01 19:54:42	Phtes	really*
+2015-04-01 19:54:49	nemith	so more virtual cpus doesn't nessisarily mean more performance
+2015-04-01 19:54:54	nemith	ah
+2015-04-01 19:54:56	nemith	ok
+2015-04-01 19:56:14	Phtes	i shall look into the disk IO
+2015-04-01 19:56:14	◀▬▬	phutchins (~phutchins@99-39-102-241.lightspeed.tukrga.sbcglobal.net) has quit (Ping timeout: 265 seconds)
+2015-04-01 19:56:44	▬▬▶	AndrewMC (~Gryphon@unaffiliated/andrewmc) has joined ##networking
+2015-04-01 19:57:24	▬▬▶	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has joined ##networking
+2015-04-01 19:58:54	◀▬▬	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Read error: Connection reset by peer)
+2015-04-01 19:59:14	▬▬▶	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined ##networking
+2015-04-01 20:00:17	◀▬▬	Betal (~Beta@unaffiliated/betal) has quit (Remote host closed the connection)
+2015-04-01 20:00:59	◀▬▬	rcr (~rcr@zymeworks.com) has quit (Remote host closed the connection)
+2015-04-01 20:01:46	◀▬▬	poulsen (~none@209.75.249.5.rev.vodafone.pt) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:01:57	◀▬▬	steve_seagulls (~steve_sea@dhcp-146-6-125-186.its.utexas.edu) has quit (Ping timeout: 244 seconds)
+2015-04-01 20:02:36	pclover	https://tools.ietf.org/html/rfc7511
+2015-04-01 20:02:45	◀▬▬	_X_C_V_B_ (~XCVB@dur-dhcp-1-240.dsl.airstreamcomm.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 20:04:14	pclover	Scenic Routing for IPv6^
+2015-04-01 20:04:30	zapotah	hahaa :D
+2015-04-01 20:05:02	pclover	"in the spirit of "Green
+2015-04-01 20:05:02	pclover	   IT", whereby packets will be routed to get as much fresh-air time as
+2015-04-01 20:05:02	pclover	   possible."
+2015-04-01 20:05:08	coppercore	lololol
+2015-04-01 20:05:09	▬▬▶	seb112233 (~seb112233@ipb2193698.dynamic.kabel-deutschland.de) has joined ##networking
+2015-04-01 20:05:25	SporkWitch	pclover: that's what you get if you don't pay for the priority lane in the US, right? :P
+2015-04-01 20:05:45	zapotah	i especially like the SRO AA bits
+2015-04-01 20:06:40	pclover	lmao
+2015-04-01 20:07:09	pclover	"   The author wishes to thank all those poor friends who were kindly
+2015-04-01 20:07:09	pclover	   forced to read this document and that provided some nifty comments"
+2015-04-01 20:09:30	◀▬▬	flipapy (~flipapy_3@unaffiliated/science-abc) has quit (Quit: Leaving)
+2015-04-01 20:10:41	◀▬▬	mot (~mot@pool-108-28-84-183.washdc.fios.verizon.net) has quit (Remote host closed the connection)
+2015-04-01 20:12:48	◀▬▬	thumpba_ (~thumpba@38.104.231.214) has quit (Ping timeout: 248 seconds)
+2015-04-01 20:15:37	◀▬▬	dasher00 (~dasher00@244.7.115.87.dyn.plus.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 20:16:07	▬▬▶	pereba (~pereba@unaffiliated/pereba) has joined ##networking
+2015-04-01 20:17:18	◀▬▬	Lantech (~Lantech@cpe-104-228-192-10.maine.res.rr.com) has quit (Quit: Leaving)
+2015-04-01 20:17:47	◀▬▬	ghostpl_ (~ghostpl@c203-85.icpnet.pl) has quit (Remote host closed the connection)
+2015-04-01 20:20:36	--	irc: disconnected from server

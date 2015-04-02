@@ -1,0 +1,68 @@
+2015-03-31 18:09:18	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #cplusplus.com
+2015-03-31 18:09:18	--	Topic for #cplusplus.com is "Welcome to the IRC channel of cplusplus.com. We're all mad here. | Pastebinned conversations should be unlisted or private. | Minecraft: minecraft.dtscode.io (ask TheRabbitologist for whitelisting) | Teamspeak: http://ts3.dtscode.io | We are now qualified to give haphazard relationship advice"
+2015-03-31 18:09:18	--	Topic set by TheRabbitologist on Mon, 30 Mar 2015 22:26:08
+2015-03-31 18:09:18	--	Channel #cplusplus.com: 23 nicks (0 ops, 3 voices, 20 normals)
+2015-03-31 18:09:23	--	Channel created on Thu, 20 Nov 2014 16:05:04
+2015-03-31 18:11:53	--	irc: disconnected from server
+2015-03-31 18:12:11	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #cplusplus.com
+2015-03-31 18:12:11	--	Topic for #cplusplus.com is "Welcome to the IRC channel of cplusplus.com. We're all mad here. | Pastebinned conversations should be unlisted or private. | Minecraft: minecraft.dtscode.io (ask TheRabbitologist for whitelisting) | Teamspeak: http://ts3.dtscode.io | We are now qualified to give haphazard relationship advice"
+2015-03-31 18:12:11	--	Topic set by TheRabbitologist on Mon, 30 Mar 2015 22:26:08
+2015-03-31 18:12:11	--	Channel #cplusplus.com: 23 nicks (0 ops, 3 voices, 20 normals)
+2015-03-31 18:12:15	--	Channel created on Thu, 20 Nov 2014 16:05:04
+2015-03-31 18:16:03	ResidentBiscuit	Oh hey, Daredevil season 1 releases in April
+2015-03-31 18:17:50	dtscode	minecraft anyone?
+2015-03-31 18:17:54	ResidentBiscuit	http://arstechnica.com/tech-policy/2015/03/teens-hit-with-child-porn-charges-after-tweeting-their-group-sex-video/
+2015-03-31 18:17:55	+usandbots	[ Teens hit with child porn charges after tweeting their group-sex video | Ars Technica ] 
+2015-03-31 18:17:55	ResidentBiscuit	Smart
+2015-03-31 18:28:19	◀▬▬	ResidentBiscuit (~ResidentB@unaffiliated/residentbiscuit) has quit (Ping timeout: 250 seconds)
+2015-03-31 18:34:33	usandfriends	dtscode: I'll be on MC hopefully this evening
+2015-03-31 18:34:44	usandfriends	Maybe 6-7PM
+2015-03-31 18:35:10	dtscode	alright
+2015-03-31 18:35:12	dtscode	school?
+2015-03-31 18:35:20	usandfriends	Facebook
+2015-03-31 18:35:29	usandfriends	I get home at 5:30
+2015-03-31 18:35:31	usandfriends	PM*
+2015-03-31 18:35:55	dtscode	nice
+2015-03-31 18:44:15	--	irc: disconnected from server
+2015-03-31 23:15:58	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #cplusplus.com
+2015-03-31 23:15:58	--	Topic for #cplusplus.com is "Welcome to the IRC channel of cplusplus.com. We're all mad here. | Pastebinned conversations should be unlisted or private. | Minecraft: minecraft.dtscode.io (ask TheRabbitologist for whitelisting) | Teamspeak: http://ts3.dtscode.io | We are now qualified to give haphazard relationship advice"
+2015-03-31 23:15:58	--	Topic set by TheRabbitologist on Mon, 30 Mar 2015 22:26:08
+2015-03-31 23:15:58	--	Channel #cplusplus.com: 26 nicks (0 ops, 3 voices, 23 normals)
+2015-03-31 23:15:58	--	Notice(barjavel.freenode.net): [freenode-info] if you're at a conference and other people are having trouble connecting, please mention it to staff: http://freenode.net/faq.shtml#gettinghelp
+2015-03-31 23:16:02	--	Channel created on Thu, 20 Nov 2014 16:05:04
+2015-03-31 23:16:38	Joy	ok so when i do the same thing for my sortGPA function i get function defintion not allowed here
+2015-03-31 23:17:17	Joy	and i used string*, double* in the defeintion's paramaters.
+2015-03-31 23:17:49	TheRabbitologist	You're missing something after obtainNamesAndGPAs.
+2015-03-31 23:18:29	Joy	in my paramaters for the function or when I'm calling them?
+2015-03-31 23:18:41	TheRabbitologist	Okay, actually, I'll make this easy. You forgot a }.
+2015-03-31 23:19:02	--	irc: disconnected from server
+2015-03-31 23:19:21	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #cplusplus.com
+2015-03-31 23:19:21	--	Topic for #cplusplus.com is "Welcome to the IRC channel of cplusplus.com. We're all mad here. | Pastebinned conversations should be unlisted or private. | Minecraft: minecraft.dtscode.io (ask TheRabbitologist for whitelisting) | Teamspeak: http://ts3.dtscode.io | We are now qualified to give haphazard relationship advice"
+2015-03-31 23:19:21	--	Topic set by TheRabbitologist on Mon, 30 Mar 2015 22:26:08
+2015-03-31 23:19:21	--	Channel #cplusplus.com: 26 nicks (0 ops, 3 voices, 23 normals)
+2015-03-31 23:19:25	--	Channel created on Thu, 20 Nov 2014 16:05:04
+2015-03-31 23:19:33	TheRabbitologist	Hello hapislacker.
+2015-03-31 23:19:57	hapislacker	I am setting my weechat am sory for the logging logout
+2015-03-31 23:20:19	TheRabbitologist	That's alright.
+2015-03-31 23:21:42	Joy	I'm unsure as to how to utilize your vector selection sorting for arrays.
+2015-03-31 23:22:25	Joy	I've tried using examples online before but they all use int and when i try to use them for doubles they break, even if I use double for the variables.
+2015-03-31 23:23:15	--	irc: disconnected from server
+2015-03-31 23:23:34	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #cplusplus.com
+2015-03-31 23:23:34	--	Topic for #cplusplus.com is "Welcome to the IRC channel of cplusplus.com. We're all mad here. | Pastebinned conversations should be unlisted or private. | Minecraft: minecraft.dtscode.io (ask TheRabbitologist for whitelisting) | Teamspeak: http://ts3.dtscode.io | We are now qualified to give haphazard relationship advice"
+2015-03-31 23:23:34	--	Topic set by TheRabbitologist on Mon, 30 Mar 2015 22:26:08
+2015-03-31 23:23:34	--	Channel #cplusplus.com: 26 nicks (0 ops, 3 voices, 23 normals)
+2015-03-31 23:23:34	--	Notice(barjavel.freenode.net): [freenode-info] if you're at a conference and other people are having trouble connecting, please mention it to staff: http://freenode.net/faq.shtml#gettinghelp
+2015-03-31 23:23:38	--	Channel created on Thu, 20 Nov 2014 16:05:04
+2015-03-31 23:23:56	TheRabbitologist	Do you know how to implement a selection sort in general?
+2015-03-31 23:24:28	Joy	I understand it algathrimicly but not implementing it in general in C++
+2015-03-31 23:24:54	Joy	Lemme take a shot, and I'll post code :)
+2015-03-31 23:25:01	TheRabbitologist	That's the spirit. :)
+2015-03-31 23:25:42	--	irc: disconnected from server
+2015-04-01 15:18:53	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined #cplusplus.com
+2015-04-01 15:18:53	--	Topic for #cplusplus.com is "Welcome to the IRC channel of cplusplus.com. We're all mad here. | Pastebinned conversations should be unlisted or private. | Minecraft: minecraft.dtscode.io (ask TheRabbitologist for whitelisting) | Teamspeak: http://ts3.dtscode.io | We are now qualified to give haphazard relationship advice"
+2015-04-01 15:18:53	--	Topic set by TheRabbitologist on Mon, 30 Mar 2015 22:26:08
+2015-04-01 15:18:53	--	Channel #cplusplus.com: 21 nicks (0 ops, 3 voices, 18 normals)
+2015-04-01 15:18:55	--	Channel created on Thu, 20 Nov 2014 16:05:04
+2015-04-01 15:19:18	n0vacane	should have registered d0d0
+2015-04-01 15:19:22	n0vacane	someone else did yesterday
+2015-04-01 15:19:26	n0vacane	blarg

@@ -1,0 +1,619 @@
+2015-03-31 23:23:34	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c
+2015-03-31 23:23:34	--	Topic for ##c is "The C Programming Language || C11 is the current C Standard || PASTE (>3 lines) here: http://ideone.com/ || HOME page: http://www.iso-9899.info/ || BOOKS here: http://www.iso-9899.info/wiki/Books || Test your C knowledge in #cjeopardy!"
+2015-03-31 23:23:34	--	Topic set by pragma- on Sat, 31 Jan 2015 00:34:20
+2015-03-31 23:23:34	--	Channel ##c: 620 nicks (1 op, 0 voices, 619 normals)
+2015-03-31 23:23:36	--	URL for ##c: http://www.iso-9899.info/
+2015-03-31 23:23:36	--	Channel created on Sun, 26 Nov 2006 01:42:39
+2015-03-31 23:23:36	▬▬▶	dj_pi (~dj@c-107-5-228-80.hsd1.mi.comcast.net) has joined ##c
+2015-03-31 23:25:42	--	irc: disconnected from server
+2015-04-01 15:20:08	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c
+2015-04-01 15:20:08	--	Topic for ##c is "The C Programming Language || C11 is the current C Standard || PASTE (>3 lines) here: http://ideone.com/ || HOME page: http://www.iso-9899.info/ || BOOKS here: http://www.iso-9899.info/wiki/Books || Test your C knowledge in #cjeopardy!"
+2015-04-01 15:20:08	--	Topic set by pragma- on Sat, 31 Jan 2015 00:34:20
+2015-04-01 15:20:08	--	Channel ##c: 646 nicks (1 op, 0 voices, 645 normals)
+2015-04-01 15:20:08	--	URL for ##c: http://www.iso-9899.info/
+2015-04-01 15:20:10	--	Channel created on Sun, 26 Nov 2006 01:42:39
+2015-04-01 15:20:25	◀▬▬	JethroTux (~giuseppe@unaffiliated/jethrotux) has quit (Quit: brb)
+2015-04-01 15:20:51	▬▬▶	Thesaurus (~Thesaurus@cpe-68-173-40-10.nyc.res.rr.com) has joined ##c
+2015-04-01 15:21:04	◀▬▬	Nizumzen (~Nizumzen@cpc1-reig5-2-0-cust251.6-3.cable.virginm.net) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2015-04-01 15:24:46	◀▬▬	FreezingCold (~FreezingC@135.0.41.14) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:27:26	▬▬▶	posix (~pah@bl5-10-66.dsl.telepac.pt) has joined ##c
+2015-04-01 15:28:48	▬▬▶	aslant (~aslant@feur003.pndsl.co.uk) has joined ##c
+2015-04-01 15:30:19	▬▬▶	Agiofws (~agiofws@ppp-2-87-223-65.home.otenet.gr) has joined ##c
+2015-04-01 15:30:43	◀▬▬	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2015-04-01 15:31:38	◀▬▬	Fiji (Sharoa@1x-vl938-72-19-74-225.wireless.umass.edu) has quit (Ping timeout: 252 seconds)
+2015-04-01 15:31:56	Agiofws	can anyone tell me why does my client connect me, to c unregistered instead of this channel my account is registered...
+2015-04-01 15:32:10	fstd	Agiofws: because you  join before you authenticate
+2015-04-01 15:33:18	Agiofws	is it a client problem? can i set it to delay ? it doesn't happen with other channels
+2015-04-01 15:33:27	ToApolytoXaos	cousteau: what the...both -e and -E produce the same output; -E is *supposed* to disable interpretation of backslash escapes
+2015-04-01 15:35:07	cousteau	ToApolytoXaos, the program receives no backslashes when it gets the script name, only the actual processed argument, which is ./*
+2015-04-01 15:35:08	▬▬▶	TuxBrother (~TuxBrothe@ip565f9a1c.direct-adsl.nl) has joined ##c
+2015-04-01 15:35:14	◀▬▬	TuxBrother (~TuxBrothe@ip565f9a1c.direct-adsl.nl) has quit (Max SendQ exceeded)
+2015-04-01 15:35:29	cousteau	./\* is not ',/\*'
+2015-04-01 15:35:33	▬▬▶	sublimate (~jack@unaffiliated/auv5) has joined ##c
+2015-04-01 15:35:38	cousteau	er, './\*'
+2015-04-01 15:35:54	tsumetai`	Agiofws: Probably. Probably. Ok.
+2015-04-01 15:36:00	▬▬▶	TuxBrother (~TuxBrothe@ip565f9a1c.direct-adsl.nl) has joined ##c
+2015-04-01 15:36:24	◀▬▬	massivebits (~~@unaffiliated/chalk46) has quit (Quit: return 0;)
+2015-04-01 15:37:29	▬▬▶	greenbagels (~gb@cpe-65-25-124-183.neo.res.rr.com) has joined ##c
+2015-04-01 15:38:23	◀▬▬	Cabanossi (~Cabanossi@p5089718E.dip0.t-ipconnect.de) has quit (Quit: Quit!)
+2015-04-01 15:38:29	▬▬▶	hyphenated (~hyphenate@103.26.17.55) has joined ##c
+2015-04-01 15:38:45	▬▬▶	Cabanossi (~Cabanossi@p5089718E.dip0.t-ipconnect.de) has joined ##c
+2015-04-01 15:39:18	◀▬▬	jazzzu (~jazzzu@D97B7B1C.cm-3-4b.dynamic.ziggo.nl) has quit (Read error: Connection reset by peer)
+2015-04-01 15:42:40	◀▬▬	Agiofws (~agiofws@ppp-2-87-223-65.home.otenet.gr) has quit (Quit: Leaving)
+2015-04-01 15:46:21	▬▬▶	Agiofws (~agiofws@ppp-2-87-223-65.home.otenet.gr) has joined ##c
+2015-04-01 15:49:28	◀▬▬	casoalb (~aC@host54-55-dynamic.49-79-r.retail.telecomitalia.it) has left ##c ("Sto andando via")
+2015-04-01 15:49:41	◀▬▬	Programmer_ (~khaotic@unaffiliated/khaotic) has quit (Ping timeout: 255 seconds)
+2015-04-01 15:49:43	◀▬▬	hyphenated (~hyphenate@103.26.17.55) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:50:26	▬▬▶	d3m1g0d- (~Thunderbi@unaffiliated/d3m1g0d-) has joined ##c
+2015-04-01 15:50:46	▬▬▶	hyphenated (~hyphenate@103.26.17.55) has joined ##c
+2015-04-01 15:50:47	◀▬▬	Agiofws (~agiofws@ppp-2-87-223-65.home.otenet.gr) has quit (Quit: Leaving)
+2015-04-01 15:52:24	◀▬▬	m0shbear (~011899988@servbox.moshbear.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:52:47	◀▬▬	scai (~scai@pD9EA667A.dip0.t-ipconnect.de) has left ##c ("[IRSSI]")
+2015-04-01 15:53:06	◀▬▬	aslant (~aslant@feur003.pndsl.co.uk) has quit (Ping timeout: 265 seconds)
+2015-04-01 15:53:12	◀▬▬	Judge_Dredd (~Judge_Dre@176.193.118.179) has quit (Remote host closed the connection)
+2015-04-01 15:53:26	mischief	fucking systemd.
+2015-04-01 15:53:39	mischief	,cc { printf("%d\n", HOST_NAME_MAX); }
+2015-04-01 15:53:40	@candide	mischief: 64
+2015-04-01 15:53:46	mischief	u wot mate
+2015-04-01 15:53:52	▬▬▶	Agiofws (~agiofws@ppp-2-87-223-65.home.otenet.gr) has joined ##c
+2015-04-01 15:54:00	Agiofws	cool solved that
+2015-04-01 15:54:05	whilhelm	u w8 m8
+2015-04-01 16:00:45	▬▬▶	chewbranca (~chewbranc@couchdb/committer/chewbranca) has joined ##c
+2015-04-01 16:02:22	◀▬▬	ollehar1 (~Thunderbi@x5ce264da.dyn.telefonica.de) has quit (Quit: ollehar1)
+2015-04-01 16:03:26	◀▬▬	cyber37 (~mathieu@53.134.147.77.rev.sfr.net) has quit (Quit: Lost terminal)
+2015-04-01 16:03:41	◀▬▬	forgottenone (~forgotten@151.250.163.197) has quit (Quit: Konversation terminated!)
+2015-04-01 16:06:47	◀▬▬	Jackneill (~Jackneill@unaffiliated/jackneill) has quit (Remote host closed the connection)
+2015-04-01 16:08:41	◀▬▬	unixpro1970 (~unixpro19@unaffiliated/unixpro1970) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:10:06	▬▬▶	unixpro1970 (~unixpro19@unaffiliated/unixpro1970) has joined ##c
+2015-04-01 16:16:35	◀▬▬	freestyl3r (~free@ppp005055046178.access.hol.gr) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 16:17:20	▬▬▶	Fiji (Sharoa@1x-vl938-72-19-74-11.wireless.umass.edu) has joined ##c
+2015-04-01 16:18:11	◀▬▬	Fiji (Sharoa@1x-vl938-72-19-74-11.wireless.umass.edu) has quit (Read error: Connection reset by peer)
+2015-04-01 16:18:14	▬▬▶	JotaK (~cZ@unaffiliated/jotak) has joined ##c
+2015-04-01 16:19:07	◀▬▬	yeticry (~yeticry@114.96.140.91) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:19:49	◀▬▬	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has quit (Read error: Connection reset by peer)
+2015-04-01 16:20:15	▬▬▶	yeticry (~yeticry@114.96.140.91) has joined ##c
+2015-04-01 16:20:17	▬▬▶	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has joined ##c
+2015-04-01 16:20:21	▬▬▶	GeneralAltoids (~GeneralAl@cpe-104-229-217-32.twcny.res.rr.com) has joined ##c
+2015-04-01 16:25:02	t-mart_	how can i force a situation where send(sock_fd, buf, len, flags) doesn't send all of len bytes of buf?
+2015-04-01 16:25:34	◀▬▬	FernandoBasso (~FernandoB@177.134.34.220) has quit (Quit: Leaving)
+2015-04-01 16:25:47	cousteau	maybe ##posix has an answer
+2015-04-01 16:27:20	t-mart_	alright, ill try. thanks
+2015-04-01 16:27:55	◀▬▬	xcombelle (~xcombelle@AToulouse-657-1-1064-149.w90-50.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2015-04-01 16:30:54	◀▬▬	tharugrim (~tharugrim@unaffiliated/tharugrim) has quit (Ping timeout: 248 seconds)
+2015-04-01 16:30:58	▬▬▶	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has joined ##c
+2015-04-01 16:31:10	▬▬▶	m0shbear (~011899988@servbox.moshbear.net) has joined ##c
+2015-04-01 16:31:18	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##c
+2015-04-01 16:33:43	heftig	t-mart_: activate O_NONBLOCK and just keep sending, I guess. when the queue is full you may get a partial write
+2015-04-01 16:34:27	t-mart_	thanks heftig
+2015-04-01 16:38:43	◀▬▬	`^_^v (~nycs@gw.hq.meetup.com) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:39:59	LeoNerd	t-mart_: You'll have to be writing more than PIPEBUF
+2015-04-01 16:40:15	LeoNerd	POSIX requires that all writes of no more than PIPEBUF writes happen atomically
+2015-04-01 16:40:58	◀▬▬	netj (~netj@naru.stanford.edu) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:41:22	▬▬▶	netj (~netj@128.12.163.109) has joined ##c
+2015-04-01 16:42:42	◀▬▬	foreignFunction (~ai@ip-4761.sunline.net.ua) has quit (Quit: Leaving.)
+2015-04-01 16:45:41	◀▬▬	]3n19m4[ (~]3n19m4@77.227.254.52) has quit (Ping timeout: 256 seconds)
+2015-04-01 16:46:02	▬▬▶	maktm (~maktm@197.156.95.77) has joined ##c
+2015-04-01 16:46:13	maktm	is it possible to create sections at runtime?
+2015-04-01 16:46:51	cousteau	I don't think so, but maybe ask #gcc
+2015-04-01 16:48:07	◀▬▬	radixo (~radixo@177.133.183.185) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:48:56	▬▬▶	maxxe (~maxxe@unaffiliated/maxxe) has joined ##c
+2015-04-01 16:49:56	◀▬▬	pantyshot (~pantyshot@brinck17-166-65.stw.uni-duesseldorf.de) has quit (Read error: Connection reset by peer)
+2015-04-01 16:50:02	▬▬▶	toothrot (~mux@unaffiliated/toothrot) has joined ##c
+2015-04-01 16:50:57	Agiofws	hi
+2015-04-01 16:51:20	◀▬▬	rkfb (~rkfb@cpc5-glfd6-2-0-cust187.6-2.cable.virginm.net) has quit (Quit: Lost terminal)
+2015-04-01 16:52:24	Agiofws	i'm trying to replace the value of backspace from stdin with  a '\b' but i think i can't capture the backspace so i can then insert the \b with putchar
+2015-04-01 16:53:16	Agiofws	http://codepad.org/zrwNTM5r
+2015-04-01 16:53:18	cousteau	you can't capture an actual press of backspace if the terminal doesn't allow you, fi that's what you're asking
+2015-04-01 16:53:27	cousteau	*if that's
+2015-04-01 16:54:05	cousteau	hm, wouldn't you want \ to be replaced with \\, not \ ?
+2015-04-01 16:54:35	rcr	you can often capture backspace
+2015-04-01 16:54:37	cousteau	or wait, wouldn't you want replaced characters to NOT be followed by the unreplaced characters?
+2015-04-01 16:54:55	rcr	Agiofws: try    if (c == 0x7F)
+2015-04-01 16:55:06	rcr	if i understand correctly
+2015-04-01 16:55:20	cousteau	rcr, you probably have to tell the terminal to pass all keypresses as literal keys somehow
+2015-04-01 16:55:26	▬▬▶	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has joined ##c
+2015-04-01 16:55:31	rcr	ah right, that's true
+2015-04-01 16:55:44	◀▬▬	Haswell (~broaderba@unaffiliated/haswell) has quit (Quit: Saliendo)
+2015-04-01 16:55:47	cousteau	otherwise, "Helo<backspace>lo" will be sent as "Hello"
+2015-04-01 16:56:26	◀▬▬	shikhin (~shikhin@unaffiliated/shikhin) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:56:26	twkm	Agiofws was told how to capture the usual eof character.  if only sie could manage to apply the same logic to capturing backspace.
+2015-04-01 16:56:51	fstd	wot
+2015-04-01 16:57:04	cousteau	"sie"?  what happened to good ol' "they" as a gender-neutral article?
+2015-04-01 16:57:59	twkm	it is one of many.  feel free to use they when you respond.
+2015-04-01 16:58:32	fstd	someone should tell hir that eof is not a character
+2015-04-01 16:58:58	cousteau	Agiofws, anyway, I think your program would work if you called it like   ./myprogram < mybinaryfilecontainingbackspace
+2015-04-01 17:00:05	cousteau	where is it implied that EOF is a character?
+2015-04-01 17:00:28	pragma-	,recall eof character
+2015-04-01 17:00:28	@candide	I don't know anybody named eof.
+2015-04-01 17:00:31	Agiofws	can a  foo.c get input from redirection ?
+2015-04-01 17:00:33	pragma-	,recall -t eof character
+2015-04-01 17:00:33	@candide	I don't know anybody named character.
+2015-04-01 17:00:39	pragma-	,recall -t "eof character"
+2015-04-01 17:00:40	@candide	[4 minutes and 13 seconds ago] <twkm> Agiofws was told how to capture the usual eof character. if only sie could manage to apply the same logic to capturing backspace.
+2015-04-01 17:00:43	Agiofws	i meant c.bin
+2015-04-01 17:00:55	▬▬▶	shikhin (~shikhin@unaffiliated/shikhin) has joined ##c
+2015-04-01 17:01:09	cousteau	oh wait, that was said in reply to twkm
+2015-04-01 17:01:27	rcr	twkm: that's different, EOF is passed to the program by the terminal, backspace is captured by the terminal's readline
+2015-04-01 17:01:44	twkm	Agiofws: usually.
+2015-04-01 17:01:51	twkm	rcr: you are mistaken.
+2015-04-01 17:01:55	rcr	unless the terminal is set to raw mode
+2015-04-01 17:01:59	rcr	usually
+2015-04-01 17:02:05	cousteau	Agiofws, that's how redirection works.  Instead of typing directly into a program you redirect the output of one program to the input of another.
+2015-04-01 17:02:50	cousteau	rcr, it'd be more correct to say that "EOF is generated by the terminal by closing the input"
+2015-04-01 17:03:11	pragma-	Today is not a day for being correct!
+2015-04-01 17:03:19	cousteau	it's not really "passed" as it's a condition
+2015-04-01 17:03:24	cousteau	pragma-, that is a good point
+2015-04-01 17:03:24	rcr	true
+2015-04-01 17:03:25	twkm	ugh.
+2015-04-01 17:03:26	rcr	good point
+2015-04-01 17:03:45	cousteau	gotta go
+2015-04-01 17:03:48	◀▬▬	cousteau (~cousteau@80.174.59.28.dyn.user.ono.com) has quit (Quit: Be liberal in what you read, and conservative in what you write)
+2015-04-01 17:04:05	fstd	pragma-: that is absolutely correct.
+2015-04-01 17:04:12	Agiofws	i just didn't know you could it to a c.bin or a.out file
+2015-04-01 17:05:01	twkm	it would be odd to disallow the general feature to two specific filenames.
+2015-04-01 17:05:32	fstd	not too odd, windows has something like that
+2015-04-01 17:05:42	◀▬▬	worldi (~Thunderbi@unaffiliated/worldi) has quit (Remote host closed the connection)
+2015-04-01 17:05:52	fstd	can't use "con" or "err" or so for filenames, at least last time i checked
+2015-04-01 17:07:34	fstd	(...and the 2nd to last time i checked, it would outright blue-screen the box)
+2015-04-01 17:07:37	twkm	as filenames, yes.  but disallow redirection if the command to be invoked is either of two names ... that certainly would be odd in my book.
+2015-04-01 17:07:38	◀▬▬	wicope (~wicope@117.Red-88-27-63.staticIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-01 17:11:00	◀▬▬	admg (~admg@host86-139-68-128.range86-139.btcentralplus.com) has quit (Quit: Bye)
+2015-04-01 17:11:07	◀▬▬	maktm (~maktm@197.156.95.77) has quit (Quit: Leaving)
+2015-04-01 17:11:38	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Read error: Connection reset by peer)
+2015-04-01 17:11:45	Agiofws	control H is the backspace value in my terminal
+2015-04-01 17:12:01	LeoNerd	Ohdear that :(
+2015-04-01 17:12:21	twkm	apply the same solution as you did for ^D.
+2015-04-01 17:14:09	◀▬▬	Thesaurus (~Thesaurus@cpe-68-173-40-10.nyc.res.rr.com) has quit (Quit: Leaving)
+2015-04-01 17:15:22	◀▬▬	ToApolytoXaos (~ToApolyto@46.21.62.128) has quit (Quit: I'm off folks. Drop by at http://alifeadv.blogspot.com)
+2015-04-01 17:15:45	▬▬▶	daixtr (~daixtr@unaffiliated/daixtr) has joined ##c
+2015-04-01 17:16:13	t-mart_	LeoNerd: does the PIPE_BUF requirement apply for AF_INET sockets? "PIPE"_BUF makes me think about local sockets. i also wasn't able to produce the incomplete-send effect when i tried with a AF_INET socket
+2015-04-01 17:16:39	LeoNerd	Ah well TCP is its own amusement, given the IP segmenting question
+2015-04-01 17:17:09	▬▬▶	oleo_ (~oleo@unaffiliated/oleo) has joined ##c
+2015-04-01 17:17:09	--	oleo is now known as Guest2818
+2015-04-01 17:17:45	◀▬▬	oleo_ (~oleo@unaffiliated/oleo) has quit (Read error: Connection reset by peer)
+2015-04-01 17:17:49	▬▬▶	FernandoBasso (~Fernando@177.82.172.148) has joined ##c
+2015-04-01 17:18:08	twkm	inet sockets might utilize other protocols.  but indeed, PIPE_BUF does not apply.
+2015-04-01 17:19:19	◀▬▬	Guest2818 (~oleo@unaffiliated/oleo) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:19:34	▬▬▶	oleo_ (~oleo@unaffiliated/oleo) has joined ##c
+2015-04-01 17:19:48	--	oleo_ is now known as oleo
+2015-04-01 17:20:05	--	irc: disconnected from server
+2015-04-01 17:29:26	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c
+2015-04-01 17:29:26	--	Topic for ##c is "The C Programming Language || C11 is the current C Standard || PASTE (>3 lines) here: http://ideone.com/ || HOME page: http://www.iso-9899.info/ || BOOKS here: http://www.iso-9899.info/wiki/Books || Test your C knowledge in #cjeopardy!"
+2015-04-01 17:29:26	--	Topic set by pragma- on Sat, 31 Jan 2015 00:34:20
+2015-04-01 17:29:26	--	Channel ##c: 630 nicks (1 op, 0 voices, 629 normals)
+2015-04-01 17:29:29	--	URL for ##c: http://www.iso-9899.info/
+2015-04-01 17:29:32	--	Channel created on Sun, 26 Nov 2006 01:42:39
+2015-04-01 17:30:32	▬▬▶	a3f (~a3f@95.90.216.96) has joined ##c
+2015-04-01 17:30:32	ganzuul	What value of cross-platformness is obtainable with extern? Can I dig into a Linux .o as if it was a .dll?
+2015-04-01 17:30:56	Pessimist	do you know what extern does?
+2015-04-01 17:31:07	ganzuul	Pessimist: It serializes.
+2015-04-01 17:31:13	mischief	[words]
+2015-04-01 17:31:14	Binary_Digit	It does?
+2015-04-01 17:31:15	fstd	,reset
+2015-04-01 17:31:16	@candide	Days since our last accident: 0
+2015-04-01 17:31:56	Binary_Digit	I thought it was a qualifier that said this object is defined at file scope, either in this module or in some other module that will be linked to this module.
+2015-04-01 17:32:32	 *	fstd ponders resetting again
+2015-04-01 17:33:03	rcr	'value of cross-platformness' is this like a scale from 1-10?
+2015-04-01 17:33:22	Binary_Digit	strictly, it's a storage class specifier.
+2015-04-01 17:33:48	ganzuul	rcr: I will also parse curses in multiple languages.
+2015-04-01 17:33:53	twkm	rcr: such things exist, e.g., things in c89 aren't necessarily available to c11 code, and vice versa.
+2015-04-01 17:33:54	▬▬▶	blimpse (~quassel@gateway/vpn/privateinternetaccess/blimps) has joined ##c
+2015-04-01 17:35:41	▬▬▶	khisanth_ (~Khisanth@50.14.244.111) has joined ##c
+2015-04-01 17:35:51	ganzuul	Binary_Digit: The way I remmeber it, it's an ordering for vaues which remains agreed upon between different compilers. Usually the order is purposefuly mangled so that you can fail early, instead of when you're already in production.
+2015-04-01 17:36:16	Binary_Digit	ganzuul - er, no, extern is not an ordering for values.
+2015-04-01 17:36:31	Binary_Digit	I don't know where you got that idea.
+2015-04-01 17:36:48	twkm	it's nearly the idea behind name mangling for non-c languages.
+2015-04-01 17:36:57	kate	for stdint.h, may an implementation provide arbitary intN_t types?
+2015-04-01 17:37:00	twkm	but it doesn't extend to the value.
+2015-04-01 17:37:13	twkm	kate: yes.
+2015-04-01 17:37:14	kate	i see no wording which would disallow that
+2015-04-01 17:37:24	kate	okay :)
+2015-04-01 17:37:38	twkm	an implementation can do most anything it likes you know, as long as it meets the minima.
+2015-04-01 17:38:13	◀▬▬	Khisanth (~Khisanth@50.14.244.111) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:38:45	a3f	I got this comment on Stackoverflow, but I don't really understand it: The number of possible sequences is restricted by the width of the seed, but their cycle length is only restricted by the width of the internal state, which is not specified.
+2015-04-01 17:38:56	kate	i'm encoding the wording of the standard in programatic form, in a language which attempts to pragmatically convey the general idea for most things in the standard. unfortunately it doesn't have a way to iterate over things like that, and i don't want to write out every possible value of N...
+2015-04-01 17:38:59	a3f	Where does this internal state come from if not from the unsigned parameter of srand?
+2015-04-01 17:39:11	a3f	(Discussion concerns rand & srand)
+2015-04-01 17:39:19	◀▬▬	daixtr (~daixtr@unaffiliated/daixtr) has left ##c
+2015-04-01 17:39:40	twkm	srand must store the state, and rand must update it, and you only ever receive some mutation of its value back from rand.
+2015-04-01 17:39:43	◀▬▬	sublimate (~jack@unaffiliated/auv5) has quit (Ping timeout: 248 seconds)
+2015-04-01 17:39:47	ganzuul	Binary_Digit, twkm: Thank you. =)
+2015-04-01 17:40:15	Binary_Digit	kate: I think 7.20.1(2) forbids int0N_t
+2015-04-01 17:40:35	Binary_Digit	But apart from that, I don't think there's a restriction
+2015-04-01 17:40:52	◀▬▬	mwbrown (~Bluhd@wikipedia/Bluhd) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:41:13	kate	is that C11's numbering, or C99?
+2015-04-01 17:41:14	bandu	ToApolytoXaos, kate, fstd: but because it's prettier and easier to read, i include the space. it never seems to have been a problem. kate: thanks for correcting me on /usr
+2015-04-01 17:41:26	kate	bandu, i was wrong :)
+2015-04-01 17:41:45	Binary_Digit	N1570
+2015-04-01 17:41:52	a3f	twkm So what internal state really means is the initial seed value and the path taken till the current integer?
+2015-04-01 17:41:58	kate	Binary_Digit, thanks
+2015-04-01 17:42:29	a3f	s/path.*/sequence generated up to the current value/
+2015-04-01 17:42:52	twkm	some value, that changes, so is generally called state.
+2015-04-01 17:43:07	◀▬▬	Agiofws (~agiofws@ppp-2-87-223-65.home.otenet.gr) has quit (Ping timeout: 246 seconds)
+2015-04-01 17:43:28	bandu	nitrix: interesting, so /usr and /home used to be the same thing? fstd: when writing specifically for bash, i use !#/usr/bin/bash and end the filename in .bash and not .sh
+2015-04-01 17:43:46	twkm	it doesn't have to be a specific state machine, but it is always such a mechanism.
+2015-04-01 17:43:47	▬▬▶	vreo (~vreo@gateway/vpn/privateinternetaccess/vreo) has joined ##c
+2015-04-01 17:43:51	bandu	#! *
+2015-04-01 17:43:56	bandu	not !#
+2015-04-01 17:44:10	a3f	Well for rand, that ought to be repeatable, this can only be the seed and the sequence generated before?
+2015-04-01 17:44:12	twkm	bandu: seems more appropriate for #bash, or similar.
+2015-04-01 17:44:24	▬▬▶	ollehar1 (~Thunderbi@x5ce264da.dyn.telefonica.de) has joined ##c
+2015-04-01 17:44:29	twkm	a3f: it must be repeatable.
+2015-04-01 17:44:47	bandu	while most people instruct me to use ./shellscript.sh to invoke a script, i generally invoke my .bash scripts (not .sh) by typing $ bash myshellscript.bash
+2015-04-01 17:45:00	twkm	bleh.
+2015-04-01 17:45:02	fstd	bandu: freebsd uses /usr/home as a default even today (unless you tell it you want it to be /home)
+2015-04-01 17:45:23	a3f	I thought ought means must, ok, The state comes exclusively from srand's parameter and the sequence generated so far through rand
+2015-04-01 17:45:27	twkm	please bufferoff to #bash to be schooled as to the kookiness of your invocation.
+2015-04-01 17:45:28	a3f	is this a correct statement?
+2015-04-01 17:45:30	twkm	err, bugger.
+2015-04-01 17:45:49	◀▬▬	Munnu (~timo@91-158-143-52.elisa-laajakaista.fi) has quit (Quit: Re-evaluating and compiling the desert of the real.)
+2015-04-01 17:46:03	▬▬▶	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has joined ##c
+2015-04-01 17:46:04	pragma-	bufferoff.
+2015-04-01 17:46:11	fstd	bandu: and i think /that/ shebang now won't work anywhere ;)
+2015-04-01 17:46:26	twkm	a3f: yes, i'll agree with that.  though perhaps the number of times rand has been called since srand would be more correct.
+2015-04-01 17:47:17	◀▬▬	CrypticSquared (~CrypticS_@unaffiliated/crypticsquared) has quit (Remote host closed the connection)
+2015-04-01 17:47:38	a3f	twkm Thanks : )
+2015-04-01 17:48:29	bandu	tsumetai`: to answer your question, it depends on how you define "familiar" i know enough to be dangerous in: tcl, common lisp, C, D, Erlang, Haskell, Go, Rust, Perl, Python, Pascal, Ruby, Lua, Java, Javascript, Node, Pike, CSh Fish, Dash, PSh, Scheme, Smalltalk, KVS, and a few others.
+2015-04-01 17:48:34	◀▬▬	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has quit (Read error: Connection reset by peer)
+2015-04-01 17:48:53	bandu	tsumetai`: i am actually good at Bash and ExtRegex, and getting better.
+2015-04-01 17:49:04	▬▬▶	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has joined ##c
+2015-04-01 17:49:32	twkm	maybe my client or server is mixing channels.
+2015-04-01 17:49:36	◀▬▬	ganzuul (~n@87-92-166-63.bb.dnainternet.fi) has left ##c ("Good tidings")
+2015-04-01 17:49:37	bandu	soon i wont need a regex editor, i can just write raw regex.
+2015-04-01 17:49:47	bandu	i'm learning SQL as well.
+2015-04-01 17:49:56	▬▬▶	jazzzu (~jazzzu@D97B7B1C.cm-3-4b.dynamic.ziggo.nl) has joined ##c
+2015-04-01 17:50:17	twkm	now you have three problems.
+2015-04-01 17:50:19	a3f	mm, what's regex editor?
+2015-04-01 17:50:19	bandu	fstd: the shebang #! /usr/bin/bash ?
+2015-04-01 17:50:43	twkm	/me keeps moving the broom, hoping the dust will move
+2015-04-01 17:51:51	rcr	'soon i wont need a regex editor, i can just write raw regex'
+2015-04-01 17:51:56	rcr	look out guys
+2015-04-01 17:52:44	bandu	a3f: something like http://regexpeditor.sourceforge.net/
+2015-04-01 17:53:00	◀▬▬	whilhelm (~sam@modemcable098.99-202-24.mc.videotron.ca) has quit (Ping timeout: 255 seconds)
+2015-04-01 17:53:05	bandu	rcr: i think i missed the joke.
+2015-04-01 17:53:24	a3f	"Instead RegExpEditor is a text editor that allows you to alter text using regular expressions."
+2015-04-01 17:53:32	a3f	Isn't that like standard?
+2015-04-01 17:53:34	Binary_Digit	Just out of curiosity, have I stumbled into ##~c by mistake?
+2015-04-01 17:53:43	twkm	i'm sort of wondering the same thing.
+2015-04-01 17:53:53	bandu	many text editors, such as leafpad, gedit, kate, etc dont highlight regex
+2015-04-01 17:53:56	rcr	I hope you wear a helmet while writing raw regex, that's dangerous!!
+2015-04-01 17:54:09	bandu	rcr: oh, hardy har har.
+2015-04-01 17:54:15	rcr	ok ill stop contributing to the notc
+2015-04-01 17:54:22	a3f	kate Why don't you highlight regex?
+2015-04-01 17:54:40	kate	i wrote an NFA->DFA implementation of regular expressions actually...
+2015-04-01 17:54:43	bandu	i'm not linus torvalds or richard stallman. i'm not a genius programmer or anything. i actually have to work hard to be any good at programming. i have talent at it
+2015-04-01 17:55:03	bandu	*i dont have talent at it
+2015-04-01 17:55:07	pragma-	bandu: is that what you say to your mirror every morning?
+2015-04-01 17:55:08	bandu	* DONT have talent
+2015-04-01 17:55:19	▬▬▶	lunaticedit (~textual@cpe-104-138-133-229.triad.res.rr.com) has joined ##c
+2015-04-01 17:55:41	bandu	pragma-: what, that i have to work hard to be any good at programming, and dont have any talent at programming my friends and peers take for granted?
+2015-04-01 17:55:48	bandu	i'd be really depressed every day if i did that.
+2015-04-01 17:55:52	◀▬▬	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2015-04-01 17:56:16	twkm	so it does see what's being written here.  hmm.
+2015-04-01 17:56:24	bandu	i'd rather not think about how talentless i am.
+2015-04-01 17:56:37	bandu	it?
+2015-04-01 17:56:41	fstd	so linus torvalds is a genius programmer, and rms is anything?
+2015-04-01 17:56:57	a3f	^ :D
+2015-04-01 17:57:09	bandu	maybe not "genius" but i cant write a clone of MINIX by myself
+2015-04-01 17:57:20	Binary_Digit	I can.
+2015-04-01 17:57:25	Binary_Digit	cp MINIX myminix
+2015-04-01 17:57:38	bandu	my understanding of computer history is that linus basically wrote the entire damned minix clone kernel BY HIMSELF
+2015-04-01 17:57:54	bandu	maybe he had a lot of help and i simply have a flawwed view of computer history
+2015-04-01 17:57:57	◀▬▬	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has quit (Ping timeout: 255 seconds)
+2015-04-01 17:58:15	◀▬▬	ziocroc (~ziocroc3@151.74.2.189) has quit (Quit: ziocroc)
+2015-04-01 17:58:25	rcr	linus' code is the only time i see C like this gem   http://pastebin.com/rhpzCp6s
+2015-04-01 17:59:01	Binary_Digit	eek
+2015-04-01 17:59:02	bandu	is that an honest-to-satan GOTO statement in there?
+2015-04-01 17:59:17	bandu	i thought that was highly frowned upon?
+2015-04-01 17:59:24	fstd	only by idiots
+2015-04-01 17:59:32	Binary_Digit	bandu - if you're a purist, stay the hell away from Linux kernel source
+2015-04-01 17:59:34	fstd	although using it that way is odd
+2015-04-01 17:59:40	rcr	its not the goto itself, thats fine,   but goto inside a loop
+2015-04-01 17:59:41	rcr	strange
+2015-04-01 17:59:44	Binary_Digit	I am, and I do, and that way I stay sane
+2015-04-01 17:59:52	bandu	Binary_Digit: i'm not a good enough program to be a "purist" or "not purist"
+2015-04-01 18:00:02	bandu	to be any type of programmer, i have to be a programmer, first
+2015-04-01 18:00:03	◀▬▬	Preda- (xxx@dsl-olubrasgw2-54f866-173.dhcp.inet.fi) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:00:06	▬▬▶	NightTrain (~coffee@unaffiliated/ridout) has joined ##c
+2015-04-01 18:00:22	bandu	the only substantial amount of code i've written is bash, and most programmers in this community seem to think bash doesnt count.
+2015-04-01 18:00:22	▬▬▶	worldi (~Thunderbi@unaffiliated/worldi) has joined ##c
+2015-04-01 18:00:26	bandu	it's a non-language
+2015-04-01 18:00:51	bandu	i could write a shell script with millions of standardized lines of code, and not be a programmer.
+2015-04-01 18:00:51	Binary_Digit	bandu - this community is ##c, where we tend to think of anything non-C as being, well, not C
+2015-04-01 18:00:55	rcr	didnt you just list like 30 languages you claim to be 'dangerous' with?
+2015-04-01 18:01:08	rcr	i think this guy is some kind of april fools troll
+2015-04-01 18:01:18	bandu	rcr: yes? but dangerous basically means "i can read, understand, and slightly modify"
+2015-04-01 18:01:26	▬▬▶	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##c
+2015-04-01 18:02:05	bandu	rcr: oh, i played an april fools prank on my little sister. she ordered a chick-fil-a chicken nuggets, a large cocacola and large fry, and "some salt packets"
+2015-04-01 18:02:20	bandu	so i got her order, and filled the entire bag with nothing but salt packets.
+2015-04-01 18:02:32	Binary_Digit	They must love you in the office.
+2015-04-01 18:02:40	bandu	you had to unearth the chicken nuggets from the salt packets.
+2015-04-01 18:02:57	▬▬▶	pingupingu (~pinguping@unaffiliated/pingupingu) has joined ##c
+2015-04-01 18:03:20	bandu	rcr: i'm not very good at trolling. i generally dont enjoy doing things i'm not any good at.
+2015-04-01 18:03:21	▬▬▶	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has joined ##c
+2015-04-01 18:03:36	bandu	and i generally dont do things i dont enjoy.
+2015-04-01 18:03:43	bandu	unless i'm practicing.
+2015-04-01 18:04:19	bandu	but i dont see the point of practicing trolling. unless it was a career somehow, then it might be fun to get paid a lot of money to troll people.
+2015-04-01 18:04:20	bandu	maybe.
+2015-04-01 18:05:20	▬▬▶	drfoo (~drfoo@unaffiliated/drfoo) has joined ##c
+2015-04-01 18:05:23	bandu	i suppose i could make professional trolling a career in politics, where i troll the chamber of commerce or something by filibustering in a particularly irritating and obnoxious way.
+2015-04-01 18:05:46	kate	isn't that just what actual politicians do?
+2015-04-01 18:05:49	bandu	... i'm not sure where i was going with this.
+2015-04-01 18:05:54	bandu	kate: point taken.
+2015-04-01 18:06:00	◀▬▬	notpara (~para@ip-90-186-45-35.web.vodafone.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:07:08	sacho_	I don't think you can troll via filibustering.
+2015-04-01 18:07:15	◀▬▬	roxlu (~textual@5ED2B568.cm-7-3c.dynamic.ziggo.nl) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 18:07:55	Binary_Digit	You can, except that in IRC it's called flooding
+2015-04-01 18:08:05	◀▬▬	blimpse (~quassel@gateway/vpn/privateinternetaccess/blimps) has quit (Remote host closed the connection)
+2015-04-01 18:08:10	bandu	sacho_: i dont see why not. you can say, "i have to represent my constituents in everything i do in this place, and the constituents i represent are: " *reads entire phone book*
+2015-04-01 18:08:31	Binary_Digit	bandu - why don't you go ahead and read that book?
+2015-04-01 18:08:42	sacho_	bandu, that's fine. The intention of filibustering is to delay a vote in order to promote a discussion.
+2015-04-01 18:08:53	sacho_	I don't think the delay is meaningful enough for it to be trolling.
+2015-04-01 18:09:10	sacho_	Perhaps legislators shouldn't be churning out new laws every few hours.
+2015-04-01 18:09:26	johnnyreb	Well, I suppose it could be when they do it right before they go on vacation :P
+2015-04-01 18:10:33	sacho_	woah, look at the time.
+2015-04-01 18:10:53	◀▬▬	shikhin (~shikhin@unaffiliated/shikhin) has quit (Quit: leaving)
+2015-04-01 18:11:49	bandu	sacho_: filibustering is a technique that exploits a key feature of Robert's Rules of Order, which states explicitly that anyone who has the floor can discuss a given proposition for as long as they need to. with filibustering, you stretch that "need" as far as possible to get your way.
+2015-04-01 18:11:54	bandu	or simply to be obnoxious.
+2015-04-01 18:12:03	◀▬▬	worldi (~Thunderbi@unaffiliated/worldi) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:12:14	a3f	Is 1,2,2,2,2,2,2,2,.... a valid sequence return by sucessive calls to rand() ?
+2015-04-01 18:12:26	mischief	sure
+2015-04-01 18:12:57	a3f	Ah ok, I thought it's usually a full cycle
+2015-04-01 18:13:04	a3f	Or well I thought it's always like this
+2015-04-01 18:13:25	◀▬▬	Xilov (~Xilov@AMontsouris-651-1-104-77.w82-123.abo.wanadoo.fr) has quit (Quit: I just want you to be happy. And maybe a little bit naked.)
+2015-04-01 18:13:54	bandu	if you want to torture the crap out of everyone in congress, a filibuster can last for WEEKS. i think you need to be, like, a swimmer or singer to have that kind of lung capacity.
+2015-04-01 18:14:11	▬▬▶	notpara (~para@ip-90-186-45-35.web.vodafone.de) has joined ##c
+2015-04-01 18:14:41	--	robbyoconnor is now known as ]
+2015-04-01 18:15:02	sacho_	a3f, what's a full cycle?
+2015-04-01 18:15:40	a3f	sacho_ I define that as 1,2,1,2,1,2 ... for example
+2015-04-01 18:15:52	sacho_	that wouldn't be random.
+2015-04-01 18:15:53	◀▬▬	FunkyAss (~Funky@unaffiliated/funkyass) has quit (Quit: Make my Funk the P-Funk)
+2015-04-01 18:16:26	a3f	it would be valid to return for rand though
+2015-04-01 18:16:28	◀▬▬	_leb (~leb@pool-108-53-167-179.nwrknj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2015-04-01 18:16:43	sacho_	certainly, but it makes no sense to expect it.
+2015-04-01 18:16:45	PapaFrog	2:1,2,2,2,2,2,2... is sqrt(2)
+2015-04-01 18:16:49	sacho_	not any more than 1,2,2,2...
+2015-04-01 18:16:58	◀▬▬	askatasuna (~askatasun@181.30.22.74) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:17:11	sacho_	a3f, try this experiment - based on the values you got from rand(), predict the next one.
+2015-04-01 18:17:17	a3f	My question was that, that the sequence returned by rand eventually enters a cycle
+2015-04-01 18:17:22	--	irc: disconnected from server
+2015-04-01 18:22:42	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c
+2015-04-01 18:22:42	--	Topic for ##c is "The C Programming Language || C11 is the current C Standard || PASTE (>3 lines) here: http://ideone.com/ || HOME page: http://www.iso-9899.info/ || BOOKS here: http://www.iso-9899.info/wiki/Books || Test your C knowledge in #cjeopardy!"
+2015-04-01 18:22:42	--	Topic set by pragma- on Sat, 31 Jan 2015 00:34:20
+2015-04-01 18:22:42	--	Channel ##c: 625 nicks (1 op, 0 voices, 624 normals)
+2015-04-01 18:22:45	--	URL for ##c: http://www.iso-9899.info/
+2015-04-01 18:22:45	[Franklin]	so would sizeof(sp->buf) == 128 or 4?
+2015-04-01 18:22:47	[Franklin]	(or 8)
+2015-04-01 18:22:49	--	Channel created on Sun, 26 Nov 2006 01:42:39
+2015-04-01 18:23:29	◀▬▬	netj (~netj@128.12.163.109) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:23:40	fstd	a3f: for any given internal state of a PRNG, the next obtained number will always be the same, because it is deterministic
+2015-04-01 18:23:40	▬▬▶	netj (~netj@naru.stanford.edu) has joined ##c
+2015-04-01 18:24:30	sacho_	a3f, later on, the article discusses for example the mersenne twister algorithm - you could check out its page(or a paper) that describes how the state is derived
+2015-04-01 18:24:33	likecolacola	[Franklin], why don't you print it?, its 128
+2015-04-01 18:25:01	a3f	sacho_ I will do that
+2015-04-01 18:25:23	a3f	Thanks
+2015-04-01 18:25:30	▬▬▶	Noldorin (~noldorin@unaffiliated/noldorin) has joined ##c
+2015-04-01 18:25:54	▬▬▶	radixo (~radixo@177.133.183.185) has joined ##c
+2015-04-01 18:25:56	likecolacola	[Franklin], also, if i am not wrong pointers are 8 bytes for 64 bit systems, not 4
+2015-04-01 18:26:10	▬▬▶	Enissay_ (~Enissay@unaffiliated/enissay) has joined ##c
+2015-04-01 18:26:58	a3f	 Its name derives from the fact that its period length is chosen to be a Mersenne prime. So there IS a cycle, just one I will likely never encounter? sacho_ ?
+2015-04-01 18:27:14	sacho_	sure
+2015-04-01 18:28:15	◀▬▬	Enissay (~Enissay@unaffiliated/enissay) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:28:18	dorp_	a3f: I think your example with "1,2,1,2,1,2" was very misleading
+2015-04-01 18:28:33	▬▬▶	mwbrown (~Bluhd@wikipedia/Bluhd) has joined ##c
+2015-04-01 18:28:39	◀▬▬	uskerine (~sdfsdfsd@36.Red-83-44-250.dynamicIP.rima-tde.net) has quit
+2015-04-01 18:29:00	sacho_	a3f, also, the "period" doesn't have to be a "cycle" - for example, your prng could have a period of 10, and produce 1111122222
+2015-04-01 18:29:07	sacho_	(and then repeat that over and over)
+2015-04-01 18:30:01	a3f	So period means the number of integers before it starts looping a subset of the previously generated sequence over?
+2015-04-01 18:30:03	◀▬▬	[Franklin] (~franklin@unaffiliated/franklin) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:30:04	◀▬▬	hohum (dcorbe@apollo.corbe.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:31:09	▬▬▶	l0rdn1x (~l0rdn1x@unaffiliated/l0rdn1x) has joined ##c
+2015-04-01 18:31:30	a3f	or well subset might not be the correct term, I mean the sequences returned by Haskell's tails function, not sure how to call this in English
+2015-04-01 18:31:37	◀▬▬	Albori (~Albori@64-251-150-248.fidnet.com) has quit (Quit: Part and quit message, you say. Uhh... I guess goodbye!)
+2015-04-01 18:31:53	a3f	"suffixes of this sequence"
+2015-04-01 18:31:56	likecolacola	damn
+2015-04-01 18:32:02	◀▬▬	csviu (mf@dog.thdo.woaf.net) has quit (Ping timeout: 276 seconds)
+2015-04-01 18:32:14	sacho_	yeah, although the subset is usually just the whole set.
+2015-04-01 18:32:30	likecolacola	this guy left too fast .. if he evaluates his array as a function parameter the sizeof will be of the pointer and not of the array
+2015-04-01 18:32:51	sacho_	so your prng, given a seed, generates a sequence of characters, and once it gets to the end of that sequence, it would(generally) just repeat it - that would be its period.
+2015-04-01 18:32:58	sacho_	a sequence of values8
+2015-04-01 18:33:04	▬▬▶	csviu (mf@dog.thdo.woaf.net) has joined ##c
+2015-04-01 18:33:27	a3f	sacho_ Good, going back to the Mersenne Twister article then. Thanks for bearing with me :)
+2015-04-01 18:33:58	sacho_	actually, http://en.wikipedia.org/wiki/Linear_congruential_generator
+2015-04-01 18:34:05	sacho_	the lcg one is much simpler to understand
+2015-04-01 18:34:15	◀▬▬	ioggstream (~rpolli@93-45-1-72.ip99.fastwebnet.it) has quit (Ping timeout: 264 seconds)
+2015-04-01 18:34:38	▬▬▶	ynix (~nf7@162-246-9-228.dyn.novuscom.net) has joined ##c
+2015-04-01 18:34:40	a3f	hmm ok, then reading this one first
+2015-04-01 18:35:09	▬▬▶	Superlokkus (~Superlokk@141.30.223.183) has joined ##c
+2015-04-01 18:35:36	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined ##c
+2015-04-01 18:36:12	▬▬▶	Albori (~Albori@64-251-150-248.fidnet.com) has joined ##c
+2015-04-01 18:36:15	◀▬▬	ynix (~nf7@162-246-9-228.dyn.novuscom.net) has quit (Client Quit)
+2015-04-01 18:38:21	▬▬▶	Betal (~Beta@unaffiliated/betal) has joined ##c
+2015-04-01 18:38:54	◀▬▬	mwbrown (~Bluhd@wikipedia/Bluhd) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:39:50	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined ##c
+2015-04-01 18:39:50	▬▬▶	ynix (~nf7@162-246-9-228.dyn.novuscom.net) has joined ##c
+2015-04-01 18:40:16	◀▬▬	AkashicLegend (~AkashicLe@unaffiliated/akashiclegend) has quit (Quit: AkashicLegend)
+2015-04-01 18:40:34	◀▬▬	thevishy (~thevishy@122.179.77.8) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:40:59	ynix	Is there a way to iteratively print every universal character from 0000 to ffff? They are usually written in source code like \u2a4s, and I can't figure out a way to concatenate \u and a hex string to have a unicode character be output.
+2015-04-01 18:41:39	◀▬▬	Sc0tty- (~Scott@81.168.24.241) has quit (Quit: Leaving)
+2015-04-01 18:45:37	◀▬▬	vreo (~vreo@gateway/vpn/privateinternetaccess/vreo) has quit (Quit: Gone)
+2015-04-01 18:47:08	fstd	universal character?
+2015-04-01 18:47:22	a3f	ynix 214s <<< ?
+2015-04-01 18:47:33	a3f	s/214s/2a4s
+2015-04-01 18:47:47	▬▬▶	ferdna (~ferdna@108-230-126-51.lightspeed.elpstx.sbcglobal.net) has joined ##c
+2015-04-01 18:47:54	◀▬▬	not_on_fp (uid66332@gateway/web/irccloud.com/x-wqlkfdzagsprtjty) has quit (Quit: Connection closed for inactivity)
+2015-04-01 18:48:09	sacho_	ynix, depends how you're encoding them.
+2015-04-01 18:48:11	◀▬▬	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has quit (Quit: gravitation)
+2015-04-01 18:48:14	◀▬▬	aslant (~aslant@5751a00f.skybroadband.com) has quit (Remote host closed the connection)
+2015-04-01 18:48:58	sacho_	for example, consider reading on how utf-8 encodes unicode code points
+2015-04-01 18:49:38	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:50:28	▬▬▶	Kostenko (~Kostenko@bl14-205-114.dsl.telepac.pt) has joined ##c
+2015-04-01 18:50:46	◀▬▬	k1000 (~quassel@2607:5300:100::54f) has quit (Quit: k1000)
+2015-04-01 18:52:52	Maxdamantus	Why would you limit yourself to ffff?
+2015-04-01 18:53:13	◀▬▬	Kostenko_ (~Kostenko@bl14-205-114.dsl.telepac.pt) has quit (Ping timeout: 244 seconds)
+2015-04-01 18:53:51	◀▬▬	Wulf (~Wulf@unaffiliated/wulf) has quit (Ping timeout: 252 seconds)
+2015-04-01 18:54:16	◀▬▬	l0rdn1x (~l0rdn1x@unaffiliated/l0rdn1x) has quit (Quit: o()xxxx[{::::LINUX::::>)
+2015-04-01 18:54:24	▬▬▶	Wulf (~Wulf@unaffiliated/wulf) has joined ##c
+2015-04-01 18:54:37	◀▬▬	abecker (~abecker@p5DC4D149.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2015-04-01 18:55:38	likecolacola	sacho_, i was reading about that...
+2015-04-01 18:56:06	◀▬▬	Longlius (~longlius@2602:301:7767:6df0:a64e:31ff:fe19:d320) has quit (Remote host closed the connection)
+2015-04-01 18:56:56	likecolacola	it's something like the first byte has a sequence of 1 bits representing the amount of bytes used by the character... then the next bytes to the sequence start with 10... and simple bytes(1 char wide) use 7 bits... with a leading 0
+2015-04-01 18:57:26	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined ##c
+2015-04-01 18:58:39	◀▬▬	hiptobecubic (~john@unaffiliated/hiptobecubic) has quit (Ping timeout: 248 seconds)
+2015-04-01 19:00:18	◀▬▬	radixo (~radixo@177.133.183.185) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:03:27	▬▬▶	k1000 (~k1000@55.ip-198-50-149.net) has joined ##c
+2015-04-01 19:04:32	◀▬▬	subgeniuskitty (~ataylor@75-165-99-176.tukw.qwest.net) has quit (Quit: leaving)
+2015-04-01 19:09:26	◀▬▬	ollehar1 (~Thunderbi@x5ce264da.dyn.telefonica.de) has quit (Quit: ollehar1)
+2015-04-01 19:11:12	Maxdamantus	'1'*n + '0' + (v*(6 - n)) + ('1' + '0' + v*6)*n
+2015-04-01 19:11:50	▬▬▶	sublimate (~jack@unaffiliated/auv5) has joined ##c
+2015-04-01 19:12:00	◀▬▬	a3f (~a3f@95.90.216.96) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:13:00	Maxdamantus	or '0' + v*7
+2015-04-01 19:13:33	▬▬▶	a3f (~a3f@95.90.216.96) has joined ##c
+2015-04-01 19:13:59	Maxdamantus	actually, that last `n` should've been `n - 1`
+2015-04-01 19:14:07	Maxdamantus	'1'*n + '0' + v*(6 - n) + ('1' + '0' + v*6)*(n - 1)
+2015-04-01 19:14:12	◀▬▬	ejnahc (~hello@chan.je) has quit (Remote host closed the connection)
+2015-04-01 19:15:13	▬▬▶	ejnahc (~hello@chan.je) has joined ##c
+2015-04-01 19:16:59	◀▬▬	sublimate (~jack@unaffiliated/auv5) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:17:18	◀▬▬	ejnahc (~hello@chan.je) has quit (Client Quit)
+2015-04-01 19:17:32	▬▬▶	ejnahc (~hello@chan.je) has joined ##c
+2015-04-01 19:22:09	◀▬▬	Anaphaxeton (~georgios@unaffiliated/anaphaxeton) has quit (Remote host closed the connection)
+2015-04-01 19:22:16	Arch-TK	Isn't it 0nnnnnnn then 10nnnnnn nnnnnnnn then 110nnnnn nnnnnnnn nnnnnnnn then 1110nnnn nnnnnnnn nnnnnnnn nnnnnnnn...
+2015-04-01 19:22:30	Maxdamantus	No.
+2015-04-01 19:22:30	Arch-TK	or whatever weirdness Maxdamantus wrote.
+2015-04-01 19:22:33	▬▬▶	AkashicLegend (~AkashicLe@unaffiliated/akashiclegend) has joined ##c
+2015-04-01 19:22:45	Maxdamantus	it's what I wrote.
+2015-04-01 19:23:02	Maxdamantus	the number of 1s before the first 0 determines the total number of octets.
+2015-04-01 19:23:15	Arch-TK	riiight...
+2015-04-01 19:23:16	Maxdamantus	and each octet other than the first begins with 10
+2015-04-01 19:23:22	▬▬▶	Palsson (~palsson@c-c5fae253.024-21-6e6b702.cust.bredbandsbolaget.se) has joined ##c
+2015-04-01 19:24:08	Maxdamantus	so it's `0nnnnnnn`, `110nnnnn 10nnnnnn`, `1110nnnn 10nnnnnn 10nnnnnn`, ..
+2015-04-01 19:24:30	Arch-TK	hmm... that makes sense.
+2015-04-01 19:24:54	Arch-TK	Anything not compatible with unicode can just filter out anything with a 1 in the first bit. aka anything past the 0 - 127 range
+2015-04-01 19:25:08	Maxdamantus	>>> v = 'n'; map(lambda(n): '1'*n + '0' + v*(6 - n) + ('1' + '0' + v*6)*(n - 1), [2, 3, 4])
+2015-04-01 19:25:11	Maxdamantus	['110nnnn10nnnnnn', '1110nnn10nnnnnn10nnnnnn', '11110nn10nnnnnn10nnnnnn10nnnnnn']
+2015-04-01 19:25:15	Arch-TK	and still get something semi sensible.
+2015-04-01 19:26:11	Maxdamantus	oh, that 6 at the beginning should be 7.
+2015-04-01 19:26:36	Maxdamantus	['110nnnnn10nnnnnn', '1110nnnn10nnnnnn10nnnnnn', '11110nnn10nnnnnn10nnnnnn10nnnnnn']
+2015-04-01 19:26:39	Maxdamantus	better.
+2015-04-01 19:27:27	▬▬▶	doppel (~doppel@ip68-96-169-47.lv.lv.cox.net) has joined ##c
+2015-04-01 19:29:16	Maxdamantus	Arch-TK: it'd probably be more sensible to replace everything >= 192 with some replacement character.
+2015-04-01 19:29:42	Maxdamantus	it should only really be relevant for printing, or converting to different encodings, if you're silly.
+2015-04-01 19:30:17	Maxdamantus	one of the main points of UTF-8 is that software doesn't need to be "compatible" with it.
+2015-04-01 19:31:43	--	irc: disconnected from server
+2015-04-01 19:32:07	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##c
+2015-04-01 19:32:07	--	Topic for ##c is "The C Programming Language || C11 is the current C Standard || PASTE (>3 lines) here: http://ideone.com/ || HOME page: http://www.iso-9899.info/ || BOOKS here: http://www.iso-9899.info/wiki/Books || Test your C knowledge in #cjeopardy!"
+2015-04-01 19:32:07	--	Topic set by pragma- on Sat, 31 Jan 2015 00:34:20
+2015-04-01 19:32:07	--	Channel ##c: 618 nicks (1 op, 0 voices, 617 normals)
+2015-04-01 19:32:10	--	URL for ##c: http://www.iso-9899.info/
+2015-04-01 19:32:13	--	Channel created on Sun, 26 Nov 2006 01:42:39
+2015-04-01 19:33:05	◀▬▬	a3f (~a3f@95.90.216.96) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:33:38	▬▬▶	a3f (~a3f@95.90.216.96) has joined ##c
+2015-04-01 19:33:43	◀▬▬	di0_ (~di0_@unaffiliated/di0-/x-5053590) has quit (Remote host closed the connection)
+2015-04-01 19:34:23	◀▬▬	hubutm20 (~hubutm20@cablelink-86-127-176-144.rdstm.ro) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:34:51	▬▬▶	hubutm20 (~hubutm20@79.114.120.200) has joined ##c
+2015-04-01 19:35:44	pragma-	,python v = 'n'; print map(lambda(n): '1'*n + '0' + v*(6 - n) + ('1' + '0' + v*6)*(n - 1), [2, 3, 4]);
+2015-04-01 19:35:45	@candide	pragma-: ['110nnnn10nnnnnn', '1110nnn10nnnnnn10nnnnnn', '11110nn10nnnnnn10nnnnnn10nnnnnn']
+2015-04-01 19:36:21	▬▬▶	di0_ (~di0_@unaffiliated/di0-/x-5053590) has joined ##c
+2015-04-01 19:36:30	 *	pragma- waits for Maxdamantus to abuse this feature.
+2015-04-01 19:36:36	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:37:03	pragma-	,python paste
+2015-04-01 19:37:04	@candide	pragma-: http://sprunge.us/UiXO?py
+2015-04-01 19:37:22	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined ##c
+2015-04-01 19:38:57	◀▬▬	tos-1 (~tos-1@unaffiliated/tos-1) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:39:19	◀▬▬	aslant (~aslant@5751a00f.skybroadband.com) has quit (Remote host closed the connection)
+2015-04-01 19:40:36	doppel	your bot does python now, eh
+2015-04-01 19:40:46	doppel	that will come in handy if i ever decide to learn python.
+2015-04-01 19:41:34	◀▬▬	FernandoBasso (~Fernando@177.82.172.148) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:42:03	◀▬▬	AkashicLegend (~AkashicLe@unaffiliated/akashiclegend) has quit (Quit: AkashicLegend)
+2015-04-01 19:42:43	doppel	and, y'know, this place ever becomes ##python
+2015-04-01 19:43:55	▬▬▶	CrypticSquared (~CrypticS_@unaffiliated/crypticsquared) has joined ##c
+2015-04-01 19:44:38	likecolacola	doppel, ##python is inactive, the active channel is #python
+2015-04-01 19:44:58	▬▬▶	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has joined ##c
+2015-04-01 19:45:36	pragma-	,cc -lang=?
+2015-04-01 19:45:37	@candide	Can't locate ?.pm in @INC (you may need to install the ? module) (@INC contains: languages /etc/perl /usr/local/lib/perl/5.18.2 /usr/local/share/perl/5.18.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.18 /usr/share/perl/5.18 /usr/local/lib/site_perl .) at ./compiler_vm_client.pl line 13.  Language '?' is not supported. Supported languages are: bash, bc, bf, c11... [truncated; see http://sprunge.us/GiPZ for full text.]
+2015-04-01 19:45:41	pragma-	derp.
+2015-04-01 19:46:08	◀▬▬	DL7LN (~dl7ln@port-27792.pppoe.wtnet.de) has quit (Ping timeout: 252 seconds)
+2015-04-01 19:46:21	pragma-	,cc -lang=?
+2015-04-01 19:46:21	@candide	Language '?' is not supported. Supported languages are: bash, bc, bf, c11, c89, c99, clang, clang11, clang89, clang99, ksh, perl, python, python3, sh, tendra
+2015-04-01 19:46:37	pragma-	most of those have top-level aliases like ,python  ,perl  etc
+2015-04-01 19:46:46	◀▬▬	zacts (~user@freebsd/geek/zacts) has quit (Quit: ERC Version 5.3 (IRC client for Emacs))
+2015-04-01 19:47:24	pragma-	It's trivial for me to add more languages, as well. Just need to drop a file into https://github.com/pragma-/pbot/tree/master/modules/compiler_vm/languages
+2015-04-01 19:49:07	◀▬▬	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:49:30	pragma-	any requests?
+2015-04-01 19:49:59	likecolacola	<-- too newbie to request anything
+2015-04-01 19:50:10	▬▬▶	aslant (~aslant@5751a00f.skybroadband.com) has joined ##c
+2015-04-01 19:50:22	likecolacola	i mean, anything that makes sense
+2015-04-01 19:50:51	mischief	pragma-: go, lua
+2015-04-01 19:51:02	Maxdamantus	pragma-: JavaScript?
+2015-04-01 19:51:08	pragma-	Hm, I'm tempted to add a BASIC interpreter!
+2015-04-01 19:51:08	mischief	Maxdamantus: gross.
+2015-04-01 19:51:24	pragma-	go, lua, js, basic
+2015-04-01 19:51:34	pragma-	doesn't gcc already do go?
+2015-04-01 19:51:44	Maxdamantus	I don't think so.
+2015-04-01 19:51:47	mischief	yes.
+2015-04-01 19:51:49	Maxdamantus	There's a go frontend for gcc.
+2015-04-01 19:51:51	doppel	if you are ready to add a basic interpreter
+2015-04-01 19:51:52	Maxdamantus	I don't think it's part of gcc.
+2015-04-01 19:51:58	doppel	you might as well go for broke and add cobol
+2015-04-01 19:52:10	◀▬▬	chewbranca (~chewbranc@couchdb/committer/chewbranca) has quit (Remote host closed the connection)
+2015-04-01 19:52:12	Maxdamantus	pragma-: also, Haskell.
+2015-04-01 19:52:20	doppel	and maybe some ada and lisp
+2015-04-01 19:52:29	▬▬▶	Solarlux (~IceChat9@212.93.115.144) has joined ##c
+2015-04-01 19:52:47	◀▬▬	Solarlux (~IceChat9@212.93.115.144) has left ##c
+2015-04-01 19:53:07	pragma-	might as well do java too
+2015-04-01 19:53:08	Maxdamantus	mischief: it has usable variables and function expressions with closure. what else do you need?
+2015-04-01 19:53:14	doppel	and forth
+2015-04-01 19:53:54	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Remote host closed the connection)
+2015-04-01 19:53:54	Maxdamantus	can't say the same for any of the currently supported languages, dunno about Perl though.
+2015-04-01 19:54:04	Maxdamantus	tendra = kate's C compiler, right?
+2015-04-01 19:54:05	◀▬▬	worldi (~Thunderbi@unaffiliated/worldi) has quit (Remote host closed the connection)
+2015-04-01 19:54:09	pragma-	yes
+2015-04-01 19:54:17	doppel	if you're going to add java, you better add c++ :-P
+2015-04-01 19:54:23	▬▬▶	worldi (~Thunderbi@unaffiliated/worldi) has joined ##c
+2015-04-01 19:54:40	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined ##c
+2015-04-01 19:55:56	◀▬▬	Palsson (~palsson@c-c5fae253.024-21-6e6b702.cust.bredbandsbolaget.se) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:55:58	doppel	gcc should have it though
+2015-04-01 19:56:29	▬▬▶	AkashicLegend (~AkashicLe@unaffiliated/akashiclegend) has joined ##c
+2015-04-01 19:56:40	◀▬▬	c64zottel (~merlin@host-37-191-199-1.lynet.no) has quit (Ping timeout: 250 seconds)
+2015-04-01 19:56:44	Maxdamantus	ah, it is part of gcc.
+2015-04-01 19:56:51	mischief	,cc -lang=go { fmt.Println("hello, world!") }
+2015-04-01 19:56:52	@candide	Language 'go' is not supported. Supported languages are: bash, bc, bf, c11, c89, c99, clang, clang11, clang89, clang99, ksh, perl, python, python3, sh, tendra
+2015-04-01 19:56:55	mischief	waaaa
+2015-04-01 19:57:01	doppel	hah
+2015-04-01 19:57:10	doppel	i guess you couldn't "go" there ;-)
+2015-04-01 19:57:30	likecolacola	go somewhere else
+2015-04-01 19:57:36	doppel	no go on go!
+2015-04-01 19:57:55	likecolacola	joking xd
+2015-04-01 19:59:01	◀▬▬	a3f (~a3f@95.90.216.96) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 19:59:24	▬▬▶	a3f (~a3f@95.90.216.96) has joined ##c
+2015-04-01 19:59:49	◀▬▬	frostschutz (~frostschu@x2f64807.dyn.telefonica.de) has quit (Remote host closed the connection)
+2015-04-01 20:00:17	◀▬▬	Betal (~Beta@unaffiliated/betal) has quit (Remote host closed the connection)
+2015-04-01 20:00:59	◀▬▬	rcr (~rcr@zymeworks.com) has quit (Remote host closed the connection)
+2015-04-01 20:01:00	▬▬▶	Solarlux (~IceChat9@212.93.115.144) has joined ##c
+2015-04-01 20:01:10	--	dual-pyon is now known as n-pyon-complete
+2015-04-01 20:02:58	Chris	would also be good if it only supported the C dialects in ##c and all of them in private messages and/or other channels
+2015-04-01 20:03:38	Maxdamantus	Why that limitation?
+2015-04-01 20:03:52	lewellyn	it makes comparative things harder.
+2015-04-01 20:04:16	◀▬▬	a3f (~a3f@95.90.216.96) has quit (Ping timeout: 264 seconds)
+2015-04-01 20:04:18	Maxdamantus	It can be useful to demonstrate things using other languages.
+2015-04-01 20:04:25	Maxdamantus	Doesn't mean you're talking about that language.
+2015-04-01 20:04:34	▬▬▶	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has joined ##c
+2015-04-01 20:04:46	Maxdamantus	eg, how I demonstrated my UTF-8 formula using Python just above.
+2015-04-01 20:04:54	◀▬▬	ollehar (~Thunderbi@pd95b2310.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2015-04-01 20:05:02	▬▬▶	ollehar1 (~Thunderbi@pd95b2310.dip0.t-ipconnect.de) has joined ##c
+2015-04-01 20:05:22	◀▬▬	CEnnis91 (uid3543@gateway/web/irccloud.com/x-llneqjvqbioafutk) has quit (Quit: Connection closed for inactivity)
+2015-04-01 20:07:07	▬▬▶	brentru (~brentru@h8bd43b72b7c.res.umassd.edu) has joined ##c
+2015-04-01 20:09:04	◀▬▬	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 20:09:15	◀▬▬	Superlokkus (~Superlokk@141.30.223.183) has quit (Quit: Bye!)
+2015-04-01 20:12:27	◀▬▬	Solarlux (~IceChat9@212.93.115.144) has left ##c
+2015-04-01 20:13:08	doppel	i must have missed that
+2015-04-01 20:13:21	doppel	the only python thing i saw was what pragma typed.
+2015-04-01 20:16:05	◀▬▬	askatasuna (~askatasun@host177.190-138-62.telecom.net.ar) has quit (Ping timeout: 246 seconds)
+2015-04-01 20:16:53	doppel	int turnaround(int kommissar) { return !kommissar; }
+2015-04-01 20:17:08	▬▬▶	arescorpio (~arescorpi@51-255-114-200.fibertel.com.ar) has joined ##c
+2015-04-01 20:18:40	Chris	Maxdamantus: exactly, it's off-topic
+2015-04-01 20:19:36	brentru	Hello. My professor wants us to "complete" this function but I'm not seeing how it's possible in two lines
+2015-04-01 20:19:37	brentru	http://pastie.org/10068628
+2015-04-01 20:20:13	brentru	It is already "pre-coded" for a linked list, but isn't fully integrated. I'm very confused at his conventions. Possibly someone could help clarrify?
+2015-04-01 20:20:19	Maxdamantus	Chris: the Python element, or the UTF-8 element?
+2015-04-01 20:20:36	--	irc: disconnected from server

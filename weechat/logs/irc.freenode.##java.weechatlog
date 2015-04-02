@@ -1,0 +1,523 @@
+2015-03-31 23:23:34	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##java
+2015-03-31 23:23:34	--	Topic for ##java is "Welcome! || Read http://javachannel.org/ before participating. || Paste limit is two lines; ~pastebin lists options. || No applets, please. || Minecraft, Android, and Javascript all have their own channel."
+2015-03-31 23:23:34	--	Topic set by tjsnell on Tue, 23 Dec 2014 09:34:37
+2015-03-31 23:23:34	--	Channel ##java: 484 nicks (4 ops, 0 voices, 480 normals)
+2015-03-31 23:23:36	--	PvNotice(ChanServ): Please read the topic for basic channel guidelines. Thanks.
+2015-03-31 23:23:36	▬▬▶	dj_pi (~dj@c-107-5-228-80.hsd1.mi.comcast.net) has joined ##java
+2015-03-31 23:23:50	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2015-03-31 23:25:15	◀▬▬	T-2000 (~T-2000@unaffiliated/t-2000) has quit (Read error: Connection reset by peer)
+2015-03-31 23:25:43	--	irc: disconnected from server
+2015-03-31 23:39:40	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##java
+2015-03-31 23:39:40	--	Topic for ##java is "Welcome! || Read http://javachannel.org/ before participating. || Paste limit is two lines; ~pastebin lists options. || No applets, please. || Minecraft, Android, and Javascript all have their own channel."
+2015-03-31 23:39:40	--	Topic set by tjsnell on Tue, 23 Dec 2014 09:34:37
+2015-03-31 23:39:40	--	Channel ##java: 486 nicks (4 ops, 0 voices, 482 normals)
+2015-03-31 23:39:40	--	PvNotice(ChanServ): Please read the topic for basic channel guidelines. Thanks.
+2015-03-31 23:39:42	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2015-03-31 23:40:35	◀▬▬	MalekAlrwily (~Toute@37.104.18.162) has quit (Ping timeout: 245 seconds)
+2015-03-31 23:41:29	--	Yukkino is now known as Dhs92
+2015-03-31 23:42:58	▬▬▶	zsentinel (~zsentinel@unaffiliated/zsentinel) has joined ##java
+2015-03-31 23:43:18	◀▬▬	netj (~netj@naru.stanford.edu) has quit (Ping timeout: 252 seconds)
+2015-03-31 23:43:36	--	irc: disconnected from server
+2015-03-31 23:46:23	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##java
+2015-03-31 23:46:23	--	Topic for ##java is "Welcome! || Read http://javachannel.org/ before participating. || Paste limit is two lines; ~pastebin lists options. || No applets, please. || Minecraft, Android, and Javascript all have their own channel."
+2015-03-31 23:46:23	--	Topic set by tjsnell on Tue, 23 Dec 2014 09:34:37
+2015-03-31 23:46:23	--	Channel ##java: 487 nicks (4 ops, 0 voices, 483 normals)
+2015-03-31 23:46:23	--	PvNotice(ChanServ): Please read the topic for basic channel guidelines. Thanks.
+2015-03-31 23:46:29	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2015-03-31 23:46:40	sreich	eh
+2015-03-31 23:46:45	sreich	why would a server bind on all ports?
+2015-03-31 23:46:48	sreich	that defeats the purpose of ports
+2015-03-31 23:46:48	mebigfatguy	your friend can be wrong, and you can be crazy... both... right?
+2015-03-31 23:47:06	--	irc: disconnected from server
+2015-04-01 15:19:07	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##java
+2015-04-01 15:19:07	--	Topic for ##java is "Welcome! || Read http://javachannel.org/ before participating. || Paste limit is two lines; ~pastebin lists options. || No applets, please. || Minecraft, Android, and Javascript all have their own channel."
+2015-04-01 15:19:07	--	Topic set by tjsnell on Tue, 23 Dec 2014 09:34:37
+2015-04-01 15:19:07	--	Channel ##java: 506 nicks (3 ops, 0 voices, 503 normals)
+2015-04-01 15:19:07	--	PvNotice(ChanServ): Please read the topic for basic channel guidelines. Thanks.
+2015-04-01 15:19:09	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2015-04-01 15:19:11	hapislacker	hi all
+2015-04-01 15:19:15	◀▬▬	IAmNotThatGuy (~devil@ubuntu/member/mohan-chml) has quit (Quit: KABOOM!!!!)
+2015-04-01 15:19:29	Mengu	Even though both objects already have interfaces and an abstract class?
+2015-04-01 15:19:38	tokam	ok thanks, if one day I build an android app, which uses my own .so twice I can see what happens and if size or loading duplicates, there is maybe also the option to build all into one big file which i maintain myself.
+2015-04-01 15:19:42	freeone3000	Mengu: The method is defined on the interface?
+2015-04-01 15:19:51	freeone3000	tokam: That's called "static linkage".
+2015-04-01 15:19:52	Mengu	the only thing the objects share is that they have the .getName() getter
+2015-04-01 15:20:01	freeone3000	Mengu: Then you need another interface for that method.
+2015-04-01 15:20:04	wyvern	then add a Nameable interface.
+2015-04-01 15:20:09	tokam	for android by the way devices need different c++ code. that's why the opencv-manager app exists
+2015-04-01 15:20:14	▬▬▶	`^_^v (~nycs@gw.hq.meetup.com) has joined ##java
+2015-04-01 15:20:17	Mengu	yes it is, but when I call it in the function it doesn't work
+2015-04-01 15:20:24	wyvern	~doesn't work
+2015-04-01 15:20:25	Mengu	ah okey
+2015-04-01 15:20:25	freeone3000	Mengu: Show us that code.
+2015-04-01 15:20:25	javabot	wyvern, doesn't work is useless.  Tell us what it is, what you want it to do, and what it is doing.  Consider putting some code and any errors on a pastebin.  (use ~pastebin for suggestions)
+2015-04-01 15:20:38	◀▬▬	lanemeyer (~eric@wsip-72-214-116-193.dc.dc.cox.net) has quit (Ping timeout: 252 seconds)
+2015-04-01 15:20:43	Mengu	sek Ill do some copy pasting
+2015-04-01 15:21:40	▬▬▶	HelpNeeded222 (461aa611@gateway/web/freenode/ip.70.26.166.17) has joined ##java
+2015-04-01 15:21:56	▬▬▶	phroa (phroa@phroa.net) has joined ##java
+2015-04-01 15:21:57	`^_^v	if i call new Exception().fillInStackTrace(), does this find the stack frame with the exception handler as well, or is this handled by the try-catch block?
+2015-04-01 15:22:01	HelpNeeded222	Just wanted to say that I got the assignment fully working
+2015-04-01 15:22:05	HelpNeeded222	Thanks a lot for your help
+2015-04-01 15:22:16	wyvern	`^_^v try it and see
+2015-04-01 15:22:20	freeone3000	`^_^v: That fills in the stack frame as if the exception was thrown at that point.
+2015-04-01 15:22:40	`^_^v	how am i supposed to try it?
+2015-04-01 15:22:49	freeone3000	`^_^v: Uh. Call it, then call .printStackTrace().
+2015-04-01 15:22:49	▬▬▶	plarsen (~plarsen@redhat/jboss/pdpc.professional.plarsen) has joined ##java
+2015-04-01 15:23:38	Mengu	Here are the interfaces https://gist.github.com/anonymous/cf3d4e4b8abb7b93df82
+2015-04-01 15:23:48	◀▬▬	Baako (~baako@unaffiliated/baako) has quit (Read error: Connection reset by peer)
+2015-04-01 15:23:58	Mengu	Loan and Account have abstract classes as well.
+2015-04-01 15:24:01	freeone3000	Mengu: So where's your Nameable?
+2015-04-01 15:24:03	wyvern	abstract modifier on methods in interfaces is unneeded
+2015-04-01 15:24:07	wyvern	as is public
+2015-04-01 15:24:13	wyvern	they are always public and abstract
+2015-04-01 15:24:42	wyvern	have a separate Nameable interface with getName() and make Loan and Account extend it.
+2015-04-01 15:24:46	◀▬▬	FreezingCold (~FreezingC@135.0.41.14) has quit (Ping timeout: 248 seconds)
+2015-04-01 15:24:47	Mengu	so public and abstract is unneeded? okey!
+2015-04-01 15:25:08	▬▬▶	sebhoss (~sebhoss@pD9F60C06.dip0.t-ipconnect.de) has joined ##java
+2015-04-01 15:25:31	▬▬▶	Matthijs (~quassel@unaffiliated/matthijs) has joined ##java
+2015-04-01 15:25:40	Mengu	okey!
+2015-04-01 15:25:51	Mengu	the abstract classes will extend it right?
+2015-04-01 15:25:52	◀▬▬	Lorcatar (~BostonMA1@unaffiliated/bostonma1776) has quit (Read error: Connection reset by peer)
+2015-04-01 15:25:58	Mengu	the Nameable
+2015-04-01 15:26:55	▬▬▶	dj3000 (~dj3000@209.183.246.114) has joined ##java
+2015-04-01 15:27:12	Matthijs	s/extend/implement
+2015-04-01 15:27:19	▬▬▶	teddyp1cker (~teddyp1ck@128-69-56-202.broadband.corbina.ru) has joined ##java
+2015-04-01 15:27:24	dj3000	i have a parser class. not sure if the parse() method should be static or not. any opinions, or does it matter?
+2015-04-01 15:27:52	dj3000	its fields are static.
+2015-04-01 15:28:26	◀▬▬	HelpNeeded222 (461aa611@gateway/web/freenode/ip.70.26.166.17) has quit (Quit: Page closed)
+2015-04-01 15:29:05	wyvern	make none of them static.
+2015-04-01 15:29:11	wyvern	unless they are immutable
+2015-04-01 15:29:14	▬▬▶	nug700 (~nug700@unaffiliated/nug700) has joined ##java
+2015-04-01 15:29:21	dj3000	they are. they are all constants
+2015-04-01 15:29:28	dj3000	public static final.
+2015-04-01 15:29:35	◀▬▬	MatthijsH (~quassel@unaffiliated/matthijs) has quit (Ping timeout: 256 seconds)
+2015-04-01 15:29:42	dj3000	so there's no state whatsoever...
+2015-04-01 15:30:13	◀▬▬	sebhoss (~sebhoss@pD9F60C06.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2015-04-01 15:31:35	kc8hfi	when you start a java program to read from a serial port, the first read returns weird characters, then after that it's ok.  does this make sense?
+2015-04-01 15:31:36	wyvern	static methods are hard to test because you cant inject alternate impls where they're used.
+2015-04-01 15:32:11	wyvern	if that's not relevant here then carry on with static.
+2015-04-01 15:35:35	▬▬▶	sublimate (~jack@unaffiliated/auv5) has joined ##java
+2015-04-01 15:36:17	◀▬▬	blackb1rd (~zack@173.247.203.74) has quit (Quit: blackb1rd)
+2015-04-01 15:36:24	◀▬▬	h0h0h0 (~h0h0h0@206.217.86.228) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-04-01 15:36:52	▬▬▶	DavidDudson (~DavidDuds@121-98-138-40.bng1.nct.orcon.net.nz) has joined ##java
+2015-04-01 15:37:29	▬▬▶	greenbagels (~gb@cpe-65-25-124-183.neo.res.rr.com) has joined ##java
+2015-04-01 15:37:32	freeone3000	kc8hfi: Welcome to serial ports, where line noise is an actual thing.
+2015-04-01 15:38:35	freeone3000	kc8hfi: Discard everything before start, make sure to rate sync, and use parity if possible.
+2015-04-01 15:39:12	▬▬▶	srm (~arghlfoo@unaffiliated/srm) has joined ##java
+2015-04-01 15:40:15	kc8hfi	freeone3000:  so its normal behavior.  I should be able to turn parity on,  right now, the port is configured for 8 data bits, no parity, and 1 stop bit
+2015-04-01 15:40:48	freeone3000	Yeah, serial cables don't use packets or frames, it's just discrete analog data.
+2015-04-01 15:41:33	◀▬▬	DavidDudson (~DavidDuds@121-98-138-40.bng1.nct.orcon.net.nz) has quit (Client Quit)
+2015-04-01 15:41:43	kc8hfi	freeone3000: i started working on a work around so to speak,  send the same piece of data out the port and keep reading until i got the correct response.  once that happened, the rest of the program can continue
+2015-04-01 15:41:58	kc8hfi	of course, stop sending the same thing after a few times so it doesn't get stuck in a loop
+2015-04-01 15:42:51	▬▬▶	MalfaitRobin (~MalfaitRo@unaffiliated/malfaitrobin) has joined ##java
+2015-04-01 15:44:19	◀▬▬	mr_lou (~sirlou@0x555321d8.adsl.cybercity.dk) has quit (Quit: Ex-Chat)
+2015-04-01 15:45:54	freeone3000	kc8hfi: Usually done with XON.
+2015-04-01 15:46:50	▬▬▶	Lorcatar (~BostonMA1@unaffiliated/bostonma1776) has joined ##java
+2015-04-01 15:47:55	◀▬▬	longbeach (~mike@AFontenayssB-152-1-64-152.w82-121.abo.wanadoo.fr) has quit
+2015-04-01 15:50:29	sreich	freeone3000: this includes eg usb?
+2015-04-01 15:50:52	sreich	i thought it had parity built in
+2015-04-01 15:50:55	kc8hfi	sreich: yep, i would say so for usb
+2015-04-01 15:52:13	freeone3000	sreich: Nope. USB has built-in parity. Most things have built-in parity.
+2015-04-01 15:52:54	kc8hfi	oh, hmm, ok.
+2015-04-01 15:53:34	kc8hfi	ok, thats weird.  i turned on parity, but I didn't get any data.  I'm gonna put it back to what I had before since its a usb connection anyway
+2015-04-01 15:53:49	◀▬▬	topriddy (~topriddy@94.2.106.205) has quit (Quit: topriddy)
+2015-04-01 15:53:59	Mengu	wyvern are you still there? I tried the interface and it worked, but when I put the Nameable in a list it got angry. I can't figure out why it matters if it's in a list. Can you see what's wrong? https://gist.github.com/anonymous/651dc5046a704503be35
+2015-04-01 15:55:13	freeone3000	You're doing serial-over-USB? Odd.
+2015-04-01 15:55:37	kc8hfi	freeone3000: talking to an arduino...
+2015-04-01 15:55:46	freeone3000	Mengu: What's your error?
+2015-04-01 15:55:56	 *	freeone3000 heralds the return of the Magic Error Hat.
+2015-04-01 15:57:05	Mengu	(java.util.list(package.Nameable<>) can't be applied to (java.util.list(package.Loan<>)
+2015-04-01 15:57:21	Mengu	but Loan it Nameable so that's what I don't get ^^
+2015-04-01 15:58:27	wyvern	Generics are invariant.
+2015-04-01 15:59:41	◀▬▬	ngc0202 (ngc0202@gateway/shell/elitebnc/x-cjpfftsisdatvqeq) has left ##java
+2015-04-01 16:00:11	Mengu	What's invariant? That the name can't change?
+2015-04-01 16:00:31	wyvern	List<? extends Nameable>
+2015-04-01 16:00:37	▬▬▶	bolovanos (~bolovanos@91.201.23.7) has joined ##java
+2015-04-01 16:00:38	k5_	Mengu: you need to say what kind of variance you want the generic type to have. When you specify nothing it is invariant. In your case List<? extends Nameable> will work, you can pass every list whose type parameter extends Nameable
+2015-04-01 16:01:39	k5_	Mengu: invariant means it must match exactly
+2015-04-01 16:02:02	Mengu	Ah okey it works. So it specified the list. I thought the List<Nameable> would be enough. Thanks a lot!
+2015-04-01 16:03:24	▬▬▶	deSilva (deSilva@c83-254-212-162.bredband.comhem.se) has joined ##java
+2015-04-01 16:03:41	◀▬▬	forgottenone (~forgotten@151.250.163.197) has quit (Quit: Konversation terminated!)
+2015-04-01 16:04:06	◀▬▬	laudiacay_mobile (uid46610@gateway/web/irccloud.com/x-dvhxioxsnvxkxyoo) has quit (Quit: Connection closed for inactivity)
+2015-04-01 16:04:29	▬▬▶	theRealGent (~theRealGe@unaffiliated/therealgent) has joined ##java
+2015-04-01 16:04:50	sreich	i'm not sure how i understand how parallel streams work..is the final call sync?
+2015-04-01 16:05:01	sreich	from the perspective of the caller, of course..
+2015-04-01 16:05:12	▬▬▶	snowkrash (~snowkrash@91.141.1.120.wireless.dyn.drei.com) has joined ##java
+2015-04-01 16:05:32	idletask	sreich: no
+2015-04-01 16:05:57	sreich	okay, so one would need to use synchronization mechanisms with anything using it
+2015-04-01 16:06:04	idletask	sreich: first things first, when you get a `Stream` you cannot know by advance whether it is sequential or parallel, unless it is explicitly documented by the stream provider
+2015-04-01 16:06:18	idletask	And what do you mean by "sync"?
+2015-04-01 16:06:21	◀▬▬	tokam (~tokam@unaffiliated/tokam) has quit (Ping timeout: 255 seconds)
+2015-04-01 16:06:23	sreich	synchronous
+2015-04-01 16:06:25	sreich	as in, blocking
+2015-04-01 16:06:27	idletask	A Stream is meant to be used only once
+2015-04-01 16:06:36	idletask	Yes, but no, you are miving things here
+2015-04-01 16:06:40	idletask	s,v,x,
+2015-04-01 16:06:47	◀▬▬	Jackneill (~Jackneill@unaffiliated/jackneill) has quit (Remote host closed the connection)
+2015-04-01 16:06:50	idletask	A Stream is lazily populated
+2015-04-01 16:07:05	◀▬▬	theRealGent (~theRealGe@unaffiliated/therealgent) has quit (Client Quit)
+2015-04-01 16:07:22	idletask	It will actually _not_ start and "spew" entries until there is a terminal operation attached to it
+2015-04-01 16:07:32	sreich	right
+2015-04-01 16:07:55	idletask	You can pass as an argument to a method a list.stream().parallel().filter(someFilter).skip(2L).map(something)
+2015-04-01 16:08:03	idletask	There is no terminal operation in there
+2015-04-01 16:08:35	▬▬▶	tokam (~tokam@unaffiliated/tokam) has joined ##java
+2015-04-01 16:08:38	idletask	So I fail to see your point about "synchronized"
+2015-04-01 16:08:56	sreich	yeah i get it, they're quite conceptually different
+2015-04-01 16:09:41	idletask	Note also that a stream may, or may not, be ordered; and that some operations (.forEach() in particular, but also all Collectors) can have a huge, albeit not obvious, influence
+2015-04-01 16:10:41	idletask	I recently stumbled upon that and that was quite confusing to me, but see here: http://stackoverflow.com/q/28259636/1093528
+2015-04-01 16:10:41	javabot	idletask's title: java - Is this a bug in Files.lines(), or am I misunderstanding something about parallel streams? - Stack Overflow
+2015-04-01 16:11:50	▬▬▶	laudiacay_mobile (uid46610@gateway/web/irccloud.com/x-zllvibgnvzzsdwne) has joined ##java
+2015-04-01 16:12:45	idletask	The morale of what I learned with this question is that .forEachOrdered() exists for a reason :p
+2015-04-01 16:12:53	sreich	interesting indeed
+2015-04-01 16:13:01	freeone3000	idletask: skip on a parallel line will absolutely skip a line, but... not the one you want.
+2015-04-01 16:14:49	▬▬▶	njcomsec (~kvirc@cpc1-seve21-2-0-cust532.13-3.cable.virginm.net) has joined ##java
+2015-04-01 16:15:19	▬▬▶	DavidDudson (~DavidDuds@130.123.29.164) has joined ##java
+2015-04-01 16:15:42	◀▬▬	DavidDudson (~DavidDuds@130.123.29.164) has quit (Remote host closed the connection)
+2015-04-01 16:16:36	▬▬▶	mebigfatguy (~mbfg_@128.177.74.147) has joined ##java
+2015-04-01 16:18:12	◀▬▬	m8 (~m@unaffiliated/m8) has quit (Quit: Sto andando via)
+2015-04-01 16:19:42	◀▬▬	Rickmasta (~Rick@137.125.137.203) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:19:49	◀▬▬	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has quit (Read error: Connection reset by peer)
+2015-04-01 16:20:12	◀▬▬	Monie (~Monie@cpe-071-076-159-155.triad.res.rr.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:20:17	▬▬▶	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has joined ##java
+2015-04-01 16:22:03	idletask	freeone3000: yep, .forEach() tells that you don't care about the order and will basically tell the stream "pipeline" about that... Which is why you need .forEachOrdered()
+2015-04-01 16:22:04	scrapcode	Is mono at a point that it is being used in production by larger companies?
+2015-04-01 16:22:23	mebigfatguy	scrapcode, you are asking here, why?
+2015-04-01 16:22:38	▬▬▶	IHideKeys (IHideKeys@cpe-69-204-150-242.nycap.res.rr.com) has joined ##java
+2015-04-01 16:22:39	scrapcode	wrong channel
+2015-04-01 16:22:59	◀▬▬	srm (~arghlfoo@unaffiliated/srm) has quit (Quit: Leaving.)
+2015-04-01 16:23:02	▬▬▶	blackb1rd (~zack@173.247.203.74) has joined ##java
+2015-04-01 16:23:20	scrapcode	My sincere apologies, mebigfatguy.
+2015-04-01 16:23:33	mebigfatguy	no worries
+2015-04-01 16:23:34	idletask	sreich: for more information, read the javadoc of Spliterator
+2015-04-01 16:23:57	sreich	ok
+2015-04-01 16:24:09	idletask	(by the way, I wonder why Spliterator.NONNULL exists at all...
+2015-04-01 16:25:04	◀▬▬	kc8hfi (~camey@fedora/kc8hfi) has quit (Quit: home)
+2015-04-01 16:26:07	idletask	sreich: but there are two lessons to understand here; 1. you can't know, if you are passed a Stream, whether it's parallel or sequential but 2. this is "not a problem", as the terminal operations you use take precedence
+2015-04-01 16:26:25	sreich	right
+2015-04-01 16:27:12	idletask	sreich: for instance, if you .collect() using a Collector which doesn't have the CONCURRENT characteristic, then even if the _stream_ is CONCURRENT (before its Spliterator says so), then the implementation will acknowledge that and generate values sequentially, not in parallel
+2015-04-01 16:27:55	◀▬▬	xcombelle (~xcombelle@AToulouse-657-1-1064-149.w90-50.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2015-04-01 16:28:04	◀▬▬	SynrG (~synrg@debian/developer/synrg) has quit (Read error: Connection reset by peer)
+2015-04-01 16:28:34	idletask	At least, that's what I could understand so far :p
+2015-04-01 16:29:24	▬▬▶	SynrG (~synrg@debian/developer/synrg) has joined ##java
+2015-04-01 16:30:58	▬▬▶	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has joined ##java
+2015-04-01 16:31:26	◀▬▬	viju (~viju@183.87.234.8) has quit (Quit: WeeChat 0.3.7)
+2015-04-01 16:33:37	▬▬▶	wagonboi (~wagonboi@209.129.115.31) has joined ##java
+2015-04-01 16:34:51	◀▬▬	foul_owl (~kerry@c-71-227-170-157.hsd1.wa.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 16:38:03	▬▬▶	DavidDudson (~DavidDuds@130.123.29.164) has joined ##java
+2015-04-01 16:38:36	◀▬▬	scrapcode (~scrapcode@unaffiliated/scrapcode) has quit (Quit: scrapcode)
+2015-04-01 16:38:43	◀▬▬	`^_^v (~nycs@gw.hq.meetup.com) has quit (Ping timeout: 246 seconds)
+2015-04-01 16:40:20	▬▬▶	daivyk (~daivyk@177.40.198.162) has joined ##java
+2015-04-01 16:40:42	▬▬▶	mmatloka (~mmatloka@dhcp95-108-85-135.eaw.com.pl) has joined ##java
+2015-04-01 16:40:58	◀▬▬	netj (~netj@naru.stanford.edu) has quit (Ping timeout: 265 seconds)
+2015-04-01 16:41:23	▬▬▶	netj (~netj@128.12.163.109) has joined ##java
+2015-04-01 16:41:37	◀▬▬	MalfaitRobin (~MalfaitRo@unaffiliated/malfaitrobin) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 16:42:04	◀▬▬	teddyp1cker (~teddyp1ck@128-69-56-202.broadband.corbina.ru) has quit
+2015-04-01 16:44:25	◀▬▬	daivyk (~daivyk@177.40.198.162) has quit (Client Quit)
+2015-04-01 16:44:27	▬▬▶	Maxels (~Maxel@24-159-207-34.static.roch.mn.charter.com) has joined ##java
+2015-04-01 16:45:45	▬▬▶	daivyk (~daivyk@177.40.198.162) has joined ##java
+2015-04-01 16:46:52	◀▬▬	Maxel (~Maxel@24-159-207-34.static.roch.mn.charter.com) has quit (Ping timeout: 272 seconds)
+2015-04-01 16:47:07	▬▬▶	philipballew (~philip@ubuntu/member/philipballew) has joined ##java
+2015-04-01 16:47:25	▬▬▶	mirak (~karim@static-176-182-51-22.ncc.abo.bbox.fr) has joined ##java
+2015-04-01 16:47:37	mirak	hello
+2015-04-01 16:48:31	▬▬▶	lanemeyer (~eric@pool-72-86-43-112.clppva.fios.verizon.net) has joined ##java
+2015-04-01 16:49:20	mirak	To run GUI tests on a linux jenkins server that have no monitor, we use Xfvb. I want to something similar with windows, and not have the gui popping up and grapping mouse while we are working.
+2015-04-01 16:49:47	wyvern	Run them in a vm.
+2015-04-01 16:49:55	@cheeser	~tech support
+2015-04-01 16:49:55	javabot	Hello, ##java is not a technical support channel for your Java apps or virtual machines; it's a development channel for enthusiasts to discuss programming with the Java language.  Please ask the vendor of your software for support if you're having trouble with it.
+2015-04-01 16:49:57	▬▬▶	puddlejumper (~matthew@cpe-74-65-60-152.rochester.res.rr.com) has joined ##java
+2015-04-01 16:50:18	◀▬▬	usrJayRay (~usrJayRay@150.200.74.127) has quit (Quit: usrJayRay)
+2015-04-01 16:50:47	◀▬▬	bgardner (~bgardner@cpe-108-167-9-227.neb.res.rr.com) has quit (Quit: leaving)
+2015-04-01 16:50:59	mirak	cheeser: please
+2015-04-01 16:51:09	@cheeser	please what?
+2015-04-01 16:51:32	@cheeser	there's actually a jenkins channel on this very network.
+2015-04-01 16:52:25	mirak	cheeser: ok, but that's not just about jenkins, because the issue would be similar by manually running tests locally on command line before commiting
+2015-04-01 16:53:10	sonOfRa	either don't run your UI tests locally, or run them in a VM
+2015-04-01 16:54:17	◀▬▬	DavidDudson (~DavidDuds@130.123.29.164) has left ##java ("Goodbye all, and thankyou.")
+2015-04-01 16:54:38	@cheeser	mirak: that's fine.  but we don't do tech support here.
+2015-04-01 16:54:47	mirak	since the awt library can support X on linux systems, do you think it could be rebuilt to support X on windows system, by using the cygwin framework ?
+2015-04-01 16:54:59	mirak	that was my last question ^^
+2015-04-01 16:55:16	@cheeser	you're probably right about that.
+2015-04-01 16:55:44	◀▬▬	Haswell (~broaderba@unaffiliated/haswell) has quit (Quit: Saliendo)
+2015-04-01 16:55:56	◀▬▬	gelignite (~gelignite@i5387AC35.versanet.de) has quit (Quit: http://bit.ly/1kso8Ta)
+2015-04-01 17:00:20	▬▬▶	AckerMANn (~AckerMANn@78.97.136.198) has joined ##java
+2015-04-01 17:00:31	mirak	In fact the vm solution could be nice, but a bit overkill, and I doubt we would be allowed to install a VM unfortunely since we are not admin of our computers at work. However you gave me the idea that with colinux it might be feasible, because unlike a full VM, it's like running a linux kernel like a windows executable. So a linux jvm could run inside a colinux instance, and run a xfvb.
+2015-04-01 17:00:45	mirak	Thanks you for the idea of the vm :)
+2015-04-01 17:01:54	mirak	I think the only blocking point would be the need to install a virtual network device to communicate with the vm.
+2015-04-01 17:02:10	◀▬▬	deSilva (deSilva@c83-254-212-162.bredband.comhem.se) has quit
+2015-04-01 17:02:54	◀▬▬	AckerMANn (~AckerMANn@78.97.136.198) has quit
+2015-04-01 17:04:14	◀▬▬	mike802 (~IceChat77@pool-72-73-88-152.ptldme.east.myfairpoint.net) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:05:09	▬▬▶	rco (~randallov@97.75.189.62) has joined ##java
+2015-04-01 17:06:11	rco	If I have a RandomAccessFile, and I reach the end of the file, can I wait for a change to the file and then keep reading?
+2015-04-01 17:06:37	▬▬▶	wabash (~wabash@unaffiliated/wabash) has joined ##java
+2015-04-01 17:06:58	rco	Or can I seek to where I reached the end of file and then keep reading?
+2015-04-01 17:07:08	◀▬▬	Ryanar (Ryan@129.21.92.182) has quit (Ping timeout: 252 seconds)
+2015-04-01 17:07:24	▬▬▶	airborn_ (~airborn@unaffiliated/airborn) has joined ##java
+2015-04-01 17:08:41	▬▬▶	bofh (~b0fh_ua@c-98-216-106-189.hsd1.ma.comcast.net) has joined ##java
+2015-04-01 17:09:39	bofh	Hi there! Does anybody know how to fail fast if a method in a mocked object (Mockito) was invoked with arguments that were not recorded during Mockito.when(...).then....?
+2015-04-01 17:10:03	idletask	bofh: there is a way, yes
+2015-04-01 17:10:41	◀▬▬	Artemios (~rogue@59-151-112-92.pool.ukrtel.net) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:11:28	idletask	bofh: verify()
+2015-04-01 17:11:52	idletask	verify(theMock).theMethod(expected, args); and you can use argument matchers
+2015-04-01 17:12:40	▬▬▶	kdprog (~Adium@host86-143-228-176.range86-143.btcentralplus.com) has joined ##java
+2015-04-01 17:13:58	▬▬▶	sebhoss (~sebhoss@pD9F60C06.dip0.t-ipconnect.de) has joined ##java
+2015-04-01 17:14:49	bofh	idletask: verify is invoked usually at the end of the test, I need to get a test failure on first unmatched call
+2015-04-01 17:15:16	idletask	"first"?
+2015-04-01 17:15:28	idletask	Are you sure your test is actually a _unit_ test?
+2015-04-01 17:15:40	▬▬▶	xelra (~xelra@unaffiliated/xelra) has joined ##java
+2015-04-01 17:15:47	rco	for posterity: the answer is yes. You can just keep calling read() and it will give the new data.
+2015-04-01 17:16:27	bofh	idletask: yes, I'm sure.
+2015-04-01 17:17:16	idletask	With a mock called several times with unknown arguments?
+2015-04-01 17:17:17	k5_	bofh: you can supply a default answer when you mock the class
+2015-04-01 17:17:19	idletask	I wouldn't be so sure
+2015-04-01 17:17:30	◀▬▬	wagonboi (~wagonboi@209.129.115.31) has quit (Remote host closed the connection)
+2015-04-01 17:17:43	k5_	bofh: the default answer could throw an exception
+2015-04-01 17:18:02	bofh	k5_: yes, I ended up exactly with this solution - catch-all matcher with default to fail
+2015-04-01 17:18:11	bofh	but I thought there's some more elegant solution
+2015-04-01 17:18:32	k5_	why wasnt that information in your original question ?
+2015-04-01 17:18:40	◀▬▬	sebhoss (~sebhoss@pD9F60C06.dip0.t-ipconnect.de) has quit (Ping timeout: 244 seconds)
+2015-04-01 17:20:04	--	irc: disconnected from server
+2015-04-01 17:29:26	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##java
+2015-04-01 17:29:26	--	Topic for ##java is "Welcome! || Read http://javachannel.org/ before participating. || Paste limit is two lines; ~pastebin lists options. || No applets, please. || Minecraft, Android, and Javascript all have their own channel."
+2015-04-01 17:29:26	--	Topic set by tjsnell on Tue, 23 Dec 2014 09:34:37
+2015-04-01 17:29:26	--	Channel ##java: 503 nicks (3 ops, 0 voices, 500 normals)
+2015-04-01 17:29:29	--	PvNotice(ChanServ): Please read the topic for basic channel guidelines. Thanks.
+2015-04-01 17:29:30	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2015-04-01 17:34:55	▬▬▶	Katana (~hentai@unaffiliated/katana) has joined ##java
+2015-04-01 17:35:48	▬▬▶	daixtr (~daixtr@unaffiliated/daixtr) has joined ##java
+2015-04-01 17:36:41	◀▬▬	Matthijs (~quassel@unaffiliated/matthijs) has quit (Ping timeout: 250 seconds)
+2015-04-01 17:38:19	◀▬▬	wagonboi (~wagonboi@209.129.115.31) has quit
+2015-04-01 17:39:43	◀▬▬	sublimate (~jack@unaffiliated/auv5) has quit (Ping timeout: 248 seconds)
+2015-04-01 17:39:57	◀▬▬	rco (~randallov@97.75.189.62) has quit (Quit: WeeChat 1.1.1)
+2015-04-01 17:42:05	◀▬▬	Neo-- (~neo@BSN-77-159-184.static.siol.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-04-01 17:42:12	◀▬▬	deSouza (~deSouza@unaffiliated/desouza) has quit (Ping timeout: 256 seconds)
+2015-04-01 17:43:32	◀▬▬	PigFlu (~herp@unaffiliated/pigflu) has quit (Quit: rthrthrth)
+2015-04-01 17:44:25	◀▬▬	philipballew (~philip@ubuntu/member/philipballew) has quit (Quit: Leaving)
+2015-04-01 17:45:49	◀▬▬	Munnu (~timo@91-158-143-52.elisa-laajakaista.fi) has quit (Quit: Re-evaluating and compiling the desert of the real.)
+2015-04-01 17:48:34	◀▬▬	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has quit (Read error: Connection reset by peer)
+2015-04-01 17:49:04	▬▬▶	Bleakwiser (~Bleakwise@2605:6000:7601:ae00:9c9e:d99b:c11c:9a99) has joined ##java
+2015-04-01 17:50:47	◀▬▬	Mengu (~Mengu@81.170.157.120) has quit (Remote host closed the connection)
+2015-04-01 17:55:00	◀▬▬	sbalmos (~quassel@69.61.170.94) has quit (Remote host closed the connection)
+2015-04-01 17:56:03	◀▬▬	stefkos (~stefkos@pc11-226.chomiczowka.waw.pl) has quit (Read error: Connection reset by peer)
+2015-04-01 17:57:46	◀▬▬	dj3000 (~dj3000@209.183.246.114) has quit (Remote host closed the connection)
+2015-04-01 18:00:36	▬▬▶	limecore (~matthew@ppp121-44-183-219.lns20.syd7.internode.on.net) has joined ##java
+2015-04-01 18:02:57	▬▬▶	pingupingu (~pinguping@unaffiliated/pingupingu) has joined ##java
+2015-04-01 18:05:20	▬▬▶	drfoo (~drfoo@unaffiliated/drfoo) has joined ##java
+2015-04-01 18:06:30	--	Yukkino is now known as Yukkii
+2015-04-01 18:06:35	◀▬▬	snowkrash (~snowkrash@91.141.1.120.wireless.dyn.drei.com) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:11:14	◀▬▬	lg188 (~lg188@91.176.164.153) has quit (Quit: Leaving)
+2015-04-01 18:12:19	◀▬▬	djhworld (~djhworld@94.14.213.60) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-01 18:12:32	◀▬▬	kibibyte (~kibibyte1@89-70-42-41.dynamic.chello.pl) has quit (Quit: Leaving)
+2015-04-01 18:14:41	--	robbyoconnor is now known as ]
+2015-04-01 18:16:50	◀▬▬	fatguylaughing (~fatguylau@worx01.worxco.com) has quit (Quit: fatguylaughing)
+2015-04-01 18:17:22	--	irc: disconnected from server
+2015-04-01 18:22:42	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##java
+2015-04-01 18:22:42	--	Topic for ##java is "Welcome! || Read http://javachannel.org/ before participating. || Paste limit is two lines; ~pastebin lists options. || No applets, please. || Minecraft, Android, and Javascript all have their own channel."
+2015-04-01 18:22:42	--	Topic set by tjsnell on Tue, 23 Dec 2014 09:34:37
+2015-04-01 18:22:42	--	Channel ##java: 490 nicks (3 ops, 0 voices, 487 normals)
+2015-04-01 18:22:45	--	PvNotice(ChanServ): Please read the topic for basic channel guidelines. Thanks.
+2015-04-01 18:22:47	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2015-04-01 18:23:29	◀▬▬	netj (~netj@128.12.163.109) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:23:40	▬▬▶	netj (~netj@naru.stanford.edu) has joined ##java
+2015-04-01 18:25:13	◀▬▬	airborn_ (~airborn@unaffiliated/airborn) has quit (Ping timeout: 250 seconds)
+2015-04-01 18:25:22	◀▬▬	spuz (~spuz@host-92-25-16-167.as13285.net) has quit (Remote host closed the connection)
+2015-04-01 18:26:04	▬▬▶	Enissay_ (~Enissay@unaffiliated/enissay) has joined ##java
+2015-04-01 18:26:14	xelra	Hi guys, I've a pretty basic question, but I can't seem to figure it out myself.
+2015-04-01 18:27:35	◀▬▬	anthony25 (~anthony25@aruhier.fr) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:27:35	tjsnell	me either
+2015-04-01 18:27:40	xelra	I have a class called Button. And I need those for the navigation and on each of them I do Button.addStyle(styles)
+2015-04-01 18:28:01	◀▬▬	limecore (~matthew@ppp121-44-183-219.lns20.syd7.internode.on.net) has quit (Quit: Lost terminal)
+2015-04-01 18:28:15	◀▬▬	Enissay (~Enissay@unaffiliated/enissay) has quit (Ping timeout: 248 seconds)
+2015-04-01 18:28:42	xelra	So I thought I could make a sub-class NavigationButton by extending the Button class and then in that sub-class add the .addStyle. But how exactly do I do this?
+2015-04-01 18:28:55	▬▬▶	anthony25 (~anthony25@aruhier.fr) has joined ##java
+2015-04-01 18:29:02	freeone3000	xelra: class NavigationButton extends Button { }. Done.
+2015-04-01 18:29:30	xelra	freeone3000: Yeah, that's exactly how far I got. But the part inside?
+2015-04-01 18:29:43	freeone3000	xelra: What part inside? addStyle is inherited from its parent.
+2015-04-01 18:30:51	xelra	Yeah, but I want that when I use NavigationButton that they have a specific addStyle added. And that I don't have to do it for every button.
+2015-04-01 18:31:10	▬▬▶	Ryanar (Ryan@129.21.92.182) has joined ##java
+2015-04-01 18:31:27	freeone3000	xelra: Oh. Put that after the super() call in the constructor.
+2015-04-01 18:34:09	◀▬▬	Kabal619 (Kabal619@ip72-199-16-199.sd.sd.cox.net) has quit (Remote host closed the connection)
+2015-04-01 18:34:32	▬▬▶	theoriginalpinso (cfc8a9b3@gateway/web/freenode/ip.207.200.169.179) has joined ##java
+2015-04-01 18:34:42	◀▬▬	AMomchilov (~Alexander@198-200-109-106.cpe.distributel.net) has quit (Quit: my iMac is sleepy...)
+2015-04-01 18:34:50	◀▬▬	Spec-Chum (~Spec-Chum@90.214.249.171) has quit (Quit: Leaving)
+2015-04-01 18:35:39	theoriginalpinso	hello im tring to read from a file. is it possible to read an entire line with nextLine?
+2015-04-01 18:35:48	▬▬▶	Kabal619 (Kabal619@ip72-199-16-199.sd.sd.cox.net) has joined ##java
+2015-04-01 18:36:58	mebigfatguy	Scanner.nextLine i assume... yes
+2015-04-01 18:37:58	theoriginalpinso	i want to hold the entire line as a string value and tokenize it.
+2015-04-01 18:38:33	▬▬▶	Betal (~Beta@unaffiliated/betal) has joined ##java
+2015-04-01 18:38:36	k5_	theoriginalpinso: what happened when you tried it ?
+2015-04-01 18:39:41	@cheeser	~~ theoriginalpinso tias
+2015-04-01 18:39:42	javabot	theoriginalpinso, Try it and see. You learn much more by experimentation than by asking without having even tried.
+2015-04-01 18:39:45	mebigfatguy	theoriginalpinso, using BufferedReader is probably simpler then
+2015-04-01 18:39:55	theoriginalpinso	haven't tried yet
+2015-04-01 18:40:16	◀▬▬	AkashicLegend (~AkashicLe@unaffiliated/akashiclegend) has quit (Quit: AkashicLegend)
+2015-04-01 18:40:16	--	zz_beingbrown is now known as beingbrown
+2015-04-01 18:40:18	theoriginalpinso	im not using bufferedreader
+2015-04-01 18:40:20	▬▬▶	dodobrain (~dodobrain@unaffiliated/freakabcd) has joined ##java
+2015-04-01 18:40:26	mebigfatguy	to your loss
+2015-04-01 18:40:31	@cheeser	so try it first.  ask questions after.
+2015-04-01 18:40:40	theoriginalpinso	i knowo how to use bufferedreader. im trying to not use it
+2015-04-01 18:40:52	theoriginalpinso	ok lol
+2015-04-01 18:41:30	◀▬▬	emanuelz (~emanuel@fsf/member/emanuelz) has quit (Quit: emanuelz)
+2015-04-01 18:41:39	◀▬▬	Sc0tty- (~Scott@81.168.24.241) has quit (Quit: Leaving)
+2015-04-01 18:42:42	xelra	freeone3000: I think I see how this is going. Do I have to re-create all the constructors from Button?
+2015-04-01 18:42:46	▬▬▶	P1RATEZ (piratez@CPEbc1401e23523-CMbc1401e23520.cpe.net.cable.rogers.com) has joined ##java
+2015-04-01 18:43:34	freeone3000	xelra: Only the ones you want to use.
+2015-04-01 18:44:25	xelra	I was hoping I could just somehow inherit them. Like a 1:1 copy of Button.
+2015-04-01 18:46:03	◀▬▬	ctanga (~sone@74-94-83-121-Minnesota.hfc.comcastbusiness.net) has quit (Quit: ctanga)
+2015-04-01 18:46:08	▬▬▶	tokam (~tokam@unaffiliated/tokam) has joined ##java
+2015-04-01 18:46:44	▬▬▶	ctanga (~sone@74-94-83-121-Minnesota.hfc.comcastbusiness.net) has joined ##java
+2015-04-01 18:46:57	◀▬▬	rotkiV (~pi@unaffiliated/xfel) has quit (Ping timeout: 256 seconds)
+2015-04-01 18:48:11	◀▬▬	gravitation (~gravitati@rrcs-24-213-169-150.nyc.biz.rr.com) has quit (Quit: gravitation)
+2015-04-01 18:48:29	theoriginalpinso	ok im  really trying here. i have an idea of how to end the code but reading each line of input is what i dont understand.
+2015-04-01 18:48:36	theoriginalpinso	heres the piece of code
+2015-04-01 18:48:36	▬▬▶	kdprog (~Adium@host86-143-228-176.range86-143.btcentralplus.com) has joined ##java
+2015-04-01 18:48:41	theoriginalpinso	http://pastebin.com/index/6mY2PqbK
+2015-04-01 18:49:25	freeone3000	theoriginalpinso: You call .hasNext(). You never call .next().
+2015-04-01 18:49:27	mebigfatguy	so you while loop condition implies you are using a file, but the rest of code doesn't
+2015-04-01 18:50:54	◀▬▬	ctanga (~sone@74-94-83-121-Minnesota.hfc.comcastbusiness.net) has quit (Ping timeout: 245 seconds)
+2015-04-01 18:51:06	theoriginalpinso	freeone3000, how would i access that information then?
+2015-04-01 18:51:12	freeone3000	theoriginalpinso: Call .next(), perhaps?
+2015-04-01 18:51:14	◀▬▬	phroa (phroa@phroa.net) has left ##java
+2015-04-01 18:51:55	▬▬▶	Rickmasta (~Rick@pool-74-101-29-191.nycmny.fios.verizon.net) has joined ##java
+2015-04-01 18:52:20	◀▬▬	ogrady (~Thunderbi@HSI-KBW-109-193-041-101.hsi7.kabel-badenwuerttemberg.de) has quit (Quit: ogrady)
+2015-04-01 18:52:33	◀▬▬	Lorcatar (~BostonMA1@unaffiliated/bostonma1776) has quit (Read error: Connection reset by peer)
+2015-04-01 18:52:55	theoriginalpinso	the format of the file im reading from http://pastebin.com/index/ubDzczQh
+2015-04-01 18:53:19	mebigfatguy	the format at this point does not matter
+2015-04-01 18:53:53	mebigfatguy	theoriginalpinso, in your code what variable is holding a line of the file?
+2015-04-01 18:54:00	theoriginalpinso	i think it does, doesn't it? my qquestion earlier was that i want to reead an entire line as one string
+2015-04-01 18:54:17	◀▬▬	MasterPiece (~MasterPie@unaffiliated/masterpiece) has quit (Read error: Connection reset by peer)
+2015-04-01 18:54:33	◀▬▬	njcomsec (~kvirc@cpc1-seve21-2-0-cust532.13-3.cable.virginm.net) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2015-04-01 18:54:42	▬▬▶	zacts (~user@freebsd/geek/zacts) has joined ##java
+2015-04-01 18:55:03	theoriginalpinso	this is full code. http://pastebin.com/ynnpd1C1
+2015-04-01 18:55:10	▬▬▶	b3itz (4831100e@gateway/web/freenode/ip.72.49.16.14) has joined ##java
+2015-04-01 18:55:15	theoriginalpinso	ignore unused variables
+2015-04-01 18:55:57	mebigfatguy	again i ask. what variable in your code is responsible for holding one line of the file?
+2015-04-01 18:56:06	◀▬▬	Longlius (~longlius@2602:301:7767:6df0:a64e:31ff:fe19:d320) has quit (Remote host closed the connection)
+2015-04-01 18:56:14	b3itz	hey guys!  im working on a binary tree and traversing the tree using breadthfirst ordering.. anyone familiar?
+2015-04-01 18:56:32	mebigfatguy	most are in general, but not at all in specific to your issue, so....
+2015-04-01 18:57:20	b3itz	welllllllllllllll maybe you can look? :) http://pastebin.com/EquiCDKu all i'm trying to figure out is how to take that queue named queue and return it as a list
+2015-04-01 18:57:37	b3itz	right now its returning [].... so its not adding
+2015-04-01 18:57:55	b3itz	well, now that i look, i removed the line that added the element to the arraylist
+2015-04-01 18:58:00	b3itz	but you can see my idea
+2015-04-01 18:58:17	k5_	theoriginalpinso: your example compiles ? use proper indention and braces for every block
+2015-04-01 18:58:19	theoriginalpinso	mebigfatguy, thats wwhere im stuc lol. i dont know how if thats even possible
+2015-04-01 18:58:22	mebigfatguy	b3itz, ArrayList has an addAll method
+2015-04-01 18:58:34	k5_	theoriginalpinso: whats funny about being stuck ?
+2015-04-01 18:58:39	mebigfatguy	~~ theoriginalpinso javadoc java.util.Scanner
+2015-04-01 18:58:40	javabot	theoriginalpinso: http://bit.ly/1nnqkPY [JDK: java.util.Scanner]
+2015-04-01 18:58:49	mebigfatguy	take a look there, see if you can find something useful
+2015-04-01 18:58:58	theoriginalpinso	cool
+2015-04-01 18:59:05	◀▬▬	daixtr (~daixtr@unaffiliated/daixtr) has quit (Ping timeout: 246 seconds)
+2015-04-01 18:59:19	theoriginalpinso	thanks ill take a look
+2015-04-01 18:59:36	b3itz	mebigfatguy: cool so i should be able to addAll(queue)?
+2015-04-01 18:59:56	mebigfatguy	~ tias
+2015-04-01 18:59:56	javabot	Try it and see. You learn much more by experimentation than by asking without having even tried.
+2015-04-01 19:00:52	b3itz	mebigfatguy: so im getting a casting error... this is my queue:  Queue<TreeNode<E>> queue = new LinkedList<TreeNode<E>>();       list.addAll(queue);
+2015-04-01 19:01:05	mebigfatguy	and what is list?
+2015-04-01 19:01:26	b3itz	ArrayList<E> list = new ArrayList<E>();
+2015-04-01 19:01:34	b3itz	both copy and pasted from my profs document
+2015-04-01 19:01:39	b3itz	*homework alert* lol
+2015-04-01 19:01:44	mebigfatguy	so you are trying to put a TreeNode<E> into a list that holds Es?
+2015-04-01 19:01:52	mebigfatguy	does that make sense to you?
+2015-04-01 19:01:52	▬▬▶	coolcusty (~coolcusty@unaffiliated/coolcusty) has joined ##java
+2015-04-01 19:01:56	b3itz	no...
+2015-04-01 19:01:57	b3itz	wow
+2015-04-01 19:02:14	b3itz	mebigfatguy: "Maybe this will get you started:             public List<E> breadthFirstList() {                 ArrayList<E> list = new ArrayList<E>();                 Queue<TreeNode<E>> queue = new LinkedList<TreeNode<E>>();"
+2015-04-01 19:02:23	▬▬▶	orthoplex64 (~orthoplex@unaffiliated/orthoplex64) has joined ##java
+2015-04-01 19:02:24	b3itz	literally pasted from his email.... no way to make that work?
+2015-04-01 19:02:36	mebigfatguy	certainly, you must use a brain
+2015-04-01 19:02:48	▬▬▶	sebhoss (~sebhoss@pD9F60CED.dip0.t-ipconnect.de) has joined ##java
+2015-04-01 19:02:53	b3itz	?
+2015-04-01 19:03:09	mebigfatguy	'xactly
+2015-04-01 19:03:26	b3itz	"When you take a TreeNode off the Queue, you should add its element to the ArrayList. "
+2015-04-01 19:03:32	b3itz	this
+2015-04-01 19:03:33	◀▬▬	bolovanos (~bolovanos@91.201.23.7) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:03:35	b3itz	i dont understand this
+2015-04-01 19:03:49	mebigfatguy	they want you to put the thing in the TreeNode into the list
+2015-04-01 19:03:56	b3itz	wait, each treenode has an element....
+2015-04-01 19:04:00	b3itz	not the treenode in the list
+2015-04-01 19:04:06	mebigfatguy	right
+2015-04-01 19:04:12	b3itz	ah
+2015-04-01 19:04:21	b3itz	so do i need a for loop to get the element out?
+2015-04-01 19:04:29	mebigfatguy	sounds plausible
+2015-04-01 19:05:04	b3itz	 for(TreeNode<E> s : queue) {  	    	  System.out.println(s.element.toString());  	    	}
+2015-04-01 19:05:09	b3itz	that should print each element right?
+2015-04-01 19:05:13	xelra	freeone3000: Thank you very much. I think I figured it out with your help. This is how I wrote it now. Is it what you suggested? http://pastebin.com/Vb4Z8vYd
+2015-04-01 19:05:13	mebigfatguy	~ tias
+2015-04-01 19:05:15	javabot	Try it and see. You learn much more by experimentation than by asking without having even tried.
+2015-04-01 19:05:18	b3itz	>.<
+2015-04-01 19:05:26	◀▬▬	tokam (~tokam@unaffiliated/tokam) has quit (Read error: Connection reset by peer)
+2015-04-01 19:05:33	▬▬▶	tokam (~tokam@unaffiliated/tokam) has joined ##java
+2015-04-01 19:05:40	b3itz	it doesnt same when i take out the tostring
+2015-04-01 19:05:50	b3itz	it doesnt print anything
+2015-04-01 19:06:26	mebigfatguy	whether you put toString() or not, doesn't matter
+2015-04-01 19:07:03	b3itz	thats what i figured... hmmm
+2015-04-01 19:07:12	◀▬▬	sebhoss (~sebhoss@pD9F60CED.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:07:37	b3itz	mebigfatguy: would that mean the queue is empty?
+2015-04-01 19:07:50	mebigfatguy	or the string is ""
+2015-04-01 19:08:09	b3itz	 queue.add(runner.right); which is a TreeNode<E>
+2015-04-01 19:08:29	mebigfatguy	b3itz, you should learn how to use a debugger. life would be simple for you if you did
+2015-04-01 19:09:57	▬▬▶	soLucien (~Lu@178.62.252.248) has joined ##java
+2015-04-01 19:10:15	◀▬▬	tokam (~tokam@unaffiliated/tokam) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:11:52	▬▬▶	sublimate (~jack@unaffiliated/auv5) has joined ##java
+2015-04-01 19:16:56	▬▬▶	Dramaro (cd954728@gateway/web/cgi-irc/kiwiirc.com/ip.205.149.71.40) has joined ##java
+2015-04-01 19:16:59	◀▬▬	sublimate (~jack@unaffiliated/auv5) has quit (Ping timeout: 256 seconds)
+2015-04-01 19:19:58	◀▬▬	plarsen (~plarsen@redhat/jboss/pdpc.professional.plarsen) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:20:45	--	Rmar|Away is now known as Rmarmorstein
+2015-04-01 19:22:32	▬▬▶	AkashicLegend (~AkashicLe@unaffiliated/akashiclegend) has joined ##java
+2015-04-01 19:23:35	▬▬▶	jramsdale (~jramsdale@static-50-47-36-108.sttl.wa.frontiernet.net) has joined ##java
+2015-04-01 19:24:13	◀▬▬	jramsdale (~jramsdale@static-50-47-36-108.sttl.wa.frontiernet.net) has quit (Client Quit)
+2015-04-01 19:25:32	◀▬▬	RedOrangeZ (~RedOrange@c-73-30-227-113.hsd1.pa.comcast.net) has quit (Read error: Connection reset by peer)
+2015-04-01 19:27:44	Dramaro	Hello?
+2015-04-01 19:28:49	dodobrain	~~ Dramaro hello
+2015-04-01 19:28:50	javabot	Dramaro, http://static.someecards.com/someecards/images/feed_assets/4d7105e9995c7.jpg
+2015-04-01 19:29:11	◀▬▬	mirak (~karim@static-176-182-51-22.ncc.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2015-04-01 19:29:45	b3itz	mebigfatguy: ok im stuck... its official. i at least know why now...
+2015-04-01 19:30:14	b3itz	mebigfatguy: while(!queue.isEmpty()){ 	    TreeNode<E> temp = (TreeNode<E>)queue.remove(); 	    if(runner.left != null){
+2015-04-01 19:30:22	Dramaro	hehe, that's funny
+2015-04-01 19:30:35	b3itz	i think its the queue.remove because that completely nulls the list every time
+2015-04-01 19:31:13	b3itz	mebigfatguy: nope i lied
+2015-04-01 19:31:18	--	beingbrown is now known as zz_beingbrown
+2015-04-01 19:31:43	--	irc: disconnected from server
+2015-04-01 19:32:07	▬▬▶	hapislacker (~dagnachew@bas1-montreal30-1177585814.dsl.bell.ca) has joined ##java
+2015-04-01 19:32:07	--	Topic for ##java is "Welcome! || Read http://javachannel.org/ before participating. || Paste limit is two lines; ~pastebin lists options. || No applets, please. || Minecraft, Android, and Javascript all have their own channel."
+2015-04-01 19:32:07	--	Topic set by tjsnell on Tue, 23 Dec 2014 09:34:37
+2015-04-01 19:32:07	--	Channel ##java: 482 nicks (3 ops, 0 voices, 479 normals)
+2015-04-01 19:32:10	--	PvNotice(ChanServ): Please read the topic for basic channel guidelines. Thanks.
+2015-04-01 19:32:11	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2015-04-01 19:32:18	Dramaro	I presume in runnable threads, they are void methods and thus, do not return anything
+2015-04-01 19:32:39	--	zz_beingbrown is now known as beingbrown
+2015-04-01 19:33:22	▬▬▶	RedOrangeZ (~RedOrange@c-73-30-227-113.hsd1.pa.comcast.net) has joined ##java
+2015-04-01 19:33:28	◀▬▬	cjz (~Adium@12.153.137.82) has quit (Quit: Leaving.)
+2015-04-01 19:34:02	▬▬▶	myu (~GGG@unaffiliated/myu) has joined ##java
+2015-04-01 19:34:27	▬▬▶	Sc0urge (~sc0urge@a82-39.nat.uq.edu.au) has joined ##java
+2015-04-01 19:35:01	▬▬▶	plarsen (~plarsen@redhat/jboss/pdpc.professional.plarsen) has joined ##java
+2015-04-01 19:35:21	freeone3000	Dramaro: Why do you presume any of that?
+2015-04-01 19:35:41	Dramaro	eh, I tried putting a return.. and it yelled at me...Eclipse
+2015-04-01 19:39:47	@cheeser	just read the method signature.  there's 0 reason to guess.
+2015-04-01 19:41:28	◀▬▬	RedOrangeZ (~RedOrange@c-73-30-227-113.hsd1.pa.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-04-01 19:42:03	◀▬▬	AkashicLegend (~AkashicLe@unaffiliated/akashiclegend) has quit (Quit: AkashicLegend)
+2015-04-01 19:44:46	◀▬▬	theoriginalpinso (cfc8a9b3@gateway/web/freenode/ip.207.200.169.179) has quit (Quit: Page closed)
+2015-04-01 19:45:54	◀▬▬	Sc0urge (~sc0urge@a82-39.nat.uq.edu.au) has quit (Remote host closed the connection)
+2015-04-01 19:46:15	▬▬▶	Monie (~Monie@cpe-71-76-159-155.triad.res.rr.com) has joined ##java
+2015-04-01 19:46:46	◀▬▬	zacts (~user@freebsd/geek/zacts) has quit (Quit: ERC Version 5.3 (IRC client for Emacs))
+2015-04-01 19:50:43	◀▬▬	b3itz (4831100e@gateway/web/freenode/ip.72.49.16.14) has quit (Quit: Page closed)
+2015-04-01 19:51:06	◀▬▬	jaana (jaana@nat/yahoo/x-jprasqrikbqcxwny) has quit (Ping timeout: 244 seconds)
+2015-04-01 19:53:54	◀▬▬	fstd (~fstd@unaffiliated/fisted) has quit (Remote host closed the connection)
+2015-04-01 19:54:40	▬▬▶	fstd (~fstd@unaffiliated/fisted) has joined ##java
+2015-04-01 19:55:18	▬▬▶	alcoder (~Thunderbi@unaffiliated/alcoder) has joined ##java
+2015-04-01 19:56:25	◀▬▬	wabash (~wabash@unaffiliated/wabash) has left ##java
+2015-04-01 19:56:29	▬▬▶	AkashicLegend (~AkashicLe@unaffiliated/akashiclegend) has joined ##java
+2015-04-01 19:58:54	◀▬▬	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Read error: Connection reset by peer)
+2015-04-01 19:59:14	▬▬▶	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined ##java
+2015-04-01 19:59:59	▬▬▶	Kassad (~kassad@31.204.154.121) has joined ##java
+2015-04-01 20:00:17	◀▬▬	Betal (~Beta@unaffiliated/betal) has quit (Remote host closed the connection)
+2015-04-01 20:11:49	▬▬▶	r0ver (~rover@177-19-17-190.fibertel.com.ar) has joined ##java
+2015-04-01 20:11:51	▬▬▶	mahmoudimus (~mahmoudim@162.217.73.10) has joined ##java
+2015-04-01 20:13:51	▬▬▶	ctanga (~sone@173-11-53-210-Minnesota.hfc.comcastbusiness.net) has joined ##java
+2015-04-01 20:14:04	◀▬▬	ctanga (~sone@173-11-53-210-Minnesota.hfc.comcastbusiness.net) has quit (Client Quit)
+2015-04-01 20:14:20	◀▬▬	plarsen (~plarsen@redhat/jboss/pdpc.professional.plarsen) has quit (Ping timeout: 246 seconds)
+2015-04-01 20:15:16	▬▬▶	CedricBeust (~cbeust@unaffiliated/cbeust) has joined ##java
+2015-04-01 20:15:23	◀▬▬	somazero (~somazero@ip72-198-81-64.ok.ok.cox.net) has quit (Quit: Leaving)
+2015-04-01 20:17:11	▬▬▶	somazero (~somazero@ip72-198-81-64.ok.ok.cox.net) has joined ##java
+2015-04-01 20:20:36	--	irc: disconnected from server

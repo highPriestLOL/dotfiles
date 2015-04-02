@@ -1,0 +1,836 @@
+2015-03-31 17:33:13		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 17:48:17		script: downloading list of scripts...
+2015-03-31 17:48:18		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 17:48:19		perl: loading script "/home/dagnachew/.weechat/perl/buffers.pl"
+2015-03-31 17:48:19		perl: registered script "buffers", version 5.0 (Sidebar with list of buffers)
+2015-03-31 17:48:19		New key binding (context "mouse"): @bar(buffers):ctrl-wheeldown => hsignal:buffers_mouse
+2015-03-31 17:48:19		New key binding (context "mouse"): @bar(buffers):ctrl-wheelup => hsignal:buffers_mouse
+2015-03-31 17:48:19		New key binding (context "mouse"): @item(buffers):button2* => hsignal:buffers_mouse
+2015-03-31 17:48:19		New key binding (context "mouse"): @item(buffers):button1* => hsignal:buffers_mouse
+2015-03-31 17:48:20		perl: loading script "/home/dagnachew/.weechat/perl/iset.pl"
+2015-03-31 17:48:20		perl: registered script "iset", version 3.6 (Interactive Set for configuration options)
+2015-03-31 17:48:20		New key binding (context "mouse"): @chat(perl.iset):button1 => hsignal:iset_mouse
+2015-03-31 17:48:20		New key binding (context "mouse"): @chat(perl.iset):button2* => hsignal:iset_mouse
+2015-03-31 17:48:20		New key binding (context "mouse"): @chat(perl.iset):wheeldown => /repeat 5 /iset **down
+2015-03-31 17:48:20		New key binding (context "mouse"): @chat(perl.iset):wheelup => /repeat 5 /iset **up
+2015-03-31 17:48:20		perl: loading script "/home/dagnachew/.weechat/perl/beep.pl"
+2015-03-31 17:48:20		perl: registered script "beep", version 1.1 (Beep (terminal bell) and/or run command on highlight/private message or new DCC)
+2015-03-31 17:48:21		python: loading script "/home/dagnachew/.weechat/python/urlserver.py"
+2015-03-31 17:48:21		python: registered script "urlserver", version 1.7 (Shorten URLs with own HTTP server)
+2015-03-31 17:48:21		URL server listening on ('127.0.0.1', 12359)
+2015-03-31 17:48:22		python: loading script "/home/dagnachew/.weechat/python/autoconnect.py"
+2015-03-31 17:48:22		python: registered script "autoconnect", version 0.2.3 (reopens servers and channels opened last time weechat closed)
+2015-03-31 17:48:22		python: loading script "/home/dagnachew/.weechat/python/autojoin.py"
+2015-03-31 17:48:22		python: registered script "autojoin", version 0.2.5 (Configure autojoin for all servers according to currently joined channels)
+2015-03-31 17:48:23		python: loading script "/home/dagnachew/.weechat/python/autosort.py"
+2015-03-31 17:48:23		python: registered script "autosort", version 2.5 (Automatically or manually keep your buffers sorted and grouped by server.)
+2015-03-31 17:48:23		python: loading script "/home/dagnachew/.weechat/python/buffer_autoclose.py"
+2015-03-31 17:48:23		python: registered script "buffer_autoclose", version 0.3 (Automatically close inactive private message buffers)
+2015-03-31 17:48:24		perl: loading script "/home/dagnachew/.weechat/perl/colorize_lines.pl"
+2015-03-31 17:48:24		perl: registered script "colorize_lines", version 3.3 (colors text in chat area with according nick color, including highlights)
+2015-03-31 17:48:25		python: loading script "/home/dagnachew/.weechat/python/colorize_nicks.py"
+2015-03-31 17:48:25		python: registered script "colorize_nicks", version 17 (Use the weechat nick colors in the chat area)
+2015-03-31 17:48:25		python: loading script "/home/dagnachew/.weechat/python/go.py"
+2015-03-31 17:48:25		python: registered script "go", version 2.0 (Quick jump to buffers)
+2015-03-31 17:48:26		perl: loading script "/home/dagnachew/.weechat/perl/highmon.pl"
+2015-03-31 17:48:26		perl: registered script "highmon", version 2.5 (Highlight Monitor)
+2015-03-31 17:48:26		This appears to be the first time highmon has been run. For help and common set up hints see /highmon help
+2015-03-31 17:48:35		Option changed: weechat.look.prefix_suffix = "│"  (default: "|")
+2015-03-31 17:48:41		Option changed: weechat.look.read_marker_string = "─"  (default: "- ")
+2015-03-31 17:48:46		Option changed: weechat.look.prefix_join = "▬▬▶"  (default: "-->")
+2015-03-31 17:48:55		Option changed: weechat.look.prefix_quit = "◀▬▬"  (default: "<--")
+2015-03-31 17:49:01		Option changed: weechat.look.item_buffer_filter = "•"  (default: "*")
+2015-03-31 17:49:07		Option changed: weechat.look.bar_more_down = "▼"  (default: "++")
+2015-03-31 17:49:13		Option changed: weechat.look.bar_more_left = "◀"  (default: "<<")
+2015-03-31 17:49:18		Option changed: weechat.look.bar_more_right = "▶"  (default: ">>")
+2015-03-31 17:49:23		Option changed: weechat.look.bar_more_up = "▲"  (default: "--")
+2015-03-31 17:50:53		Option changed: weechat.bar.nicklist.position = left  (default: right)
+2015-03-31 17:51:03		Option changed: weechat.bar.nicklist.position = right
+2015-03-31 17:51:14		Option changed: weechat.bar.nicklist.size = 15  (default: 0)
+2015-03-31 17:52:02		Option changed: weechat.bar.status.hidden = off
+2015-03-31 17:52:39		Option changed: weechat.bar.status.items = "“buffer_number+:+buffer_name+{buffer_nicklist_count}+buffer_filter,completion,scroll”"  (default: "[time],[buffer_last_number],[buffer_plugin],buffer_number+:+buffer_name+(buffer_modes)+{buffer_nicklist_count}+buffer_zoom+buffer_filter,scroll,[lag],[hotlist],completion")
+2015-03-31 17:52:47		Option changed: weechat.bar.input.size = 0  (default: 1)
+2015-03-31 17:52:53		Option changed: weechat.bar.input.size_max = 3  (default: 0)
+2015-03-31 17:53:01		Option changed: irc.look.smart_filter = on
+2015-03-31 17:53:07		Filter "irc_smart" added:
+2015-03-31 17:53:07		  [irc_smart] buffer: * / tags: irc_smart_filter / regex: * 
+2015-03-31 17:53:32		Option changed: weechat.look.prefix_same_nick = "↪"  (default: "")
+2015-03-31 18:04:02		Options saved to sec.conf
+2015-03-31 18:04:02		Options saved to weechat.conf
+2015-03-31 18:04:02		Options saved to plugins.conf
+2015-03-31 18:04:02		Options saved to relay.conf
+2015-03-31 18:04:02		Options saved to xfer.conf
+2015-03-31 18:04:02		Options saved to logger.conf
+2015-03-31 18:04:02		Options saved to irc.conf
+2015-03-31 18:04:02		Options saved to alias.conf
+2015-03-31 18:04:02		Options saved to trigger.conf
+2015-03-31 18:04:02		Options saved to script.conf
+2015-03-31 18:04:02		Options saved to exec.conf
+2015-03-31 18:04:02		Options saved to charset.conf
+2015-03-31 18:04:02		Options saved to aspell.conf
+2015-03-31 18:04:02		Options saved to buffers.conf
+2015-03-31 18:04:02		Options saved to iset.conf
+2015-03-31 18:04:02		Options saved to autosort.conf
+2015-03-31 18:04:02		Options saved to colorize_nicks.conf
+2015-03-31 18:04:42		Option changed: irc.server.freenode.nicks = "hapislacker"  (default: (undefined))
+2015-03-31 18:04:57		Option changed: irc.server.freenode.realname = "hapislacker"  (default: (undefined))
+2015-03-31 18:05:06		Option changed: irc.server.freenode.autoconnect = on  (default: (undefined))
+2015-03-31 18:08:37		Option changed: irc.server.freenode.autojoin = "#archlinux,#c,#cplusplus.com,#lisp,#lispweb,#scala,#haskell,#erlang,#java,#R,#postgresql,#javascript,#Node.js,#css,#html5,#bspwm,#vim,#networking,#security,#weechat,#emacs"  (default: (undefined))
+2015-03-31 18:08:41		Options saved to sec.conf
+2015-03-31 18:08:41		Options saved to weechat.conf
+2015-03-31 18:08:41		Options saved to plugins.conf
+2015-03-31 18:08:41		Options saved to relay.conf
+2015-03-31 18:08:41		Options saved to xfer.conf
+2015-03-31 18:08:41		Options saved to logger.conf
+2015-03-31 18:08:41		Options saved to irc.conf
+2015-03-31 18:08:41		Options saved to alias.conf
+2015-03-31 18:08:41		Options saved to trigger.conf
+2015-03-31 18:08:41		Options saved to script.conf
+2015-03-31 18:08:41		Options saved to exec.conf
+2015-03-31 18:08:41		Options saved to charset.conf
+2015-03-31 18:08:41		Options saved to aspell.conf
+2015-03-31 18:08:41		Options saved to buffers.conf
+2015-03-31 18:08:41		Options saved to iset.conf
+2015-03-31 18:08:41		Options saved to autosort.conf
+2015-03-31 18:08:41		Options saved to colorize_nicks.conf
+2015-03-31 18:09:18		Options saved to irc.conf
+2015-03-31 18:09:18		Options saved to irc.conf
+2015-03-31 18:09:18		Options saved to irc.conf
+2015-03-31 18:09:18		Options saved to irc.conf
+2015-03-31 18:09:18		Options saved to irc.conf
+2015-03-31 18:09:18		Options saved to irc.conf
+2015-03-31 18:09:18		Options saved to irc.conf
+2015-03-31 18:09:19		Options saved to irc.conf
+2015-03-31 18:09:19		Options saved to irc.conf
+2015-03-31 18:09:19		Options saved to irc.conf
+2015-03-31 18:09:19		Options saved to irc.conf
+2015-03-31 18:09:19		Options saved to irc.conf
+2015-03-31 18:09:19		Options saved to irc.conf
+2015-03-31 18:09:20		Options saved to irc.conf
+2015-03-31 18:09:20		Options saved to irc.conf
+2015-03-31 18:09:20		Options saved to irc.conf
+2015-03-31 18:09:20		Options saved to irc.conf
+2015-03-31 18:09:20		Options saved to irc.conf
+2015-03-31 18:09:20		Options saved to irc.conf
+2015-03-31 18:09:20		Options saved to irc.conf
+2015-03-31 18:11:25		Options saved to irc.conf
+2015-03-31 18:11:53		URL server stopped
+2015-03-31 18:11:53		python: scripts unloaded
+2015-03-31 18:11:53		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 18:11:53		perl: scripts unloaded
+2015-03-31 18:11:53		fifo: pipe closed
+2015-03-31 18:11:56		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-03-31 18:11:56		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 18:11:56		URL server listening on ('127.0.0.1', 60611)
+2015-03-31 18:11:56		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, urlserver
+2015-03-31 18:11:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 18:12:10		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:11		Options saved to irc.conf
+2015-03-31 18:12:12		Options saved to irc.conf
+2015-03-31 18:12:12		Options saved to irc.conf
+2015-03-31 18:12:12		Options saved to irc.conf
+2015-03-31 18:12:12		Options saved to irc.conf
+2015-03-31 18:12:12		Options saved to irc.conf
+2015-03-31 18:12:12		Options saved to irc.conf
+2015-03-31 18:12:13		Options saved to irc.conf
+2015-03-31 18:12:13		Options saved to irc.conf
+2015-03-31 18:12:13		Options saved to irc.conf
+2015-03-31 18:12:13		Options saved to irc.conf
+2015-03-31 18:12:13		Options saved to irc.conf
+2015-03-31 18:16:05		Option changed: irc.server.freenode.sasl_username = "hapislacker"  (default: (undefined))
+2015-03-31 18:16:27		Option changed: irc.server.freenode.sasl_password = "trois*trois=9"  (default: (undefined))
+2015-03-31 18:16:48		Option changed: irc.server.freenode.command = ""/msg nickserv identify trois*trois=9"  (default: (undefined))
+2015-03-31 18:16:50		Options saved to sec.conf
+2015-03-31 18:16:50		Options saved to weechat.conf
+2015-03-31 18:16:50		Options saved to plugins.conf
+2015-03-31 18:16:50		Options saved to relay.conf
+2015-03-31 18:16:50		Options saved to xfer.conf
+2015-03-31 18:16:50		Options saved to logger.conf
+2015-03-31 18:16:50		Options saved to irc.conf
+2015-03-31 18:16:50		Options saved to alias.conf
+2015-03-31 18:16:50		Options saved to trigger.conf
+2015-03-31 18:16:50		Options saved to buffers.conf
+2015-03-31 18:16:50		Options saved to iset.conf
+2015-03-31 18:16:50		Options saved to script.conf
+2015-03-31 18:16:50		Options saved to exec.conf
+2015-03-31 18:16:50		Options saved to colorize_nicks.conf
+2015-03-31 18:16:50		Options saved to autosort.conf
+2015-03-31 18:16:50		Options saved to charset.conf
+2015-03-31 18:16:50		Options saved to aspell.conf
+2015-03-31 18:28:17		[look] (irc.conf)
+2015-03-31 18:28:17		  irc.look.buffer_open_before_join = off
+2015-03-31 18:28:17		1 option (matching with "irc.look.buffer_open_before_join")
+2015-03-31 18:28:50		[look] (irc.conf)
+2015-03-31 18:28:50		  irc.look.buffer_open_before_autojoin = on
+2015-03-31 18:28:50		1 option (matching with "irc.look.buffer_open_before_autojoin")
+2015-03-31 18:42:32		Option changed: irc.look.buffer_open_before_join = on  (default: off)
+2015-03-31 18:42:35		Options saved to sec.conf
+2015-03-31 18:42:35		Options saved to weechat.conf
+2015-03-31 18:42:35		Options saved to plugins.conf
+2015-03-31 18:42:35		Options saved to relay.conf
+2015-03-31 18:42:35		Options saved to xfer.conf
+2015-03-31 18:42:35		Options saved to logger.conf
+2015-03-31 18:42:35		Options saved to irc.conf
+2015-03-31 18:42:35		Options saved to alias.conf
+2015-03-31 18:42:35		Options saved to trigger.conf
+2015-03-31 18:42:35		Options saved to buffers.conf
+2015-03-31 18:42:35		Options saved to iset.conf
+2015-03-31 18:42:35		Options saved to script.conf
+2015-03-31 18:42:35		Options saved to exec.conf
+2015-03-31 18:42:35		Options saved to colorize_nicks.conf
+2015-03-31 18:42:35		Options saved to autosort.conf
+2015-03-31 18:42:35		Options saved to charset.conf
+2015-03-31 18:42:35		Options saved to aspell.conf
+2015-03-31 18:43:15		irc: server undernet created
+2015-03-31 18:43:40		Option changed: irc.server.undernet.autoconnect = on  (default: (undefined))
+2015-03-31 18:43:56		Option changed: irc.server.undernet.autojoin = "#montreal,#quebec"  (default: (undefined))
+2015-03-31 18:43:58		Options saved to sec.conf
+2015-03-31 18:43:58		Options saved to weechat.conf
+2015-03-31 18:43:58		Options saved to plugins.conf
+2015-03-31 18:43:58		Options saved to relay.conf
+2015-03-31 18:43:58		Options saved to xfer.conf
+2015-03-31 18:43:58		Options saved to logger.conf
+2015-03-31 18:43:58		Options saved to irc.conf
+2015-03-31 18:43:58		Options saved to alias.conf
+2015-03-31 18:43:58		Options saved to trigger.conf
+2015-03-31 18:43:58		Options saved to buffers.conf
+2015-03-31 18:43:58		Options saved to iset.conf
+2015-03-31 18:43:58		Options saved to script.conf
+2015-03-31 18:43:58		Options saved to exec.conf
+2015-03-31 18:43:58		Options saved to colorize_nicks.conf
+2015-03-31 18:43:58		Options saved to autosort.conf
+2015-03-31 18:43:58		Options saved to charset.conf
+2015-03-31 18:43:58		Options saved to aspell.conf
+2015-03-31 18:44:12		Options saved to sec.conf
+2015-03-31 18:44:12		Options saved to weechat.conf
+2015-03-31 18:44:12		Options saved to plugins.conf
+2015-03-31 18:44:12		Options saved to relay.conf
+2015-03-31 18:44:12		Options saved to xfer.conf
+2015-03-31 18:44:12		Options saved to logger.conf
+2015-03-31 18:44:12		Options saved to irc.conf
+2015-03-31 18:44:12		Options saved to alias.conf
+2015-03-31 18:44:12		Options saved to trigger.conf
+2015-03-31 18:44:12		Options saved to buffers.conf
+2015-03-31 18:44:12		Options saved to iset.conf
+2015-03-31 18:44:12		Options saved to script.conf
+2015-03-31 18:44:12		Options saved to exec.conf
+2015-03-31 18:44:12		Options saved to colorize_nicks.conf
+2015-03-31 18:44:12		Options saved to autosort.conf
+2015-03-31 18:44:12		Options saved to charset.conf
+2015-03-31 18:44:12		Options saved to aspell.conf
+2015-03-31 18:44:14		URL server stopped
+2015-03-31 18:44:14		python: scripts unloaded
+2015-03-31 18:44:14		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 18:44:14		perl: scripts unloaded
+2015-03-31 18:44:14		fifo: pipe closed
+2015-03-31 23:15:42		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-03-31 23:15:42		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 23:15:42		URL server listening on ('127.0.0.1', 8888)
+2015-03-31 23:15:42		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, urlserver
+2015-03-31 23:15:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 23:15:57		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:58		Options saved to irc.conf
+2015-03-31 23:15:59		Options saved to irc.conf
+2015-03-31 23:15:59		Options saved to irc.conf
+2015-03-31 23:15:59		Options saved to irc.conf
+2015-03-31 23:15:59		Options saved to irc.conf
+2015-03-31 23:15:59		Options saved to irc.conf
+2015-03-31 23:15:59		Options saved to irc.conf
+2015-03-31 23:15:59		Options saved to irc.conf
+2015-03-31 23:16:00		Options saved to irc.conf
+2015-03-31 23:16:00		Options saved to irc.conf
+2015-03-31 23:16:00		Options saved to irc.conf
+2015-03-31 23:16:00		Options saved to irc.conf
+2015-03-31 23:18:54		Option changed: irc.server.freenode.command = "/msg nickserv identify trois*trois=9"  (default: (undefined))
+2015-03-31 23:18:59		Options saved to sec.conf
+2015-03-31 23:18:59		Options saved to weechat.conf
+2015-03-31 23:18:59		Options saved to plugins.conf
+2015-03-31 23:18:59		Options saved to relay.conf
+2015-03-31 23:18:59		Options saved to xfer.conf
+2015-03-31 23:18:59		Options saved to logger.conf
+2015-03-31 23:18:59		Options saved to irc.conf
+2015-03-31 23:18:59		Options saved to alias.conf
+2015-03-31 23:18:59		Options saved to trigger.conf
+2015-03-31 23:18:59		Options saved to buffers.conf
+2015-03-31 23:18:59		Options saved to iset.conf
+2015-03-31 23:18:59		Options saved to script.conf
+2015-03-31 23:18:59		Options saved to exec.conf
+2015-03-31 23:18:59		Options saved to colorize_nicks.conf
+2015-03-31 23:18:59		Options saved to autosort.conf
+2015-03-31 23:18:59		Options saved to charset.conf
+2015-03-31 23:18:59		Options saved to aspell.conf
+2015-03-31 23:19:02		URL server stopped
+2015-03-31 23:19:02		python: scripts unloaded
+2015-03-31 23:19:02		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 23:19:02		perl: scripts unloaded
+2015-03-31 23:19:02		fifo: pipe closed
+2015-03-31 23:19:05		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-03-31 23:19:05		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 23:19:05		URL server listening on ('127.0.0.1', 19487)
+2015-03-31 23:19:05		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, urlserver
+2015-03-31 23:19:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 23:19:21		Options saved to irc.conf
+2015-03-31 23:19:21		Options saved to irc.conf
+2015-03-31 23:19:21		Options saved to irc.conf
+2015-03-31 23:19:21		Options saved to irc.conf
+2015-03-31 23:19:21		Options saved to irc.conf
+2015-03-31 23:19:21		Options saved to irc.conf
+2015-03-31 23:19:21		Options saved to irc.conf
+2015-03-31 23:19:22		Options saved to irc.conf
+2015-03-31 23:19:22		Options saved to irc.conf
+2015-03-31 23:19:22		Options saved to irc.conf
+2015-03-31 23:19:22		Options saved to irc.conf
+2015-03-31 23:19:22		Options saved to irc.conf
+2015-03-31 23:19:23		Options saved to irc.conf
+2015-03-31 23:19:23		Options saved to irc.conf
+2015-03-31 23:19:23		Options saved to irc.conf
+2015-03-31 23:19:23		Options saved to irc.conf
+2015-03-31 23:19:23		Options saved to irc.conf
+2015-03-31 23:19:23		Options saved to irc.conf
+2015-03-31 23:19:24		Options saved to irc.conf
+2015-03-31 23:19:24		Options saved to irc.conf
+2015-03-31 23:19:24		Options saved to irc.conf
+2015-03-31 23:19:24		Options saved to irc.conf
+2015-03-31 23:19:24		Options saved to irc.conf
+2015-03-31 23:19:31		Options saved to irc.conf
+2015-03-31 23:23:15		URL server stopped
+2015-03-31 23:23:15		python: scripts unloaded
+2015-03-31 23:23:15		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 23:23:15		perl: scripts unloaded
+2015-03-31 23:23:15		fifo: pipe closed
+2015-03-31 23:23:18		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-03-31 23:23:18		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 23:23:18		URL server listening on ('127.0.0.1', 6309)
+2015-03-31 23:23:18		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, urlserver
+2015-03-31 23:23:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 23:23:33		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:34		Options saved to irc.conf
+2015-03-31 23:23:35		Options saved to irc.conf
+2015-03-31 23:23:35		Options saved to irc.conf
+2015-03-31 23:23:35		Options saved to irc.conf
+2015-03-31 23:23:35		Options saved to irc.conf
+2015-03-31 23:23:35		Options saved to irc.conf
+2015-03-31 23:23:35		Options saved to irc.conf
+2015-03-31 23:23:35		Options saved to irc.conf
+2015-03-31 23:23:36		Options saved to irc.conf
+2015-03-31 23:23:36		Options saved to irc.conf
+2015-03-31 23:23:36		Options saved to irc.conf
+2015-03-31 23:23:36		Options saved to irc.conf
+2015-03-31 23:23:36		Options saved to irc.conf
+2015-03-31 23:25:42		URL server stopped
+2015-03-31 23:25:42		python: scripts unloaded
+2015-03-31 23:25:42		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 23:25:42		perl: scripts unloaded
+2015-03-31 23:25:42		fifo: pipe closed
+2015-03-31 23:27:22		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-03-31 23:27:22		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 23:27:22		URL server listening on ('127.0.0.1', 40759)
+2015-03-31 23:27:22		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, urlserver
+2015-03-31 23:27:22		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 23:27:39		Options saved to irc.conf
+2015-03-31 23:28:32		Options saved to irc.conf
+2015-03-31 23:28:32		irc: server undernet has been deleted
+2015-03-31 23:28:38		Options saved to sec.conf
+2015-03-31 23:28:38		Options saved to weechat.conf
+2015-03-31 23:28:38		Options saved to plugins.conf
+2015-03-31 23:28:38		Options saved to relay.conf
+2015-03-31 23:28:38		Options saved to xfer.conf
+2015-03-31 23:28:38		Options saved to logger.conf
+2015-03-31 23:28:38		Options saved to irc.conf
+2015-03-31 23:28:38		Options saved to alias.conf
+2015-03-31 23:28:38		Options saved to trigger.conf
+2015-03-31 23:28:38		Options saved to buffers.conf
+2015-03-31 23:28:38		Options saved to iset.conf
+2015-03-31 23:28:38		Options saved to script.conf
+2015-03-31 23:28:38		Options saved to exec.conf
+2015-03-31 23:28:38		Options saved to colorize_nicks.conf
+2015-03-31 23:28:38		Options saved to autosort.conf
+2015-03-31 23:28:38		Options saved to charset.conf
+2015-03-31 23:28:38		Options saved to aspell.conf
+2015-03-31 23:31:30		python: loading script "/home/dagnachew/.weechat/python/sort_servers.py"
+2015-03-31 23:31:30		python: registered script "sort_servers", version 0.1 (Sort buffers by servers and alphabetically)
+2015-03-31 23:31:41		Options saved to sec.conf
+2015-03-31 23:31:41		Options saved to weechat.conf
+2015-03-31 23:31:41		Options saved to plugins.conf
+2015-03-31 23:31:41		Options saved to relay.conf
+2015-03-31 23:31:41		Options saved to xfer.conf
+2015-03-31 23:31:41		Options saved to logger.conf
+2015-03-31 23:31:41		Options saved to irc.conf
+2015-03-31 23:31:41		Options saved to alias.conf
+2015-03-31 23:31:41		Options saved to trigger.conf
+2015-03-31 23:31:41		Options saved to buffers.conf
+2015-03-31 23:31:41		Options saved to iset.conf
+2015-03-31 23:31:41		Options saved to script.conf
+2015-03-31 23:31:41		Options saved to exec.conf
+2015-03-31 23:31:41		Options saved to colorize_nicks.conf
+2015-03-31 23:31:41		Options saved to autosort.conf
+2015-03-31 23:31:41		Options saved to charset.conf
+2015-03-31 23:31:41		Options saved to aspell.conf
+2015-03-31 23:31:53	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2015-03-31 23:32:04		Options saved to irc.conf
+2015-03-31 23:36:43		URL server stopped
+2015-03-31 23:36:43		python: scripts unloaded
+2015-03-31 23:36:43		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 23:36:43		perl: scripts unloaded
+2015-03-31 23:36:43		fifo: pipe closed
+2015-03-31 23:36:44		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-03-31 23:36:44		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 23:36:44		URL server listening on ('127.0.0.1', 5809)
+2015-03-31 23:36:44		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, sort_servers, urlserver
+2015-03-31 23:36:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 23:37:02		Options saved to irc.conf
+2015-03-31 23:37:03		Options saved to irc.conf
+2015-03-31 23:38:31		Options saved to irc.conf
+2015-03-31 23:39:40		Options saved to irc.conf
+2015-03-31 23:43:35		URL server stopped
+2015-03-31 23:43:35		python: scripts unloaded
+2015-03-31 23:43:35		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 23:43:35		perl: scripts unloaded
+2015-03-31 23:43:35		fifo: pipe closed
+2015-03-31 23:46:07		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-03-31 23:46:07		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 23:46:07		URL server listening on ('127.0.0.1', 3724)
+2015-03-31 23:46:07		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, sort_servers, urlserver
+2015-03-31 23:46:07		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 23:46:22		Options saved to irc.conf
+2015-03-31 23:46:23		Options saved to irc.conf
+2015-03-31 23:46:23		Options saved to irc.conf
+2015-03-31 23:46:23		Options saved to irc.conf
+2015-03-31 23:47:06		URL server stopped
+2015-03-31 23:47:06		python: scripts unloaded
+2015-03-31 23:47:06		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 23:47:06		perl: scripts unloaded
+2015-03-31 23:47:06		fifo: pipe closed
+2015-03-31 23:50:01		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-03-31 23:50:01		script: 292 scripts for WeeChat 1.1.1
+2015-03-31 23:50:01		URL server listening on ('127.0.0.1', 36958)
+2015-03-31 23:50:01		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, sort_servers, urlserver
+2015-03-31 23:50:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-31 23:50:19		Options saved to irc.conf
+2015-03-31 23:50:52		URL server stopped
+2015-03-31 23:50:52		python: scripts unloaded
+2015-03-31 23:50:52		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-03-31 23:50:52		perl: scripts unloaded
+2015-03-31 23:50:52		fifo: pipe closed
+2015-04-01 15:16:28		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-04-01 15:16:28		script: 292 scripts for WeeChat 1.1.1
+2015-04-01 15:16:29		URL server listening on ('127.0.0.1', 58337)
+2015-04-01 15:16:29		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, sort_servers, urlserver
+2015-04-01 15:16:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-01 15:16:47		Options saved to irc.conf
+2015-04-01 15:17:38		Options saved to irc.conf
+2015-04-01 15:18:25		Options saved to irc.conf
+2015-04-01 15:18:53		Options saved to irc.conf
+2015-04-01 15:19:07		Options saved to irc.conf
+2015-04-01 15:20:08		Options saved to irc.conf
+2015-04-01 15:22:13		Options saved to irc.conf
+2015-04-01 15:22:36		Options saved to irc.conf
+2015-04-01 15:22:53		Options saved to irc.conf
+2015-04-01 15:23:09		Options saved to irc.conf
+2015-04-01 15:23:21		Options saved to irc.conf
+2015-04-01 15:23:26		Options saved to irc.conf
+2015-04-01 15:23:34		Options saved to irc.conf
+2015-04-01 15:24:21		Options saved to irc.conf
+2015-04-01 15:24:37		Options saved to irc.conf
+2015-04-01 15:25:01		Options saved to irc.conf
+2015-04-01 15:25:41		Options saved to irc.conf
+2015-04-01 15:27:07		Options saved to irc.conf
+2015-04-01 15:27:25		Options saved to irc.conf
+2015-04-01 15:27:54		Options saved to irc.conf
+2015-04-01 15:33:46		irc: server undernet created
+2015-04-01 15:34:24		Option changed: irc.server.undernet.addresses = "Chicago.IL.US.Undernet.org/7000"  (default: (undefined))
+2015-04-01 15:34:27		Options saved to sec.conf
+2015-04-01 15:34:27		Options saved to weechat.conf
+2015-04-01 15:34:27		Options saved to plugins.conf
+2015-04-01 15:34:27		Options saved to relay.conf
+2015-04-01 15:34:27		Options saved to xfer.conf
+2015-04-01 15:34:27		Options saved to logger.conf
+2015-04-01 15:34:27		Options saved to irc.conf
+2015-04-01 15:34:27		Options saved to alias.conf
+2015-04-01 15:34:27		Options saved to trigger.conf
+2015-04-01 15:34:27		Options saved to buffers.conf
+2015-04-01 15:34:27		Options saved to iset.conf
+2015-04-01 15:34:27		Options saved to script.conf
+2015-04-01 15:34:27		Options saved to exec.conf
+2015-04-01 15:34:27		Options saved to colorize_nicks.conf
+2015-04-01 15:34:27		Options saved to autosort.conf
+2015-04-01 15:34:27		Options saved to charset.conf
+2015-04-01 15:34:27		Options saved to aspell.conf
+2015-04-01 15:34:37		Option changed: irc.server.undernet.autoconnect = on  (default: (undefined))
+2015-04-01 15:34:52		Option changed: irc.server.undernet.ssl = on  (default: (undefined))
+2015-04-01 15:35:17		Option changed: irc.server.undernet.ssl = off  (default: (undefined))
+2015-04-01 15:35:22		Options saved to sec.conf
+2015-04-01 15:35:22		Options saved to weechat.conf
+2015-04-01 15:35:22		Options saved to plugins.conf
+2015-04-01 15:35:22		Options saved to relay.conf
+2015-04-01 15:35:22		Options saved to xfer.conf
+2015-04-01 15:35:22		Options saved to logger.conf
+2015-04-01 15:35:22		Options saved to irc.conf
+2015-04-01 15:35:22		Options saved to alias.conf
+2015-04-01 15:35:22		Options saved to trigger.conf
+2015-04-01 15:35:22		Options saved to buffers.conf
+2015-04-01 15:35:22		Options saved to iset.conf
+2015-04-01 15:35:22		Options saved to script.conf
+2015-04-01 15:35:22		Options saved to exec.conf
+2015-04-01 15:35:22		Options saved to colorize_nicks.conf
+2015-04-01 15:35:22		Options saved to autosort.conf
+2015-04-01 15:35:22		Options saved to charset.conf
+2015-04-01 15:35:22		Options saved to aspell.conf
+2015-04-01 15:35:37		Option changed: irc.server.undernet.autojoin = "#montreal,#quebec"  (default: (undefined))
+2015-04-01 15:35:39		Options saved to sec.conf
+2015-04-01 15:35:39		Options saved to weechat.conf
+2015-04-01 15:35:39		Options saved to plugins.conf
+2015-04-01 15:35:39		Options saved to relay.conf
+2015-04-01 15:35:39		Options saved to xfer.conf
+2015-04-01 15:35:39		Options saved to logger.conf
+2015-04-01 15:35:39		Options saved to irc.conf
+2015-04-01 15:35:39		Options saved to alias.conf
+2015-04-01 15:35:39		Options saved to trigger.conf
+2015-04-01 15:35:39		Options saved to buffers.conf
+2015-04-01 15:35:39		Options saved to iset.conf
+2015-04-01 15:35:39		Options saved to script.conf
+2015-04-01 15:35:39		Options saved to exec.conf
+2015-04-01 15:35:39		Options saved to colorize_nicks.conf
+2015-04-01 15:35:39		Options saved to autosort.conf
+2015-04-01 15:35:39		Options saved to charset.conf
+2015-04-01 15:35:39		Options saved to aspell.conf
+2015-04-01 15:36:04		Options saved to irc.conf
+2015-04-01 16:46:41		Option changed: irc.look.color_nicks_in_nicklist = on  (default: off)
+2015-04-01 16:53:49	=!=	No help available, "weechat.color.chat_nicks_colors" is not a command or an option
+2015-04-01 16:54:17		Option "weechat.color.chat_nick_colors":
+2015-04-01 16:54:17		  description: text color for nicks (comma separated list of colors, background is allowed with format: "fg:bg", for example: "lightred:blue")
+2015-04-01 16:54:17		  type: string
+2015-04-01 16:54:17		  values: any string
+2015-04-01 16:54:17		  default value: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue"
+2015-04-01 16:54:17		  current value: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue"
+2015-04-01 17:17:09		Option changed: weechat.bar.status.color_bg = 0  (default: 60)
+2015-04-01 17:17:23		Option changed: weechat.bar.title.color_bg = 0  (default: 60)
+2015-04-01 17:17:38		Option changed: weechat.color.chat_nick_colors = "1,2,3,4,5,6"  (default: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue")
+2015-04-01 17:18:13		Option changed: buffers.color.hotlist_message_fg = 7  (default: yellow)
+2015-04-01 17:18:34		Option reset: buffers.color.hotlist_message_fg = yellow
+2015-04-01 17:18:34		1 option(s) reset, 0 option(s) removed
+2015-04-01 17:18:43		0 option(s) reset, 0 option(s) removed
+2015-04-01 17:19:15		Option reset: weechat.bar.status.color_bg = 60
+2015-04-01 17:19:15		1 option(s) reset, 0 option(s) removed
+2015-04-01 17:19:40		Option reset: weechat.bar.title.color_bg = 60
+2015-04-01 17:19:40		1 option(s) reset, 0 option(s) removed
+2015-04-01 17:19:59		Option reset: weechat.color.chat_nick_colors = "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue"
+2015-04-01 17:19:59		1 option(s) reset, 0 option(s) removed
+2015-04-01 17:20:04		URL server stopped
+2015-04-01 17:20:04		python: scripts unloaded
+2015-04-01 17:20:04		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-04-01 17:20:04		perl: scripts unloaded
+2015-04-01 17:20:04		fifo: pipe closed
+2015-04-01 17:29:12		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-04-01 17:29:12		script: 292 scripts for WeeChat 1.1.1
+2015-04-01 17:29:12		URL server listening on ('127.0.0.1', 41092)
+2015-04-01 17:29:12		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, sort_servers, urlserver
+2015-04-01 17:29:12		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-01 17:29:21		Options saved to irc.conf
+2015-04-01 17:29:21		Options saved to irc.conf
+2015-04-01 17:29:25		Options saved to irc.conf
+2015-04-01 17:29:26		Options saved to irc.conf
+2015-04-01 17:29:26		Options saved to irc.conf
+2015-04-01 17:29:26		Options saved to irc.conf
+2015-04-01 17:29:26		Options saved to irc.conf
+2015-04-01 17:29:27		Options saved to irc.conf
+2015-04-01 17:29:27		Options saved to irc.conf
+2015-04-01 17:29:27		Options saved to irc.conf
+2015-04-01 17:29:27		Options saved to irc.conf
+2015-04-01 17:29:27		Options saved to irc.conf
+2015-04-01 17:29:27		Options saved to irc.conf
+2015-04-01 17:29:28		Options saved to irc.conf
+2015-04-01 17:29:28		Options saved to irc.conf
+2015-04-01 17:29:28		Options saved to irc.conf
+2015-04-01 17:29:29		Options saved to irc.conf
+2015-04-01 17:29:29		Options saved to irc.conf
+2015-04-01 17:29:29		Options saved to irc.conf
+2015-04-01 17:31:05		Option changed: buffers.look.indenting = on  (default: off)
+2015-04-01 17:31:22		Option changed: irc.look.server_buffer = independent  (default: merge_with_core)
+2015-04-01 17:31:39	=!=	Error with command "/layout save" (help on command: /help layout)
+2015-04-01 17:31:42		Options saved to sec.conf
+2015-04-01 17:31:42		Options saved to weechat.conf
+2015-04-01 17:31:42		Options saved to plugins.conf
+2015-04-01 17:31:42		Options saved to relay.conf
+2015-04-01 17:31:42		Options saved to xfer.conf
+2015-04-01 17:31:42		Options saved to logger.conf
+2015-04-01 17:31:42		Options saved to irc.conf
+2015-04-01 17:31:42		Options saved to alias.conf
+2015-04-01 17:31:42		Options saved to trigger.conf
+2015-04-01 17:31:42		Options saved to buffers.conf
+2015-04-01 17:31:42		Options saved to iset.conf
+2015-04-01 17:31:42		Options saved to script.conf
+2015-04-01 17:31:42		Options saved to exec.conf
+2015-04-01 17:31:42		Options saved to colorize_nicks.conf
+2015-04-01 17:31:42		Options saved to autosort.conf
+2015-04-01 17:31:42		Options saved to charset.conf
+2015-04-01 17:31:42		Options saved to aspell.conf
+2015-04-01 17:31:53		Layout of buffers+windows stored in "default" (current layout: default)
+2015-04-01 17:31:57		Options saved to sec.conf
+2015-04-01 17:31:57		Options saved to weechat.conf
+2015-04-01 17:31:57		Options saved to plugins.conf
+2015-04-01 17:31:57		Options saved to relay.conf
+2015-04-01 17:31:57		Options saved to xfer.conf
+2015-04-01 17:31:57		Options saved to logger.conf
+2015-04-01 17:31:57		Options saved to irc.conf
+2015-04-01 17:31:57		Options saved to alias.conf
+2015-04-01 17:31:57		Options saved to trigger.conf
+2015-04-01 17:31:57		Options saved to buffers.conf
+2015-04-01 17:31:57		Options saved to iset.conf
+2015-04-01 17:31:57		Options saved to script.conf
+2015-04-01 17:31:57		Options saved to exec.conf
+2015-04-01 17:31:57		Options saved to colorize_nicks.conf
+2015-04-01 17:31:57		Options saved to autosort.conf
+2015-04-01 17:31:57		Options saved to charset.conf
+2015-04-01 17:31:57		Options saved to aspell.conf
+2015-04-01 17:50:05		[look] (irc.conf)
+2015-04-01 17:50:05		  irc.look.buffer_open_before_join = on  (default: off)
+2015-04-01 17:50:05		1 option (matching with "irc.look.buffer_open_before_join")
+2015-04-01 17:50:47		Option changed: irc.look.buffer_open_before_join = off
+2015-04-01 17:50:52		Options saved to sec.conf
+2015-04-01 17:50:52		Options saved to weechat.conf
+2015-04-01 17:50:52		Options saved to plugins.conf
+2015-04-01 17:50:52		Options saved to relay.conf
+2015-04-01 17:50:52		Options saved to xfer.conf
+2015-04-01 17:50:52		Options saved to logger.conf
+2015-04-01 17:50:52		Options saved to irc.conf
+2015-04-01 17:50:52		Options saved to alias.conf
+2015-04-01 17:50:52		Options saved to trigger.conf
+2015-04-01 17:50:52		Options saved to buffers.conf
+2015-04-01 17:50:52		Options saved to iset.conf
+2015-04-01 17:50:52		Options saved to script.conf
+2015-04-01 17:50:52		Options saved to exec.conf
+2015-04-01 17:50:52		Options saved to colorize_nicks.conf
+2015-04-01 17:50:52		Options saved to autosort.conf
+2015-04-01 17:50:52		Options saved to charset.conf
+2015-04-01 17:50:52		Options saved to aspell.conf
+2015-04-01 18:17:07		Options saved to sec.conf
+2015-04-01 18:17:07		Options saved to weechat.conf
+2015-04-01 18:17:07		Options saved to plugins.conf
+2015-04-01 18:17:07		Options saved to relay.conf
+2015-04-01 18:17:07		Options saved to xfer.conf
+2015-04-01 18:17:07		Options saved to logger.conf
+2015-04-01 18:17:07		Options saved to irc.conf
+2015-04-01 18:17:07		Options saved to alias.conf
+2015-04-01 18:17:07		Options saved to trigger.conf
+2015-04-01 18:17:07		Options saved to buffers.conf
+2015-04-01 18:17:07		Options saved to iset.conf
+2015-04-01 18:17:07		Options saved to script.conf
+2015-04-01 18:17:07		Options saved to exec.conf
+2015-04-01 18:17:07		Options saved to colorize_nicks.conf
+2015-04-01 18:17:07		Options saved to autosort.conf
+2015-04-01 18:17:07		Options saved to charset.conf
+2015-04-01 18:17:07		Options saved to aspell.conf
+2015-04-01 18:17:14		Layout of buffers+windows stored in "default" (current layout: default)
+2015-04-01 18:17:17		Options saved to sec.conf
+2015-04-01 18:17:17		Options saved to weechat.conf
+2015-04-01 18:17:17		Options saved to plugins.conf
+2015-04-01 18:17:17		Options saved to relay.conf
+2015-04-01 18:17:17		Options saved to xfer.conf
+2015-04-01 18:17:17		Options saved to logger.conf
+2015-04-01 18:17:17		Options saved to irc.conf
+2015-04-01 18:17:17		Options saved to alias.conf
+2015-04-01 18:17:17		Options saved to trigger.conf
+2015-04-01 18:17:17		Options saved to buffers.conf
+2015-04-01 18:17:17		Options saved to iset.conf
+2015-04-01 18:17:17		Options saved to script.conf
+2015-04-01 18:17:17		Options saved to exec.conf
+2015-04-01 18:17:17		Options saved to colorize_nicks.conf
+2015-04-01 18:17:17		Options saved to autosort.conf
+2015-04-01 18:17:17		Options saved to charset.conf
+2015-04-01 18:17:17		Options saved to aspell.conf
+2015-04-01 18:17:22		URL server stopped
+2015-04-01 18:17:22		python: scripts unloaded
+2015-04-01 18:17:22		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-04-01 18:17:22		perl: scripts unloaded
+2015-04-01 18:17:22		fifo: pipe closed
+2015-04-01 18:22:27		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-04-01 18:22:27		script: downloading list of scripts...
+2015-04-01 18:22:28		URL server listening on ('127.0.0.1', 21487)
+2015-04-01 18:22:28		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, sort_servers, urlserver
+2015-04-01 18:22:28		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-01 18:22:29		script: 292 scripts for WeeChat 1.1.1
+2015-04-01 18:22:36		Options saved to irc.conf
+2015-04-01 18:22:36		Options saved to irc.conf
+2015-04-01 18:22:41		Options saved to irc.conf
+2015-04-01 18:22:42		Options saved to irc.conf
+2015-04-01 18:22:42		Options saved to irc.conf
+2015-04-01 18:22:42		Options saved to irc.conf
+2015-04-01 18:22:42		Options saved to irc.conf
+2015-04-01 18:22:43		Options saved to irc.conf
+2015-04-01 18:22:43		Options saved to irc.conf
+2015-04-01 18:22:43		Options saved to irc.conf
+2015-04-01 18:22:43		Options saved to irc.conf
+2015-04-01 18:22:43		Options saved to irc.conf
+2015-04-01 18:22:43		Options saved to irc.conf
+2015-04-01 18:22:43		Options saved to irc.conf
+2015-04-01 18:22:44		Options saved to irc.conf
+2015-04-01 18:22:44		Options saved to irc.conf
+2015-04-01 18:22:44		Options saved to irc.conf
+2015-04-01 18:22:45		Options saved to irc.conf
+2015-04-01 18:22:45		Options saved to irc.conf
+2015-04-01 18:30:42		Layout of buffers+windows stored in "default" (current layout: default)
+2015-04-01 18:30:44		Options saved to sec.conf
+2015-04-01 18:30:44		Options saved to weechat.conf
+2015-04-01 18:30:44		Options saved to plugins.conf
+2015-04-01 18:30:44		Options saved to relay.conf
+2015-04-01 18:30:44		Options saved to xfer.conf
+2015-04-01 18:30:44		Options saved to logger.conf
+2015-04-01 18:30:44		Options saved to irc.conf
+2015-04-01 18:30:44		Options saved to alias.conf
+2015-04-01 18:30:44		Options saved to trigger.conf
+2015-04-01 18:30:44		Options saved to buffers.conf
+2015-04-01 18:30:44		Options saved to iset.conf
+2015-04-01 18:30:44		Options saved to script.conf
+2015-04-01 18:30:44		Options saved to exec.conf
+2015-04-01 18:30:44		Options saved to colorize_nicks.conf
+2015-04-01 18:30:44		Options saved to autosort.conf
+2015-04-01 18:30:44		Options saved to charset.conf
+2015-04-01 18:30:44		Options saved to aspell.conf
+2015-04-01 19:29:44		/set irc.server.undernet.autojoin #montreal,#quebec
+2015-04-01 19:29:44		/set irc.server.freenode.autojoin #archlinux,#postgresql,##java,##c,##linux,##security,##networking,#scala,#erlang,#R,##javascript,#go-nuts,#Node.js,#vim,#git,##c++,#weechat
+2015-04-01 19:30:53		Upgrading WeeChat with binary file: "weechat"...
+2015-04-01 19:30:53		URL server stopped
+2015-04-01 19:30:53		python: scripts unloaded
+2015-04-01 19:30:53		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-04-01 19:30:53		perl: scripts unloaded
+2015-04-01 19:30:53		fifo: pipe closed
+2015-04-01 19:31:00		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-04-01 19:31:00		script: 292 scripts for WeeChat 1.1.1
+2015-04-01 19:31:00		URL server listening on ('127.0.0.1', 60483)
+2015-04-01 19:31:00		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, sort_servers, urlserver
+2015-04-01 19:31:00		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-01 19:31:00		Upgrade done (4.98s)
+2015-04-01 19:31:24	=!=	Error: unknown command "/autoconnect" (type /help for help)
+2015-04-01 19:31:43		URL server stopped
+2015-04-01 19:31:43		python: scripts unloaded
+2015-04-01 19:31:43		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-04-01 19:31:43		perl: scripts unloaded
+2015-04-01 19:31:43		fifo: pipe closed
+2015-04-01 19:31:51		perl scripts loaded: beep, buffers, colorize_lines, highmon, iset
+2015-04-01 19:31:51		script: 292 scripts for WeeChat 1.1.1
+2015-04-01 19:31:51		URL server listening on ('127.0.0.1', 46177)
+2015-04-01 19:31:51		python scripts loaded: autoconnect, autojoin, autosort, buffer_autoclose, colorize_nicks, go, sort_servers, urlserver
+2015-04-01 19:31:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-01 19:32:00		Options saved to irc.conf
+2015-04-01 19:32:00		Options saved to irc.conf
+2015-04-01 19:32:06		Options saved to irc.conf
+2015-04-01 19:32:07		Options saved to irc.conf
+2015-04-01 19:32:07		Options saved to irc.conf
+2015-04-01 19:32:07		Options saved to irc.conf
+2015-04-01 19:32:07		Options saved to irc.conf
+2015-04-01 19:32:07		Options saved to irc.conf
+2015-04-01 19:32:08		Options saved to irc.conf
+2015-04-01 19:32:08		Options saved to irc.conf
+2015-04-01 19:32:08		Options saved to irc.conf
+2015-04-01 19:32:08		Options saved to irc.conf
+2015-04-01 19:32:08		Options saved to irc.conf
+2015-04-01 19:32:08		Options saved to irc.conf
+2015-04-01 19:32:09		Options saved to irc.conf
+2015-04-01 19:32:09		Options saved to irc.conf
+2015-04-01 19:32:09		Options saved to irc.conf
+2015-04-01 19:32:09		Options saved to irc.conf
+2015-04-01 19:32:10		Options saved to irc.conf
+2015-04-01 19:35:17		script: script "autoconnect.py" is already installed and up-to-date
+2015-04-01 19:35:39		script: script "autojoin.pl" not found
+2015-04-01 19:35:50		script: script "autojoin.py" is already installed and up-to-date
+2015-04-01 19:40:30		Option changed: weechat.bar.buffers.size = 20  (default: 0)
+2015-04-01 19:43:52		Option changed: weechat.bar.status.hidden = off
+2015-04-01 19:44:50	=!=	xfer: invalid address "j": error -2 Name or service not known
+2015-04-01 19:52:04		Option changed: irc.server.freenode.autojoin = ""##c,##c++,##java,##javascript,##linux,##networking,##security,#archlinux,#R,#erlang,#haskell,#vim,#scala,#Node.js,#postgresql"  (default: (undefined))
+2015-04-01 19:52:10		Option changed: irc.server.freenode.autojoin = "##c,##c++,##java,##javascript,##linux,##networking,##security,#archlinux,#R,#erlang,#haskell,#vim,#scala,#Node.js,#postgresql"  (default: (undefined))
+2015-04-01 19:52:16		Options saved to sec.conf
+2015-04-01 19:52:16		Options saved to weechat.conf
+2015-04-01 19:52:16		Options saved to plugins.conf
+2015-04-01 19:52:16		Options saved to relay.conf
+2015-04-01 19:52:16		Options saved to xfer.conf
+2015-04-01 19:52:16		Options saved to logger.conf
+2015-04-01 19:52:16		Options saved to irc.conf
+2015-04-01 19:52:16		Options saved to alias.conf
+2015-04-01 19:52:16		Options saved to trigger.conf
+2015-04-01 19:52:16		Options saved to buffers.conf
+2015-04-01 19:52:16		Options saved to iset.conf
+2015-04-01 19:52:16		Options saved to script.conf
+2015-04-01 19:52:16		Options saved to exec.conf
+2015-04-01 19:52:16		Options saved to colorize_nicks.conf
+2015-04-01 19:52:16		Options saved to autosort.conf
+2015-04-01 19:52:16		Options saved to charset.conf
+2015-04-01 19:52:16		Options saved to aspell.conf
+2015-04-01 20:10:03		Scripts loaded:
+2015-04-01 20:10:03		 * ia   beep.pl 1.1 (Beep (terminal bell) and/or run command on highlight/private message or new DCC)
+2015-04-01 20:10:03		 * ia   buffers.pl 5.0 (Sidebar with list of buffers)
+2015-04-01 20:10:03		   ia   colorize_lines.pl 3.3 (colors text in chat area with according nick color, including highlights)
+2015-04-01 20:10:03		   ia   highmon.pl 2.5 (Highlight Monitor)
+2015-04-01 20:10:04		 * ia   iset.pl 3.6 (Interactive Set for configuration options)
+2015-04-01 20:10:04		   ia   autoconnect.py 0.2.3 (reopens servers and channels opened last time weechat closed)
+2015-04-01 20:10:04		   ia   autojoin.py 0.2.5 (Configure autojoin for all servers according to currently joined channels)
+2015-04-01 20:10:04		   ia   autosort.py 2.5 (Automatically or manually keep your buffers sorted and grouped by server.)
+2015-04-01 20:10:04		   ia   buffer_autoclose.py 0.3 (Automatically close inactive private message buffers)
+2015-04-01 20:10:04		   ia   colorize_nicks.py 17 (Use the weechat nick colors in the chat area)
+2015-04-01 20:10:04		   ia   go.py 2.0 (Quick jump to buffers)
+2015-04-01 20:10:04		   ia   sort_servers.py 0.1 (Sort buffers by servers and alphabetically)
+2015-04-01 20:10:04		 * ia   urlserver.py 1.7 (Shorten URLs with own HTTP server)
+2015-04-01 20:10:46		Scripts loaded:
+2015-04-01 20:10:46		 * ia   beep.pl 1.1 (Beep (terminal bell) and/or run command on highlight/private message or new DCC)
+2015-04-01 20:10:46		 * ia   buffers.pl 5.0 (Sidebar with list of buffers)
+2015-04-01 20:10:46		   ia   colorize_lines.pl 3.3 (colors text in chat area with according nick color, including highlights)
+2015-04-01 20:10:46		   ia   highmon.pl 2.5 (Highlight Monitor)
+2015-04-01 20:10:46		 * ia   iset.pl 3.6 (Interactive Set for configuration options)
+2015-04-01 20:10:46		   ia   autoconnect.py 0.2.3 (reopens servers and channels opened last time weechat closed)
+2015-04-01 20:10:46		   ia   autojoin.py 0.2.5 (Configure autojoin for all servers according to currently joined channels)
+2015-04-01 20:10:46		   ia   autosort.py 2.5 (Automatically or manually keep your buffers sorted and grouped by server.)
+2015-04-01 20:10:46		   ia   buffer_autoclose.py 0.3 (Automatically close inactive private message buffers)
+2015-04-01 20:10:46		   ia   colorize_nicks.py 17 (Use the weechat nick colors in the chat area)
+2015-04-01 20:10:46		   ia   go.py 2.0 (Quick jump to buffers)
+2015-04-01 20:10:46		   ia   sort_servers.py 0.1 (Sort buffers by servers and alphabetically)
+2015-04-01 20:10:46		 * ia   urlserver.py 1.7 (Shorten URLs with own HTTP server)
+2015-04-01 20:20:13		script: autoload disabled for script "autoconnect.py"
+2015-04-01 20:20:24		Options saved to sec.conf
+2015-04-01 20:20:24		Options saved to weechat.conf
+2015-04-01 20:20:24		Options saved to plugins.conf
+2015-04-01 20:20:24		Options saved to relay.conf
+2015-04-01 20:20:24		Options saved to xfer.conf
+2015-04-01 20:20:24		Options saved to logger.conf
+2015-04-01 20:20:24		Options saved to irc.conf
+2015-04-01 20:20:24		Options saved to alias.conf
+2015-04-01 20:20:24		Options saved to trigger.conf
+2015-04-01 20:20:24		Options saved to buffers.conf
+2015-04-01 20:20:24		Options saved to iset.conf
+2015-04-01 20:20:24		Options saved to script.conf
+2015-04-01 20:20:24		Options saved to exec.conf
+2015-04-01 20:20:24		Options saved to colorize_nicks.conf
+2015-04-01 20:20:24		Options saved to autosort.conf
+2015-04-01 20:20:24		Options saved to charset.conf
+2015-04-01 20:20:24		Options saved to aspell.conf
+2015-04-01 20:20:36		URL server stopped
+2015-04-01 20:20:36		python: scripts unloaded
+2015-04-01 20:20:36		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-04-01 20:20:36		perl: scripts unloaded
+2015-04-01 20:20:36		fifo: pipe closed
