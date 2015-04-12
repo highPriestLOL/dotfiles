@@ -1,0 +1,242 @@
+Delivered-To: dagnachewa@gmail.com
+Received: by 10.140.154.73 with SMTP id a70csp1105620qha;
+        Sat, 27 Dec 2014 11:01:16 -0800 (PST)
+X-Received: by 10.70.33.71 with SMTP id p7mr76812779pdi.111.1419706875993;
+        Sat, 27 Dec 2014 11:01:15 -0800 (PST)
+Return-Path: <update+mrbnwbqa@facebookmail.com>
+Received: from mx-out.facebook.com (outmail008.prn2.facebook.com. [66.220.144.135])
+        by mx.google.com with ESMTPS id ks1si25047755pbc.242.2014.12.27.11.01.15
+        for <dagnachewa@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sat, 27 Dec 2014 11:01:15 -0800 (PST)
+Received-SPF: pass (google.com: domain of update+mrbnwbqa@facebookmail.com designates 66.220.144.135 as permitted sender) client-ip=66.220.144.135;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of update+mrbnwbqa@facebookmail.com designates 66.220.144.135 as permitted sender) smtp.mail=update+mrbnwbqa@facebookmail.com;
+       dkim=pass header.i=@facebookmail.com;
+       dmarc=pass (p=REJECT dis=NONE) header.from=facebookmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1419706875;
+	bh=iuN0qZQ9eCcq5q87PVu29BwkugFsSKdlkMn+d6cuBsE=;
+	h=Date:To:From:Subject:MIME-Version:Content-Type;
+	b=vPQcnwPArSy53WdFE+ZgreRJ9kFltth9cfWExTIzmMZ1lGMn6uHNviIQsI4GAjqym
+	 Qz8DX1V73cTmFnMAx8NM3ngU8EH0Hf1S1lDFnG8KtZOf/YBMIHDwoWbm2iqYCNQdfG
+	 tK6kDc3om8JyrUfCexYW+li8QofimadcfHt5fNLk=
+Received: from facebook.com (ZZ7IQbOQIb97CMrga0jc/dLwEqwghdfjEBZBAV4sWGOJXBHbqNCh/tznYXtGYCW7 10.102.107.67)
+ by facebook.com with Thrift id bb8a887c8dfa11e496500002c992c490-3dbe92a0;
+ Sat, 27 Dec 2014 11:01:15 -0800
+X-Facebook: from 2401:db00:10:a0a9:face:0:27:0 ([MTI3LjAuMC4x]) 
+	by async.facebook.com with HTTP (ZuckMail);
+Date: Sat, 27 Dec 2014 11:01:15 -0800
+Return-Path: update+mrbnwbqa@facebookmail.com
+To: Dagnachew Argaw <dagnachewa@gmail.com>
+From: "Facebook" <update+mrbnwbqa@facebookmail.com>
+Reply-to: Reply to Comment <e+0nb5srr00000099wjhm02ryvgl30c6r0000000000000000000000002sx09@reply.facebook.com>
+Subject: Behebret Argaw commented on your photo.
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+Errors-To: update+mrbnwbqa@facebookmail.com
+X-Facebook-Notify: photo_comment; mailid=b08f115G216d97aaG101a7747G9Ga786
+List-Unsubscribe: <https://www.facebook.com/o.php?k=AS0Ynf_nIanxzBjV&u=560830378&mid=b08f115G216d97aaG101a7747G9Ga786>
+In-Reply-To: <comm-10152818839475379>
+References: <comm-10152818839475379>
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+Message-ID: <c6f0d9b3df290559fc9cb672bd1dd770@async.facebook.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_c6f0d9b3df290559fc9cb672bd1dd770"
+
+
+--b1_c6f0d9b3df290559fc9cb672bd1dd770
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+See Comment
+https://www.facebook.com/n/?photo.php&fbid=3D10152818839475379&set=3Da.101=
+51609711885379.1073741826.560830378&type=3D1&comment_id=3D1015282100186537=
+9&offset=3D0&total_comments=3D1&aref=3D270169927&medium=3Demail&mid=3Db08f=
+115G216d97aaG101a7747G9Ga786&bcode=3D1.1419706875.AbkiM6e4R77wU0Mw&n_m=3Dd=
+agnachewa%40gmail.com&lloc=3D1st_cta
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Hi Dagnachew,
+
+Behebret Argaw commented on your photo.
+
+Behebret wrote: "Scotch is class!!"
+
+Reply to this email to comment on this photo.
+
+
+
+[https://www.facebook.com/n/?Beheb&aref=3D270169927&medium=3Demail&mid=3Db=
+08f115G216d97aaG101a7747G9Ga786&bcode=3D1.1419706875.AbkiM6e4R77wU0Mw&n_m=
+=3Ddagnachewa%40gmail.com&lloc=3Dimage]=20
+
+Thanks,
+The Facebook Team
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+This message was sent to dagnachewa@gmail.com. If you don't want to =
+receive these emails from Facebook in the future, please follow the link =
+below to unsubscribe.
+https://www.facebook.com/o.php?k=3DAS0Ynf_nIanxzBjV&u=3D560830378&mid=3Db0=
+8f115G216d97aaG101a7747G9Ga786
+Facebook, Inc., Attention: Department 415, PO Box 10005, Palo Alto, CA =
+94303
+
+
+--b1_c6f0d9b3df290559fc9cb672bd1dd770
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /></head><body =
+style=3D"margin:0;padding:0;" dir=3D"ltr"><table cellspacing=3D"0" =
+cellpadding=3D"0" id=3D"email_table" =
+style=3D"border-collapse:collapse;width:98%;" border=3D"0"><tr><td =
+id=3D"email_content" style=3D"font-family:&#039;lucida =
+grande&#039;,tahoma,verdana,arial,sans-serif;font-size:12px;"><span =
+style=3D"width:620px;color:#FFFFFF;display:none =
+!important;font-size:1px;">Behebret wrote: &quot;Scotch is class!!&quot; - =
+ Reply to this email to comment on this photo.
+
+</span><table cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;width:620px;"><tr><td =
+style=3D"font-size:16px;font-family:&#039;lucida grande&#039;,tahoma,verda=
+na,arial,sans-serif;background:#3b5998;color:#FFFFFF;font-weight:bold;vert=
+ical-align:baseline;letter-spacing:-0.03em;text-align:left;padding:5px =
+20px;"><a style=3D"text-decoration: none;" href=3D"https://www.facebook.co=
+m/n/?photo.php&amp;fbid=3D10152818839475379&amp;set=3Da.10151609711885379.=
+1073741826.560830378&amp;type=3D1&amp;comment_id=3D10152821001865379&amp;o=
+ffset=3D0&amp;total_comments=3D1&amp;aref=3D270169927&amp;medium=3Demail&a=
+mp;mid=3Db08f115G216d97aaG101a7747G9Ga786&amp;bcode=3D1.1419706875.AbkiM6e=
+4R77wU0Mw&amp;n_m=3Ddagnachewa%40gmail.com&amp;lloc=3Dlogo"><span =
+style=3D"background:#3b5998;color:#FFFFFF;font-weight:bold;font-family:&#0=
+39;lucida =
+grande&#039;,tahoma,verdana,arial,sans-serif;vertical-align:middle; =
+font-size:16px;letter-spacing:-0.03em;text-align:left;vertical-align:basel=
+ine;">facebook</span></a></td></tr></table><table cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"620px" =
+style=3D"border-collapse:collapse;width:620px;" border=3D"0"><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding:0px;background-color:#f2f2f2;border-left:none;border-right:=
+none;border-top:none;border-bottom:none;"><table cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"620px" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"font-size:11px;font-f=
+amily:LucidaGrande,tahoma,verdana,arial,sans-serif;padding:0px;width:620px=
+;"><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"border-collapse:collapse;width:100%;"><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding:20px;background-color:#fff;border-left:none;border-right:no=
+ne;border-top:none;border-bottom:none;"><table cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+valign=3D"top" style=3D"font-size:11px;font-family:LucidaGrande,tahoma,ver=
+dana,arial,sans-serif;padding-right:15px;text-align:left;"><a =
+href=3D"https://www.facebook.com/n/?Beheb&amp;aref=3D270169927&amp;medium=
+=3Demail&amp;mid=3Db08f115G216d97aaG101a7747G9Ga786&amp;bcode=3D1.14197068=
+75.AbkiM6e4R77wU0Mw&amp;n_m=3Ddagnachewa%40gmail.com&amp;lloc=3Dimage" =
+style=3D"color:#3b5998;text-decoration:none;"><img src=3D"https://fbcdn-pr=
+ofile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c30.30.381.381/s50x50/55779=
+0_10151122080173507_1601913477_n.jpg?oh=3De65644653506b1df3e62beeefc65a0e2=
+&amp;oe=3D55421E05&amp;__gda__=3D1429754349_78288f188690f9abca79ccd2a17b80=
+0a" style=3D"border:0;" /></a></td><td valign=3D"top" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;width:100%;text-align:left;"><table cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;width:100%;"><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-bottom:10px;"><table cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;width:100%;"><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-bottom:5px;"><span =
+style=3D"color:#111111;font-size:13px;font-weight:bold;"><a =
+href=3D"https://www.facebook.com/n/?Beheb&amp;aref=3D270169927&amp;medium=
+=3Demail&amp;mid=3Db08f115G216d97aaG101a7747G9Ga786&amp;bcode=3D1.14197068=
+75.AbkiM6e4R77wU0Mw&amp;n_m=3Ddagnachewa%40gmail.com" =
+style=3D"color:#3b5998;text-decoration:none;">Behebret Argaw</a> commented =
+on your <a href=3D"https://www.facebook.com/n/?photo.php&amp;fbid=3D101528=
+18839475379&amp;set=3Da.10151609711885379.1073741826.560830378&amp;type=3D=
+1&amp;comment_id=3D10152821001865379&amp;offset=3D0&amp;total_comments=3D1=
+&amp;aref=3D270169927&amp;medium=3Demail&amp;mid=3Db08f115G216d97aaG101a77=
+47G9Ga786&amp;bcode=3D1.1419706875.AbkiM6e4R77wU0Mw&amp;n_m=3Ddagnachewa%4=
+0gmail.com" style=3D"color:#3b5998;text-decoration:none;">photo</a>.</span=
+></td></tr><tr><td style=3D"font-size:11px;font-family:LucidaGrande,tahoma=
+,verdana,arial,sans-serif;padding-top:5px;"><span style=3D"">Behebret =
+wrote: &quot;Scotch is =
+class!!&quot;</span></td></tr></table></td></tr><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-top:10px;border-top:1px solid #e8e8e8;"><span =
+style=3D"color:#808080;">Reply to this email to comment on this photo.
+
+</span></td></tr></table></td></tr></table></td></tr></table></td></tr><tr=
+><td style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial=
+,sans-serif;padding:0px;width:620px;"><table cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;width:100%;" =
+border=3D"0"><tr><td style=3D"font-size:11px;font-family:LucidaGrande,taho=
+ma,verdana,arial,sans-serif;padding:7px 20px;background-color:#f2f2f2;bord=
+er-left:none;border-right:none;border-top:1px solid #ccc;border-bottom:1px =
+solid #ccc;"><table cellspacing=3D"0" cellpadding=3D"0" style=3D""><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-left:65px;"><table cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-width: =
+1px;border-style: solid;border-color: #29447E #29447E =
+#1a356e;background-color: #5b74a8;"><table cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding:2px 6px 4px;border-top:1px solid #8a9cc2;"><a =
+href=3D"https://www.facebook.com/n/?photo.php&amp;fbid=3D10152818839475379=
+&amp;set=3Da.10151609711885379.1073741826.560830378&amp;type=3D1&amp;comme=
+nt_id=3D10152821001865379&amp;offset=3D0&amp;total_comments=3D1&amp;aref=
+=3D270169927&amp;medium=3Demail&amp;mid=3Db08f115G216d97aaG101a7747G9Ga786=
+&amp;bcode=3D1.1419706875.AbkiM6e4R77wU0Mw&amp;n_m=3Ddagnachewa%40gmail.co=
+m&amp;lloc=3D1st_cta" style=3D"color:#3b5998;text-decoration:none;"><span =
+style=3D"font-weight:bold;white-space:nowrap;color: #ffffff;font-size: =
+13px;">See Comment</span></a></td></tr></table></td></tr></table></td><td =
+style=3D"padding:0px 5px;"></td><td style=3D"font-size:11px;font-family:Lu=
+cidaGrande,tahoma,verdana,arial,sans-serif;padding:7px 0px 6px;"><table =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"10" =
+style=3D"display:block;width:10px;">&nbsp;&nbsp;&nbsp;</td><td =
+valign=3D"middle" style=3D""><a href=3D"https://www.facebook.com/n/?notifi=
+cations&amp;aref=3D270169927&amp;medium=3Demail&amp;mid=3Db08f115G216d97aa=
+G101a7747G9Ga786&amp;bcode=3D1.1419706875.AbkiM6e4R77wU0Mw&amp;n_m=3Ddagna=
+chewa%40gmail.com&amp;lloc=3Dnotif_badge" =
+style=3D"color:#3b5998;text-decoration:none;"><img src=3D"https://www.face=
+book.com/notifications/email/badge/?k=3Dmrbnwbqa&amp;ndid=3Db08f115G216d97=
+aaG101a7747G9Ga786&amp;cn=3D3jbweQKFfM" width=3D"32" height=3D"24" =
+style=3D"border:0;" /></a></td><td valign=3D"middle" =
+style=3D"padding-left:5px;"><a href=3D"https://www.facebook.com/n/?notific=
+ations&amp;aref=3D270169927&amp;medium=3Demail&amp;mid=3Db08f115G216d97aaG=
+101a7747G9Ga786&amp;bcode=3D1.1419706875.AbkiM6e4R77wU0Mw&amp;n_m=3Ddagnac=
+hewa%40gmail.com&amp;lloc=3Dnotif_badge" =
+style=3D"color:#3b5998;text-decoration:none;"><span =
+style=3D"font-size:13px;">See Your Notifications</span></a></td></tr></tab=
+le></td></tr></table></td></tr></table></td></tr></table></td></tr></table=
+><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"border-collapse:collapse;width:620px;"><tr><td =
+style=3D"font-size:11px;font-family:&#039;lucida grande&#039;, tahoma, =
+verdana, arial, sans-serif;padding:30px 20px;background-color:#fff;border-=
+left:none;border-right:none;border-top:none;border-bottom:none;color:#9999=
+99;border:none;">This message was sent to <a =
+href=3D"mailto:dagnachewa&#064;gmail.com" style=3D"color:#3b5998;text-deco=
+ration:none;">dagnachewa&#064;gmail.com</a>. If you don&#039;t want to =
+receive these emails from Facebook in the future, please <a =
+href=3D"https://www.facebook.com/o.php?k=3DAS0Ynf_nIanxzBjV&amp;u=3D560830=
+378&amp;mid=3Db08f115G216d97aaG101a7747G9Ga786" =
+style=3D"color:#3b5998;text-decoration:none;">unsubscribe</a>.<br =
+/>Facebook, Inc., Attention: Department 415, PO Box 10005, Palo Alto, CA =
+94303</td></tr></table><span style=3D"width:620px;"><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3Db08f115G216d9=
+7aaG101a7747G9Ga786&amp;pid=3D10152818839475379" =
+style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></html>
+
+
+
+--b1_c6f0d9b3df290559fc9cb672bd1dd770--
+

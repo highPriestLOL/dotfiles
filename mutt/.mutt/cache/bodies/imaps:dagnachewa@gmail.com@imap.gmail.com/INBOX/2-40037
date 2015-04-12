@@ -1,0 +1,374 @@
+Delivered-To: dagnachewa@gmail.com
+Received: by 10.140.154.73 with SMTP id a70csp1107478qha;
+        Sat, 27 Dec 2014 11:12:30 -0800 (PST)
+X-Received: by 10.70.92.100 with SMTP id cl4mr77015707pdb.151.1419707550412;
+        Sat, 27 Dec 2014 11:12:30 -0800 (PST)
+Return-Path: <notifications+vvvo4s~527@zyngamail.com>
+Received: from outmail.zyngamail.com (outmail.zyngamail.com. [74.114.9.239])
+        by mx.google.com with ESMTP id uy11si46418700pab.80.2014.12.27.11.12.29
+        for <dagnachewa@gmail.com>;
+        Sat, 27 Dec 2014 11:12:30 -0800 (PST)
+Received-SPF: pass (google.com: domain of notifications+vvvo4s~527@zyngamail.com designates 74.114.9.239 as permitted sender) client-ip=74.114.9.239;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of notifications+vvvo4s~527@zyngamail.com designates 74.114.9.239 as permitted sender) smtp.mail=notifications+vvvo4s~527@zyngamail.com;
+       dkim=pass (test mode) header.i=@zyngamail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=zyngamail.com
+Return-Path: <notifications+vvvo4s~527@zyngamail.com>
+DKIM-Signature: v=1; a=rsa-sha1; d=zyngamail.com; s=dkim1024; c=relaxed/simple;
+	q=dns/txt; i=@zyngamail.com; t=1419707548;
+	h=From:Subject:Date:To:MIME-Version:Content-Type;
+	bh=wDq64n5w9MT0glZFtpcUq+gTgig=;
+	b=LNAVMJSKDJ39RpmhUko1qvpDcDR1ZYVCrzuaPMUYEzWXdEl1VZyWMy6/VXOPec4F
+	ngSoRkpOa1aow6sAqQVdgb1pP+z7RC1MAuzSrn9eEJ4hrcPFv/3CfuiUGJLgkKFd
+	M0eJLxGxgX7TxCITW1fYNWK+PtY+OaFYuID46L5usHY=;
+X-MSFBL: ZGFnbmFjaGV3YUBnbWFpbC5jb21AZGVmYXVsdEBkZWZhdWx0QHd2dm80c341Mjdv
+	a19nfnZpIyJaeW5nYSBQb2tlciIgPG5vdGlmaWNhdGlvbnMrdnZ2bzRzfjUyN1xA
+	enluZ2FtYWlsLmNvbT4=
+Received: from [172.22.9.38] ([172.22.9.38:35842] helo=zyngamail.com)
+	by netops-msg-mta-3.ca2.zynga.com (envelope-from <notifications+vvvo4s~527@zyngamail.com>)
+	(ecelerity 3.5.0.35861 r(Momo-dev:tip)) with ESMTP
+	id CA/96-16970-C940F945; Sat, 27 Dec 2014 19:12:28 +0000
+Date: Sat, 27 Dec 2014 19:12:28 +0000
+Message-ID: <CA.96.16970.C940F945@netops-msg-mta-3.ca2.zynga.com>
+MIME-Version: 1.0
+From: "Zynga Poker" <notifications+vvvo4s~527@zyngamail.com>
+Errors-To: notifications+vvvo4s~527@zyngamail.com
+Reply-To: noreply@zyngamail.com
+Content-Type: text/html; charset=UTF-8
+To: dagnachewa@gmail.com
+Subject: Reminder: 50% Off! Let's Reunite For The New Year
+Require-Recipient-Valid-Since: dagnachewa@gmail.com; Sun, 12 Jun 2011 20:48:46 -0400
+X-Zynga-Notify: wvvo4s~527ok_g~vi
+X-Mailer: Boombox
+X-gameId: 1
+X-templateId: 1403895054-1419704562
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="address=no" />
+	<title>50% Off! Let's Reunite For The New Year</title>
+	
+	<style type="text/css">
+		/* Based on The MailChimp Reset INLINE:Yes. */  
+		/* Client-specific Styles */
+		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/ 
+		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+		/* Forces Hotmail to display normal line spacing. */ 
+		.backgroundTable {margin:0; padding:0; width:100% !important; line-height:100% !important;}
+		/* End reset */
+
+		/* Some sensible defaults for images
+		Bring inline:Yes. */
+		img {outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;} 
+		a img {border:none;} 
+		.image_fix {display:block;}
+		
+		/* Yahoo paragraph fix
+		Bring inline:Yes. */
+		p { font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;color:#FFFFFF;margin:0.3em 0; }
+		
+		p.zheader { font-family:Arial, Helvetica, sans-serif !important;font-size:30px;line-height:34px;color:#FFFFFF !important;margin:0.2em 0; }
+		p.main-body { font-family:Arial, Helvetica, sans-serif !important;font-size:16px;line-height:20px;color:#FFFFFF !important;margin:0.3em 0; }
+		p.main-body-disclaimer { font-family:Arial, Helvetica, sans-serif !important;font-size:10px;line-height:12px;color:#666666 !important;margin:0.3em 0; }
+		p.main-bullet { font-family:Arial, Helvetica, sans-serif !important;font-size:16px;line-height:18px;color:#FFFFFF !important;margin:0; }
+		p.pre-footer { font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; line-height:14px;color:#FFFFFF; }
+		p.zfooter { font-family:Arial, Helvetica, sans-serif; font-size:10px; text-align:left; line-height:12px;color:#FFFFFF; }
+		
+		/* Hotmail header color reset
+		Bring inline:Yes. */
+		h1, h2, h3, h4, h5, h6 { color:#FFFFFF !important; }
+		
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#ffffff !important; }
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+			color:#cccccc !important;
+		}
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+			color:#ffffff !important;
+		}
+		
+		h1 {font-family:Arial, Helvetica, sans-serif !important;font-size:30px;line-height:30px;color:#FFFFFF !important;}
+		/* Outlook 07, 10 Padding issue fix
+		Bring inline:No.*/
+		table td { border-collapse:collapse; }
+
+		/* Remove spacing around Outlook 07, 10 tables
+		Bring inline:Yes */
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+		a {color:#ffffff; text-decoration:none !important;}
+		a.footerlink { color:#ffffff !important;text-decoration:underline !important; }
+		a.bodyLink {color:#FFFFFF;}
+		a.main-bodylink { color:#FFFFFF !important; }
+		
+		/* CTA */
+		a.cta_btn {
+			color:#FFFFFF !important;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:28px;
+			line-height:60px;
+			text-align:center;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #1570cd;
+		}
+		
+		.hidden { display:none !important;height:0px !important; }
+		/***************************************************
+		****************************************************
+		MOBILE TARGETING
+		****************************************************
+		***************************************************/
+		@media (max-width:640px) {
+			p.zheader {font-family:Arial, Helvetica, sans-serif !important;font-size:28px !important;line-height:30px !important;color:#FFFFFF !important;}
+			
+			table[class=devicewidth],table[class=devicewidthheader] { width:480px !important; }
+			table[class=devicewidth-padded], table[class=btn-wrapper] { width:440px !important; }
+			
+			td[class=devicewidth] { width:480px !important; }
+			td[class=devicewidth-padded] { width:440px !important; }
+			
+			table[class=devicewidth-padded-footer], td[class=devicewidth-padded-footer] { width:380px !important; }
+			
+			img[id=main-img] { width:480px !important; height:165px !important; }
+		}
+		
+		@media (max-width:480px) {
+			p.zheader {font-family:Arial, Helvetica, sans-serif !important;font-size:20px !important;line-height:24px !important;color:#FFFFFF !important;}
+			p.main-body { font-family:Arial, Helvetica, sans-serif !important;font-size:14px !important;line-height:18px !important;color:#FFFFFF !important;margin:0.3em 0; }
+			p.main-bullet { font-family:Arial, Helvetica, sans-serif !important;font-size:14px !important;line-height:16px !important;color:#FFFFFF !important;margin:0; }
+			
+			table[class=devicewidth],table[class=devicewidthheader] { width:320px !important; }
+			table[class=devicewidth-padded], table[class=btn-wrapper] { width:280px !important; }
+			
+			td[class=devicewidth] { width:320px !important; }
+			td[class=devicewidth-padded] { width:280px !important; }
+			
+			table[class=devicewidth-padded-footer], td[class=devicewidth-padded-footer] { width:220px !important; }
+			
+			img[id=main-img] { width:320px !important; height:110px !important; }
+		}
+	</style>
+	
+</head>
+<body>
+<p class="hidden" style="display:none !important;height:0px !important;">We haven't seen you in a while...</p>
+<img src='http://accounts.zynga.com/track.php?next=http%3A%2F%2Faccounts.static.zynga.com%2Femail_images%2F1x1.gif&sendkey=ad1112d021b00b77b6b6c18c1aa926f1$$b4Pl402-fj3hF1SXSK!2bfN5SUTWXYcgG5UUVX143dxJDQr-mqppBN.8!7acC8bJlQZ-pc6q-,zEGK24bkI(Q.WKkswxx)F9a5iYyG,hF9a5iYyG,h&hid=rswupwptu&gameid=1&sig=6c31b0642e440f16166984e1c46e487db7080147&linkname=open' width="1" height="1" alt="" border="0" style="display:none !important;" class="hidden" />
+<!-- top banner -->
+<table width="100%" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" border="0" class="backgroundTable">
+<tbody>
+	<tr>
+		<td>
+			<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#000000" class="devicewidth">
+			<tbody>
+				<tr>
+					<td width="100%" height="75">
+						<table width="640" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidthheader">
+						<tbody>
+							<tr>
+								<td align="center" width="55">
+									<table width="55" align="left" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td align="left" height="75"><img src="http://accounts.static.zynga.com/email_images/zynga_logo@2x_1398215102.gif" width="28" height="56" border="0" alt="" style="display:block; border:none; outline:none; text-decoration:none;" /></td>
+										</tr>
+									</tbody>
+									</table>
+								</td>
+								<td width="250">
+									<table width="250" align="left" cellspacing="0" cellpadding="0" border="0" class="header-logo">
+									<tbody>
+										<tr>
+											<td align="left" width="250" class="header-logo"><img src="http://accounts.static.zynga.com/email_images/poker_logo_1416352454.png" width="250" height="50" border="0" alt="Zynga Poker" style="display:block; border:none; outline:none; text-decoration:none;line-height:70px;font-size:13px;color:#FFFFFF;" /></td>
+										</tr>
+									</tbody>
+									</table>
+								</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+		</td>
+	</tr>
+</tbody>
+</table>
+<!-- /top banner -->
+
+<!-- top logo -->
+<table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" class="backgroundTable">
+<tbody>
+	<tr>
+		<td>
+			<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#333333" class="devicewidth">
+			<tbody>
+				<tr>
+					<td width="100%" height="80">
+						<table width="640" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+						<tbody>
+							<tr>
+								<td align="center" class="devicewidth"><a href='http://accounts.zynga.com/track.php?next=https%3A%2F%2F64424.api-01.com%2Fserve%3Faction%3Dclick%26publisher_id%3D64424%26site_id_ios%3D7894%26site_id_android%3D4474%26site_id_web%3D60692%26site_id_ios_hd%3D5368%26advertiser_sub_campaign%3DPO_1_1_emailz_259_CPC_NY_Email_Lapsed&sendkey=ad1112d021b00b77b6b6c18c1aa926f1$$b4Pl402-fj3hF1SXSK!2bfN5SUTWXYcgG5UUVX143dxJDQr-mqppBN.8!7acC8bJlQZ-pc6q-,zEGK24bkI(Q.WKkswxx)F9a5iYyG,hF9a5iYyG,h&hid=rswupwptu&gameid=1&sig=be6826216654d924ee705acdb6011ce269e34977&linkname=main_img' style="text-decoration:none;text-align:center;"><img src="http://accounts.static.zynga.com/email_images/poker_email_lapsed_en_US_1418944314.jpg" width="640" height="220" alt="New Year's Celebration" style="display:block; border:none; outline:none; text-decoration:none;font-size:20px;color:#FFFFFF;" id="main-img" /></a></td>
+							</tr>
+						</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+		</td>
+	</tr>
+</tbody>
+</table>
+<!-- /top logo -->
+
+<!-- CTA -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" bgcolor="#FFFFFF">
+	<tr>
+		<td valign="top">
+			<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" bgcolor="#000000">
+				<tr>
+					<td width="600" valign="top" align="center" class="devicewidth-padded">
+						<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth-padded">
+							<tr><td height="20">&nbsp;</td></tr>
+								<td align="left" width="600" class="devicewidth-padded">
+									<div>
+										<!--[if mso]>
+										  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href='http://accounts.zynga.com/track.php?next=https%3A%2F%2F64424.api-01.com%2Fserve%3Faction%3Dclick%26publisher_id%3D64424%26site_id_ios%3D7894%26site_id_android%3D4474%26site_id_web%3D60692%26site_id_ios_hd%3D5368%26advertiser_sub_campaign%3DPO_1_1_emailz_259_CPC_NY_Email_Lapsed&sendkey=ad1112d021b00b77b6b6c18c1aa926f1$$b4Pl402-fj3hF1SXSK!2bfN5SUTWXYcgG5UUVX143dxJDQr-mqppBN.8!7acC8bJlQZ-pc6q-,zEGK24bkI(Q.WKkswxx)F9a5iYyG,hF9a5iYyG,h&hid=rswupwptu&gameid=1&sig=be6826216654d924ee705acdb6011ce269e34977&linkname=CTA_Click' style="height:50px;v-text-anchor:middle;width:250px;" arcsize="8%" strokecolor="#ff000f" fill="t">
+											<v:fill type="tile" color="#ff000f" />
+											<w:anchorlock/>
+											<center style="color:#ffffff;font-family:sans-serif;font-size:22px;font-weight:bold;">SAVE NOW</center>
+										  </v:roundrect>
+										<![endif]-->
+										<a href='http://accounts.zynga.com/track.php?next=https%3A%2F%2F64424.api-01.com%2Fserve%3Faction%3Dclick%26publisher_id%3D64424%26site_id_ios%3D7894%26site_id_android%3D4474%26site_id_web%3D60692%26site_id_ios_hd%3D5368%26advertiser_sub_campaign%3DPO_1_1_emailz_259_CPC_NY_Email_Lapsed&sendkey=ad1112d021b00b77b6b6c18c1aa926f1$$b4Pl402-fj3hF1SXSK!2bfN5SUTWXYcgG5UUVX143dxJDQr-mqppBN.8!7acC8bJlQZ-pc6q-,zEGK24bkI(Q.WKkswxx)F9a5iYyG,hF9a5iYyG,h&hid=rswupwptu&gameid=1&sig=be6826216654d924ee705acdb6011ce269e34977&linkname=CTA_Click' style="background-color:#ff000f;border:1px solid #ff000f;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:22px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:250px;-webkit-text-size-adjust:none;mso-hide:all;">SAVE NOW</a>
+									</div>
+								</td>
+							</tr>
+							<tr><td height="20">&nbsp;</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- /CTA -->
+
+<!-- main body -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="backgroundTable" bgcolor="#FFFFFF">
+	<tr>
+		<td valign="top">
+			<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" bgcolor="#000000">
+				<tr>
+					<td width="600" valign="top" align="center" class="devicewidth-padded">
+						<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth-padded">
+							<tr>
+								<td align="left" width="600" class="devicewidth-padded"><p style="font-family:Arial, Helvetica, sans-serif !important;font-size:30px;line-height:34px;color:#FFFFFF !important;margin:0.2em 0;" class="zheader"><strong>New Year’s Celebration Sale! 50% Off.</strong></p></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td width="600" valign="top" align="center" class="devicewidth-padded">
+						<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth-padded">
+							<tr>
+								<td align="left" width="600" class="devicewidth-padded">
+									<p style="font-family:Arial, Helvetica, sans-serif !important;font-size:16px;line-height:20px;color:#FFFFFF !important;margin:0.3em 0;" class="main-body">Happy New Year! We miss you! This year, pick up right where you left off and continue improving your Poker skills. As a token of our appreciation, we're holding a 50% Off Sale! Don't miss out on this great opportunity to start the New Year right.</p>
+								</td>
+							</tr>
+							<tr><td height="10">&nbsp;</td></tr>
+							<tr>
+								<td align="left" width="600" class="devicewidth-padded">
+									<p style="font-family:Arial, Helvetica, sans-serif !important;font-size:10px;line-height:12px;color:#666666 !important;margin:0.3em 0;" class="main-body-disclaimer">*Sale applies to select chip and gold package. Correct Dates: sale ends 12/28/14 on Mobile and ends 12/31/14 on Web. Log in with the same Facebook account to use chips and gold interchangeably on all Zynga Poker versions. Limit 1 purchase per player per day on Web.</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- /main body -->
+
+<!-- footer -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="backgroundTable" bgcolor="#FFFFFF">
+	<tr>
+		<td valign="top">
+			<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" bgcolor="#000000">
+				<tr>
+					<td width="600" valign="top" align="center" class="devicewidth-padded-footer">
+						<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth-padded">
+							<tr>
+								<td height="10" align="left"></td>
+							</tr>
+							<tr>
+								<td align="left" width="600" class="devicewidth-padded">
+									<table width="600" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidth-padded">
+									<tbody>
+										<tr>
+											<td height="25" align="left">
+												<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left">
+												<tbody>
+													<tr>
+														<td height="25" width="26" align="center">
+															<table cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#264788" style="font-family:Arial, Helvetica, sans-serif; font-size: 14px; text-align:center; line-height: 25px;color: #FFFFFF;">
+															<tbody>
+																<tr>
+																	<td height="25" align="center">
+																		<a href="https://www.facebook.com/TexasHoldEm" style="color:#FFFFFF;" target="_blank"><img src="http://accounts.static.zynga.com/email_images/fb@2x_1398215100.png" width="25" height="25" alt="F" style="display:block; border:none; outline:none; text-decoration:none;" /></a>
+																	</td>
+																</tr>
+															</tbody>
+															</table>
+														</td>
+														<td width="5"></td>
+														<td height="25" width="26" align="center">
+															<table cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#2c9bdc" style="font-family:Arial, Helvetica, sans-serif; font-size: 14px; text-align:center; line-height: 25px;color: #FFFFFF;">
+															<tbody>
+																<tr>
+																	<td height="25" align="center">
+																		<a href="https://twitter.com/zyngapoker" style="color:#FFFFFF;" target="_blank"><img src="http://accounts.static.zynga.com/email_images/twit@2x_1398215101.png" width="25" height="25" alt="T" style="display:block; border:none; outline:none; text-decoration:none;" /></a>
+																	</td>
+																</tr>
+															</tbody>
+															</table>
+														</td>
+														<td width="5"></td>
+														<td height="30" align="left" style="font-family:Arial, Helvetica, sans-serif; font-size: 14px; text-align:left; line-height: 14px;color: #FFFFFF;" class="body_text">Spread the news</td>
+														<td>&nbsp;</td>
+													</tr>
+												</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="left">
+									<p style="font-family:Arial, Helvetica, sans-serif; font-size: 10px; text-align:left; line-height: 12px;color: #FFFFFF;" class="zfooter">Don't want to receive email notifications? <a href="https://emailsettings.zynga.com/accounts/" style="color:#ffffff !important;text-decoration:underline !important;" target="_blank" class="footerlink">Unsubscribe here</a>.<br />&copy; 2014, Zynga Inc. 699 8th Street San Francisco, CA 94103 <a href="https://company.zynga.com/privacy/policy" style="color:#ffffff !important;text-decoration:underline !important;" class="footerlink">Privacy Policy</a></p>
+								</td>
+							</tr>
+							<tr>
+								<td height="10" align="left"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- /footer -->
+
+</body>
+</html>

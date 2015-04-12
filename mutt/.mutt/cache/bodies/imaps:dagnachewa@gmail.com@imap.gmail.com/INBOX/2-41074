@@ -1,0 +1,740 @@
+Delivered-To: dagnachewa@gmail.com
+Received: by 10.140.154.73 with SMTP id a70csp2687121qha;
+        Sun, 8 Feb 2015 08:39:55 -0800 (PST)
+X-Received: by 10.140.39.84 with SMTP id u78mr29228257qgu.63.1423413595736;
+        Sun, 08 Feb 2015 08:39:55 -0800 (PST)
+Return-Path: <delivery@mx.sailthru.com>
+Received: from pmta2.sailthru.com (pmta2.sailthru.com. [192.64.237.240])
+        by mx.google.com with ESMTPS id jq6si10843868qcb.19.2015.02.08.08.39.54
+        for <dagnachewa@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 08 Feb 2015 08:39:55 -0800 (PST)
+Received-SPF: pass (google.com: domain of delivery@mx.sailthru.com designates 192.64.237.240 as permitted sender) client-ip=192.64.237.240;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of delivery@mx.sailthru.com designates 192.64.237.240 as permitted sender) smtp.mail=delivery@mx.sailthru.com;
+       dkim=pass header.i=@e.buytopia.ca
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; s=mt; d=pmta.sailthru.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe;
+ bh=ksxNCbELd7JeIkGvFDEc+z1wVQU=;
+ b=HY9wGhAZAy2KJhOMlSSN7njzSk5e7nNqiD1b//c9VlmRVaAAcRR4jF/5k/l3nUnmc+jzVXivuMgg
+   tqjlKILSmXxq32b8veQR6lNiBsgkjXzxTpLTFQYYYKLSVPfMMQ+kH85McvZyO+ENbAIRzmpUfsEk
+   0YsVwfeyZmI6QsM5g2w=
+Received: from nyp1-p-p4120-prd-jma-25.sailthru.pvt (65.39.215.177) by pmta2.sailthru.com id hqu8lk1qqbsa for <dagnachewa@gmail.com>; Sun, 8 Feb 2015 11:31:28 -0500 (envelope-from <delivery@mx.sailthru.com>)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; t=1423413088;
+	s=sailthru; d=e.buytopia.ca;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe;
+	bh=uB97TUnEXq6/Vs+7+HrjBhu+PFy67niz/yDRyaD7b4c=;
+	b=TN2WPLfsnmjAGBG7CfD63vbv1nanMvoaldB/jx1o5M8crUPbwK5DKkXz1fBHkcPh
+	U4ARmd3SDgsX7pgtLVcw1UeMB798bxTmOne+KQRGH4geK+LT8G/6ufi36T6o7WUvFvP
+	pK73QEmxh+oiF+COjw7qws+SvTf7/ULRQ9E4hG10=
+Date: Sun, 8 Feb 2015 11:31:28 -0500 (EST)
+From: Buytopia Products <deals@e.buytopia.ca>
+To: dagnachewa@gmail.com
+Message-ID: <20150208163128.3798356.25924@sailthru.com>
+Subject: Naked 3 Brush Set
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4957499_476656260.1423413088311"
+Precedence: bulk
+X-Feedback-ID: 4614:3798356:campaign:sailthru
+X-TM-ID: 20150208163128.3798356.25924
+X-Info: Message sent by sailthru.com customer Buytopia
+X-Info: We do not permit unsolicited commercial email
+X-Info: Please report abuse by forwarding complete headers to
+X-Info: abuse@sailthru.com
+X-Mailer: sailthru.com
+X-JMailer: nyp1-p-p4120-prd-jma-25.sailthru.pvt
+X-Unsubscribe-Web: http://link.buytopia.ca/oc/5347668c572df531186ec24729etw.k04/15f9e9cf
+List-Unsubscribe: <http://link.buytopia.ca/oc/5347668c572df531186ec24729etw.k04/15f9e9cf>, <mailto:unsubscribe_20150208163128.3798356.25924@mx.sailthru.com>
+
+------=_Part_4957499_476656260.1423413088311
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns=3D'http://www.w3.org/1999/xhtml'>
+<head>
+<meta http-equiv=3D'Content-Type' content=3D'text/html; charset=3DUTF-8' />
+<title>Buytopia</title>
+<meta name=3D'viewport' content=3D'width=3Ddevice-width, initial-scale=3D1.=
+0'/>
+</head>
+<body style=3D'padding: 0px; margin: 0px ; -webkit-text-size-adjust:none; -=
+ms-text-size-adjust:100%; font-family: Tahoma, Geneva, sans-serif; backgrou=
+nd-color:#f0f0f0'>
+<table height=3D'100%' width=3D'100%' cellpadding=3D'0' cellspacing=3D'0' b=
+order=3D'0' style=3D'background-color:#f0f0f0'>
+<tr>
+<td valign=3D'top' align=3D'center' width=3D'550' style=3D'background-color=
+:#f0f0f0; padding-bottom:20px; padding-top:20px;'>
+<table cellspacing=3D'0' cellpadding=3D'0' align=3D'center' width=3D'550' s=
+tyle=3D'background-color:#ffffff'>
+<tr>
+<td width=3D'535' style=3D'padding-top:15px;'>
+<table cellpadding=3D'0' width=3D'535' cellspacing=3D'0' style=3D'backgroun=
+d: white; width:100%;'>
+<tr>
+<td align=3D'center' style=3D'padding-bottom:5px;'>
+<table cellpadding=3D'0' cellspacing=3D'0' style=3D'width: 550px;'>
+<tr>=20
+<td width=3D'150' style=3D'padding-left:10px;'>
+<a href=3D""><img src=3D"http://link.buytopia.ca/img/5347668c572df531186ec2=
+4729etw.k04/a232dfc5.gif" alt=3D"" border=3D"0" /></a>
+</td>
+<td width=3D'350' align=3D'right' style=3D'padding-right:10px;'>
+<span style=3D'font-size:13px; color:#d63a4b'>
+Montreal | Feb 08, 2015
+</span>=20
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D'center' width=3D'535'>
+<!-- banner goes here -->
+</td>
+</tr>
+<tr>
+<td align=3D'center'>
+<!-- deal space -->
+<table cellpadding=3D'0' cellspacing=3D'0' style=3D'padding-left:0px; paddi=
+ng-right: 0px; padding-top:20px; padding-bottom:20px; width=3D'535' align=
+=3D'center'><tr>=09<td>=09=09<table cellpadding=3D'0' cellspacing=3D'0' sty=
+le=3D'width:100%; '>=09=09<!-- section title row -->=09=09<tr>=09=09=09<td =
+style=3D'padding-bottom:20px;'>=09=09=09=09<table cellpadding=3D'0' cellspa=
+cing=3D'0' width=3D'100%' style=3D'background-color:#d6384b;padding-top:13p=
+x;padding-bottom:13px;'>=09=09=09=09<!-- for the section title -->=09=09=09=
+=09<tr><td><a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw=
+.k04/VNY-D0mOLIDzdDD-Bd8da' style=3D'text-decoration:none;'>=09=09=09=09<sp=
+an style=3D'color: white; font-weight:bold; font-size: 22px;'>&nbsp;&nbsp;F=
+eatured Deal</span>=09=09=09=09</a>=09=09=09=09</td></tr>=09=09=09=09</tabl=
+e>=09=09=09</td>=09=09</tr> <tr>=09=09=09<td style=3D'padding-bottom:20px;'=
+ align=3D'center'>=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0'>=
+=09=09=09=09<tr>=09=09=09=09=09<td width=3D'535' align=3D'center' style=3D'=
+background:white;'>=09=09=09=09=09=09<table cellpading=3D'0' cellspacing=3D=
+'0' width=3D'535'>=09=09=09=09=09=09<tr><!-- for image -->=09=09=09=09=09=
+=09=09<td align=3D'center'>=09=09=09=09=09=09=09<a href=3D'http://link.buyt=
+opia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDD_Bc0c9'>=09=09=09=
+=09=09=09=09=09<img src=3D'https://buytopia-new.s3.amazonaws.com/deals/2120=
+26/main_image_blast-1422822098.jpg' alt=3D'Enable images for a better viewi=
+ng experience' width=3D'535' height=3D'245'/>=09=09=09=09=09=09=09=09</a>=
+=09=09=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr><!--=
+ for details -->=09=09=09=09=09=09=09<td>=09=09=09=09=09=09=09<table>=09=09=
+=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td align=3D'left' style=
+=3D'padding-left:10px;' width=3D'80%'>=09=09=09=09=09=09=09=09=09<a href=3D=
+'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDD_=
+Caf74' style=3D'text-decoration:none;'>=09=09=09=09=09=09=09=09=09<span sty=
+le=3D'color:black; font-size:22px; font-weight:bold;'>Naked 3 Inspired Brus=
+hes</span></a><br>=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopi=
+a.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDD_D066c' style=3D'text=
+-decoration:none;'><span style=3D'color:grey; font-size:18px;'>Buytopia Ven=
+dor</span></a><br>=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopi=
+a.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDD_Eaa00' style=3D'text=
+-decoration:none;'><span style=3D'font-size:18px; font-weight:bold; color:b=
+lack'><del>$95.00</del>&nbsp;&nbsp; <span style=3D'color:#d6384b; font-weig=
+ht:bold'>$15</span></span></a>=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=
+=09=09=09=09=09<td align=3D'right' width=3D'20%'>=09=09=09=09=09=09=09=09=
+=09=09<table cellpadding=3D'0' cellspacing=3D'0' style=3D'border-bottom: 3p=
+x solid #a02130; width: 160px;background:#d6384b; padding-top:10px; padding=
+-bottom: 10px; padding-left:10px;padding-right:10px; ' align=3D'center'>=09=
+=09=09=09=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=
+=3D'center'>=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buyt=
+opia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDD_F20c3' style=3D't=
+ext-decoration:none; color: white; font-weight: bold;'> VIEW DEAL </a>=09=
+=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09</tr>=09=
+=09=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09</td>=09=09=
+=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=09</=
+td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09</table>=09=09=09=09=09</td>=09=
+=09=09=09</tr>=09=09=09=09</table>=09=09=09</td>=09=09</tr></table>=09</td>=
+</tr><tr>=09<td style=3D'padding-top:0px;'>=09=09<table cellpadding=3D'0' c=
+ellspacing=3D'0' style=3D'border-bottom: 1px solid silver; width:100%; '>=
+=09=09<!-- section title row -->=09=09<tr>=09=09=09<td style=3D'padding-bot=
+tom:0px;'>=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' width=3D'1=
+00%' style=3D'background-color:#3a99d6;padding-top:13px;padding-bottom:13px=
+;'>=09=09=09=09<!-- for the section title -->=09=09=09=09<tr><td><a href=3D=
+'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEA=
+B65ed' style=3D'text-decoration:none;'>=09=09=09=09<span style=3D'color: wh=
+ite; font-weight:bold; font-size: 22px;'>&nbsp;&nbsp;Recommended</span></a>=
+=09=09=09=09</td></tr>=09=09=09=09</table>=09=09=09</td>=09=09</tr>=09=09<t=
+r>=09=09=09<td>=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' align=
+=3D'center' width=3D'530' style=3D'padding-top:15px;'>=09=09=09=09<tr><td w=
+idth=3D'252' align=3D'center' style=3D'background: white;'>=09=09=09=09=09=
+=09<table cellpadding=3D'0' cellspacing=3D'0' align=3D'center' width=3D'252=
+' style=3D'padding-top:10px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<t=
+d align=3D'center'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.=
+ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEBB5b1e' style=3D'text-d=
+ecoration:none; color: grey; font-weight:bold; '><img width=3D'252' border=
+=3D'0' src=3D'https://buytopia-new.s3.amazonaws.com/deals/212060/main_image=
+_wide-1422911608.jpg' alt=3D'Deals are better with pictures - enable images=
+ now!'/></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=
+=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'><table width=3D'100%'><=
+tr>=09=09=09=09=09=09=09<td align=3D'left' style=3D'padding-top: 15px; padd=
+ing-bottom: 15px;' width=3D'80%'> <span style=3D'color: #d6384b; font-size:=
+ 15px;'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c=
+572df531186ec24729etw.k04/VNY-D0mOLIDzdDEBCdda1' style=3D'text-decoration:n=
+one; color: grey; font-size:14px; '>Valentine's Day Flowers</a></span>=09=
+=09=09=09=09=09=09=09<br><a href=3D'http://link.buytopia.ca/5347668c572df53=
+1186ec24729etw.k04/VNY-D0mOLIDzdDEBD83c8' style=3D'text-decoration:none;'><=
+span style=3D'font-size:15px;color:grey;font-weight:bold'><del>$50.00</del>=
+</span></a>&nbsp;&nbsp;<a href=3D'http://link.buytopia.ca/5347668c572df5311=
+86ec24729etw.k04/VNY-D0mOLIDzdDEBE13da' style=3D'text-decoration:none;'><sp=
+an style=3D'font-size:15px; color:#d6384b;font-weight:bold;'>$25</span></a>=
+=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09<td align=3D'right' width=3D=
+'20%'>=09=09=09=09=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=09=
+=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<table cellpadding=3D'0' cellspa=
+cing=3D'0' style=3D'width: 60px;background:#3a99d6; padding-top:5px; paddin=
+g-bottom: 5px; padding-left:1px;padding-right:1px' align=3D'center'>=09=09=
+=09=09=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'c=
+enter'>=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.=
+ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEBFc5c4' style=3D'text-d=
+ecoration:none; color: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=09</t=
+d>=09=09=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=
+=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09=
+=09=09=09=09</table>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=
+=09=09=09=09=09</tr></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<=
+/table>=09=09=09=09=09</td><td width=3D'26'></td><td width=3D'252' align=3D=
+'center' style=3D'background: white;'>=09=09=09=09=09=09<table cellpadding=
+=3D'0' cellspacing=3D'0' align=3D'center' width=3D'252' style=3D'padding-to=
+p:10px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'>=
+=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531=
+186ec24729etw.k04/VNY-D0mOLIDzdDECB009b' style=3D'text-decoration:none; col=
+or: grey; font-weight:bold; '><img width=3D'252' border=3D'0' src=3D'https:=
+//buytopia-new.s3.amazonaws.com/deals/211993/main_image_wide-1408558757.jpg=
+' alt=3D'Deals are better with pictures - enable images now!'/></a>=09=09=
+=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr>=09=09=09=
+=09=09=09=09<td align=3D'center'><table width=3D'100%'><tr>=09=09=09=09=09=
+=09=09<td align=3D'left' style=3D'padding-top: 15px; padding-bottom: 15px;'=
+ width=3D'80%'> <span style=3D'color: #d6384b; font-size: 15px;'>=09=09=09=
+=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec2472=
+9etw.k04/VNY-D0mOLIDzdDECCd240' style=3D'text-decoration:none; color: grey;=
+ font-size:14px; '>Advanced TENS Massager</a></span>=09=09=09=09=09=09=09=
+=09<br><a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04=
+/VNY-D0mOLIDzdDECDe3c5' style=3D'text-decoration:none;'><span style=3D'font=
+-size:15px;color:grey;font-weight:bold'><del>$119.00</del></span></a>&nbsp;=
+&nbsp;<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/=
+VNY-D0mOLIDzdDECE4146' style=3D'text-decoration:none;'><span style=3D'font-=
+size:15px; color:#d6384b;font-weight:bold;'>$19</span></a>=09=09=09=09=09=
+=09=09</td>=09=09=09=09=09=09=09<td align=3D'right' width=3D'20%'>=09=09=09=
+=09=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=
+=09=09=09=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' style=
+=3D'width: 60px;background:#3a99d6; padding-top:5px; padding-bottom: 5px; p=
+adding-left:1px;padding-right:1px' align=3D'center'>=09=09=09=09=09=09=09=
+=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'center'>=09=09=
+=09=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c57=
+2df531186ec24729etw.k04/VNY-D0mOLIDzdDECF024d' style=3D'text-decoration:non=
+e; color: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=
+=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=09=09=09=
+=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=
+=09</table>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=
+=09=09</tr></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09</table>=
+=09=09=09=09=09</td></tr>=09=09=09=09</table>=09=09=09</td>=09=09</tr>=09=
+=09<tr>=09=09=09<td>=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' =
+align=3D'center' width=3D'530' style=3D'padding-top:15px;'>=09=09=09=09<tr>=
+<td width=3D'252' align=3D'center' style=3D'background: white;'>=09=09=09=
+=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' align=3D'center' width=
+=3D'252' style=3D'padding-top:10px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=
+=09=09<td align=3D'center'>=09=09=09=09=09=09=09=09<a href=3D'http://link.b=
+uytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEDBc739' style=
+=3D'text-decoration:none; color: grey; font-weight:bold; '><img width=3D'25=
+2' border=3D'0' src=3D'https://buytopia-new.s3.amazonaws.com/deals/211882/m=
+ain_image_wide-1422553801.jpg' alt=3D'Deals are better with pictures - enab=
+le images now!'/></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=
+=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'><table width=
+=3D'100%'><tr>=09=09=09=09=09=09=09<td align=3D'left' style=3D'padding-top:=
+ 15px; padding-bottom: 15px;' width=3D'80%'> <span style=3D'color: #d6384b;=
+ font-size: 15px;'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.=
+ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEDC035e' style=3D'text-d=
+ecoration:none; color: grey; font-size:14px; '>Jewelry Organizer</a></span>=
+=09=09=09=09=09=09=09=09<br><a href=3D'http://link.buytopia.ca/5347668c572d=
+f531186ec24729etw.k04/VNY-D0mOLIDzdDEDDc381' style=3D'text-decoration:none;=
+'><span style=3D'font-size:15px;color:grey;font-weight:bold'><del>$44.00</d=
+el></span></a>&nbsp;&nbsp;<a href=3D'http://link.buytopia.ca/5347668c572df5=
+31186ec24729etw.k04/VNY-D0mOLIDzdDEDEde08' style=3D'text-decoration:none;'>=
+<span style=3D'font-size:15px; color:#d6384b;font-weight:bold;'>$10</span><=
+/a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09<td align=3D'right' width=
+=3D'20%'>=09=09=09=09=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=
+=09=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<table cellpadding=3D'0' cell=
+spacing=3D'0' style=3D'width: 60px;background:#3a99d6; padding-top:5px; pad=
+ding-bottom: 5px; padding-left:1px;padding-right:1px' align=3D'center'>=09=
+=09=09=09=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=
+=3D'center'>=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buyt=
+opia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEDFce54' style=3D't=
+ext-decoration:none; color: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=
+=09</td>=09=09=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</=
+table>=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=
+=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=
+=09=09=09=09=09=09=09</tr></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=
+=09=09</table>=09=09=09=09=09</td><td width=3D'26'></td><td width=3D'252' a=
+lign=3D'center' style=3D'background: white;'>=09=09=09=09=09=09<table cellp=
+adding=3D'0' cellspacing=3D'0' align=3D'center' width=3D'252' style=3D'padd=
+ing-top:10px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'cent=
+er'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572d=
+f531186ec24729etw.k04/VNY-D0mOLIDzdDEEBe4ec' style=3D'text-decoration:none;=
+ color: grey; font-weight:bold; '><img width=3D'252' border=3D'0' src=3D'ht=
+tps://buytopia-new.s3.amazonaws.com/deals/212052/main_image_wide-1423083960=
+.jpg' alt=3D'Deals are better with pictures - enable images now!'/></a>=09=
+=09=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr>=09=09=
+=09=09=09=09=09<td align=3D'center'><table width=3D'100%'><tr>=09=09=09=09=
+=09=09=09<td align=3D'left' style=3D'padding-top: 15px; padding-bottom: 15p=
+x;' width=3D'80%'> <span style=3D'color: #d6384b; font-size: 15px;'>=09=09=
+=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec2=
+4729etw.k04/VNY-D0mOLIDzdDEEC6c7f' style=3D'text-decoration:none; color: gr=
+ey; font-size:14px; '>Stars The Moon Necklace</a></span>=09=09=09=09=09=09=
+=09=09<br><a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.=
+k04/VNY-D0mOLIDzdDEED16db' style=3D'text-decoration:none;'><span style=3D'f=
+ont-size:15px;color:grey;font-weight:bold'><del>$29.00</del></span></a>&nbs=
+p;&nbsp;<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k0=
+4/VNY-D0mOLIDzdDEEE992d' style=3D'text-decoration:none;'><span style=3D'fon=
+t-size:15px; color:#d6384b;font-weight:bold;'>$7</span></a>=09=09=09=09=09=
+=09=09</td>=09=09=09=09=09=09=09<td align=3D'right' width=3D'20%'>=09=09=09=
+=09=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=
+=09=09=09=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' style=
+=3D'width: 60px;background:#3a99d6; padding-top:5px; padding-bottom: 5px; p=
+adding-left:1px;padding-right:1px' align=3D'center'>=09=09=09=09=09=09=09=
+=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'center'>=09=09=
+=09=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c57=
+2df531186ec24729etw.k04/VNY-D0mOLIDzdDEEF56b9' style=3D'text-decoration:non=
+e; color: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=
+=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=09=09=09=
+=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=
+=09</table>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=
+=09=09</tr></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09</table>=
+=09=09=09=09=09</td></tr>=09=09=09=09</table>=09=09=09</td>=09=09</tr>=09=
+=09<tr>=09=09=09<td>=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' =
+align=3D'center' width=3D'530' style=3D'padding-top:15px;'>=09=09=09=09<tr>=
+<td width=3D'252' align=3D'center' style=3D'background: white;'>=09=09=09=
+=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' align=3D'center' width=
+=3D'252' style=3D'padding-top:10px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=
+=09=09<td align=3D'center'>=09=09=09=09=09=09=09=09<a href=3D'http://link.b=
+uytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEFBb7ed' style=
+=3D'text-decoration:none; color: grey; font-weight:bold; '><img width=3D'25=
+2' border=3D'0' src=3D'https://buytopia-new.s3.amazonaws.com/deals/212070/m=
+ain_image_wide-1419023314.jpg' alt=3D'Deals are better with pictures - enab=
+le images now!'/></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=
+=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'><table width=
+=3D'100%'><tr>=09=09=09=09=09=09=09<td align=3D'left' style=3D'padding-top:=
+ 15px; padding-bottom: 15px;' width=3D'80%'> <span style=3D'color: #d6384b;=
+ font-size: 15px;'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.=
+ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEFC43a5' style=3D'text-d=
+ecoration:none; color: grey; font-size:14px; '>Your Ex Knife Block</a></spa=
+n>=09=09=09=09=09=09=09=09<br><a href=3D'http://link.buytopia.ca/5347668c57=
+2df531186ec24729etw.k04/VNY-D0mOLIDzdDEFD3d18' style=3D'text-decoration:non=
+e;'><span style=3D'font-size:15px;color:grey;font-weight:bold'><del>$170.00=
+</del></span></a>&nbsp;&nbsp;<a href=3D'http://link.buytopia.ca/5347668c572=
+df531186ec24729etw.k04/VNY-D0mOLIDzdDEFE6b9a' style=3D'text-decoration:none=
+;'><span style=3D'font-size:15px; color:#d6384b;font-weight:bold;'>$49</spa=
+n></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09<td align=3D'right' wi=
+dth=3D'20%'>=09=09=09=09=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=
+=09=09=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<table cellpadding=3D'0' c=
+ellspacing=3D'0' style=3D'width: 60px;background:#3a99d6; padding-top:5px; =
+padding-bottom: 5px; padding-left:1px;padding-right:1px' align=3D'center'>=
+=09=09=09=09=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td alig=
+n=3D'center'>=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buy=
+topia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEFF9782' style=3D'=
+text-decoration:none; color: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=
+=09</td>=09=09=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</=
+table>=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=
+=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=
+=09=09=09=09=09=09=09</tr></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=
+=09=09</table>=09=09=09=09=09</td><td width=3D'26'></td><td width=3D'252' a=
+lign=3D'center' style=3D'background: white;'>=09=09=09=09=09=09<table cellp=
+adding=3D'0' cellspacing=3D'0' align=3D'center' width=3D'252' style=3D'padd=
+ing-top:10px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'cent=
+er'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572d=
+f531186ec24729etw.k04/VNY-D0mOLIDzdDEGB0430' style=3D'text-decoration:none;=
+ color: grey; font-weight:bold; '><img width=3D'252' border=3D'0' src=3D'ht=
+tps://buytopia-new.s3.amazonaws.com/deals/212055/main_image_wide-1422937454=
+.jpg' alt=3D'Deals are better with pictures - enable images now!'/></a>=09=
+=09=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr>=09=09=
+=09=09=09=09=09<td align=3D'center'><table width=3D'100%'><tr>=09=09=09=09=
+=09=09=09<td align=3D'left' style=3D'padding-top: 15px; padding-bottom: 15p=
+x;' width=3D'80%'> <span style=3D'color: #d6384b; font-size: 15px;'>=09=09=
+=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec2=
+4729etw.k04/VNY-D0mOLIDzdDEGC9eeb' style=3D'text-decoration:none; color: gr=
+ey; font-size:14px; '> iPhone 5 Headphones</a></span>=09=09=09=09=09=09=09=
+=09<br><a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04=
+/VNY-D0mOLIDzdDEGDf5a4' style=3D'text-decoration:none;'><span style=3D'font=
+-size:15px;color:grey;font-weight:bold'><del>$30.00</del></span></a>&nbsp;&=
+nbsp;<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/V=
+NY-D0mOLIDzdDEGE6a53' style=3D'text-decoration:none;'><span style=3D'font-s=
+ize:15px; color:#d6384b;font-weight:bold;'>$9</span></a>=09=09=09=09=09=09=
+=09</td>=09=09=09=09=09=09=09<td align=3D'right' width=3D'20%'>=09=09=09=09=
+=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=09=
+=09=09=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' style=3D=
+'width: 60px;background:#3a99d6; padding-top:5px; padding-bottom: 5px; padd=
+ing-left:1px;padding-right:1px' align=3D'center'>=09=09=09=09=09=09=09=09=
+=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=
+=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df=
+531186ec24729etw.k04/VNY-D0mOLIDzdDEGFa878' style=3D'text-decoration:none; =
+color: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=
+=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=09=09=09=09=
+=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09</=
+table>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09<=
+/tr></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09</table>=09=09=09=
+=09=09</td></tr>=09=09=09=09</table>=09=09=09</td>=09=09</tr>=09=09<tr>=09=
+=09=09<td>=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' align=3D'c=
+enter' width=3D'530' style=3D'padding-top:15px;'>=09=09=09=09<tr><td width=
+=3D'252' align=3D'center' style=3D'background: white;'>=09=09=09=09=09=09<t=
+able cellpadding=3D'0' cellspacing=3D'0' align=3D'center' width=3D'252' sty=
+le=3D'padding-top:10px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td ali=
+gn=3D'center'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/53=
+47668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEHB6d34' style=3D'text-decora=
+tion:none; color: grey; font-weight:bold; '><img width=3D'252' border=3D'0'=
+ src=3D'https://buytopia-new.s3.amazonaws.com/deals/211883/main_image_wide-=
+1416541673.jpg' alt=3D'Deals are better with pictures - enable images now!'=
+/></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<t=
+r>=09=09=09=09=09=09=09<td align=3D'center'><table width=3D'100%'><tr>=09=
+=09=09=09=09=09=09<td align=3D'left' style=3D'padding-top: 15px; padding-bo=
+ttom: 15px;' width=3D'80%'> <span style=3D'color: #d6384b; font-size: 15px;=
+'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df5=
+31186ec24729etw.k04/VNY-D0mOLIDzdDEHCa2d7' style=3D'text-decoration:none; c=
+olor: grey; font-size:14px; '>Swarovski Bracelet</a></span>=09=09=09=09=09=
+=09=09=09<br><a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729e=
+tw.k04/VNY-D0mOLIDzdDEHD058c' style=3D'text-decoration:none;'><span style=
+=3D'font-size:15px;color:grey;font-weight:bold'><del>$70.00</del></span></a=
+>&nbsp;&nbsp;<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729e=
+tw.k04/VNY-D0mOLIDzdDEHE3b05' style=3D'text-decoration:none;'><span style=
+=3D'font-size:15px; color:#d6384b;font-weight:bold;'>$8</span></a>=09=09=09=
+=09=09=09=09</td>=09=09=09=09=09=09=09<td align=3D'right' width=3D'20%'>=09=
+=09=09=09=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09<=
+td>=09=09=09=09=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0'=
+ style=3D'width: 60px;background:#3a99d6; padding-top:5px; padding-bottom: =
+5px; padding-left:1px;padding-right:1px' align=3D'center'>=09=09=09=09=09=
+=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'center'>=
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347=
+668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEHF1aca' style=3D'text-decorati=
+on:none; color: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=09</td>=09=
+=09=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=09=
+=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=
+=09=09=09</table>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=
+=09=09=09=09</tr></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09</ta=
+ble>=09=09=09=09=09</td><td width=3D'26'></td><td width=3D'252' align=3D'ce=
+nter' style=3D'background: white;'>=09=09=09=09=09=09<table cellpadding=3D'=
+0' cellspacing=3D'0' align=3D'center' width=3D'252' style=3D'padding-top:10=
+px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'>=09=09=
+=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec2=
+4729etw.k04/VNY-D0mOLIDzdDEIB5498' style=3D'text-decoration:none; color: gr=
+ey; font-weight:bold; '><img width=3D'252' border=3D'0' src=3D'https://buyt=
+opia-new.s3.amazonaws.com/deals/211795/main_image_wide-1406864249.jpg' alt=
+=3D'Deals are better with pictures - enable images now!'/></a>=09=09=09=09=
+=09=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr>=09=09=09=09=09=
+=09=09<td align=3D'center'><table width=3D'100%'><tr>=09=09=09=09=09=09=09<=
+td align=3D'left' style=3D'padding-top: 15px; padding-bottom: 15px;' width=
+=3D'80%'> <span style=3D'color: #d6384b; font-size: 15px;'>=09=09=09=09=09=
+=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k=
+04/VNY-D0mOLIDzdDEICe894' style=3D'text-decoration:none; color: grey; font-=
+size:14px; '>Children's Learning Tablet</a></span>=09=09=09=09=09=09=09=09<=
+br><a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY=
+-D0mOLIDzdDEID936d' style=3D'text-decoration:none;'><span style=3D'font-siz=
+e:15px;color:grey;font-weight:bold'><del>$30.00</del></span></a>&nbsp;&nbsp=
+;<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D=
+0mOLIDzdDEIE7da1' style=3D'text-decoration:none;'><span style=3D'font-size:=
+15px; color:#d6384b;font-weight:bold;'>$14</span></a>=09=09=09=09=09=09=09<=
+/td>=09=09=09=09=09=09=09<td align=3D'right' width=3D'20%'>=09=09=09=09=09=
+=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=09=09=
+=09=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' style=3D'wi=
+dth: 60px;background:#3a99d6; padding-top:5px; padding-bottom: 5px; padding=
+-left:1px;padding-right:1px' align=3D'center'>=09=09=09=09=09=09=09=09=09=
+=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=
+=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531=
+186ec24729etw.k04/VNY-D0mOLIDzdDEIFb911' style=3D'text-decoration:none; col=
+or: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=
+=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=
+=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09</tab=
+le>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09</tr=
+></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09</table>=09=09=09=09=
+=09</td></tr>=09=09=09=09</table>=09=09=09</td>=09=09</tr>=09=09<tr>=09=09=
+=09<td>=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' align=3D'cent=
+er' width=3D'530' style=3D'padding-top:15px;'>=09=09=09=09<tr><td width=3D'=
+252' align=3D'center' style=3D'background: white;'>=09=09=09=09=09=09<table=
+ cellpadding=3D'0' cellspacing=3D'0' align=3D'center' width=3D'252' style=
+=3D'padding-top:10px;'>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=
+=3D'center'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347=
+668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEJB5daf' style=3D'text-decorati=
+on:none; color: grey; font-weight:bold; '><img width=3D'252' border=3D'0' s=
+rc=3D'https://buytopia-new.s3.amazonaws.com/deals/212087/main_image_wide-14=
+23084365.jpg' alt=3D'Deals are better with pictures - enable images now!'/>=
+</a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr>=
+=09=09=09=09=09=09=09<td align=3D'center'><table width=3D'100%'><tr>=09=09=
+=09=09=09=09=09<td align=3D'left' style=3D'padding-top: 15px; padding-botto=
+m: 15px;' width=3D'80%'> <span style=3D'color: #d6384b; font-size: 15px;'>=
+=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531=
+186ec24729etw.k04/VNY-D0mOLIDzdDEJC297e' style=3D'text-decoration:none; col=
+or: grey; font-size:14px; '>Knee Brace</a></span>=09=09=09=09=09=09=09=09<b=
+r><a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-=
+D0mOLIDzdDEJD82d7' style=3D'text-decoration:none;'><span style=3D'font-size=
+:15px;color:grey;font-weight:bold'><del>$35.00</del></span></a>&nbsp;&nbsp;=
+<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0=
+mOLIDzdDEJEb164' style=3D'text-decoration:none;'><span style=3D'font-size:1=
+5px; color:#d6384b;font-weight:bold;'>$19</span></a>=09=09=09=09=09=09=09</=
+td>=09=09=09=09=09=09=09<td align=3D'right' width=3D'20%'>=09=09=09=09=09=
+=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=09=09=
+=09=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' style=3D'wi=
+dth: 60px;background:#3a99d6; padding-top:5px; padding-bottom: 5px; padding=
+-left:1px;padding-right:1px' align=3D'center'>=09=09=09=09=09=09=09=09=09=
+=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=
+=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531=
+186ec24729etw.k04/VNY-D0mOLIDzdDEJF9ba1' style=3D'text-decoration:none; col=
+or: white;'>view</a>=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=
+=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=
+=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09</tab=
+le>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09</tr=
+></table></td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09</table>=09=09=09=09=
+=09</td><td width=3D'26'></td><td width=3D'252' align=3D'center' style=3D'b=
+ackground: white;'>=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=
+=3D'0' align=3D'center' width=3D'252' style=3D'padding-top:10px;'>=09=09=09=
+=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=09=09=
+=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/=
+VNY-D0mOLIDzdDEKB4483' style=3D'text-decoration:none; color: grey; font-wei=
+ght:bold; '><img width=3D'252' border=3D'0' src=3D'https://buytopia-new.s3.=
+amazonaws.com/deals/212018/main_image_wide-1422821632.jpg' alt=3D'Deals are=
+ better with pictures - enable images now!'/></a>=09=09=09=09=09=09=09</td>=
+=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=
+=3D'center'><table width=3D'100%'><tr>=09=09=09=09=09=09=09<td align=3D'lef=
+t' style=3D'padding-top: 15px; padding-bottom: 15px;' width=3D'80%'> <span =
+style=3D'color: #d6384b; font-size: 15px;'>=09=09=09=09=09=09=09=09<a href=
+=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzd=
+DEKC9d5f' style=3D'text-decoration:none; color: grey; font-size:14px; '>Jap=
+anese Kimono Robe</a></span>=09=09=09=09=09=09=09=09<br><a href=3D'http://l=
+ink.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEKDf071' st=
+yle=3D'text-decoration:none;'><span style=3D'font-size:15px;color:grey;font=
+-weight:bold'><del>$40.00</del></span></a>&nbsp;&nbsp;<a href=3D'http://lin=
+k.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEKE2262' styl=
+e=3D'text-decoration:none;'><span style=3D'font-size:15px; color:#d6384b;fo=
+nt-weight:bold;'>$22</span></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=
+=09<td align=3D'right' width=3D'20%'>=09=09=09=09=09=09=09=09<table>=09=09=
+=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<=
+table cellpadding=3D'0' cellspacing=3D'0' style=3D'width: 60px;background:#=
+3a99d6; padding-top:5px; padding-bottom: 5px; padding-left:1px;padding-righ=
+t:1px' align=3D'center'>=09=09=09=09=09=09=09=09=09=09<tr>=09=09=09=09=09=
+=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=09=09=09=09=09=09=09=09=
+<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0=
+mOLIDzdDEKFc1a7' style=3D'text-decoration:none; color: white;'>view</a>=09=
+=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09</tr>=09=
+=09=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09</td>=09=09=
+=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09</tr></table></td>=09=09=
+=09=09=09=09</tr>=09=09=09=09=09=09</table>=09=09=09=09=09</td></tr>=09=09=
+=09=09</table>=09=09=09</td>=09=09</tr><tr>=09=09=09<td align=3D'right' sty=
+le=3D'padding-bottom:20px;'>=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=
+<td align=3D'center' style=3D'padding-top:0px;'>=09=09=09=09<table>=09=09=
+=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<=
+table cellpadding=3D'0' cellspacing=3D'0' style=3D'border-bottom: 3px solid=
+ #2270a2; width: 160px;background:#3a99d6; padding-top:10px; padding-bottom=
+: 10px; padding-left:17px;padding-right:17px; ' align=3D'center'>=09=09=09=
+=09=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'cent=
+er'>=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/=
+5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEAC4d94' style=3D'text-deco=
+ration:none; color: white; font-weight: bold;'>SEE MORE</a>=09=09=09=09=09=
+=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=
+=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=
+=09=09</tr>=09=09=09=09</table>=09=09=09</td>=09=09</tr>=09=09=09=09</table=
+>=09=09=09</td>=09=09</tr>=09=09</table>=09</td></tr><tr>=09<td style=3D'pa=
+dding-top:0px;'>=09=09<table cellpadding=3D'0' cellspacing=3D'0' style=3D'b=
+order-bottom: 1px solid silver; width:100%; '>=09=09<!-- section title row =
+-->=09=09<tr>=09=09=09<td style=3D'padding-bottom:0px;'>=09=09=09=09<table =
+cellpadding=3D'0' cellspacing=3D'0' width=3D'100%' style=3D'background-colo=
+r:#3ad6c5;padding-top:13px;padding-bottom:13px;'>=09=09=09=09<!-- for the s=
+ection title -->=09=09=09=09<tr><td><a href=3D'http://link.buytopia.ca/5347=
+668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEADaef7' style=3D'text-decorati=
+on:none;'>=09=09=09=09<span style=3D'color: white; font-weight:bold; font-s=
+ize: 22px;'>&nbsp;&nbsp;Popular</span></a>=09=09=09=09</td></tr>=09=09=09=
+=09</table>=09=09=09</td>=09=09</tr>=09=09=09<tr>=09=09=09<td>=09=09=09=09<=
+table cellpadding=3D'0' cellspacing=3D'0' align=3D'center' width=3D'530' st=
+yle=3D'padding-top:15px;'>=09=09=09=09<tr><td width=3D'252' align=3D'center=
+' style=3D'background: white;'>=09=09=09=09=09=09<table cellpadding=3D'0' c=
+ellspacing=3D'0' align=3D'center' width=3D'252' style=3D'padding-top:10px;'=
+>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=
+=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec2472=
+9etw.k04/VNY-D0mOLIDzdDELBb4fa' style=3D'text-decoration:none; color: grey;=
+ font-weight:bold; '><img width=3D'252' border=3D'0' src=3D'https://buytopi=
+a-new.s3.amazonaws.com/deals/212054/main_image_wide-1423097560.jpg' alt=3D'=
+Deals are better with pictures - enable images now!'/></a>=09=09=09=09=09=
+=09=09</td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=
+=09<td align=3D'center'><table width=3D'100%'><tr>=09=09=09=09=09=09=09<td =
+align=3D'left' style=3D'padding-top: 15px; padding-bottom: 15px;' width=3D'=
+80%'> <span style=3D'color: #d6384b; font-size: 15px;'>=09=09=09=09=09=09=
+=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/=
+VNY-D0mOLIDzdDELCfecf' style=3D'text-decoration:none; color: grey; font-siz=
+e:14px; '> LED Helicopter Shooters</a></span>=09=09=09=09=09=09=09=09<br><a=
+ href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mO=
+LIDzdDELD0116' style=3D'text-decoration:none;'><span style=3D'font-size:15p=
+x;color:grey;font-weight:bold'><del>$40.00</del></span></a>&nbsp;&nbsp;<a h=
+ref=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLI=
+DzdDELE5ef6' style=3D'text-decoration:none;'><span style=3D'font-size:15px;=
+ color:#d6384b;font-weight:bold;'>$9</span></a>=09=09=09=09=09=09=09</td>=
+=09=09=09=09=09=09=09<td align=3D'right' width=3D'20%'>=09=09=09=09=09=09=
+=09=09<table>=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=09=09=09=
+=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' style=3D'width=
+: 60px;background:#3ad6c5; padding-top:5px; padding-bottom: 5px; padding-le=
+ft:1px;padding-right:1px' align=3D'center'>=09=09=09=09=09=09=09=09=09=09<t=
+r>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=09=09=
+=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec2=
+4729etw.k04/VNY-D0mOLIDzdDELF3eae' style=3D'text-decoration:none; color: wh=
+ite;'>view</a>=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=
+=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=
+=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09</table>=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09</tr></tab=
+le></td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09</table>=09=09=09=09=09</t=
+d><td width=3D'26'></td><td width=3D'252' align=3D'center' style=3D'backgro=
+und: white;'>=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' a=
+lign=3D'center' width=3D'252' style=3D'padding-top:10px;'>=09=09=09=09=09=
+=09<tr>=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=09=09=09=09<a=
+ href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mO=
+LIDzdDEMBbaba' style=3D'text-decoration:none; color: grey; font-weight:bold=
+; '><img width=3D'252' border=3D'0' src=3D'https://buytopia-new.s3.amazonaw=
+s.com/deals/211995/main_image_wide-1404935788.jpg' alt=3D'Deals are better =
+with pictures - enable images now!'/></a>=09=09=09=09=09=09=09</td>=09=09=
+=09=09=09=09</tr>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'ce=
+nter'><table width=3D'100%'><tr>=09=09=09=09=09=09=09<td align=3D'left' sty=
+le=3D'padding-top: 15px; padding-bottom: 15px;' width=3D'80%'> <span style=
+=3D'color: #d6384b; font-size: 15px;'>=09=09=09=09=09=09=09=09<a href=3D'ht=
+tp://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEMC8e=
+6a' style=3D'text-decoration:none; color: grey; font-size:14px; '>Swarovski=
+ Wings Set</a></span>=09=09=09=09=09=09=09=09<br><a href=3D'http://link.buy=
+topia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEMD7996' style=3D'=
+text-decoration:none;'><span style=3D'font-size:15px;color:grey;font-weight=
+:bold'><del>$129.00</del></span></a>&nbsp;&nbsp;<a href=3D'http://link.buyt=
+opia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEMEe737' style=3D't=
+ext-decoration:none;'><span style=3D'font-size:15px; color:#d6384b;font-wei=
+ght:bold;'>$15</span></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09<td=
+ align=3D'right' width=3D'20%'>=09=09=09=09=09=09=09=09<table>=09=09=09=09=
+=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<table =
+cellpadding=3D'0' cellspacing=3D'0' style=3D'width: 60px;background:#3ad6c5=
+; padding-top:5px; padding-bottom: 5px; padding-left:1px;padding-right:1px'=
+ align=3D'center'>=09=09=09=09=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09=
+=09=09=09=09<td align=3D'center'>=09=09=09=09=09=09=09=09=09=09=09=09<a hre=
+f=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDz=
+dDEMF6054' style=3D'text-decoration:none; color: white;'>view</a>=09=09=09=
+=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09</tr>=09=09=09=
+=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=
+=09=09=09=09</tr>=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09</td>=09=09=09=09=09=09=09</tr></table></td>=09=09=09=09=
+=09=09</tr>=09=09=09=09=09=09</table>=09=09=09=09=09</td></tr>=09=09=09=09<=
+/table>=09=09=09</td>=09=09</tr>=09=09<tr>=09=09=09<td>=09=09=09=09<table c=
+ellpadding=3D'0' cellspacing=3D'0' align=3D'center' width=3D'530' style=3D'=
+padding-top:15px;'>=09=09=09=09<tr><td width=3D'252' align=3D'center' style=
+=3D'background: white;'>=09=09=09=09=09=09<table cellpadding=3D'0' cellspac=
+ing=3D'0' align=3D'center' width=3D'252' style=3D'padding-top:10px;'>=09=09=
+=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=09=
+=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k=
+04/VNY-D0mOLIDzdDENB5806' style=3D'text-decoration:none; color: grey; font-=
+weight:bold; '><img width=3D'252' border=3D'0' src=3D'https://buytopia-new.=
+s3.amazonaws.com/deals/212023/main_image_wide-1422821394.jpg' alt=3D'Deals =
+are better with pictures - enable images now!'/></a>=09=09=09=09=09=09=09</=
+td>=09=09=09=09=09=09</tr>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td al=
+ign=3D'center'><table width=3D'100%'><tr>=09=09=09=09=09=09=09<td align=3D'=
+left' style=3D'padding-top: 15px; padding-bottom: 15px;' width=3D'80%'> <sp=
+an style=3D'color: #d6384b; font-size: 15px;'>=09=09=09=09=09=09=09=09<a hr=
+ef=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLID=
+zdDENC5b9b' style=3D'text-decoration:none; color: grey; font-size:14px; '>L=
+eather Watch Box</a></span>=09=09=09=09=09=09=09=09<br><a href=3D'http://li=
+nk.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDENDe4c4' sty=
+le=3D'text-decoration:none;'><span style=3D'font-size:15px;color:grey;font-=
+weight:bold'><del>$100.00</del></span></a>&nbsp;&nbsp;<a href=3D'http://lin=
+k.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDENE37ce' styl=
+e=3D'text-decoration:none;'><span style=3D'font-size:15px; color:#d6384b;fo=
+nt-weight:bold;'>$39</span></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=
+=09<td align=3D'right' width=3D'20%'>=09=09=09=09=09=09=09=09<table>=09=09=
+=09=09=09<tr>=09=09=09=09=09=09=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<=
+table cellpadding=3D'0' cellspacing=3D'0' style=3D'width: 60px;background:#=
+3ad6c5; padding-top:5px; padding-bottom: 5px; padding-left:1px;padding-righ=
+t:1px' align=3D'center'>=09=09=09=09=09=09=09=09=09=09<tr>=09=09=09=09=09=
+=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=09=09=09=09=09=09=09=09=
+<a href=3D'http://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0=
+mOLIDzdDENF5ded' style=3D'text-decoration:none; color: white;'>view</a>=09=
+=09=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09</tr>=09=
+=09=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09</td>=09=09=
+=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09</tr></table></td>=09=09=
+=09=09=09=09</tr>=09=09=09=09=09=09</table>=09=09=09=09=09</td><td width=3D=
+'26'></td><td width=3D'252' align=3D'center' style=3D'background: white;'>=
+=09=09=09=09=09=09<table cellpadding=3D'0' cellspacing=3D'0' align=3D'cente=
+r' width=3D'252' style=3D'padding-top:10px;'>=09=09=09=09=09=09<tr>=09=09=
+=09=09=09=09=09<td align=3D'center'>=09=09=09=09=09=09=09=09<a href=3D'http=
+://link.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEOB121e=
+' style=3D'text-decoration:none; color: grey; font-weight:bold; '><img widt=
+h=3D'252' border=3D'0' src=3D'https://buytopia-new.s3.amazonaws.com/deals/2=
+12058/main_image_wide-1423084262.jpg' alt=3D'Deals are better with pictures=
+ - enable images now!'/></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09</t=
+r>=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09<td align=3D'center'><table wi=
+dth=3D'100%'><tr>=09=09=09=09=09=09=09<td align=3D'left' style=3D'padding-t=
+op: 15px; padding-bottom: 15px;' width=3D'80%'> <span style=3D'color: #d638=
+4b; font-size: 15px;'>=09=09=09=09=09=09=09=09<a href=3D'http://link.buytop=
+ia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEOC0c14' style=3D'tex=
+t-decoration:none; color: grey; font-size:14px; '>Faux Black Leather Belt <=
+/a></span>=09=09=09=09=09=09=09=09<br><a href=3D'http://link.buytopia.ca/53=
+47668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEOD74c4' style=3D'text-decora=
+tion:none;'><span style=3D'font-size:15px;color:grey;font-weight:bold'><del=
+>$80.00</del></span></a>&nbsp;&nbsp;<a href=3D'http://link.buytopia.ca/5347=
+668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEOE2a4d' style=3D'text-decorati=
+on:none;'><span style=3D'font-size:15px; color:#d6384b;font-weight:bold;'>$=
+13</span></a>=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09<td align=3D'ri=
+ght' width=3D'20%'>=09=09=09=09=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=
+=09=09=09=09=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<table cellpadding=
+=3D'0' cellspacing=3D'0' style=3D'width: 60px;background:#3ad6c5; padding-t=
+op:5px; padding-bottom: 5px; padding-left:1px;padding-right:1px' align=3D'c=
+enter'>=09=09=09=09=09=09=09=09=09=09<tr>=09=09=09=09=09=09=09=09=09=09=09<=
+td align=3D'center'>=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D'http://l=
+ink.buytopia.ca/5347668c572df531186ec24729etw.k04/VNY-D0mOLIDzdDEOF755a' st=
+yle=3D'text-decoration:none; color: white;'>view</a>=09=09=09=09=09=09=09=
+=09=09=09=09</td>=09=09=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=
+=09=09=09</table>=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</=
+tr>=09=09=09=09=09=09=09=09</table>=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09</td>=09=09=09=09=09=09=09</tr></table></td>=09=09=09=09=09=09</tr>=09=
+=09=09=09=09=09</table>=09=09=09=09=09</td></tr>=09=09=09=09</table>=09=09=
+=09</td>=09=09</tr><tr>=09=09=09<td align=3D'right' style=3D'padding-bottom=
+:20px;'>=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09<td align=3D'center'=
+ style=3D'padding-top:0px;'>=09=09=09=09<table>=09=09=09=09=09<tr>=09=09=09=
+=09=09=09=09=09=09<td>=09=09=09=09=09=09=09=09=09=09<table cellpadding=3D'0=
+' cellspacing=3D'0' style=3D'border-bottom: 3px solid #22a294; width: 160px=
+;background:#3ad6c5; padding-top:10px; padding-bottom: 10px; padding-left:1=
+7px;padding-right:17px; ' align=3D'center'>=09=09=09=09=09=09=09=09=09=09<t=
+r>=09=09=09=09=09=09=09=09=09=09=09<td align=3D'center'>=09=09=09=09=09=09=
+=09=09=09=09=09=09<a href=3D'http://link.buytopia.ca/5347668c572df531186ec2=
+4729etw.k04/VNY-D0mOLIDzdDEAE940d' style=3D'text-decoration:none; color: wh=
+ite; font-weight: bold;'>SEE MORE</a>=09=09=09=09=09=09=09=09=09=09=09</td>=
+=09=09=09=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09</table>=
+=09=09=09=09=09=09=09=09=09</td>=09=09=09=09=09=09=09=09</tr>=09=09=09=09</=
+table>=09=09=09</td>=09=09</tr>=09=09=09=09</table>=09=09=09</td>=09=09</tr=
+>=09=09</table>=09</td></tr>
+<!-- end -->
+<tr>
+<table cellpadding=3D'0' cellspacing=3D'0' align=3D'center' width=3D'535' s=
+tyle=3D'background-color:white;'>
+<tr>
+<td style=3D'text-align:left; padding-top:10px; padding-left:15px; padding-=
+bottom:10px;'>
+<span style=3D'font-color:black; font-size: 11px;'>You are receiving this e=
+mail because dagnachewa@gmail.com is signed up to receive Buytopia newslett=
+er. To adjust how often you receive future emails, including
+unsubscribing, <a href=3D'http://link.buytopia.ca/oc/5347668c572df531186ec2=
+4729etw.k04/15f9e9cf' style=3D'text-decoration:none;'>click here</a>.
+<br><br>
+<i>Baked Fresh Daily</i>: <a href=3D'http://link.buytopia.ca/5347668c572df5=
+31186ec24729etw.k04/U1-7SuYQNL6J1JIaB1389' style=3D'text-decoration:none;'>=
+Buytopia.ca</a> 183 Bathurst St, Suite 302, Toronto, ON, M5T 2R7, Canada, T=
+ICO#: 50021114
+</span>
+</td>
+</tr>
+</table>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+------=_Part_4957499_476656260.1423413088311--
+

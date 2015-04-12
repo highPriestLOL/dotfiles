@@ -1,0 +1,12 @@
+# Mailboxes to show in the sidebar.
+mailboxes +INBOX \
+          +Important \
+          +sent \
+          +drafts \
+          +temporary/search \
+
+#mailboxes     = "imaps://imap.gmail.com/[Gmail]/All Mail"
+#mailboxes = +GMail/INBOX +GMail/Important +GMail/Sent Mail +GMail/Trash
+
+
+

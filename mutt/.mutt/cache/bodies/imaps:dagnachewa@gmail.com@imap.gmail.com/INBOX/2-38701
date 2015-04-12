@@ -1,0 +1,2100 @@
+Delivered-To: dagnachewa@gmail.com
+Received: by 10.140.235.10 with SMTP id g10csp320415qhc;
+        Mon, 3 Nov 2014 16:26:53 -0800 (PST)
+X-Received: by 10.66.119.175 with SMTP id kv15mr47182199pab.30.1415060813299;
+        Mon, 03 Nov 2014 16:26:53 -0800 (PST)
+Return-Path: <bounces+21630-bc81-dagnachewa=gmail.com@email.flipboard.com>
+Received: from o3.email.flipboard.com (o3.email.flipboard.com. [192.254.112.112])
+        by mx.google.com with ESMTPS id e3si16548336pdb.123.2014.11.03.16.26.52
+        for <dagnachewa@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 03 Nov 2014 16:26:53 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces+21630-bc81-dagnachewa=gmail.com@email.flipboard.com designates 192.254.112.112 as permitted sender) client-ip=192.254.112.112;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounces+21630-bc81-dagnachewa=gmail.com@email.flipboard.com designates 192.254.112.112 as permitted sender) smtp.mail=bounces+21630-bc81-dagnachewa=gmail.com@email.flipboard.com;
+       dkim=pass header.i=@email.flipboard.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=email.flipboard.com; 
+	h=from:reply-to:to:subject:mime-version:content-type; s=smtpapi; 
+	bh=AbK2D8z/C8g/0qPvsH1oPdbsLZ8=; b=RSts42QI0Ugfe3CeDzLjRsuJSAuOc
+	gFRZTVa5C9RDCVWutWKATPFBy46l2XPXW1QfbnpG/kaP5OBYh3pIIhcDdujLtXGE
+	ajqGL7ccO9XQeuGv2xiw5GdIFD+tYxrik++G27xM/WIMVGvN2XD9bLNadc8jqE4G
+	wVf2L0hK7Sl1bM=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=sendgrid.info; 
+	h=from:reply-to:to:subject:mime-version:content-type:x-feedback-id; 
+	s=smtpapi; bh=AbK2D8z/C8g/0qPvsH1oPdbsLZ8=; b=uy1IF3ewiX6sd5HnbE
+	DGC3sA0EhxmlonaUGsFvrkSwoscyA5mGiN8T2q1EAWe2YYUNrxQeczOlx2WCBd8p
+	Mtk4zpqmyK3M9PL2fRtq4AGH3iJgUXdtk0LbvJazvNKQji7nTIyaOm2gIhw9A+aX
+	Scffe22A8fgpualjudQBXUl7A=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=flipboard.com; 
+	h=from:reply-to:to:subject:mime-version:content-type; q=dns; 
+	s=smtpapi; b=ngcZrtrre4GgdQ/yNDBiUp73u9m0UYSHsXcHig4GQJxh0tQu600
+	LY9BIYsIKL+uj2CnzFK+f/c0hE9SWnxD3uXV9FPybMlAEAVoTB5UiSDlfXKpZU3Q
+	s41m6GhqcH6ILxAwtAl6Ofo4CsEK1AGcfb66dcqK7dl/6NP5OQI+oskg=
+Received: by filter0215p1mdw1.sendgrid.net with SMTP id filter0215p1mdw1.8086.54581D492
+        2014-11-04 00:26:49.567134392 +0000 UTC
+Received: from email.flipboard.com (ec2-54-81-233-162.compute-1.amazonaws.com [54.81.233.162])
+	by ismtpd-006 (SG) with ESMTP id 1497832655b.7aab.534d5f
+	for <dagnachewa@gmail.com>; Tue, 04 Nov 2014 00:26:49 +0000 (UTC)
+From: Flipboard <no-reply@flipboard.com>
+Reply-To: Flipboard <no-reply@flipboard.com>
+To: dagnachewa@gmail.com
+Subject: Ten for Today (11/03/14): Election Night’s biggest races—what to watch for
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_150754_1320803742.1321257465743"
+Message-ID: <1497832655b.7aab.534d5f@ismtpd-006>
+Date: Tue, 04 Nov 2014 00:26:49 +0000 (UTC)
+X-SG-EID: wrp7xyHYKYeRAJdM57g/53Osp6DD1JqTd3zoMwp/+VbYPZ81BX70cmrcRgbXwAzB8uXwas5kUtW276
+ +uL1yXdJmV44DncYpTQ1MYMv4MSzcHHAzqSkwI/Ustz25AjKWwp/Yep5C4hh8ORIuliVpA2k/SdhyC
+ ULQNJqNV77U4RLs=
+X-SG-ID: annKF8TwlIO0/S/JqH7Gii9XSP97BQ9LawrJGWpiU8jacjak9xDui0h3vIJnKWJLiX1WTkBxXqJXLd
+ 5vhKkkudgNU6feSDj1134OSAjvqOdY8f9u9jdTYzW3imDJWtZs5/Z8pZh5VJUvsjaBILGEWr1kG/JN
+ lSQ2d75CxBSG6Sv0tXsJ3BVaV6kRW9CzEDFyg95XcP2S8bhBrOv8OiXxsA==
+X-Feedback-ID: 21630:VY3+NBeqG5K16nURLfcmEQNCCViLMKaoo/aD8XEf9Co=:mNrmnQHohDTEWkHB/jqKAGYwtRMVClCh/R3onVR87TXJd92Oe/dQwGtYVHDnZRMV:SG
+
+------=_Part_150754_1320803742.1321257465743
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Ten for Today
+Interesting articles to check out now.
+
+Unsubscribe
+
+You=E2=80=99ve received this email because you signed up for an account on =
+Flipboard with the email address: dagnachewa@gmail.com.
+We respect your privacy and hope that you enjoy these messages.
+
+If you would no longer like to receive these emails, you can safely and eas=
+ily unsubscribe here:
+https://ue.flipboard.com/usage?data=3D%7B%22event_action%22%3A%22CLICK%22%2=
+C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22un=
+ique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%=
+22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_=
+data%22%3A%7B%22url%22%3A%22https%3A%2F%2Feditor.flipboard.com%2Faccount%2F=
+emailSettings%3Flang%3Den%26s%3DusO8Y9bCa%252BcYgGPdtCVwatIlbHCb8KUacd4vM7a=
+B7Bg%253D%26code%3DMTkxNDY0NjIlZGFnbmFjaGV3YUBnbWFpbC5jb20lZW4lMTQxNTA2MDgw=
+MTAwMA%253D%253D%26preselect%3D64%22%2C%22target_id%22%3A%22unsubscribe%2F1=
+%22%7D%7D&amp;redirect_url=3Dhttps%3A%2F%2Feditor.flipboard.com%2Faccount%2=
+FemailSettings%3Flang%3Den%26utm_campaign%3D10today%26code%3DMTkxNDY0NjIlZG=
+FnbmFjaGV3YUBnbWFpbC5jb20lZW4lMTQxNTA2MDgwMTAwMA%253D%253D%26preselect%3D64=
+%26utm_source%3Demail%26s%3DusO8Y9bCa%252BcYgGPdtCVwatIlbHCb8KUacd4vM7aB7Bg=
+%253D%26utm_medium%3D10today.1103
+
+Privacy Policy
+
+View our privacy policy here:
+https://ue.flipboard.com/usage?data=3D%7B%22event_action%22%3A%22CLICK%22%2=
+C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22un=
+ique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%=
+22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_=
+data%22%3A%7B%22url%22%3A%22http%3A%2F%2Fflipboard.com%2Fprivacy%22%2C%22ta=
+rget_id%22%3A%22privacy%2Ffooter%22%7D%7D&amp;redirect_url=3Dhttp%3A%2F%2Ff=
+lipboard.com%2Fprivacy%3Futm_campaign%3D10today%26utm_medium%3D10today.1103=
+%26utm_source%3Demail
+
+(c)2014 Flipboard, Inc. Made with love at 214 Homer Ave, Palo Alto, CA 94301=
+
+------=_Part_150754_1320803742.1321257465743
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- email-basic -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-control" content="no-cache">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+<title>Flipboard</title>
+<style type="text/css">
+/* iPad Text Smoother */
+div, p, a, li, td { -webkit-text-size-adjust:none; }
+.ReadMsgBody
+{width: 100%; background-color: #ffffff;}
+.ExternalClass
+{width: 100%; background-color: #ffffff;}
+.appleLinksGrey { color: #a8a8a8!important; }
+body
+{width: 100%; background-color: #ffffff; margin:0; padding:0; -webkit-font-smoothing: antialiased;}
+html
+{width: 100%; }
+body {
+margin:0px;
+margin-top: -15px;
+padding:0px !important;
+height:100%;
+}
+table { font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #9b9b9b; }
+.hover:hover {
+color: #1199ce!important;
+border-color: #1199ce!important;
+}
+@media only screen and (min-width: 480px) {
+td[class=specialfooterfont] {font-size: 18px!important; line-height: 36px!important;}
+}
+
+/* With This Code you make a Newsletter Responsive */
+@media only screen and (max-width: 660px) {
+table[class=full] { width: 100%; clear: both; }
+table[class=mobile] { width: 100%; padding-left: 10px; padding-right: 10px; clear: both; }
+table[class=fullCenter] { width: 100%; text-align: center!important; clear: both; }
+table[class=eraseForMobile] { display: none!important; }
+td[class=eraseForMobile] { display: none!important; }
+.show {display: inherit!important;}
+.erase {display: none;}
+img[class=image50] {width: 100%!important;}
+.imageScale {width: 100%!important; height: auto!important; clear: both;}
+.avatarPad {margin-right: 0px!important;}
+img[class=header] {width: 100%!important;}
+.header img {width: 100%!important;}
+td[class=w15] {width: 15px!important;}
+td[class=w18] {width: 18px!important;}
+/* gmail does not honor display:none; set font-size and line-height to 0 for hiding. */
+td[id=nongmshow] {font-size: inherit !important; line-height: inherit !important;}
+}
+/* This Code is Extra Adjustment for Mobile Version */
+@media only screen and (max-width: 479px) {
+body{width:auto!important;}
+table[class=full] { width: 100%; clear: both; }
+table[class=mobile] { width: 100%; padding-left: 10px; padding-right: 10px; clear: both; }
+table[class=fullCenter] { width: 100%; text-align: center!important; clear: both; }
+table[class=eraseForMobile] { display: none!important; }
+td[class=eraseForMobile] { display: none!important; }
+span[class=eraseForMobile] { display: none!important; }
+div[class=eraseForMobile] { display: none!important; }
+td[class=textCenter] { width: 100%; text-align: center!important; clear: both; }
+img[class=header] {width: 100%!important;}
+.header img {width: 100%!important;}
+.erase {display: none;}
+.show {display: inherit!important;}
+.header img {width: 100%!important;}
+td[class=font40] {font-size: 40px!important; line-height: 42px!important;}
+td[class=font30] {font-size: 30px!important; line-height: 38px!important;}
+td[class=font28] {font-size: 28px!important; line-height: 36px!important;}
+td[class=font26] {font-size: 26px!important; line-height: 30px!important;}
+td[class=font22] {font-size: 22px!important; line-height: 30px!important;}
+td[class=font21] {font-size: 21px!important; line-height: 21px!important;}
+td[class=font20] {font-size: 20px!important; line-height: 28px!important;}
+td[class=font18] {font-size: 18px!important; line-height: 26px!important;}
+td[class=font16] {font-size: 14px!important; line-height: 21px!important;}
+td[class=font14] {font-size: 14px!important; line-height: 20px!important;}
+td[class=font12] {font-size: 12px!important; line-height: 17px!important;}
+td[class=font14-2] {font-size: 14px!important; line-height: 22px!important;}
+td[class=font10] {font-size: 10px!important; line-height: 20px!important;}
+a[class=font10] {font-size: 10px!important; line-height: 16px!important;}
+a[class=font12] {font-size: 12px!important; line-height: 17px!important;}
+a[class=font16] {font-size: 14px!important; text-align: center!important;}
+span[class=font20] {font-size: 20px!important; line-height: 28px!important;}
+span[class=font16] {font-size: 16px!important; line-height: 21px!important;}
+span[class=font14] {font-size: 14px!important; line-height: 20px!important;}
+span[class=font12] {font-size: 12px!important; line-height: 17px!important;}
+span[class=font10] {font-size: 10px!important; line-height: 12px!important;}
+td[class=height0] {height: 0px!important;}
+td[class=height5] {height: 5px!important;}
+td[class=height10] {height: 10px!important;}
+td[class=height15] {height: 15px!important;}
+td[class=height20] {height: 20px!important;}
+td[class=height26] {height: 26px!important;}
+td[class=height30] {height: 30px!important;}
+td[class=height40] {height: 40px!important;}
+td[class=height50] {height: 50px!important;}
+td[class=height60] {height: 60px!important;}
+td[class=height70] {height: 70px!important;}
+td[class=buttonfont16] {font-size: 14px!important; line-height: 21px!important;}
+.hover {border: 0px!important;}
+td[class=plus] {font-size: 30px!important; line-height: 26px!important;}
+span[class=hide] {display: none!important;}
+.avatarPad {margin-right: 0px!important;}
+.erase {display: none;}
+td[class=h16] {height: 16px!important;}
+td[class=w5] {width: 5px!important;}
+td[class=w10] {width: 10px!important;}
+td[class=w15] {width: 15px!important;}
+td[class=w18] {width: 18px!important;}
+td[class=w140] {width: 140px!important;}
+}
+@media only screen and (min-width:660px) {
+img[class=image50] {width: 257px!important;}
+table[class*=fixed] {width: 532px!important;}
+}
+@media only screen and (min-width:540px) and (max-width: 599px) {
+img[class=image50] {width: 252px!important;}
+table[class*=fixed] {width: 522px!important;}
+}
+@media only screen and (min-width: 480px) and (max-width: 539px) {
+img[class=image50] {width: 222px!important;}
+table[class*=fixed] {width: 462px!important;}
+}
+@media only screen and (min-width: 360px) and (max-width:479px) {
+img[class=image50] {width: 162px!important;}
+table[class*=fixed] {width: 342px!important;}
+}
+@media only screen and (max-width: 359px) {
+/* iOS mail client, prevent layout breaking. */
+table[class*=fixed] {width: 302px!important;}
+/* max-width = 320px - 18px (gap between pics) - 18px (padding hard coded on centering table) */
+img[class=image50] {width: 142px!important;}
+td[class=w15] {width: 10px!important;}
+td[class=w18] {width: 18px!important;}
+}
+ 
+
+ 
+.logo {
+width: 50px;
+height: 50px;
+}
+.avatar {
+width: 50px;
+height: 50px;
+border-radius: 25px; -webkit-border-radius: 25px; -moz-border-radius: 25px; border: 2px solid #949494;
+}
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"EmailMessage",
+"publisher":{
+"@type":"Organization",
+"name":"Flipboard",
+"url":"http://flipboard.com",
+"url/googlePlus":"https://plus.google.com/+Flipboard"
+}
+}
+</script>
+
+
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" dir="ltr" style="direction: ltr">
+<!-- block: content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- top-reminder.html -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" >
+<tr>
+<td>
+<!-- This Is For The Padding Left and Right For Mobile -->
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="20" class=""></td>
+<td width="560">
+<!-- Wrapper -->
+<table width="560" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+<tr>
+<td width="100%" height="30"></td>
+</tr>
+<tr>
+<td width="100%">
+<!-- Start Nav -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="100%" valign="middle">
+<!-- Space -->
+<table width="560" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
+<tr>
+<td width="100%" height="34" style="font-size: 15px; color: #949494; text-align: center; line-height: 25px; "class="textCenter">
+<span>Tap the '<span style="color: #00aeef">+</span>' to save an article and read later.</span>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" class="pad2"></td>
+</tr>
+</table><!-- End Nav -->
+</td>
+</tr>
+<tr>
+<td width="100%" height="20" class="eraseForMobile"></td>
+</tr>
+</table><!-- End Wrapper -->
+</td>
+<td width="20" class="erase"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table><!-- End Wrapper 1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- START wrapper-center-content::wrapper -->
+<table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="100%">
+<table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" width="567" class="full">
+<tbody><tr>
+<td align="center" width="568">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td style="padding-left:9px; padding-right:9px;" align="center">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="550">
+<!-- START wrapper-center-content::centering -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="full">
+<tr>
+<td>
+<!-- START centered content -->
+
+
+
+
+
+
+
+
+
+
+ <!-- START wrapper-center-content::wrapper -->
+<table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="100%">
+<table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" width="567" class="full">
+<tbody><tr>
+<td align="center" width="568">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td style="padding-left:9px; padding-right:9px;" align="center">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="550">
+<!-- START wrapper-center-content::centering -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="full">
+<tr>
+<td>
+<!-- START centered content -->
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="100%">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+<tr>
+<td width="100%" height="40"></td>
+</tr>
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+<a href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fflipboard.com%22%2C%22target_id%22%3A%22hdr%22%7D%7D&amp;redirect_url=https%3A%2F%2Fflipboard.com%3Futm_campaign%3D10today%26utm_medium%3D10today.1103%26utm_source%3Demail%26utm_content%3Dlogo_link" style="color: #363636; text-decoration: none;">
+<img src="http://cdn.flipboard.com/email/assets/updated-logo.jpg" width="50" height="50" alt="" border="0" class="logo" style="" />
+</a>
+</center>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!-- END centered content -->
+</td>
+</tr>
+</table>
+<!-- END wrapper-center-content::centering -->
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<!-- END wrapper-center-content::wrapper -->
+
+<!-- BEGIN module-top-header -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="100%" align="center" style="text-align:center;">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+<tr>
+<td width="100%" height="20"></td>
+</tr>
+
+<tr>
+<td width="100%"
+style="font-size: 38px; font-weight: bold; color: #363636; text-align: center; line-height: 47px; font-family: Helvetica, Arial, sans-serif; letter-spacing: -1px;"
+class="font26">
+Ten for Today
+</td>
+</tr>
+<tr>
+<td width="100%" height="5"></td>
+</tr>
+
+
+<tr>
+<td width="100%" style="font-size: 22px; color: #949494; text-align: center; font-weight: normal; font-family: Helvetica, Arial, sans-serif; line-height: 30px;" class="font18">
+Interesting articles to check out now.
+</td>
+</tr>
+
+<tr>
+<td width="100%" height="20"></td>
+</tr>
+<tr>
+<td width="100%">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="240"></td>
+<td width="70" height="5" bgcolor="#363636"></td>
+<td width="240"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="50"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- END top-header -->
+
+<!-- END centered content -->
+</td>
+</tr>
+</table>
+<!-- END wrapper-center-content::centering -->
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<!-- END wrapper-center-content::wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- START wrapper-center-content::wrapper -->
+<table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="100%">
+<table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" width="567" class="full">
+<tbody><tr>
+<td align="center" width="568">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td style="padding-left:9px; padding-right:9px;" align="center">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="550">
+<!-- START wrapper-center-content::centering -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="full">
+<tr>
+<td>
+<!-- START centered content -->
+
+
+
+
+
+<!-- BEGIN module-section-articles -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="100%">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+<tr>
+<td width="100%" style="font-size: 30px; color: #949494; text-align: center; font-family: Times, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 32px; font-style:italic;" class="font22">
+
+</td>
+</tr>
+
+
+
+
+<!-- START article 0 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1010 stats: {'imgs': 1, 'chars': 24065, 'version': 786432, 'pars': 103, 'words': 3963} hints: None -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.nationaljournal.com%25252Fpolitics%25252Fhotline-s-2014-election-night-cheat-sheet-20141031&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.nationaljournal.com%2Fpolitics%2Fhotline-s-2014-election-night-cheat-sheet-20141031%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>Hotline's 2014 Election Night Cheat Sheet</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.nationaljournal.com%25252Fpolitics%25252Fhotline-s-2014-election-night-cheat-sheet-20141031&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.nationaljournal.com%2Fpolitics%2Fhotline-s-2014-election-night-cheat-sheet-20141031%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.flipboard.com/nationaljournal.com/3d927acbbba37ecb98b023a08f50fcf9e3c2242c/original.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+16 min read &bull; 3 days ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fwww.nationaljournal.com%252Fpolitics%252Fhotline-s-2014-election-night-cheat-sheet-20141031%26title%3DHotline%2527s%2B2014%2BElection%2BNight%2BCheat%2BSheet%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3DHotline%2527s%2B2014%2BElection%2BNight%2BCheat%2BSheet%26url%3Dhttp%253A%252F%252Fwww.nationaljournal.com%252Fpolitics%252Fhotline-s-2014-election-night-cheat-sheet-20141031%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D
+ 10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.nationaljournal.com%25252Fpolitics%25252Fhotline-s-2014-election-night-cheat-sheet-20141031&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.nationaljournal.com%2Fpolitics%2Fhotline-s-2014-election-night-cheat-sheet-20141031%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">nationaljournal.com / Hotline Staff </a>
+The Hotline staff has been tracking Senate and gubernatorial campaigns from the ground up, across the country, for two years now. Here's the key information you'll want (and we'll be following) to keep track of how things are goin...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.nationaljournal.com%25252Fpolitics%25252Fhotline-s-2014-election-night-cheat-sheet-20141031&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.nationaljournal.com%2Fpolitics%2Fhotline-s-2014-election-night-cheat-sheet-20141031%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 0 -->
+
+<!-- START article 1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1009 stats: {'imgs': 28, 'chars': 1283, 'version': 786432, 'pars': 9, 'words': 206} hints: color,domcolor-3b0403-62240c-83441f-9a5c35-ac6e46-b87a53-c1845c-cb8f67-d79b73-e7ac83-f7c399-fcdfb5,face-366-64-20,focus-366-64,photo,rgb-183-130-94,wide,still -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.huffingtonpost.com%25252F2014%25252F11%25252F02%25252Fphotos-women-voting_n_6083808.html%25253Fncid%25253Dtweetlnkushpmg00000067&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.huffingtonpost.com%2F2014%2F11%2F02%2Fphotos-women-voting_n_6083808.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26ncid%3Dtweetlnkushpmg00000067%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>27 Badass Images Of Women Winning And Exercising The Right To Vote</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.huffingtonpost.com%25252F2014%25252F11%25252F02%25252Fphotos-women-voting_n_6083808.html%25253Fncid%25253Dtweetlnkushpmg00000067&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.huffingtonpost.com%2F2014%2F11%2F02%2Fphotos-women-voting_n_6083808.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26ncid%3Dtweetlnkushpmg00000067%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.flipboard.com/huffpost.com/36f41db8506a0be8bf14bb5a8b36b17c7d738ba2/original.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+1 min read &bull; 1 day ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fwww.huffingtonpost.com%252F2014%252F11%252F02%252Fphotos-women-voting_n_6083808.html%253Fncid%253Dtweetlnkushpmg00000067%26title%3D27%2BBadass%2BImages%2BOf%2BWomen%2BWinning%2BAnd%2BExercising%2BThe%2BRight%2BTo%2BVote%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F1%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3D27%2BBadass%2BImages%2BOf%2BWomen%2BWinning%2BAnd%2BExercising%2BThe%2BRight%2BTo%2BVote%26url%3Dhttp%253A%252F%252Fwww.huffingtonpost.com%252F2014%252F11%252F02%252Fp
+ hotos-women-voting_n_6083808.html%253Fncid%253Dtweetlnkushpmg00000067%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.huffingtonpost.com%25252F2014%25252F11%25252F02%25252Fphotos-women-voting_n_6083808.html%25253Fncid%25253Dtweetlnkushpmg00000067&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.huffingtonpost.com%2F2014%2F11%2F02%2Fphotos-women-voting_n_6083808.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26ncid%3Dtweetlnkushpmg00000067%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">huffingtonpost.com / Amanda Duberman </a>
+In 1921, Missouri voters passed a ballot measure amending the state constitution to allow women to hold political office. This was also the first election after the passage of the 19th Amendment, granting all U.S. women the right ...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.huffingtonpost.com%25252F2014%25252F11%25252F02%25252Fphotos-women-voting_n_6083808.html%25253Fncid%25253Dtweetlnkushpmg00000067&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.huffingtonpost.com%2F2014%2F11%2F02%2Fphotos-women-voting_n_6083808.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26ncid%3Dtweetlnkushpmg00000067%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 1 -->
+
+<!-- START article 2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 0 stats: {'imgs': 1, 'chars': 5653, 'version': 786432, 'pars': 19, 'words': 902} hints: None -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.theatlantic.com%25252Fhealth%25252Farchive%25252F2014%25252F11%25252Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%25252F382282%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.theatlantic.com%2Fhealth%2Farchive%2F2014%2F11%2Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%2F382282%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>Brittany Maynard and the Challenge of Dying with Dignity</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.theatlantic.com%25252Fhealth%25252Farchive%25252F2014%25252F11%25252Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%25252F382282%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.theatlantic.com%2Fhealth%2Farchive%2F2014%2F11%2Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%2F382282%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.theatlantic.com/static/newsroom/img/mt/2014/11/AP117941113604/lead.jpg?neh682"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+4 min read &bull; 6 hours ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fwww.theatlantic.com%252Fhealth%252Farchive%252F2014%252F11%252Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%252F382282%252F%26title%3DBrittany%2BMaynard%2Band%2Bthe%2BChallenge%2Bof%2BDying%2Bwith%2BDignity%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F2%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3DBrittany%2BMaynard%2Band%2Bthe%2BChallenge%2Bof%2BDying%2Bwith%2BDignity%26url%3Dhttp%253A%252F%252Fwww.theatlantic.com%252Fhealth%252Farchive%252F2014%252F11%252Fbritt
+ any-maynard-and-the-challenge-of-dying-with-dignity%252F382282%252F%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.theatlantic.com%25252Fhealth%25252Farchive%25252F2014%25252F11%25252Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%25252F382282%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.theatlantic.com%2Fhealth%2Farchive%2F2014%2F11%2Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%2F382282%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">theatlantic.com / Olga Khazan </a>
+The terminally ill 29-year-old, who took her own life Saturday, was certain in her wishes. But what about patients who seem motivated by depression or hopelessness?&quot;Goodbye world,&quot; wrote Brittany Maynard, a 29-year-old woman suffe...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.theatlantic.com%25252Fhealth%25252Farchive%25252F2014%25252F11%25252Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%25252F382282%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.theatlantic.com%2Fhealth%2Farchive%2F2014%2F11%2Fbrittany-maynard-and-the-challenge-of-dying-with-dignity%2F382282%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 2 -->
+
+<!-- START article 3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1008 stats: {'imgs': 1, 'chars': 16143, 'version': 786432, 'pars': 31, 'words': 2610} hints: None -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.outsideonline.com%25252Foutdoor-adventure%25252Fscience%25252FAfter-the-Crash-The-Future-of-Space-Tourism.html&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.outsideonline.com%2Foutdoor-adventure%2Fscience%2FAfter-the-Crash-The-Future-of-Space-Tourism.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>After the Virgin Galactic Crash: The Future of Space Tourism</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.outsideonline.com%25252Foutdoor-adventure%25252Fscience%25252FAfter-the-Crash-The-Future-of-Space-Tourism.html&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.outsideonline.com%2Foutdoor-adventure%2Fscience%2FAfter-the-Crash-The-Future-of-Space-Tourism.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.flipboard.com/outsideonline.com/d093230a03707f5ff8fa64b88098375adc79e513/large.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+10 min read &bull; 18 hours ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fwww.outsideonline.com%252Foutdoor-adventure%252Fscience%252FAfter-the-Crash-The-Future-of-Space-Tourism.html%26title%3DAfter%2Bthe%2BVirgin%2BGalactic%2BCrash%253A%2BThe%2BFuture%2Bof%2BSpace%2BTourism%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F3%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3DAfter%2Bthe%2BVirgin%2BGalactic%2BCrash%253A%2BThe%2BFuture%2Bof%2BSpace%2BTourism%26url%3Dhttp%253A%252F%252Fwww.outsideonline.com%252Foutdoor-adventure%252Fscience%252FAfter-the-Crash
+ -The-Future-of-Space-Tourism.html%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.outsideonline.com%25252Foutdoor-adventure%25252Fscience%25252FAfter-the-Crash-The-Future-of-Space-Tourism.html&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.outsideonline.com%2Foutdoor-adventure%2Fscience%2FAfter-the-Crash-The-Future-of-Space-Tourism.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">outsideonline.com / Alex Heard </a>
+Last April, six months before the crash of Virgin Galactic’s SpaceShipTwo and the death of test pilot Michael Alsbury, I took a media tour of Spaceport America, the massive, costly, government-funded facility that’s situated rough...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.outsideonline.com%25252Foutdoor-adventure%25252Fscience%25252FAfter-the-Crash-The-Future-of-Space-Tourism.html&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.outsideonline.com%2Foutdoor-adventure%2Fscience%2FAfter-the-Crash-The-Future-of-Space-Tourism.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 3 -->
+
+<!-- START article 4 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1007 stats: {'imgs': 17, 'chars': 11063, 'version': 786432, 'pars': 35, 'words': 1787} hints: None -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.seriouseats.com%25252F2014%25252F11%25252Fbest-milk-chocolate.html&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.seriouseats.com%2F2014%2F11%2Fbest-milk-chocolate.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>The Rise of Awesome Milk Chocolate</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.seriouseats.com%25252F2014%25252F11%25252Fbest-milk-chocolate.html&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.seriouseats.com%2F2014%2F11%2Fbest-milk-chocolate.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.flipboard.com/seriouseats.com/3e29fe45bf95f415d7ff97d1eb0c7513a37d2f6d/original.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+7 min read &bull; 15 hours ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fwww.seriouseats.com%252F2014%252F11%252Fbest-milk-chocolate.html%26title%3DThe%2BRise%2Bof%2BAwesome%2BMilk%2BChocolate%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F4%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3DThe%2BRise%2Bof%2BAwesome%2BMilk%2BChocolate%26url%3Dhttp%253A%252F%252Fwww.seriouseats.com%252F2014%252F11%252Fbest-milk-chocolate.html%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.seriouseats.com%25252F2014%25252F11%25252Fbest-milk-chocolate.html&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.seriouseats.com%2F2014%2F11%2Fbest-milk-chocolate.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">seriouseats.com / Marissa Sertich Velie </a>
+[Photographs: Vicky Wasik]White wine, hazelnut coffee, and milk chocolate walk into a bar.There's no punch line here; just three underappreciated edibles commiserating about their feelings of inadequacy. You see, somewhere along t...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.seriouseats.com%25252F2014%25252F11%25252Fbest-milk-chocolate.html&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.seriouseats.com%2F2014%2F11%2Fbest-milk-chocolate.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 4 -->
+
+<!-- START article 5 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1006 stats: {'imgs': 10, 'chars': 5036, 'version': 786432, 'pars': 17, 'words': 789} hints: color,domcolor-846333-997d4b-685237-4d3a28-afa57a-978e68-7a6e51-c3b992-2b221b-d5caab-e6dbc6-f3eee5,focus-320-232,photo,rgb-172-158-119,still -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.fastcoexist.com%25252F3037433%25252Ffuturist-forum%25252F5-ways-the-internet-will-revolutionize-work-and-play-by-2025&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.fastcoexist.com%2F3037433%2Ffuturist-forum%2F5-ways-the-internet-will-revolutionize-work-and-play-by-2025%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>5 Ways The Internet Will Revolutionize Work And Play By 2025</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.fastcoexist.com%25252F3037433%25252Ffuturist-forum%25252F5-ways-the-internet-will-revolutionize-work-and-play-by-2025&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.fastcoexist.com%2F3037433%2Ffuturist-forum%2F5-ways-the-internet-will-revolutionize-work-and-play-by-2025%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.flipboard.com/fastcompany.net/4abee8c1c98d1417e9228726afd51f1ef498bfa9/original.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+3 min read &bull; 7 days ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fwww.fastcoexist.com%252F3037433%252Ffuturist-forum%252F5-ways-the-internet-will-revolutionize-work-and-play-by-2025%26title%3D5%2BWays%2BThe%2BInternet%2BWill%2BRevolutionize%2BWork%2BAnd%2BPlay%2BBy%2B2025%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F5%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3D5%2BWays%2BThe%2BInternet%2BWill%2BRevolutionize%2BWork%2BAnd%2BPlay%2BBy%2B2025%26url%3Dhttp%253A%252F%252Fwww.fastcoexist.com%252F3037433%252Ffuturist-forum%252F5-ways-the-intern
+ et-will-revolutionize-work-and-play-by-2025%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.fastcoexist.com%25252F3037433%25252Ffuturist-forum%25252F5-ways-the-internet-will-revolutionize-work-and-play-by-2025&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.fastcoexist.com%2F3037433%2Ffuturist-forum%2F5-ways-the-internet-will-revolutionize-work-and-play-by-2025%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">fastcoexist.com / BEN SCHILLER </a>
+Experts imagine how our lives will be different when our connections are 100 times faster than today's. (Are you listening, Comcast?)For all the ways the Internet has changed how we live and work over the last 20 years, there are ...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.fastcoexist.com%25252F3037433%25252Ffuturist-forum%25252F5-ways-the-internet-will-revolutionize-work-and-play-by-2025&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.fastcoexist.com%2F3037433%2Ffuturist-forum%2F5-ways-the-internet-will-revolutionize-work-and-play-by-2025%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 5 -->
+
+<!-- START article 6 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1005 stats: {'chars': 68537, 'version': 786432, 'pars': 214, 'words': 11078, 'imgs': 25, 'pages': 6} hints: None -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.politico.com%25252Fmagazine%25252Fstory%25252F2014%25252F10%25252Fborder-patrol-the-green-monster-112220.html%252523.VFfgkksQNiF&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.politico.com%2Fmagazine%2Fstory%2F2014%2F10%2Fborder-patrol-the-green-monster-112220.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse%23.VFfgkksQNiF&amp;utm_medium=10today.1103&amp;china_variant=False"
+>The Green Monster</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.politico.com%25252Fmagazine%25252Fstory%25252F2014%25252F10%25252Fborder-patrol-the-green-monster-112220.html%252523.VFfgkksQNiF&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.politico.com%2Fmagazine%2Fstory%2F2014%2F10%2Fborder-patrol-the-green-monster-112220.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse%23.VFfgkksQNiF&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.flipboard.com/politico.com/7b383a9e1ed3904b7c8310381138aa0c9c07d774/original.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+44 min read &bull; 2 hours ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fwww.politico.com%252Fmagazine%252Fstory%252F2014%252F10%252Fborder-patrol-the-green-monster-112220.html%2523.VFfgkksQNiF%26title%3DThe%2BGreen%2BMonster%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F6%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3DThe%2BGreen%2BMonster%26url%3Dhttp%253A%252F%252Fwww.politico.com%252Fmagazine%252Fstory%252F2014%252F10%252Fborder-patrol-the-green-monster-112220.html%2523.VFfgkksQNiF%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D10toda
+ y.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.politico.com%25252Fmagazine%25252Fstory%25252F2014%25252F10%25252Fborder-patrol-the-green-monster-112220.html%252523.VFfgkksQNiF&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.politico.com%2Fmagazine%2Fstory%2F2014%2F10%2Fborder-patrol-the-green-monster-112220.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse%23.VFfgkksQNiF&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">politico.com / GARRETT M. GRAFF </a>
+November/December 2014Gil Kerlikowske was hoping to make it through at least his first week on the job without being awakened in the middle of the night. President Barack Obama’s new head of Customs and Border Protection, Kerlikow...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fwww.politico.com%25252Fmagazine%25252Fstory%25252F2014%25252F10%25252Fborder-patrol-the-green-monster-112220.html%252523.VFfgkksQNiF&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fwww.politico.com%2Fmagazine%2Fstory%2F2014%2F10%2Fborder-patrol-the-green-monster-112220.html%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse%23.VFfgkksQNiF&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 6 -->
+
+<!-- START article 7 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1004 stats: {'chars': 4041, 'note': 'rss', 'version': 786432, 'pars': 22, 'words': 638, 'imgs': 3} hints: color,domcolor-0a1f6b-7b5023-226a33-efd193-222b1b-818fa6-4b5264-b1bec8-e6e5e0-6f756c,focus-290-150,graphic,light,rgb-206-189-133,still -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fearthsky.org%25252Fhuman-world%25252Fcool-facts-about-your-biological-clock&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fearthsky.org%2Fhuman-world%2Fcool-facts-about-your-biological-clock%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>Cool facts about your biological clock</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fearthsky.org%25252Fhuman-world%25252Fcool-facts-about-your-biological-clock&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fearthsky.org%2Fhuman-world%2Fcool-facts-about-your-biological-clock%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://en.es-static.us/upl/2014/11/biological_clock_human-e1415023903204.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+3 min read &bull; 8 hours ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fearthsky.org%252Fhuman-world%252Fcool-facts-about-your-biological-clock%26title%3DCool%2Bfacts%2Babout%2Byour%2Bbiological%2Bclock%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F7%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3DCool%2Bfacts%2Babout%2Byour%2Bbiological%2Bclock%26url%3Dhttp%253A%252F%252Fearthsky.org%252Fhuman-world%252Fcool-facts-about-your-biological-clock%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fearthsky.org%25252Fhuman-world%25252Fcool-facts-about-your-biological-clock&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fearthsky.org%2Fhuman-world%2Fcool-facts-about-your-biological-clock%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">earthsky.org / Eleanor Imster </a>
+Genes and proteins run biological clocks that help keep daily rhythms in synch. Image credit: Wikimedia CommonsCircadian rhythms are physical, mental and behavioral changes that follow a roughly 24-hour cycle, responding primarily...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fearthsky.org%25252Fhuman-world%25252Fcool-facts-about-your-biological-clock&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fearthsky.org%2Fhuman-world%2Fcool-facts-about-your-biological-clock%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 7 -->
+
+<!-- START article 8 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1003 stats: {'imgs': 5, 'chars': 17054, 'version': 786432, 'pars': 38, 'words': 3021} hints: None -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Ffortune.com%25252F2014%25252F10%25252F30%25252Fdwayne-johnson-best-advice-entertainment-star%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Ffortune.com%2F2014%2F10%2F30%2Fdwayne-johnson-best-advice-entertainment-star%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>How Dwayne Johnson rocked the film industry</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Ffortune.com%25252F2014%25252F10%25252F30%25252Fdwayne-johnson-best-advice-entertainment-star%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Ffortune.com%2F2014%2F10%2F30%2Fdwayne-johnson-best-advice-entertainment-star%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.flipboard.com/wordpress.com/b2d69373d298d441e086b8d29fa16c190e4ad1ce/original.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+12 min read &bull; 4 days ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Ffortune.com%252F2014%252F10%252F30%252Fdwayne-johnson-best-advice-entertainment-star%252F%26title%3DHow%2BDwayne%2BJohnson%2Brocked%2Bthe%2Bfilm%2Bindustry%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F8%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3DHow%2BDwayne%2BJohnson%2Brocked%2Bthe%2Bfilm%2Bindustry%26url%3Dhttp%253A%252F%252Ffortune.com%252F2014%252F10%252F30%252Fdwayne-johnson-best-advice-entertainment-star%252F%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D
+ 10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Ffortune.com%25252F2014%25252F10%25252F30%25252Fdwayne-johnson-best-advice-entertainment-star%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Ffortune.com%2F2014%2F10%2F30%2Fdwayne-johnson-best-advice-entertainment-star%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">fortune.com / BY DANIEL ROBERTS </a>
+What the larger-than-life performer learned on his amazing journey from poverty to pro wrestling to Hollywood.It was 110 degrees in the Sahara Desert, and Dwayne Johnson was freezing.He was in Morocco in 2001 shooting his first fi...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Ffortune.com%25252F2014%25252F10%25252F30%25252Fdwayne-johnson-best-advice-entertainment-star%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Ffortune.com%2F2014%2F10%2F30%2Fdwayne-johnson-best-advice-entertainment-star%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 8 -->
+
+<!-- START article 9 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- charts: [] score: 1002 stats: {'imgs': 2, 'chars': 1356, 'version': 786432, 'pars': 3, 'words': 234} hints: color,domcolor-cf1c16-8e1914-b24831-3e291e-18110c-584b37-736a55-8e8571-a29d8f-d7d4cc-b9b6ad,focus-330-173,photo,rgb-143-131-110,still,main-image,main-image,main-image,main-image,main-image -->
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="500" style="font-size: 27px; color: #363636; text-align: left; font-weight: bold; line-height: 33px; font-family: Helvetica, Arial, sans-serif;" class="font21">
+<a style="color: #363636; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fnews.moviefone.com%25252F2014%25252F11%25252F03%25252Fgrumpy-cat-trailer%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fnews.moviefone.com%2F2014%2F11%2F03%2Fgrumpy-cat-trailer%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+>Behold, the Trailer for the Grumpy Cat Christmas Special Has Been Delivered From Above</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+
+
+
+
+<tr>
+<td width="100%" style="text-align: center;">
+<center>
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fnews.moviefone.com%25252F2014%25252F11%25252F03%25252Fgrumpy-cat-trailer%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fnews.moviefone.com%2F2014%2F11%2F03%2Fgrumpy-cat-trailer%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="text-decoration: none;">
+<img
+src="http://cdn.flipboard.com/aolcdn.com/8344b152c147e624790cfb5a09c2fb3498ab3d0b/original.jpg"
+width="550"
+height="auto"
+style="font-size: 26px; color: #363636!important; text-align: center; font-weight: bold; text-decoration: none; width: 550px; height: auto;"
+alt=""
+border="0"
+class="imageScale" />
+</a>
+</center>
+</td>
+</tr>
+<tr>
+<td width="100%" height="10"></td>
+</tr>
+
+<tr>
+<td width="100%" valign="top">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="550" style="font-size: 17px; color: #949494; text-align: left; font-weight: normal; line-height: 17px; font-family: Helvetica, Arial, sans-serif; vertical-align: middle;" valign="middle" class="font14">
+
+
+
+
+
+1 min read &bull; 8 hours ago
+</td>
+<td width="50" valign="top" style="text-align: right; vertical-align: top;" class="plus">
+<a style="font-size: 40px; color: #363636; text-decoration:none; font-weight: normal; line-height: 33px; font-family: Times New Roman, Times, Serif, Myriad Pro, Helvetica, Arial, sans-serif;"
+target="_blank"
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Furl%3Dhttp%253A%252F%252Fnews.moviefone.com%252F2014%252F11%252F03%252Fgrumpy-cat-trailer%252F%26title%3DBehold%252C%2Bthe%2BTrailer%2Bfor%2Bthe%2BGrumpy%2BCat%2BChristmas%2BSpecial%2BHas%2BBeen%2BDelivered%2BFrom%2BAbove%26t%3D1415060801000%26v%3D2%22%2C%22target_id%22%3A%22s1%2F9%2Fshare%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%2Fbookmarklet%2Fpopout%3Futm_campaign%3D10today%26title%3DBehold%252C%2Bthe%2BTrailer%2Bfor%2Bthe%2BGrumpy%2BCat%2BChristmas%2BSpecial%2BHas%2BBeen%2BDelivered%2BFrom%2BAbove%26url%3Dhttp%253A%252F%252Fnews.moviefone.com%252F2014%252F11%252F03%252F
+ grumpy-cat-trailer%252F%26utm_content%3Dshare%26utm_source%3Demail%26utm_medium%3D10today.1103%26t%3D1415060801000%26v%3D2"
+>+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="12"></td>
+</tr>
+<tr>
+<td width="100%" style="font-size: 17px; color: #070707; text-align: left; font-weight: normal; font-family: Georgia, Helvetica, Arial, sans-serif; line-height: 26px;" class="font14">
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fnews.moviefone.com%25252F2014%25252F11%25252F03%25252Fgrumpy-cat-trailer%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fnews.moviefone.com%2F2014%2F11%2F03%2Fgrumpy-cat-trailer%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; color: #070707;">moviefone.com / Drew Taylor </a>
+&quot;It's a Wonderful Life.&quot; &quot;Christmas in Connecticut.&quot; That Muppets special where John Denver sings a bunch of songs with the Muppets and it makes you feel oddly gooey inside. Be prepared to add another title to the list of &quot;certifi...
+
+<a
+target="_blank"
+href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2Fresolve%252Fflipboard%252Furl%25252Fhttp%25253A%25252F%25252Fnews.moviefone.com%25252F2014%25252F11%25252F03%25252Fgrumpy-cat-trailer%25252F&amp;utm_content=article&amp;utm_source=email&amp;web_url=http%3A%2F%2Fnews.moviefone.com%2F2014%2F11%2F03%2Fgrumpy-cat-trailer%2F%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_content%3Darticle%26utm_source%3Demail%26utm_medium%3D10today.1103%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;china_variant=False"
+style="font-family: Helvetica, Arial, sans-serif; text-decoration: none; font-size:17px; color:#0099cc;">read more</a>
+
+
+</td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#000000"><div style="backgroud"></div></td>
+</tr>
+<tr>
+<td width="100%" height="35" class="height20"></td>
+</tr>
+
+<!-- END article 9 -->
+
+</table> <!-- table 550 -->
+</td>
+</tr>
+</table>
+<!-- END module-section-articles -->
+
+<!-- END centered content -->
+</td>
+</tr>
+</table>
+<!-- END wrapper-center-content::centering -->
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<!-- END wrapper-center-content::wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- START wrapper-center-content::wrapper -->
+<table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="100%">
+<table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" width="567" class="full">
+<tbody><tr>
+<td align="center" width="568">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td style="padding-left:9px; padding-right:9px;" align="center">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="550">
+<!-- START wrapper-center-content::centering -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="full">
+<tr>
+<td>
+<!-- START centered content -->
+
+
+
+
+
+
+
+
+<!-- content -->
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+
+
+<tr>
+<td width="100%" style="font-size: 28px; color: rgb(168, 168, 168); text-align: center; font-weight: normal; line-height: 34px; "class="font16">
+Follow Ten for Today to see updates on your Flipboard.
+</td>
+</tr>
+<tr>
+<td width="100%" height="40" class="height20"></td>
+</tr>
+
+
+<tr>
+<td height="20"></td>
+</tr>
+
+<tr>
+<td width="100%" align="center" class="mobile">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<table border="0" cellpadding="0" cellspacing="0" bgcolor="#0099cc" style="background-color:#0099cc;">
+<tr>
+<td height="12" class="height10"></td>
+</tr>
+<tr>
+<td bgcolor="#0099cc" width="20"></td>
+<td bgcolor="#0099cc" align="center" style="font-size: 18px; color: #ffffff; text-align: center; font-weight: normal; line-height:32px;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;text-transform:uppercase;" class="buttonfont16">
+<a href="http://cdn.flipboard.com/email/assets/smartlink/prod/v9.html?lang=en&amp;utm_campaign=10today&amp;flab_cell_id=3&amp;flab_experiment_id=19&amp;uid=19146462&amp;section_url=flipboard%3A%2F%2FshowSection%2F259206932&amp;utm_source=email&amp;web_url=https%3A%2F%2Fflipboard.com%2Fsection%2Ften-for-today-bckdHs%3Flang%3Den%26utm_campaign%3D10today%26flab_cell_id%3D3%26flab_experiment_id%3D19%26uid%3D19146462%26utm_source%3Demail%26part%3Dcta%26utm_medium%3D10today.1103%26position%3D1%26china_variant%3DFalse&amp;utm_medium=10today.1103&amp;position=1&amp;part=cta&amp;china_variant=False" style="text-decoration: none; color: #ffffff;">
+Read the Magazine
+</a>
+</td>
+<td bgcolor="#0099cc" width="18"></td>
+</tr>
+<tr>
+<td height="10" class="height10"></td>
+</tr>
+</table>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td height="45"></td>
+</tr>
+
+</table>
+<!-- END content -->
+
+<!-- END centered content -->
+</td>
+</tr>
+</table>
+<!-- END wrapper-center-content::centering -->
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<!-- END wrapper-center-content::wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+<tr>
+<td width="100%" height="40"></td>
+</tr>
+</table>
+</table>
+
+
+
+<!-- end block: content -->
+<!-- block: footer -->
+
+<!-- locale: to_user.locale -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- START footer:boiler -->
+<table cellpadding="0" cellspacing="0" bgcolor="#f4f5f5" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="100%">
+<table cellpadding="0" cellspacing="0" bgcolor="#f4f5f5" border="0" width="568" class="full">
+<tbody><tr>
+<td align="center" width="568">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td style="padding-left:9px; padding-right:9px;" align="center">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="full">
+<tbody><tr>
+<td align="center" width="550">
+<!-- START footer:center -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tbody>
+<tr>
+<td width="100%" valign="top" bgcolor="#f4f5f5">
+<!-- START footer:content -->
+
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+<tbody><tr>
+<td width="550">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td height="20"></td>
+</tr>
+</table>
+
+
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
+<tr>
+<td width="100%" style="font-size: 19px; color: #a8a8a8; font-weight: normal; font-family: Helvetica, Arial, sans-serif; line-height: 36px; vertical-align: middle;" class="font10">
+<a href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Feditor.flipboard.com%3Futm_source%3Demail%26utm_medium%3Dfooter%26utm_campaign%3Dweb_tools%22%2C%22target_id%22%3A%22footer.link%2F1%22%7D%7D&amp;redirect_url=https%3A%2F%2Feditor.flipboard.com%3Futm_campaign%3Dweb_tools%26utm_medium%3Dfooter%26utm_source%3Demail%26utm_content%3Dfooter.1"
+class="hover" style="text-decoration: none; color: #a8a8a8;">Mag Editor</a>
+<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+<a href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fshare.flipboard.com%3Futm_source%3Demail%26utm_medium%3Dfooter%26utm_campaign%3Dweb_tools%22%2C%22target_id%22%3A%22footer.link%2F2%22%7D%7D&amp;redirect_url=https%3A%2F%2Fshare.flipboard.com%3Futm_campaign%3Dweb_tools%26utm_medium%3Dfooter%26utm_source%3Demail%26utm_content%3Dfooter.2"
+class="hover" style="text-decoration: none; color: #a8a8a8;">Bookmarklet</a>
+
+<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+<a href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22http%3A%2F%2Fmagazines.flipboard.com%3Futm_source%3Demail%26utm_medium%3Dfooter%26utm_campaign%3Dmagswelove%22%2C%22target_id%22%3A%22footer.link%2F3%22%7D%7D&amp;redirect_url=http%3A%2F%2Fmagazines.flipboard.com%3Futm_campaign%3Dmagswelove%26utm_medium%3Dfooter%26utm_source%3Demail%26utm_content%3Dfooter.3"
+class="hover" style="text-decoration: none; color: #a8a8a8;">MagMaker Blog</a>
+
+</td>
+</tr>
+</table>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td height="30">
+</td>
+</tr>
+</table>
+
+
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td style="text-align: center;">
+<a href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22http%3A%2F%2Fflip.it%2Fflipboardfb%22%2C%22target_id%22%3A%22facebook%2F1%22%7D%7D&amp;redirect_url=http%3A%2F%2Fflip.it%2Fflipboardfb%3Futm_campaign%3D10today%26utm_medium%3D10today.1103%26utm_source%3Demail%26utm_content%3Dfacebook"
+style="font-size: 8px; color: #363636!important; text-align: center center!important; font-weight: bold; text-decoration: none;"><img src="http://cdn.flipboard.com.s3.amazonaws.com/serviceIcons/v2/social-icon-facebook-56.png" alt="Facebook" border="0" width="28" height="28" style="width: 28px; height: 28px;" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22http%3A%2F%2Fflip.it%2Fflipboardtw%22%2C%22target_id%22%3A%22twitter%2F1%22%7D%7D&amp;redirect_url=http%3A%2F%2Fflip.it%2Fflipboardtw%3Futm_campaign%3D10today%26utm_medium%3D10today.1103%26utm_source%3Demail%26utm_content%3Dtwitter"
+style="font-size: 8px; color: #363636!important; text-align: center center!important; font-weight: bold; text-decoration: none;"><img src="http://cdn.flipboard.com.s3.amazonaws.com/serviceIcons/v2/social-icon-twitter-56.png" alt="Twitter" border="0" width="28" height="28" style="width: 28px; height: 28px;" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22http%3A%2F%2Fflip.it%2Fflipboardgplus%22%2C%22target_id%22%3A%22gplus%2F1%22%7D%7D&amp;redirect_url=http%3A%2F%2Fflip.it%2Fflipboardgplus%3Futm_campaign%3D10today%26utm_medium%3D10today.1103%26utm_source%3Demail%26utm_content%3Dgplus"
+style="font-size: 8px; color: #363636!important; text-align: center center!important; font-weight: bold; text-decoration: none;"><img src="http://cdn.flipboard.com.s3.amazonaws.com/serviceIcons/v2/social-icon-googleplus-56.png" alt="Google+" border="0" width="28" height="28" style="width: 28px; height: 28px;" /></a>
+
+</td>
+</tr>
+</table>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td height="30">
+</td>
+</tr>
+</table>
+
+
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="100%" style="font-size: 12px; color: #a8a8a8; text-align: center; font-weight: normal; font-family: Helvetica, Arial, sans-serif; line-height: 27px;" class="font10">
+You have received this email because you signed up for an account on Flipboard with the email address: <a style="text-decoration: none; color: #a8a8a8;" class="hover" href="mailto:dagnachewa@gmail.com">dagnachewa@gmail.com</a>.
+We respect your privacy and hope that you enjoy these messages. If you would no longer like to receive these emails, you can safely and easily unsubscribe below.
+</td>
+</tr>
+</table>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td height="30">
+</td>
+</tr>
+</table>
+
+
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
+<tr>
+<td width="100%" style="font-size: 12px; color: #a8a8a8; font-weight: normal; font-family: Helvetica, Arial, sans-serif; line-height: 20px; vertical-align: middle;" class="font10">
+<a
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Feditor.flipboard.com%2Faccount%2FemailSettings%3Flang%3Den%26s%3DusO8Y9bCa%252BcYgGPdtCVwatIlbHCb8KUacd4vM7aB7Bg%253D%26code%3DMTkxNDY0NjIlZGFnbmFjaGV3YUBnbWFpbC5jb20lZW4lMTQxNTA2MDgwMTAwMA%253D%253D%26preselect%3D64%22%2C%22target_id%22%3A%22unsubscribe%2F1%22%7D%7D&amp;redirect_url=https%3A%2F%2Feditor.flipboard.com%2Faccount%2FemailSettings%3Flang%3Den%26utm_campaign%3D10today%26code%3DMTkxNDY0NjIlZGFnbmFjaGV3YUBnbWFpbC5jb20lZW4lMTQxNTA2MDgwMTAwMA%253D%253D%26preselect%3D64%26utm_source%3Demail%26s%3DusO8Y9bCa%252BcYgGPdtCVwatIlbHCb8KUacd4vM7aB7Bg%253D%26utm_medium%3D10today.1103"
+class="hover" style="text-decoration: none; color: #a8a8a8;">Unsubscribe</a>
+<span class="eraseForMobile">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+<a
+href="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22CLICK%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22https%3A%2F%2Fflipboard.com%2Fprivacy%22%2C%22target_id%22%3A%22privacy%2F1%22%7D%7D&amp;redirect_url=https%3A%2F%2Fflipboard.com%2Fprivacy%3Futm_campaign%3D10today%26utm_medium%3D10today.1103%26utm_source%3Demail"
+class="hover" style="text-decoration: none; color: #a8a8a8;">Privacy Policy</a>
+</td>
+</tr>
+</table>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td height="30">
+</td>
+</tr>
+</table>
+
+
+<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td width="100%" style="font-size: 12px; color: #a8a8a8; text-align: center; font-weight: normal; font-family: Helvetica, Arial, sans-serif; line-height: 27px; text-decoration:none;" class="font10">
+&copy;2014
+<a href="https://flipboard.com/about/" class="appleLinksGrey" style="color: #a8a8a8;text-decoration:none;">Flipboard, Inc. Made with love at <span class="appleLinksGrey" style="color: #a8a8a8!important;">214 Homer Ave, Palo Alto, CA 94301</span></a>
+</td>
+</tr>
+</table>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+<tr>
+<td height="30">
+</td>
+</tr>
+</table>
+
+</td>
+</tr></tbody>
+</table>
+
+<!-- END footer:content -->
+</td>
+</tr>
+</tbody></table>
+<!-- END footer:center -->
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr></tbody>
+</table>
+<!-- END footer:boiler -->
+
+
+
+<!-- end block: footer -->
+<!-- tracking pixels -->
+<img src="https://ue.flipboard.com/usage?data=%7B%22event_action%22%3A%22OPEN%22%2C%22properties%22%3A%7B%22lang%22%3A%22en%22%2C%22uid%22%3A19146462%2C%22unique_id%22%3A19146462%2C%22time%22%3A1415060801000%7D%2C%22prod_type%22%3A%22email_campaign%22%2C%22event_category%22%3A%2210today.1103%22%2C%22event_data%22%3A%7B%22url%22%3A%22http%3A%2F%2Fcdn.flipboard.com%2Femail%2Fassets%2Fclear.gif%22%2C%22target_id%22%3A%22%22%7D%7D&amp;redirect_url=http%3A%2F%2Fcdn.flipboard.com%2Femail%2Fassets%2Fclear.gif%3Futm_campaign%3D10today%26utm_medium%3D10today.1103%26utm_source%3Demail" alt="" />
+<img src="http://www.google-analytics.com/collect?v=1&amp;tid=UA-39724124-2&amp;cid=7be67b79-b58c-41b6-9175-63bddfc144f9&amp;t=event&amp;ec=email&amp;ea=open&amp;el=email.10today.10today.1103&amp;ev=7be67b79-b58c-41b6-9175-63bddfc144f9&amp;cs=email&amp;cm=10today.1103&amp;cn=10today&amp;cm1=1" alt="" />
+<!-- server: flamingo03-ui -->
+<!-- flab: 19_3-->
+
+<img src="http://email.flipboard.com/wf/open?upn=ZL-2FCgAA9WPRpct1wuFPNnomcnn936wPEueTqzeAFPJoj2bJT0DTwWi18yK8Fbb8m6ZBpfwKYXpNc6UANtehnqxg3BhzpJhSnRXJlOS-2FDzWVSsUXlSNfz74xTHZZS6PwkgUzlIirPGudT9mPUshWTDMvL2ovP6kOqNIWtu-2Fka9aA9drxSQG15kSIBrV8Zx7MADtCqZu5nLCOLjht9AsnWf0UqxdKq57YYqybZQ3g9nh5gincRSS25vIzo9ugYK0D8Fs1M2lHeu5QMEKF91K0XDgU2cDsNXjWXzhCvqgcgRY0BF5KwWDKpluuYaLhyb4IEkuHKXt1f0VAA6-2FfomSwVuH5-2BPUCtoD52PJ7DrUHuQoq10iHww1huCgTWjemXYhMOvZ3zFscSh7lzMSmh8rrUY-2FlMDCvgcHq2jl6e-2ByRbODk-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+------=_Part_150754_1320803742.1321257465743--

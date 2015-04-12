@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BARHEIGHT=15
+EDGEWIDTH=0
+SCREENHEIGHT=$(xrandr -q | grep Screen | awk '{print $10}' | sed s/,//)
+SCREENWIDTH=$(xrandr -q | grep Screen | awk '{print $8}')
+BARWIDTH=$(($SCREENWIDTH - $(($EDGEWIDTH * 2))))
+FONT_FAMILY="-misc-stlarch-medium-r-normal--11-100-75-75-c-80-iso10646-1"
+#FONT_FAMIL2="-*-lemon-medium-r-normal--11-110-75-75-m-50-iso8859-1"
+FONT_FAMILY2="-*-tewi-medium-*-*-*-11-*-*-*-*-*-*-*" 
+zsh ~/.config/bspwm/panel/barScript.sh | bar -p -g ${BARWIDTH}x${BARHEIGHT}+${EDGEWIDTH} -B "#FFf0ebcd" -F "#FF666666" -f "$FONT_FAMILY","$FONT_FAMILY2"  | sh &
